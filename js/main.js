@@ -8,46 +8,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // 搜索：按页面类型分派
+  // 搜索：按页面类型分派（仅首页和列表页有效）
   var searchInput = document.querySelector('.search-bar input');
-  if (!searchInput) return;
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      var query = this.value.toLowerCase().trim();
 
-  searchInput.addEventListener('input', function() {
-    var query = this.value.toLowerCase().trim();
+      // 首页：过滤模块卡片
+      var moduleCards = document.querySelectorAll('.module-card');
+      if (moduleCards.length > 0) {
+        moduleCards.forEach(function(card) {
+          var text = (card.textContent || '').toLowerCase();
+          card.style.display = text.includes(query) ? '' : 'none';
+        });
+        return;
+      }
 
-    // 首页：过滤模块卡片
-    var moduleCards = document.querySelectorAll('.module-card');
-    if (moduleCards.length > 0) {
-      moduleCards.forEach(function(card) {
-        var text = (card.textContent || '').toLowerCase();
-        card.style.display = text.includes(query) ? '' : 'none';
-      });
-      return;
-    }
+      // 列表页：过滤 list-item 链接，联动隐藏空分组标题
+      var listItems = document.querySelectorAll('.list-page .list-item');
+      if (listItems.length > 0) {
+        listItems.forEach(function(item) {
+          var text = (item.textContent || '').toLowerCase();
+          item.style.display = text.includes(query) ? '' : 'none';
+        });
 
-    // 列表页：过滤 list-item 链接，联动隐藏空分组标题
-    var listItems = document.querySelectorAll('.list-page .list-item');
-    if (listItems.length > 0) {
-      listItems.forEach(function(item) {
-        var text = (item.textContent || '').toLowerCase();
-        item.style.display = text.includes(query) ? '' : 'none';
-      });
-
-      var sections = document.querySelectorAll('.list-section-title');
-      sections.forEach(function(section) {
-        var allHidden = true;
-        var el = section.nextElementSibling;
-        while (el && !el.classList.contains('list-section-title')) {
-          if (el.classList.contains('list-item') && el.style.display !== 'none') {
-            allHidden = false;
+        var sections = document.querySelectorAll('.list-section-title');
+        sections.forEach(function(section) {
+          var allHidden = true;
+          var el = section.nextElementSibling;
+          while (el && !el.classList.contains('list-section-title')) {
+            if (el.classList.contains('list-item') && el.style.display !== 'none') {
+              allHidden = false;
+            }
+            el = el.nextElementSibling;
           }
-          el = el.nextElementSibling;
-        }
-        section.style.display = allHidden ? 'none' : '';
-      });
-      return;
-    }
-  });
+          section.style.display = allHidden ? 'none' : '';
+        });
+      }
+    });
+  }
 
   // 折叠展开交互
   document.addEventListener('click', function(e) {
