@@ -48,4 +48,28 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
   });
+
+  // 折叠展开交互
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.expand-btn');
+    if (!btn) return;
+
+    var card = btn.closest('.step-card');
+    if (!card) return;
+
+    var full = card.querySelector('.expandable-full');
+    if (!full) return;
+
+    var isOpen = full.classList.contains('open');
+    if (isOpen) {
+      full.classList.remove('open');
+      btn.textContent = btn.getAttribute('data-expand-text') || '▸ 展开详情';
+    } else {
+      if (!btn.getAttribute('data-expand-text')) {
+        btn.setAttribute('data-expand-text', btn.textContent);
+      }
+      full.classList.add('open');
+      btn.textContent = '▸ 收起';
+    }
+  });
 });

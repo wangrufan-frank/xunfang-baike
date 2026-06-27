@@ -217,8 +217,8 @@ a:hover { text-decoration: underline; }
   background: var(--card-bg);
   border-left: 3px solid var(--accent-red);
   border-radius: var(--radius);
-  padding: 14px 16px;
-  margin-bottom: 12px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
   box-shadow: var(--shadow);
 }
 
@@ -241,12 +241,16 @@ a:hover { text-decoration: underline; }
   flex-shrink: 0;
 }
 
-.step-card .step-title { font-weight: bold; font-size: 15px; }
+.step-card .step-title { font-weight: bold; font-size: 16px; }
 
 .step-card .step-text {
   color: var(--text-secondary);
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 10px;
+}
+
+.step-text p {
   margin-bottom: 10px;
 }
 
@@ -293,8 +297,9 @@ a:hover { text-decoration: underline; }
   background: var(--card-bg);
   border-left: 3px solid var(--accent-blue);
   border-radius: var(--radius);
-  padding: 14px 16px;
+  padding: 18px 20px;
   box-shadow: var(--shadow);
+  margin-bottom: 16px;
 }
 
 .content-item h3 { font-size: 16px; margin-bottom: 6px; color: var(--text); }
@@ -328,8 +333,8 @@ a:hover { text-decoration: underline; }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 12px 16px;
-  margin-bottom: 8px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
   box-shadow: var(--shadow);
 }
 
@@ -358,3 +363,96 @@ a:hover { text-decoration: underline; }
 
 .media-placeholder.img { min-height: 80px; border: 1px dashed var(--border); border-radius: var(--radius); }
 .media-placeholder.video { min-height: 60px; border: 1px dashed var(--border); border-radius: var(--radius); }
+
+/* === 速览卡片 === */
+.quick-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--nav-bg);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  box-shadow: var(--shadow);
+}
+
+.quick-card .quick-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.quick-card .quick-body h2 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.quick-card .quick-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.quick-card .quick-flow {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
+/* === 核心结论 === */
+.step-lead {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* === 步骤媒体（真实图片/视频） === */
+.step-media {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.step-media img,
+.step-media video {
+  max-width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.step-media .caption {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* === 折叠组件 === */
+.expandable-full {
+  display: none;
+  margin-top: 6px;
+}
+
+.expandable-full.open {
+  display: block;
+}
+
+.expand-btn {
+  display: inline-block;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 12px;
+  font-size: 13px;
+  color: var(--accent-blue);
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.expand-btn:hover {
+  background: var(--bg);
+}
