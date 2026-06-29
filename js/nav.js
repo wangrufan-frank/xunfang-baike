@@ -1,18 +1,12 @@
 // js/nav.js
 (function() {
   var MODULES = [
-    { name: '首页',     path: 'index.html',          emoji: '🏠' },
-    { name: '警情',     path: 'jingqing/index.html',  emoji: '🚨' },
-    { name: '装备',     path: 'zhuangbei/index.html', emoji: '🛡️' },
-    { name: '巡逻',     path: 'xunluo/index.html',    emoji: '📋' },
-    { name: '作战',     path: 'zuozhan-danyuan/index.html', emoji: '⚔️' },
-    { name: '反恐',     path: 'fankong/index.html',   emoji: '🎯' },
-    { name: '快反',     path: 'kuaifan/index.html',   emoji: '⚡' },
-    { name: '徒手防卫', path: 'tushou/index.html',    emoji: '🤼' },
-    { name: '法律法规', path: 'fagui/index.html',     emoji: '📕' },
-    { name: '手枪射击', path: 'shoushe/index.html',   emoji: '🔫' },
-    { name: '大型活动', path: 'daxing-anbao/index.html', emoji: '🏟️' },
-    { name: '群体事件', path: 'qunti-shijian/index.html', emoji: '👥' }
+    { name: '装备介绍', path: 'zhuangbei/index.html',  emoji: '🛡️' },
+    { name: '巡防勤务', path: 'qinwu/index.html',      emoji: '📋' },
+    { name: '警务训练', path: 'xunlian/index.html',    emoji: '⚔️' },
+    { name: '警情处置', path: 'jingqing/index.html',    emoji: '🚨' },
+    { name: '法条规范', path: 'fagui/index.html',       emoji: '📕' },
+    { name: '走访送教', path: 'zoufang/index.html',     emoji: '🏫' }
   ];
 
   function renderNav() {
