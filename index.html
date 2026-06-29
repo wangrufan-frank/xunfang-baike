@@ -59,23 +59,91 @@
   </a>
 </div>
 
-<div class="quick-section">
-  <div class="quick-section-title">📌 常用速查</div>
-  <div class="quick-links">
-    <a href="zhuangbei/shensuo-jinggun.html" class="quick-link">🪯 伸缩警棍</a>
-    <a href="jingqing/chidao-leiqing.html" class="quick-link">🔪 持刀警情处置</a>
-    <a href="xunlian/pancha-liucheng.html" class="quick-link">🔍 盘查六步法</a>
-    <a href="xunlian/dunpai-jishu.html" class="quick-link">🛡️ 盾牌技术</a>
-    <a href="xunlian/wuli-shengji.html" class="quick-link">⚡ 武力升级</a>
-    <a href="xunlian/soushen-daili.html" class="quick-link">🔎 搜身带离</a>
-    <a href="jingqing/renyuan-pancha.html" class="quick-link">👤 人员盘查</a>
-    <a href="jingqing/zuijiu-naoshi.html" class="quick-link">🍺 醉酒闹事</a>
-    <a href="zhuangbei/cuilei-pensheqi.html" class="quick-link">💨 催泪喷射器</a>
-    <a href="fagui/faly-fayanfayu.html" class="quick-link">🗣️ 法言法语</a>
-  </div>
+<div class="daily-section">
+  <div class="daily-card" id="dailyCard"></div>
 </div>
 
 <script src="js/nav.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+// 每日一学数据
+var dailyCases = [
+  {
+    date: '2026-06-29',
+    title: '「醉酒闹事处置」',
+    body: '某日晚间，巡逻组接报一男子在烧烤摊酒后闹事，持酒瓶威胁周围群众。民警到场后先疏散围观人员，保持安全距离，语言安抚稳定情绪。待嫌疑人情绪松懈、放下酒瓶点烟时，盾牌手在前、抓捕手从侧翼突入，三人协同控制上铐。全程执法记录仪开启，事后向指挥中心报备。',
+    tips: [
+      '先疏散围观群众，避免人群刺激嫌疑人情绪',
+      '保持安全距离≥2米，语言安抚为主，不单独近身',
+      '盾牌在前，抓捕手侧翼，一人外围警戒',
+      '抓住嫌疑人松懈瞬间，三人同时行动，一招制敌',
+      '全程录像，事后及时向指挥中心报告处置结果'
+    ]
+  },
+  {
+    date: '2026-06-30',
+    title: '「可疑车辆盘查」',
+    body: '下午15时，巡逻组发现一辆无牌面包车停在小学门口，车内两人形迹可疑。民警按照战术站位分工：1号位上前询问驾驶员，2号位在副驾侧警戒观察，3号位在车后3米外围监控。发现车内有多部未拆封手机后，1号位示意2号位呼叫增援，同时继续以"查违章"为由稳住对方。增援到场后，将两人带离车辆分别盘问，确认系盗窃手机嫌疑人。',
+    tips: [
+      '车辆盘查必须三人以上，保持战术站位',
+      '一人询问、一人警戒、一人外围监控，分工明确',
+      '发现可疑物品不要当场质问，先稳住对方等增援',
+      '核身时让被盘查人双手放在可见位置',
+      '增援到达前不贸然采取强制措施'
+    ]
+  },
+  {
+    date: '2026-07-01',
+    title: '「家庭暴力警情」',
+    body: '接110指令，某小区发生家暴。民警到场后，先将被殴打的妻子与丈夫物理分离——妻子由一名民警带至厨房安抚，丈夫由另外两名民警控制在客厅。经了解，丈夫酒后因琐事动手。民警现场拍照固定伤情，告知丈夫其行为已涉嫌违法，口头传唤至派出所。同时告知妻子申请保护令的权利和流程，并留下社区民警联系方式。',
+    tips: [
+      '第一步永远是物理隔离，保护受害人安全',
+      '分开询问双方，避免现场对质激化情绪',
+      '现场拍照固定证据，记录伤情和现场状况',
+      '明确告知施暴方法律后果，态度坚决不调和',
+      '告知受害人救济途径，做好后续跟踪回访'
+    ]
+  }
+];
+
+var currentCase = 0;
+
+function renderDaily() {
+  var c = dailyCases[currentCase];
+  var tipsHtml = c.tips.map(function(t) { return '<li>' + t + '</li>'; }).join('');
+  var prevDisabled = currentCase === 0 ? ' disabled' : '';
+  var nextDisabled = currentCase === dailyCases.length - 1 ? ' disabled' : '';
+
+  document.getElementById('dailyCard').innerHTML =
+    '<div class="daily-header">' +
+      '<span class="daily-label">📖 每日一学</span>' +
+      '<span class="daily-date">' + c.date + '</span>' +
+    '</div>' +
+    '<div class="daily-case-title">' + c.title + '</div>' +
+    '<div class="daily-case-body">' + c.body + '</div>' +
+    '<div class="daily-tips">' +
+      '<div class="tips-title">💡 处置要点</div>' +
+      '<ul>' + tipsHtml + '</ul>' +
+    '</div>' +
+    '<div class="daily-nav">' +
+      '<button onclick="prevCase()"' + prevDisabled + '>← 上一条</button>' +
+      '<span class="daily-counter">' + (currentCase + 1) + ' / ' + dailyCases.length + '</span>' +
+      '<button onclick="nextCase()"' + nextDisabled + '>下一条 →</button>' +
+    '</div>';
+}
+
+function prevCase() {
+  if (currentCase > 0) { currentCase--; renderDaily(); }
+}
+function nextCase() {
+  if (currentCase < dailyCases.length - 1) { currentCase++; renderDaily(); }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  renderDaily();
+});
+</script>
+
 </body>
 </html>

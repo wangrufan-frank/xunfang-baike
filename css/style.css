@@ -466,43 +466,113 @@ a:hover { text-decoration: underline; }
   background: var(--bg);
 }
 
-/* === 常用速查 === */
-.quick-section {
+/* === 每日一学 === */
+.daily-section {
   max-width: var(--max-width);
   margin: 0 auto 40px;
   padding: 0 16px;
 }
 
-.quick-section-title {
-  font-size: 15px;
-  font-weight: bold;
-  color: var(--text-secondary);
-  margin-bottom: 12px;
-  padding-bottom: 6px;
+.daily-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-red);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  box-shadow: var(--shadow);
+}
+
+.daily-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
 
-.quick-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.daily-header .daily-label {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--accent-red);
 }
 
-.quick-link {
-  display: inline-block;
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  padding: 6px 14px;
+.daily-header .daily-date {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.daily-case-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.daily-case-body {
+  font-size: 14px;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.daily-tips {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-bottom: 16px;
+}
+
+.daily-tips .tips-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.daily-tips ul {
+  list-style: none;
+  padding: 0;
+}
+
+.daily-tips li {
   font-size: 13px;
   color: var(--text-secondary);
-  text-decoration: none;
-  transition: border-color 0.15s, transform 0.15s;
-  white-space: nowrap;
+  line-height: 1.8;
+  padding-left: 12px;
+  position: relative;
 }
 
-.quick-link:hover {
-  border-color: var(--accent-red);
-  transform: translateY(-1px);
-  text-decoration: none;
+.daily-tips li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: var(--accent-red);
+}
+
+.daily-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.daily-nav button {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 14px;
+  font-size: 13px;
+  color: var(--accent-blue);
+  cursor: pointer;
+}
+
+.daily-nav button:hover {
+  background: var(--bg);
+  border-color: var(--accent-blue);
+}
+
+.daily-nav .daily-counter {
+  color: var(--text-muted);
 }
