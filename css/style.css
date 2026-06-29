@@ -17,7 +17,7 @@
   --border: #d6cec4;
   --shadow: 0 1px 3px rgba(0,0,0,0.08);
   --radius: 4px;
-  --max-width: 960px;
+  --max-width: 1200px;
 }
 
 body {
@@ -118,10 +118,10 @@ a:hover { text-decoration: underline; }
 .card-grid {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 16px 40px;
+  padding: 0 16px 24px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 16px;
 }
 
 @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -131,30 +131,39 @@ a:hover { text-decoration: underline; }
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 18px 12px;
+  padding: 28px 20px 22px;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.15s;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
 }
 
 .module-card:hover { transform: translateY(-2px); }
 
-.module-card .icon { font-size: 32px; margin-bottom: 8px; }
-.module-card .name { font-weight: bold; font-size: 15px; margin-bottom: 4px; }
-.module-card .desc { color: var(--text-muted); font-size: 12px; }
+.module-card .icon { font-size: 42px; margin-bottom: 10px; line-height: 1; }
+.module-card .name { font-weight: bold; font-size: 16px; margin-bottom: 6px; color: var(--text); }
+.module-card .desc { color: var(--text-secondary); font-size: 13px; margin-bottom: 4px; }
 
 .module-card .count {
-  font-size: 11px;
+  font-size: 12px;
   color: var(--text-muted);
-  margin-bottom: 2px;
+  margin-bottom: 6px;
+  background: var(--bg);
+  padding: 2px 10px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .module-card .hot-links {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--text-muted);
-  margin-top: 6px;
-  line-height: 1.5;
+  margin-top: 8px;
+  line-height: 1.7;
 }
 
 .module-card.accent-red    { border-top: 3px solid var(--accent-red); }
@@ -455,4 +464,45 @@ a:hover { text-decoration: underline; }
 
 .expand-btn:hover {
   background: var(--bg);
+}
+
+/* === 常用速查 === */
+.quick-section {
+  max-width: var(--max-width);
+  margin: 0 auto 40px;
+  padding: 0 16px;
+}
+
+.quick-section-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.quick-link {
+  display: inline-block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: border-color 0.15s, transform 0.15s;
+  white-space: nowrap;
+}
+
+.quick-link:hover {
+  border-color: var(--accent-red);
+  transform: translateY(-1px);
+  text-decoration: none;
 }
