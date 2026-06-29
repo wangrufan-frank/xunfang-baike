@@ -1,18 +1,3 @@
-// ── 认证守卫 ──
-(function(){
-  var COOKIE = 'xunfang_auth';
-  var VALID = 'f774779300ad6e9cfe4a14160c4b7ddb1b7b3efbdc3a66c706627b821367a53e';
-  var isAuthPage = location.pathname.endsWith('/auth.html') || location.pathname === '/auth.html';
-  if (isAuthPage) return;
-  var val = document.cookie.split('; ').reduce(function(acc, c) {
-    var kv = c.split('='); acc[kv[0]] = kv.slice(1).join('='); return acc;
-  }, {})[COOKIE];
-  if (val !== VALID) {
-    var redir = encodeURIComponent(location.pathname.replace(/^.*[\\\/]/, '') + location.search);
-    location.replace('auth.html?redirect=' + redir);
-  }
-})();
-
 // js/main.js
 document.addEventListener('DOMContentLoaded', function() {
   // 汉堡菜单切换（使用事件委托，因为 nav 是 JS 动态注入的）
