@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/auth/auth",
     "pages/index/index",
     "pages/zhuangbei/index/index",
     "pages/zhuangbei/detail/detail",
