@@ -23,8 +23,8 @@
     "backgroundColor": "#ffffff",
     "borderStyle": "black",
     "list": [
+      { "pagePath": "pages/index/index", "text": "首页" },
       { "pagePath": "pages/zhuangbei/index/index", "text": "装备" },
-      { "pagePath": "pages/qinwu/index/index", "text": "勤务" },
       { "pagePath": "pages/xunlian/index/index", "text": "训练" },
       { "pagePath": "pages/jingqing/index/index", "text": "警情" },
       { "pagePath": "pages/more/more", "text": "更多" }
