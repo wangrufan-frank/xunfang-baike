@@ -1,0 +1,10 @@
+<view class="page">
+  <view class="card">
+    <view class="icon">🔒</view>
+    <view class="title">巡防百科</view>
+    <view class="subtitle">请输入访问密码</view>
+    <input class="pwd-input" type="password" placeholder="●●●●●●" maxlength="20" focus bindinput="onInput" value="{{pwd}}"/>
+    <button class="btn" bindtap="onSubmit">确认</button>
+    <view class="error">{{error}}</view>
+  </view>
+</view>
