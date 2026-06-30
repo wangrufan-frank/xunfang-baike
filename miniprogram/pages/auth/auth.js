@@ -34,6 +34,12 @@ function sha256(str) {
 
 Page({
   data: { pwd: '', error: '' },
+  onLoad() {
+    var VALID = 'c252bf49e6766b2ea0f46d6ec62f6588a12ee942d363f17cfe4785d0cc75d5fb';
+    if (wx.getStorageSync('xunfang_auth') === VALID) {
+      wx.switchTab({ url: '/pages/zhuangbei/index/index' });
+    }
+  },
   onInput(e) { this.setData({ pwd: e.detail.value, error: '' }); },
   onSubmit() {
     var VALID = 'c252bf49e6766b2ea0f46d6ec62f6588a12ee942d363f17cfe4785d0cc75d5fb';
