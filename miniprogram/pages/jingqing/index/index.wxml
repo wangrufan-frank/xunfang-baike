@@ -1,0 +1,25 @@
+<view class="search-bar">
+  <input placeholder="🔍  搜索警情..." bindinput="onSearch"/>
+</view>
+
+<view class="page-container list-page">
+  <view class="page-title">
+    <view class="h1">🚨 警情处置</view>
+    <view class="meta">
+      <view class="tag">8篇</view>
+      <view class="tag">预计阅读：28分钟</view>
+      <view class="tag">常见街面警情</view>
+      <view class="tag">分步处置流程</view>
+    </view>
+  </view>
+
+  <view wx:for="{{sections}}" wx:key="*this">
+    <view class="list-section-title">{{item.name}}</view>
+    <navigator wx:for="{{item.items}}" wx:key="id"
+      url="/pages/jingqing/detail/detail?id={{item.id}}"
+      class="list-item">
+      <view class="item-title">{{item.icon}} {{item.title}}</view>
+      <view class="item-desc">{{item.desc}}</view>
+    </navigator>
+  </view>
+</view>
