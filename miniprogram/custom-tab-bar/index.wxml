@@ -1,0 +1,22 @@
+<view class="tab-bar">
+  <view class="tab-item {{selected === 0 ? 'active' : ''}}" data-index="0" data-path="/pages/index/index" bindtap="switchTab">
+    <view class="tab-icon">🏠</view>
+    <view class="tab-text">首页</view>
+  </view>
+  <view class="tab-item {{selected === 1 ? 'active' : ''}}" data-index="1" data-path="/pages/zhuangbei/index/index" bindtap="switchTab">
+    <view class="tab-icon">🛡️</view>
+    <view class="tab-text">装备</view>
+  </view>
+  <view class="tab-item {{selected === 2 ? 'active' : ''}}" data-index="2" data-path="/pages/xunlian/index/index" bindtap="switchTab">
+    <view class="tab-icon">⚔️</view>
+    <view class="tab-text">训练</view>
+  </view>
+  <view class="tab-item {{selected === 3 ? 'active' : ''}}" data-index="3" data-path="/pages/jingqing/index/index" bindtap="switchTab">
+    <view class="tab-icon">🚨</view>
+    <view class="tab-text">警情</view>
+  </view>
+  <view class="tab-item {{selected === 4 ? 'active' : ''}}" data-index="4" data-path="/pages/more/more" bindtap="switchTab">
+    <view class="tab-icon">⋯</view>
+    <view class="tab-text">更多</view>
+  </view>
+</view>

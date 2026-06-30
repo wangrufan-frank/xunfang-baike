@@ -2,6 +2,11 @@ var articles = require('../../../data/jingqing.js');
 
 Page({
   data: { sections: [], allItems: [] },
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 3 });
+    }
+  },
   onLoad() {
     var sections = [];
     var seen = {};

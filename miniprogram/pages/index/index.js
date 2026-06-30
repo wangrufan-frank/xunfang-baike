@@ -41,6 +41,11 @@ Page({
     dailyIdx: 0,
     dailyTotal: dailyCases.length
   },
+  onShow() {
+    if (typeof this.getTabBar === 'function' && this.getTabBar()) {
+      this.getTabBar().setData({ selected: 0 });
+    }
+  },
   onSearch(e) {
     var q = e.detail.value.toLowerCase().trim();
     if (!q) {
