@@ -1,35 +1,9 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/zhuangbei/index/index",
-    "pages/zhuangbei/detail/detail",
-    "pages/jingqing/index/index",
-    "pages/jingqing/detail/detail",
-    "pages/qinwu/index/index",
-    "pages/xunlian/index/index",
-    "pages/more/more",
-    "pages/fagui/index/index",
-    "pages/zoufang/index/index"
+    "pages/index/index"
   ],
   "window": {
-    "navigationBarTitleText": "巡防百科",
-    "navigationBarBackgroundColor": "#2c3e50",
-    "navigationBarTextStyle": "white",
-    "backgroundColor": "#f5f0e8"
+    "navigationBarTitleText": "巡防百科"
   },
-  "tabBar": {
-    "color": "#8d6e63",
-    "selectedColor": "#c0392b",
-    "backgroundColor": "#ffffff",
-    "borderStyle": "black",
-    "list": [
-      { "pagePath": "pages/zhuangbei/index/index", "text": "装备" },
-      { "pagePath": "pages/qinwu/index/index", "text": "勤务" },
-      { "pagePath": "pages/xunlian/index/index", "text": "训练" },
-      { "pagePath": "pages/jingqing/index/index", "text": "警情" },
-      { "pagePath": "pages/more/more", "text": "更多" }
-    ]
-  },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
