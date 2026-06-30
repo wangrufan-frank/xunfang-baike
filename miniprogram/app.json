@@ -8,7 +8,9 @@
     "pages/jingqing/detail/detail",
     "pages/qinwu/index/index",
     "pages/xunlian/index/index",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/fagui/index/index",
+    "pages/zoufang/index/index"
   ],
   "window": {
     "navigationBarTitleText": "巡防百科",

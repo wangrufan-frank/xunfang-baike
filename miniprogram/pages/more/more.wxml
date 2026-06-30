@@ -1,0 +1,18 @@
+<view class="page-container">
+  <view class="page-title">
+    <view class="h1">📂 更多内容</view>
+  </view>
+
+  <navigator url="/pages/fagui/index/index" class="list-item">
+    <view class="item-title">📕 法条规范</view>
+    <view class="item-desc">执法依据速查 · 6篇</view>
+  </navigator>
+  <navigator url="/pages/zoufang/index/index" class="list-item">
+    <view class="item-title">🏫 走访送教</view>
+    <view class="item-desc">校园社区送教服务 · 6篇</view>
+  </navigator>
+
+  <view style="margin-top:32px; text-align:center; font-size:13px; color:var(--text-muted);">
+    🛡️ 巡防百科 — 常州巡特警
+  </view>
+</view>
