@@ -6,14 +6,22 @@
     "pages/jingqing/index/index",
     "pages/jingqing/detail/detail",
     "pages/qinwu/index/index",
+    "pages/qinwu/detail/detail",
     "pages/xunlian/index/index",
+    "pages/xunlian/detail/detail",
     "pages/more/more",
     "pages/fagui/index/index",
-    "pages/zoufang/index/index"
+    "pages/fagui/detail/detail",
+    "pages/zoufang/index/index",
+    "pages/zoufang/detail/detail"
   ],
+  "usingComponents": {
+    "nav-bar": "/components/nav-bar/nav-bar"
+  },
   "window": {
+    "navigationStyle": "custom",
     "navigationBarTitleText": "巡防百科",
-    "navigationBarBackgroundColor": "#2c3e50",
+    "navigationBarBackgroundColor": "#5d4037",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#f5f0e8"
   },

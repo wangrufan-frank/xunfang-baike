@@ -1,0 +1,63 @@
+<nav-bar/>
+<view class="breadcrumb">
+  <navigator url="/pages/index/index" open-type="switchTab" class="link">首页</navigator>
+  <text> > </text>
+  <navigator url="/pages/zoufang/index/index" class="link">走访送教</navigator>
+  <text> > </text>
+  <text class="current">{{article.title}}</text>
+</view>
+
+<view class="page-container">
+  <view class="page-title">
+    <view class="h1">{{article.icon}} {{article.title}}</view>
+    <view class="meta">
+      <view class="tag risk-high" wx:for="{{article.tags}}" wx:key="*this">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="quick-card" wx:if="{{article.quickCard}}">
+    <view class="quick-icon">{{article.icon}}</view>
+    <view class="quick-body">
+      <view class="h2">{{article.quickCard.title}}</view>
+      <view class="quick-tags">
+        <view class="tag risk-high" wx:for="{{article.quickCard.tags}}" wx:key="*this">{{item}}</view>
+      </view>
+      <view class="quick-flow">{{article.quickCard.flow}}</view>
+    </view>
+  </view>
+
+  <view wx:for="{{article.steps}}" wx:key="num">
+    <view class="step-card {{item.color}}">
+      <view class="step-header">
+        <view class="step-num">{{item.num}}</view>
+        <view class="step-title">{{item.title}}</view>
+      </view>
+      <view class="step-lead">{{item.lead}}</view>
+      <view class="step-media" wx:if="{{item.media}}">
+        <image wx:if="{{item.media.src && (item.media.type === 'image' || item.media.type === 'img')}}" src="{{item.media.src}}" mode="widthFix" style="width:100%"/>
+        <video wx:if="{{item.media.src && item.media.type === 'video'}}" src="{{item.media.src}}" controls style="width:100%"/>
+        <view class="step-media-label">{{item.media.label}}</view>
+      </view>
+      <view wx:if="{{item.expandable}}">
+        <view class="expandable-full {{item._expanded ? 'open' : ''}}">
+          <view class="step-text">
+            <view class="p" wx:for="{{item._contentLines}}" wx:key="*this">{{item}}</view>
+          </view>
+        </view>
+        <view class="expand-btn" data-index="{{index}}" bindtap="onExpand">{{item._expanded ? '▸ 收起' : '▸ ' + item._expandLabel}}</view>
+      </view>
+      <view wx:else>
+        <view class="step-text">
+          <view class="p" wx:for="{{item._contentLines}}" wx:key="*this">{{item}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="page-nav">
+    <navigator wx:if="{{article.prevId}}" url="/pages/zoufang/detail/detail?id={{article.prevId}}" class="link">← {{prevTitle}}</navigator>
+    <view wx:else></view>
+    <navigator wx:if="{{article.nextId}}" url="/pages/zoufang/detail/detail?id={{article.nextId}}" class="link">{{nextTitle}} →</navigator>
+    <view wx:else></view>
+  </view>
+</view>

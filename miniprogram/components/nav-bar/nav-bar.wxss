@@ -1,0 +1,14 @@
+.nav-bar {
+  background-color: #162d4a;
+}
+.nav-bar-inner {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar-title {
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+}

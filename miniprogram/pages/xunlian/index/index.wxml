@@ -1,4 +1,24 @@
-<view class="placeholder-page">
-  <view class="icon">⚔️</view>
-  <view class="text">警务训练 — 即将上线</view>
+<nav-bar/>
+<view class="search-bar">
+  <input placeholder="🔍  搜索训练..." bindinput="onSearch"/>
+</view>
+
+<view class="page-container list-page">
+  <view class="page-title">
+    <view class="h1">⚔️ 警务训练</view>
+    <view class="meta">
+      <view class="tag">19篇</view>
+      <view class="tag">徒手 · 警械 · 战术 · 快反</view>
+    </view>
+  </view>
+
+  <view wx:for="{{sections}}" wx:key="*this">
+    <view class="list-section-title">{{item.name}}</view>
+    <navigator wx:for="{{item.items}}" wx:key="id"
+      url="/pages/xunlian/detail/detail?id={{item.id}}"
+      class="list-item">
+      <view class="item-title">{{item.icon}} {{item.title}}</view>
+      <view class="item-desc">{{item.desc}}</view>
+    </navigator>
+  </view>
 </view>

@@ -1,8 +1,9 @@
+<nav-bar/>
 <view class="breadcrumb">
-  <navigator url="/pages/index/index" class="link">首页</navigator>
-  <text> &gt; </text>
-  <navigator url="/pages/jingqing/index/index" class="link">警情处置</navigator>
-  <text> &gt; </text>
+  <navigator url="/pages/index/index" open-type="switchTab" class="link">首页</navigator>
+  <text> > </text>
+  <navigator url="/pages/jingqing/index/index" open-type="switchTab" class="link">警情处置</navigator>
+  <text> > </text>
   <text class="current">{{article.title}}</text>
 </view>
 
@@ -32,7 +33,11 @@
         <view class="step-title">{{item.title}}</view>
       </view>
       <view class="step-lead">{{item.lead}}</view>
-      <view class="step-media" wx:if="{{item.media}}">{{item.media.label}}</view>
+      <view class="step-media" wx:if="{{item.media}}">
+        <image wx:if="{{item.media.src && (item.media.type === 'image' || item.media.type === 'img')}}" src="{{item.media.src}}" mode="widthFix" style="width:100%"/>
+        <video wx:if="{{item.media.src && item.media.type === 'video'}}" src="{{item.media.src}}" controls style="width:100%"/>
+        <view class="step-media-label">{{item.media.label}}</view>
+      </view>
       <view wx:if="{{item.expandable}}">
         <view class="expandable-full {{item._expanded ? 'open' : ''}}">
           <view class="step-text">

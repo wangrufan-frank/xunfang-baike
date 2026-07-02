@@ -1,3 +1,4 @@
+<nav-bar/>
 <view class="search-bar">
   <input placeholder="🔍  搜索装备..." bindinput="onSearch"/>
 </view>
