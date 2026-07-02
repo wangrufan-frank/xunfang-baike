@@ -440,6 +440,21 @@ a:hover { text-decoration: underline; }
   margin-top: 4px;
 }
 
+/* 多图并排布局 */
+.step-media.col2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.step-media.col3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.step-media.col2 img,
+.step-media.col2 video,
+.step-media.col3 img,
+.step-media.col3 video { width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3; }
+@media (max-width: 768px) {
+  .step-media.col3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 500px) {
+  .step-media.col2,
+  .step-media.col3 { grid-template-columns: 1fr; }
+}
+
 /* === 折叠组件 === */
 .expandable-full {
   display: none;
