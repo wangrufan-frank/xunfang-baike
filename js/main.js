@@ -3,7 +3,7 @@
 // ── 认证守卫 ──
 (function(){
   var COOKIE = 'xunfang_auth';
-  var VALID = 'c252bf49e6766b2ea0f46d6ec62f6588a12ee942d363f17cfe4785d0cc75d5fb';
+  var VALID = 'f774779300ad6e9cfe4a14160c4b7ddb1b7b3efbdc3a66c706627b821367a53e';
   var isAuthPage = location.pathname.endsWith('/auth.html') || location.pathname === '/auth.html';
   if (isAuthPage) return;
   var val = document.cookie.split('; ').reduce(function(acc, c) {
