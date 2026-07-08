@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#2c3e50"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a843"/>
+      <stop offset="100%" stop-color="#f0d060"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="400" fill="url(#bg)"/>
+
+  <!-- 装饰圆环 -->
+  <circle cx="650" cy="80" r="180" fill="none" stroke="rgba(212,168,67,0.06)" stroke-width="1"/>
+  <circle cx="650" cy="80" r="130" fill="none" stroke="rgba(212,168,67,0.08)" stroke-width="1"/>
+  <circle cx="650" cy="80" r="80" fill="none" stroke="rgba(212,168,67,0.10)" stroke-width="1"/>
+
+  <!-- 四等级风险条 -->
+  <rect x="60" y="280" width="150" height="8" rx="4" fill="#27ae60" opacity="0.8"/>
+  <rect x="220" y="280" width="150" height="8" rx="4" fill="#f39c12" opacity="0.8"/>
+  <rect x="380" y="280" width="150" height="8" rx="4" fill="#e74c3c" opacity="0.8"/>
+  <rect x="540" y="280" width="150" height="8" rx="4" fill="#8b0000" opacity="0.8"/>
+
+  <!-- 风险等级标签 -->
+  <text x="135" y="310" text-anchor="middle" fill="#27ae60" font-size="11" font-family="sans-serif">一级 · 低风险</text>
+  <text x="295" y="310" text-anchor="middle" fill="#f39c12" font-size="11" font-family="sans-serif">二级 · 中风险</text>
+  <text x="455" y="310" text-anchor="middle" fill="#e74c3c" font-size="11" font-family="sans-serif">三级 · 较高风险</text>
+  <text x="615" y="310" text-anchor="middle" fill="#c0392b" font-size="11" font-family="sans-serif">四级 · 高风险</text>
+
+  <!-- 盾牌图标 -->
+  <g transform="translate(400, 95)">
+    <path d="M0,-45 L40,-30 L40,5 C40,25 20,40 0,48 C-20,40 -40,25 -40,5 L-40,-30 Z"
+          fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.6"/>
+    <text x="0" y="8" text-anchor="middle" fill="url(#gold)" font-size="24" font-family="sans-serif" opacity="0.7">&#x2B50;</text>
+  </g>
+
+  <!-- 主标题 -->
+  <text x="400" y="180" text-anchor="middle" fill="url(#gold)" font-size="28" font-weight="bold" font-family="sans-serif" letter-spacing="3">执法现场风险评估</text>
+  <text x="400" y="215" text-anchor="middle" fill="#d4a843" font-size="22" font-weight="bold" font-family="sans-serif" letter-spacing="3">等级划分</text>
+
+  <!-- 副标题 -->
+  <text x="400" y="250" text-anchor="middle" fill="#888" font-size="13" font-family="sans-serif">装备 · 警力 · 战术 · 武力 四位一体</text>
+
+  <!-- 顶部标签 -->
+  <text x="50" y="40" fill="#d4a843" font-size="11" font-family="sans-serif" letter-spacing="2" opacity="0.7">2026 / 07</text>
+  <text x="750" y="40" text-anchor="end" fill="#d4a843" font-size="11" font-family="sans-serif" letter-spacing="2" opacity="0.7">巡防百科 · 每月一学</text>
+
+  <!-- 底部金线 -->
+  <line x1="200" y1="360" x2="600" y2="360" stroke="url(#gold)" stroke-width="0.5" opacity="0.4"/>
+  <text x="400" y="385" text-anchor="middle" fill="#666" font-size="10" font-family="sans-serif" opacity="0.5">每一位民警都应当平安工作到退休</text>
+</svg>
