@@ -58,11 +58,6 @@
     <p><strong>（四）四种常见抗拒情形的应对。</strong>①对方索要执法证件：规范着装、佩戴标志即视为正在执行职务，但仍应出示警察证（不交予对方查验）；②质疑证件效力拒不配合：依法告知 → 口头警告 → 传唤带离；③查验身份证时不配合：依法告知 → 排疑放行 → 口头警告 → 传唤带离；④未携带身份证件：当场盘问姓名、年龄、住址等信息，必要时报告指挥中心协查，拒不提供且不能排除嫌疑的依法带回继续盘问。</p>
   </div>
 
-  <div class="magazine-refs" id="magazineRefs">
-    <h3>参考资料</h3>
-    <p style="color:var(--text-muted);font-size:13px;">本期内容整合自以下 Obsidian 知识库笔记。</p>
-  </div>
-
   <div class="magazine-archive">
     <h3>往期精选</h3>
     <div class="archive-grid" id="archiveGrid"></div>
@@ -93,17 +88,6 @@
     cover.innerHTML = '<img src="../' + article.image + '" alt="' + article.theme + '" loading="lazy">';
   } else {
     cover.innerHTML = '<div class="cover-placeholder">⭐</div>';
-  }
-
-  // 渲染参考资料
-  if (article.tags && article.tags.length) {
-    var refsDiv = document.getElementById('magazineRefs');
-    var tagHtml = article.tags.map(function(t) {
-      return '<span class="tag" style="margin-right:6px;">' + t + '</span>';
-    }).join('');
-    refsDiv.innerHTML = '<h3>参考资料</h3>' +
-      '<p style="color:var(--text-muted);font-size:13px;">本期内容整合自 Obsidian 知识库警务技能笔记。</p>' +
-      '<div style="margin-top:8px;">' + tagHtml + '</div>';
   }
 
   // 渲染往期精选（排除当前月份）
