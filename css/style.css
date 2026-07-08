@@ -8,6 +8,7 @@
   --text-secondary: #5d4037;
   --text-muted: #8d6e63;
   --nav-bg: #2c3e50;
+  --police-blue: #1a3a5c;
   --nav-text: #ecf0f1;
   --accent-red: #c0392b;
   --accent-orange: #e67e22;
@@ -609,7 +610,7 @@ a:hover { text-decoration: underline; }
 }
 
 .monthly-hero-inner {
-  background: var(--nav-bg);
+  background: var(--police-blue);
   border-radius: 8px;
   padding: 32px 36px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -747,7 +748,7 @@ a:hover { text-decoration: underline; }
 .magazine-cover .cover-placeholder {
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, var(--nav-bg) 0%, #34495e 100%);
+  background: linear-gradient(135deg, var(--police-blue) 0%, #2c5a8a 100%);
   border-radius: 6px;
   display: flex;
   align-items: center;
