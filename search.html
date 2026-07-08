@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>搜索结果 — 巡防百科</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="search-page">
+  <div class="search-header">
+    <div class="search-query">搜索：<strong id="query-text"></strong></div>
+    <div class="search-count" id="result-count"></div>
+  </div>
+  <div id="result-list"></div>
+  <a href="index.html" class="back-link">← 返回首页</a>
+</div>
+
+<script src="js/nav.js"></script>
+<script>
+(function() {
+  // 解析 URL 参数
+  function getParam(name) {
+    var m = window.location.search.match(new RegExp('[?&]' + name + '=([^&]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+
+  var query = getParam('q').trim();
+  if (!query) {
+    window.location.href = 'index.html';
+    return;
+  }
+
+  document.getElementById('query-text').textContent = query;
+  document.title = query + ' — 搜索结果 — 巡防百科';
+
+  var queryLower = query.toLowerCase();
+
+  function matchScore(item) {
+    var score = 0;
+    if (item.title.toLowerCase().indexOf(queryLower) !== -1) score += 5;
+    if (item.desc.toLowerCase().indexOf(queryLower) !== -1) score += 1;
+    if (item.tags) {
+      for (var i = 0; i < item.tags.length; i++) {
+        if (item.tags[i].toLowerCase().indexOf(queryLower) !== -1) { score += 3; break; }
+      }
+    }
+    if (item.keywords) {
+      for (var i = 0; i < item.keywords.length; i++) {
+        if (item.keywords[i].toLowerCase().indexOf(queryLower) !== -1) { score += 3; }
+      }
+    }
+    return score;
+  }
+
+  function escapeHtml(str) {
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  function highlight(text) {
+    if (!queryLower) return escapeHtml(text);
+    var escaped = escapeHtml(text);
+    var idx = escaped.toLowerCase().indexOf(queryLower);
+    if (idx === -1) return escaped;
+    return escaped.substring(0, idx) +
+      '<span class="search-highlight">' + escaped.substring(idx, idx + queryLower.length) + '</span>' +
+      escaped.substring(idx + queryLower.length);
+  }
+
+  function render(articles) {
+    var scored = [];
+    for (var i = 0; i < articles.length; i++) {
+      var s = matchScore(articles[i]);
+      if (s > 0) scored.push({ item: articles[i], score: s });
+    }
+    scored.sort(function(a, b) { return b.score - a.score; });
+
+    document.getElementById('result-count').textContent = '共找到 ' + scored.length + ' 条结果';
+
+    var listEl = document.getElementById('result-list');
+    if (scored.length === 0) {
+      listEl.innerHTML =
+        '<div class="search-empty">未找到与「' + escapeHtml(query) + '」相关的内容' +
+        '<div class="empty-hint">试试其他关键词，如"警棍""盘查""持刀""武力升级"</div>' +
+        '</div>';
+      return;
+    }
+
+    var html = '';
+    for (var i = 0; i < scored.length; i++) {
+      var item = scored[i].item;
+      html +=
+        '<a href="' + item.path + '" class="result-card">' +
+          '<div class="card-title">' + highlight(item.title) + '</div>' +
+          '<div class="card-module">' + escapeHtml(item.module) + '</div>' +
+          '<div class="card-desc">' + highlight(item.desc) + '</div>' +
+          '<div class="card-tags">' +
+            item.tags.map(function(t) { return '<span class="tag">' + highlight(t) + '</span>'; }).join('') +
+          '</div>' +
+        '</a>';
+    }
+    listEl.innerHTML = html;
+  }
+
+  // 加载索引并渲染
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'search-index.json', true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      try {
+        var data = JSON.parse(xhr.responseText);
+        render(data);
+      } catch(e) {
+        document.getElementById('result-list').innerHTML =
+          '<div class="search-empty">搜索索引加载失败，请稍后重试</div>';
+      }
+    } else {
+      document.getElementById('result-list').innerHTML =
+        '<div class="search-empty">搜索索引加载失败，请稍后重试</div>';
+    }
+  };
+  xhr.onerror = function() {
+    document.getElementById('result-list').innerHTML =
+      '<div class="search-empty">搜索索引加载失败，请稍后重试</div>';
+  };
+  xhr.send();
+})();
+</script>
+
+</body>
+</html>
