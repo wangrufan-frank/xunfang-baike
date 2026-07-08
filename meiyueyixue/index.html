@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>本月精选 — 巡防百科</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="breadcrumb">
+  <a href="../index.html">首页</a> &gt;
+  <span class="current">本月精选</span>
+</div>
+
+<div class="magazine-page">
+  <div class="magazine-header" id="magazineHeader"></div>
+
+  <div class="magazine-cover" id="magazineCover"></div>
+
+  <div class="magazine-body">
+    <!-- 当月文章正文内联在此 -->
+    <h2>一、场景概述</h2>
+    <p>文章内容由 Obsidian 素材整合生成。</p>
+
+    <h2>二、核心要点</h2>
+    <p>待填充。</p>
+
+    <h2>三、经典案例复盘</h2>
+    <p>待填充。</p>
+
+    <h2>四、法规依据速查</h2>
+    <p>待填充。</p>
+
+    <h2>五、实操注意事项</h2>
+    <p>待填充。</p>
+  </div>
+
+  <div class="magazine-refs" id="magazineRefs">
+    <h3>参考资料</h3>
+    <p style="color:var(--text-muted);font-size:13px;">本期内容整合自以下 Obsidian 知识库笔记。</p>
+  </div>
+
+  <div class="magazine-archive">
+    <h3>往期精选</h3>
+    <div class="archive-grid" id="archiveGrid"></div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+(function() {
+  if (typeof monthlyData === 'undefined') return;
+
+  var currentKey = monthlyData.current;
+  var article = monthlyData.articles[currentKey];
+  if (!article) return;
+
+  // 渲染头部
+  var parts = currentKey.split('-');
+  var monthLabel = parts[0] + '年' + parseInt(parts[1]) + '月';
+  document.getElementById('magazineHeader').innerHTML =
+    '<div class="magazine-month">' + monthLabel + '</div>' +
+    '<h1 class="magazine-title">' + article.theme + '</h1>' +
+    '<div class="magazine-subtitle">' + article.summary + '</div>';
+
+  // 渲染封面
+  var cover = document.getElementById('magazineCover');
+  if (article.image) {
+    cover.innerHTML = '<img src="../' + article.image + '" alt="' + article.theme + '" loading="lazy">';
+  } else {
+    cover.innerHTML = '<div class="cover-placeholder">⭐</div>';
+  }
+
+  // 渲染参考资料
+  if (article.tags && article.tags.length) {
+    var refsDiv = document.getElementById('magazineRefs');
+    var tagHtml = article.tags.map(function(t) {
+      return '<span class="tag" style="margin-right:6px;">' + t + '</span>';
+    }).join('');
+    refsDiv.innerHTML = '<h3>参考资料</h3>' +
+      '<p style="color:var(--text-muted);font-size:13px;">本期内容整合自 Obsidian 知识库警务技能笔记。</p>' +
+      '<div style="margin-top:8px;">' + tagHtml + '</div>';
+  }
+
+  // 渲染往期精选（排除当前月份）
+  var archiveKeys = Object.keys(monthlyData.articles)
+    .filter(function(k) { return k !== currentKey; })
+    .sort()
+    .reverse();
+
+  var archiveGrid = document.getElementById('archiveGrid');
+  if (archiveKeys.length === 0) {
+    archiveGrid.innerHTML = '<p style="color:var(--text-muted);font-size:13px;">暂无往期内容，敬请期待。</p>';
+    return;
+  }
+
+  var cardsHtml = archiveKeys.map(function(key) {
+    var a = monthlyData.articles[key];
+    var displayDate = key.split('-').join('年') + '月';
+    return '<a href="' + (a.file || (key + '.html')) + '" class="archive-card">' +
+      '<div class="archive-date">' + displayDate + '</div>' +
+      '<div class="archive-title">' + a.theme + '</div>' +
+      '</a>';
+  }).join('');
+
+  archiveGrid.innerHTML = cardsHtml;
+})();
+</script>
+
+</body>
+</html>
