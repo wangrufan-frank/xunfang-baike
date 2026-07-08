@@ -218,6 +218,15 @@ a:hover { text-decoration: underline; }
   font-size: 11px;
 }
 
+.tag {
+  display: inline-block;
+  background: var(--bg);
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
 .meta .tag.risk-high { color: var(--accent-red); font-weight: bold; }
 .meta .tag.risk-mid  { color: var(--accent-orange); font-weight: bold; }
 

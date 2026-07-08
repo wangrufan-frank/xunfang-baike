@@ -33,7 +33,8 @@
                || path.endsWith('/' + moduleDir);
       }
       var cls = (m.special ? 'monthly-link' : '') + (isActive ? ' active' : '');
-      return '<a href="' + href + '" class="' + cls.trim() + '">'
+      var clsStr = cls.trim();
+      return '<a href="' + href + '"' + (clsStr ? ' class="' + clsStr + '"' : '') + '>'
            + m.emoji + ' ' + m.name + '</a>';
     }).join('');
 
