@@ -6,7 +6,8 @@
     { name: '警务训练', path: 'xunlian/index.html',    emoji: '⚔️' },
     { name: '警情处置', path: 'jingqing/index.html',    emoji: '🚨' },
     { name: '法条规范', path: 'fagui/index.html',       emoji: '📕' },
-    { name: '走访送教', path: 'zoufang/index.html',     emoji: '🏫' }
+    { name: '走访送教', path: 'zoufang/index.html',     emoji: '🏫' },
+    { name: '本月精选', path: 'meiyueyixue/index.html', emoji: '⭐', special: true }
   ];
 
   function renderNav() {
@@ -31,7 +32,8 @@
         isActive = path.indexOf('/' + moduleDir + '/') !== -1
                || path.endsWith('/' + moduleDir);
       }
-      return '<a href="' + href + '"' + (isActive ? ' class="active"' : '') + '>'
+      var cls = (m.special ? 'monthly-link' : '') + (isActive ? ' active' : '');
+      return '<a href="' + href + '" class="' + cls.trim() + '">'
            + m.emoji + ' ' + m.name + '</a>';
     }).join('');
 
