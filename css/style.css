@@ -878,3 +878,185 @@ a:hover { text-decoration: underline; }
   font-weight: bold;
   color: var(--text);
 }
+
+/* === 搜索下拉面板 === */
+.search-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 16px;
+  right: 16px;
+  max-width: calc(var(--max-width) - 32px);
+  margin: 4px auto 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  z-index: 200;
+  max-height: 480px;
+  overflow-y: auto;
+}
+
+.search-dropdown.open {
+  display: block;
+}
+
+.search-result-item {
+  display: block;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--bg);
+  text-decoration: none;
+  transition: background 0.1s;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background: var(--bg);
+  text-decoration: none;
+}
+
+.search-result-item .result-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.search-result-item .result-module {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+}
+
+.search-result-item .result-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.search-highlight {
+  color: var(--accent-red);
+  font-weight: bold;
+}
+
+.search-more {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  color: var(--accent-blue);
+  border-top: 1px solid var(--bg);
+  text-decoration: none;
+}
+
+.search-more:hover {
+  background: var(--bg);
+  text-decoration: none;
+}
+
+.search-empty {
+  text-align: center;
+  padding: 24px 18px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.search-empty .empty-hint {
+  font-size: 12px;
+  margin-top: 6px;
+  color: #bbb;
+}
+
+/* 搜索框下拉时的样式 */
+.search-wrapper {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+/* === 搜索结果全页 === */
+.search-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+.search-page .search-header {
+  padding: 28px 0 20px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 24px;
+}
+
+.search-page .search-query {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.search-page .search-query strong {
+  color: var(--accent-red);
+  font-size: 15px;
+}
+
+.search-page .search-count {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.search-page .result-card {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+
+.search-page .result-card:hover {
+  border-color: var(--accent-red);
+  text-decoration: none;
+}
+
+.search-page .result-card .card-title {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.search-page .result-card .card-module {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.search-page .result-card .card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.search-page .result-card .card-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.search-page .back-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--accent-blue);
+}
