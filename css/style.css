@@ -591,3 +591,280 @@ a:hover { text-decoration: underline; }
 .daily-nav .daily-counter {
   color: var(--text-muted);
 }
+
+/* === 每月一学首页横幅 === */
+.monthly-hero {
+  max-width: var(--max-width);
+  margin: 0 auto 24px;
+  padding: 0 16px;
+}
+
+.monthly-hero-inner {
+  background: var(--nav-bg);
+  border-radius: 8px;
+  padding: 32px 36px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.monthly-hero-inner::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(212,168,67,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.monthly-hero .hero-label {
+  font-size: 12px;
+  color: #d4a843;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.monthly-hero .hero-theme {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.monthly-hero .hero-summary {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.monthly-hero .hero-link {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 8px 20px;
+  background: #d4a843;
+  color: #1a1a2e;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.15s;
+}
+
+.monthly-hero .hero-link:hover {
+  background: #c59a30;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .monthly-hero-inner {
+    padding: 24px 20px;
+  }
+  .monthly-hero .hero-theme {
+    font-size: 20px;
+  }
+}
+
+/* === 导航栏金色入口 === */
+.nav-links a.monthly-link {
+  color: #d4a843 !important;
+  font-weight: 600;
+  border: 1px solid #d4a843;
+  border-radius: 4px;
+  padding: 2px 10px;
+}
+
+.nav-links a.monthly-link:hover {
+  background: rgba(212,168,67,0.15);
+}
+
+.nav-links a.monthly-link.active {
+  background: #d4a843;
+  color: #1a1a2e !important;
+  border-bottom: none;
+}
+
+/* === 杂志内页 === */
+.magazine-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 16px 60px;
+}
+
+.magazine-header {
+  text-align: center;
+  padding: 40px 0 32px;
+}
+
+.magazine-header .magazine-month {
+  font-size: 14px;
+  color: #d4a843;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.magazine-header .magazine-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.magazine-header .magazine-subtitle {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.magazine-cover {
+  margin: 0 auto 36px;
+  max-width: 700px;
+}
+
+.magazine-cover img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.magazine-cover .cover-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--nav-bg) 0%, #34495e 100%);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4a843;
+  font-size: 48px;
+}
+
+.magazine-body {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--text-secondary);
+}
+
+.magazine-body h2 {
+  font-size: 20px;
+  color: var(--text);
+  margin: 36px 0 14px;
+  padding-left: 12px;
+  border-left: 3px solid #d4a843;
+}
+
+.magazine-body h2:first-child {
+  margin-top: 0;
+}
+
+.magazine-body p {
+  margin-bottom: 14px;
+}
+
+.magazine-body ul,
+.magazine-body ol {
+  margin: 8px 0 16px 20px;
+}
+
+.magazine-body li {
+  margin-bottom: 6px;
+}
+
+.magazine-body blockquote {
+  margin: 16px 0;
+  padding: 12px 18px;
+  background: var(--bg);
+  border-left: 3px solid var(--accent-orange);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* 参考资料区 */
+.magazine-refs {
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: var(--bg);
+  border-radius: 6px;
+}
+
+.magazine-refs h3 {
+  font-size: 15px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.magazine-refs a {
+  display: block;
+  font-size: 13px;
+  color: var(--accent-blue);
+  margin-bottom: 4px;
+}
+
+/* 往期精选 */
+.magazine-archive {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 2px solid var(--border);
+}
+
+.magazine-archive h3 {
+  font-size: 16px;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.magazine-archive .archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 600px) {
+  .magazine-archive .archive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .magazine-header .magazine-title {
+    font-size: 22px;
+  }
+  .magazine-body h2 {
+    font-size: 18px;
+  }
+}
+
+.magazine-archive .archive-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s;
+  display: block;
+  text-decoration: none;
+}
+
+.magazine-archive .archive-card:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.magazine-archive .archive-card .archive-date {
+  font-size: 12px;
+  color: #d4a843;
+  margin-bottom: 6px;
+}
+
+.magazine-archive .archive-card .archive-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--text);
+}
