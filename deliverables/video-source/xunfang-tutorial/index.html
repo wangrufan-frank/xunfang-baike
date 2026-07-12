@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN" data-resolution="landscape">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1920, height=1080" />
+  <script src="node_modules/gsap/dist/gsap.min.js"></script>
+  <style>
+    @font-face { font-family:'Microsoft YaHei'; src:local('Microsoft YaHei'); }
+    @font-face { font-family:'PingFang SC'; src:local('PingFang SC'); }
+    :root { --blue:#1a3a5c; --slate:#2c3e50; --paper:#f5f0e8; --gold:#d4a843; --red:#c0392b; --ink:#3e2723; }
+    * { box-sizing:border-box; }
+    html,body { width:1920px; height:1080px; margin:0; overflow:hidden; background:var(--blue); font-family:'Microsoft YaHei','PingFang SC',sans-serif; }
+    #root { position:relative; width:1920px; height:1080px; overflow:hidden; background:var(--blue); }
+    .scene { position:absolute; inset:0; overflow:hidden; }
+    .dark { color:#fff; background:radial-gradient(circle at 65% 35%,#315f87 0,#1a3a5c 45%,#10263c 100%); }
+    .light { color:var(--ink); background:var(--paper); }
+    .grid { position:absolute; inset:0; opacity:.11; background-image:linear-gradient(rgba(255,255,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.35) 1px,transparent 1px); background-size:64px 64px; }
+    .eyebrow { color:var(--gold); font-size:25px; font-weight:800; letter-spacing:5px; }
+    .light .eyebrow { color:#896818; }
+    h1,h2,p { margin:0; }
+    h1 { font-size:82px; line-height:1.16; letter-spacing:2px; }
+    h2 { font-size:68px; line-height:1.2; }
+    .lede { font-size:31px; line-height:1.7; opacity:.86; }
+    .browser { position:absolute; overflow:hidden; border:1px solid rgba(255,255,255,.26); border-radius:22px; background:#fff; box-shadow:0 38px 90px rgba(7,20,33,.32); }
+    .browser.light-frame { border-color:#d9d2c6; }
+    .bar { height:54px; display:flex; align-items:center; gap:12px; padding:0 22px; background:#e9edf0; }
+    .dot { width:13px; height:13px; border-radius:50%; background:#bec6cc; }
+    .address { height:26px; flex:1; margin-left:12px; border-radius:13px; background:#fff; color:#4f5a64; font:16px Consolas,monospace; display:flex; align-items:center; padding:0 16px; }
+    .browser img { width:100%; display:block; }
+    .caption { position:absolute; left:160px; right:160px; bottom:54px; min-height:88px; display:flex; align-items:center; justify-content:center; padding:18px 48px; border-radius:18px; color:#fff; background:rgba(16,38,60,.94); box-shadow:0 12px 34px rgba(0,0,0,.2); font-size:38px; line-height:1.35; text-align:center; }
+    .caption strong { color:#f2cc65; }
+    .step { display:flex; align-items:center; gap:20px; font-size:33px; font-weight:700; }
+    .num { width:58px; height:58px; flex:none; border-radius:50%; display:grid; place-items:center; background:var(--gold); color:#132b43; font:800 27px Consolas,monospace; }
+    .badge { display:inline-flex; align-items:center; min-height:58px; padding:0 25px; border-radius:12px; background:#fff; border-left:7px solid var(--gold); box-shadow:0 10px 24px rgba(36,43,48,.12); font-size:27px; font-weight:700; }
+    .line { height:3px; background:var(--gold); transform-origin:left center; }
+    .s1-copy { position:absolute; left:132px; top:210px; width:650px; z-index:4; }
+    .s1-copy h1 { margin:28px 0 24px; }
+    .s1-browser { left:850px; top:150px; width:910px; height:680px; z-index:3; }
+    .s1-browser img { height:626px; object-fit:cover; object-position:top; }
+    .file-card { position:absolute; width:300px; height:90px; border-radius:15px; background:rgba(245,240,232,.12); border:1px solid rgba(245,240,232,.25); padding:22px; color:#dce7ef; font-size:23px; }
+    .file-card::before { content:'资料'; color:var(--gold); font-weight:800; margin-right:16px; }
+    .f1 { left:58px; top:70px; } .f2 { right:78px; bottom:160px; }
+    .s2-copy { position:absolute; left:120px; top:120px; width:700px; }
+    .modules { position:absolute; left:120px; top:340px; width:700px; display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .module { min-height:98px; padding:24px 28px; border-radius:15px; background:#fff; color:var(--blue); border:1px solid #d8d0c3; box-shadow:0 10px 26px rgba(46,55,62,.1); font-size:29px; font-weight:800; }
+    .module:nth-child(4) { border-left:8px solid var(--red); }
+    .s2-browser { left:940px; top:105px; width:850px; height:790px; }
+    .s2-browser img { height:736px; object-fit:cover; object-position:top; }
+    .s3-steps,.s5-tips { position:absolute; left:120px; top:300px; width:610px; display:flex; flex-direction:column; gap:34px; }
+    .s3-browser,.s5-browser { left:800px; top:115px; width:990px; height:790px; }
+    .s3-browser img,.s5-browser img { height:736px; object-fit:cover; object-position:top; }
+    .s3-title,.s5-title { position:absolute; left:120px; top:110px; }
+    .focus-box { position:absolute; right:72px; width:640px; height:86px; border:5px solid var(--gold); border-radius:12px; opacity:0; }
+    .focus-a { top:310px; } .focus-b { top:430px; } .focus-c { top:550px; }
+    .cursor { position:absolute; right:400px; top:350px; width:38px; height:38px; border-radius:50%; border:5px solid var(--red); box-shadow:0 0 0 14px rgba(192,57,43,.18); z-index:7; }
+    .s4-title { position:absolute; left:120px; top:90px; }
+    .s4-browser { left:120px; top:250px; width:1680px; height:640px; }
+    .s4-browser img { height:586px; object-fit:cover; object-position:top; }
+    .search-focus { position:absolute; left:400px; right:400px; top:205px; height:105px; padding:25px 40px; border-radius:18px; background:#fff; border:4px solid var(--gold); box-shadow:0 22px 50px rgba(26,58,92,.23); font-size:38px; color:var(--blue); z-index:8; }
+    .search-focus::after { content:'搜索'; position:absolute; right:22px; top:20px; padding:12px 24px; border-radius:10px; background:var(--blue); color:#fff; font-size:25px; }
+    .keywords { position:absolute; right:130px; top:104px; display:flex; gap:16px; }
+    .keywords span { padding:12px 20px; border-radius:25px; color:var(--blue); background:#ead8a0; font-size:23px; font-weight:700; }
+    .s5-tips .badge { min-height:92px; font-size:31px; }
+    .media-icons { position:absolute; left:145px; top:690px; display:flex; gap:20px; }
+    .media-icons span { width:98px; height:72px; display:grid; place-items:center; border-radius:14px; background:var(--blue); color:#fff; font-size:25px; }
+    .s6-home { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.12; filter:blur(5px); }
+    .s6-content { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; padding-top:140px; }
+    .s6-content h2 { margin:18px 0 68px; }
+    .path { display:flex; align-items:center; gap:26px; }
+    .path-card { width:360px; min-height:150px; padding:32px; border-radius:18px; background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.24); font-size:31px; font-weight:800; text-align:center; }
+    .path-card .num { margin:0 auto 18px; }
+    .path-line { width:100px; height:3px; background:var(--gold); transform-origin:left; }
+    .url { margin-top:65px; color:#fff; font:800 54px Consolas,monospace; letter-spacing:2px; }
+    .tagline { margin-top:24px; color:#d9e4ec; font-size:29px; }
+  </style>
+</head>
+<body>
+<div id="root" data-composition-id="xunfang-tutorial" data-start="0" data-duration="135.069" data-width="1920" data-height="1080">
+  <audio id="narration" class="clip" src="narration.wav" data-start="0" data-duration="135.069" data-track-index="20"></audio>
+
+  <section id="scene1" class="scene clip dark" data-start="0" data-duration="19.164" data-track-index="1">
+    <div class="grid"></div><div class="file-card f1">制度文件与课件</div><div class="file-card f2">工作要点与流程</div>
+    <div class="s1-copy"><div class="eyebrow">巡防百科 · 网站使用讲解</div><h1>一个入口<br><span style="color:var(--gold)">快速查询</span></h1><p class="lede">把常用警务知识汇集到统一入口，方便查找、使用和持续更新。</p></div>
+    <div class="browser s1-browser"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div class="address">www.xunfangbk.cn</div></div><img src="capture/screenshots/scroll-000.png" alt="巡防百科首页" /></div>
+    <div class="caption">常用警务知识，集中到<strong>一个统一入口</strong></div>
+  </section>
+
+  <section id="scene2" class="scene clip light" data-start="19.164" data-duration="22.636" data-track-index="2">
+    <div class="s2-copy"><div class="eyebrow">01 · 选择模块</div><h2>六大业务模块</h2></div>
+    <div class="modules"><div class="module">装备介绍</div><div class="module">巡防勤务</div><div class="module">警务训练</div><div class="module">警情处置</div><div class="module">法条规范</div><div class="module">走访送教</div></div>
+    <div class="browser light-frame s2-browser"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div class="address">巡防百科首页</div></div><img src="capture/screenshots/scroll-000.png" alt="网站六大模块" /></div>
+    <div class="caption">知道内容类别时，直接点击<strong>对应模块</strong></div>
+  </section>
+
+  <section id="scene3" class="scene clip light" data-start="41.8" data-duration="23.805" data-track-index="3">
+    <div class="s3-title"><div class="eyebrow">02 · 按场景浏览</div><h2>以“警情处置”为例</h2></div>
+    <div class="s3-steps"><div class="step"><i class="num">1</i>进入业务模块</div><div class="line"></div><div class="step"><i class="num">2</i>选择具体专题</div><div class="line"></div><div class="step"><i class="num">3</i>查看流程与依据</div></div>
+    <div class="browser light-frame s3-browser"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div class="address">警情处置</div></div><img src="capture/screenshots/module-jingqing.png" alt="警情处置模块列表" /><div class="focus-box focus-a"></div><div class="focus-box focus-b"></div><div class="focus-box focus-c"></div><div class="cursor"></div></div>
+    <div class="caption">按照<strong>工作场景</strong>逐层查找专题和处置要点</div>
+  </section>
+
+  <section id="scene4" class="scene clip dark" data-start="65.604" data-duration="22.158" data-track-index="4">
+    <div class="grid"></div><div class="s4-title"><div class="eyebrow">03 · 关键词查询</div><h2>不确定分类，就用站内搜索</h2></div><div class="keywords"><span>警情</span><span>装备</span><span>法规</span></div>
+    <div class="search-focus"><span id="typed-word">警情</span></div>
+    <div class="browser s4-browser"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div class="address">站内搜索</div></div><img src="capture/screenshots/search.png" alt="站内搜索结果" /></div>
+    <div class="caption">输入关键词，匹配结果后<strong>直接进入主题</strong></div>
+  </section>
+
+  <section id="scene5" class="scene clip light" data-start="87.763" data-duration="24.735" data-track-index="5">
+    <div class="s5-title"><div class="eyebrow">04 · 查看详情</div><h2>先看结论，再按需展开</h2></div>
+    <div class="s5-tips"><div class="badge">先看核心结论</div><div class="badge">按顺序阅读步骤卡片</div><div class="badge">结合图片、视频理解</div></div><div class="media-icons"><span>图片</span><span>视频</span></div>
+    <div class="browser light-frame s5-browser"><div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><div class="address">专题详情页</div></div><img src="capture/screenshots/detail.png" alt="巡防百科详情页面" /></div>
+    <div class="caption">标题、标签和步骤卡片，让<strong>核心内容一目了然</strong></div>
+  </section>
+
+  <section id="scene6" class="scene clip dark" data-start="112.497" data-duration="22.572" data-track-index="6">
+    <img class="s6-home" src="capture/screenshots/scroll-000.png" alt="巡防百科首页背景" />
+    <div class="s6-content"><div class="eyebrow">巡防百科 · 使用路径</div><h2>三步完成一次查询</h2><div class="path"><div class="path-card"><i class="num">1</i>进入网站</div><div class="path-line"></div><div class="path-card"><i class="num">2</i>选择或搜索</div><div class="path-line"></div><div class="path-card"><i class="num">3</i>查看对应要点</div></div><div class="url">www.xunfangbk.cn</div><div class="tagline">服务基层实战 · 持续更新完善</div></div>
+    <div class="caption">进入网站 → 选择或搜索 → <strong>查看要点</strong></div>
+  </section>
+</div>
+<script>
+  window.__timelines = window.__timelines || {};
+  const tl = gsap.timeline({ paused:true, defaults:{ ease:'power3.out' } });
+  tl.fromTo('.s1-copy',{x:-90,opacity:0},{x:0,opacity:1,duration:1.1},0.2)
+    .fromTo('.s1-browser',{x:130,scale:.94,opacity:0},{x:0,scale:1,opacity:1,duration:1.4},0.45)
+    .fromTo('.file-card',{y:50,opacity:0},{y:0,opacity:1,stagger:.18,duration:.7},0.7)
+    .fromTo('#scene1 .caption',{y:40,opacity:0},{y:0,opacity:1,duration:.7},1.4)
+    .to('.s1-browser',{scale:1.025,duration:16,ease:'none'},2)
+    .fromTo('.s2-copy',{x:-70,opacity:0},{x:0,opacity:1,duration:.8},19.3)
+    .fromTo('.module',{x:-50,opacity:0},{x:0,opacity:1,stagger:.15,duration:.55},20.1)
+    .fromTo('.s2-browser',{x:90,opacity:0},{x:0,opacity:1,duration:1},19.7)
+    .fromTo('#scene2 .caption',{y:40,opacity:0},{y:0,opacity:1,duration:.6},21.2)
+    .to('.s2-browser img',{y:-80,duration:18,ease:'none'},22)
+    .fromTo('.s3-title',{x:-70,opacity:0},{x:0,opacity:1,duration:.8},41.95)
+    .fromTo('.s3-steps .step',{x:-50,opacity:0},{x:0,opacity:1,stagger:.7,duration:.6},42.7)
+    .fromTo('.s3-steps .line',{scaleX:0},{scaleX:1,stagger:.8,duration:.7},43.2)
+    .fromTo('.s3-browser',{x:100,opacity:0},{x:0,opacity:1,duration:1},42.2)
+    .to('.focus-box',{opacity:1,stagger:2.6,duration:.5},46)
+    .to('.cursor',{y:205,duration:8,ease:'power1.inOut'},46)
+    .fromTo('#scene3 .caption',{y:40,opacity:0},{y:0,opacity:1,duration:.6},44.4)
+    .fromTo('.s4-title',{y:-45,opacity:0},{y:0,opacity:1,duration:.8},65.75)
+    .fromTo('.keywords span',{y:-30,opacity:0},{y:0,opacity:1,stagger:.18,duration:.5},66.4)
+    .fromTo('.s4-browser',{y:80,opacity:0},{y:0,opacity:1,duration:1},66.1)
+    .fromTo('.search-focus',{scale:.8,opacity:0},{scale:1,opacity:1,duration:.75},67)
+    .fromTo('#scene4 .caption',{y:40,opacity:0},{y:0,opacity:1,duration:.6},68)
+    .to('.search-focus',{boxShadow:'0 0 0 10px rgba(212,168,67,.2),0 22px 50px rgba(26,58,92,.23)',duration:1.1,yoyo:true,repeat:2},69)
+    .fromTo('.s5-title',{x:-70,opacity:0},{x:0,opacity:1,duration:.8},87.9)
+    .fromTo('.s5-tips .badge',{x:-70,opacity:0},{x:0,opacity:1,stagger:.7,duration:.65},89)
+    .fromTo('.s5-browser',{x:90,opacity:0},{x:0,opacity:1,duration:1},88.3)
+    .fromTo('.media-icons span',{scale:.6,opacity:0},{scale:1,opacity:1,stagger:.25,duration:.6},92)
+    .fromTo('#scene5 .caption',{y:40,opacity:0},{y:0,opacity:1,duration:.6},90)
+    .to('.s5-browser img',{y:-110,duration:18,ease:'none'},92)
+    .fromTo('.s6-content .eyebrow,.s6-content h2',{y:-35,opacity:0},{y:0,opacity:1,stagger:.2,duration:.7},112.65)
+    .fromTo('.path-card',{y:60,opacity:0},{y:0,opacity:1,stagger:.6,duration:.7},114)
+    .fromTo('.path-line',{scaleX:0},{scaleX:1,stagger:.7,duration:.7},114.7)
+    .fromTo('.url',{filter:'blur(12px)',opacity:0},{filter:'blur(0px)',opacity:1,duration:1.2},117.2)
+    .fromTo('.tagline',{y:25,opacity:0},{y:0,opacity:1,duration:.8},118)
+    .fromTo('#scene6 .caption',{y:40,opacity:0},{y:0,opacity:1,duration:.6},114);
+  window.__timelines['xunfang-tutorial'] = tl;
+</script>
+</body>
+</html>
