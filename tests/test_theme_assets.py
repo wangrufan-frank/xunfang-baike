@@ -34,6 +34,8 @@ class ThemeAssetTests(unittest.TestCase):
     def test_pages_load_theme_script_before_navigation_script(self):
         pages = []
         for page in ROOT.rglob('*.html'):
+            if '.worktrees' in page.parts:
+                continue
             source = page.read_text(encoding='utf-8')
             if 'nav.js' in source:
                 pages.append(page)
