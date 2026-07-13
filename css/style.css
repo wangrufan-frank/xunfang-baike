@@ -176,13 +176,13 @@ a:hover { text-decoration: underline; }
   line-height: 1.7;
 }
 
-.module-card.accent-red    { border-top: 3px solid var(--accent-red); }
-.module-card.accent-blue   { border-top: 3px solid var(--accent-blue); }
-.module-card.accent-green  { border-top: 3px solid var(--accent-green); }
-.module-card.accent-purple { border-top: 3px solid var(--accent-purple); }
-.module-card.accent-orange { border-top: 3px solid var(--accent-orange); }
-.module-card.accent-dark   { border-top: 3px solid var(--nav-bg); }
-.module-card.accent-teal   { border-top: 3px solid #16a085; }
+.module-card.accent-red    { border-top: 3px solid var(--police-blue); }
+.module-card.accent-blue   { border-top: 3px solid var(--police-blue); }
+.module-card.accent-green  { border-top: 3px solid var(--police-blue); }
+.module-card.accent-purple { border-top: 3px solid var(--police-blue); }
+.module-card.accent-orange { border-top: 3px solid var(--police-blue); }
+.module-card.accent-dark   { border-top: 3px solid var(--police-blue); }
+.module-card.accent-teal   { border-top: 3px solid var(--police-blue); }
 
 /* === 面包屑 === */
 .breadcrumb {
@@ -394,9 +394,9 @@ a:hover { text-decoration: underline; }
 
 /* === 速览卡片 === */
 .quick-card {
-  background: var(--card-bg);
+  background: var(--warm-white);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--nav-bg);
+  border-left: 4px solid var(--police-blue);
   border-radius: var(--radius);
   padding: 16px 20px;
   margin-bottom: 20px;
@@ -508,9 +508,9 @@ a:hover { text-decoration: underline; }
 }
 
 .daily-card {
-  background: var(--card-bg);
+  background: var(--warm-white);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--accent-red);
+  border-left: 4px solid var(--police-blue);
   border-radius: var(--radius);
   padding: 24px 28px;
   box-shadow: var(--shadow);
@@ -551,7 +551,7 @@ a:hover { text-decoration: underline; }
 }
 
 .daily-tips {
-  background: var(--bg);
+  background: var(--mist-blue);
   border-radius: var(--radius);
   padding: 14px 18px;
   margin-bottom: 16px;
@@ -619,8 +619,8 @@ a:hover { text-decoration: underline; }
 }
 
 .monthly-hero-inner {
-  background: var(--police-blue);
-  border-radius: 8px;
+  background: linear-gradient(135deg, var(--police-blue-deep) 0%, var(--police-blue) 100%);
+  border-radius: var(--radius);
   padding: 32px 36px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   display: flex;
@@ -641,7 +641,7 @@ a:hover { text-decoration: underline; }
 
 .monthly-hero .hero-label {
   font-size: 12px;
-  color: #d4a843;
+  color: var(--amber);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -664,9 +664,9 @@ a:hover { text-decoration: underline; }
   display: inline-block;
   margin-top: 6px;
   padding: 8px 20px;
-  background: #d4a843;
-  color: #1a1a2e;
-  border-radius: 4px;
+  background: var(--amber);
+  color: var(--police-blue-deep);
+  border-radius: var(--radius);
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -675,7 +675,7 @@ a:hover { text-decoration: underline; }
 }
 
 .monthly-hero .hero-link:hover {
-  background: #c59a30;
+  background: #C87922;
   text-decoration: none;
 }
 
@@ -690,10 +690,10 @@ a:hover { text-decoration: underline; }
 
 /* === 导航栏金色入口 === */
 .nav-links a.monthly-link {
-  color: #d4a843 !important;
+  color: var(--amber) !important;
   font-weight: 600;
-  border: 1px solid #d4a843;
-  border-radius: 4px;
+  border: 1px solid var(--amber);
+  border-radius: var(--radius);
   padding: 2px 10px;
 }
 
@@ -702,8 +702,8 @@ a:hover { text-decoration: underline; }
 }
 
 .nav-links a.monthly-link.active {
-  background: #d4a843;
-  color: #1a1a2e !important;
+  background: var(--amber);
+  color: var(--police-blue-deep) !important;
   border-bottom: none;
 }
 
@@ -721,7 +721,7 @@ a:hover { text-decoration: underline; }
 
 .magazine-header .magazine-month {
   font-size: 14px;
-  color: #d4a843;
+  color: var(--amber);
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -750,19 +750,19 @@ a:hover { text-decoration: underline; }
 
 .magazine-cover img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: var(--radius);
   border: 1px solid var(--border);
 }
 
 .magazine-cover .cover-placeholder {
   width: 100%;
   height: 200px;
-  background: linear-gradient(135deg, var(--police-blue) 0%, #2c5a8a 100%);
-  border-radius: 6px;
+  background: linear-gradient(135deg, var(--police-blue-deep) 0%, var(--police-blue) 100%);
+  border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #d4a843;
+  color: var(--amber);
   font-size: 48px;
 }
 
@@ -777,7 +777,7 @@ a:hover { text-decoration: underline; }
   color: var(--text);
   margin: 36px 0 14px;
   padding-left: 12px;
-  border-left: 3px solid #d4a843;
+  border-left: 3px solid var(--police-blue);
 }
 
 .magazine-body h2:first-child {
@@ -800,7 +800,7 @@ a:hover { text-decoration: underline; }
 .magazine-body blockquote {
   margin: 16px 0;
   padding: 12px 18px;
-  background: var(--bg);
+  background: var(--mist-blue);
   border-left: 3px solid var(--accent-orange);
   border-radius: var(--radius);
   font-size: 14px;
@@ -811,8 +811,8 @@ a:hover { text-decoration: underline; }
 .magazine-refs {
   margin-top: 40px;
   padding: 20px 24px;
-  background: var(--bg);
-  border-radius: 6px;
+  background: var(--mist-blue);
+  border-radius: var(--radius);
 }
 
 .magazine-refs h3 {
@@ -860,7 +860,7 @@ a:hover { text-decoration: underline; }
 }
 
 .magazine-archive .archive-card {
-  background: var(--card-bg);
+  background: var(--warm-white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 18px 16px;
@@ -878,7 +878,7 @@ a:hover { text-decoration: underline; }
 
 .magazine-archive .archive-card .archive-date {
   font-size: 12px;
-  color: #d4a843;
+  color: var(--amber);
   margin-bottom: 6px;
 }
 
@@ -897,10 +897,10 @@ a:hover { text-decoration: underline; }
   right: 16px;
   max-width: calc(var(--max-width) - 32px);
   margin: 4px auto 0;
-  background: var(--card-bg);
+  background: var(--warm-white);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
   z-index: 200;
   max-height: 480px;
   overflow-y: auto;
@@ -913,7 +913,7 @@ a:hover { text-decoration: underline; }
 .search-result-item {
   display: block;
   padding: 14px 18px;
-  border-bottom: 1px solid var(--bg);
+  border-bottom: 1px solid var(--border);
   text-decoration: none;
   transition: background 0.1s;
 }
@@ -923,7 +923,7 @@ a:hover { text-decoration: underline; }
 }
 
 .search-result-item:hover {
-  background: var(--bg);
+  background: var(--mist-blue);
   text-decoration: none;
 }
 
@@ -938,7 +938,7 @@ a:hover { text-decoration: underline; }
   display: inline-block;
   font-size: 11px;
   color: var(--text-muted);
-  background: var(--bg);
+  background: var(--mist-blue);
   padding: 1px 8px;
   border-radius: 3px;
   margin-bottom: 4px;
@@ -961,12 +961,12 @@ a:hover { text-decoration: underline; }
   padding: 12px;
   font-size: 13px;
   color: var(--accent-blue);
-  border-top: 1px solid var(--bg);
+  border-top: 1px solid var(--border);
   text-decoration: none;
 }
 
 .search-more:hover {
-  background: var(--bg);
+  background: var(--mist-blue);
   text-decoration: none;
 }
 
@@ -1022,7 +1022,7 @@ a:hover { text-decoration: underline; }
 
 .search-page .result-card {
   display: block;
-  background: var(--card-bg);
+  background: var(--warm-white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 18px 22px;
@@ -1033,7 +1033,7 @@ a:hover { text-decoration: underline; }
 }
 
 .search-page .result-card:hover {
-  border-color: var(--accent-red);
+  border-color: var(--police-blue);
   text-decoration: none;
 }
 

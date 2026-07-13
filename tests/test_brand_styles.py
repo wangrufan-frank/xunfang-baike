@@ -26,6 +26,21 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIn('background: var(--warm-white);', CSS)
         self.assertIn('border-radius: var(--radius);', CSS)
 
+    def test_feature_components_use_warm_police_blue_tokens(self):
+        self.assertIn(
+            'background: linear-gradient(135deg, var(--police-blue-deep) 0%, var(--police-blue) 100%);',
+            CSS,
+        )
+        self.assertIn('background: var(--amber);', CSS)
+        self.assertIn('border-left: 4px solid var(--police-blue);', CSS)
+        self.assertIn('box-shadow: var(--shadow);', CSS)
+
+    def test_module_card_accents_use_one_brand_border(self):
+        accent_rules = re.findall(r'\.module-card\.accent-[^{]+\{([^}]+)\}', CSS)
+        self.assertGreaterEqual(len(accent_rules), 7)
+        for rule in accent_rules:
+            self.assertIn('border-top: 3px solid var(--police-blue);', rule)
+
 
 if __name__ == '__main__':
     unittest.main()
