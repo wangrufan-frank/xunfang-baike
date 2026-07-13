@@ -112,6 +112,58 @@ a:hover { text-decoration: underline; }
 .topnav .nav-links a { color: #bbb; }
 .topnav .nav-links a.active { color: var(--amber); border-bottom: 2px solid var(--amber); }
 
+/* === 外观主题选择 === */
+.theme-selector { position: relative; }
+.theme-toggle {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: var(--radius);
+  color: var(--nav-text);
+  cursor: pointer;
+  font: inherit;
+  padding: 4px 10px;
+}
+.theme-toggle:hover,
+.theme-toggle:focus-visible { background: rgba(255, 255, 255, 0.12); }
+.theme-toggle:focus-visible,
+.theme-option:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+.theme-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  min-width: 170px;
+  padding: 6px;
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 210;
+}
+.theme-selector.open .theme-menu { display: grid; gap: 2px; }
+.theme-option {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  gap: 8px;
+  padding: 8px 10px;
+  text-align: left;
+  width: 100%;
+}
+.theme-option:hover { background: var(--bg); }
+.theme-option[aria-checked="true"] { background: var(--mist-blue); color: var(--police-blue-deep); font-weight: 600; }
+.theme-option[aria-checked="true"]::after { content: '✓'; margin-left: auto; color: var(--amber); }
+.theme-swatch { background: var(--police-blue); border: 1px solid var(--border); border-radius: 50%; height: 14px; width: 14px; }
+.theme-option[data-theme-option="classic-warm-brown"] .theme-swatch { background: #6C4F3D; }
+.theme-option[data-theme-option="daylight"] .theme-swatch { background: #2563A1; }
+.theme-option[data-theme-option="night"] .theme-swatch { background: #101923; }
+html[data-theme="night"] .theme-menu { background: var(--warm-white); border-color: var(--border); }
+
 /* 导航栏下拉菜单 */
 .dropdown { position: relative; display: inline-block; }
 .dropdown-toggle { color: #bbb; cursor: pointer; font-size: 14px; user-select: none; }
@@ -151,6 +203,8 @@ a:hover { text-decoration: underline; }
   .topnav .nav-links { display: none; flex-direction: column; position: absolute; top: 44px; left: 0; right: 0; background: var(--nav-bg); padding: 10px 16px; max-height: 80vh; overflow-y: auto; }
   .topnav .nav-links.open { display: flex; }
   .hamburger { display: block; }
+  .topnav .nav-links.open .theme-selector { display: block; }
+  .theme-menu { left: 0; right: auto; top: calc(100% + 6px); }
 }
 
 /* === 搜索栏 === */

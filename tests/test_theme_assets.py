@@ -41,6 +41,28 @@ class ThemeAssetTests(unittest.TestCase):
                 self.assertLess(source.index('theme.js'), source.index('nav.js'), page.as_posix())
         self.assertGreater(len(pages), 0)
 
+    def test_navigation_provides_accessible_theme_selector(self):
+        script = (ROOT / 'js' / 'nav.js').read_text(encoding='utf-8')
+        self.assertIn('class="theme-selector"', script)
+        self.assertIn('class="theme-toggle"', script)
+        self.assertIn('aria-haspopup="true"', script)
+        self.assertIn('aria-expanded="false"', script)
+        for theme in ('warm-police-blue', 'classic-warm-brown', 'daylight', 'night'):
+            self.assertIn("value: '" + theme + "'", script)
+        self.assertIn('data-theme-option="\' + theme.value + \'"', script)
+        self.assertIn('window.XunfangTheme.set(theme)', script)
+
+    def test_theme_selector_has_mobile_and_night_styles(self):
+        for selector in (
+            '.theme-selector',
+            '.theme-toggle',
+            '.theme-menu',
+            '.theme-option[aria-checked="true"]',
+            'html[data-theme="night"] .theme-menu',
+        ):
+            self.assertIn(selector, CSS)
+        self.assertIn('.topnav .nav-links.open .theme-selector', CSS)
+
 
 if __name__ == '__main__':
     unittest.main()
