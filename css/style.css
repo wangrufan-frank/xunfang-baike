@@ -2,28 +2,32 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #f5f0e8;
-  --card-bg: #fff;
-  --text: #3e2723;
-  --text-secondary: #5d4037;
-  --text-muted: #8d6e63;
-  --nav-bg: #2c3e50;
-  --police-blue: #1a3a5c;
-  --nav-text: #ecf0f1;
+  --bg: #EAF2F8;
+  --warm-white: #FFFCF7;
+  --card-bg: var(--warm-white);
+  --text: #243447;
+  --text-secondary: #40566B;
+  --text-muted: #60758C;
+  --nav-bg: #1F4E79;
+  --police-blue: #1F4E79;
+  --police-blue-deep: #163A5C;
+  --mist-blue: #EAF2F8;
+  --nav-text: #FFFFFF;
+  --amber: #D98B2B;
   --accent-red: #c0392b;
   --accent-orange: #e67e22;
   --accent-blue: #2980b9;
   --accent-green: #27ae60;
   --accent-purple: #8e44ad;
-  --border: #d6cec4;
-  --shadow: 0 1px 3px rgba(0,0,0,0.08);
-  --radius: 4px;
+  --border: #D8E2EC;
+  --shadow: 0 6px 18px rgba(22, 58, 92, 0.08);
+  --radius: 12px;
   --max-width: 1200px;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "PingFang SC", sans-serif;
-  background: var(--bg);
+  background: var(--mist-blue);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
@@ -34,7 +38,7 @@ a:hover { text-decoration: underline; }
 
 /* === 顶部导航栏 === */
 .topnav {
-  background: var(--nav-bg);
+  background: var(--police-blue);
   color: var(--nav-text);
   padding: 10px 16px;
   display: flex;
@@ -55,7 +59,7 @@ a:hover { text-decoration: underline; }
 
 .topnav .nav-links { display: flex; gap: 16px; font-size: 14px; }
 .topnav .nav-links a { color: #bbb; }
-.topnav .nav-links a.active { color: #e74c3c; border-bottom: 2px solid #e74c3c; }
+.topnav .nav-links a.active { color: var(--amber); border-bottom: 2px solid var(--amber); }
 
 /* 导航栏下拉菜单 */
 .dropdown { position: relative; display: inline-block; }
@@ -111,8 +115,13 @@ a:hover { text-decoration: underline; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   font-size: 15px;
-  background: var(--card-bg);
+  background: var(--warm-white);
   color: var(--text);
+}
+
+.search-bar input:focus {
+  outline: 3px solid rgba(31, 78, 121, 0.18);
+  border-color: var(--police-blue);
 }
 
 /* === 卡片网格 === */
@@ -129,9 +138,9 @@ a:hover { text-decoration: underline; }
 @media (max-width: 600px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
 
 .module-card {
-  background: var(--card-bg);
+  background: var(--warm-white);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius);
   padding: 28px 20px 22px;
   text-align: center;
   box-shadow: var(--shadow);
@@ -233,7 +242,7 @@ a:hover { text-decoration: underline; }
 
 /* === 步骤卡片 === */
 .step-card {
-  background: var(--card-bg);
+  background: var(--warm-white);
   border-left: 3px solid var(--accent-red);
   border-radius: var(--radius);
   padding: 18px 20px;
@@ -313,7 +322,7 @@ a:hover { text-decoration: underline; }
 }
 
 .content-item {
-  background: var(--card-bg);
+  background: var(--warm-white);
   border-left: 3px solid var(--accent-blue);
   border-radius: var(--radius);
   padding: 18px 20px;
