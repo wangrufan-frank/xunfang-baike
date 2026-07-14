@@ -11,6 +11,12 @@
     <view class="desc">单警装备使用规范</view>
     <view class="hot-links">伸缩警棍 · 催泪喷射器 · 手铐 · 执法记录仪</view>
   </navigator>
+  <navigator url="/pages/qinwu/index/index" class="module-card green" wx:if="{{show.qinwu}}">
+    <view class="icon">📋</view>
+    <view class="name">巡防勤务</view>
+    <view class="count">整改中</view>
+    <view class="desc">内容整改中</view>
+  </navigator>
   <navigator url="/pages/xunlian/index/index" open-type="switchTab" class="module-card purple" wx:if="{{show.xunlian}}">
     <view class="icon">⚔️</view>
     <view class="name">警务训练</view>

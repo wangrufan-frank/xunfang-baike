@@ -118,6 +118,25 @@ class SensitiveContentRemovalTests(unittest.TestCase):
         ).read_text(encoding='utf-8').strip()
         self.assertEqual(source, 'module.exports = [];')
 
+    def test_qinwu_web_and_miniprogram_show_remediation_shell(self):
+        web_home = (ROOT / 'index.html').read_text(encoding='utf-8')
+        web_section = (ROOT / 'qinwu' / 'index.html').read_text(encoding='utf-8')
+        mini_home = (
+            ROOT / 'miniprogram' / 'pages' / 'index' / 'index.wxml'
+        ).read_text(encoding='utf-8')
+        mini_section = (
+            ROOT / 'miniprogram' / 'pages' / 'qinwu' / 'index' / 'index.wxml'
+        ).read_text(encoding='utf-8')
+        mini_data = (
+            ROOT / 'miniprogram' / 'data' / 'qinwu.js'
+        ).read_text(encoding='utf-8').strip()
+
+        self.assertIn('巡防勤务', web_home)
+        self.assertIn('内容整改中', web_section)
+        self.assertIn('巡防勤务', mini_home)
+        self.assertIn('内容整改中', mini_section)
+        self.assertEqual(mini_data, 'module.exports = [];')
+
     def test_miniprogram_home_does_not_repeat_removed_jingqing_cases(self):
         source = (
             ROOT / 'miniprogram' / 'pages' / 'index' / 'index.js'

@@ -14,7 +14,7 @@ var dailyCases = [
 
 Page({
   data: {
-    show: { zhuangbei: true, xunlian: true, jingqing: true, fagui: true, zoufang: true },
+    show: { zhuangbei: true, qinwu: true, xunlian: true, jingqing: true, fagui: true, zoufang: true },
     daily: dailyCases[0],
     dailyIdx: 0,
     dailyTotal: dailyCases.length
@@ -27,12 +27,13 @@ Page({
   onSearch(e) {
     var q = e.detail.value.toLowerCase().trim();
     if (!q) {
-      this.setData({ show: { zhuangbei: true, xunlian: true, jingqing: true, fagui: true, zoufang: true } });
+      this.setData({ show: { zhuangbei: true, qinwu: true, xunlian: true, jingqing: true, fagui: true, zoufang: true } });
       return;
     }
-    var show = { zhuangbei: false, xunlian: false, jingqing: false, fagui: false, zoufang: false };
+    var show = { zhuangbei: false, qinwu: false, xunlian: false, jingqing: false, fagui: false, zoufang: false };
     var cards = [
       { key: 'zhuangbei', text: '装备介绍 单警装备使用规范 伸缩警棍 催泪喷射器 手铐 执法记录仪' },
+      { key: 'qinwu', text: '巡防勤务 内容整改中' },
       { key: 'xunlian', text: '警务训练 徒手 警械 战术 盾牌技术 盘查流程 搜身带离 战术站位' },
       { key: 'jingqing', text: '警情处置 内容整改中' },
       { key: 'fagui', text: '法条规范 执法依据速查 治安规范 赌博执法 法律依据 法言法语' },
