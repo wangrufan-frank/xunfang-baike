@@ -1,0 +1,269 @@
+from copy import deepcopy
+from pathlib import Path
+import importlib.util
+import json
+import subprocess
+import sys
+import tempfile
+import unittest
+
+
+ROOT = Path(__file__).resolve().parents[1]
+SPEC = importlib.util.spec_from_file_location(
+    'public_source_index', ROOT / 'tools' / 'public_source_index.py'
+)
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+
+class PublicSourceIndexUnitTests(unittest.TestCase):
+    @staticmethod
+    def fixture_ledger(verification_status='verified', coverage_status='verified'):
+        return {
+            'version': 1,
+            'pages': [{
+                'page_id': 'fagui-dubo-zhifa',
+                'path': 'fagui/dubo-zhifa.html',
+                'title': '赌博类警情执法标准',
+                'review_status': 'pending',
+                'reviewed_by': None,
+                'reviewed_at': None,
+                'points': [{
+                    'point_id': 'fagui-dubo-zhifa-01',
+                    'position': 1,
+                    'label': '核心要点',
+                    'source_ids': ['official-secrecy-law-2024'],
+                    'coverage_status': coverage_status,
+                    'coverage_note': '核对公开与保密审查边界。',
+                }],
+            }],
+            'sources': [{
+                'source_id': 'official-secrecy-law-2024',
+                'title': '中华人民共和国保守国家秘密法（2024修订）',
+                'publisher': '全国人民代表大会常务委员会',
+                'platform': '工业和信息化部政府网站',
+                'url': 'https://gdca.miit.gov.cn/zwgk/zcwj/flfg/art/2024/art_4870c40a6f8249389684d03786d41639.html',
+                'published_at': '2024-02-27',
+                'verified_at': '2026-07-14',
+                'verification_status': verification_status,
+                'similarity_note': '公开法律文本说明公开与保密义务的边界。',
+                'source_level': 1,
+                'last_checked_at': '2026-07-14',
+            }],
+        }
+
+    def test_discovery_matches_current_site_inventory(self):
+        pages = MODULE.discover_pages(ROOT)
+        self.assertEqual(len(pages), 27)
+        counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0}
+        point_count = 0
+        for page in pages:
+            counts[page.parent.name] += 1
+            point_count += len(MODULE.extract_points(page.read_text(encoding='utf-8')))
+        self.assertEqual(
+            counts,
+            {'fagui': 6, 'xunlian': 11, 'zhuangbei': 7, 'zoufang': 3},
+        )
+        self.assertEqual(point_count, 153)
+
+    def test_discovery_is_limited_to_named_directories_and_non_index_html(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for name in ('fagui', 'xunlian', 'zhuangbei', 'zoufang', 'jingqing'):
+                (root / name).mkdir()
+                (root / name / 'page.html').write_text('<h1>title</h1>', encoding='utf-8')
+                (root / name / 'index.html').write_text('<h1>index</h1>', encoding='utf-8')
+            (root / 'fagui' / 'note.txt').write_text('not html', encoding='utf-8')
+
+            pages = MODULE.discover_pages(root)
+
+        self.assertEqual(
+            [page.relative_to(root).as_posix() for page in pages],
+            ['fagui/page.html', 'xunlian/page.html', 'zhuangbei/page.html', 'zoufang/page.html'],
+        )
+
+    def test_extract_points_decodes_entities_and_ignores_other_elements(self):
+        html = (
+            '<h1>页面 &amp; 标题</h1>'
+            '<div class="step-title">第一 &amp; 要点</div>'
+            '<span class="other step-title-extra">不应提取</span>'
+            '<div class="step-title"><strong>第二</strong>要点</div>'
+        )
+        self.assertEqual(MODULE.extract_points(html), ['第一 & 要点', '第二要点'])
+
+    def test_load_ledger_reads_utf8_json(self):
+        ledger = self.fixture_ledger()
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / 'ledger.json'
+            path.write_text(json.dumps(ledger, ensure_ascii=False), encoding='utf-8')
+            self.assertEqual(MODULE.load_ledger(path), ledger)
+
+    def test_pending_or_search_snippet_source_is_rejected_in_strict_mode(self):
+        ledger = self.fixture_ledger(
+            verification_status='needs_review', coverage_status='pending'
+        )
+        errors = MODULE.validate_schema(ledger)
+        self.assertTrue(any('verification_status' in error for error in errors))
+        self.assertTrue(any('coverage_status' in error for error in errors))
+
+    def test_allow_pending_relaxes_only_verification_requirements(self):
+        ledger = self.fixture_ledger('needs_review', 'pending')
+        self.assertEqual(MODULE.validate_schema(ledger, allow_pending=True), [])
+        ledger['sources'][0]['url'] = 'http://example.com/source'
+        self.assertTrue(MODULE.validate_schema(ledger, allow_pending=True))
+
+    def test_schema_rejects_bad_version_duplicates_and_dangling_references(self):
+        ledger = self.fixture_ledger()
+        ledger['version'] = 2
+        ledger['pages'].append(deepcopy(ledger['pages'][0]))
+        ledger['sources'].append(deepcopy(ledger['sources'][0]))
+        ledger['pages'][0]['points'].append(deepcopy(ledger['pages'][0]['points'][0]))
+        ledger['pages'][0]['points'][0]['source_ids'].append('missing-source')
+
+        errors = MODULE.validate_schema(ledger)
+
+        self.assertTrue(any('version' in error for error in errors))
+        self.assertTrue(any('duplicate page path' in error for error in errors))
+        self.assertTrue(any('duplicate source_id' in error for error in errors))
+        self.assertTrue(any('duplicate point_id' in error for error in errors))
+        self.assertTrue(any('missing-source' in error for error in errors))
+
+    def test_strict_schema_requires_sources_and_verified_coverage(self):
+        ledger = self.fixture_ledger()
+        point = ledger['pages'][0]['points'][0]
+        point['source_ids'] = []
+        point['coverage_status'] = 'pending'
+        errors = MODULE.validate_schema(ledger)
+        self.assertTrue(any('source_ids' in error for error in errors))
+        self.assertTrue(any('coverage_status' in error for error in errors))
+
+    def test_source_fields_https_and_dates_are_validated(self):
+        required = (
+            'title', 'publisher', 'platform', 'url', 'verified_at',
+            'similarity_note', 'source_level', 'last_checked_at',
+        )
+        for field in required:
+            with self.subTest(field=field):
+                ledger = self.fixture_ledger()
+                ledger['sources'][0][field] = ''
+                self.assertTrue(
+                    any(field in error for error in MODULE.validate_schema(ledger))
+                )
+
+        ledger = self.fixture_ledger()
+        ledger['sources'][0]['url'] = 'http://example.com/source'
+        ledger['sources'][0]['verified_at'] = '2026/07/14'
+        ledger['sources'][0]['last_checked_at'] = '2026-02-30'
+        errors = MODULE.validate_schema(ledger)
+        self.assertTrue(any('https://' in error for error in errors))
+        self.assertTrue(any('verified_at' in error for error in errors))
+        self.assertTrue(any('last_checked_at' in error for error in errors))
+
+    def test_review_status_is_not_inferred_from_verified_sources(self):
+        ledger = self.fixture_ledger()
+        before = deepcopy(ledger)
+        self.assertEqual(ledger['pages'][0]['review_status'], 'pending')
+        self.assertTrue(MODULE.publish_errors(ledger))
+        self.assertEqual(ledger, before)
+
+    def test_publish_requires_approval_reviewer_and_review_date(self):
+        ledger = self.fixture_ledger()
+        page = ledger['pages'][0]
+        page.update(review_status='approved', reviewed_by='reviewer', reviewed_at='2026-07-14')
+        self.assertEqual(MODULE.publish_errors(ledger), [])
+        for field in ('reviewed_by', 'reviewed_at'):
+            with self.subTest(field=field):
+                changed = deepcopy(ledger)
+                changed['pages'][0][field] = ''
+                self.assertTrue(any(field in error for error in MODULE.publish_errors(changed)))
+
+    def test_new_html_point_missing_from_ledger_is_reported(self):
+        ledger = self.fixture_ledger()
+        html = (ROOT / 'fagui' / 'dubo-zhifa.html').read_text(encoding='utf-8')
+        changed = html.replace(
+            '<div class="page-nav">',
+            '<div class="step-card step-blue"><div class="step-title">新增知识点</div>'
+            '<div class="step-lead">新增摘要</div></div><div class="page-nav">',
+        )
+        errors = MODULE.compare_page_points(changed, ledger['pages'][0])
+        self.assertTrue(any('新增知识点' in error for error in errors))
+
+    def test_compare_page_points_reports_added_removed_and_renamed_labels(self):
+        page = {
+            'path': 'fagui/example.html',
+            'points': [
+                {'position': 1, 'label': '要点一'},
+                {'position': 2, 'label': '要点二'},
+                {'position': 3, 'label': '已删除要点'},
+            ],
+        }
+        html = (
+            '<h1>页面</h1>'
+            '<div class="step-title">要点一</div>'
+            '<div class="step-title">要点二已改名</div>'
+            '<div class="step-title">新增要点</div>'
+        )
+        errors = MODULE.compare_page_points(html, page)
+        combined = '\n'.join(errors)
+        for label in ('要点二已改名', '新增要点', '要点二', '已删除要点'):
+            self.assertIn(label, combined)
+
+    def test_validate_ledger_reports_inventory_and_html_drift(self):
+        ledger = self.fixture_ledger()
+        ledger['pages'][0]['path'] = 'fagui/page.html'
+        ledger['pages'][0]['points'][0]['label'] = '台账要点'
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'fagui').mkdir()
+            (root / 'fagui' / 'page.html').write_text(
+                '<h1>页面</h1><div class="step-title">HTML 要点</div>',
+                encoding='utf-8',
+            )
+            (root / 'xunlian').mkdir()
+            (root / 'xunlian' / 'extra.html').write_text('<h1>新页面</h1>', encoding='utf-8')
+
+            errors = MODULE.validate_ledger(root, ledger)
+
+        combined = '\n'.join(errors)
+        self.assertIn('xunlian/extra.html', combined)
+        self.assertIn('HTML 要点', combined)
+        self.assertIn('台账要点', combined)
+
+
+class PublicSourceIndexCliTests(unittest.TestCase):
+    def run_cli(self, *args):
+        return subprocess.run(
+            [sys.executable, str(ROOT / 'tools' / 'public_source_index.py'), *args],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+            encoding='utf-8',
+            check=False,
+        )
+
+    def test_inventory_command_reports_current_counts(self):
+        result = self.run_cli('inventory')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('27 pages, 153 points', result.stdout)
+
+    def test_unknown_command_is_usage_error(self):
+        result = self.run_cli('unknown')
+        self.assertEqual(result.returncode, 2)
+
+    def test_check_failure_uses_data_error_exit_code(self):
+        with tempfile.TemporaryDirectory() as directory:
+            ledger_path = Path(directory) / 'ledger.json'
+            ledger_path.write_text(
+                json.dumps(PublicSourceIndexUnitTests.fixture_ledger(
+                    'needs_review', 'pending'
+                ), ensure_ascii=False),
+                encoding='utf-8',
+            )
+            result = self.run_cli('check', str(ledger_path))
+        self.assertEqual(result.returncode, 1)
+        self.assertIsInstance(result.stderr, str)
+        self.assertIn('verification_status', result.stderr)
+
+
+if __name__ == '__main__':
+    unittest.main()
