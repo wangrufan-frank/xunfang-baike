@@ -1070,49 +1070,49 @@
           "point_id": "zhuangbei-cuilei-pensheqi-01",
           "position": 1,
           "label": "基本介绍",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-huzhong-horizontal-oc-training-2025"],
+          "coverage_status": "verified",
+          "coverage_note": "条例将催泪类器材列为驱逐性、制服性警械，呼中公安公开训练说明其结构、功能和实战用途；未覆盖93%使用率、3—6米射程和对吸毒人员的效果。"
         },
         {
           "point_id": "zhuangbei-cuilei-pensheqi-02",
           "position": 2,
           "label": "性能参数",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-huzhong-horizontal-oc-training-2025"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文确认对外观结构、功能特点和技术指标进行讲解；未公布页面所列容量、射程、温度、寿命及刺激效果数值。"
         },
         {
           "point_id": "zhuangbei-cuilei-pensheqi-03",
           "position": 3,
           "label": "使用要领（核心口诀：\"喷—移—问\"）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-huzhong-horizontal-oc-training-2025", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "正文覆盖拔取、瞄准、喷射角度、喷射区域和规范操作，规程覆盖警告与风险控制；未覆盖“喷—移—问”、1秒点射或环状喷射。"
         },
         {
           "point_id": "zhuangbei-cuilei-pensheqi-04",
           "position": 4,
           "label": "天时地利人和原则",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-huzhong-horizontal-oc-training-2025"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文强调根据情境判断时机、选择喷射区域并保障自身及无辜人员安全；未覆盖顺逆风、低洼处和3米距离。"
         },
         {
           "point_id": "zhuangbei-cuilei-pensheqi-05",
           "position": 5,
           "label": "善后处理五步流程",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-huzhong-horizontal-oc-training-2025"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文明确包含使用后自身防护和受影响人员后续处理；未覆盖五步流程、病史询问、冲洗细节或恢复时间。"
         },
         {
           "point_id": "zhuangbei-cuilei-pensheqi-06",
           "position": 6,
           "label": "法定禁止情形",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "条例和规程覆盖警械使用条件、限度、停止条件及对孕妇、儿童等的限制；页面所列五类一概禁限及眼口近喷细则未被公开条文完整覆盖。"
         }
       ]
     },
@@ -1128,25 +1128,25 @@
           "point_id": "zhuangbei-fangge-shoutao-01",
           "position": 1,
           "label": "核心性能边界：防割不防刺",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "铜仁监狱公开训练正文说明单警装备需按法律依据、使用时机、方法和注意事项规范使用；未点名防割手套，也未证明“防割不防刺”材料性能边界。"
         },
         {
           "point_id": "zhuangbei-fangge-shoutao-02",
           "position": 2,
           "label": "使用场景",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "公开资料覆盖执勤执法环节的单警装备安全使用及现场风险判断；未点名防割手套或页面所列搜身、持刀警情等四个具体场景。"
         },
         {
           "point_id": "zhuangbei-fangge-shoutao-03",
           "position": 3,
           "label": "使用后维护",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "公开训练正文覆盖单警装备规范使用和注意事项这一维护安全主题；未点名手套破损检查或必须更换的具体要求。"
         }
       ]
     },
@@ -1162,33 +1162,33 @@
           "point_id": "zhuangbei-jingxie-jinggao-01",
           "position": 1,
           "label": "标准警告用语",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "条例正文要求使用警械前命令无关人员躲避，规程覆盖口头制止和身份表明；未规定页面引号内的固定口令文本及四要素分析。"
         },
         {
           "point_id": "zhuangbei-jingxie-jinggao-02",
           "position": 2,
           "label": "使用规则",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "公开法规正文覆盖经警告无效方可使用驱逐性、制服性警械及紧急情形下的例外；未明示“先使用再补充警告”这一表述。"
         },
         {
           "point_id": "zhuangbei-jingxie-jinggao-03",
           "position": 3,
           "label": "警告与法律的关系",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation"],
+          "coverage_status": "verified",
+          "coverage_note": "条例第七条明确“经警告无效”才可使用相关警械，且行为制止时立即停止，与页面的法律关系主题相似。"
         },
         {
           "point_id": "zhuangbei-jingxie-jinggao-04",
           "position": 4,
           "label": "不同警械的警告变体",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "法规和规程覆盖警棍、催泪类警械共同的警告、无关人员躲避及紧急例外逻辑；未提供页面所列不同警械的固定口令变体。"
         }
       ]
     },
@@ -1204,33 +1204,33 @@
           "point_id": "zhuangbei-jiuxiaojian-gailan-01",
           "position": 1,
           "label": "九小件清单",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "coverage_status": "verified",
+          "coverage_note": "铜仁监狱正文确认单警装备包含伸缩警棍、催泪喷射器和手铐，条例亦列举多类警械；未覆盖页面九件完整清单或“九小件”命名。"
         },
         {
           "point_id": "zhuangbei-jiuxiaojian-gailan-02",
           "position": 2,
           "label": "佩戴三大原则",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "公开资料覆盖单警装备的使用时机、方法、注意事项和现场风险判断；未覆盖贴身防脱、拿取排序和武力升级三项佩戴原则。"
         },
         {
           "point_id": "zhuangbei-jiuxiaojian-gailan-03",
           "position": 3,
           "label": "佩戴顺序（以右强手、佩自动手枪为例）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "公开训练正文实质相似于单警装备规范使用与快速取用的总体主题；未公布右强手条件下的具体腰带佩戴顺序。"
         },
         {
           "point_id": "zhuangbei-jiuxiaojian-gailan-04",
           "position": 4,
           "label": "装备三大分类",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "coverage_status": "verified",
+          "coverage_note": "公开资料区分驱逐性、制服性和约束性警械，并将多种器材纳入单警装备训练；未采用页面“作战/防护/控制通讯”三分法或其完整器材归类。"
         }
       ]
     },
@@ -1246,65 +1246,65 @@
           "point_id": "zhuangbei-shensuo-jinggun-01",
           "position": 1,
           "label": "基本介绍",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "coverage_status": "verified",
+          "coverage_note": "公开资料确认伸缩警棍是警械及单警装备训练项目，涉及使用方法和动作要领；未覆盖52/22厘米尺寸、结构或解锁回收操作。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-02",
           "position": 2,
           "label": "法律支撑",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation"],
+          "coverage_status": "verified",
+          "coverage_note": "条例第七条正文列明八类经警告无效可使用警棍等警械的情形，并要求以制止为限、行为制止即停止。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-03",
           "position": 3,
           "label": "击打部位",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-field-control-rules", "official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "现场制止规程对警械使用的伤害限度和安全要求与击打部位主题相似，训练文涉及警棍动作要领；未公布页面所列大肌群、神经点及全部禁打部位。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-04",
           "position": 4,
           "label": "戒备姿势",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文确认伸缩警棍使用方法和动作要领的讲解示范；未覆盖隐藏、提棍、肩上三种戒备姿势及其细节。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-05",
           "position": 5,
           "label": "开棍技术",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文确认对伸缩警棍的方法、动作要领和实操进行示范；未覆盖上开棍、下开棍、紧急开棍及后退动作。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-06",
           "position": 6,
           "label": "劈击技术",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "公开资料覆盖警棍动作要领训练和使用中尽量减少伤害的原则；未覆盖蹬地、扭腰、送胯、挥肘发力链或上下劈击细节。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-07",
           "position": 7,
           "label": "握棍方式",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文实质覆盖伸缩警棍动作要领和注意事项；未公布三指主握、棍柄留两指距离或手腕紧固细节。"
         },
         {
           "point_id": "zhuangbei-shensuo-jinggun-08",
           "position": 8,
           "label": "安全注意事项",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules", "official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "公开法规覆盖使用前警告、以制止为限及停止条件，训练文覆盖注意事项；未覆盖观察儿童、棍头朝向、回收装置检查等操作细则。"
         }
       ]
     },
@@ -1320,25 +1320,25 @@
           "point_id": "zhuangbei-shoukao-01",
           "position": 1,
           "label": "定位：武力链条中的约束环节",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "条例将手铐定义为约束性警械，并列明可在可能脱逃、行凶、自伤等危险下使用的法定任务；未支持页面固定四环“武力链条”顺序。"
         },
         {
           "point_id": "zhuangbei-shoukao-02",
           "position": 2,
           "label": "六种上铐方法",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "coverage_status": "verified",
+          "coverage_note": "训练正文确认对手铐使用方法、动作要领、使用时机和实操进行讲解示范；未列出开口、压腕、挑腕、背手、举手、倒地六种方法或其安全排序。"
         },
         {
           "point_id": "zhuangbei-shoukao-03",
           "position": 3,
           "label": "使用注意事项",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "coverage_status": "verified",
+          "coverage_note": "公开训练覆盖手铐使用时机、方法和注意事项，条例覆盖法定条件；未覆盖一指松紧、先铐后搜、押解中手腕观察等具体要求。"
         }
       ]
     },
@@ -1354,25 +1354,25 @@
           "point_id": "zhuangbei-zhifa-jiuyi-01",
           "position": 1,
           "label": "日常检查维护",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-jincheng-body-camera-management-2020"],
+          "coverage_status": "verified",
+          "coverage_note": "晋城交警公开正文要求排查设备、收回不能使用的记录仪、测试功能指标并反馈问题；未明示电量、系统时间和存储空间三项检查。"
         },
         {
           "point_id": "zhuangbei-zhifa-jiuyi-02",
           "position": 2,
           "label": "使用规范",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-jincheng-body-camera-management-2020", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "晋城交警正文要求上岗佩戴，禁止配而不戴、戴而不录、选择性摄录及不完整摄录；未覆盖国家秘密场景关闭、视频保存或删除外泄细则。"
         },
         {
           "point_id": "zhuangbei-zhifa-jiuyi-03",
           "position": 3,
           "label": "核心价值",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["official-jincheng-body-camera-management-2020", "official-police-field-control-rules"],
+          "coverage_status": "verified",
+          "coverage_note": "公开正文说明执法记录仪用于规范执法、全面推进透明公开执法，现场规程亦要求证据固定；未覆盖“证据+武力”概念、投诉防护或复盘培训用途。"
         }
       ]
     },
@@ -1698,6 +1698,45 @@
       "verified_at": "2026-07-15",
       "verification_status": "verified",
       "similarity_note": "公安机关公开解读说明新法新增违法行为、规范执法证件、扣押同步录音录像和程序保障等基层执法变化。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-jincheng-body-camera-management-2020",
+      "title": "晋城公安交警支队狠抓三细节规范执法记录仪使用管理",
+      "publisher": "晋城市公安局交通警察支队",
+      "platform": "晋城市人民政府",
+      "url": "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
+      "published_at": "2020-06-19",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安交警公开材料要求上岗佩戴执法记录仪，禁止选择性或不完整摄录，并要求设备排查、功能测试和操作培训。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-huzhong-horizontal-oc-training-2025",
+      "title": "聚焦新装备 提升战斗力——呼中区公安局开展横喷催泪喷射器专项训练",
+      "publisher": "呼中区公安局",
+      "platform": "呼中区人民政府",
+      "url": "https://www.huzhong.gov.cn/huzhong/c100382/202512/c13_326462.shtml",
+      "published_at": "2025-12-30",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开训练材料讲解横喷催泪喷射器结构、技术指标、拔取瞄准、角度与区域控制、安全防护及后续处理。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-tongren-single-police-equipment-training-2024",
+      "title": "【全警实战大练兵】强化单警装备使用技能，提升民警履职能力",
+      "publisher": "贵州省铜仁监狱",
+      "platform": "贵州省监狱管理局",
+      "url": "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html",
+      "published_at": "2024-04-10",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "监狱人民警察公开训练材料说明依据法律和理论对伸缩警棍、催泪喷射器、手铐的使用时机、方法、动作要领和注意事项开展讲解示范与实操。",
       "source_level": 2,
       "last_checked_at": "2026-07-15"
     }
