@@ -3,10 +3,13 @@
 from argparse import ArgumentParser
 from datetime import datetime
 from difflib import SequenceMatcher
+from html import escape
 from html.parser import HTMLParser
 import json
 from pathlib import Path
+import re
 import sys
+import tempfile
 
 
 CONTENT_DIRECTORIES = ('fagui', 'xunlian', 'zhuangbei', 'zoufang')
@@ -21,6 +24,22 @@ SOURCE_REQUIRED_FIELDS = (
     'similarity_note',
     'source_level',
     'last_checked_at',
+)
+SOURCE_NOTICE = (
+    '本索引用于说明核验日期时互联网上存在与本页知识点相似的公开资料，'
+    '不表示本站内容均转载自所列网页，也不构成保密审查、法律审查或业务主管部门审核结论。'
+    '公开发布仍须执行本单位规定的先审查、后公开程序。'
+)
+_DIV_TAG = re.compile(r'</?div\b[^>]*>', re.IGNORECASE)
+_MANAGED_CITATIONS = re.compile(
+    r'<!--\s*source-citations:start\s*-->.*?'
+    r'<!--\s*source-citations:end\s*-->',
+    re.DOTALL,
+)
+_MANAGED_INDEX = re.compile(
+    r'\n?[ \t]*<!--\s*public-source-index:start\s*-->.*?'
+    r'<!--\s*public-source-index:end\s*-->[ \t]*\n?',
+    re.DOTALL,
 )
 
 
@@ -92,6 +111,152 @@ def discover_pages(root: Path) -> list[Path]:
 def extract_points(html: str) -> list[str]:
     """Extract visible labels from elements whose class is ``step-title``."""
     return _parse_page(html).points
+
+
+def _classes(tag):
+    match = re.search(r'\bclass\s*=\s*(["\'])(.*?)\1', tag, re.IGNORECASE)
+    return match.group(2).split() if match else []
+
+
+def _div_elements(html, class_name):
+    elements = []
+    stack = []
+    for match in _DIV_TAG.finditer(html):
+        if match.group(0).lower().startswith('</'):
+            if not stack:
+                continue
+            opening = stack.pop()
+            if class_name in opening['classes']:
+                elements.append((opening['start'], opening['end'], match.start(), match.end()))
+        else:
+            stack.append({
+                'start': match.start(),
+                'end': match.end(),
+                'classes': _classes(match.group(0)),
+            })
+    return sorted(elements)
+
+
+def _visible_text(fragment):
+    parser = _PageParser()
+    parser.feed(f'<div class="step-title">{fragment}</div>')
+    parser.close()
+    return parser.points[0] if parser.points else ''
+
+
+def _set_point_attributes(opening_tag, point_id):
+    opening_tag = re.sub(
+        r'\s+(?:id|data-source-point)\s*=\s*(["\']).*?\1',
+        '',
+        opening_tag,
+        flags=re.IGNORECASE,
+    )
+    suffix = ' /' if opening_tag.endswith('/>') else ''
+    base = opening_tag[:-2] if suffix else opening_tag[:-1]
+    return (
+        f'{base} id="point-{escape(point_id, quote=True)}" '
+        f'data-source-point="{escape(point_id, quote=True)}"{suffix}>'
+    )
+
+
+def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
+    """Render managed citations and a static source index into one HTML page."""
+    path = page.get('path', '<unknown>')
+    clean = _MANAGED_INDEX.sub('\n', _MANAGED_CITATIONS.sub('', html))
+    cards = _div_elements(clean, 'step-card')
+    points = sorted(page.get('points', []), key=lambda point: point.get('position', 0))
+    if len(cards) != len(points):
+        raise ValueError(
+            f'{path}: knowledge point 数量 mismatch: HTML {len(cards)}, ledger {len(points)}'
+        )
+
+    navs = _div_elements(clean, 'page-nav')
+    if len(navs) != 1:
+        raise ValueError(f'{path}: expected exactly one .page-nav, found {len(navs)}')
+
+    source_numbers = {}
+    source_order = []
+    first_refs = {}
+    edits = []
+    for card, point in zip(cards, points):
+        card_start, card_open_end, card_close_start, _ = card
+        card_html = clean[card_open_end:card_close_start]
+        titles = _div_elements(card_html, 'step-title')
+        leads = _div_elements(card_html, 'step-lead')
+        if len(titles) != 1 or len(leads) != 1:
+            raise ValueError(
+                f'{path}: point {point.get("point_id", "<unknown>")} requires one '
+                '.step-title and one .step-lead'
+            )
+        title = titles[0]
+        actual_title = _visible_text(card_html[title[1]:title[2]])
+        expected_title = point.get('label', '')
+        if actual_title != expected_title:
+            raise ValueError(
+                f'{path}: point title mismatch: {expected_title} -> {actual_title}'
+            )
+
+        point_id = point['point_id']
+        opening = clean[card_start:card_open_end]
+        edits.append((card_start, card_open_end, _set_point_attributes(opening, point_id)))
+        citation_links = []
+        for source_id in point.get('source_ids', []):
+            source = sources.get(source_id)
+            if source is None:
+                raise ValueError(f'{path}: point {point_id} references missing source {source_id}')
+            if source_id not in source_numbers:
+                source_numbers[source_id] = len(source_order) + 1
+                source_order.append(source_id)
+            reference_id = f'source-ref-{point_id}-{source_id}'
+            first_refs.setdefault(source_id, reference_id)
+            citation_links.append(
+                f'<a id="{escape(reference_id, quote=True)}" '
+                f'href="#public-source-{escape(source_id, quote=True)}">'
+                f'[{source_numbers[source_id]}]</a>'
+            )
+        marker = (
+            '<!-- source-citations:start -->'
+            '<span class="source-citations">' + ' '.join(citation_links) + '</span>'
+            '<!-- source-citations:end -->'
+        )
+        lead_close = card_open_end + leads[0][2]
+        edits.append((lead_close, lead_close, marker))
+
+    entries = []
+    for source_id in source_order:
+        source = sources[source_id]
+        published = (
+            f'<span class="public-source-published">发布日期：{escape(source["published_at"])}</span>'
+            if source.get('published_at') else ''
+        )
+        entries.append(
+            f'<li id="public-source-{escape(source_id, quote=True)}">'
+            f'<span class="public-source-number">[{source_numbers[source_id]}]</span> '
+            f'<cite>{escape(source["title"])}</cite>'
+            f'<span class="public-source-publisher">发布主体：{escape(source["publisher"])}</span>'
+            f'<span class="public-source-platform">平台：{escape(source["platform"])}</span>'
+            f'{published}'
+            f'<span class="public-source-verified">核验日期：{escape(source["verified_at"])}</span>'
+            f'<a href="{escape(source["url"], quote=True)}" target="_blank" '
+            f'rel="noopener noreferrer">原文链接</a>'
+            f'<p>相似内容说明：{escape(source["similarity_note"])}</p>'
+            f'<a href="#{escape(first_refs[source_id], quote=True)}">返回引用位置</a>'
+            '</li>'
+        )
+    source_index = (
+        '<!-- public-source-index:start -->\n'
+        '<section class="public-source-index" aria-labelledby="public-source-index-title">\n'
+        '<h2 id="public-source-index-title">公开资料对照</h2>\n'
+        f'<p class="public-source-notice">{SOURCE_NOTICE}</p>\n'
+        '<ol>\n' + '\n'.join(entries) + '\n</ol>\n'
+        '</section>\n'
+        '<!-- public-source-index:end -->\n'
+    )
+    edits.append((navs[0][0], navs[0][0], source_index))
+    rendered = clean
+    for start, end, replacement in sorted(edits, reverse=True):
+        rendered = rendered[:start] + replacement + rendered[end:]
+    return rendered
 
 
 def load_ledger(path: Path) -> dict:
@@ -325,8 +490,24 @@ def _build_parser():
     parser.add_argument('ledger', nargs='?', type=Path)
     parser.add_argument('--root', type=Path, default=DEFAULT_ROOT)
     parser.add_argument('--allow-pending', action='store_true')
+    parser.add_argument('--check', action='store_true')
     parser.add_argument('--output', type=Path)
     return parser
+
+
+def _write_text_atomic(path, content):
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode='w', encoding='utf-8', newline='', dir=path.parent,
+            prefix=f'.{path.name}.', suffix='.tmp', delete=False,
+        ) as stream:
+            stream.write(content)
+            temporary = Path(stream.name)
+        temporary.replace(path)
+    finally:
+        if temporary is not None and temporary.exists():
+            temporary.unlink()
 
 
 def main(argv=None):
@@ -394,7 +575,8 @@ def main(argv=None):
         print(f'cannot load ledger {ledger_path}: {error}', file=sys.stderr)
         return 1
 
-    errors = validate_ledger(args.root, ledger, allow_pending=args.allow_pending)
+    allow_pending = args.allow_pending and args.command != 'write'
+    errors = validate_ledger(args.root, ledger, allow_pending=allow_pending)
     if args.command == 'check-publish':
         errors.extend(publish_errors(ledger))
     if errors:
@@ -414,10 +596,31 @@ def main(argv=None):
             f'{pending_count} points pending source verification.'
         )
     elif args.command == 'write':
-        ledger_path.write_text(
-            json.dumps(ledger, ensure_ascii=False, indent=2) + '\n',
-            encoding='utf-8',
-        )
+        sources = {source['source_id']: source for source in ledger['sources']}
+        rendered_pages = []
+        try:
+            for page in ledger['pages']:
+                path = args.root / page['path']
+                original = path.read_text(encoding='utf-8')
+                rendered = render_page(original, page, sources)
+                rendered_pages.append((path, page['path'], original, rendered))
+        except (OSError, UnicodeError, ValueError) as error:
+            print(error, file=sys.stderr)
+            return 1
+
+        changed = [item for item in rendered_pages if item[2] != item[3]]
+        for _, relative, _, _ in changed:
+            print(f'CHANGED: {relative}')
+        if args.check:
+            print(f'CHECK: {len(changed)} of {len(rendered_pages)} pages would change.')
+            return 1 if changed else 0
+        try:
+            for path, _, _, rendered in changed:
+                _write_text_atomic(path, rendered)
+        except OSError as error:
+            print(f'cannot write generated HTML: {error}', file=sys.stderr)
+            return 1
+        print(f'WROTE: {len(changed)} of {len(rendered_pages)} pages changed.')
     elif args.command == 'report':
         point_count = sum(len(page.get('points', [])) for page in ledger['pages'])
         print(

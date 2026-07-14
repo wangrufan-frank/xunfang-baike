@@ -323,6 +323,78 @@ class PublicSourceLedgerInventoryTests(unittest.TestCase):
         )
 
 
+class PublicSourceRenderTests(unittest.TestCase):
+    def setUp(self):
+        self.html = (
+            '<div class="step-card step-blue">\n'
+            '  <div class="step-title">第一点</div><div class="step-lead">摘要一</div>\n'
+            '</div>\n'
+            '<div class="step-card step-green">\n'
+            '  <div class="step-title">第二点</div><div class="step-lead">摘要二</div>\n'
+            '</div>\n'
+            '<div class="page-nav"></div>\n'
+        )
+        self.source = deepcopy(
+            PublicSourceIndexUnitTests.fixture_ledger('verified', 'verified')['sources'][0]
+        )
+        self.source['source_id'] = 'source-law'
+        self.source_map = {'source-law': self.source}
+        self.page = {
+            'page_id': 'fixture-page',
+            'path': 'fixture/page.html',
+            'title': '测试页',
+            'review_status': 'pending',
+            'reviewed_by': None,
+            'reviewed_at': None,
+            'points': [
+                {
+                    'point_id': 'point-01', 'position': 1, 'label': '第一点',
+                    'source_ids': ['source-law'], 'coverage_status': 'verified',
+                    'coverage_note': '第一点与公开资料的相似边界。',
+                },
+                {
+                    'point_id': 'point-02', 'position': 2, 'label': '第二点',
+                    'source_ids': ['source-law'], 'coverage_status': 'verified',
+                    'coverage_note': '第二点与公开资料的相似边界。',
+                },
+            ],
+        }
+
+    def test_render_page_adds_reusable_citations_and_complete_source_index(self):
+        rendered = MODULE.render_page(self.html, self.page, self.source_map)
+
+        self.assertIn('id="source-ref-point-01-source-law"', rendered)
+        self.assertIn('id="source-ref-point-02-source-law"', rendered)
+        self.assertEqual(rendered.count('href="#public-source-source-law"'), 2)
+        self.assertEqual(rendered.count('id="public-source-source-law"'), 1)
+        self.assertIn('class="public-source-index"', rendered)
+        self.assertLess(rendered.index('public-source-index'), rendered.index('page-nav'))
+        for value in (
+            self.source['title'], self.source['publisher'], self.source['platform'],
+            self.source['published_at'], self.source['verified_at'],
+            self.source['similarity_note'],
+            'target="_blank" rel="noopener noreferrer"',
+            'href="#source-ref-point-01-source-law"',
+            '本索引用于说明核验日期时互联网上存在与本页知识点相似的公开资料，不表示本站内容均转载自所列网页，也不构成保密审查、法律审查或业务主管部门审核结论。公开发布仍须执行本单位规定的先审查、后公开程序。',
+        ):
+            self.assertIn(value, rendered)
+        self.assertEqual(MODULE.render_page(rendered, self.page, self.source_map), rendered)
+
+    def test_render_page_rejects_bad_page_structure_and_dangling_sources(self):
+        cases = []
+        renamed = self.html.replace('第一点', '标题不符', 1)
+        cases.append(('标题不符', renamed, self.page, self.source_map))
+        cases.append(('数量', self.html.replace(
+            '<div class="step-card step-green">', '<div class="other">', 1
+        ), self.page, self.source_map))
+        cases.append(('source-law', self.html, self.page, {}))
+        cases.append(('.page-nav', self.html.replace('page-nav', 'other-nav'), self.page, self.source_map))
+        for expected, html, page, sources in cases:
+            with self.subTest(expected=expected):
+                with self.assertRaisesRegex(ValueError, 'fixture/page.html.*' + expected):
+                    MODULE.render_page(html, page, sources)
+
+
 class PublicSourceIndexCliTests(unittest.TestCase):
     def run_cli(self, *args):
         return subprocess.run(
@@ -424,6 +496,74 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             'page[1].point[1].source_ids[1] must be a non-empty string',
             result.stderr,
         )
+
+    def test_production_write_rejects_pending_ledger_without_changing_html(self):
+        pages = MODULE.discover_pages(ROOT)
+        before = {page: page.read_bytes() for page in pages}
+        result = self.run_cli('write')
+        self.assertEqual(result.returncode, 1)
+        self.assertEqual({page: page.read_bytes() for page in pages}, before)
+
+    def test_write_check_reports_changes_without_writing(self):
+        fixture = PublicSourceRenderTests()
+        fixture.setUp()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'fagui').mkdir()
+            page_path = root / 'fagui' / 'page.html'
+            page_path.write_text('<h1>测试页</h1>' + fixture.html, encoding='utf-8')
+            page = deepcopy(fixture.page)
+            page['path'] = 'fagui/page.html'
+            ledger = {'version': 1, 'pages': [page], 'sources': [fixture.source]}
+            ledger_path = root / 'ledger.json'
+            ledger_path.write_text(json.dumps(ledger, ensure_ascii=False), encoding='utf-8')
+            before = page_path.read_bytes()
+
+            result = self.run_cli(
+                'write', str(ledger_path), '--root', str(root), '--check'
+            )
+
+            self.assertEqual(result.returncode, 1)
+            self.assertIn('CHANGED: fagui/page.html', result.stdout)
+            self.assertIn('CHECK: 1 of 1 pages would change.', result.stdout)
+            self.assertEqual(page_path.read_bytes(), before)
+
+    def test_write_check_is_dry_run_and_render_failure_is_atomic(self):
+        fixture = PublicSourceRenderTests()
+        fixture.setUp()
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / 'fagui').mkdir()
+            first = root / 'fagui' / 'first.html'
+            second = root / 'fagui' / 'second.html'
+            first.write_text('<h1>测试页</h1>' + fixture.html, encoding='utf-8')
+            second.write_text(
+                '<h1>第二页</h1>' + fixture.html.replace('page-nav', 'other-nav'),
+                encoding='utf-8',
+            )
+            ledger = {'version': 1, 'pages': [], 'sources': [fixture.source]}
+            for index, path in enumerate((first, second), 1):
+                page = deepcopy(fixture.page)
+                page['page_id'] = f'fixture-{index}'
+                page['path'] = path.relative_to(root).as_posix()
+                page['title'] = '测试页' if index == 1 else '第二页'
+                page['points'] = deepcopy(fixture.page['points'])
+                for point_index, point in enumerate(page['points'], 1):
+                    point['point_id'] = f'page-{index}-{point_index:02d}'
+                ledger['pages'].append(page)
+            ledger_path = root / 'ledger.json'
+            ledger_path.write_text(json.dumps(ledger, ensure_ascii=False), encoding='utf-8')
+            first_before = first.read_bytes()
+
+            checked = self.run_cli(
+                'write', str(ledger_path), '--root', str(root), '--check'
+            )
+            failed = self.run_cli('write', str(ledger_path), '--root', str(root))
+
+            self.assertEqual(checked.returncode, 1)
+            self.assertEqual(failed.returncode, 1)
+            self.assertIn('second.html', failed.stderr)
+            self.assertEqual(first.read_bytes(), first_before)
 
 
 if __name__ == '__main__':
