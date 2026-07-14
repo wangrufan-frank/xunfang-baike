@@ -54,6 +54,14 @@ class ThemeAssetTests(unittest.TestCase):
         self.assertIn('data-theme-option="\' + theme.value + \'"', script)
         self.assertIn('window.XunfangTheme.set(theme)', script)
 
+    def test_hamburger_has_single_click_owner(self):
+        nav_script = (ROOT / 'js' / 'nav.js').read_text(encoding='utf-8')
+        main_script = (ROOT / 'js' / 'main.js').read_text(encoding='utf-8')
+
+        self.assertIn("nav.querySelector('.hamburger')", nav_script)
+        self.assertIn("hamburger.addEventListener('click'", nav_script)
+        self.assertNotIn(".closest('.hamburger')", main_script)
+
     def test_theme_selector_has_mobile_and_night_styles(self):
         for selector in (
             '.theme-selector',

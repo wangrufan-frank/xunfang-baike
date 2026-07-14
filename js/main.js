@@ -1,14 +1,6 @@
 // js/main.js
 
 document.addEventListener('DOMContentLoaded', function() {
-  // 汉堡菜单切换（使用事件委托，因为 nav 是 JS 动态注入的）
-  document.addEventListener('click', function(e) {
-    if (e.target.closest('.hamburger')) {
-      var navLinks = document.querySelector('.nav-links');
-      if (navLinks) navLinks.classList.toggle('open');
-    }
-  });
-
   // 搜索：按页面类型分派（仅首页和列表页有效）
   var searchInput = document.querySelector('.search-bar input');
   if (searchInput) {
