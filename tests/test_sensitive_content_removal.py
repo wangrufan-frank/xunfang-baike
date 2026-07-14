@@ -69,6 +69,11 @@ def runtime_files():
 
 
 class SensitiveContentRemovalTests(unittest.TestCase):
+    def test_parse_html_targets_the_current_repository(self):
+        source = (ROOT / 'parse_html.py').read_text(encoding='utf-8')
+        self.assertIn("BASE = os.path.dirname(os.path.abspath(__file__))", source)
+        self.assertNotIn("BASE = r'F:\\frank第二大脑\\xunfang-baike'", source)
+
     def test_restricted_detail_files_are_deleted(self):
         remaining = sorted(path for path in DELETED_PATHS if (ROOT / path).exists())
         self.assertEqual(remaining, [])

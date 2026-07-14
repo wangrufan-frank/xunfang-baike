@@ -11,26 +11,18 @@
     <view class="desc">单警装备使用规范</view>
     <view class="hot-links">伸缩警棍 · 催泪喷射器 · 手铐 · 执法记录仪</view>
   </navigator>
-  <navigator url="/pages/qinwu/index/index" class="module-card green" wx:if="{{show.qinwu}}">
-    <view class="icon">📋</view>
-    <view class="name">巡防勤务</view>
-    <view class="count">8篇</view>
-    <view class="desc">每日勤务与任务规范</view>
-    <view class="hot-links">大型活动安保 · 群体事件处置 · 舆情导控</view>
-  </navigator>
   <navigator url="/pages/xunlian/index/index" open-type="switchTab" class="module-card purple" wx:if="{{show.xunlian}}">
     <view class="icon">⚔️</view>
     <view class="name">警务训练</view>
-    <view class="count">19篇</view>
-    <view class="desc">徒手 · 警械 · 战术 · 快反</view>
-    <view class="hot-links">盾牌技术 · 盘查流程 · 武力升级 · 搜身带离</view>
+    <view class="count">11篇</view>
+    <view class="desc">徒手 · 警械 · 战术 · 盘查</view>
+    <view class="hot-links">盾牌技术 · 盘查流程 · 搜身带离 · 战术站位</view>
   </navigator>
   <navigator url="/pages/jingqing/index/index" open-type="switchTab" class="module-card red" wx:if="{{show.jingqing}}">
     <view class="icon">🚨</view>
     <view class="name">警情处置</view>
-    <view class="count">8篇</view>
-    <view class="desc">常见警情处置流程</view>
-    <view class="hot-links">持刀警情 · 醉酒闹事 · 打架斗殴 · 家庭暴力</view>
+    <view class="count">整改中</view>
+    <view class="desc">内容整改中</view>
   </navigator>
   <navigator url="/pages/fagui/index/index" class="module-card red" wx:if="{{show.fagui}}">
     <view class="icon">📕</view>
@@ -42,9 +34,9 @@
   <navigator url="/pages/zoufang/index/index" class="module-card teal" wx:if="{{show.zoufang}}">
     <view class="icon">🏫</view>
     <view class="name">走访送教</view>
-    <view class="count">6篇</view>
+    <view class="count">3篇</view>
     <view class="desc">校园社区送教服务</view>
-    <view class="hot-links">校园反恐 · 现场处置 · 金融反恐 · 校园培训</view>
+    <view class="hot-links">校园反恐 · 金融反恐 · 校园培训</view>
   </navigator>
 </view>
 

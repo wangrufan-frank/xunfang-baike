@@ -5,7 +5,7 @@ import json
 import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
-BASE = r'F:\frank第二大脑\xunfang-baike'
+BASE = os.path.dirname(os.path.abspath(__file__))
 
 MODULES = {
     'qinwu': 'qinwu',
