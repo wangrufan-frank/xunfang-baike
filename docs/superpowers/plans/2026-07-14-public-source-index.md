@@ -17,6 +17,7 @@
 - 法律结论、执法程序和警械使用条件不得只依赖微信公众号、百度百科或知乎。
 - 不下载、镜像、重新发布或大段摘录外部网页、图片和视频；台账只保存元数据和简短的相似内容说明。
 - 不把来源核验状态自动转换为保密审核通过；生成工具不得写入 `review_status: "approved"`。
+- 后续新增内容页或 `.step-card` 必须在同一次变更中登记知识点、提供已核验来源路径并重新生成引用；HTML 与台账不一致时检查必须失败并报告具体缺项。
 - 不部署网站，不运行 `parse_html.py` 或 `oss_upload.py`，不手工编辑 `search-index.json`。
 - 不提交现有未跟踪的 `公安警察工作汇报PPT.pptx`、`.env`、`.netlify/`、缓存或凭据。
 - 所有 HTML、CSS 和报告保持 UTF-8；Python 只使用标准库，不新增依赖。
@@ -27,6 +28,7 @@
 - Create: `tools/public_source_index.py` — 盘点、校验、静态生成、幂等检查和审计报告入口。
 - Create: `tests/test_public_source_index.py` — 工具单元测试、生产台账覆盖测试、HTML 集成测试和发布门禁测试。
 - Create: `docs/public-source-index-audit.md` — 从台账生成的全站人工复核汇总，不包含外部文章全文。
+- Create: `docs/public-source-maintenance.md` — 后续新增、修改、删除内容时同步维护来源的操作说明。
 - Modify: `css/style.css` — 引用标记、来源列表、固定说明、窄屏和夜间主题样式。
 - Modify: 27 个内容 HTML — 仅增加受管知识点引用、稳定锚点及页面底部来源区。
 
@@ -45,6 +47,7 @@
 - Produces: `validate_schema(ledger: dict, allow_pending: bool = False) -> list[str]`
 - Produces: `validate_ledger(root: Path, ledger: dict, allow_pending: bool = False) -> list[str]`
 - Produces: `publish_errors(ledger: dict) -> list[str]`
+- Produces: `compare_page_points(html: str, page: dict) -> list[str]`
 - Produces CLI: `python tools/public_source_index.py inventory|check|check-publish|write|report`
 
 - [ ] **Step 1: 写盘点与模式校验失败测试**
@@ -128,6 +131,17 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         )
         self.assertEqual(ledger['pages'][0]['review_status'], 'pending')
         self.assertTrue(MODULE.publish_errors(ledger))
+
+    def test_new_html_point_missing_from_ledger_is_reported(self):
+        ledger = self.fixture_ledger('verified', 'verified')
+        html = (ROOT / 'fagui' / 'dubo-zhifa.html').read_text(encoding='utf-8')
+        changed = html.replace(
+            '<div class="page-nav">',
+            '<div class="step-card step-blue"><div class="step-title">新增知识点</div>'
+            '<div class="step-lead">新增摘要</div></div><div class="page-nav">',
+        )
+        errors = MODULE.compare_page_points(changed, ledger['pages'][0])
+        self.assertTrue(any('新增知识点' in error for error in errors))
 ```
 
 fixture 中使用真实公开法规示例：工信部政府网站转载的《中华人民共和国保守国家秘密法（2024修订）》页面，URL 为 `https://gdca.miit.gov.cn/zwgk/zcwj/flfg/art/2024/art_4870c40a6f8249389684d03786d41639.html`，避免在测试里使用不存在的示例域名。
@@ -150,6 +164,7 @@ Expected: `ERROR`，包含无法加载 `tools/public_source_index.py`。
 - 只接受 `https://` 来源 URL；
 - `verified_at` 和 `last_checked_at` 必须是 `YYYY-MM-DD`；
 - `publish_errors()` 独立检查 `review_status == "approved"` 以及 `reviewed_by`、`reviewed_at` 非空，不修改台账。
+- `compare_page_points()` 精确报告 HTML 中新增、删除或改名后未同步台账的知识点。
 
 命令行退出码统一为：成功 `0`，数据或生成检查失败 `1`，命令用法错误 `2`。
 
@@ -534,6 +549,7 @@ git commit -m "style: add public source reference component"
 **Files:**
 - Modify: 27 个内容 HTML
 - Create: `docs/public-source-index-audit.md`
+- Create: `docs/public-source-maintenance.md`
 - Modify: `tests/test_public_source_index.py`
 
 **Interfaces:**
@@ -583,16 +599,29 @@ Run: `python tools/public_source_index.py report --output docs/public-source-ind
 
 Expected: 报告列出 27 页、153 个知识点、来源总数、每页覆盖状态、保密审核状态和失效链接复核日期；不包含外部文章全文。
 
-- [ ] **Step 6: 运行生产集成测试**
+- [ ] **Step 6: 编写后续内容维护说明**
+
+`docs/public-source-maintenance.md` 必须给出新增页面、新增知识点、修改知识点、删除内容和替换失效来源五种流程，并明确每次内容变更都要依次运行：
+
+```powershell
+python tools/public_source_index.py check
+python tools/public_source_index.py write
+python tools/public_source_index.py write --check
+python -m unittest tests.test_public_source_index -v
+```
+
+文档必须说明：检查报告中的页面/知识点缺项要通过补充台账和已核验来源解决，不能通过放宽计数、删除测试或把搜索摘要标记为已核验解决。
+
+- [ ] **Step 7: 运行生产集成测试**
 
 Run: `python -m unittest tests.test_public_source_index.PublicSourceProductionTests -v`
 
 Expected: 全部 `OK`。
 
-- [ ] **Step 7: 提交生成结果**
+- [ ] **Step 8: 提交生成结果**
 
 ```powershell
-git add fagui xunlian zhuangbei zoufang docs/public-source-index-audit.md tests/test_public_source_index.py
+git add fagui xunlian zhuangbei zoufang docs/public-source-index-audit.md docs/public-source-maintenance.md tests/test_public_source_index.py
 git commit -m "feat: add public source references to content pages"
 ```
 
