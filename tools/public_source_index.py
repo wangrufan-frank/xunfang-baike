@@ -252,7 +252,12 @@ def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
         '</section>\n'
         '<!-- public-source-index:end -->\n'
     )
-    edits.append((navs[0][0], navs[0][0], source_index))
+    nav_start = navs[0][0]
+    line_start = clean.rfind('\n', 0, nav_start) + 1
+    insertion_start = (
+        line_start if clean[line_start:nav_start].strip() == '' else nav_start
+    )
+    edits.append((insertion_start, nav_start, source_index))
     rendered = clean
     for start, end, replacement in sorted(edits, reverse=True):
         rendered = rendered[:start] + replacement + rendered[end:]

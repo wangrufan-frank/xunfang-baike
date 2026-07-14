@@ -380,6 +380,17 @@ class PublicSourceRenderTests(unittest.TestCase):
             self.assertIn(value, rendered)
         self.assertEqual(MODULE.render_page(rendered, self.page, self.source_map), rendered)
 
+    def test_render_page_is_idempotent_with_indented_page_nav(self):
+        html = self.html.replace(
+            '<div class="page-nav">', '        <div class="page-nav">'
+        )
+
+        rendered = MODULE.render_page(html, self.page, self.source_map)
+
+        self.assertEqual(
+            MODULE.render_page(rendered, self.page, self.source_map), rendered
+        )
+
     def test_render_page_rejects_bad_page_structure_and_dangling_sources(self):
         cases = []
         renamed = self.html.replace('第一点', '标题不符', 1)
