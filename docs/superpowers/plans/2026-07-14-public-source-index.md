@@ -188,6 +188,7 @@ git commit -m "feat: add public source ledger validation"
 **Files:**
 - Create: `data/public-sources.json`
 - Modify: `tests/test_public_source_index.py`
+- Modify: `tools/public_source_index.py` — 为 `inventory` 增加经测试的 `--output` 台账骨架写入能力
 
 **Interfaces:**
 - Consumes: `discover_pages()`、`extract_points()`、`validate_ledger(..., allow_pending=True)`
