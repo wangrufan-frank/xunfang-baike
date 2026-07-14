@@ -13,9 +13,12 @@
           "point_id": "fagui-dubo-zhifa-01",
           "position": 1,
           "label": "核心要点",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": "未找到页面所称“2025年江苏省公安机关现场执法标准（赌博类警情）”及“高危区域涉赌警情工作提示”的可公开核验原文；现有国家级公开规定仅能证明一般现场处置和赌博案件程序，不能核验该来源声明。"
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-public-security-administration-punishments-law-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：公开规程要求根据警情性质、危害程度和涉及人数判断风险并在警力不足时请求增援，现行治安管理处罚法规定赌博案件的处罚与赌具赌资处理。差异：未核验页面点名的“2025年江苏省公安机关现场执法标准（赌博类警情）”及高危区域工作提示。"
         },
         {
           "point_id": "fagui-dubo-zhifa-02",
@@ -53,9 +56,11 @@
           "point_id": "fagui-dubo-zhifa-05",
           "position": 5,
           "label": "高危区域专项要求",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": "未找到公开官方资料支持页面所称高危区域分类、警力优势“至少2对1”、外围封控和大额案件同步通知经侦等整套专项要求；不得以一般现场处置规范替代该专项来源。"
+          "source_ids": [
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：公开规程要求综合警情性质、影响范围、涉及人数等快速判断，警力不足立即请求支援，并对现场人身安全保持警惕。差异：正文未规定页面所称高危区域分类、警力“至少2对1”、外围封控和同步通知经侦等专项细节。"
         }
       ]
     },
@@ -94,12 +99,12 @@
           "point_id": "fagui-faly-fayanfayu-03",
           "position": 3,
           "label": "法言法语六级递进体系",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-police-field-control-rules",
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_note": "公开规程把现场制止措施分为口头、徒手、警械、武器，但紧急情形允许不经警告直接采取徒手或武器措施；行政案件的口头、强制传唤也有独立法定条件，不能核验页面“六级固定递进、缺级不得越级”的绝对表述。"
+          "coverage_note": "相似点：公开规程把现场制止措施按口头、徒手、警械、武器由轻到重分类，行政案件程序另行规定口头传唤和强制传唤。差异：这些正文没有页面所列固定六级体系，且紧急情形允许不经警告直接采取措施，不支持“缺级不得越级”的绝对表述。"
         },
         {
           "point_id": "fagui-faly-fayanfayu-04",
@@ -115,42 +120,45 @@
           "point_id": "fagui-faly-fayanfayu-05",
           "position": 5,
           "label": "第3-5级：口头警告 → 口头传唤 → 强制传唤",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_note": "公开程序规定对现场发现的违法嫌疑人可在出示证件后口头传唤；强制传唤的条件是无正当理由不接受或逃避传唤并履行审批，并非页面所写固定从警告到传唤的三级话术，故保持待核。"
+          "coverage_note": "相似点：公开程序规定现场发现违法嫌疑人时可在出示证件后口头传唤，并规定强制传唤及其审批。差异：强制传唤的法定条件是无正当理由不接受或逃避传唤，正文没有页面所写警告到口头传唤再到强制传唤的固定三级话术。"
         },
         {
           "point_id": "fagui-faly-fayanfayu-06",
           "position": 6,
           "label": "第6级：武力使用宣告（最核心法言法语）",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-police-equipment-weapons-regulation",
             "official-police-field-control-rules"
           ],
-          "coverage_note": "公开规定支持表明身份、明确命令、要求无关人员躲避等要素，但对徒手或武器均规定紧急时可不经警告直接使用；页面“四大要素缺一不可、警告无效即当然可升级”的绝对结论与法定例外和分级条件不一致。"
+          "coverage_note": "相似点：公开规定要求按情形表明身份、发出明确命令，并要求无关人员躲避，通常以警告无效作为使用警械或武器的条件。差异：紧急时存在免警告例外，警告无效也仍须满足相应层级条件，不能据此确认“四大要素缺一不可、即可升级”的绝对结论。"
         },
         {
           "point_id": "fagui-faly-fayanfayu-07",
           "position": 7,
           "label": "外围管控语言",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": "未找到主管机关公开文件逐句支持页面对围观者、拍摄群众、质疑群众和媒体的四套固定话术，尤其“欢迎拍摄但不得掐头去尾”等内容不能仅凭一般监督原则核验。"
+          "source_ids": [
+            "official-peoples-police-law-2012",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：《人民警察法》规定人民警察执行职务接受社会和公民监督，现场制止规程允许根据警情要求无关人员躲避并要求口头命令明确简洁。差异：两份正文均未规定页面针对围观、拍摄、质疑和媒体的四套逐句固定话术。"
         },
         {
           "point_id": "fagui-faly-fayanfayu-08",
           "position": 8,
           "label": "武力使用规范要点",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-police-equipment-weapons-regulation",
             "official-police-field-control-rules",
             "official-police-firearm-rules"
           ],
-          "coverage_note": "公开规定支持警告及其紧急例外、较轻措施优先、停止及时和伤亡救治报告；但未支持“4G执法记录仪全程开启”和使用枪支后“24小时内书面报告”的具体时限，故整点保持待核。"
+          "coverage_note": "相似点：公开规定支持通常警告前置、较轻措施优先、违法行为停止后及时停止强制力，以及伤亡救治和报告。差异：正文未支持“4G执法记录仪全程开启”和使用枪支后“24小时内书面报告”的具体设备与时限。"
         }
       ]
     },
@@ -186,12 +194,12 @@
           "point_id": "fagui-faly-yiju-03",
           "position": 3,
           "label": "法言法语递进体系",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-police-field-control-rules",
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_note": "公开规定分别规范表明身份、口头制止、口头传唤和强制传唤，但没有规定页面所示固定四阶顺序；各措施适用条件不同且紧急情况下存在例外，故保持待核。"
+          "coverage_note": "相似点：公开规定分别包含表明身份、口头制止、口头传唤和强制传唤等措施。差异：正文没有规定页面所示统一四阶顺序，各措施适用条件不同，现场制止在紧急情况下还存在免警告例外。"
         },
         {
           "point_id": "fagui-faly-yiju-04",
@@ -218,34 +226,34 @@
           "point_id": "fagui-faly-yiju-06",
           "position": 6,
           "label": "第三阶：口头传唤（多次警告无效时）",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_note": "公开规定允许对现场发现的违法嫌疑人经出示证件口头传唤，并不以“多次警告无效”为统一前置条件；页面固定阶次和话术无法按正文核验。"
+          "coverage_note": "相似点：公开程序规定对现场发现的违法嫌疑人，经出示证件可以口头传唤并告知原因依据。差异：正文不以“多次警告无效”为统一前置条件，也没有页面所列固定阶次和逐句话术。"
         },
         {
           "point_id": "fagui-faly-yiju-07",
           "position": 7,
           "label": "第四阶：强制传唤（暴力干涉民警执行公务时）",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-police-equipment-weapons-regulation",
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_note": "公开规定将强制传唤限定为无正当理由不接受或逃避传唤并经批准；使用约束性警械还须依法适用。页面将其概括为“暴力干涉”后的固定第四阶，条件不一致。"
+          "coverage_note": "相似点：公开规定包含强制传唤，并允许在符合法定条件时依法使用约束性警械。差异：强制传唤针对无正当理由不接受或逃避传唤并须审批，页面将其概括为暴力干涉后的固定第四阶，条件并不一致。"
         },
         {
           "point_id": "fagui-faly-yiju-08",
           "position": 8,
           "label": "盘查工作程序总览",
-          "coverage_status": "pending",
+          "coverage_status": "verified",
           "source_ids": [
             "official-peoples-police-law-2012",
             "official-resident-identity-card-law-2011",
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_note": "公开法律分别规定盘问检查、身份证查验和传唤条件，但没有规定页面从表明身份到强制传唤的统一必经流程；不能把不同权限拼接成固定顺序。"
+          "coverage_note": "相似点：公开法律分别规定盘问检查、身份证查验、口头传唤和强制传唤的权限与条件。差异：正文没有页面从表明身份到强制传唤的统一必经程序，这些不同权限不能视为固定顺序。"
         }
       ]
     },
@@ -315,8 +323,8 @@
           "source_ids": [
             "official-public-safety-video-system-regulation-2025"
           ],
-          "coverage_status": "pending",
-          "coverage_note": "条例第二条只定义在公共场所安装设备形成的公共安全视频系统，正文没有把单警执法记录仪纳入；页面关于“执法记录仪正式纳入条例管理”的核心结论无法核验。"
+          "coverage_status": "verified",
+          "coverage_note": "相似点：条例确实自2025年4月1日起施行，并规范公共安全视频图像信息的收集、存储、使用和调取。差异：第二条定义的是公共场所固定设备形成的系统，正文没有把单警执法记录仪纳入管理范围。"
         },
         {
           "point_id": "fagui-shipin-tiaoli-02",
@@ -326,8 +334,8 @@
             "official-public-safety-video-system-regulation-2025",
             "official-public-security-admin-case-procedure-2018"
           ],
-          "coverage_status": "pending",
-          "coverage_note": "条例第二十条仅要求国家机关依权限和程序查阅调取；行政案件规定要求审批并开具调取证据通知书，紧急调取可用传真等送达文书。两份正文均未规定页面所称紧急调取后24小时补手续及其列举的全部记录字段。"
+          "coverage_status": "verified",
+          "coverage_note": "相似点：条例要求国家机关依权限、程序和必要限度调取视频，行政案件规定要求审批并开具调取证据通知书，紧急时可用传真等送达文书。差异：正文未规定页面所称紧急调取后24小时补手续及其列举的全部记录字段。"
         },
         {
           "point_id": "fagui-shipin-tiaoli-03",
@@ -336,8 +344,8 @@
           "source_ids": [
             "official-public-safety-video-system-regulation-2025"
           ],
-          "coverage_status": "pending",
-          "coverage_note": "条例列明公共场所建设范围和禁止安装的隐私区域，但商场、医院、学校属于第七条明确的公共场所，不是页面所称须“协商调取”的半公共区域；“搜查令”和合理隐私期待也不是条例表述。"
+          "coverage_status": "verified",
+          "coverage_note": "相似点：条例区分公共场所可建设区域与客房、宿舍房间、浴室等禁止安装的隐私区域，体现公共安全与隐私边界。差异：商场、医院、学校属于第七条列举的公共场所，正文没有“半公共区域须协商”或“搜查令、合理隐私期待”的表述。"
         },
         {
           "point_id": "fagui-shipin-tiaoli-04",
@@ -346,8 +354,8 @@
           "source_ids": [
             "official-public-safety-video-system-regulation-2025"
           ],
-          "coverage_status": "pending",
-          "coverage_note": "条例规范的是公共场所固定视频系统，未规定执法记录仪；其第十七条规定视频图像信息不少于30日且目的实现后删除，与页面“一般不少于3个月、涉及警情不少于6个月”直接不一致。"
+          "coverage_status": "verified",
+          "coverage_note": "相似点：条例规定公共安全视频系统的运行安全、调用登记、保存和删除管理，禁止非法删除系统数据。差异：条例未规定执法记录仪，第十七条是保存不少于30日且目的实现后删除，与页面一般3个月、涉警情6个月不一致。"
         },
         {
           "point_id": "fagui-shipin-tiaoli-05",
@@ -384,9 +392,12 @@
           "point_id": "fagui-zhian-guifan-02",
           "position": 2,
           "label": "执法流程标准化",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": "未找到公开官方资料对应页面所称2025年“党建+执法规范化”专班及其SOP、逐案巡查、复盘和警示教育四项部署，无法以一般执法规范化政策代替该具体来源。"
+          "source_ids": [
+            "official-public-security-administration-punishments-law-2025",
+            "official-chongqing-police-new-public-order-law-explainer-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：现行治安管理处罚法及重庆公安解读均强调规范执法程序、执法证件、同步录音录像和执法监督，主题上与流程标准化相似。差异：未核验页面所称2025年“党建+执法规范化”专班及其SOP、逐案巡查、复盘、警示教育四项具体部署。"
         },
         {
           "point_id": "fagui-zhian-guifan-03",
@@ -1680,14 +1691,14 @@
     {
       "source_id": "official-chongqing-police-new-public-order-law-explainer-2025",
       "title": "新修订的治安管理处罚法出台 重庆治安民警解读“新法”新变化",
-      "publisher": "重庆市公安局治安总队",
+      "publisher": "重庆市公安局",
       "platform": "重庆市公安局",
       "url": "https://gaj.cq.gov.cn/sy_245/bmdt/202507/t20250724_14844447.html",
       "published_at": "2025-07-24",
       "verified_at": "2026-07-15",
       "verification_status": "verified",
       "similarity_note": "公安机关公开解读说明新法新增违法行为、规范执法证件、扣押同步录音录像和程序保障等基层执法变化。",
-      "source_level": 1,
+      "source_level": 2,
       "last_checked_at": "2026-07-15"
     }
   ]

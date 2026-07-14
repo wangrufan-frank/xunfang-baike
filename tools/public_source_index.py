@@ -433,17 +433,26 @@ def compare_page_points(html: str, page: dict) -> list[str]:
 
 
 def validate_ledger(
-    root: Path, ledger: dict, allow_pending: bool = False
+    root: Path, ledger: dict, allow_pending: bool = False, module: str | None = None
 ) -> list[str]:
     """Validate schema and ensure ledger pages match the current HTML inventory."""
     root = Path(root)
-    errors = validate_schema(ledger, allow_pending=allow_pending)
+    scoped_pages = ledger.get('pages', []) if isinstance(ledger, dict) else []
+    if module is not None and isinstance(scoped_pages, list):
+        scoped_pages = [
+            page for page in scoped_pages
+            if isinstance(page, dict)
+            and str(page.get('path', '')).startswith(f'{module}/')
+        ]
+    scoped_ledger = dict(ledger, pages=scoped_pages) if isinstance(ledger, dict) else ledger
+    errors = validate_schema(scoped_ledger, allow_pending=allow_pending)
     discovered = {
         page.relative_to(root).as_posix(): page
         for page in discover_pages(root)
+        if module is None or page.parent.name == module
     }
     ledger_pages = {}
-    pages = ledger.get('pages', []) if isinstance(ledger, dict) else []
+    pages = scoped_pages
     for page in pages if isinstance(pages, list) else []:
         if isinstance(page, dict) and _is_non_empty_string(page.get('path')):
             ledger_pages.setdefault(page['path'], page)
@@ -496,6 +505,7 @@ def _build_parser():
     parser.add_argument('ledger', nargs='?', type=Path)
     parser.add_argument('--root', type=Path, default=DEFAULT_ROOT)
     parser.add_argument('--allow-pending', action='store_true')
+    parser.add_argument('--module', choices=CONTENT_DIRECTORIES)
     parser.add_argument('--check', action='store_true')
     parser.add_argument('--output', type=Path)
     return parser
@@ -582,7 +592,12 @@ def main(argv=None):
         return 1
 
     allow_pending = args.allow_pending and args.command != 'write'
-    errors = validate_ledger(args.root, ledger, allow_pending=allow_pending)
+    if args.module and args.command != 'check':
+        print('--module is only valid with check', file=sys.stderr)
+        return 2
+    errors = validate_ledger(
+        args.root, ledger, allow_pending=allow_pending, module=args.module
+    )
     if args.command == 'check-publish':
         errors.extend(publish_errors(ledger))
     if errors:
@@ -590,15 +605,19 @@ def main(argv=None):
         return 1
 
     if args.command == 'check':
-        pages = ledger['pages']
+        pages = [
+            page for page in ledger['pages']
+            if args.module is None or page['path'].startswith(f'{args.module}/')
+        ]
         point_count = sum(len(page['points']) for page in pages)
         pending_count = sum(
             point.get('coverage_status') == 'pending'
             for page in pages
             for point in page['points']
         )
+        module_prefix = f'{args.module} ' if args.module else ''
         print(
-            f'PASS: {len(pages)} pages, {point_count} points; '
+            f'PASS: {module_prefix}{len(pages)} pages, {point_count} points; '
             f'{pending_count} points pending source verification.'
         )
     elif args.command == 'write':

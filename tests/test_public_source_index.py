@@ -462,13 +462,57 @@ class PublicSourceIndexCliTests(unittest.TestCase):
         )
 
     def test_check_allow_pending_reports_production_ledger_summary(self):
+        ledger = MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')
+        pending_count = sum(
+            point['coverage_status'] == 'pending'
+            for page in ledger['pages']
+            for point in page['points']
+        )
         result = self.run_cli('check', '--allow-pending')
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn(
             'PASS: 27 pages, 153 points; '
-            '153 points pending source verification.',
+            f'{pending_count} points pending source verification.',
             result.stdout,
         )
+
+    def test_check_module_filters_validation_and_summary(self):
+        ledger = MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')
+        pages = [page for page in ledger['pages'] if page['path'].startswith('fagui/')]
+        point_count = sum(len(page['points']) for page in pages)
+        pending_count = sum(
+            point['coverage_status'] == 'pending'
+            for page in pages
+            for point in page['points']
+        )
+
+        result = self.run_cli('check', '--module', 'fagui', '--allow-pending')
+
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn(
+            f'PASS: fagui {len(pages)} pages, {point_count} points; '
+            f'{pending_count} points pending source verification.',
+            result.stdout,
+        )
+
+    def test_check_module_ignores_pending_points_in_other_modules(self):
+        result = self.run_cli('check', '--module', 'fagui')
+
+        if any(
+            point['coverage_status'] == 'pending'
+            for page in MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')['pages']
+            if page['path'].startswith('fagui/')
+            for point in page['points']
+        ):
+            self.assertEqual(result.returncode, 1)
+        else:
+            self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_check_rejects_unknown_module(self):
+        result = self.run_cli('check', '--module', 'unknown')
+
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('invalid choice', result.stderr)
 
     def test_unknown_command_is_usage_error(self):
         result = self.run_cli('unknown')
