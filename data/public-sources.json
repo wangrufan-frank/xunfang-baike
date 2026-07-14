@@ -1,0 +1,1500 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "page_id": "fagui-dubo-zhifa",
+      "path": "fagui/dubo-zhifa.html",
+      "title": "🎲 赌博类警情执法标准",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "fagui-dubo-zhifa-01",
+          "position": 1,
+          "label": "核心要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-dubo-zhifa-02",
+          "position": 2,
+          "label": "现场风险评估",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-dubo-zhifa-03",
+          "position": 3,
+          "label": "证据固定要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-dubo-zhifa-04",
+          "position": 4,
+          "label": "人员控制与分离",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-dubo-zhifa-05",
+          "position": 5,
+          "label": "高危区域专项要求",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "fagui-faly-fayanfayu",
+      "path": "fagui/faly-fayanfayu.html",
+      "title": "⚖️ 法律与法言法语",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "fagui-faly-fayanfayu-01",
+          "position": 1,
+          "label": "现场执法五大依据",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-02",
+          "position": 2,
+          "label": "警械使用的八种法定情形（第七条）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-03",
+          "position": 3,
+          "label": "法言法语六级递进体系",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-04",
+          "position": 4,
+          "label": "第1-2级：表明身份 & 证明身份",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-05",
+          "position": 5,
+          "label": "第3-5级：口头警告 → 口头传唤 → 强制传唤",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-06",
+          "position": 6,
+          "label": "第6级：武力使用宣告（最核心法言法语）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-07",
+          "position": 7,
+          "label": "外围管控语言",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-fayanfayu-08",
+          "position": 8,
+          "label": "武力使用规范要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "fagui-faly-yiju",
+      "path": "fagui/faly-yiju.html",
+      "title": "📜 法律依据与法言法语",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "fagui-faly-yiju-01",
+          "position": 1,
+          "label": "《人民警察法》第九条（当场盘问检查权）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-02",
+          "position": 2,
+          "label": "《居民身份证法》第十五条（查验身份证权）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-03",
+          "position": 3,
+          "label": "法言法语递进体系",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-04",
+          "position": 4,
+          "label": "第一阶：表明身份",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-05",
+          "position": 5,
+          "label": "第二阶：口头警告（针对强烈拒绝配合并有肢体动作的）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-06",
+          "position": 6,
+          "label": "第三阶：口头传唤（多次警告无效时）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-07",
+          "position": 7,
+          "label": "第四阶：强制传唤（暴力干涉民警执行公务时）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-faly-yiju-08",
+          "position": 8,
+          "label": "盘查工作程序总览",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "fagui-gainian-falv",
+      "path": "fagui/gainian-falv.html",
+      "title": "📋 概念与法律依据",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "fagui-gainian-falv-01",
+          "position": 1,
+          "label": "核心定义",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-gainian-falv-02",
+          "position": 2,
+          "label": "法律依据 — 武力层级第二级",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-gainian-falv-03",
+          "position": 3,
+          "label": "武力对等原则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-gainian-falv-04",
+          "position": 4,
+          "label": "规范法言法语",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "fagui-shipin-tiaoli",
+      "path": "fagui/shipin-tiaoli.html",
+      "title": "📹 视频图像管理系统条例",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "fagui-shipin-tiaoli-01",
+          "position": 1,
+          "label": "条例核心影响",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-shipin-tiaoli-02",
+          "position": 2,
+          "label": "视频调取权限——程序化规范化",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-shipin-tiaoli-03",
+          "position": 3,
+          "label": "公共区域与私人区域界限",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-shipin-tiaoli-04",
+          "position": 4,
+          "label": "执法记录仪管理要求",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-shipin-tiaoli-05",
+          "position": 5,
+          "label": "隐私保护合规要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "fagui-zhian-guifan",
+      "path": "fagui/zhian-guifan.html",
+      "title": "📜 治安管理处罚法与执法规范",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "fagui-zhian-guifan-01",
+          "position": 1,
+          "label": "治安管理处罚法——新旧主要变化",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-zhian-guifan-02",
+          "position": 2,
+          "label": "执法流程标准化",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "fagui-zhian-guifan-03",
+          "position": 3,
+          "label": "基层实操要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-duncha-xietong",
+      "path": "xunlian/duncha-xietong.html",
+      "title": "🤝 盾叉协同战术",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-duncha-xietong-01",
+          "position": 1,
+          "label": "四大配合原则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-duncha-xietong-02",
+          "position": 2,
+          "label": "标准配合流程（四阶段）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-duncha-xietong-03",
+          "position": 3,
+          "label": "刀斧砍杀五步处置程序",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-duncha-xietong-04",
+          "position": 4,
+          "label": "五种基本战法组合",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-duncha-xietong-05",
+          "position": 5,
+          "label": "常见问题与对策",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-duncha-xietong-06",
+          "position": 6,
+          "label": "模拟警情示例",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-dunpai-jishu",
+      "path": "xunlian/dunpai-jishu.html",
+      "title": "🛡️ 盾牌技术",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-dunpai-jishu-01",
+          "position": 1,
+          "label": "盾牌五大核心功能",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-dunpai-jishu-02",
+          "position": 2,
+          "label": "持盾戒备：四字要领 \"高·贴·收·挺\"",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-dunpai-jishu-03",
+          "position": 3,
+          "label": "持盾撞击：三步骤连贯动作",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-dunpai-jishu-04",
+          "position": 4,
+          "label": "六大运用场景",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-dunpai-jishu-05",
+          "position": 5,
+          "label": "常见错误",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-dunpai-jishu-06",
+          "position": 6,
+          "label": "体能训练方法",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-gaishu-biancheng",
+      "path": "xunlian/gaishu-biancheng.html",
+      "title": "📐 概述与编成",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-gaishu-biancheng-01",
+          "position": 1,
+          "label": "标准定义",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-gaishu-biancheng-02",
+          "position": 2,
+          "label": "人员编成",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-gaishu-biancheng-03",
+          "position": 3,
+          "label": "职责分工",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-gaishu-biancheng-04",
+          "position": 4,
+          "label": "装备配备：三级装备体系",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-gaishu-biancheng-05",
+          "position": 5,
+          "label": "安全理念",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-jietuo-fangyu",
+      "path": "xunlian/jietuo-fangyu.html",
+      "title": "🤝 抓握解脱与防御",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-jietuo-fangyu-01",
+          "position": 1,
+          "label": "核心原理",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jietuo-fangyu-02",
+          "position": 2,
+          "label": "单手抓握解脱",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jietuo-fangyu-03",
+          "position": 3,
+          "label": "单臂抓握解脱",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jietuo-fangyu-04",
+          "position": 4,
+          "label": "双臂抓握解脱",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jietuo-fangyu-05",
+          "position": 5,
+          "label": "抓衣领解脱",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jietuo-fangyu-06",
+          "position": 6,
+          "label": "十字防御",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jietuo-fangyu-07",
+          "position": 7,
+          "label": "潜水推击 — 十字防御的升级",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-jinggun-zhuabucha",
+      "path": "xunlian/jinggun-zhuabucha.html",
+      "title": "🏒 警棍与抓捕叉",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-01",
+          "position": 1,
+          "label": "长警棍 — 持棍戒备",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-02",
+          "position": 2,
+          "label": "长警棍 — 戳击",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-03",
+          "position": 3,
+          "label": "长警棍在最小作战单元中的定位",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-04",
+          "position": 4,
+          "label": "抓捕叉 — 持叉戒备（三步）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-05",
+          "position": 5,
+          "label": "抓捕叉插锁（核心控制动作）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-06",
+          "position": 6,
+          "label": "胸叉捕控（进阶技术）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-07",
+          "position": 7,
+          "label": "实战约束控制：同向与侧向",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-jinggun-zhuabucha-08",
+          "position": 8,
+          "label": "实战六字诀 & 核心对比",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-kongzhi-jishu",
+      "path": "xunlian/kongzhi-jishu.html",
+      "title": "🔒 抱臂折腕控制",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-kongzhi-jishu-01",
+          "position": 1,
+          "label": "核心原理",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-kongzhi-jishu-02",
+          "position": 2,
+          "label": "抱臂控制（最低限度控制）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-kongzhi-jishu-03",
+          "position": 3,
+          "label": "折腕控制（中等控制）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-kongzhi-jishu-04",
+          "position": 4,
+          "label": "技术递进关系",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-kongzhi-jishu-05",
+          "position": 5,
+          "label": "训练方法（组训五步）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-pancha-liucheng",
+      "path": "xunlian/pancha-liucheng.html",
+      "title": "🔄 盘查规范流程",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-pancha-liucheng-01",
+          "position": 1,
+          "label": "第一步：表明身份",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-pancha-liucheng-02",
+          "position": 2,
+          "label": "第二步：告知法律依据",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-pancha-liucheng-03",
+          "position": 3,
+          "label": "第三步：查验身份信息",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-pancha-liucheng-04",
+          "position": 4,
+          "label": "第四步：口头警告（不配合时）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-pancha-liucheng-05",
+          "position": 5,
+          "label": "第五步：口头传唤（警告无效时）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-pancha-liucheng-06",
+          "position": 6,
+          "label": "第六步：强制传唤（暴力抗拒时）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-pancha-liucheng-07",
+          "position": 7,
+          "label": "核心处置原则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-soushen-daili",
+      "path": "xunlian/soushen-daili.html",
+      "title": "🔗 俯卧式搜身带离",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-soushen-daili-01",
+          "position": 1,
+          "label": "前置步骤 — 俯卧上铐四步",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-soushen-daili-02",
+          "position": 2,
+          "label": "俯卧式搜身 — 五个关键动作",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-soushen-daili-03",
+          "position": 3,
+          "label": "别臂带离 — 五个关键动作",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-soushen-daili-04",
+          "position": 4,
+          "label": "教学重点与难点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-soushen-daili-05",
+          "position": 5,
+          "label": "训练四步骤",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-wuli-shengji-sanfang",
+      "path": "xunlian/wuli-shengji-sanfang.html",
+      "title": "📊 武力升级与三防训练",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-01",
+          "position": 1,
+          "label": "五级武力升级模型",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-02",
+          "position": 2,
+          "label": "武力升级程序规范",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-03",
+          "position": 3,
+          "label": "三防概念",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-04",
+          "position": 4,
+          "label": "四维能力模型（知法·能说·会做·懂战术）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-05",
+          "position": 5,
+          "label": "防刀斧砍杀专项",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-06",
+          "position": 6,
+          "label": "防车辆冲撞专项",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-07",
+          "position": 7,
+          "label": "防纵火爆炸专项（2+n战法）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-wuli-shengji-sanfang-08",
+          "position": 8,
+          "label": "武器使用标准化程序",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-zhanshu-zhanwei-xunluo",
+      "path": "xunlian/zhanshu-zhanwei-xunluo.html",
+      "title": "📍 战术站位与装备应用",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-xunluo-01",
+          "position": 1,
+          "label": "战术站位：三种基本阵型",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-xunluo-02",
+          "position": 2,
+          "label": "装备体系（三大类）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-xunluo-03",
+          "position": 3,
+          "label": "伸缩警棍使用要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-xunluo-04",
+          "position": 4,
+          "label": "臂盾使用要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-xunluo-05",
+          "position": 5,
+          "label": "常见突发情况处置",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-xunluo-06",
+          "position": 6,
+          "label": "龙城平安e巡系统",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "xunlian-zhanshu-zhanwei",
+      "path": "xunlian/zhanshu-zhanwei.html",
+      "title": "📍 战术配合与站位",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-01",
+          "position": 1,
+          "label": "战术配合三大支柱",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-02",
+          "position": 2,
+          "label": "组合式站位",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-03",
+          "position": 3,
+          "label": "夹击式站位",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "xunlian-zhanshu-zhanwei-04",
+          "position": 4,
+          "label": "站位选择原则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-cuilei-pensheqi",
+      "path": "zhuangbei/cuilei-pensheqi.html",
+      "title": "💨 催泪喷射器",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-cuilei-pensheqi-01",
+          "position": 1,
+          "label": "基本介绍",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-cuilei-pensheqi-02",
+          "position": 2,
+          "label": "性能参数",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-cuilei-pensheqi-03",
+          "position": 3,
+          "label": "使用要领（核心口诀：\"喷—移—问\"）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-cuilei-pensheqi-04",
+          "position": 4,
+          "label": "天时地利人和原则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-cuilei-pensheqi-05",
+          "position": 5,
+          "label": "善后处理五步流程",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-cuilei-pensheqi-06",
+          "position": 6,
+          "label": "法定禁止情形",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-fangge-shoutao",
+      "path": "zhuangbei/fangge-shoutao.html",
+      "title": "🧤 防割手套",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-fangge-shoutao-01",
+          "position": 1,
+          "label": "核心性能边界：防割不防刺",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-fangge-shoutao-02",
+          "position": 2,
+          "label": "使用场景",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-fangge-shoutao-03",
+          "position": 3,
+          "label": "使用后维护",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-jingxie-jinggao",
+      "path": "zhuangbei/jingxie-jinggao.html",
+      "title": "📢 警械使用警告用语",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-jingxie-jinggao-01",
+          "position": 1,
+          "label": "标准警告用语",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-jingxie-jinggao-02",
+          "position": 2,
+          "label": "使用规则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-jingxie-jinggao-03",
+          "position": 3,
+          "label": "警告与法律的关系",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-jingxie-jinggao-04",
+          "position": 4,
+          "label": "不同警械的警告变体",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-jiuxiaojian-gailan",
+      "path": "zhuangbei/jiuxiaojian-gailan.html",
+      "title": "📦 九小件概览",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-jiuxiaojian-gailan-01",
+          "position": 1,
+          "label": "九小件清单",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-jiuxiaojian-gailan-02",
+          "position": 2,
+          "label": "佩戴三大原则",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-jiuxiaojian-gailan-03",
+          "position": 3,
+          "label": "佩戴顺序（以右强手、佩自动手枪为例）",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-jiuxiaojian-gailan-04",
+          "position": 4,
+          "label": "装备三大分类",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-shensuo-jinggun",
+      "path": "zhuangbei/shensuo-jinggun.html",
+      "title": "🪠 伸缩警棍",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-01",
+          "position": 1,
+          "label": "基本介绍",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-02",
+          "position": 2,
+          "label": "法律支撑",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-03",
+          "position": 3,
+          "label": "击打部位",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-04",
+          "position": 4,
+          "label": "戒备姿势",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-05",
+          "position": 5,
+          "label": "开棍技术",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-06",
+          "position": 6,
+          "label": "劈击技术",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-07",
+          "position": 7,
+          "label": "握棍方式",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shensuo-jinggun-08",
+          "position": 8,
+          "label": "安全注意事项",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-shoukao",
+      "path": "zhuangbei/shoukao.html",
+      "title": "🔗 手铐",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-shoukao-01",
+          "position": 1,
+          "label": "定位：武力链条中的约束环节",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shoukao-02",
+          "position": 2,
+          "label": "六种上铐方法",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-shoukao-03",
+          "position": 3,
+          "label": "使用注意事项",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zhuangbei-zhifa-jiuyi",
+      "path": "zhuangbei/zhifa-jiuyi.html",
+      "title": "📹 执法记录仪",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zhuangbei-zhifa-jiuyi-01",
+          "position": 1,
+          "label": "日常检查维护",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-zhifa-jiuyi-02",
+          "position": 2,
+          "label": "使用规范",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zhuangbei-zhifa-jiuyi-03",
+          "position": 3,
+          "label": "核心价值",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zoufang-jinrong-fankong",
+      "path": "zoufang/jinrong-fankong.html",
+      "title": "🏦 金融机构反恐防暴",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zoufang-jinrong-fankong-01",
+          "position": 1,
+          "label": "金融机构特殊性",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-jinrong-fankong-02",
+          "position": 2,
+          "label": "先期处置与模块化分工",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-jinrong-fankong-03",
+          "position": 3,
+          "label": "夹击战术——两种模式",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-jinrong-fankong-04",
+          "position": 4,
+          "label": "分割战术——两种模式",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-jinrong-fankong-05",
+          "position": 5,
+          "label": "实战技能三层次",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-jinrong-fankong-06",
+          "position": 6,
+          "label": "快反研训教官团队建设",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-jinrong-fankong-07",
+          "position": 7,
+          "label": "处置三重点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zoufang-xiaoyuan-fankong",
+      "path": "zoufang/xiaoyuan-fankong.html",
+      "title": "🏫 校园反恐防暴",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-01",
+          "position": 1,
+          "label": "涉校类警情特征",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-02",
+          "position": 2,
+          "label": "作战体系——人员准备四大步骤",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-03",
+          "position": 3,
+          "label": "三级装备体系",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-04",
+          "position": 4,
+          "label": "涉校类新修法律要点",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-05",
+          "position": 5,
+          "label": "校园特有处置策略",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-06",
+          "position": 6,
+          "label": "实战技能三层次与校园安保培训",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-fankong-07",
+          "position": 7,
+          "label": "实战要点口诀",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    },
+    {
+      "page_id": "zoufang-xiaoyuan-peixun",
+      "path": "zoufang/xiaoyuan-peixun.html",
+      "title": "🏫 校园安保与培训组织",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": [
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-01",
+          "position": 1,
+          "label": "涉校警情形势",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-02",
+          "position": 2,
+          "label": "校园环境的四大特殊性与处置策略",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-03",
+          "position": 3,
+          "label": "校园快反\"看、找、分、退\"操作",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-04",
+          "position": 4,
+          "label": "校园安保培训三模块",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-05",
+          "position": 5,
+          "label": "培训课程设计——四模块标准结构",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-06",
+          "position": 6,
+          "label": "实战模拟训练三层次",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-07",
+          "position": 7,
+          "label": "蓝军建设专班运作",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        },
+        {
+          "point_id": "zoufang-xiaoyuan-peixun-08",
+          "position": 8,
+          "label": "培训成效口诀",
+          "source_ids": [],
+          "coverage_status": "pending",
+          "coverage_note": ""
+        }
+      ]
+    }
+  ],
+  "sources": []
+}

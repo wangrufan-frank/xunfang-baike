@@ -11,7 +11,7 @@ import sys
 
 CONTENT_DIRECTORIES = ('fagui', 'xunlian', 'zhuangbei', 'zoufang')
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_LEDGER = DEFAULT_ROOT / 'docs' / 'public-source-ledger.json'
+DEFAULT_LEDGER = DEFAULT_ROOT / 'data' / 'public-sources.json'
 SOURCE_REQUIRED_FIELDS = (
     'title',
     'publisher',
@@ -325,6 +325,7 @@ def _build_parser():
     parser.add_argument('ledger', nargs='?', type=Path)
     parser.add_argument('--root', type=Path, default=DEFAULT_ROOT)
     parser.add_argument('--allow-pending', action='store_true')
+    parser.add_argument('--output', type=Path)
     return parser
 
 
@@ -335,17 +336,49 @@ def main(argv=None):
     args = _build_parser().parse_args(argv)
     if args.command == 'inventory':
         pages = discover_pages(args.root)
+        ledger_pages = []
         category_counts = {
             directory: {'pages': 0, 'points': 0}
             for directory in CONTENT_DIRECTORIES
         }
         for page in pages:
+            parsed = _parse_page(page.read_text(encoding='utf-8'))
             counts = category_counts[page.parent.name]
             counts['pages'] += 1
-            counts['points'] += len(
-                extract_points(page.read_text(encoding='utf-8'))
-            )
+            counts['points'] += len(parsed.points)
+            page_id = f'{page.parent.name}-{page.stem}'
+            ledger_pages.append({
+                'page_id': page_id,
+                'path': page.relative_to(args.root).as_posix(),
+                'title': parsed.title,
+                'review_status': 'pending',
+                'reviewed_by': None,
+                'reviewed_at': None,
+                'points': [
+                    {
+                        'point_id': f'{page_id}-{position:02d}',
+                        'position': position,
+                        'label': label,
+                        'source_ids': [],
+                        'coverage_status': 'pending',
+                        'coverage_note': '',
+                    }
+                    for position, label in enumerate(parsed.points, 1)
+                ],
+            })
         points = sum(counts['points'] for counts in category_counts.values())
+        if args.output:
+            ledger = {'version': 1, 'pages': ledger_pages, 'sources': []}
+            args.output.parent.mkdir(parents=True, exist_ok=True)
+            args.output.write_text(
+                json.dumps(ledger, ensure_ascii=False, indent=2) + '\n',
+                encoding='utf-8',
+            )
+            print(
+                f'Wrote {len(pages)} pages and {points} points; '
+                'all coverage statuses are pending.'
+            )
+            return 0
         print(f'{len(pages)} pages, {points} points')
         for directory, counts in category_counts.items():
             print(
@@ -368,7 +401,19 @@ def main(argv=None):
         _print_errors(errors)
         return 1
 
-    if args.command == 'write':
+    if args.command == 'check':
+        pages = ledger['pages']
+        point_count = sum(len(page['points']) for page in pages)
+        pending_count = sum(
+            point.get('coverage_status') == 'pending'
+            for page in pages
+            for point in page['points']
+        )
+        print(
+            f'PASS: {len(pages)} pages, {point_count} points; '
+            f'{pending_count} points pending source verification.'
+        )
+    elif args.command == 'write':
         ledger_path.write_text(
             json.dumps(ledger, ensure_ascii=False, indent=2) + '\n',
             encoding='utf-8',

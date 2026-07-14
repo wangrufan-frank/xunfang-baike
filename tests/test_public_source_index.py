@@ -309,6 +309,20 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         self.assertIn('台账要点', combined)
 
 
+class PublicSourceLedgerInventoryTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.ledger = MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')
+
+    def test_ledger_covers_every_current_page_and_point(self):
+        errors = MODULE.validate_ledger(ROOT, self.ledger, allow_pending=True)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(self.ledger['pages']), 27)
+        self.assertEqual(
+            sum(len(page['points']) for page in self.ledger['pages']), 153
+        )
+
+
 class PublicSourceIndexCliTests(unittest.TestCase):
     def run_cli(self, *args):
         return subprocess.run(
@@ -328,6 +342,46 @@ class PublicSourceIndexCliTests(unittest.TestCase):
         self.assertIn('xunlian: 11 pages, 67 points', result.stdout)
         self.assertIn('zhuangbei: 7 pages, 31 points', result.stdout)
         self.assertIn('zoufang: 3 pages, 22 points', result.stdout)
+
+    def test_inventory_output_writes_pending_ledger(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / 'public-sources.json'
+            result = self.run_cli('inventory', '--output', str(output))
+            self.assertEqual(result.returncode, 0, result.stderr)
+            ledger = MODULE.load_ledger(output)
+
+        self.assertIn(
+            'Wrote 27 pages and 153 points; all coverage statuses are pending.',
+            result.stdout,
+        )
+        self.assertEqual(MODULE.validate_ledger(ROOT, ledger, allow_pending=True), [])
+        self.assertEqual(ledger['sources'], [])
+        self.assertTrue(
+            all(
+                page['review_status'] == 'pending'
+                and page['reviewed_by'] is None
+                and page['reviewed_at'] is None
+                for page in ledger['pages']
+            )
+        )
+        self.assertTrue(
+            all(
+                point['source_ids'] == []
+                and point['coverage_status'] == 'pending'
+                and point['coverage_note'] == ''
+                for page in ledger['pages']
+                for point in page['points']
+            )
+        )
+
+    def test_check_allow_pending_reports_production_ledger_summary(self):
+        result = self.run_cli('check', '--allow-pending')
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn(
+            'PASS: 27 pages, 153 points; '
+            '153 points pending source verification.',
+            result.stdout,
+        )
 
     def test_unknown_command_is_usage_error(self):
         result = self.run_cli('unknown')
