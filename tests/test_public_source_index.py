@@ -368,6 +368,10 @@ class PublicSourceRenderTests(unittest.TestCase):
         self.assertEqual(rendered.count('href="#public-source-source-law"'), 2)
         self.assertEqual(rendered.count('id="public-source-source-law"'), 1)
         self.assertIn('class="public-source-index"', rendered)
+        self.assertEqual(rendered.count('class="source-citation"'), 2)
+        self.assertIn('class="public-source-list"', rendered)
+        self.assertIn('class="public-source-item"', rendered)
+        self.assertIn('class="public-source-note"', rendered)
         self.assertLess(rendered.index('public-source-index'), rendered.index('page-nav'))
         for value in (
             self.source['title'], self.source['publisher'], self.source['platform'],

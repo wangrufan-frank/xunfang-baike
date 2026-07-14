@@ -210,7 +210,7 @@ def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
             reference_id = f'source-ref-{point_id}-{source_id}'
             first_refs.setdefault(source_id, reference_id)
             citation_links.append(
-                f'<a id="{escape(reference_id, quote=True)}" '
+                f'<a class="source-citation" id="{escape(reference_id, quote=True)}" '
                 f'href="#public-source-{escape(source_id, quote=True)}">'
                 f'[{source_numbers[source_id]}]</a>'
             )
@@ -230,7 +230,8 @@ def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
             if source.get('published_at') else ''
         )
         entries.append(
-            f'<li id="public-source-{escape(source_id, quote=True)}">'
+            f'<li class="public-source-item" '
+            f'id="public-source-{escape(source_id, quote=True)}">'
             f'<span class="public-source-number">[{source_numbers[source_id]}]</span> '
             f'<cite>{escape(source["title"])}</cite>'
             f'<span class="public-source-publisher">发布主体：{escape(source["publisher"])}</span>'
@@ -247,8 +248,8 @@ def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
         '<!-- public-source-index:start -->\n'
         '<section class="public-source-index" aria-labelledby="public-source-index-title">\n'
         '<h2 id="public-source-index-title">公开资料对照</h2>\n'
-        f'<p class="public-source-notice">{SOURCE_NOTICE}</p>\n'
-        '<ol>\n' + '\n'.join(entries) + '\n</ol>\n'
+        f'<p class="public-source-note">{SOURCE_NOTICE}</p>\n'
+        '<ol class="public-source-list">\n' + '\n'.join(entries) + '\n</ol>\n'
         '</section>\n'
         '<!-- public-source-index:end -->\n'
     )
