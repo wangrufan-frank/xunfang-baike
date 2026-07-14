@@ -2,6 +2,7 @@
 
 from argparse import ArgumentParser
 from datetime import datetime
+from difflib import SequenceMatcher
 from html.parser import HTMLParser
 import json
 from pathlib import Path
@@ -103,6 +104,10 @@ def _is_empty(value):
     return value is None or value == '' or value == []
 
 
+def _is_non_empty_string(value):
+    return isinstance(value, str) and bool(value.strip())
+
+
 def _valid_date(value):
     if not isinstance(value, str):
         return False
@@ -137,8 +142,8 @@ def validate_schema(ledger: dict, allow_pending: bool = False) -> list[str]:
             errors.append(f'{prefix} must be an object')
             continue
         source_id = source.get('source_id')
-        if _is_empty(source_id):
-            errors.append(f'{prefix}.source_id must be non-empty')
+        if not _is_non_empty_string(source_id):
+            errors.append(f'{prefix}.source_id must be a non-empty string')
         elif source_id in source_ids:
             errors.append(f'duplicate source_id: {source_id}')
         else:
@@ -168,8 +173,8 @@ def validate_schema(ledger: dict, allow_pending: bool = False) -> list[str]:
             errors.append(f'{page_prefix} must be an object')
             continue
         path = page.get('path')
-        if _is_empty(path):
-            errors.append(f'{page_prefix}.path must be non-empty')
+        if not _is_non_empty_string(path):
+            errors.append(f'{page_prefix}.path must be a non-empty string')
         elif path in page_paths:
             errors.append(f'duplicate page path: {path}')
         else:
@@ -185,8 +190,8 @@ def validate_schema(ledger: dict, allow_pending: bool = False) -> list[str]:
                 errors.append(f'{prefix} must be an object')
                 continue
             point_id = point.get('point_id')
-            if _is_empty(point_id):
-                errors.append(f'{prefix}.point_id must be non-empty')
+            if not _is_non_empty_string(point_id):
+                errors.append(f'{prefix}.point_id must be a non-empty string')
             elif point_id in point_ids:
                 errors.append(f'duplicate point_id: {point_id}')
             else:
@@ -196,11 +201,20 @@ def validate_schema(ledger: dict, allow_pending: bool = False) -> list[str]:
             if not isinstance(ids, list):
                 errors.append(f'{prefix}.source_ids must be a list')
                 ids = []
-            referenced_ids.extend((prefix, source_id) for source_id in ids)
+            valid_ids = []
+            for source_index, source_id in enumerate(ids, 1):
+                if not _is_non_empty_string(source_id):
+                    errors.append(
+                        f'{prefix}.source_ids[{source_index}] must be a '
+                        'non-empty string'
+                    )
+                    continue
+                valid_ids.append(source_id)
+            referenced_ids.extend((prefix, source_id) for source_id in valid_ids)
             if not allow_pending:
                 if point.get('coverage_status') != 'verified':
                     errors.append(f'{prefix}.coverage_status must be verified')
-                if not ids:
+                if not valid_ids:
                     errors.append(f'{prefix}.source_ids must contain at least one source')
 
     for prefix, source_id in referenced_ids:
@@ -213,27 +227,37 @@ def compare_page_points(html: str, page: dict) -> list[str]:
     """Report ledger labels that differ from HTML labels at each position."""
     html_points = extract_points(html)
     ledger_points = page.get('points', []) if isinstance(page, dict) else []
-    ledger_by_position = {
-        point.get('position'): point.get('label', '')
+    ledger_entries = sorted(
+        (point.get('position'), point.get('label', ''))
         for point in ledger_points
         if isinstance(point, dict)
-    }
+    )
+    ledger_labels = [label for _, label in ledger_entries]
     errors = []
     path = page.get('path', '<unknown>') if isinstance(page, dict) else '<unknown>'
-    for position, label in enumerate(html_points, 1):
-        expected = ledger_by_position.get(position)
-        if expected is None:
-            errors.append(f'{path}: HTML added point at position {position}: {label}')
-        elif expected != label:
-            errors.append(
-                f'{path}: point renamed at position {position}: {expected} -> {label}'
-            )
-    for position in sorted(ledger_by_position):
-        if position > len(html_points):
-            errors.append(
-                f'{path}: HTML removed point at position {position}: '
-                f'{ledger_by_position[position]}'
-            )
+    matcher = SequenceMatcher(None, ledger_labels, html_points, autojunk=False)
+    for tag, ledger_start, ledger_end, html_start, html_end in matcher.get_opcodes():
+        if tag == 'equal':
+            continue
+        ledger_chunk = ledger_entries[ledger_start:ledger_end]
+        html_chunk = html_points[html_start:html_end]
+        if tag == 'replace' and len(ledger_chunk) == len(html_chunk):
+            for (position, old_label), new_label in zip(ledger_chunk, html_chunk):
+                errors.append(
+                    f'{path}: point renamed at position {position}: '
+                    f'{old_label} -> {new_label}'
+                )
+            continue
+        if tag in ('delete', 'replace'):
+            for position, label in ledger_chunk:
+                errors.append(
+                    f'{path}: HTML removed point at position {position}: {label}'
+                )
+        if tag in ('insert', 'replace'):
+            for offset, label in enumerate(html_chunk, html_start + 1):
+                errors.append(
+                    f'{path}: HTML added point at position {offset}: {label}'
+                )
     return errors
 
 
@@ -250,7 +274,7 @@ def validate_ledger(
     ledger_pages = {}
     pages = ledger.get('pages', []) if isinstance(ledger, dict) else []
     for page in pages if isinstance(pages, list) else []:
-        if isinstance(page, dict) and isinstance(page.get('path'), str):
+        if isinstance(page, dict) and _is_non_empty_string(page.get('path')):
             ledger_pages.setdefault(page['path'], page)
 
     for path in sorted(discovered.keys() - ledger_pages.keys()):
@@ -311,11 +335,23 @@ def main(argv=None):
     args = _build_parser().parse_args(argv)
     if args.command == 'inventory':
         pages = discover_pages(args.root)
-        points = sum(
-            len(extract_points(page.read_text(encoding='utf-8')))
-            for page in pages
-        )
+        category_counts = {
+            directory: {'pages': 0, 'points': 0}
+            for directory in CONTENT_DIRECTORIES
+        }
+        for page in pages:
+            counts = category_counts[page.parent.name]
+            counts['pages'] += 1
+            counts['points'] += len(
+                extract_points(page.read_text(encoding='utf-8'))
+            )
+        points = sum(counts['points'] for counts in category_counts.values())
         print(f'{len(pages)} pages, {points} points')
+        for directory, counts in category_counts.items():
+            print(
+                f'{directory}: {counts["pages"]} pages, '
+                f'{counts["points"]} points'
+            )
         return 0
 
     ledger_path = args.ledger or DEFAULT_LEDGER

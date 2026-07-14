@@ -56,13 +56,22 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         pages = MODULE.discover_pages(ROOT)
         self.assertEqual(len(pages), 27)
         counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0}
+        point_counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0}
         point_count = 0
         for page in pages:
             counts[page.parent.name] += 1
-            point_count += len(MODULE.extract_points(page.read_text(encoding='utf-8')))
+            page_point_count = len(
+                MODULE.extract_points(page.read_text(encoding='utf-8'))
+            )
+            point_counts[page.parent.name] += page_point_count
+            point_count += page_point_count
         self.assertEqual(
             counts,
             {'fagui': 6, 'xunlian': 11, 'zhuangbei': 7, 'zoufang': 3},
+        )
+        self.assertEqual(
+            point_counts,
+            {'fagui': 33, 'xunlian': 67, 'zhuangbei': 31, 'zoufang': 22},
         )
         self.assertEqual(point_count, 153)
 
@@ -159,6 +168,36 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         self.assertTrue(any('verified_at' in error for error in errors))
         self.assertTrue(any('last_checked_at' in error for error in errors))
 
+    def test_identifier_fields_reject_non_string_values_without_type_error(self):
+        locations = {
+            'source_id': 'source[1].source_id',
+            'path': 'page[1].path',
+            'point_id': 'page[1].point[1].point_id',
+            'source_ids': 'page[1].point[1].source_ids[1]',
+        }
+        for field in locations:
+            for value in ({}, []):
+                with self.subTest(field=field, value_type=type(value).__name__):
+                    ledger = self.fixture_ledger()
+                    if field == 'source_id':
+                        ledger['sources'][0][field] = value
+                    elif field == 'path':
+                        ledger['pages'][0][field] = value
+                    elif field == 'point_id':
+                        ledger['pages'][0]['points'][0][field] = value
+                    else:
+                        ledger['pages'][0]['points'][0][field] = [value]
+
+                    errors = MODULE.validate_schema(ledger)
+
+                    self.assertTrue(
+                        any(
+                            error == f'{locations[field]} must be a non-empty string'
+                            for error in errors
+                        ),
+                        errors,
+                    )
+
     def test_review_status_is_not_inferred_from_verified_sources(self):
         ledger = self.fixture_ledger()
         before = deepcopy(ledger)
@@ -208,6 +247,46 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         for label in ('要点二已改名', '新增要点', '要点二', '已删除要点'):
             self.assertIn(label, combined)
 
+    def test_compare_page_points_reports_only_middle_insertion(self):
+        page = self._comparison_page('A', 'B')
+        html = self._comparison_html('A', 'NEW', 'B')
+        self.assertEqual(
+            MODULE.compare_page_points(html, page),
+            ['example.html: HTML added point at position 2: NEW'],
+        )
+
+    def test_compare_page_points_reports_only_middle_deletion(self):
+        page = self._comparison_page('A', 'B', 'C')
+        html = self._comparison_html('A', 'C')
+        self.assertEqual(
+            MODULE.compare_page_points(html, page),
+            ['example.html: HTML removed point at position 2: B'],
+        )
+
+    def test_compare_page_points_reports_equal_length_replacement_as_rename(self):
+        page = self._comparison_page('A', 'OLD', 'C')
+        html = self._comparison_html('A', 'NEW', 'C')
+        self.assertEqual(
+            MODULE.compare_page_points(html, page),
+            ['example.html: point renamed at position 2: OLD -> NEW'],
+        )
+
+    @staticmethod
+    def _comparison_page(*labels):
+        return {
+            'path': 'example.html',
+            'points': [
+                {'position': position, 'label': label}
+                for position, label in enumerate(labels, 1)
+            ],
+        }
+
+    @staticmethod
+    def _comparison_html(*labels):
+        return ''.join(
+            f'<div class="step-title">{label}</div>' for label in labels
+        )
+
     def test_validate_ledger_reports_inventory_and_html_drift(self):
         ledger = self.fixture_ledger()
         ledger['pages'][0]['path'] = 'fagui/page.html'
@@ -245,6 +324,10 @@ class PublicSourceIndexCliTests(unittest.TestCase):
         result = self.run_cli('inventory')
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn('27 pages, 153 points', result.stdout)
+        self.assertIn('fagui: 6 pages, 33 points', result.stdout)
+        self.assertIn('xunlian: 11 pages, 67 points', result.stdout)
+        self.assertIn('zhuangbei: 7 pages, 31 points', result.stdout)
+        self.assertIn('zoufang: 3 pages, 22 points', result.stdout)
 
     def test_unknown_command_is_usage_error(self):
         result = self.run_cli('unknown')
@@ -263,6 +346,30 @@ class PublicSourceIndexCliTests(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertIsInstance(result.stderr, str)
         self.assertIn('verification_status', result.stderr)
+
+    def test_check_invalid_identifier_types_returns_data_error_without_traceback(self):
+        ledger = PublicSourceIndexUnitTests.fixture_ledger()
+        ledger['sources'][0]['source_id'] = {}
+        ledger['pages'][0]['path'] = {}
+        ledger['pages'][0]['points'][0]['point_id'] = []
+        ledger['pages'][0]['points'][0]['source_ids'] = [{}]
+        with tempfile.TemporaryDirectory() as directory:
+            ledger_path = Path(directory) / 'ledger.json'
+            ledger_path.write_text(
+                json.dumps(ledger, ensure_ascii=False),
+                encoding='utf-8',
+            )
+            result = self.run_cli('check', str(ledger_path))
+
+        self.assertEqual(result.returncode, 1)
+        self.assertNotIn('Traceback', result.stderr)
+        self.assertIn('source[1].source_id must be a non-empty string', result.stderr)
+        self.assertIn('page[1].path must be a non-empty string', result.stderr)
+        self.assertIn('page[1].point[1].point_id must be a non-empty string', result.stderr)
+        self.assertIn(
+            'page[1].point[1].source_ids[1] must be a non-empty string',
+            result.stderr,
+        )
 
 
 if __name__ == '__main__':
