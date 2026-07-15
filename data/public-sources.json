@@ -1567,57 +1567,75 @@
           "point_id": "zoufang-jinrong-fankong-01",
           "position": 1,
           "label": "金融机构特殊性",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-finance-antiterror-standard"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：金融机构反恐标准明确现金、重要凭证与人员密集场所的重点防护属性。差异：未覆盖页面中全部内部风险分类与数值。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-02",
           "position": 2,
           "label": "先期处置与模块化分工",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-finance-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：标准设置指挥、警戒、疏散、处置、救护和通讯等应急分组，演练报道展示报警、警戒、撤离与搜索的协同处置。差异：校园演练为跨场景补充，两来源均未覆盖页面内部三组命名及全部步骤。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-03",
           "position": 3,
           "label": "夹击战术——两种模式",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-finance-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：金融反恐标准要求建立应急处置队伍并配备盾、叉、棍等器材，演练报道记载人员从不同方向包抄、周旋和带离。差异：演练为跨场景案例，未核验页面所称两种“夹击”模式及具体站位。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-04",
           "position": 4,
           "label": "分割战术——两种模式",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-campus-drill-bbmu"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：公开演练包含警戒、撤离、搜索以及从不同方向包抄、周旋、带离等协同控制内容。差异：该来源是校园跨场景演练，未点名页面的“分割战术”两种内部模式。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-05",
           "position": 5,
           "label": "实战技能三层次",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-finance-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：标准要求开展反恐防范教育、专业培训和应急演练，演练报道包含理论培训、器材使用、场景实战与测评。差异：校园来源为跨场景补充，未覆盖页面自定义的三层次名称与全部参数。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-06",
           "position": 6,
           "label": "快反研训教官团队建设",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-finance-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：金融标准要求明确安全防范责任、组建应急队伍并定期培训演练，演练报道展示专业队伍授课、实操和考核。差异：校园演练为跨场景补充，未覆盖页面内部“快反研训”组织名称与团队编制。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-07",
           "position": 7,
           "label": "处置三重点",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "src-zoufang-finance-antiterror-standard"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：金融反恐标准要求预案覆盖指挥、警戒、疏散、处置、救护和通讯，并要求应急队伍、器材、培训与演练。差异：未核验页面内部归纳的“三重点”表述及具体指标。"
         }
       ]
     },
@@ -1633,57 +1651,57 @@
           "point_id": "zoufang-xiaoyuan-fankong-01",
           "position": 1,
           "label": "涉校类警情特征",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：教育机构反恐标准把校园重点部位、人员密集区域列为防范对象，校园演练设置爆炸物、持刀等突发场景。差异：未核验页面所列全部警情统计、内部分类和比例。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-02",
           "position": 2,
           "label": "作战体系——人员准备四大步骤",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：教育机构标准要求建立应急队伍、落实门卫巡查并与公安机关联络，演练报道展示报警、警戒、撤离和搜索。差异：未覆盖页面内部“四大步骤”命名及其全部战术细节。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-03",
           "position": 3,
           "label": "三级装备体系",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-security-plan-anyang"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：两份公开文件均要求校园配备防护盾牌、防暴叉、头盔等安保器材，并强调规范使用与管理。差异：未核验页面所称三级体系的内部分级名称和配备数量。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-04",
           "position": 4,
           "label": "涉校类新修法律要点",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-public-security-law-2025"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：现行治安管理处罚法涉及学生欺凌、学校报告和处置责任，也规定未成年人执行拘留的例外情形。差异：仅核验公开法律中相关条文主题，未覆盖页面的全部执法解读。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-05",
           "position": 5,
           "label": "校园特有处置策略",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-campus-security-plan-anyang", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：安全方案要求封闭管理、门卫查验、一键报警和警校联防，演练体现报警、疏散、警戒、搜索与带离。差异：未核验页面中所有校园特有战术命名与操作参数。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-06",
           "position": 6,
           "label": "实战技能三层次与校园安保培训",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：教育机构标准要求全员安全教育、专业队伍训练和定期演练，实战演练报道包含器材实操、场景处置和测评。差异：未覆盖页面自定义的三层次名称及培训细分结构。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-07",
           "position": 7,
           "label": "实战要点口诀",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：校园反恐演练展示发现情况、启动报警、警戒撤离、器材阻控、多向包抄和带离等实战要点。差异：来源未使用页面内部口诀，也未完整覆盖其逐字步骤。"
         }
       ]
     },
@@ -1699,65 +1717,65 @@
           "point_id": "zoufang-xiaoyuan-peixun-01",
           "position": 1,
           "label": "涉校警情形势",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：教育机构标准将校园重点部位、人员密集区域列为防范重点，演练报道设置爆炸物、持刀等校园突发场景。差异：未核验页面所列警情统计、内部形势分类与比例。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-02",
           "position": 2,
           "label": "校园环境的四大特殊性与处置策略",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-security-plan-anyang"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：公开标准与安防方案要求封闭管理、门卫查验、重点区域巡查、预警处置和警校联防。差异：未完整覆盖页面归纳的“四大特殊性”命名与全部内部策略。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-03",
           "position": 3,
           "label": "校园快反\"看、找、分、退\"操作",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：校园演练流程包含发现可疑情况、一键报警、警戒撤离、搜索、器材阻控和人员带离。差异：来源未使用页面内部“看、找、分、退”口诀，仅为流程主题相似。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-04",
           "position": 4,
           "label": "校园安保培训三模块",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：教育机构标准要求开展全员安全教育、应急队伍专业培训和定期演练，报道展示理论讲解、器材使用、场景演练和测评。差异：未核验页面内部三模块的名称与全部课时设计。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-05",
           "position": 5,
           "label": "培训课程设计——四模块标准结构",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：标准要求反恐知识教育、器材实操、专业队伍训练与应急演练，演练报道包含培训、实操、场景处置和测评。差异：未覆盖页面“四模块”标准结构的内部名称、排序和参数。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-06",
           "position": 6,
           "label": "实战模拟训练三层次",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：公开演练由反恐专业队伍组织培训，覆盖器材操作、多场景联合演练、实战处置和测评考核。差异：未核验页面自定义的三层次名称和分层训练参数。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-07",
           "position": 7,
           "label": "蓝军建设专班运作",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：演练报道显示市反恐支队与学校组建联合训练和测评体系，并围绕典型场景开展专业指导。差异：来源未使用“蓝军建设专班”内部名称，也未披露其编组运作细节。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-08",
           "position": 8,
           "label": "培训成效口诀",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "coverage_status": "verified",
+          "coverage_note": "相似点：校园演练覆盖报警、撤离、警戒、搜索、器材阻控、多向包抄与带离，并通过测评检验成效。差异：来源未使用页面内部培训成效口诀，仅支持其中相关流程主题。"
         }
       ]
     }
@@ -2046,6 +2064,71 @@
       "verified_at": "2026-07-15",
       "verification_status": "verified",
       "similarity_note": "常州市公安局公开正文介绍“龙城·平安e巡”平台整合快反力量、实现一图可视和一体调度，并通过平台推送线索、协同处置警情。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "src-zoufang-finance-antiterror-standard",
+      "title": "反恐怖防范管理 第30部分：金融机构（DB4401/T 10.30—2020）",
+      "publisher": "广州市市场监督管理局、广州市反恐怖工作领导小组办公室",
+      "platform": "广州市市场监督管理局",
+      "url": "https://scjgj.gz.gov.cn/attachment/6/6734/6734446/6991549.pdf",
+      "published_at": "2020-12-04",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "地方标准正文覆盖金融机构重点防范部位、应急指挥与警戒疏散等分组、盾叉棍防护装备、预案、培训和演练。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "src-zoufang-education-antiterror-standard",
+      "title": "反恐怖防范管理 第5部分：教育机构（DB4401/T 10.5—2019）",
+      "publisher": "广州市市场监督管理局、广州市反恐怖工作领导小组办公室",
+      "platform": "广州市市场监督管理局",
+      "url": "https://scjgj.gz.gov.cn/attachment/7/7188/7188982/8595211.pdf",
+      "published_at": "2019-12-17",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "地方标准正文覆盖校园重点部位、门卫巡查、应急队伍、公安联络、全员训练演练、防护装备和疏散路径等主题。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "src-zoufang-campus-drill-bbmu",
+      "title": "学校联合市反恐支队开展校园反恐防暴应急模拟演练与测评考核",
+      "publisher": "蚌埠医科大学",
+      "platform": "蚌埠医科大学",
+      "url": "https://www.bbmu.edu.cn/info/1040/37073.htm",
+      "published_at": "2024-05-14",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "高校公开报道覆盖一键报警、爆炸物和持刀场景、警戒撤离搜索、防暴器材、多向包抄周旋带离、培训与测评。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "src-zoufang-public-security-law-2025",
+      "title": "中华人民共和国治安管理处罚法",
+      "publisher": "全国人民代表大会常务委员会",
+      "platform": "国家市场监督管理总局",
+      "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2025/art_8a1c722747214869b28c0ad7a0f8bb7a.html",
+      "published_at": "2025-06-27",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "国家机关公开的法律正文涉及学生欺凌、学校报告处置责任以及未成年人行政拘留执行例外。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "src-zoufang-campus-security-plan-anyang",
+      "title": "关于2021年推动落实全市中小学幼儿园安全防范建设三年行动实施方案的通知",
+      "publisher": "安阳县教育局",
+      "platform": "安阳县人民政府",
+      "url": "https://www.ayx.gov.cn/2023/01-04/3338957.html",
+      "published_at": "2021-01-31",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "政府网站公开方案覆盖校园安全主体责任、封闭管理、门卫查验、一键报警、警校联防演练、保安队伍及盾叉等防护装备。",
       "source_level": 2,
       "last_checked_at": "2026-07-15"
     }
