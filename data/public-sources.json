@@ -1128,9 +1128,9 @@
           "point_id": "zhuangbei-fangge-shoutao-01",
           "position": 1,
           "label": "核心性能边界：防割不防刺",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": ["official-longling-police-equipment-procurement-2016", "official-hand-protection-selection-maintenance-standard-2025"],
           "coverage_status": "verified",
-          "coverage_note": "铜仁监狱公开训练正文说明单警装备需按法律依据、使用时机、方法和注意事项规范使用；未点名防割手套，也未证明“防割不防刺”材料性能边界。"
+          "coverage_note": "龙陵县公安局采购正文点名防割手套，说明其由金属丝和高性能聚乙烯纤维包覆纱织成、用于抵御刀具割划；国家标准另要求按危害类型和性能等级选择手部防护装备并了解性能局限。两者支持材料与性能边界概念，但未证明页面所称所有防割手套均绝对不防刺。"
         },
         {
           "point_id": "zhuangbei-fangge-shoutao-02",
@@ -1138,15 +1138,15 @@
           "label": "使用场景",
           "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
           "coverage_status": "verified",
-          "coverage_note": "公开资料覆盖执勤执法环节的单警装备安全使用及现场风险判断；未点名防割手套或页面所列搜身、持刀警情等四个具体场景。"
+          "coverage_note": "现场规程第三十九条要求民警在人身检查时谨防接触注射针筒、刀片等物品而感染疾病或者受伤，与页面所述搜身防护场景相似；规程未点名应使用防割手套，也未覆盖页面列举的全部场景。"
         },
         {
           "point_id": "zhuangbei-fangge-shoutao-03",
           "position": 3,
           "label": "使用后维护",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": ["official-hand-protection-selection-maintenance-standard-2025"],
           "coverage_status": "verified",
-          "coverage_note": "公开训练正文覆盖单警装备规范使用和注意事项这一维护安全主题；未点名手套破损检查或必须更换的具体要求。"
+          "coverage_note": "国家标准要求手部防护装备使用前后检查，损坏后不得继续使用并按情形更换；可重复使用装备在使用后应清洁、检查，出现明显缺陷应报废，并应按制造商信息清洗保养。该标准适用于生产活动，并非警用防割手套专门规程。"
         }
       ]
     },
@@ -1214,15 +1214,15 @@
           "label": "佩戴三大原则",
           "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
           "coverage_status": "verified",
-          "coverage_note": "公开资料覆盖单警装备的使用时机、方法、注意事项和现场风险判断；未覆盖贴身防脱、拿取排序和武力升级三项佩戴原则。"
+          "coverage_note": "公开资料关于现场强制手段要求优先采用较轻措施、以制止违法犯罪行为为限，与页面所述最小武力和按需升级概念相似；未覆盖贴身防脱、拿取排序等腰带佩戴原则，也未建立页面固定的武力升级顺序。"
         },
         {
           "point_id": "zhuangbei-jiuxiaojian-gailan-03",
           "position": 3,
           "label": "佩戴顺序（以右强手、佩自动手枪为例）",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": ["official-yumen-court-police-equipment-training-2025"],
           "coverage_status": "verified",
-          "coverage_note": "公开训练正文实质相似于单警装备规范使用与快速取用的总体主题；未公布右强手条件下的具体腰带佩戴顺序。"
+          "coverage_note": "玉门法院公开训练正文将警械知识拆为“佩戴规范—快速取放—场景应用”，明确训练中绘制佩戴位置示意图并调整手铐佩戴角度以便精准拔取；未公布页面右强手、佩自动手枪条件下的完整腰带顺序。"
         },
         {
           "point_id": "zhuangbei-jiuxiaojian-gailan-04",
@@ -1737,6 +1737,45 @@
       "verified_at": "2026-07-15",
       "verification_status": "verified",
       "similarity_note": "监狱人民警察公开训练材料说明依据法律和理论对伸缩警棍、催泪喷射器、手铐的使用时机、方法、动作要领和注意事项开展讲解示范与实操。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-longling-police-equipment-procurement-2016",
+      "title": "龙陵县公安局单警执法产品设备及安装服务项目询价采购报名公告",
+      "publisher": "龙陵县公安局",
+      "platform": "龙陵县人民政府",
+      "url": "https://www.longling.gov.cn/info/5665/126508.htm",
+      "published_at": "2016-09-27",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安机关政府采购正文点名防割手套，说明金属丝和高性能聚乙烯纤维包覆纱材料、五级防切割性能及抵御刀具割划的用途。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-hand-protection-selection-maintenance-standard-2025",
+      "title": "GB 29512—2025 手部防护装备的选择、使用和维护",
+      "publisher": "国家市场监督管理总局、国家标准化管理委员会",
+      "platform": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/fw/flfgbz/bz/bzwb/202605/W020260519618697512384.pdf",
+      "published_at": "2025-08-29",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "国家标准正文要求按危害类型、材质和性能等级选择手部防护装备，了解防护性能局限，并规定使用前后检查、损坏更换、使用后清洁、清洗保养和报废条件。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-yumen-court-police-equipment-training-2025",
+      "title": "锤炼警械使用硬本领丨玉门法院司法警察实战化训练警械篇",
+      "publisher": "玉门市人民法院",
+      "platform": "酒泉法院网",
+      "url": "https://jiuquan.chinagscourt.gov.cn/Show/99694",
+      "published_at": "2025-07-04",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "法院公开训练正文覆盖单警警械佩戴规范、快速取放、佩戴位置示意和手铐佩戴角度调整，以便在场景中精准拔取。",
       "source_level": 2,
       "last_checked_at": "2026-07-15"
     }
