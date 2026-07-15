@@ -1593,7 +1593,7 @@
             "src-zoufang-campus-drill-bbmu"
           ],
           "coverage_status": "verified",
-          "coverage_note": "相似点：金融反恐标准要求建立应急处置队伍并配备盾、叉、棍等器材，演练报道记载人员从不同方向包抄、周旋和带离。差异：演练为跨场景案例，未核验页面所称两种“夹击”模式及具体站位。"
+          "coverage_note": "相似点：金融反恐标准要求建立应急处置队伍并配备盾、叉、棍等器材，演练报道记载人员从不同方向包抄、周旋、劝阻和制止。差异：演练为跨场景案例，未核验页面所称两种“夹击”模式及具体站位。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-04",
@@ -1603,7 +1603,7 @@
             "src-zoufang-campus-drill-bbmu"
           ],
           "coverage_status": "verified",
-          "coverage_note": "相似点：公开演练包含警戒、撤离、搜索以及从不同方向包抄、周旋、带离等协同控制内容。差异：该来源是校园跨场景演练，未点名页面的“分割战术”两种内部模式。"
+          "coverage_note": "相似点：公开演练包含警戒、撤离、搜索以及从不同方向包抄、周旋、劝阻和制止等协同控制内容。差异：该来源是校园跨场景演练，未点名页面的“分割战术”两种内部模式。"
         },
         {
           "point_id": "zoufang-jinrong-fankong-05",
@@ -1685,7 +1685,7 @@
           "label": "校园特有处置策略",
           "source_ids": ["src-zoufang-campus-security-plan-anyang", "src-zoufang-campus-drill-bbmu"],
           "coverage_status": "verified",
-          "coverage_note": "相似点：安全方案要求封闭管理、门卫查验、一键报警和警校联防，演练体现报警、疏散、警戒、搜索与带离。差异：未核验页面中所有校园特有战术命名与操作参数。"
+          "coverage_note": "相似点：安全方案要求封闭管理、门卫查验、一键报警和警校联防，演练体现报警、疏散、警戒、搜索、劝阻与制止。差异：未核验页面中所有校园特有战术命名与操作参数。"
         },
         {
           "point_id": "zoufang-xiaoyuan-fankong-06",
@@ -1701,7 +1701,7 @@
           "label": "实战要点口诀",
           "source_ids": ["src-zoufang-campus-drill-bbmu"],
           "coverage_status": "verified",
-          "coverage_note": "相似点：校园反恐演练展示发现情况、启动报警、警戒撤离、器材阻控、多向包抄和带离等实战要点。差异：来源未使用页面内部口诀，也未完整覆盖其逐字步骤。"
+          "coverage_note": "相似点：校园反恐演练展示发现情况、启动报警、警戒撤离、器材阻控、多向包抄、劝阻和制止等实战要点。差异：来源未使用页面内部口诀，也未完整覆盖其逐字步骤。"
         }
       ]
     },
@@ -1735,7 +1735,7 @@
           "label": "校园快反\"看、找、分、退\"操作",
           "source_ids": ["src-zoufang-campus-drill-bbmu"],
           "coverage_status": "verified",
-          "coverage_note": "相似点：校园演练流程包含发现可疑情况、一键报警、警戒撤离、搜索、器材阻控和人员带离。差异：来源未使用页面内部“看、找、分、退”口诀，仅为流程主题相似。"
+          "coverage_note": "相似点：校园演练流程包含发现可疑情况、一键报警、警戒撤离、搜索、器材阻控、劝阻和制止。差异：来源未使用页面内部“看、找、分、退”口诀，仅为流程主题相似。"
         },
         {
           "point_id": "zoufang-xiaoyuan-peixun-04",
@@ -1775,7 +1775,7 @@
           "label": "培训成效口诀",
           "source_ids": ["src-zoufang-campus-drill-bbmu"],
           "coverage_status": "verified",
-          "coverage_note": "相似点：校园演练覆盖报警、撤离、警戒、搜索、器材阻控、多向包抄与带离，并通过测评检验成效。差异：来源未使用页面内部培训成效口诀，仅支持其中相关流程主题。"
+          "coverage_note": "相似点：校园演练覆盖报警、撤离、警戒、搜索、器材阻控、多向包抄、劝阻和制止，并通过测评检验成效。差异：来源未使用页面内部培训成效口诀，仅支持其中相关流程主题。"
         }
       ]
     }
@@ -2102,7 +2102,7 @@
       "published_at": "2024-05-14",
       "verified_at": "2026-07-15",
       "verification_status": "verified",
-      "similarity_note": "高校公开报道覆盖一键报警、爆炸物和持刀场景、警戒撤离搜索、防暴器材、多向包抄周旋带离、培训与测评。",
+      "similarity_note": "高校公开报道覆盖一键报警、爆炸物和持刀场景、警戒撤离搜索、防暴器材、多向包抄、周旋、劝阻和制止、培训与测评。",
       "source_level": 2,
       "last_checked_at": "2026-07-15"
     },
