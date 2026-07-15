@@ -424,49 +424,65 @@
           "point_id": "xunlian-duncha-xietong-01",
           "position": 1,
           "label": "四大配合原则",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳公安公开培训正文涉及盾棍叉使用、站位、小组协同和战术运用，与“四大配合原则”存在主题及局部内容相似；刀斧警情另有塔河公安公开演练可对照，但来源未公开页面所列口诀、固定阶段、组合数量或逐步动作。"
         },
         {
           "point_id": "xunlian-duncha-xietong-02",
           "position": 2,
           "label": "标准配合流程（四阶段）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳公安公开培训正文涉及盾棍叉使用、站位、小组协同和战术运用，与“标准配合流程（四阶段）”存在主题及局部内容相似；刀斧警情另有塔河公安公开演练可对照，但来源未公开页面所列口诀、固定阶段、组合数量或逐步动作。"
         },
         {
           "point_id": "xunlian-duncha-xietong-03",
           "position": 3,
           "label": "刀斧砍杀五步处置程序",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-taha-knife-axe-response-drill-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳公安公开培训正文涉及盾棍叉使用、站位、小组协同和战术运用，与“刀斧砍杀五步处置程序”存在主题及局部内容相似；刀斧警情另有塔河公安公开演练可对照，但来源未公开页面所列口诀、固定阶段、组合数量或逐步动作。"
         },
         {
           "point_id": "xunlian-duncha-xietong-04",
           "position": 4,
           "label": "五种基本战法组合",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-taha-knife-axe-response-drill-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳公安公开培训正文涉及盾棍叉使用、站位、小组协同和战术运用，与“五种基本战法组合”存在主题及局部内容相似；刀斧警情另有塔河公安公开演练可对照，但来源未公开页面所列口诀、固定阶段、组合数量或逐步动作。"
         },
         {
           "point_id": "xunlian-duncha-xietong-05",
           "position": 5,
           "label": "常见问题与对策",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-taha-knife-axe-response-drill-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳公安公开培训正文涉及盾棍叉使用、站位、小组协同和战术运用，与“常见问题与对策”存在主题及局部内容相似；刀斧警情另有塔河公安公开演练可对照，但来源未公开页面所列口诀、固定阶段、组合数量或逐步动作。"
         },
         {
           "point_id": "xunlian-duncha-xietong-06",
           "position": 6,
           "label": "模拟警情示例",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-taha-knife-axe-response-drill-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳公安公开培训正文涉及盾棍叉使用、站位、小组协同和战术运用，与“模拟警情示例”存在主题及局部内容相似；刀斧警情另有塔河公安公开演练可对照，但来源未公开页面所列口诀、固定阶段、组合数量或逐步动作。"
         }
       ]
     },
@@ -482,49 +498,61 @@
           "point_id": "xunlian-dunpai-jishu-01",
           "position": 1,
           "label": "盾牌五大核心功能",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公安公开训练材料涉及防暴盾牌与盾棍叉运用、处置站位、动作示范、分组训练或体能考核，与“盾牌五大核心功能”主题相似；未公开页面所列具体功能数量、四字要领、分步动作、场景清单或训练参数。"
         },
         {
           "point_id": "xunlian-dunpai-jishu-02",
           "position": 2,
           "label": "持盾戒备：四字要领 \"高·贴·收·挺\"",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公安公开训练材料涉及防暴盾牌与盾棍叉运用、处置站位、动作示范、分组训练或体能考核，与“持盾戒备：四字要领 \"高·贴·收·挺\"”主题相似；未公开页面所列具体功能数量、四字要领、分步动作、场景清单或训练参数。"
         },
         {
           "point_id": "xunlian-dunpai-jishu-03",
           "position": 3,
           "label": "持盾撞击：三步骤连贯动作",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公安公开训练材料涉及防暴盾牌与盾棍叉运用、处置站位、动作示范、分组训练或体能考核，与“持盾撞击：三步骤连贯动作”主题相似；未公开页面所列具体功能数量、四字要领、分步动作、场景清单或训练参数。"
         },
         {
           "point_id": "xunlian-dunpai-jishu-04",
           "position": 4,
           "label": "六大运用场景",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公安公开训练材料涉及防暴盾牌与盾棍叉运用、处置站位、动作示范、分组训练或体能考核，与“六大运用场景”主题相似；未公开页面所列具体功能数量、四字要领、分步动作、场景清单或训练参数。"
         },
         {
           "point_id": "xunlian-dunpai-jishu-05",
           "position": 5,
           "label": "常见错误",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公安公开训练材料涉及防暴盾牌与盾棍叉运用、处置站位、动作示范、分组训练或体能考核，与“常见错误”主题相似；未公开页面所列具体功能数量、四字要领、分步动作、场景清单或训练参数。"
         },
         {
           "point_id": "xunlian-dunpai-jishu-06",
           "position": 6,
           "label": "体能训练方法",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公安公开训练材料涉及防暴盾牌与盾棍叉运用、处置站位、动作示范、分组训练或体能考核，与“体能训练方法”主题相似；未公开页面所列具体功能数量、四字要领、分步动作、场景清单或训练参数。"
         }
       ]
     },
@@ -540,41 +568,56 @@
           "point_id": "xunlian-gaishu-biancheng-01",
           "position": 1,
           "label": "标准定义",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-zhongwei-minimum-combat-unit-training-2022",
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "中卫、深圳公安公开培训正文涉及最小作战/应急单元、人员小组、警组配合、盾棍叉装备、快速评估和协同处置，与“标准定义”概念相似；未支持页面的精确定义、固定编成人数、三级体系或逐项职责。"
         },
         {
           "point_id": "xunlian-gaishu-biancheng-02",
           "position": 2,
           "label": "人员编成",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-zhongwei-minimum-combat-unit-training-2022",
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "中卫、深圳公安公开培训正文涉及最小作战/应急单元、人员小组、警组配合、盾棍叉装备、快速评估和协同处置，与“人员编成”概念相似；未支持页面的精确定义、固定编成人数、三级体系或逐项职责。"
         },
         {
           "point_id": "xunlian-gaishu-biancheng-03",
           "position": 3,
           "label": "职责分工",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-zhongwei-minimum-combat-unit-training-2022",
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "中卫、深圳公安公开培训正文涉及最小作战/应急单元、人员小组、警组配合、盾棍叉装备、快速评估和协同处置，与“职责分工”概念相似；未支持页面的精确定义、固定编成人数、三级体系或逐项职责。"
         },
         {
           "point_id": "xunlian-gaishu-biancheng-04",
           "position": 4,
           "label": "装备配备：三级装备体系",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-zhongwei-minimum-combat-unit-training-2022",
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "中卫、深圳公安公开培训正文涉及最小作战/应急单元、人员小组、警组配合、盾棍叉装备、快速评估和协同处置，与“装备配备：三级装备体系”概念相似；未支持页面的精确定义、固定编成人数、三级体系或逐项职责。"
         },
         {
           "point_id": "xunlian-gaishu-biancheng-05",
           "position": 5,
           "label": "安全理念",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-zhongwei-minimum-combat-unit-training-2022",
+            "official-shenzhen-minimum-emergency-unit-training-2023"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "中卫、深圳公安公开培训正文涉及最小作战/应急单元、人员小组、警组配合、盾棍叉装备、快速评估和协同处置，与“安全理念”概念相似；未支持页面的精确定义、固定编成人数、三级体系或逐项职责。"
         }
       ]
     },
@@ -590,57 +633,71 @@
           "point_id": "xunlian-jietuo-fangyu-01",
           "position": 1,
           "label": "核心原理",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“核心原理”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         },
         {
           "point_id": "xunlian-jietuo-fangyu-02",
           "position": 2,
           "label": "单手抓握解脱",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“单手抓握解脱”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         },
         {
           "point_id": "xunlian-jietuo-fangyu-03",
           "position": 3,
           "label": "单臂抓握解脱",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“单臂抓握解脱”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         },
         {
           "point_id": "xunlian-jietuo-fangyu-04",
           "position": 4,
           "label": "双臂抓握解脱",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“双臂抓握解脱”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         },
         {
           "point_id": "xunlian-jietuo-fangyu-05",
           "position": 5,
           "label": "抓衣领解脱",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“抓衣领解脱”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         },
         {
           "point_id": "xunlian-jietuo-fangyu-06",
           "position": 6,
           "label": "十字防御",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“十字防御”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         },
         {
           "point_id": "xunlian-jietuo-fangyu-07",
           "position": 7,
           "label": "潜水推击 — 十字防御的升级",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开警务技能培训正文明确包含徒手防御与控制，并列举拍臂压肘、折腕托颌等动作，与“潜水推击 — 十字防御的升级”主题或动作概念相似；未公开页面所列抓握类型、十字防御、发力方向及逐步动作。"
         }
       ]
     },
@@ -656,65 +713,89 @@
           "point_id": "xunlian-jinggun-zhuabucha-01",
           "position": 1,
           "label": "长警棍 — 持棍戒备",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“长警棍 — 持棍戒备”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-02",
           "position": 2,
           "label": "长警棍 — 戳击",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“长警棍 — 戳击”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-03",
           "position": 3,
           "label": "长警棍在最小作战单元中的定位",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“长警棍在最小作战单元中的定位”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-04",
           "position": 4,
           "label": "抓捕叉 — 持叉戒备（三步）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“抓捕叉 — 持叉戒备（三步）”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-05",
           "position": 5,
           "label": "抓捕叉插锁（核心控制动作）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“抓捕叉插锁（核心控制动作）”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-06",
           "position": 6,
           "label": "胸叉捕控（进阶技术）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“胸叉捕控（进阶技术）”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-07",
           "position": 7,
           "label": "实战约束控制：同向与侧向",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“实战约束控制：同向与侧向”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         },
         {
           "point_id": "xunlian-jinggun-zhuabucha-08",
           "position": 8,
           "label": "实战六字诀 & 核心对比",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "公开警务训练正文涉及警棍、盾牌、钢叉/抓捕器的规范使用、小组配合与动作训练，与“实战六字诀 & 核心对比”器材及控制主题相似；未公开页面所列戒备姿势、插锁、胸叉、方向约束、口诀或精细动作。"
         }
       ]
     },
@@ -730,41 +811,56 @@
           "point_id": "xunlian-kongzhi-jishu-01",
           "position": 1,
           "label": "核心原理",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文包含徒手防御与控制、拍臂压肘和折腕托颌，现场规程另规定按危险程度选择制止措施，与“核心原理”的控制及递进概念相似；未公开抱臂折腕的页面分步动作、等级命名或组训五步。"
         },
         {
           "point_id": "xunlian-kongzhi-jishu-02",
           "position": 2,
           "label": "抱臂控制（最低限度控制）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文包含徒手防御与控制、拍臂压肘和折腕托颌，现场规程另规定按危险程度选择制止措施，与“抱臂控制（最低限度控制）”的控制及递进概念相似；未公开抱臂折腕的页面分步动作、等级命名或组训五步。"
         },
         {
           "point_id": "xunlian-kongzhi-jishu-03",
           "position": 3,
           "label": "折腕控制（中等控制）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文包含徒手防御与控制、拍臂压肘和折腕托颌，现场规程另规定按危险程度选择制止措施，与“折腕控制（中等控制）”的控制及递进概念相似；未公开抱臂折腕的页面分步动作、等级命名或组训五步。"
         },
         {
           "point_id": "xunlian-kongzhi-jishu-04",
           "position": 4,
           "label": "技术递进关系",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文包含徒手防御与控制、拍臂压肘和折腕托颌，现场规程另规定按危险程度选择制止措施，与“技术递进关系”的控制及递进概念相似；未公开抱臂折腕的页面分步动作、等级命名或组训五步。"
         },
         {
           "point_id": "xunlian-kongzhi-jishu-05",
           "position": 5,
           "label": "训练方法（组训五步）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文包含徒手防御与控制、拍臂压肘和折腕托颌，现场规程另规定按危险程度选择制止措施，与“训练方法（组训五步）”的控制及递进概念相似；未公开抱臂折腕的页面分步动作、等级命名或组训五步。"
         }
       ]
     },
@@ -780,57 +876,75 @@
           "point_id": "xunlian-pancha-liucheng-01",
           "position": 1,
           "label": "第一步：表明身份",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“第一步：表明身份”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         },
         {
           "point_id": "xunlian-pancha-liucheng-02",
           "position": 2,
           "label": "第二步：告知法律依据",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“第二步：告知法律依据”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         },
         {
           "point_id": "xunlian-pancha-liucheng-03",
           "position": 3,
           "label": "第三步：查验身份信息",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“第三步：查验身份信息”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         },
         {
           "point_id": "xunlian-pancha-liucheng-04",
           "position": 4,
           "label": "第四步：口头警告（不配合时）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“第四步：口头警告（不配合时）”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         },
         {
           "point_id": "xunlian-pancha-liucheng-05",
           "position": 5,
           "label": "第五步：口头传唤（警告无效时）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“第五步：口头传唤（警告无效时）”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         },
         {
           "point_id": "xunlian-pancha-liucheng-06",
           "position": 6,
           "label": "第六步：强制传唤（暴力抗拒时）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“第六步：强制传唤（暴力抗拒时）”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         },
         {
           "point_id": "xunlian-pancha-liucheng-07",
           "position": 7,
           "label": "核心处置原则",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-public-security-admin-case-procedure-2018",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "行政案件程序规定和现场制止规程公开正文涉及表明身份、调查核查、口头制止、传唤以及抗拒情形下采取相应措施，与“核心处置原则”程序主题相似；未证明页面六步流程在所有盘查场景均按同一顺序适用。"
         }
       ]
     },
@@ -846,41 +960,56 @@
           "point_id": "xunlian-soushen-daili-01",
           "position": 1,
           "label": "前置步骤 — 俯卧上铐四步",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文明确包含搜身与押解技术，现场规程另涉及安全检查、约束和带离，与“前置步骤 — 俯卧上铐四步”主题相似；未公开页面所列俯卧上铐、五个关键动作、别臂细节或四步训练法。"
         },
         {
           "point_id": "xunlian-soushen-daili-02",
           "position": 2,
           "label": "俯卧式搜身 — 五个关键动作",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文明确包含搜身与押解技术，现场规程另涉及安全检查、约束和带离，与“俯卧式搜身 — 五个关键动作”主题相似；未公开页面所列俯卧上铐、五个关键动作、别臂细节或四步训练法。"
         },
         {
           "point_id": "xunlian-soushen-daili-03",
           "position": 3,
           "label": "别臂带离 — 五个关键动作",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文明确包含搜身与押解技术，现场规程另涉及安全检查、约束和带离，与“别臂带离 — 五个关键动作”主题相似；未公开页面所列俯卧上铐、五个关键动作、别臂细节或四步训练法。"
         },
         {
           "point_id": "xunlian-soushen-daili-04",
           "position": 4,
           "label": "教学重点与难点",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文明确包含搜身与押解技术，现场规程另涉及安全检查、约束和带离，与“教学重点与难点”主题相似；未公开页面所列俯卧上铐、五个关键动作、别臂细节或四步训练法。"
         },
         {
           "point_id": "xunlian-soushen-daili-05",
           "position": 5,
           "label": "训练四步骤",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yangai-prison-police-skills-training-2024",
+            "official-police-field-control-rules"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "羊艾监狱公开培训正文明确包含搜身与押解技术，现场规程另涉及安全检查、约束和带离，与“训练四步骤”主题相似；未公开页面所列俯卧上铐、五个关键动作、别臂细节或四步训练法。"
         }
       ]
     },
@@ -896,65 +1025,86 @@
           "point_id": "xunlian-wuli-shengji-sanfang-01",
           "position": 1,
           "label": "五级武力升级模型",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "现场制止规程及人民警察使用警械和武器条例公开规定按行为危险程度、措施强度和警告等条件选择处置方式，与“五级武力升级模型”的武力层级或规范程序概念相似；未规定页面的五级模型、四维模型或完全相同操作步骤。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-02",
           "position": 2,
           "label": "武力升级程序规范",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "现场制止规程及人民警察使用警械和武器条例公开规定按行为危险程度、措施强度和警告等条件选择处置方式，与“武力升级程序规范”的武力层级或规范程序概念相似；未规定页面的五级模型、四维模型或完全相同操作步骤。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-03",
           "position": 3,
           "label": "三防概念",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "现场制止规程及人民警察使用警械和武器条例公开规定按行为危险程度、措施强度和警告等条件选择处置方式，与“三防概念”的武力层级或规范程序概念相似；未规定页面的五级模型、四维模型或完全相同操作步骤。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-04",
           "position": 4,
           "label": "四维能力模型（知法·能说·会做·懂战术）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "现场制止规程及人民警察使用警械和武器条例公开规定按行为危险程度、措施强度和警告等条件选择处置方式，与“四维能力模型（知法·能说·会做·懂战术）”的武力层级或规范程序概念相似；未规定页面的五级模型、四维模型或完全相同操作步骤。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-05",
           "position": 5,
           "label": "防刀斧砍杀专项",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-taha-knife-axe-response-drill-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "塔河公安公开演练正文直接涉及刀斧砍杀警情、盾牌警棍防线、战术配合、制服带离和多部门联动，与“防刀斧砍杀专项”主题相似；未公开页面的固定专项步骤。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-06",
           "position": 6,
           "label": "防车辆冲撞专项",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-xintian-vehicle-impact-response-drill-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "新田公安公开演练正文直接涉及车辆冲撞警情、预案启动、设卡拦截、装备使用、人员控制与协同处置，与“防车辆冲撞专项”主题相似；未覆盖页面的全部防冲撞方法。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-07",
           "position": 7,
           "label": "防纵火爆炸专项（2+n战法）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-yantai-school-anti-terror-plan-2024"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "烟台市政府网站公开反恐防暴预案分别设置纵火和爆炸事件情形，涉及报警、疏散和联动处置，与“防纵火爆炸专项（2+n战法）”主题相似；未公开页面所谓“2+n”战法及其固定编组。"
         },
         {
           "point_id": "xunlian-wuli-shengji-sanfang-08",
           "position": 8,
           "label": "武器使用标准化程序",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-police-equipment-weapons-regulation"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "现场制止规程及人民警察使用警械和武器条例公开规定按行为危险程度、措施强度和警告等条件选择处置方式，与“武器使用标准化程序”的武力层级或规范程序概念相似；未规定页面的五级模型、四维模型或完全相同操作步骤。"
         }
       ]
     },
@@ -970,49 +1120,66 @@
           "point_id": "xunlian-zhanshu-zhanwei-xunluo-01",
           "position": 1,
           "label": "战术站位：三种基本阵型",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“战术站位：三种基本阵型”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-xunluo-02",
           "position": 2,
           "label": "装备体系（三大类）",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“装备体系（三大类）”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-xunluo-03",
           "position": 3,
           "label": "伸缩警棍使用要点",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“伸缩警棍使用要点”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-xunluo-04",
           "position": 4,
           "label": "臂盾使用要点",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“臂盾使用要点”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-xunluo-05",
           "position": 5,
           "label": "常见突发情况处置",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“常见突发情况处置”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-xunluo-06",
           "position": 6,
           "label": "龙城平安e巡系统",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-changzhou-longcheng-pingan-e-patrol-2025"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "常州市公安局公开正文直接介绍“龙城·平安e巡”平台整合快反力量、一图可视、一体调度和线索推送，与“龙城平安e巡系统”直接同主题；未核验页面展示的全部界面、功能和操作细节。"
         }
       ]
     },
@@ -1028,33 +1195,45 @@
           "point_id": "xunlian-zhanshu-zhanwei-01",
           "position": 1,
           "label": "战术配合三大支柱",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“战术配合三大支柱”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-02",
           "position": 2,
           "label": "组合式站位",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“组合式站位”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-03",
           "position": 3,
           "label": "夹击式站位",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“夹击式站位”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         },
         {
           "point_id": "xunlian-zhanshu-zhanwei-04",
           "position": 4,
           "label": "站位选择原则",
-          "source_ids": [],
-          "coverage_status": "pending",
-          "coverage_note": ""
+          "source_ids": [
+            "official-shenzhen-minimum-emergency-unit-training-2023",
+            "official-zhongwei-minimum-combat-unit-training-2022"
+          ],
+          "coverage_status": "verified",
+          "coverage_note": "深圳、中卫公安公开培训正文涉及最小作战单元的处置站位、小组协同、快速评估、警组配合、盾棍叉装备和战术运用，与“站位选择原则”主题相似；未公开页面所列固定阵型、站位名称、器材动作或选择口诀。"
         }
       ]
     },
@@ -1776,6 +1955,97 @@
       "verified_at": "2026-07-15",
       "verification_status": "verified",
       "similarity_note": "法院公开训练正文覆盖单警警械佩戴规范、快速取放、佩戴位置示意和手铐佩戴角度调整，以便在场景中精准拔取。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-shenzhen-minimum-emergency-unit-training-2023",
+      "title": "深圳市公安局坪山分局开展最小应急单元集中培训",
+      "publisher": "深圳市公安局坪山分局",
+      "platform": "深圳政府在线",
+      "url": "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
+      "published_at": "2023-07-03",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开培训正文覆盖盾棍叉使用、处置人员站位、小组协同配合、战术运用，以及理论讲解、动作示范、分组训练和模拟对抗环节。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-zhongwei-minimum-combat-unit-training-2022",
+      "title": "【实训 · 送教】让小单元战力不小",
+      "publisher": "中卫市公安局",
+      "platform": "中卫市人民政府",
+      "url": "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html",
+      "published_at": "2022-03-26",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开培训正文覆盖最小作战单元现场处置、快速评估与反制、警组配合、武器警械使用，以及单警、小组、群组对抗训练。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-yangai-prison-police-skills-training-2024",
+      "title": "全警实战大练兵｜持续发力！羊艾监狱开展岗位大练兵实战警务技能培训",
+      "publisher": "贵州省羊艾监狱",
+      "platform": "贵州省监狱管理局",
+      "url": "https://jyglj.guizhou.gov.cn/ya/dwjs/202405/t20240528_84696804.html",
+      "published_at": "2024-05-28",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "监狱人民警察公开培训正文覆盖徒手防御与控制、拍臂压肘和折腕托颌等动作，以及搜身、押解技术和理论、实操、演练结合的训练方式。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-taha-knife-axe-response-drill-2025",
+      "title": "多部门联动淬锋刃 全要素演练筑平安——塔河县公安局组织开展刀斧砍杀反恐实战演练",
+      "publisher": "塔河县公安局",
+      "platform": "塔河县人民政府",
+      "url": "https://www.dxalth.gov.cn/dxalth/c100885/202507/c13_316265.shtml",
+      "published_at": "2025-07-21",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开演练正文覆盖刀斧砍杀警情、盾牌警棍装备、现场防线、战术配合、制服带离、多部门联动与复盘。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-xintian-vehicle-impact-response-drill-2024",
+      "title": "新田公安开展防冲撞应急处置演练",
+      "publisher": "新田县公安局",
+      "platform": "新田县人民政府",
+      "url": "https://www.xt.gov.cn/xtgaj/0101/202411/f37dab4d6e5c4051977bafd8e5e3138b.shtml",
+      "published_at": "2024-11-05",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开演练正文覆盖车辆冲撞警情的预案启动、设卡拦截、装备使用、人员控制搜身、车辆检查和小组协同。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-yantai-school-anti-terror-plan-2024",
+      "title": "反恐防暴应急预案",
+      "publisher": "烟台市牟平区新城小学",
+      "platform": "烟台市人民政府",
+      "url": "https://www.yantai.gov.cn/cms_files/jcms1/web1/site/attach/0/3463208b7d7846ffa1b293b3c6076239.pdf",
+      "published_at": "2024-02-01",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "教育机构在政府网站公开的应急预案分别设置刀斧砍杀、爆炸和纵火事件处置情形，覆盖报警、疏散、现场应急与联动等主题。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-changzhou-longcheng-pingan-e-patrol-2025",
+      "title": "常州警方警情秒级响应 高效联动处置",
+      "publisher": "常州市公安局",
+      "platform": "常州市公安局",
+      "url": "https://gaj.changzhou.gov.cn/html/czgaj/2025/BOHBPMBI_1016/88415.html",
+      "published_at": "2025-10-16",
+      "verified_at": "2026-07-15",
+      "verification_status": "verified",
+      "similarity_note": "常州市公安局公开正文介绍“龙城·平安e巡”平台整合快反力量、实现一图可视和一体调度，并通过平台推送线索、协同处置警情。",
       "source_level": 2,
       "last_checked_at": "2026-07-15"
     }
