@@ -1174,3 +1174,111 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   font-size: 14px;
   color: var(--accent-blue);
 }
+
+/* === 公开资料对照 === */
+.source-citations {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 6px;
+  vertical-align: baseline;
+}
+
+.source-citation {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) / 2);
+  color: var(--police-blue);
+  font-size: 0.78em;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 1px 4px;
+  text-decoration: none;
+}
+
+.source-citation:hover {
+  border-color: var(--police-blue);
+  text-decoration: none;
+}
+
+.public-source-index {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  margin-top: 28px;
+  padding: 20px 22px;
+}
+
+.public-source-index h2 {
+  color: var(--text);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.public-source-list {
+  list-style: none;
+  margin-top: 14px;
+}
+
+.public-source-item {
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+  padding: 14px 0;
+}
+
+.public-source-item cite {
+  color: var(--text);
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.public-source-item > span:not(.public-source-number) {
+  display: block;
+}
+
+.public-source-item a {
+  color: var(--police-blue);
+  display: inline-block;
+  margin-right: 12px;
+  overflow-wrap: anywhere;
+}
+
+.public-source-number {
+  color: var(--amber);
+  float: left;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.public-source-note {
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.public-source-item p {
+  color: var(--text-muted);
+  margin: 6px 0;
+}
+
+.source-citation:focus-visible,
+.public-source-item a:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .public-source-index {
+    padding: 16px 14px;
+  }
+
+  .public-source-item a {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}

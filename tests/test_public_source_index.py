@@ -2,6 +2,7 @@ from copy import deepcopy
 from pathlib import Path
 import importlib.util
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -14,6 +15,7 @@ SPEC = importlib.util.spec_from_file_location(
 )
 MODULE = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(MODULE)
+CSS = (ROOT / 'css' / 'style.css').read_text(encoding='utf-8')
 
 
 class PublicSourceIndexUnitTests(unittest.TestCase):
@@ -623,6 +625,64 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             self.assertEqual(failed.returncode, 1)
             self.assertIn('second.html', failed.stderr)
             self.assertEqual(first.read_bytes(), first_before)
+
+
+class PublicSourceStyleTests(unittest.TestCase):
+    def test_public_source_components_have_explicit_rules(self):
+        for selector in (
+            '.source-citations',
+            '.source-citation',
+            '.public-source-index',
+            '.public-source-list',
+            '.public-source-item',
+            '.public-source-note',
+        ):
+            self.assertRegex(CSS, re.escape(selector) + r'[^,{]*[,{]')
+
+    def test_source_index_uses_shared_theme_tokens(self):
+        match = re.search(r'\.public-source-index\s*\{([^}]*)\}', CSS, re.DOTALL)
+        self.assertIsNotNone(match)
+        rules = match.group(1)
+        for declaration in (
+            'background: var(--warm-white);',
+            'border: 1px solid var(--border);',
+            'border-radius: var(--radius);',
+            'box-shadow: var(--shadow);',
+            'color: var(--text);',
+        ):
+            self.assertIn(declaration, rules)
+        self.assertNotRegex(rules, r'#[0-9a-fA-F]{3,8}\b')
+
+    def test_source_links_have_visible_keyboard_focus(self):
+        match = re.search(
+            r'\.source-citation:focus-visible\s*,\s*'
+            r'\.public-source-item a:focus-visible\s*\{([^}]*)\}',
+            CSS,
+            re.DOTALL,
+        )
+        self.assertIsNotNone(match)
+        self.assertIn('outline: 3px solid var(--amber);', match.group(1))
+        self.assertIn('outline-offset: 2px;', match.group(1))
+
+    def test_source_urls_wrap_on_desktop_and_narrow_screens(self):
+        item_link = re.search(r'\.public-source-item a\s*\{([^}]*)\}', CSS, re.DOTALL)
+        self.assertIsNotNone(item_link)
+        self.assertIn('overflow-wrap: anywhere;', item_link.group(1))
+
+        narrow = re.search(
+            r'@media\s*\(max-width:\s*600px\)\s*\{(.*)\}\s*\Z',
+            CSS,
+            re.DOTALL,
+        )
+        self.assertIsNotNone(narrow)
+        self.assertRegex(
+            narrow.group(1),
+            r'\.public-source-index\s*\{[^}]*padding:\s*[^;]+;',
+        )
+        self.assertRegex(
+            narrow.group(1),
+            r'\.public-source-item a\s*\{[^}]*overflow-wrap:\s*anywhere;',
+        )
 
 
 if __name__ == '__main__':
