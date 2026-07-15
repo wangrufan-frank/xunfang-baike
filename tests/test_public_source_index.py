@@ -478,6 +478,12 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             result.stdout,
         )
 
+    def test_check_publish_failure_explains_public_sources_are_not_secrecy_approval(self):
+        result = self.run_cli('check-publish')
+
+        self.assertEqual(result.returncode, 1)
+        self.assertIn('公开资料已核验不等于保密审查通过', result.stderr)
+
     def test_check_module_filters_validation_and_summary(self):
         ledger = MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')
         pages = [page for page in ledger['pages'] if page['path'].startswith('fagui/')]

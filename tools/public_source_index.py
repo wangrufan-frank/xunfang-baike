@@ -695,6 +695,12 @@ def main(argv=None):
         errors.extend(publish_errors(ledger))
     if errors:
         _print_errors(errors)
+        if args.command == 'check-publish':
+            print(
+                '安全提示：公开资料已核验不等于保密审查通过；'
+                '请完成独立的发布审查后再公开。',
+                file=sys.stderr,
+            )
         return 1
 
     if args.command == 'check':
