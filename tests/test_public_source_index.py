@@ -558,12 +558,39 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             result.stderr,
         )
 
-    def test_production_write_rejects_pending_ledger_without_changing_html(self):
-        pages = MODULE.discover_pages(ROOT)
-        before = {page: page.read_bytes() for page in pages}
-        result = self.run_cli('write')
-        self.assertEqual(result.returncode, 1)
-        self.assertEqual({page: page.read_bytes() for page in pages}, before)
+    def test_production_write_check_accepts_generated_verified_ledger(self):
+        result = self.run_cli('write', '--check')
+
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('CHECK: 0 of 27 pages would change.', result.stdout)
+
+    def test_report_writes_audit_markdown(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / 'audit.md'
+            result = self.run_cli('report', '--output', str(output))
+
+            self.assertEqual(result.returncode, 0, result.stderr)
+            report = output.read_text(encoding='utf-8')
+
+        self.assertIn('# Public Source Index Audit', report)
+        self.assertIn('27 pages, 153 points', report)
+        self.assertIn('Coverage verified | 153', report)
+        self.assertIn('Review pending | 27', report)
+        self.assertIn('fagui/dubo-zhifa.html', report)
+        self.assertIn('Similarity note', report)
+        self.assertIn('Last checked', report)
+        self.assertIn(
+            MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')['sources'][0][
+                'similarity_note'
+            ],
+            report,
+        )
+
+    def test_output_is_rejected_for_commands_that_do_not_write_output_files(self):
+        result = self.run_cli('check', '--output', 'unused.md')
+
+        self.assertEqual(result.returncode, 2)
+        self.assertIn('--output is only valid with inventory or report', result.stderr)
 
     def test_write_check_reports_changes_without_writing(self):
         fixture = PublicSourceRenderTests()
@@ -625,6 +652,81 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             self.assertEqual(failed.returncode, 1)
             self.assertIn('second.html', failed.stderr)
             self.assertEqual(first.read_bytes(), first_before)
+
+
+class PublicSourceProductionTests(unittest.TestCase):
+    def test_all_content_pages_contain_complete_static_source_references(self):
+        ledger = MODULE.load_ledger(ROOT / 'data' / 'public-sources.json')
+        sources = {source['source_id']: source for source in ledger['sources']}
+
+        for page in ledger['pages']:
+            with self.subTest(path=page['path']):
+                html = (ROOT / page['path']).read_text(encoding='utf-8')
+                self.assertEqual(html.count('<!-- public-source-index:start -->'), 1)
+                self.assertEqual(html.count('<!-- public-source-index:end -->'), 1)
+                self.assertEqual(
+                    html.count('<!-- source-citations:start -->'),
+                    len(page['points']),
+                )
+                self.assertEqual(
+                    html.count('<!-- source-citations:end -->'),
+                    len(page['points']),
+                )
+                self.assertLess(
+                    html.index('<!-- public-source-index:start -->'),
+                    html.index('<div class="page-nav">'),
+                )
+
+                expected_source_ids = []
+                for point in page['points']:
+                    for source_id in point['source_ids']:
+                        if source_id not in expected_source_ids:
+                            expected_source_ids.append(source_id)
+                        citation_id = f'source-ref-{point["point_id"]}-{source_id}'
+                        self.assertIn(f'id="{citation_id}"', html)
+                        self.assertIn(f'href="#public-source-{source_id}"', html)
+
+                actual_source_ids = re.findall(
+                    r'<li class="public-source-item" id="public-source-([^"]+)">',
+                    html,
+                )
+                self.assertEqual(actual_source_ids, expected_source_ids)
+                self.assertEqual(
+                    re.findall(r'<span class="public-source-number">\[(\d+)\]</span>', html),
+                    [str(number) for number in range(1, len(expected_source_ids) + 1)],
+                )
+                for source_id in expected_source_ids:
+                    source = sources[source_id]
+                    self.assertIn(
+                        f'href="{MODULE.escape(source["url"], quote=True)}" '
+                        'target="_blank" '
+                        'rel="noopener noreferrer"',
+                        html,
+                    )
+
+    def test_maintenance_guide_covers_content_change_workflows_and_review_gate(self):
+        guide = (ROOT / 'docs' / 'public-source-maintenance.md').read_text(
+            encoding='utf-8'
+        )
+
+        for heading in (
+            '新增页面',
+            '新增知识点',
+            '修改知识点',
+            '删除内容',
+            '替换失效来源',
+        ):
+            self.assertIn(heading, guide)
+        for command in (
+            'python tools/public_source_index.py check',
+            'python tools/public_source_index.py write',
+            'python tools/public_source_index.py write --check',
+            'python -m unittest discover -s tests -p "test_*.py" -v',
+        ):
+            self.assertIn(command, guide)
+        self.assertIn('review_status', guide)
+        self.assertIn('相互独立', guide)
+        self.assertIn('不得自动批准', guide)
 
 
 class PublicSourceStyleTests(unittest.TestCase):

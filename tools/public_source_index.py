@@ -526,11 +526,104 @@ def _write_text_atomic(path, content):
             temporary.unlink()
 
 
+def render_audit_report(ledger: dict) -> str:
+    """Render a human-readable audit summary without changing review status."""
+    pages = ledger['pages']
+    sources = ledger['sources']
+    points = [point for page in pages for point in page.get('points', [])]
+    coverage_verified = sum(
+        point.get('coverage_status') == 'verified' for point in points
+    )
+    review_pending = sum(
+        page.get('review_status') == 'pending' for page in pages
+    )
+    source_verified = sum(
+        source.get('verification_status') == 'verified' for source in sources
+    )
+    lines = [
+        '# Public Source Index Audit',
+        '',
+        'This report records public-web similarity coverage. It does not approve '
+        'content for publication or replace an authorized confidentiality review.',
+        '',
+        '## Summary',
+        '',
+        f'{len(pages)} pages, {len(points)} points, {len(sources)} sources.',
+        '',
+        '| Metric | Count |',
+        '| --- | ---: |',
+        f'| Coverage verified | {coverage_verified} |',
+        f'| Coverage pending | {len(points) - coverage_verified} |',
+        f'| Sources verified | {source_verified} |',
+        f'| Review pending | {review_pending} |',
+        f'| Review approved | {sum(page.get("review_status") == "approved" for page in pages)} |',
+        '',
+        '## Pages',
+        '',
+        '| Path | Title | Points | Coverage | Review status |',
+        '| --- | --- | ---: | --- | --- |',
+    ]
+    for page in pages:
+        page_points = page.get('points', [])
+        verified = sum(
+            point.get('coverage_status') == 'verified' for point in page_points
+        )
+        lines.append(
+            f'| `{page["path"]}` | {page["title"]} | {len(page_points)} | '
+            f'{verified}/{len(page_points)} verified | {page["review_status"]} |'
+        )
+
+    lines.extend([
+        '',
+        '## Knowledge points',
+        '',
+        '| Page | Point | Label | Sources | Coverage | Similarity note |',
+        '| --- | --- | --- | --- | --- | --- |',
+    ])
+    for page in pages:
+        for point in page.get('points', []):
+            source_ids = ', '.join(f'`{item}`' for item in point.get('source_ids', []))
+            note = str(point.get('coverage_note', '')).replace('|', '\\|').replace('\n', ' ')
+            label = str(point.get('label', '')).replace('|', '\\|')
+            lines.append(
+                f'| `{page["path"]}` | `{point["point_id"]}` | {label} | '
+                f'{source_ids} | {point["coverage_status"]} | {note} |'
+            )
+
+    lines.extend([
+        '',
+        '## Sources',
+        '',
+        '| Source ID | Title | Publisher | Platform | Published | Status | '
+        'Verified at | Last checked | Similarity note | URL |',
+        '| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |',
+    ])
+    for source in sources:
+        title = str(source['title']).replace('|', '\\|')
+        publisher = str(source['publisher']).replace('|', '\\|')
+        platform = str(source['platform']).replace('|', '\\|')
+        similarity = str(source['similarity_note']).replace('|', '\\|').replace(
+            '\n', ' '
+        )
+        lines.append(
+            f'| `{source["source_id"]}` | {title} | {publisher} | {platform} | '
+            f'{source.get("published_at") or "—"} | '
+            f'{source["verification_status"]} | {source["verified_at"]} | '
+            f'{source["last_checked_at"]} | {similarity} | '
+            f'[original]({source["url"]}) |'
+        )
+    lines.append('')
+    return '\n'.join(lines)
+
+
 def main(argv=None):
     for stream in (sys.stdout, sys.stderr):
         if hasattr(stream, 'reconfigure'):
             stream.reconfigure(encoding='utf-8')
     args = _build_parser().parse_args(argv)
+    if args.output and args.command not in ('inventory', 'report'):
+        print('--output is only valid with inventory or report', file=sys.stderr)
+        return 2
     if args.command == 'inventory':
         pages = discover_pages(args.root)
         ledger_pages = []
@@ -648,6 +741,14 @@ def main(argv=None):
         print(f'WROTE: {len(changed)} of {len(rendered_pages)} pages changed.')
     elif args.command == 'report':
         point_count = sum(len(page.get('points', [])) for page in ledger['pages'])
+        if args.output:
+            try:
+                args.output.parent.mkdir(parents=True, exist_ok=True)
+                _write_text_atomic(args.output, render_audit_report(ledger))
+            except OSError as error:
+                print(f'cannot write audit report: {error}', file=sys.stderr)
+                return 1
+            print(f'Wrote audit report: {args.output}')
         print(
             f'{len(ledger["pages"])} pages, {point_count} points, '
             f'{len(ledger["sources"])} sources'
