@@ -23,9 +23,13 @@
   .input {
     width: 100%; padding: 12px 16px; font-size: 16px;
     border: 2px solid #e0e0e0; border-radius: 8px; outline: none;
-    text-align: center; letter-spacing: 4px;
     transition: border-color 0.2s;
   }
+  .field { margin-top: 16px; text-align: left; }
+  .field label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; }
+  .password-row { display: flex; gap: 8px; }
+  .password-row .input { min-width: 0; }
+  .toggle-password { padding: 0 12px; border: 1px solid #bbb; border-radius: 8px; background: #fff; cursor: pointer; }
   .input:focus { border-color: #1a1a2e; }
   .btn {
     width: 100%; margin-top: 16px; padding: 12px;
@@ -34,6 +38,7 @@
     cursor: pointer; transition: opacity 0.2s;
   }
   .btn:hover { opacity: 0.9; }
+  .btn:disabled { cursor: wait; opacity: 0.65; }
   .error { color: #e53e3e; font-size: 14px; margin-top: 12px; min-height: 20px; }
 </style>
 </head>
@@ -41,48 +46,26 @@
 <div class="card">
   <div class="icon">&#x1F512;</div>
   <div class="title">巡防百科</div>
-  <div class="subtitle">请输入访问密码</div>
-  <input type="password" class="input" id="pwd" placeholder="●●●●●●" maxlength="20" autofocus>
-  <button class="btn" id="submit">确认</button>
-  <div class="error" id="error"></div>
+  <div class="subtitle">请使用巡防百科账号登录</div>
+  <form id="login-form">
+    <div class="field">
+      <label for="username">账号</label>
+      <input type="text" class="input" id="username" name="username" autocomplete="username" autofocus required>
+    </div>
+    <div class="field">
+      <label for="password">密码</label>
+      <div class="password-row">
+        <input type="password" class="input" id="password" name="password" autocomplete="current-password" required>
+        <button type="button" class="toggle-password" id="toggle-password" aria-pressed="false">显示密码</button>
+      </div>
+    </div>
+    <button type="submit" class="btn" id="submit">登录</button>
+    <div class="error" id="error" aria-live="polite"></div>
+  </form>
 </div>
 
-<script>
-(async function() {
-  var VALID = 'f774779300ad6e9cfe4a14160c4b7ddb1b7b3efbdc3a66c706627b821367a53e';
-  var COOKIE = 'xunfang_auth';
-
-  function getParam(name) {
-    var m = location.search.match(new RegExp('[?&]' + name + '=([^&]*)'));
-    return m ? decodeURIComponent(m[1]) : '';
-  }
-
-  async function sha256(text) {
-    var buf = new TextEncoder().encode(text);
-    var hash = await crypto.subtle.digest('SHA-256', buf);
-    return Array.from(new Uint8Array(hash)).map(function(b) { return b.toString(16).padStart(2,'0'); }).join('');
-  }
-
-  document.getElementById('submit').addEventListener('click', async function() {
-    var pwd = document.getElementById('pwd').value.trim();
-    if (!pwd) { document.getElementById('error').textContent = '请输入密码'; return; }
-    var h = await sha256(pwd);
-    if (h !== VALID) {
-      document.getElementById('error').textContent = '密码错误';
-      document.getElementById('pwd').value = '';
-      return;
-    }
-    var d = new Date();
-    d.setDate(d.getDate() + 7);
-    document.cookie = COOKIE + '=' + h + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
-    var redir = getParam('redirect');
-    location.href = redir || 'index.html';
-  });
-
-  document.getElementById('pwd').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') document.getElementById('submit').click();
-  });
-})();
-</script>
+<script src="js/auth-config.js"></script>
+<script src="js/auth-core.js"></script>
+<script src="js/auth-page.js"></script>
 </body>
 </html>
