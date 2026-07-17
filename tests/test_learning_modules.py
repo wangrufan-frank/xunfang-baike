@@ -113,6 +113,7 @@ class LearningCatalogValidationTests(unittest.TestCase):
             (lambda c: c["sources"][0].update(url=None), "HTTPS"),
             (lambda c: c["sources"][0].update(url="https://[::1"), "HTTPS"),
             (lambda c: c["sources"][0].update(url="https://example.gov.cn:bad/rule"), "HTTPS"),
+            (lambda c: c["sources"][0].update(url=json.loads('"https://\\ud800"')), "HTTPS"),
         )
         for mutate, fragment in cases:
             with self.subTest(fragment=fragment):

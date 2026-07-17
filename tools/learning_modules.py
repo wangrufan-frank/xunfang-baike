@@ -100,6 +100,12 @@ def _valid_string_list(value: object, *, allow_empty: bool = False) -> bool:
 def _valid_https_url(value: object) -> bool:
     if not _is_nonempty_string(value):
         return False
+    try:
+        value.encode("utf-8")
+    except UnicodeEncodeError:
+        return False
+    if any(0xD800 <= ord(character) <= 0xDFFF for character in value):
+        return False
     if any(character.isspace() or ord(character) < 32 for character in value):
         return False
     if "\\" in value or INVALID_PERCENT_ESCAPE_RE.search(value):
@@ -110,6 +116,13 @@ def _valid_https_url(value: object) -> bool:
         parsed.port
     except (TypeError, ValueError):
         return False
+    if hostname:
+        try:
+            hostname.encode("utf-8")
+        except UnicodeEncodeError:
+            return False
+        if any(0xD800 <= ord(character) <= 0xDFFF for character in hostname):
+            return False
     return bool(
         parsed.scheme == "https"
         and parsed.netloc
