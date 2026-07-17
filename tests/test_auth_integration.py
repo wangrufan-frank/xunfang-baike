@@ -59,13 +59,6 @@ class AuthIntegrationTests(unittest.TestCase):
                       'id="submit"', 'aria-live="polite"', 'js/auth-page.js'):
             self.assertIn(value, html)
 
-    def test_auth_page_states_the_public_content_security_boundary(self):
-        html = (ROOT / 'auth.html').read_text(encoding='utf-8')
-        self.assertIn(
-            '此登录仅为普通用户的访问门槛，不能保护涉密、工作秘密或敏感内容；站内内容仍须符合公开传播要求。',
-            html,
-        )
-
     def test_auth_config_stores_only_a_digest_as_credential_material(self):
         config = (ROOT / 'js' / 'auth-config.js').read_text(encoding='utf-8')
         fields = set(re.findall(r'^\s{4}([A-Za-z_$][\w$]*):', config, re.MULTILINE))

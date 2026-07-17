@@ -8,6 +8,17 @@ test('hashes username and password with an unambiguous separator', async () => {
     assert.equal(digest, await auth.sha256('demo:value'));
 });
 
+test('accepts the configured replacement password digest', async () => {
+    assert.equal(
+        await auth.digestCredentials('xunfang', 'XFbk150225'),
+        config.digest
+    );
+    assert.notEqual(
+        await auth.digestCredentials('xunfang', 'xunfang'),
+        config.digest
+    );
+});
+
 test('accepts only same-origin redirects', () => {
     const origin = 'https://www.xunfangbk.cn';
     assert.equal(auth.sanitizeRedirect('/kaohe/index.html?q=1#top', origin), '/kaohe/index.html?q=1#top');

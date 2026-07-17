@@ -49,7 +49,7 @@
 
     function buildSessionCookie(config, secure) {
         var cookie = config.cookieName + '=' + encodeURIComponent(config.digest)
-            + '; Path=/; SameSite=Lax';
+            + '; Max-Age=' + config.maxAgeSeconds + '; Path=/; SameSite=Lax';
 
         return secure ? cookie + '; Secure' : cookie;
     }
