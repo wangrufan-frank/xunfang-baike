@@ -81,6 +81,21 @@ class EquipmentContentTests(unittest.TestCase):
         self.assertNotIn("zhuangbei/shoukao.html", paths)
 
 
+class DutyContentTests(unittest.TestCase):
+    def test_all_duty_pages_follow_article_contract(self):
+        records = article_records("qinwu")
+        self.assertEqual(13, len(records))
+        for record in records:
+            assert_article_contract(self, record)
+
+    def test_duty_runtime_uses_new_labels(self):
+        for path in (ROOT / "qinwu").glob("*.html"):
+            html = path.read_text(encoding="utf-8")
+            self.assertNotIn("巡防勤务", html)
+            self.assertNotIn("群体性事件", html)
+            self.assertNotIn("警卫任务", html)
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
