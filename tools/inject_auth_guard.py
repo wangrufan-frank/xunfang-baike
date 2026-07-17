@@ -1,20 +1,24 @@
+import re
 import sys
 from pathlib import Path
 
 
 EXCLUDED_DIRS = {'.git', '.worktrees', '.superpowers', 'deliverables', 'docs'}
+AUTH_SCRIPT_RE = re.compile(
+    r'<script\b(?=[^>]*\bsrc=["\'][^"\']*js/auth-(?:config|core|guard)\.js["\'])'
+    r'[^>]*>\s*</script>\s*',
+    re.IGNORECASE,
+)
 
 
 def inject_html(html, root_prefix):
-    if 'auth-guard.js' in html:
-        return html
-
     scripts = (
         f'<script src="{root_prefix}js/auth-config.js"></script>\n'
         f'<script src="{root_prefix}js/auth-core.js"></script>\n'
         f'<script src="{root_prefix}js/auth-guard.js" data-root="{root_prefix}"></script>\n'
     )
-    return html.replace('</head>', scripts + '</head>', 1)
+    normalized = AUTH_SCRIPT_RE.sub('', html)
+    return normalized.replace('</head>', scripts + '</head>', 1)
 
 
 def runtime_html_pages(root):

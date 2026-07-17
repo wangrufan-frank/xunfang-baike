@@ -1,4 +1,5 @@
 import importlib.util
+import re
 import subprocess
 import sys
 import tempfile
@@ -9,6 +10,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {'.git', '.worktrees', '.superpowers', 'deliverables', 'docs'}
 INJECTOR_PATH = ROOT / 'tools' / 'inject_auth_guard.py'
+AUTH_SCRIPT_RE = re.compile(
+    r'<script\b[^>]*\bsrc=["\'][^"\']*js/auth-(?:config|core|guard)\.js["\'][^>]*>'
+    r'\s*</script>',
+    re.IGNORECASE,
+)
 
 
 def runtime_html_pages():
@@ -35,9 +41,17 @@ class AuthIntegrationTests(unittest.TestCase):
                 continue
             html = page.read_text(encoding='utf-8')
             head = html.split('</head>', 1)[0]
-            self.assertIn('auth-config.js', head, page)
-            self.assertIn('auth-core.js', head, page)
-            self.assertIn('auth-guard.js', head, page)
+            relative = page.relative_to(ROOT)
+            self.assertIn(len(relative.parts), (1, 2), page)
+            prefix = '' if page.parent == ROOT else '../'
+            expected = [
+                f'<script src="{prefix}js/auth-config.js"></script>',
+                f'<script src="{prefix}js/auth-core.js"></script>',
+                f'<script src="{prefix}js/auth-guard.js" data-root="{prefix}"></script>',
+            ]
+            self.assertIn('\n'.join(expected) + '\n', head, page)
+            self.assertEqual(expected, AUTH_SCRIPT_RE.findall(head), page)
+            self.assertEqual(expected, AUTH_SCRIPT_RE.findall(html), page)
 
     def test_auth_page_has_accessible_account_password_controls(self):
         html = (ROOT / 'auth.html').read_text(encoding='utf-8')
@@ -45,10 +59,15 @@ class AuthIntegrationTests(unittest.TestCase):
                       'id="submit"', 'aria-live="polite"', 'js/auth-page.js'):
             self.assertIn(value, html)
 
-    def test_plaintext_password_is_absent_from_new_runtime_sources(self):
-        for path in [ROOT / 'js' / name for name in
-                     ('auth-config.js', 'auth-core.js', 'auth-guard.js', 'auth-page.js')]:
-            self.assertNotIn('150225', path.read_text(encoding='utf-8'))
+    def test_auth_config_stores_only_a_digest_as_credential_material(self):
+        config = (ROOT / 'js' / 'auth-config.js').read_text(encoding='utf-8')
+        fields = set(re.findall(r'^\s{4}([A-Za-z_$][\w$]*):', config, re.MULTILINE))
+        self.assertEqual({'username', 'digest', 'cookieName', 'maxAgeSeconds'}, fields)
+        self.assertRegex(config, r"digest:\s*'[0-9a-f]{64}'")
+        self.assertNotRegex(
+            config,
+            r'(?i)\b(?:password|passcode|secret|credential|plaintext)\w*\s*:',
+        )
 
     def test_inject_html_uses_root_prefix_and_is_idempotent(self):
         injector = load_injector()
@@ -63,6 +82,29 @@ class AuthIntegrationTests(unittest.TestCase):
         self.assertIn('src="../js/auth-core.js"', nested_html)
         self.assertIn('src="../js/auth-guard.js" data-root="../"', nested_html)
         self.assertEqual(nested_html, injector.inject_html(nested_html, '../'))
+
+    def test_inject_html_normalizes_partial_or_incorrect_auth_scripts(self):
+        injector = load_injector()
+        expected = (
+            '<script src="js/auth-config.js"></script>\n'
+            '<script src="js/auth-core.js"></script>\n'
+            '<script src="js/auth-guard.js" data-root=""></script>\n'
+        )
+        cases = (
+            '<html><head><script src="js/auth-guard.js"></script></head><body></body></html>',
+            '<html><head><script async src="js/auth-core.js"></script>'
+            '<script src="../js/auth-config.js"></script></head><body></body></html>',
+            '<html><head><script src="../js/auth-guard.js" data-root="bad"></script>'
+            '<script defer src="../js/auth-core.js"></script>'
+            '<script src="../js/auth-config.js"></script></head><body></body></html>',
+            '<html><head></head><body>Documentation mentions auth-guard.js.</body></html>',
+        )
+        for html in cases:
+            with self.subTest(html=html):
+                injected = injector.inject_html(html, '')
+                self.assertEqual(expected.splitlines(), AUTH_SCRIPT_RE.findall(injected))
+                self.assertIn(expected + '</head>', injected)
+                self.assertEqual(injected, injector.inject_html(injected, ''))
 
     def test_cli_skips_auth_html(self):
         self.assertTrue(INJECTOR_PATH.exists(), f'missing injector: {INJECTOR_PATH}')
