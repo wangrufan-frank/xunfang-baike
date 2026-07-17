@@ -1,6 +1,7 @@
 import copy
 import importlib.util
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -231,8 +232,21 @@ class LearningCatalogInventoryTests(unittest.TestCase):
                 )
                 if previous:
                     self.assertIn(f'href="{previous["slug"]}.html"', html)
+                else:
+                    self.assertIn(
+                        '<span class="previous disabled">已经是第一课</span>',
+                        html,
+                    )
                 if next_:
                     self.assertIn(f'href="{next_["slug"]}.html"', html)
+                else:
+                    self.assertIn(
+                        '<span class="next disabled">已经是最后一课</span>',
+                        html,
+                    )
+
+        review_body = articles[-1]["sections"][1]["body"]
+        self.assertEqual(5, review_body.count("理由："))
 
 
 class LearningRendererTests(unittest.TestCase):
@@ -267,13 +281,31 @@ class LearningRendererTests(unittest.TestCase):
             for tag in ("header", "nav", "main", "footer"):
                 self.assertIn(f"<{tag}", html)
             head = html.split("</head>", 1)[0]
-            expected = [
+            auth_scripts = re.findall(
+                r'<script\b[^>]*\bsrc="\.\./js/auth-(?:config|core|guard)\.js"[^>]*></script>',
+                head,
+            )
+            self.assertEqual(
+                [
+                    '<script src="../js/auth-config.js"></script>',
+                    '<script src="../js/auth-core.js"></script>',
+                    '<script src="../js/auth-guard.js" data-root="../"></script>',
+                ],
+                auth_scripts,
+            )
+            for script in auth_scripts:
+                self.assertIsNone(
+                    re.search(r'\s(?:async|defer)(?:\s|=|>)', script),
+                    script,
+                )
+            expected_head_assets = [
                 '../css/style.css',
                 '../js/auth-config.js',
                 '../js/auth-core.js',
                 '../js/auth-guard.js',
             ]
-            self.assertEqual(expected, [value for value in expected if value in head])
+            positions = [head.index(value) for value in expected_head_assets]
+            self.assertEqual(sorted(positions), positions)
             self.assertIn('data-root="../"', head)
             body_end = html.rsplit("</body>", 1)[0]
             scripts = ["theme.js", "nav.js", "main.js", "search.js"]
