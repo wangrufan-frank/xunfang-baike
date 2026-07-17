@@ -284,7 +284,7 @@ def _page_start(title: str) -> str:
 <script src="../js/auth-guard.js" data-root="../"></script>
 </head>
 <body>
-<header class="learning-header"><nav aria-label="主导航"><div id="nav-placeholder"></div></nav></header>"""
+<header class="learning-header"><div id="nav-placeholder"></div></header>"""
 
 
 def _page_end() -> str:

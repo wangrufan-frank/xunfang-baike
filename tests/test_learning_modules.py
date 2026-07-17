@@ -312,6 +312,22 @@ class LearningRendererTests(unittest.TestCase):
             positions = [body_end.index(script) for script in scripts]
             self.assertEqual(sorted(positions), positions)
 
+    def test_main_navigation_is_created_only_by_replacing_the_placeholder(self):
+        for html in (
+            MODULE.render_module_index(self.module),
+            self.render_article(valid_article()),
+        ):
+            self.assertIn(
+                '<header class="learning-header"><div id="nav-placeholder"></div></header>',
+                html,
+            )
+            self.assertEqual(1, html.count('id="nav-placeholder"'))
+            self.assertNotRegex(
+                html,
+                r'<nav\b[^>]*>\s*<div id="nav-placeholder"',
+            )
+            self.assertNotIn('<nav class="topnav">', html)
+
     def test_article_has_breadcrumb_update_quiz_sources_and_previous_next(self):
         article = valid_article("02-current")
         previous = valid_article("01-previous")
