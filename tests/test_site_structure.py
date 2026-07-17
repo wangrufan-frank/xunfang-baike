@@ -147,6 +147,18 @@ class EducationContentTests(unittest.TestCase):
             self.assertNotIn("rumen", path.read_text(encoding="utf-8"))
 
 
+class MediaAndCrossReferenceTests(unittest.TestCase):
+    def test_inventory_images_and_related_pages_exist(self):
+        valid_paths = {record["path"] for record in article_records()}
+        for record in article_records():
+            for image in record["images"]:
+                self.assertTrue((ROOT / image["path"]).is_file(), image["path"])
+                self.assertTrue(image["alt"].strip(), image["path"])
+                self.assertTrue(image["source"].strip(), image["path"])
+            for related in record["related_pages"]:
+                self.assertIn(related, valid_paths, (record["path"], related))
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")

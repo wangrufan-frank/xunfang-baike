@@ -579,7 +579,8 @@
           "images": [],
           "related_pages": [
             "zhuangbei/fangge-shoutao.html",
-            "zhuangbei/fangbao-toukui.html"
+            "zhuangbei/fangbao-toukui.html",
+            "xunlian/geren-fanghu-anquan.html"
           ]
         },
         {
@@ -964,7 +965,43 @@
           "public_sources": [
             "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/伸缩警棍三种戒备姿势对比图1.jpg",
+              "alt": "伸缩警棍三种戒备姿势对比图一",
+              "caption": "伸缩警棍三种戒备姿势对比（一）：上开棍",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/伸缩警棍三种戒备姿势对比图2.jpg",
+              "alt": "伸缩警棍三种戒备姿势对比图二",
+              "caption": "伸缩警棍三种戒备姿势对比（二）：下开棍",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/伸缩警棍三种戒备姿势对比图3.jpg",
+              "alt": "伸缩警棍三种戒备姿势对比图三",
+              "caption": "伸缩警棍三种戒备姿势对比（三）：紧急开棍",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/伸缩警棍人体击打部位示意图1.jpg",
+              "alt": "伸缩警棍人体击打部位示意图一（正面）",
+              "caption": "伸缩警棍人体击打部位示意图（正面）——仅限四肢大肌肉群",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/伸缩警棍人体击打部位示意图2.jpg",
+              "alt": "伸缩警棍人体击打部位示意图二（背面）",
+              "caption": "伸缩警棍人体击打部位示意图（背面）——严禁击打要害部位",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiuxiaojian-gailan.html",
             "fagui/jingxie-shiyong-chengxu.html"
@@ -1011,7 +1048,8 @@
           "images": [],
           "related_pages": [
             "zhuangbei/jiuxiaojian-gailan.html",
-            "xunlian/yidong-yanhu-daili.html"
+            "xunlian/yidong-yanhu-daili.html",
+            "zhuangbei/yueshu-dai.html"
           ]
         },
         {
@@ -1119,11 +1157,48 @@
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
             "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/组合式站位示意图1.jpg",
+              "alt": "组合式站位示意图一",
+              "caption": "组合式站位示意图（一）——双盾并排防护墙",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/组合式站位示意图2.jpg",
+              "alt": "组合式站位示意图二",
+              "caption": "组合式站位示意图（二）——盾牌手推进与抓捕叉手站位",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/组合式站位示意图3.jpg",
+              "alt": "组合式站位示意图三",
+              "caption": "组合式站位示意图（三）——夹击式站位角度包围",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/三角站位.jpg",
+              "alt": "三角站位示意一",
+              "caption": "三角站位示意图（一）——三角队形基础位置关系",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/三角站位2.jpg",
+              "alt": "三角站位示意二",
+              "caption": "三角站位示意图（二）——三角队形实战运用视角",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "xunlian/xiaozu-biancheng-fengong.html",
             "xunlian/dunpai-zhuabucha-xietong.html",
-            "xunlian/xunlian-fupan-kaoping.html"
+            "xunlian/xunlian-fupan-kaoping.html",
+            "zhuangbei/bidun.html"
           ]
         },
         {
@@ -1144,11 +1219,41 @@
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
             "https://www.dxalth.gov.cn/dxalth/c100885/202507/c13_316265.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/持盾戒备四字要领动作分解图1.jpg",
+              "alt": "法式盾牌持盾戒备四字要领分解动作一",
+              "caption": "法式盾牌持盾戒备四字要领分解（一）：举与收",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/持盾戒备四字要领动作分解图2.jpg",
+              "alt": "法式盾牌持盾戒备四字要领分解动作二",
+              "caption": "法式盾牌持盾戒备四字要领分解（二）：抵与稳",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/持叉戒备三步动作分解1.jpg",
+              "alt": "抓捕叉持叉戒备姿势分解动作一",
+              "caption": "抓捕叉持叉戒备三步动作分解（一）：提握与下滑",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/持叉戒备三步动作分解2.jpg",
+              "alt": "抓捕叉持叉戒备姿势分解动作二",
+              "caption": "抓捕叉持叉戒备三步动作分解（二）：下压与格斗式站姿",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "zhuangbei/fashi-dunpai.html",
             "zhuangbei/zhuabu-cha.html",
-            "jingqing/chidao-lei.html"
+            "jingqing/chidao-lei.html",
+            "zhuangbei/changgun.html"
           ]
         },
         {
@@ -1216,7 +1321,8 @@
           "images": [],
           "related_pages": [
             "zoufang/jichu-jingwu-kaohe.html",
-            "zoufang/xiaozu-xietong-kaohe.html"
+            "zoufang/xiaozu-xietong-kaohe.html",
+            "zoufang/chuangxin-xunlian-fangfa.html"
           ]
         }
       ]
@@ -1372,7 +1478,8 @@
           "images": [],
           "related_pages": [
             "fagui/pancha-guifan-goutong.html",
-            "fagui/panwen-shenfenzheng.html"
+            "fagui/panwen-shenfenzheng.html",
+            "xunlian/xianchang-goutong-yingxiang.html"
           ]
         },
         {
@@ -1393,7 +1500,8 @@
           "images": [],
           "related_pages": [
             "fagui/shenfen-mudi-shuoming.html",
-            "fagui/zhiyi-yifa-huiying.html"
+            "fagui/zhiyi-yifa-huiying.html",
+            "qinwu/xiaoqu-zhidian-zoufang.html"
           ]
         },
         {
@@ -1457,7 +1565,8 @@
           "images": [],
           "related_pages": [
             "fagui/zhiyi-yifa-huiying.html",
-            "fagui/chuanhuan-qiangzhi-chuanhuan.html"
+            "fagui/chuanhuan-qiangzhi-chuanhuan.html",
+            "qinwu/gonggong-zhixu-falv-quanli.html"
           ]
         },
         {
@@ -1525,7 +1634,8 @@
           "related_pages": [
             "fagui/jingxie-wuqi-tiaoli.html",
             "fagui/xianchang-zhizhi-guicheng.html",
-            "zhuangbei/jiuxiaojian-gailan.html"
+            "zhuangbei/jiuxiaojian-gailan.html",
+            "jingqing/jingshen-zhangai-lei.html"
           ]
         },
         {
@@ -1568,7 +1678,8 @@
           "images": [],
           "related_pages": [
             "zhuangbei/zhifa-jiuyi.html",
-            "zoufang/zhifa-jilu-ziliao-guanli.html"
+            "zoufang/zhifa-jilu-ziliao-guanli.html",
+            "qinwu/zhuanxiang-xietong-baogao.html"
           ]
         },
         {
@@ -1588,7 +1699,8 @@
           "images": [],
           "related_pages": [
             "fagui/xingzheng-anji-chengxu-guiding.html",
-            "jingqing/zuijiu-lei.html"
+            "jingqing/zuijiu-lei.html",
+            "qinwu/gonggong-zhixu-falv-quanli.html"
           ]
         },
         {
@@ -1684,7 +1796,8 @@
           "images": [],
           "related_pages": [
             "fagui/jingxie-shiyong-chengxu.html",
-            "fagui/jingxie-wuqi-tiaoli.html"
+            "fagui/jingxie-wuqi-tiaoli.html",
+            "qinwu/gonggong-zhixu-chuzhi-yuanze.html"
           ]
         },
         {
@@ -1706,7 +1819,8 @@
           "images": [],
           "related_pages": [
             "qinwu/zhuanxiang-huodong-gailan.html",
-            "zoufang/neiwu-tiaoling.html"
+            "zoufang/neiwu-tiaoling.html",
+            "qinwu/daxing-shiwai-yanchanghui.html"
           ]
         }
       ]
@@ -1737,7 +1851,8 @@
           "images": [],
           "related_pages": [
             "zoufang/jilv-yaoqiu.html",
-            "zoufang/shejiu-yanqing-guanli.html"
+            "zoufang/shejiu-yanqing-guanli.html",
+            "fagui/qita-xiangguan-guifan.html"
           ]
         },
         {
@@ -1759,7 +1874,8 @@
           "images": [],
           "related_pages": [
             "zoufang/neiwu-tiaoling.html",
-            "zoufang/shejiu-yanqing-guanli.html"
+            "zoufang/shejiu-yanqing-guanli.html",
+            "zoufang/baomi-xinxi-anquan.html"
           ]
         },
         {
@@ -1822,7 +1938,8 @@
           "images": [],
           "related_pages": [
             "fagui/zhifa-jilu-quanli.html",
-            "zhuangbei/zhifa-jiuyi.html"
+            "zhuangbei/zhifa-jiuyi.html",
+            "zoufang/baomi-xinxi-anquan.html"
           ]
         },
         {
@@ -1843,7 +1960,8 @@
           "images": [],
           "related_pages": [
             "zoufang/jichu-jingwu-kaohe.html",
-            "zoufang/kaohe-anquan-buce.html"
+            "zoufang/kaohe-anquan-buce.html",
+            "xunlian/geren-fanghu-anquan.html"
           ]
         },
         {
@@ -1864,7 +1982,9 @@
           "images": [],
           "related_pages": [
             "zoufang/tineng-kaohe.html",
-            "zoufang/xiaozu-xietong-kaohe.html"
+            "zoufang/xiaozu-xietong-kaohe.html",
+            "fagui/shenfen-mudi-shuoming.html",
+            "xunlian/xunlian-fupan-kaoping.html"
           ]
         },
         {
@@ -1886,7 +2006,8 @@
           "images": [],
           "related_pages": [
             "xunlian/xunlian-fupan-kaoping.html",
-            "zoufang/jichu-jingwu-kaohe.html"
+            "zoufang/jichu-jingwu-kaohe.html",
+            "zoufang/chuangxin-xunlian-fangfa.html"
           ]
         },
         {
@@ -1908,7 +2029,8 @@
           "images": [],
           "related_pages": [
             "zoufang/tineng-kaohe.html",
-            "zoufang/jichu-jingwu-kaohe.html"
+            "zoufang/jichu-jingwu-kaohe.html",
+            "zoufang/zhifa-jilu-ziliao-guanli.html"
           ]
         },
         {
@@ -1929,7 +2051,8 @@
           "images": [],
           "related_pages": [
             "zoufang/shiju-youxiu-kecheng.html",
-            "zoufang/chuangxin-xunlian-fangfa.html"
+            "zoufang/chuangxin-xunlian-fangfa.html",
+            "zoufang/kecheng-ziliao-jiaoliu.html"
           ]
         },
         {
@@ -1973,7 +2096,8 @@
           "images": [],
           "related_pages": [
             "zoufang/danwei-youxiu-kecheng.html",
-            "xunlian/xunlian-fupan-kaoping.html"
+            "xunlian/xunlian-fupan-kaoping.html",
+            "zoufang/xiaozu-xietong-kaohe.html"
           ]
         },
         {
@@ -1994,7 +2118,8 @@
           "images": [],
           "related_pages": [
             "zoufang/danwei-youxiu-kecheng.html",
-            "zoufang/zhifa-jilu-ziliao-guanli.html"
+            "zoufang/zhifa-jilu-ziliao-guanli.html",
+            "zoufang/baomi-xinxi-anquan.html"
           ]
         }
       ]
