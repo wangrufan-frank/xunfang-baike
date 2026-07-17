@@ -106,6 +106,17 @@ class TrainingContentTests(unittest.TestCase):
             assert_article_contract(self, record)
 
 
+class IncidentContentTests(unittest.TestCase):
+    def test_all_incident_pages_follow_article_contract(self):
+        records = article_records("jingqing")
+        self.assertEqual(5, len(records))
+        for record in records:
+            assert_article_contract(self, record)
+            html = (ROOT / record["path"]).read_text(encoding="utf-8")
+            for heading in ["任务确认", "风险分析", "到场", "人员保护", "法律边界", "记录报告", "禁止性事项"]:
+                self.assertIn(heading, html, record["path"])
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
