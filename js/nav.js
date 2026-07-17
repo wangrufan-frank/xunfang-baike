@@ -15,6 +15,7 @@
     { value: 'daylight', label: '日间浅色' },
     { value: 'night', label: '夜间深色' }
   ];
+  var rootPrefix = '';
 
   function themeSelectorHtml() {
     var options = THEMES.map(function(theme) {
@@ -39,6 +40,7 @@
       return m.path.replace(/\/index\.html$/, '');
     }).filter(function(d) { return d !== 'index.html'; });
     var depth = moduleDirs.some(function(d) { return path.indexOf('/' + d + '/') !== -1; }) ? 1 : 0;
+    rootPrefix = depth === 0 ? '' : '../';
 
     var linksHtml = MODULES.map(function(m) {
       var href = (depth === 0) ? m.path : ('../' + m.path);
@@ -62,7 +64,8 @@
     return '<nav class="topnav">' +
       '<div class="logo">🛡️ 巡防百科</div>' +
       '<button class="hamburger" aria-label="菜单" aria-expanded="false">☰</button>' +
-      '<div class="nav-links">' + linksHtml + themeSelectorHtml() + '</div>' +
+      '<div class="nav-links">' + linksHtml + themeSelectorHtml()
+      + '<button type="button" class="logout-button">退出登录</button></div>' +
       '</nav>';
   }
 
@@ -83,6 +86,7 @@
     var toggle = nav.querySelector('.theme-toggle');
     var menu = nav.querySelector('.theme-menu');
     var themeApi = window.XunfangTheme;
+    var logout = nav.querySelector('.logout-button');
 
     if (themeApi) updateThemeSelection(themeApi.get());
 
@@ -90,6 +94,8 @@
       var open = navLinks.classList.toggle('open');
       hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
+
+    logout.addEventListener('click', window.XunfangLogout);
 
     toggle.addEventListener('click', function() {
       var open = selector.classList.toggle('open');
@@ -122,6 +128,14 @@
       }
     });
   }
+
+  window.XunfangLogout = function() {
+    document.cookie = window.XunfangAuth.buildExpiredCookie(
+        window.XunfangAuthConfig,
+        window.location.protocol === 'https:'
+    );
+    window.location.replace(rootPrefix + 'auth.html');
+  };
 
   // 注入导航
   var placeholder = document.getElementById('nav-placeholder');

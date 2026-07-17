@@ -8,79 +8,107 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #1a1a2e;
-    display: flex; align-items: center; justify-content: center;
-    min-height: 100vh; color: #333;
+    background-color: #071b33;
+    background-image:
+      linear-gradient(90deg, rgba(3, 13, 27, .92) 0%, rgba(3, 13, 27, .72) 34%, rgba(3, 13, 27, .12) 72%),
+      url('img/auth-patrol-night.webp'),
+      url('img/auth-patrol-night.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; align-items: center; justify-content: flex-start;
+    min-height: 100vh; min-height: 100dvh; padding: 32px clamp(32px, 8vw, 128px); color: #333;
   }
   .card {
-    background: #fff; border-radius: 12px; padding: 48px 40px;
+    background: rgba(255,255,255,.94); border: 1px solid rgba(255,255,255,.72);
+    border-radius: 12px; padding: 48px 40px;
     max-width: 400px; width: 90%; text-align: center;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
   }
+  @supports ((-webkit-backdrop-filter: blur(14px)) or (backdrop-filter: blur(14px))) {
+    .card {
+      background: rgba(255,255,255,.84);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+  }
   .icon { font-size: 48px; margin-bottom: 16px; }
   .title { font-size: 24px; font-weight: 700; margin-bottom: 8px; color: #1a1a2e; }
-  .subtitle { font-size: 14px; color: #999; margin-bottom: 32px; }
+  .subtitle { font-size: 14px; color: #666; margin-bottom: 20px; }
+  .security-boundary {
+    margin-bottom: 24px; padding: 12px 14px; text-align: left;
+    color: #3d2d08; background: #fff7db; border: 1px solid #d6a72c;
+    border-radius: 8px; font-size: 13px; line-height: 1.65;
+  }
   .input {
-    width: 100%; padding: 12px 16px; font-size: 16px;
+    width: 100%; min-height: 44px; padding: 12px 16px; font-size: 16px;
     border: 2px solid #e0e0e0; border-radius: 8px; outline: none;
-    text-align: center; letter-spacing: 4px;
     transition: border-color 0.2s;
   }
+  .field { margin-top: 16px; text-align: left; }
+  .field label { display: block; margin-bottom: 6px; font-size: 14px; font-weight: 600; }
+  .password-row { display: flex; gap: 8px; }
+  .password-row .input { min-width: 0; }
+  .toggle-password { min-width: 44px; min-height: 44px; padding: 0 12px; border: 1px solid #bbb; border-radius: 8px; background: #fff; cursor: pointer; }
   .input:focus { border-color: #1a1a2e; }
+  .input:focus-visible, .toggle-password:focus-visible, .btn:focus-visible {
+    outline: 3px solid #f4b942; outline-offset: 3px;
+  }
   .btn {
-    width: 100%; margin-top: 16px; padding: 12px;
+    width: 100%; min-height: 44px; margin-top: 16px; padding: 12px;
     font-size: 16px; font-weight: 600; color: #fff;
     background: #1a1a2e; border: none; border-radius: 8px;
     cursor: pointer; transition: opacity 0.2s;
   }
   .btn:hover { opacity: 0.9; }
+  .btn:disabled { cursor: wait; opacity: 0.65; }
   .error { color: #e53e3e; font-size: 14px; margin-top: 12px; min-height: 20px; }
+  @media (max-width: 760px) {
+    body {
+      justify-content: center;
+      padding: 24px 16px;
+      background-image:
+        linear-gradient(rgba(3, 13, 27, .48), rgba(3, 13, 27, .7)),
+        url('img/auth-patrol-night.webp'),
+        url('img/auth-patrol-night.jpg');
+      background-position: 76% center;
+    }
+    .card { width: min(100%, 400px); padding: 36px 24px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      scroll-behavior: auto !important;
+      transition-duration: .01ms !important;
+      transition-delay: 0ms !important;
+    }
+  }
 </style>
 </head>
 <body>
 <div class="card">
   <div class="icon">&#x1F512;</div>
   <div class="title">巡防百科</div>
-  <div class="subtitle">请输入访问密码</div>
-  <input type="password" class="input" id="pwd" placeholder="●●●●●●" maxlength="20" autofocus>
-  <button class="btn" id="submit">确认</button>
-  <div class="error" id="error"></div>
+  <div class="subtitle">请使用巡防百科账号登录</div>
+  <p class="security-boundary">此登录仅为普通用户的访问门槛，不能保护涉密、工作秘密或敏感内容；站内内容仍须符合公开传播要求。</p>
+  <form id="login-form">
+    <div class="field">
+      <label for="username">账号</label>
+      <input type="text" class="input" id="username" name="username" autocomplete="username" autofocus required>
+    </div>
+    <div class="field">
+      <label for="password">密码</label>
+      <div class="password-row">
+        <input type="password" class="input" id="password" name="password" autocomplete="current-password" required>
+        <button type="button" class="toggle-password" id="toggle-password" aria-pressed="false">显示密码</button>
+      </div>
+    </div>
+    <button type="submit" class="btn" id="submit">登录</button>
+    <div class="error" id="error" aria-live="polite"></div>
+  </form>
 </div>
 
-<script>
-(async function() {
-  var VALID = 'f774779300ad6e9cfe4a14160c4b7ddb1b7b3efbdc3a66c706627b821367a53e';
-  var COOKIE = 'xunfang_auth';
-
-  function getParam(name) {
-    var m = location.search.match(new RegExp('[?&]' + name + '=([^&]*)'));
-    return m ? decodeURIComponent(m[1]) : '';
-  }
-
-  async function sha256(text) {
-    var buf = new TextEncoder().encode(text);
-    var hash = await crypto.subtle.digest('SHA-256', buf);
-    return Array.from(new Uint8Array(hash)).map(function(b) { return b.toString(16).padStart(2,'0'); }).join('');
-  }
-
-  document.getElementById('submit').addEventListener('click', async function() {
-    var pwd = document.getElementById('pwd').value.trim();
-    if (!pwd) { document.getElementById('error').textContent = '请输入密码'; return; }
-    var h = await sha256(pwd);
-    if (h !== VALID) {
-      document.getElementById('error').textContent = '密码错误';
-      document.getElementById('pwd').value = '';
-      return;
-    }
-    document.cookie = COOKIE + '=' + h + '; path=/; SameSite=Lax';
-    var redir = getParam('redirect');
-    location.href = redir || 'index.html';
-  });
-
-  document.getElementById('pwd').addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') document.getElementById('submit').click();
-  });
-})();
-</script>
+<script src="js/auth-config.js"></script>
+<script src="js/auth-core.js"></script>
+<script src="js/auth-page.js"></script>
 </body>
 </html>
