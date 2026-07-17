@@ -1,13 +1,12 @@
 // js/nav.js
 (function() {
   var MODULES = [
-    { name: '装备介绍', path: 'zhuangbei/index.html',  emoji: '🛡️' },
-    { name: '巡防勤务', path: 'qinwu/index.html',      emoji: '📋' },
-    { name: '警务训练', path: 'xunlian/index.html',    emoji: '⚔️' },
-    { name: '警情处置', path: 'jingqing/index.html',    emoji: '🚨' },
-    { name: '法条规范', path: 'fagui/index.html',       emoji: '📕' },
-    { name: '入门指南', path: 'rumen/index.html',       emoji: '🎓' },
-    { name: '走访送教', path: 'zoufang/index.html',     emoji: '🏫' },
+    { name: '装备介绍', path: 'zhuangbei/index.html', emoji: '🛡️' },
+    { name: '勤务保障', path: 'qinwu/index.html', emoji: '📋' },
+    { name: '警务训练', path: 'xunlian/index.html', emoji: '⚔️' },
+    { name: '警情处置', path: 'jingqing/index.html', emoji: '🚨' },
+    { name: '执法规范', path: 'fagui/index.html', emoji: '📕' },
+    { name: '教育培训', path: 'zoufang/index.html', emoji: '🎓' },
     { name: '本月精选', path: 'meiyueyixue/index.html', emoji: '⭐', special: true }
   ];
   var THEMES = [

@@ -4,6 +4,17 @@
   var DEBOUNCE_MS = 200;
   var MAX_DROPDOWN_RESULTS = 8;
 
+  // 模块目录 → 显示名称
+  var MODULE_NAMES = {
+    'zhuangbei': '装备介绍',
+    'qinwu': '勤务保障',
+    'xunlian': '警务训练',
+    'jingqing': '警情处置',
+    'fagui': '执法规范',
+    'zoufang': '教育培训',
+    'meiyueyixue': '本月精选'
+  };
+
   var searchIndex = null;
   var debounceTimer = null;
   var dropdownEl = null;
@@ -17,7 +28,7 @@
     var path = window.location.pathname.replace(/\\/g, '/');
     var dirs = path.split('/').filter(function(d) { return d && d !== 'index.html'; });
     // 如果在子目录中（路径包含模块目录），depth=1
-    var moduleDirs = ['zhuangbei','qinwu','xunlian','jingqing','fagui','zoufang','meiyueyixue'];
+    var moduleDirs = Object.keys(MODULE_NAMES);
     for (var i = 0; i < moduleDirs.length; i++) {
       if (dirs.indexOf(moduleDirs[i]) !== -1) return 1;
     }
@@ -104,6 +115,12 @@
     return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   }
 
+  // 由文章路径解析模块显示名称，索引未更新时回退到索引内名称
+  function moduleDisplayName(item) {
+    var dir = (item.path || '').split('/')[0];
+    return MODULE_NAMES[dir] || item.module || '';
+  }
+
   // 执行搜索
   function doSearch(query) {
     if (!query || query.trim().length === 0) {
@@ -167,7 +184,7 @@
         itemsHtml +=
           '<a href="' + prefix + item.path + '" class="search-result-item">' +
             '<div class="result-title">' + highlight(item.title, queryLower) + '</div>' +
-            '<span class="result-module">' + escapeHtml(item.module) + '</span>' +
+            '<span class="result-module">' + escapeHtml(moduleDisplayName(item)) + '</span>' +
             '<div class="result-desc">' + highlight(item.desc, queryLower) + '</div>' +
           '</a>';
       }

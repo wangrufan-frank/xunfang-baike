@@ -1282,3 +1282,14 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
     overflow-wrap: anywhere;
   }
 }
+
+/* === 三级文章公共结构 === */
+.article-summary { max-width: 48rem; color: var(--text-secondary); line-height: 1.75; }
+.article-group { scroll-margin-top: 6rem; }
+.content-section + .content-section { margin-top: 2rem; }
+.source-list, .related-links { margin-top: 2rem; padding: 1.25rem; border-radius: 14px; background: var(--card-bg); }
+.article-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.article-gallery img { width: 100%; height: auto; border-radius: 12px; }
+@media (max-width: 640px) {
+    .source-list, .related-links { padding: 1rem; }
+}

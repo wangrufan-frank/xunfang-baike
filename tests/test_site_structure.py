@@ -1,5 +1,4 @@
 import json
-import re
 import unittest
 from pathlib import Path
 
@@ -66,3 +65,22 @@ class ContentInventoryTests(unittest.TestCase):
                 record["source_files"] or record["public_sources"],
                 record["path"],
             )
+
+
+class NavigationStructureTests(unittest.TestCase):
+    def test_home_and_nav_use_exact_six_modules(self):
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        nav = (ROOT / "js" / "nav.js").read_text(encoding="utf-8")
+        for title in ["装备介绍", "勤务保障", "警务训练", "警情处置", "执法规范", "教育培训"]:
+            self.assertIn(title, home)
+            self.assertIn(title, nav)
+        for old_title in ["巡防勤务", "法条规范", "走访送教", "入门指南"]:
+            self.assertNotIn(old_title, home)
+            self.assertNotIn(old_title, nav)
+
+    def test_module_indexes_expose_exact_category_anchors(self):
+        for module in load_inventory()["modules"]:
+            html = (ROOT / module["slug"] / "index.html").read_text(encoding="utf-8")
+            for article in module["articles"]:
+                self.assertIn(f'id="{article["category_anchor"]}"', html)
+                self.assertIn(article["path"].split("/")[-1], html)
