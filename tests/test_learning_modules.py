@@ -106,6 +106,20 @@ class LearningCatalogValidationTests(unittest.TestCase):
         catalog["sources"][0]["url"] = "http://example.gov.cn/rule.html"
         self.assert_invalid(catalog, "HTTPS")
 
+    def test_validation_reports_non_string_slugs_and_malformed_urls(self):
+        cases = (
+            (lambda c: c["modules"][0].update(slug=[]), "module slug"),
+            (lambda c: c["modules"][0]["articles"][0].update(slug=7), "safe lowercase slug"),
+            (lambda c: c["sources"][0].update(url=None), "HTTPS"),
+            (lambda c: c["sources"][0].update(url="https://[::1"), "HTTPS"),
+            (lambda c: c["sources"][0].update(url="https://example.gov.cn:bad/rule"), "HTTPS"),
+        )
+        for mutate, fragment in cases:
+            with self.subTest(fragment=fragment):
+                catalog = valid_catalog()
+                mutate(catalog)
+                self.assert_invalid(catalog, fragment)
+
     def test_rejects_duplicate_source_ids(self):
         catalog = valid_catalog()
         catalog["sources"].append(copy.deepcopy(catalog["sources"][0]))
@@ -151,6 +165,18 @@ class LearningCatalogValidationTests(unittest.TestCase):
                 mutate(catalog)
                 self.assert_invalid(catalog, "raw HTML")
 
+    def test_rejects_raw_html_comments_declarations_and_processing_instructions(self):
+        for payload in (
+            "before <!-- hidden --> after",
+            "<!DOCTYPE html>",
+            "<?xml version='1.0'?>",
+            "<!ENTITY example 'value'>",
+        ):
+            with self.subTest(payload=payload):
+                catalog = valid_catalog()
+                catalog["modules"][0]["articles"][0]["summary"] = payload
+                self.assert_invalid(catalog, "raw HTML")
+
     def test_rejects_unknown_module_slug(self):
         catalog = valid_catalog()
         catalog["modules"][0]["slug"] = "secret"
@@ -161,13 +187,21 @@ class LearningRendererTests(unittest.TestCase):
     def setUp(self):
         self.source = valid_source()
         self.module = valid_module()
-        self.module["_sources"] = {self.source["source_id"]: self.source}
-        self.module["_verified_at"] = "2026-07-16"
+
+    def render_article(self, article, previous=None, next_=None):
+        return MODULE.render_article(
+            self.module,
+            article,
+            previous,
+            next_,
+            sources=[self.source],
+            verified_at="2026-07-16",
+        )
 
     def test_renderer_escapes_catalog_text_and_adds_source_disclosure(self):
         article = valid_article()
         article["summary"] = "<script>alert(1)</script>"
-        html = MODULE.render_article(self.module, article, None, None)
+        html = self.render_article(article)
         self.assertNotIn("<script>alert(1)</script>", html)
         self.assertIn("&lt;script&gt;alert(1)&lt;/script&gt;", html)
         self.assertIn("公开资料来源", html)
@@ -176,7 +210,7 @@ class LearningRendererTests(unittest.TestCase):
     def test_pages_use_semantic_landmarks_and_existing_auth_contract(self):
         for html in (
             MODULE.render_module_index(self.module),
-            MODULE.render_article(self.module, valid_article(), None, None),
+            self.render_article(valid_article()),
         ):
             for tag in ("header", "nav", "main", "footer"):
                 self.assertIn(f"<{tag}", html)
@@ -200,7 +234,7 @@ class LearningRendererTests(unittest.TestCase):
         previous["title"] = "上一课"
         next_ = valid_article("03-next")
         next_["title"] = "下一课"
-        html = MODULE.render_article(self.module, article, previous, next_)
+        html = self.render_article(article, previous, next_)
         for text in ("首页", "巡防入门指南", "更新时间：2026-07-16", "学习自测", "上一课", "下一课"):
             self.assertIn(text, html)
         self.assertIn('href="01-previous.html"', html)
@@ -210,8 +244,8 @@ class LearningRendererTests(unittest.TestCase):
         self.assertIn("核验日期：2026-07-16", html)
 
     def test_source_without_publication_date_has_disclosure(self):
-        self.module["_sources"]["official-example"]["published_at"] = None
-        html = MODULE.render_article(self.module, valid_article(), None, None)
+        self.source["published_at"] = None
+        html = self.render_article(valid_article())
         self.assertIn("发布日期：页面未标注", html)
 
     def test_module_index_lists_escaped_articles(self):
@@ -243,6 +277,37 @@ class LearningBuildTests(unittest.TestCase):
             manifest = json.loads((root / ".generated-learning-pages.json").read_text(encoding="utf-8"))
             self.assertEqual(sorted(relative), manifest)
             self.assertFalse(list(root.rglob("*.tmp")))
+
+    def test_manifest_cleanup_rejects_noncanonical_and_impossible_paths(self):
+        invalid = (
+            "rumen/nested/stale.html",
+            "rumen/./manual.html",
+            "rumen/../kaohe/stale.html",
+            r"rumen\stale.html",
+            "rumen/-bad.html",
+            "rumen/UPPER.html",
+            "rumen/stale.htm",
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            for relative in invalid:
+                self.assertIsNone(MODULE._safe_generated_html(root, relative), relative)
+            self.assertEqual(
+                (root / "rumen" / "index.html").resolve(),
+                MODULE._safe_generated_html(root, "rumen/index.html"),
+            )
+            self.assertEqual(
+                (root / "jilv" / "01-valid-slug.html").resolve(),
+                MODULE._safe_generated_html(root, "jilv/01-valid-slug.html"),
+            )
+
+    def test_build_passes_explicit_source_context_to_article_renderer(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            MODULE.build_pages(root, valid_catalog())
+            rendered = (root / "rumen" / "01-example.html").read_text(encoding="utf-8")
+            self.assertIn(valid_source()["title"], rendered)
+            self.assertIn("2026-07-16", rendered)
 
     def test_build_rejects_invalid_catalog_before_writing(self):
         catalog = valid_catalog()

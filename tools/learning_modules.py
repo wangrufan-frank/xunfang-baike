@@ -23,7 +23,13 @@ ARTICLE_FIELDS = {
 SECTION_FIELDS = {"title", "lead", "body"}
 QUIZ_FIELDS = {"question", "options", "answer_index", "explanation"}
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-RAW_HTML_RE = re.compile(r"<\s*/?\s*[A-Za-z][^>]*>")
+RAW_HTML_RE = re.compile(
+    r"<\s*(?:/?\s*[A-Za-z][^>]*>|![^>]*(?:>|$)|\?[^>]*(?:\?>|>|$))"
+)
+INVALID_PERCENT_ESCAPE_RE = re.compile(r"%(?![0-9A-Fa-f]{2})")
+MANIFEST_HTML_RE = re.compile(
+    r"^(?:rumen|kaohe|jilv)/(?:index|[a-z0-9]+(?:-[a-z0-9]+)*)\.html$"
+)
 
 
 def load_catalog(path: Path) -> dict:
@@ -91,6 +97,28 @@ def _valid_string_list(value: object, *, allow_empty: bool = False) -> bool:
     )
 
 
+def _valid_https_url(value: object) -> bool:
+    if not _is_nonempty_string(value):
+        return False
+    if any(character.isspace() or ord(character) < 32 for character in value):
+        return False
+    if "\\" in value or INVALID_PERCENT_ESCAPE_RE.search(value):
+        return False
+    try:
+        parsed = urlsplit(value)
+        hostname = parsed.hostname
+        parsed.port
+    except (TypeError, ValueError):
+        return False
+    return bool(
+        parsed.scheme == "https"
+        and parsed.netloc
+        and hostname
+        and not parsed.username
+        and not parsed.password
+    )
+
+
 def validate_catalog(catalog: dict) -> list[str]:
     """Return all schema and content errors without modifying the catalog."""
     errors: list[str] = []
@@ -128,11 +156,8 @@ def validate_catalog(catalog: dict) -> list[str]:
             if source_id in source_ids:
                 errors.append(f"duplicate source_id: {source_id}")
             source_ids.add(source_id)
-        url = source["url"]
-        if isinstance(url, str):
-            parsed = urlsplit(url)
-            if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
-                errors.append(f"{label}.url must be an HTTPS URL")
+        if not _valid_https_url(source["url"]):
+            errors.append(f"{label}.url must be an HTTPS URL")
         if not _valid_date(source["published_at"], nullable=True):
             errors.append(f"{label}.published_at must be a valid ISO date or null")
         if _contains_raw_html(source):
@@ -147,7 +172,7 @@ def validate_catalog(catalog: dict) -> list[str]:
             errors.append(field_error)
             continue
         slug = module["slug"]
-        if slug not in ALLOWED_MODULE_SLUGS:
+        if not isinstance(slug, str) or slug not in ALLOWED_MODULE_SLUGS:
             errors.append(f"{label}.module slug must be one of {sorted(ALLOWED_MODULE_SLUGS)}")
         if isinstance(slug, str):
             if slug in module_slugs:
@@ -285,9 +310,9 @@ def render_module_index(module: dict) -> str:
     )
 
 
-def _render_sources(module: dict, article: dict) -> str:
-    lookup = module.get("_sources", {})
-    verified_at = module.get("_verified_at", "目录未提供")
+def _render_sources(article: dict, sources: list[dict], verified_at: str | None) -> str:
+    lookup = {source["source_id"]: source for source in sources}
+    verification_date = verified_at or "目录未提供"
     cards = []
     for source_id in article["source_ids"]:
         source = lookup.get(source_id)
@@ -299,14 +324,22 @@ def _render_sources(module: dict, article: dict) -> str:
             f'<h3>{_escape(source["title"])}</h3>'
             f'<p>{_escape(source["publisher"])} / {_escape(source["platform"])}</p>'
             f'<p>发布日期：{_escape(published)}</p>'
-            f'<p>核验日期：{_escape(verified_at)}</p>'
+            f'<p>核验日期：{_escape(verification_date)}</p>'
             f'<a href="{_escape(source["url"])}" target="_blank" rel="noopener noreferrer">查看公开原文</a>'
             "</article>"
         )
     return '<section class="source-disclosure"><h2>公开资料来源</h2>' + "".join(cards) + "</section>"
 
 
-def render_article(module: dict, article: dict, previous: dict | None, next_: dict | None) -> str:
+def render_article(
+    module: dict,
+    article: dict,
+    previous: dict | None,
+    next_: dict | None,
+    *,
+    sources: list[dict] | None = None,
+    verified_at: str | None = None,
+) -> str:
     """Render one article with source disclosure and ordered navigation."""
     sections = "".join(
         f'<section class="learning-section"><h2>{_escape(section["title"])}</h2>'
@@ -333,7 +366,7 @@ def render_article(module: dict, article: dict, previous: dict | None, next_: di
 <header class="article-header"><p>第 {_escape(article["number"])} 课 · 阶段 {_escape(article["stage"])}</p><h1>{_escape(article["title"])}</h1><p>{_escape(article["summary"])}</p><p class="meta">更新时间：{_escape(article["updated_at"])} · 预计阅读 {_escape(article["reading_minutes"])} 分钟</p></header>
 {sections}
 <section class="quiz" data-answer-index="{_escape(article["quiz"]["answer_index"])}"><h2>学习自测</h2><fieldset><legend>{_escape(article["quiz"]["question"])}</legend><ol>{options}</ol></fieldset><p class="quiz-explanation">答案说明：{_escape(article["quiz"]["explanation"])}</p></section>
-{_render_sources(module, article)}
+{_render_sources(article, sources or [], verified_at)}
 <nav class="article-pagination" aria-label="课程翻页">{previous_link}{next_link}</nav>
 </article>
 </main>
@@ -369,11 +402,9 @@ def _read_manifest(root: Path) -> set[str]:
 
 
 def _safe_generated_html(root: Path, relative: str) -> Path | None:
+    if not MANIFEST_HTML_RE.fullmatch(relative):
+        return None
     candidate = Path(relative)
-    if candidate.is_absolute() or candidate.suffix.lower() != ".html":
-        return None
-    if not candidate.parts or candidate.parts[0] not in ALLOWED_MODULE_SLUGS:
-        return None
     resolved_root = root.resolve()
     resolved = (root / candidate).resolve()
     if not resolved.is_relative_to(resolved_root):
@@ -387,19 +418,20 @@ def build_pages(root: Path, catalog: dict) -> list[Path]:
     if errors:
         raise ValueError("invalid learning catalog:\n" + "\n".join(errors))
     root = Path(root)
-    source_lookup = {source["source_id"]: source for source in catalog["sources"]}
     rendered: dict[str, str] = {}
     for module in catalog["modules"]:
-        render_context = dict(module)
-        render_context["_sources"] = source_lookup
-        render_context["_verified_at"] = catalog["verified_at"]
-        rendered[f'{module["slug"]}/index.html'] = render_module_index(render_context)
+        rendered[f'{module["slug"]}/index.html'] = render_module_index(module)
         articles = module["articles"]
         for index, article in enumerate(articles):
             previous = articles[index - 1] if index else None
             next_ = articles[index + 1] if index + 1 < len(articles) else None
             rendered[f'{module["slug"]}/{article["slug"]}.html'] = render_article(
-                render_context, article, previous, next_
+                module,
+                article,
+                previous,
+                next_,
+                sources=catalog["sources"],
+                verified_at=catalog["verified_at"],
             )
 
     previous_manifest = _read_manifest(root)
