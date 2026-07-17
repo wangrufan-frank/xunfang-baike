@@ -154,7 +154,6 @@
           "path": "zhuangbei/shuishang-feiyi.html",
           "source_files": [],
           "public_sources": [
-            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html",
             "http://www.jz.gov.cn/info/1024/127327.htm"
           ],
           "images": [],
@@ -234,7 +233,6 @@
             "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
           ],
           "public_sources": [
-            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html",
             "http://www.jz.gov.cn/info/1024/127327.htm"
           ],
           "images": [],
@@ -252,10 +250,10 @@
           "title": "救生衣",
           "slug": "jiusheng-yi",
           "path": "zhuangbei/jiusheng-yi.html",
-          "source_files": [],
-          "public_sources": [
-            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html"
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
           ],
+          "public_sources": [],
           "images": [],
           "related_pages": [
             "zhuangbei/jiusheng-quan.html",
@@ -270,10 +268,10 @@
           "title": "救生绳",
           "slug": "jiusheng-sheng",
           "path": "zhuangbei/jiusheng-sheng.html",
-          "source_files": [],
-          "public_sources": [
-            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html"
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
           ],
+          "public_sources": [],
           "images": [],
           "related_pages": [
             "zhuangbei/jiusheng-quan.html",
@@ -290,7 +288,6 @@
           "path": "zhuangbei/pochai-gongju.html",
           "source_files": [],
           "public_sources": [
-            "http://gat.jiangsu.gov.cn/art/2024/4/26/art_6372_11228599.html",
             "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html",
             "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
           ],
@@ -475,7 +472,6 @@
             "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
           ],
           "public_sources": [
-            "http://gat.jiangsu.gov.cn/art/2024/4/26/art_6372_11228599.html",
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
           ],
           "images": [],

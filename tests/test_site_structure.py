@@ -117,6 +117,22 @@ class IncidentContentTests(unittest.TestCase):
                 self.assertIn(heading, html, record["path"])
 
 
+class LegalContentTests(unittest.TestCase):
+    def test_all_legal_pages_follow_article_contract(self):
+        records = article_records("fagui")
+        self.assertEqual(17, len(records))
+        for record in records:
+            assert_article_contract(self, record)
+
+    def test_law_library_pages_show_effective_date_and_official_link(self):
+        records = [record for record in article_records("fagui") if record["category"] == "法律法规库"]
+        self.assertEqual(7, len(records))
+        for record in records:
+            html = (ROOT / record["path"]).read_text(encoding="utf-8")
+            self.assertIn("施行日期", html)
+            self.assertRegex(html, r'https://[^"\s]+')
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
