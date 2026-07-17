@@ -96,6 +96,16 @@ class DutyContentTests(unittest.TestCase):
             self.assertNotIn("警卫任务", html)
 
 
+class TrainingContentTests(unittest.TestCase):
+    def test_all_training_pages_follow_article_contract(self):
+        records = article_records("xunlian")
+        self.assertEqual(13, len(records))
+        self.assertEqual(7, sum(record["category"] == "单兵技能训练" for record in records))
+        self.assertEqual(6, sum(record["category"] == "小组协同训练" for record in records))
+        for record in records:
+            assert_article_contract(self, record)
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
