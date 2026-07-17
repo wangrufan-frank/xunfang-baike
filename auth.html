@@ -72,9 +72,7 @@
       document.getElementById('pwd').value = '';
       return;
     }
-    var d = new Date();
-    d.setDate(d.getDate() + 7);
-    document.cookie = COOKIE + '=' + h + '; expires=' + d.toUTCString() + '; path=/; SameSite=Lax';
+    document.cookie = COOKIE + '=' + h + '; path=/; SameSite=Lax';
     var redir = getParam('redirect');
     location.href = redir || 'index.html';
   });
