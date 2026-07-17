@@ -67,6 +67,20 @@ class ContentInventoryTests(unittest.TestCase):
             )
 
 
+class EquipmentContentTests(unittest.TestCase):
+    def test_all_equipment_pages_follow_article_contract(self):
+        records = article_records("zhuangbei")
+        self.assertEqual(26, len(records))
+        for record in records:
+            assert_article_contract(self, record)
+
+    def test_three_nine_piece_items_are_not_inventory_articles(self):
+        paths = {record["path"] for record in article_records("zhuangbei")}
+        self.assertNotIn("zhuangbei/shensuo-jinggun.html", paths)
+        self.assertNotIn("zhuangbei/cuilei-pensheqi.html", paths)
+        self.assertNotIn("zhuangbei/shoukao.html", paths)
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")

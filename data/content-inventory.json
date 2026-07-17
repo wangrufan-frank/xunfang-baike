@@ -359,7 +359,22 @@
           "public_sources": [
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/持叉戒备三步动作分解1.jpg",
+              "alt": "抓捕叉持叉戒备姿势分解动作一",
+              "caption": "抓捕叉持叉戒备三步动作分解（一）：提握与下滑",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/持叉戒备三步动作分解2.jpg",
+              "alt": "抓捕叉持叉戒备姿势分解动作二",
+              "caption": "抓捕叉持叉戒备三步动作分解（二）：下压与格斗式站姿",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "xunlian/dunpai-zhuabucha-xietong.html",
             "zhuangbei/fashi-dunpai.html",
@@ -404,7 +419,22 @@
           "public_sources": [
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/持盾戒备四字要领动作分解图1.jpg",
+              "alt": "法式盾牌持盾戒备四字要领分解动作一",
+              "caption": "法式盾牌持盾戒备四字要领分解（一）：举与收",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/持盾戒备四字要领动作分解图2.jpg",
+              "alt": "法式盾牌持盾戒备四字要领分解动作二",
+              "caption": "法式盾牌持盾戒备四字要领分解（二）：抵与稳",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "zhuangbei/bidun.html",
             "zhuangbei/zhuabu-cha.html",
