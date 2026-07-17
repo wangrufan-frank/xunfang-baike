@@ -1,0 +1,1921 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-17",
+  "modules": [
+    {
+      "slug": "zhuangbei",
+      "title": "装备介绍",
+      "categories": [
+        "人身装备",
+        "车载装备",
+        "战术装备"
+      ],
+      "articles": [
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "人身装备",
+          "category_anchor": "personal-equipment",
+          "title": "九小件概览",
+          "slug": "jiuxiaojian-gailan",
+          "path": "zhuangbei/jiuxiaojian-gailan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备九小件概览.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备佩戴原则.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备使用场景.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\伸缩警棍基本介绍.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\催泪喷射器基本介绍.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\手铐基本使用.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\警械使用警告用语.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html",
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
+            "https://jiuquan.chinagscourt.gov.cn/Show/99694"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/shensuo-jinggun-xunlian.html",
+            "xunlian/cuilei-pensheqi-xunlian.html",
+            "xunlian/shoukao-xunlian.html",
+            "fagui/jingxie-shiyong-chengxu.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "人身装备",
+          "category_anchor": "personal-equipment",
+          "title": "防割手套",
+          "slug": "fangge-shoutao",
+          "path": "zhuangbei/fangge-shoutao.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\防割手套的使用.md"
+          ],
+          "public_sources": [
+            "https://www.longling.gov.cn/info/5665/126508.htm",
+            "https://www.mem.gov.cn/fw/flfgbz/bz/bzwb/202605/W020260519618697512384.pdf"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fangci-fu.html",
+            "xunlian/geren-fanghu-anquan.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "人身装备",
+          "category_anchor": "personal-equipment",
+          "title": "执法记录仪",
+          "slug": "zhifa-jiuyi",
+          "path": "zhuangbei/zhifa-jiuyi.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\执法记录仪的使用.md"
+          ],
+          "public_sources": [
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
+            "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/jiluyi-diantai-xunlian.html",
+            "fagui/zhifa-jilu-quanli.html",
+            "zoufang/zhifa-jilu-ziliao-guanli.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "人身装备",
+          "category_anchor": "personal-equipment",
+          "title": "对讲电台",
+          "slug": "duijiang-diantai",
+          "path": "zhuangbei/duijiang-diantai.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备九小件概览.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备佩戴原则.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html",
+            "https://gaj.changzhou.gov.cn/html/czgaj/2025/BOHBPMBI_1016/88415.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/jiluyi-diantai-xunlian.html",
+            "zhuangbei/jiuxiaojian-gailan.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "阻车钉",
+          "slug": "zuche-ding",
+          "path": "zhuangbei/zuche-ding.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\135快反处置机制与核心要求.md"
+          ],
+          "public_sources": [
+            "https://www.qyswzfw.gov.cn/Show/286341",
+            "https://www.xt.gov.cn/xtgaj/0101/202411/f37dab4d6e5c4051977bafd8e5e3138b.shtml",
+            "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fanguang-zhuitong.html",
+            "qinwu/zhuanxiang-xianchang-zhixu.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "水上飞翼",
+          "slug": "shuishang-feiyi",
+          "path": "zhuangbei/shuishang-feiyi.html",
+          "source_files": [],
+          "public_sources": [
+            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html",
+            "http://www.jz.gov.cn/info/1024/127327.htm"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiusheng-quan.html",
+            "zhuangbei/jiusheng-yi.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "灭火毯",
+          "slug": "miehuo-tan",
+          "path": "zhuangbei/miehuo-tan.html",
+          "source_files": [],
+          "public_sources": [
+            "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/miehuo-qi.html",
+            "zhuangbei/pochai-gongju.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "灭火器",
+          "slug": "miehuo-qi",
+          "path": "zhuangbei/miehuo-qi.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\校园反恐防暴作战体系.md"
+          ],
+          "public_sources": [
+            "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html",
+            "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/miehuo-tan.html",
+            "jingqing/shebao-lei.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "反光锥筒",
+          "slug": "fanguang-zhuitong",
+          "path": "zhuangbei/fanguang-zhuitong.html",
+          "source_files": [],
+          "public_sources": [
+            "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668",
+            "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/205308/index.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jingjiedai-jinggaopai.html",
+            "zhuangbei/zuche-ding.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "救生圈",
+          "slug": "jiusheng-quan",
+          "path": "zhuangbei/jiusheng-quan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
+          ],
+          "public_sources": [
+            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html",
+            "http://www.jz.gov.cn/info/1024/127327.htm"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiusheng-yi.html",
+            "zhuangbei/jiusheng-sheng.html",
+            "zhuangbei/shuishang-feiyi.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "救生衣",
+          "slug": "jiusheng-yi",
+          "path": "zhuangbei/jiusheng-yi.html",
+          "source_files": [],
+          "public_sources": [
+            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiusheng-quan.html",
+            "zhuangbei/jiusheng-sheng.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "救生绳",
+          "slug": "jiusheng-sheng",
+          "path": "zhuangbei/jiusheng-sheng.html",
+          "source_files": [],
+          "public_sources": [
+            "https://ynls.gov.cn/xxgk/01528179X/info/2021-159273.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiusheng-quan.html",
+            "zhuangbei/jiusheng-yi.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "破拆工具",
+          "slug": "pochai-gongju",
+          "path": "zhuangbei/pochai-gongju.html",
+          "source_files": [],
+          "public_sources": [
+            "http://gat.jiangsu.gov.cn/art/2024/4/26/art_6372_11228599.html",
+            "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html",
+            "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/t-zi-gun.html",
+            "zhuangbei/miehuo-qi.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "车载装备",
+          "category_anchor": "vehicle-equipment",
+          "title": "5G云台",
+          "slug": "5g-yuntai",
+          "path": "zhuangbei/5g-yuntai.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡防管理与勤务.md"
+          ],
+          "public_sources": [
+            "https://gaj.changzhou.gov.cn/html/czgaj/2025/BOHBPMBI_1016/88415.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/zhifa-jiuyi.html",
+            "qinwu/zhuanxiang-xietong-baogao.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "防暴头盔",
+          "slug": "fangbao-toukui",
+          "path": "zhuangbei/fangbao-toukui.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的装备配备.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
+          ],
+          "public_sources": [
+            "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html",
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fangci-fu.html",
+            "zhuangbei/fashi-dunpai.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "抓捕叉",
+          "slug": "zhuabu-cha",
+          "path": "zhuangbei/zhuabu-cha.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\抓捕叉的使用要领.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\抓捕叉胸叉捕控技术.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\抓捕叉实战约束控制：同向与侧向.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\盾牌与抓捕叉的配合时机.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/dunpai-zhuabucha-xietong.html",
+            "zhuangbei/fashi-dunpai.html",
+            "jingqing/chidao-lei.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "警戒带与警告牌",
+          "slug": "jingjiedai-jinggaopai",
+          "path": "zhuangbei/jingjiedai-jinggaopai.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\政治核心区突发警情处置规范.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
+            "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fanguang-zhuitong.html",
+            "qinwu/gonggong-zhixu-goutong-jilu.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "法式盾牌",
+          "slug": "fashi-dunpai",
+          "path": "zhuangbei/fashi-dunpai.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\法式盾牌的技术动作.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元盾牌的运用场景.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\盾牌实战运用：长时间对抗与体能消耗.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/bidun.html",
+            "zhuangbei/zhuabu-cha.html",
+            "xunlian/dunpai-zhuabucha-xietong.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "臂盾",
+          "slug": "bidun",
+          "path": "zhuangbei/bidun.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查战术站位与装备应用.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\金融机构反恐防暴的处置要点.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
+            "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fashi-dunpai.html",
+            "xunlian/xietong-zhanwei-duixing.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "T字棍",
+          "slug": "t-zi-gun",
+          "path": "zhuangbei/t-zi-gun.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
+          ],
+          "public_sources": [
+            "http://gat.jiangsu.gov.cn/art/2024/4/26/art_6372_11228599.html",
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/changgun.html",
+            "zhuangbei/pochai-gongju.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "强光手电",
+          "slug": "qiangguang-shoudian",
+          "path": "zhuangbei/qiangguang-shoudian.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备九小件概览.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备使用场景.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/qiangguang-shoudian-xunlian.html",
+            "zhuangbei/jiuxiaojian-gailan.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "伞式围挡",
+          "slug": "sanshi-weidang",
+          "path": "zhuangbei/sanshi-weidang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\政治核心区突发警情处置规范.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置的响应流程.md"
+          ],
+          "public_sources": [],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/zhedieshi-weidang.html",
+            "jingqing/zishang-lei.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "折叠式围挡",
+          "slug": "zhedieshi-weidang",
+          "path": "zhuangbei/zhedieshi-weidang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\政治核心区突发警情处置规范.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置四能力与安全三要素.md"
+          ],
+          "public_sources": [],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/sanshi-weidang.html",
+            "qinwu/gonggong-zhixu-goutong-jilu.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "长棍",
+          "slug": "changgun",
+          "path": "zhuangbei/changgun.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\长警棍的使用要领.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\校园反恐防暴作战体系.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/t-zi-gun.html",
+            "xunlian/dunpai-zhuabucha-xietong.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "防刺服",
+          "slug": "fangci-fu",
+          "path": "zhuangbei/fangci-fu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的装备配备.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
+          ],
+          "public_sources": [
+            "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fangge-shoutao.html",
+            "zhuangbei/fangbao-toukui.html"
+          ]
+        },
+        {
+          "module": "zhuangbei",
+          "module_title": "装备介绍",
+          "category": "战术装备",
+          "category_anchor": "tactical-equipment",
+          "title": "约束带",
+          "slug": "yueshu-dai",
+          "path": "zhuangbei/yueshu-dai.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查战术站位与装备应用.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "jingqing/zuijiu-lei.html",
+            "xunlian/shoukao-xunlian.html"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "qinwu",
+      "title": "勤务保障",
+      "categories": [
+        "大型活动安保",
+        "公共秩序事件",
+        "支点联防",
+        "专项活动保障"
+      ],
+      "articles": [
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "大型活动安保",
+          "category_anchor": "major-event-security",
+          "title": "足球赛事安保",
+          "slug": "zuqiu-saishi-anbao",
+          "path": "qinwu/zuqiu-saishi-anbao.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\大型活动与专项安保.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/daxing-shiwai-yanchanghui.html",
+            "qinwu/zhuanxiang-huodong-gailan.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "大型活动安保",
+          "category_anchor": "major-event-security",
+          "title": "大型室外演唱会安保",
+          "slug": "daxing-shiwai-yanchanghui",
+          "path": "qinwu/daxing-shiwai-yanchanghui.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\大型活动与专项安保.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\大型活动现场的处置与执法规范.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/zuqiu-saishi-anbao.html",
+            "qinwu/xiaoxing-shinei-yanchu.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "大型活动安保",
+          "category_anchor": "major-event-security",
+          "title": "小型室内演出安保",
+          "slug": "xiaoxing-shinei-yanchu",
+          "path": "qinwu/xiaoxing-shinei-yanchu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\大型活动与专项安保.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/daxing-shiwai-yanchanghui.html",
+            "qinwu/zuqiu-saishi-anbao.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "公共秩序事件",
+          "category_anchor": "public-order-incidents",
+          "title": "处置基本原则",
+          "slug": "gonggong-zhixu-chuzhi-yuanze",
+          "path": "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\群体事件处置与舆情.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/gonggong-zhixu-falv-quanli.html",
+            "qinwu/gonggong-zhixu-goutong-jilu.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "公共秩序事件",
+          "category_anchor": "public-order-incidents",
+          "title": "法律适用与权利保障",
+          "slug": "gonggong-zhixu-falv-quanli",
+          "path": "qinwu/gonggong-zhixu-falv-quanli.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\群体事件处置与舆情.md"
+          ],
+          "public_sources": [
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html",
+            "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
+            "fagui/quanli-yiwu-gaozhi.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "公共秩序事件",
+          "category_anchor": "public-order-incidents",
+          "title": "现场沟通、记录与舆情风险",
+          "slug": "gonggong-zhixu-goutong-jilu",
+          "path": "qinwu/gonggong-zhixu-goutong-jilu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\群体事件处置与舆情.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\蓝军对抗与教案\\群体性事件宣传取证战术.md"
+          ],
+          "public_sources": [
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
+            "fagui/weiguan-paishe-zhixu.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "支点联防",
+          "category_anchor": "joint-defense-points",
+          "title": "小区支点走访",
+          "slug": "xiaoqu-zhidian-zoufang",
+          "path": "qinwu/xiaoqu-zhidian-zoufang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡防管理与勤务.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/xuexiao-zhidian-zoufang.html",
+            "qinwu/shangchang-zhidian-zoufang.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "支点联防",
+          "category_anchor": "joint-defense-points",
+          "title": "学校支点走访",
+          "slug": "xuexiao-zhidian-zoufang",
+          "path": "qinwu/xuexiao-zhidian-zoufang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\校园反恐防暴作战体系.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\重点学校反恐防暴的特点.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\校园安保快反处置的特点.md"
+          ],
+          "public_sources": [
+            "https://scjgj.gz.gov.cn/attachment/7/7188/7188982/8595211.pdf",
+            "https://www.ayx.gov.cn/2023/01-04/3338957.html",
+            "https://www.bbmu.edu.cn/info/1040/37073.htm"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/xiaoqu-zhidian-zoufang.html",
+            "qinwu/yinhang-zhidian-zoufang.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "支点联防",
+          "category_anchor": "joint-defense-points",
+          "title": "银行支点走访",
+          "slug": "yinhang-zhidian-zoufang",
+          "path": "qinwu/yinhang-zhidian-zoufang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\金融机构反恐防暴的处置要点.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\金融机构反恐防暴要点.md"
+          ],
+          "public_sources": [
+            "https://scjgj.gz.gov.cn/attachment/6/6734/6734446/6991549.pdf"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/xuexiao-zhidian-zoufang.html",
+            "qinwu/shangchang-zhidian-zoufang.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "支点联防",
+          "category_anchor": "joint-defense-points",
+          "title": "商场支点走访",
+          "slug": "shangchang-zhidian-zoufang",
+          "path": "qinwu/shangchang-zhidian-zoufang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡防管理与勤务.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/xiaoqu-zhidian-zoufang.html",
+            "qinwu/yinhang-zhidian-zoufang.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "专项活动保障",
+          "category_anchor": "special-event-support",
+          "title": "专项活动保障概述",
+          "slug": "zhuanxiang-huodong-gailan",
+          "path": "qinwu/zhuanxiang-huodong-gailan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\大型活动与专项安保.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\政治核心区与大型活动执法规范.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/zhuanxiang-xianchang-zhixu.html",
+            "qinwu/zhuanxiang-xietong-baogao.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "专项活动保障",
+          "category_anchor": "special-event-support",
+          "title": "现场秩序与安全服务",
+          "slug": "zhuanxiang-xianchang-zhixu",
+          "path": "qinwu/zhuanxiang-xianchang-zhixu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\政治核心区突发警情处置规范.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\大型活动现场的处置与执法规范.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/zhuanxiang-huodong-gailan.html",
+            "qinwu/zhuanxiang-xietong-baogao.html"
+          ]
+        },
+        {
+          "module": "qinwu",
+          "module_title": "勤务保障",
+          "category": "专项活动保障",
+          "category_anchor": "special-event-support",
+          "title": "部门协同与突发情况报告",
+          "slug": "zhuanxiang-xietong-baogao",
+          "path": "qinwu/zhuanxiang-xietong-baogao.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡防管理与勤务.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置的响应流程.md"
+          ],
+          "public_sources": [
+            "https://www.yantai.gov.cn/cms_files/jcms1/web1/site/attach/0/3463208b7d7846ffa1b293b3c6076239.pdf"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/zhuanxiang-huodong-gailan.html",
+            "jingqing/shebao-lei.html"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "xunlian",
+      "title": "警务训练",
+      "categories": [
+        "单兵技能训练",
+        "小组协同训练"
+      ],
+      "articles": [
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "个人防护与训练安全",
+          "slug": "geren-fanghu-anquan",
+          "path": "xunlian/geren-fanghu-anquan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备佩戴原则.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\戒备姿势.md"
+          ],
+          "public_sources": [
+            "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fangci-fu.html",
+            "zhuangbei/fangge-shoutao.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "伸缩警棍基础训练",
+          "slug": "shensuo-jinggun-xunlian",
+          "path": "xunlian/shensuo-jinggun-xunlian.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\伸缩警棍基本介绍.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\开棍技术.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\握棍方式.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\劈击技术.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\伸缩警棍击打部位.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\伸缩警棍使用安全注意事项.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiuxiaojian-gailan.html",
+            "fagui/jingxie-shiyong-chengxu.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "催泪喷射器基础训练",
+          "slug": "cuilei-pensheqi-xunlian",
+          "path": "xunlian/cuilei-pensheqi-xunlian.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\催泪喷射器基本介绍.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\催泪喷射器使用要领.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\催泪喷射器善后处理.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\催泪喷射器法定禁止情形.md"
+          ],
+          "public_sources": [
+            "https://www.huzhong.gov.cn/huzhong/c100382/202512/c13_326462.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiuxiaojian-gailan.html",
+            "fagui/jingxie-shiyong-chengxu.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "手铐基础训练",
+          "slug": "shoukao-xunlian",
+          "path": "xunlian/shoukao-xunlian.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\手铐基本使用.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html",
+            "https://jiuquan.chinagscourt.gov.cn/Show/99694"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/jiuxiaojian-gailan.html",
+            "xunlian/yidong-yanhu-daili.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "执法记录仪与电台训练",
+          "slug": "jiluyi-diantai-xunlian",
+          "path": "xunlian/jiluyi-diantai-xunlian.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\执法记录仪的使用.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备九小件概览.md"
+          ],
+          "public_sources": [
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/zhifa-jiuyi.html",
+            "zhuangbei/duijiang-diantai.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "强光手电基础训练",
+          "slug": "qiangguang-shoudian-xunlian",
+          "path": "xunlian/qiangguang-shoudian-xunlian.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\单警装备使用场景.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/qiangguang-shoudian.html",
+            "xunlian/geren-fanghu-anquan.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "单兵技能训练",
+          "category_anchor": "individual-skill-training",
+          "title": "徒手解脱与控制基础",
+          "slug": "jietuo-kongzhi-jichu",
+          "path": "xunlian/jietuo-kongzhi-jichu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\徒手防卫与控制\\徒手防卫与控制概念与法律依据.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\徒手防卫与控制\\徒手解脱技术-抓握解脱与防御.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\徒手防卫与控制\\徒手控制技术-抱臂折腕锁喉摔.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\徒手防卫与控制\\警务徒手控制技战术.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\十字防御技能详解.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/ya/dwjs/202405/t20240528_84696804.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/yidong-yanhu-daili.html",
+            "fagui/jingxie-shiyong-chengxu.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "小组协同训练",
+          "category_anchor": "team-coordination-training",
+          "title": "小组编成与职责分工",
+          "slug": "xiaozu-biancheng-fengong",
+          "path": "xunlian/xiaozu-biancheng-fengong.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的定义与编成.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的职责分工.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的装备配备.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
+            "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/xietong-zhanwei-duixing.html",
+            "xunlian/xunlian-fupan-kaoping.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "小组协同训练",
+          "category_anchor": "team-coordination-training",
+          "title": "协同站位与基础队形",
+          "slug": "xietong-zhanwei-duixing",
+          "path": "xunlian/xietong-zhanwei-duixing.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元战术站位：组合式与夹击式.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的战术配合原则.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查战术站位与装备应用.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
+            "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/xiaozu-biancheng-fengong.html",
+            "xunlian/dunpai-zhuabucha-xietong.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "小组协同训练",
+          "category_anchor": "team-coordination-training",
+          "title": "盾牌与抓捕叉协同",
+          "slug": "dunpai-zhuabucha-xietong",
+          "path": "xunlian/dunpai-zhuabucha-xietong.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\盾牌与抓捕叉的配合时机.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\刀斧砍杀警情中的盾叉协同战术.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\以刀斧砍杀为场景的协同处置流程.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\盾棍叉战术配合与装备操作.md"
+          ],
+          "public_sources": [
+            "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
+            "https://www.dxalth.gov.cn/dxalth/c100885/202507/c13_316265.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/fashi-dunpai.html",
+            "zhuangbei/zhuabu-cha.html",
+            "jingqing/chidao-lei.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "小组协同训练",
+          "category_anchor": "team-coordination-training",
+          "title": "移动、掩护与人员带离",
+          "slug": "yidong-yanhu-daili",
+          "path": "xunlian/yidong-yanhu-daili.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元主动横移压缩空间战法.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\徒手防卫与控制\\俯卧式搜身带离流程.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元抗击盾牌撞击训练.md"
+          ],
+          "public_sources": [
+            "https://jyglj.guizhou.gov.cn/ya/dwjs/202405/t20240528_84696804.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/jietuo-kongzhi-jichu.html",
+            "xunlian/xietong-zhanwei-duixing.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "小组协同训练",
+          "category_anchor": "team-coordination-training",
+          "title": "现场沟通与影像记录",
+          "slug": "xianchang-goutong-yingxiang",
+          "path": "xunlian/xianchang-goutong-yingxiang.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元现场执法法言法语体系.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\蓝军对抗与教案\\群体性事件宣传取证战术.md"
+          ],
+          "public_sources": [
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/shenfen-mudi-shuoming.html",
+            "zhuangbei/zhifa-jiuyi.html"
+          ]
+        },
+        {
+          "module": "xunlian",
+          "module_title": "警务训练",
+          "category": "小组协同训练",
+          "category_anchor": "team-coordination-training",
+          "title": "训练组织、复盘与考评",
+          "slug": "xunlian-fupan-kaoping",
+          "path": "xunlian/xunlian-fupan-kaoping.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的组训教学方法.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的红蓝对抗训练法.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置培训的组织方法.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\教学培训体系.md"
+          ],
+          "public_sources": [
+            "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/jichu-jingwu-kaohe.html",
+            "zoufang/xiaozu-xietong-kaohe.html"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "jingqing",
+      "title": "警情处置",
+      "categories": [
+        "醉酒类警情",
+        "持刀类警情",
+        "自伤类警情",
+        "精神障碍类警情",
+        "涉爆类警情"
+      ],
+      "articles": [
+        {
+          "module": "jingqing",
+          "module_title": "警情处置",
+          "category": "醉酒类警情",
+          "category_anchor": "drunk-incidents",
+          "title": "醉酒类警情处置基础",
+          "slug": "zuijiu-lei",
+          "path": "jingqing/zuijiu-lei.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置与考核标准.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置的响应流程.md"
+          ],
+          "public_sources": [
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html",
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/yueshu-dai.html",
+            "fagui/zhian-guanli-chufa-fa.html"
+          ]
+        },
+        {
+          "module": "jingqing",
+          "module_title": "警情处置",
+          "category": "持刀类警情",
+          "category_anchor": "knife-incidents",
+          "title": "持刀类警情处置基础",
+          "slug": "chidao-lei",
+          "path": "jingqing/chidao-lei.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\持刀类警情梯次化处置与模块化策应.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\重点区域持刀类警情的处置要点.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\刀斧砍杀警情中的盾叉协同战术.md"
+          ],
+          "public_sources": [
+            "https://www.dxalth.gov.cn/dxalth/c100885/202507/c13_316265.shtml",
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/dunpai-zhuabucha-xietong.html",
+            "zhuangbei/zhuabu-cha.html"
+          ]
+        },
+        {
+          "module": "jingqing",
+          "module_title": "警情处置",
+          "category": "自伤类警情",
+          "category_anchor": "self-harm-incidents",
+          "title": "自伤类警情处置基础",
+          "slug": "zishang-lei",
+          "path": "jingqing/zishang-lei.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\工作计划与文书.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置四能力与安全三要素.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
+            "https://www.nhc.gov.cn/fzs/c100048/201808/5d03e37b37c944b08d701a0b5722160a.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "jingqing/jingshen-zhangai-lei.html",
+            "zhuangbei/sanshi-weidang.html"
+          ]
+        },
+        {
+          "module": "jingqing",
+          "module_title": "警情处置",
+          "category": "精神障碍类警情",
+          "category_anchor": "mental-disorder-incidents",
+          "title": "精神障碍类警情处置基础",
+          "slug": "jingshen-zhangai-lei",
+          "path": "jingqing/jingshen-zhangai-lei.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置的响应流程.md"
+          ],
+          "public_sources": [
+            "https://www.nhc.gov.cn/fzs/c100048/201808/5d03e37b37c944b08d701a0b5722160a.shtml",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "jingqing/zishang-lei.html",
+            "fagui/jingxie-shiyong-chengxu.html"
+          ]
+        },
+        {
+          "module": "jingqing",
+          "module_title": "警情处置",
+          "category": "涉爆类警情",
+          "category_anchor": "explosive-incidents",
+          "title": "涉爆类警情处置基础",
+          "slug": "shebao-lei",
+          "path": "jingqing/shebao-lei.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\反恐防暴先期处置原则与能力培养.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\反恐防暴的基本原则.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=165&Query=",
+            "https://www.yantai.gov.cn/cms_files/jcms1/web1/site/attach/0/3463208b7d7846ffa1b293b3c6076239.pdf"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/zhuanxiang-xietong-baogao.html",
+            "zhuangbei/jingjiedai-jinggaopai.html"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fagui",
+      "title": "执法规范",
+      "categories": [
+        "现场规范用语",
+        "执法程序与法条应用",
+        "法律法规库"
+      ],
+      "articles": [
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "现场规范用语",
+          "category_anchor": "standard-language",
+          "title": "表明身份与说明目的",
+          "slug": "shenfen-mudi-shuoming",
+          "path": "fagui/shenfen-mudi-shuoming.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查法律依据与法言法语.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元现场执法法言法语体系.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
+            "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/pancha-guifan-goutong.html",
+            "fagui/panwen-shenfenzheng.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "现场规范用语",
+          "category_anchor": "standard-language",
+          "title": "盘查中的规范沟通",
+          "slug": "pancha-guifan-goutong",
+          "path": "fagui/pancha-guifan-goutong.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查的规范流程.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查法律依据与法言法语.md"
+          ],
+          "public_sources": [
+            "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/shenfen-mudi-shuoming.html",
+            "fagui/zhiyi-yifa-huiying.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "现场规范用语",
+          "category_anchor": "standard-language",
+          "title": "面对质疑时的依法回应",
+          "slug": "zhiyi-yifa-huiying",
+          "path": "fagui/zhiyi-yifa-huiying.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的法言法语规范.md"
+          ],
+          "public_sources": [
+            "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html",
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/shenfen-mudi-shuoming.html",
+            "fagui/quanli-yiwu-gaozhi.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "现场规范用语",
+          "category_anchor": "standard-language",
+          "title": "围观拍摄与现场秩序引导",
+          "slug": "weiguan-paishe-zhixu",
+          "path": "fagui/weiguan-paishe-zhixu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\蓝军对抗与教案\\群体性事件宣传取证战术.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\群体事件处置与舆情.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/gonggong-zhixu-goutong-jilu.html",
+            "fagui/zhifa-jilu-quanli.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "现场规范用语",
+          "category_anchor": "standard-language",
+          "title": "权利义务和法律后果告知",
+          "slug": "quanli-yiwu-gaozhi",
+          "path": "fagui/quanli-yiwu-gaozhi.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查法律依据与法言法语.md"
+          ],
+          "public_sources": [
+            "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/zhiyi-yifa-huiying.html",
+            "fagui/chuanhuan-qiangzhi-chuanhuan.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "执法程序与法条应用",
+          "category_anchor": "enforcement-procedures",
+          "title": "盘问检查与身份证查验",
+          "slug": "panwen-shenfenzheng",
+          "path": "fagui/panwen-shenfenzheng.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查法律依据与法言法语.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\吸毒前科人员盘查流程.md"
+          ],
+          "public_sources": [
+            "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html",
+            "https://gaj.beijing.gov.cn/zhengce/zcfg/202204/t20220402_2653202.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/jumin-shenfenzheng-fa.html",
+            "fagui/renmin-jingcha-fa.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "执法程序与法条应用",
+          "category_anchor": "enforcement-procedures",
+          "title": "传唤和强制传唤",
+          "slug": "chuanhuan-qiangzhi-chuanhuan",
+          "path": "fagui/chuanhuan-qiangzhi-chuanhuan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查的规范流程.md"
+          ],
+          "public_sources": [
+            "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/panwen-shenfenzheng.html",
+            "fagui/xingzheng-anji-tiaocha.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "执法程序与法条应用",
+          "category_anchor": "enforcement-procedures",
+          "title": "警械使用的条件与程序",
+          "slug": "jingxie-shiyong-chengxu",
+          "path": "fagui/jingxie-shiyong-chengxu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\伸缩警棍法律支撑.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\警械使用警告用语.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\催泪喷射器法定禁止情形.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元在法律框架下的使用边界.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/jingxie-wuqi-tiaoli.html",
+            "fagui/xianchang-zhizhi-guicheng.html",
+            "zhuangbei/jiuxiaojian-gailan.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "执法程序与法条应用",
+          "category_anchor": "enforcement-procedures",
+          "title": "行政案件调查取证",
+          "slug": "xingzheng-anji-tiaocha",
+          "path": "fagui/xingzheng-anji-tiaocha.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\执法规范与法规.md"
+          ],
+          "public_sources": [
+            "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/xingzheng-anji-chengxu-guiding.html",
+            "fagui/zhifa-jilu-quanli.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "执法程序与法条应用",
+          "category_anchor": "enforcement-procedures",
+          "title": "执法记录与权利保障",
+          "slug": "zhifa-jilu-quanli",
+          "path": "fagui/zhifa-jilu-quanli.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\执法记录仪的使用.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\执法规范与法规.md"
+          ],
+          "public_sources": [
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
+            "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "zhuangbei/zhifa-jiuyi.html",
+            "zoufang/zhifa-jilu-ziliao-guanli.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "治安管理处罚法",
+          "slug": "zhian-guanli-chufa-fa",
+          "path": "fagui/zhian-guanli-chufa-fa.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\执法规范与法规.md"
+          ],
+          "public_sources": [
+            "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/xingzheng-anji-chengxu-guiding.html",
+            "jingqing/zuijiu-lei.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "人民警察法",
+          "slug": "renmin-jingcha-fa",
+          "path": "fagui/renmin-jingcha-fa.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡逻盘查\\巡逻盘查法律依据与法言法语.md"
+          ],
+          "public_sources": [
+            "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/panwen-shenfenzheng.html",
+            "fagui/jumin-shenfenzheng-fa.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "居民身份证法",
+          "slug": "jumin-shenfenzheng-fa",
+          "path": "fagui/jumin-shenfenzheng-fa.html",
+          "source_files": [],
+          "public_sources": [
+            "https://gaj.beijing.gov.cn/zhengce/zcfg/202204/t20220402_2653202.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/panwen-shenfenzheng.html",
+            "fagui/renmin-jingcha-fa.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "公安机关办理行政案件程序规定",
+          "slug": "xingzheng-anji-chengxu-guiding",
+          "path": "fagui/xingzheng-anji-chengxu-guiding.html",
+          "source_files": [],
+          "public_sources": [
+            "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/xingzheng-anji-tiaocha.html",
+            "fagui/zhian-guanli-chufa-fa.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "人民警察使用警械和武器条例",
+          "slug": "jingxie-wuqi-tiaoli",
+          "path": "fagui/jingxie-wuqi-tiaoli.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\伸缩警棍法律支撑.md"
+          ],
+          "public_sources": [
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/jingxie-shiyong-chengxu.html",
+            "fagui/xianchang-zhizhi-guicheng.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "现场制止违法犯罪行为操作规程",
+          "slug": "xianchang-zhizhi-guicheng",
+          "path": "fagui/xianchang-zhizhi-guicheng.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元现场执法法律依据.md"
+          ],
+          "public_sources": [
+            "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/jingxie-shiyong-chengxu.html",
+            "fagui/jingxie-wuqi-tiaoli.html"
+          ]
+        },
+        {
+          "module": "fagui",
+          "module_title": "执法规范",
+          "category": "法律法规库",
+          "category_anchor": "legal-library",
+          "title": "其他日常巡逻与安保规范",
+          "slug": "qita-xiangguan-guifan",
+          "path": "fagui/qita-xiangguan-guifan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\巡防管理与勤务.md"
+          ],
+          "public_sources": [
+            "https://www.spt.gov.cn/xxgk/zfxxgkml/201911/t20191122_1858135.html",
+            "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B",
+            "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
+          ],
+          "images": [],
+          "related_pages": [
+            "qinwu/zhuanxiang-huodong-gailan.html",
+            "zoufang/neiwu-tiaoling.html"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "zoufang",
+      "title": "教育培训",
+      "categories": [
+        "规章制度",
+        "考核规范",
+        "学习课程"
+      ],
+      "articles": [
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "规章制度",
+          "category_anchor": "rules-regulations",
+          "title": "人民警察内务规范",
+          "slug": "neiwu-tiaoling",
+          "path": "zoufang/neiwu-tiaoling.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\队伍管理与党建.md"
+          ],
+          "public_sources": [
+            "https://www.gov.cn/gongbao/content/2022/content_5671112.htm"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/jilv-yaoqiu.html",
+            "zoufang/shejiu-yanqing-guanli.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "规章制度",
+          "category_anchor": "rules-regulations",
+          "title": "纪律要求",
+          "slug": "jilv-yaoqiu",
+          "path": "zoufang/jilv-yaoqiu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\队伍管理与党建.md"
+          ],
+          "public_sources": [
+            "https://www.gov.cn/gongbao/content/2022/content_5671112.htm",
+            "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/neiwu-tiaoling.html",
+            "zoufang/shejiu-yanqing-guanli.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "规章制度",
+          "category_anchor": "rules-regulations",
+          "title": "保密与信息安全",
+          "slug": "baomi-xinxi-anquan",
+          "path": "zoufang/baomi-xinxi-anquan.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\执法记录仪的使用.md"
+          ],
+          "public_sources": [
+            "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml",
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/zhifa-jilu-ziliao-guanli.html",
+            "fagui/zhifa-jilu-quanli.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "规章制度",
+          "category_anchor": "rules-regulations",
+          "title": "涉酒及违规宴请管理要求",
+          "slug": "shejiu-yanqing-guanli",
+          "path": "zoufang/shejiu-yanqing-guanli.html",
+          "source_files": [],
+          "public_sources": [
+            "https://gaj.sjz.gov.cn/columns/0a9c92b2-97b8-4284-9bd7-6240c789c0bf/202204/29/1c7b0edf-6eec-4110-a397-d1a4828b68d4.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/jilv-yaoqiu.html",
+            "zoufang/neiwu-tiaoling.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "规章制度",
+          "category_anchor": "rules-regulations",
+          "title": "执法记录和工作资料管理",
+          "slug": "zhifa-jilu-ziliao-guanli",
+          "path": "zoufang/zhifa-jilu-ziliao-guanli.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\单警装备\\执法记录仪的使用.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\工作计划与文书.md"
+          ],
+          "public_sources": [
+            "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
+            "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml"
+          ],
+          "images": [],
+          "related_pages": [
+            "fagui/zhifa-jilu-quanli.html",
+            "zhuangbei/zhifa-jiuyi.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "考核规范",
+          "category_anchor": "assessment-standards",
+          "title": "体能考核要求",
+          "slug": "tineng-kaohe",
+          "path": "zoufang/tineng-kaohe.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置与考核标准.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\盾牌实战运用：长时间对抗与体能消耗.md"
+          ],
+          "public_sources": [
+            "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/jichu-jingwu-kaohe.html",
+            "zoufang/kaohe-anquan-buce.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "考核规范",
+          "category_anchor": "assessment-standards",
+          "title": "基础警务技能考核",
+          "slug": "jichu-jingwu-kaohe",
+          "path": "zoufang/jichu-jingwu-kaohe.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置与考核标准.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置四能力与安全三要素.md"
+          ],
+          "public_sources": [
+            "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/tineng-kaohe.html",
+            "zoufang/xiaozu-xietong-kaohe.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "考核规范",
+          "category_anchor": "assessment-standards",
+          "title": "小组协同技能考核",
+          "slug": "xiaozu-xietong-kaohe",
+          "path": "zoufang/xiaozu-xietong-kaohe.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的红蓝对抗训练法.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\教学培训体系.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置与考核标准.md"
+          ],
+          "public_sources": [
+            "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "xunlian/xunlian-fupan-kaoping.html",
+            "zoufang/jichu-jingwu-kaohe.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "考核规范",
+          "category_anchor": "assessment-standards",
+          "title": "考核安全、记录与补测",
+          "slug": "kaohe-anquan-buce",
+          "path": "zoufang/kaohe-anquan-buce.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\快反处置与考核标准.md"
+          ],
+          "public_sources": [
+            "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/tineng-kaohe.html",
+            "zoufang/jichu-jingwu-kaohe.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "学习课程",
+          "category_anchor": "learning-courses",
+          "title": "单位优秀课程",
+          "slug": "danwei-youxiu-kecheng",
+          "path": "zoufang/danwei-youxiu-kecheng.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\教学培训体系.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\工作计划与文书.md"
+          ],
+          "public_sources": [],
+          "images": [],
+          "related_pages": [
+            "zoufang/shiju-youxiu-kecheng.html",
+            "zoufang/chuangxin-xunlian-fangfa.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "学习课程",
+          "category_anchor": "learning-courses",
+          "title": "市局优秀课程",
+          "slug": "shiju-youxiu-kecheng",
+          "path": "zoufang/shiju-youxiu-kecheng.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\教学培训体系.md"
+          ],
+          "public_sources": [
+            "https://gaj.changzhou.gov.cn/html/czgaj/2025/BOHBPMBI_1016/88415.html"
+          ],
+          "images": [],
+          "related_pages": [
+            "zoufang/danwei-youxiu-kecheng.html",
+            "zoufang/chuangxin-xunlian-fangfa.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "学习课程",
+          "category_anchor": "learning-courses",
+          "title": "创新训练方法",
+          "slug": "chuangxin-xunlian-fangfa",
+          "path": "zoufang/chuangxin-xunlian-fangfa.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\教学培训体系.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\最小作战单元\\最小作战单元的红蓝对抗训练法.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\蓝军对抗与教案\\蓝军建设体系与教学方案.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\综合\\执法规范化与蓝军建设工作机制.md"
+          ],
+          "public_sources": [],
+          "images": [],
+          "related_pages": [
+            "zoufang/danwei-youxiu-kecheng.html",
+            "xunlian/xunlian-fupan-kaoping.html"
+          ]
+        },
+        {
+          "module": "zoufang",
+          "module_title": "教育培训",
+          "category": "学习课程",
+          "category_anchor": "learning-courses",
+          "title": "课程资料使用与交流规范",
+          "slug": "kecheng-ziliao-jiaoliu",
+          "path": "zoufang/kecheng-ziliao-jiaoliu.html",
+          "source_files": [
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\工作计划与文书.md",
+            "F:\\frank第二大脑\\frank知识库\\03_Knowledge\\警务技能\\教学培训体系.md"
+          ],
+          "public_sources": [],
+          "images": [],
+          "related_pages": [
+            "zoufang/danwei-youxiu-kecheng.html",
+            "zoufang/zhifa-jilu-ziliao-guanli.html"
+          ]
+        }
+      ]
+    }
+  ]
+}
