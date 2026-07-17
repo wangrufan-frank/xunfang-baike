@@ -6,6 +6,7 @@
     { name: '警务训练', path: 'xunlian/index.html',    emoji: '⚔️' },
     { name: '警情处置', path: 'jingqing/index.html',    emoji: '🚨' },
     { name: '法条规范', path: 'fagui/index.html',       emoji: '📕' },
+    { name: '入门指南', path: 'rumen/index.html',       emoji: '🎓' },
     { name: '走访送教', path: 'zoufang/index.html',     emoji: '🏫' },
     { name: '本月精选', path: 'meiyueyixue/index.html', emoji: '⭐', special: true }
   ];
