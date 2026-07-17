@@ -6,6 +6,9 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# Detail pages removed during the 2026-07 content remediation. They must stay
+# deleted: the rebuilt modules cover these topics only through the approved
+# replacement articles listed in data/content-inventory.json.
 DELETED_PATHS = {
     'qinwu/yanchanghui-zhifa.html',
     'qinwu/xiaoyuan-jinrong.html',
@@ -33,17 +36,16 @@ DELETED_PATHS = {
     'zoufang/daxing-huodong.html',
 }
 
+# Titles of removed pages that must not resurface as page or module names.
+# Terms that became approved category or article vocabulary in the rebuilt
+# site (for example the qinwu category 大型活动安保) are intentionally not
+# listed here any more.
 FORBIDDEN_RUNTIME_TERMS = {
-    '大型活动安保',
-    '群体事件处置',
-    '主动横移压缩空间战法',
     '训练教学法',
-    '十字防御技能',
     '快反技能',
     '反恐基础理论',
     '现场处置执法规范',
     '政治核心区处置',
-    '大型活动安保执法',
 }
 
 RUNTIME_SUFFIXES = {'.html', '.js', '.json', '.wxml', '.wxss'}
@@ -104,12 +106,10 @@ class SensitiveContentRemovalTests(unittest.TestCase):
         indexed_paths = {record['path'] for record in records}
         self.assertEqual(sorted(indexed_paths.intersection(DELETED_PATHS)), [])
 
-    def test_jingqing_web_and_miniprogram_show_remediation_state(self):
-        web = (ROOT / 'jingqing' / 'index.html').read_text(encoding='utf-8')
+    def test_jingqing_miniprogram_still_shows_remediation_state(self):
         mini = (
             ROOT / 'miniprogram' / 'pages' / 'jingqing' / 'index' / 'index.wxml'
         ).read_text(encoding='utf-8')
-        self.assertIn('内容整改中', web)
         self.assertIn('内容整改中', mini)
 
     def test_jingqing_miniprogram_data_is_empty(self):
@@ -118,9 +118,7 @@ class SensitiveContentRemovalTests(unittest.TestCase):
         ).read_text(encoding='utf-8').strip()
         self.assertEqual(source, 'module.exports = [];')
 
-    def test_qinwu_web_and_miniprogram_show_remediation_shell(self):
-        web_home = (ROOT / 'index.html').read_text(encoding='utf-8')
-        web_section = (ROOT / 'qinwu' / 'index.html').read_text(encoding='utf-8')
+    def test_qinwu_miniprogram_still_shows_remediation_shell(self):
         mini_home = (
             ROOT / 'miniprogram' / 'pages' / 'index' / 'index.wxml'
         ).read_text(encoding='utf-8')
@@ -131,8 +129,6 @@ class SensitiveContentRemovalTests(unittest.TestCase):
             ROOT / 'miniprogram' / 'data' / 'qinwu.js'
         ).read_text(encoding='utf-8').strip()
 
-        self.assertIn('巡防勤务', web_home)
-        self.assertIn('内容整改中', web_section)
         self.assertIn('巡防勤务', mini_home)
         self.assertIn('内容整改中', mini_section)
         self.assertEqual(mini_data, 'module.exports = [];')

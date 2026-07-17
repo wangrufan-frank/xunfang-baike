@@ -133,6 +133,20 @@ class LegalContentTests(unittest.TestCase):
             self.assertRegex(html, r'https://[^"\s]+')
 
 
+class EducationContentTests(unittest.TestCase):
+    def test_all_education_pages_follow_article_contract(self):
+        records = article_records("zoufang")
+        self.assertEqual(13, len(records))
+        for record in records:
+            assert_article_contract(self, record)
+
+    def test_onboarding_module_is_removed_from_web_runtime(self):
+        self.assertFalse((ROOT / "rumen").exists())
+        self.assertFalse((ROOT / ".generated-learning-pages.json").exists())
+        for path in [ROOT / "index.html", ROOT / "js" / "nav.js", ROOT / "search-index.json"]:
+            self.assertNotIn("rumen", path.read_text(encoding="utf-8"))
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")

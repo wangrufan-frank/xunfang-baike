@@ -56,7 +56,7 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
 
     def test_discovery_matches_current_site_inventory(self):
         pages = MODULE.discover_pages(ROOT)
-        self.assertEqual(len(pages), 98)
+        self.assertEqual(len(pages), 111)
         counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0, 'jingqing': 0, 'qinwu': 0}
         point_counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0, 'jingqing': 0, 'qinwu': 0}
         point_count = 0
@@ -69,7 +69,7 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
             point_count += page_point_count
         self.assertEqual(
             counts,
-            {'fagui': 23, 'xunlian': 24, 'zhuangbei': 30, 'zoufang': 3, 'jingqing': 5, 'qinwu': 13},
+            {'fagui': 23, 'xunlian': 24, 'zhuangbei': 30, 'zoufang': 16, 'jingqing': 5, 'qinwu': 13},
         )
         self.assertEqual(
             point_counts,
@@ -425,11 +425,11 @@ class PublicSourceIndexCliTests(unittest.TestCase):
     def test_inventory_command_reports_current_counts(self):
         result = self.run_cli('inventory')
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('98 pages, 143 points', result.stdout)
+        self.assertIn('111 pages, 143 points', result.stdout)
         self.assertIn('fagui: 23 pages, 33 points', result.stdout)
         self.assertIn('xunlian: 24 pages, 67 points', result.stdout)
         self.assertIn('zhuangbei: 30 pages, 21 points', result.stdout)
-        self.assertIn('zoufang: 3 pages, 22 points', result.stdout)
+        self.assertIn('zoufang: 16 pages, 22 points', result.stdout)
         self.assertIn('jingqing: 5 pages, 0 points', result.stdout)
         self.assertIn('qinwu: 13 pages, 0 points', result.stdout)
 
@@ -441,7 +441,7 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             ledger = MODULE.load_ledger(output)
 
         self.assertIn(
-            'Wrote 98 pages and 143 points; all coverage statuses are pending.',
+            'Wrote 111 pages and 143 points; all coverage statuses are pending.',
             result.stdout,
         )
         self.assertEqual(MODULE.validate_ledger(ROOT, ledger, allow_pending=True), [])
