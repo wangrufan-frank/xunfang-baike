@@ -33,7 +33,22 @@
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
             "https://jiuquan.chinagscourt.gov.cn/Show/99694"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/九小件全套平铺展示图.jpg",
+              "alt": "单警装备九小件全套平铺展示",
+              "caption": "单警装备九小件全套平铺展示",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            },
+            {
+              "path": "img/多功能腰带全装佩戴正面照.jpg",
+              "alt": "多功能腰带全装佩戴正面照",
+              "caption": "多功能腰带全装佩戴正面展示",
+              "source": "巡防百科既有站内素材",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "xunlian/shensuo-jinggun-xunlian.html",
             "xunlian/cuilei-pensheqi-xunlian.html",
