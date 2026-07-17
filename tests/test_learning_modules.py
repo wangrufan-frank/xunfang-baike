@@ -184,6 +184,57 @@ class LearningCatalogValidationTests(unittest.TestCase):
         self.assert_invalid(catalog, "module slug")
 
 
+class LearningCatalogInventoryTests(unittest.TestCase):
+    def test_onboarding_has_five_ordered_stages(self):
+        catalog = MODULE.load_catalog(ROOT / "data" / "learning-modules.json")
+        module = next(module for module in catalog["modules"] if module["slug"] == "rumen")
+        articles = module["articles"]
+
+        self.assertEqual(5, len(articles))
+        self.assertEqual(["01", "02", "03", "04", "05"], [article["number"] for article in articles])
+        self.assertEqual([1, 2, 3, 4, 5], [article["stage"] for article in articles])
+        self.assertEqual(
+            [
+                "01-gangwei-renshi",
+                "02-zhize-bianjie",
+                "03-jilv-baomi",
+                "04-qinwu-goutong",
+                "05-fuxi-zice",
+            ],
+            [article["slug"] for article in articles],
+        )
+        self.assertEqual(
+            [
+                "认识巡防岗位",
+                "明确职责与权限边界",
+                "纪律要求与保密意识",
+                "勤务基础与群众沟通",
+                "综合复习与入门自测",
+            ],
+            [article["title"] for article in articles],
+        )
+        expected_sections = ["学习目标", "核心要点", "常见误区", "请示与正式培训边界"]
+        for index, article in enumerate(articles):
+            with self.subTest(slug=article["slug"]):
+                self.assertTrue(article["quiz"])
+                self.assertTrue(article["source_ids"])
+                self.assertEqual(expected_sections, [section["title"] for section in article["sections"]])
+                previous = articles[index - 1] if index else None
+                next_ = articles[index + 1] if index + 1 < len(articles) else None
+                html = MODULE.render_article(
+                    module,
+                    article,
+                    previous,
+                    next_,
+                    sources=catalog["sources"],
+                    verified_at=catalog["verified_at"],
+                )
+                if previous:
+                    self.assertIn(f'href="{previous["slug"]}.html"', html)
+                if next_:
+                    self.assertIn(f'href="{next_["slug"]}.html"', html)
+
+
 class LearningRendererTests(unittest.TestCase):
     def setUp(self):
         self.source = valid_source()
@@ -257,6 +308,47 @@ class LearningRendererTests(unittest.TestCase):
 
 
 class LearningBuildTests(unittest.TestCase):
+    def test_build_skips_modules_without_articles(self):
+        catalog = valid_catalog()
+        catalog["modules"].append({
+            "slug": "kaohe",
+            "title": "考核标准",
+            "description": "待后续任务建设。",
+            "articles": [],
+        })
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            written = MODULE.build_pages(root, catalog)
+            relative = sorted(path.relative_to(root).as_posix() for path in written)
+            manifest = json.loads(
+                (root / ".generated-learning-pages.json").read_text(encoding="utf-8")
+            )
+
+            self.assertEqual(["rumen/01-example.html", "rumen/index.html"], relative)
+            self.assertEqual(relative, manifest)
+            self.assertFalse((root / "kaohe" / "index.html").exists())
+
+    def test_current_catalog_builds_only_the_six_onboarding_pages(self):
+        catalog = MODULE.load_catalog(ROOT / "data" / "learning-modules.json")
+        expected = [
+            "rumen/01-gangwei-renshi.html",
+            "rumen/02-zhize-bianjie.html",
+            "rumen/03-jilv-baomi.html",
+            "rumen/04-qinwu-goutong.html",
+            "rumen/05-fuxi-zice.html",
+            "rumen/index.html",
+        ]
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            written = MODULE.build_pages(root, catalog)
+            relative = sorted(path.relative_to(root).as_posix() for path in written)
+            manifest = json.loads(
+                (root / ".generated-learning-pages.json").read_text(encoding="utf-8")
+            )
+
+            self.assertEqual(expected, relative)
+            self.assertEqual(expected, manifest)
+
     def test_build_writes_pages_and_manifest_and_only_removes_manifested_stale_html(self):
         catalog = valid_catalog()
         with tempfile.TemporaryDirectory() as directory:

@@ -433,8 +433,10 @@ def build_pages(root: Path, catalog: dict) -> list[Path]:
     root = Path(root)
     rendered: dict[str, str] = {}
     for module in catalog["modules"]:
-        rendered[f'{module["slug"]}/index.html'] = render_module_index(module)
         articles = module["articles"]
+        if not articles:
+            continue
+        rendered[f'{module["slug"]}/index.html'] = render_module_index(module)
         for index, article in enumerate(articles):
             previous = articles[index - 1] if index else None
             next_ = articles[index + 1] if index + 1 < len(articles) else None
