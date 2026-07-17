@@ -55,6 +55,9 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         }
 
     def test_discovery_matches_current_site_inventory(self):
+        # Every legacy step-card page became a redirect stub in the 2026-07
+        # rebuild, and the rebuilt articles carry no step-title markup, so
+        # discovery still sees all pages but zero extractable points.
         pages = MODULE.discover_pages(ROOT)
         self.assertEqual(len(pages), 111)
         counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0, 'jingqing': 0, 'qinwu': 0}
@@ -73,9 +76,9 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         )
         self.assertEqual(
             point_counts,
-            {'fagui': 33, 'xunlian': 67, 'zhuangbei': 21, 'zoufang': 22, 'jingqing': 0, 'qinwu': 0},
+            {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0, 'jingqing': 0, 'qinwu': 0},
         )
-        self.assertEqual(point_count, 143)
+        self.assertEqual(point_count, 0)
 
     def test_discovery_is_limited_to_named_directories_and_non_index_html(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -219,13 +222,17 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
                 self.assertTrue(any(field in error for error in MODULE.publish_errors(changed)))
 
     def test_new_html_point_missing_from_ledger_is_reported(self):
+        # fagui/dubo-zhifa.html is now a redirect stub without knowledge
+        # points, so the drift probe injects the new point into the current
+        # article that replaced it.
         ledger = self.fixture_ledger()
-        html = (ROOT / 'fagui' / 'dubo-zhifa.html').read_text(encoding='utf-8')
+        html = (ROOT / 'fagui' / 'xingzheng-anji-tiaocha.html').read_text(encoding='utf-8')
         changed = html.replace(
-            '<div class="page-nav">',
+            '<nav class="page-nav"',
             '<div class="step-card step-blue"><div class="step-title">新增知识点</div>'
-            '<div class="step-lead">新增摘要</div></div><div class="page-nav">',
+            '<div class="step-lead">新增摘要</div></div><nav class="page-nav"',
         )
+        self.assertNotEqual(html, changed)
         errors = MODULE.compare_page_points(changed, ledger['pages'][0])
         self.assertTrue(any('新增知识点' in error for error in errors))
 
@@ -425,11 +432,11 @@ class PublicSourceIndexCliTests(unittest.TestCase):
     def test_inventory_command_reports_current_counts(self):
         result = self.run_cli('inventory')
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('111 pages, 143 points', result.stdout)
-        self.assertIn('fagui: 23 pages, 33 points', result.stdout)
-        self.assertIn('xunlian: 24 pages, 67 points', result.stdout)
-        self.assertIn('zhuangbei: 30 pages, 21 points', result.stdout)
-        self.assertIn('zoufang: 16 pages, 22 points', result.stdout)
+        self.assertIn('111 pages, 0 points', result.stdout)
+        self.assertIn('fagui: 23 pages, 0 points', result.stdout)
+        self.assertIn('xunlian: 24 pages, 0 points', result.stdout)
+        self.assertIn('zhuangbei: 30 pages, 0 points', result.stdout)
+        self.assertIn('zoufang: 16 pages, 0 points', result.stdout)
         self.assertIn('jingqing: 5 pages, 0 points', result.stdout)
         self.assertIn('qinwu: 13 pages, 0 points', result.stdout)
 
@@ -441,7 +448,7 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             ledger = MODULE.load_ledger(output)
 
         self.assertIn(
-            'Wrote 111 pages and 143 points; all coverage statuses are pending.',
+            'Wrote 111 pages and 0 points; all coverage statuses are pending.',
             result.stdout,
         )
         self.assertEqual(MODULE.validate_ledger(ROOT, ledger, allow_pending=True), [])
