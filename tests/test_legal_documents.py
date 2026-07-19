@@ -97,16 +97,23 @@ class LegalDocumentsSchemaTests(unittest.TestCase):
                                 f'jingxie-wuqi-tiaoli only has {total_arts} articles, expected 15+')
 
     def test_skelton_documents_have_empty_chapters(self):
-        """Documents without full text should be skeletons (empty chapters or partial)."""
+        """Documents not yet ingested should be marked partial=True."""
+        SKELETON_IDS = {'xingzheng-anji-chengxu-guiding', 'xianchang-zhizhi-guicheng'}
         for doc in self.documents:
-            if doc['id'] == 'jingxie-wuqi-tiaoli':
+            if doc['id'] in SKELETON_IDS:
+                # These docs are expected to be incomplete — must be marked partial
+                self.assertTrue(
+                    doc.get('partial'),
+                    f'{doc["id"]}: incomplete document should be marked partial=True'
+                )
                 continue
-            if doc.get('partial'):
-                # Partial documents are allowed to have chapters with select articles
-                continue
+            # All other documents should have real chapters
+            if doc['id'] == 'qita-xiangguan-guifan':
+                continue  # index page, not a single law
             ch = doc.get('chapters', [])
-            self.assertEqual([], ch,
-                             f'{doc["id"]}: skeleton document should have empty chapters')
+            article_count = sum(len(c.get('articles', [])) for c in ch)
+            self.assertGreater(article_count, 0,
+                               f'{doc["id"]}: should have articles in chapters')
 
 
 class ArticleNumberingTests(unittest.TestCase):

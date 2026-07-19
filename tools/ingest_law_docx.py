@@ -100,7 +100,10 @@ def parse_law_paragraphs(paragraphs: list[str]) -> list[dict]:
                 current_chapter['articles'].append(current_article)
                 current_article = None
             if current_chapter is not None:
-                chapters.append(current_chapter)
+                # 跳过目录中的章标题（没有条文的就是目录条目）
+                if current_chapter['articles']:
+                    chapters.append(current_chapter)
+                # else: TOC entry, discard
 
             title = chapter_match.group(1).strip() if chapter_match.group(1) else ''
             current_chapter = {
