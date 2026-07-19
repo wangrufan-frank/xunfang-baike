@@ -97,9 +97,12 @@ class LegalDocumentsSchemaTests(unittest.TestCase):
                                 f'jingxie-wuqi-tiaoli only has {total_arts} articles, expected 15+')
 
     def test_skelton_documents_have_empty_chapters(self):
-        """Documents without full text should have empty chapters (skeleton)."""
+        """Documents without full text should be skeletons (empty chapters or partial)."""
         for doc in self.documents:
             if doc['id'] == 'jingxie-wuqi-tiaoli':
+                continue
+            if doc.get('partial'):
+                # Partial documents are allowed to have chapters with select articles
                 continue
             ch = doc.get('chapters', [])
             self.assertEqual([], ch,
@@ -118,6 +121,8 @@ class ArticleNumberingTests(unittest.TestCase):
         for doc in self.documents:
             if not doc.get('chapters'):
                 continue
+            if doc.get('partial'):
+                continue
             nums = []
             for ch in doc['chapters']:
                 for art in ch.get('articles', []):
@@ -134,6 +139,8 @@ class ArticleNumberingTests(unittest.TestCase):
     def test_first_article_is_1(self):
         for doc in self.documents:
             if not doc.get('chapters'):
+                continue
+            if doc.get('partial'):
                 continue
             first_art = None
             for ch in doc['chapters']:
@@ -259,10 +266,10 @@ class CardSnippetTests(unittest.TestCase):
                     card_html = MODULE._build_card(doc, art)
                     self.assertIn('class="legal-basis-card"', card_html)
                     self.assertIn('class="legal-title"', card_html)
-                    self.assertIn('class="legal-article"', card_html)
                     self.assertIn('class="legal-text"', card_html)
                     self.assertIn('class="legal-note"', card_html)
-                    self.assertIn('class="legal-source-link"', card_html)
+                    self.assertIn('class="legal-source"', card_html)
+                    self.assertIn('class="legal-deep-link"', card_html)
 
 
 class SearchIndexEntriesTests(unittest.TestCase):

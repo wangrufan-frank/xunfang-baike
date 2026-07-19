@@ -380,41 +380,43 @@ def _build_page(doc, doc_order):
 def _build_card(doc, art):
     """Generate a .legal-basis-card HTML snippet for one article."""
     title = doc['title']
+    doc_id = doc['id']
     doc_num = _safe_str(doc.get('document_number'))
     source_url = _safe_str(doc.get('source_url'))
-    effective = _format_date(doc.get('effective_at'))
-
-    subtitle = ''
-    if doc_num or effective:
-        subtitle_parts = []
-        if doc_num:
-            subtitle_parts.append(escape(doc_num))
-        if effective:
-            subtitle_parts.append(f'{effective}施行')
-        subtitle = ' · '.join(subtitle_parts)
+    source_title = _safe_str(doc.get('source_title'))
+    verified = _format_date(doc.get('verified_at'))
 
     art_label = _safe_str(art.get('label'))
+    art_num = art.get('number')
     paragraphs = art.get('paragraphs', [])
     text = '\n'.join(
         f'      <p>{escape(p)}</p>' for p in paragraphs
     )
 
-    source_link = ''
+    source_line = ''
+    source_parts = []
     if source_url:
-        source_link = (
-            f'\n      <a class="legal-source-link" '
-            f'href="{escape(source_url, quote=True)}" target="_blank" '
-            f'rel="noopener noreferrer">原文链接</a>'
+        source_parts.append(
+            f'来源：<a href="{escape(source_url, quote=True)}" '
+            f'target="_blank" rel="noopener noreferrer">{escape(source_title or "官方原文")}</a>'
         )
+    if verified:
+        source_parts.append(f'核验日期：{escape(verified)}')
+    if source_parts:
+        source_line = f'    <p class="legal-source">{escape(" | ").join(source_parts)}</p>\n'
+
+    deep_link = f'    <p class="legal-deep-link"><a href="{escape(doc_id)}.html#article-{art_num}">查看{escape(title)}全文</a></p>\n'
 
     return (
         f'<div class="legal-basis-card">\n'
-        f'  <div class="legal-title">{escape(title)}</div>\n'
-        f'  <div class="legal-article">{subtitle}</div>\n'
-        f'  <div class="legal-text">\n{text}\n  </div>\n'
-        f'  <div class="legal-note">\n'
-        f'    引用自{escape(title)}{escape(art_label)}\n'
-        f'  </div>{source_link}\n'
+        f'  <h3>法律依据</h3>\n'
+        f'  <p class="legal-title">《{escape(title)}》{escape(art_label)}</p>\n'
+        f'  <blockquote class="legal-text">\n'
+        f'{text}\n'
+        f'  </blockquote>\n'
+        f'  <p class="legal-note"><!-- applicability-note --></p>\n'
+        f'{source_line}'
+        f'{deep_link}'
         f'</div>'
     )
 
@@ -475,8 +477,8 @@ def _validate_document(doc, index):
     if dups:
         errors.append(f'{prefix}: duplicate article numbers: {dups}')
 
-    # Check sequential
-    if article_numbers:
+    # Check sequential (skip for partial documents)
+    if article_numbers and not doc.get('partial'):
         expected = list(range(article_numbers[0], article_numbers[-1] + 1))
         if article_numbers != expected:
             errors.append(
