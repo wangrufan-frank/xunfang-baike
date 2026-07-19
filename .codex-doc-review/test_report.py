@@ -4,6 +4,7 @@ import unittest
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
+from docx.oxml.ns import qn
 from docx.shared import Mm, Pt
 
 
@@ -48,12 +49,17 @@ class ReportTests(unittest.TestCase):
     def paragraph_for(self, text):
         return next(paragraph for paragraph in self.doc.paragraphs if paragraph.text == text)
 
+    def text_runs(self, paragraph):
+        runs = [run for run in paragraph.runs if run.text.strip()]
+        self.assertTrue(runs, f"paragraph has no text runs: {paragraph.text!r}")
+        return runs
+
     def assert_font(self, paragraph, names, size, bold=None):
-        run = next(run for run in paragraph.runs if run.text.strip())
-        self.assertIn(run.font.name, names)
-        self.assertAlmostEqual(run.font.size.pt, size, places=1)
-        if bold is not None:
-            self.assertEqual(run.bold, bold)
+        for run in self.text_runs(paragraph):
+            self.assertIn(run.font.name, names)
+            self.assertAlmostEqual(run.font.size.pt, size, places=1)
+            if bold is not None:
+                self.assertEqual(run.bold, bold)
 
     def test_required_content(self):
         self.assertEqual(
@@ -126,35 +132,49 @@ class ReportTests(unittest.TestCase):
     def test_title_and_heading_formatting(self):
         title = self.doc.paragraphs[0]
         self.assertEqual(title.alignment, WD_ALIGN_PARAGRAPH.CENTER)
-        self.assert_font(title, ["方正小标宋简体", "小标宋", "宋体"], 22)
+        for run in self.text_runs(title):
+            self.assertEqual(run.font.name, "方正小标宋简体")
+            self.assertAlmostEqual(run.font.size.pt, 22, places=1)
+            self.assertIsNotNone(run._element.rPr)
+            self.assertEqual(
+                run._element.rPr.rFonts.get(qn("w:eastAsia")),
+                "方正小标宋简体",
+            )
         self.assert_font(
             self.paragraph_for(HEADINGS[0]), ["黑体"], 16, bold=False
         )
-        h2 = next(
+        h2s = [
             paragraph
             for paragraph in self.doc.paragraphs
-            if paragraph.text.startswith("（一）")
-        )
-        self.assert_font(h2, ["楷体_GB2312"], 16, bold=True)
+            if re.match(r"^（[一二三四五六七八九十]+）", paragraph.text)
+        ]
+        self.assertTrue(h2s, "report must contain at least one level-2 heading")
+        for h2 in h2s:
+            self.assert_font(h2, ["楷体_GB2312"], 16, bold=True)
 
     def test_body_paragraph_formatting(self):
         style = self.doc.styles["Normal"]
         self.assertAlmostEqual(style.font.size.pt, Pt(16).pt, places=1)
         self.assertEqual(style.font.name, "仿宋_GB2312")
         self.assertAlmostEqual(style.paragraph_format.line_spacing.pt, Pt(28).pt, places=1)
-        body = next(
+        bodies = [
             paragraph
             for paragraph in self.doc.paragraphs
             if paragraph.text
             and paragraph.style.name == "Normal"
+            and paragraph != self.doc.paragraphs[0]
+            and paragraph.text not in HEADINGS
+            and not re.match(r"^（[一二三四五六七八九十]+）", paragraph.text)
             and not paragraph.text.startswith("（汇报人：")
             and not paragraph.text.startswith("____年")
-        )
-        self.assertEqual(body.alignment, WD_ALIGN_PARAGRAPH.JUSTIFY)
-        self.assert_font(body, ["仿宋_GB2312"], 16)
-        self.assertEqual(body.paragraph_format.line_spacing_rule, WD_LINE_SPACING.EXACTLY)
-        self.assertAlmostEqual(body.paragraph_format.line_spacing.pt, Pt(28).pt, places=1)
-        self.assertAlmostEqual(body.paragraph_format.first_line_indent.pt, Pt(32).pt, places=1)
+        ]
+        self.assertTrue(bodies, "report must contain at least one body paragraph")
+        for body in bodies:
+            self.assertEqual(body.alignment, WD_ALIGN_PARAGRAPH.JUSTIFY)
+            self.assert_font(body, ["仿宋_GB2312"], 16)
+            self.assertEqual(body.paragraph_format.line_spacing_rule, WD_LINE_SPACING.EXACTLY)
+            self.assertAlmostEqual(body.paragraph_format.line_spacing.pt, Pt(28).pt, places=1)
+            self.assertAlmostEqual(body.paragraph_format.first_line_indent.pt, Pt(32).pt, places=1)
 
     def test_footer_page_number_formatting(self):
         for section in self.doc.sections:
