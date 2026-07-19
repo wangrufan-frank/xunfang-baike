@@ -326,9 +326,11 @@ def add_summary_table(document):
     repeat = OxmlElement("w:tblHeader")
     repeat.set(qn("w:val"), "true")
     tr_pr.append(repeat)
+    tr_pr.append(OxmlElement("w:cantSplit"))
 
     for row_data in rows:
         row = table.add_row()
+        row._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
         for index, (cell, text) in enumerate(zip(row.cells, row_data)):
             cell.width = Mm(widths_mm[index])
             _set_cell_width(cell, widths_dxa[index])
@@ -396,7 +398,7 @@ def build_report(output_path: Path) -> None:
         configure_page(section)
     configure_styles(document)
 
-    add_title(document, "关于“巡防百科”网站建设及推广应用情况的报告")
+    add_title(document, "关于“巡防百科”网站建设及\n推广应用情况的报告")
     add_body(
         document,
         "支队领导：为进一步服务基层巡防实战和民警辅警日常学习，五大队立足工作实际，对分散的巡防业务资料进行系统归集、分类整理和网页化呈现，建设“巡防百科”网站，并在大队内部开展试用。现将有关建设及推广应用情况报告如下。",

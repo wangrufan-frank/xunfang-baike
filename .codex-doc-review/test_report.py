@@ -63,7 +63,7 @@ class ReportTests(unittest.TestCase):
 
     def test_required_content(self):
         self.assertEqual(
-            self.doc.paragraphs[0].text,
+            self.doc.paragraphs[0].text.replace("\n", ""),
             "关于“巡防百科”网站建设及推广应用情况的报告",
         )
         for heading in HEADINGS:
@@ -131,6 +131,10 @@ class ReportTests(unittest.TestCase):
 
     def test_title_and_heading_formatting(self):
         title = self.doc.paragraphs[0]
+        self.assertEqual(
+            title.text,
+            "关于“巡防百科”网站建设及\n推广应用情况的报告",
+        )
         self.assertEqual(title.alignment, WD_ALIGN_PARAGRAPH.CENTER)
         for run in self.text_runs(title):
             self.assertEqual(run.font.name, "方正小标宋简体")
@@ -220,6 +224,15 @@ class ReportTests(unittest.TestCase):
         self.assertEqual(header.get(qn("w:val")), "true")
         for row in table.rows:
             tr_pr = row._tr.trPr
+            cant_split = (
+                tr_pr.first_child_found_in("w:cantSplit")
+                if tr_pr is not None
+                else None
+            )
+            self.assertIsNotNone(
+                cant_split,
+                "summary table rows must not split across pages",
+            )
             self.assertTrue(
                 tr_pr is None or tr_pr.first_child_found_in("w:trHeight") is None,
                 "summary table must not use fixed row heights",
