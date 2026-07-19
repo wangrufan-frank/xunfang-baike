@@ -46,9 +46,6 @@ class ReportTests(unittest.TestCase):
                         for cell in row.cells:
                             yield from cell.paragraphs
 
-    def paragraph_for(self, text):
-        return next(paragraph for paragraph in self.doc.paragraphs if paragraph.text == text)
-
     def text_runs(self, paragraph):
         runs = [run for run in paragraph.runs if run.text.strip()]
         self.assertTrue(runs, f"paragraph has no text runs: {paragraph.text!r}")
@@ -140,9 +137,19 @@ class ReportTests(unittest.TestCase):
                 run._element.rPr.rFonts.get(qn("w:eastAsia")),
                 "方正小标宋简体",
             )
-        self.assert_font(
-            self.paragraph_for(HEADINGS[0]), ["黑体"], 16, bold=False
-        )
+        h1s = [
+            paragraph for paragraph in self.doc.paragraphs if paragraph.text in HEADINGS
+        ]
+        self.assertEqual(len(h1s), len(HEADINGS))
+        self.assertEqual({paragraph.text for paragraph in h1s}, set(HEADINGS))
+        for h1 in h1s:
+            for run in self.text_runs(h1):
+                self.assertEqual(run.font.name, "黑体")
+                self.assertAlmostEqual(run.font.size.pt, 16, places=1)
+                self.assertIsNotNone(run._element.rPr)
+                self.assertEqual(
+                    run._element.rPr.rFonts.get(qn("w:eastAsia")), "黑体"
+                )
         h2s = [
             paragraph
             for paragraph in self.doc.paragraphs
