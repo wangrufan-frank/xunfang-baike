@@ -1249,7 +1249,10 @@
           "point_id": "zhuangbei-cuilei-pensheqi-01",
           "position": 1,
           "label": "基本介绍",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-huzhong-horizontal-oc-training-2025"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-huzhong-horizontal-oc-training-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "条例将催泪类器材列为驱逐性、制服性警械，呼中公安公开训练说明其结构、功能和实战用途；未覆盖93%使用率、3—6米射程和对吸毒人员的效果。"
         },
@@ -1257,7 +1260,9 @@
           "point_id": "zhuangbei-cuilei-pensheqi-02",
           "position": 2,
           "label": "性能参数",
-          "source_ids": ["official-huzhong-horizontal-oc-training-2025"],
+          "source_ids": [
+            "official-huzhong-horizontal-oc-training-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文确认对外观结构、功能特点和技术指标进行讲解；未公布页面所列容量、射程、温度、寿命及刺激效果数值。"
         },
@@ -1265,7 +1270,10 @@
           "point_id": "zhuangbei-cuilei-pensheqi-03",
           "position": 3,
           "label": "使用要领（核心口诀：\"喷—移—问\"）",
-          "source_ids": ["official-huzhong-horizontal-oc-training-2025", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-huzhong-horizontal-oc-training-2025",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "正文覆盖拔取、瞄准、喷射角度、喷射区域和规范操作，规程覆盖警告与风险控制；未覆盖“喷—移—问”、1秒点射或环状喷射。"
         },
@@ -1273,7 +1281,9 @@
           "point_id": "zhuangbei-cuilei-pensheqi-04",
           "position": 4,
           "label": "天时地利人和原则",
-          "source_ids": ["official-huzhong-horizontal-oc-training-2025"],
+          "source_ids": [
+            "official-huzhong-horizontal-oc-training-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文强调根据情境判断时机、选择喷射区域并保障自身及无辜人员安全；未覆盖顺逆风、低洼处和3米距离。"
         },
@@ -1281,7 +1291,9 @@
           "point_id": "zhuangbei-cuilei-pensheqi-05",
           "position": 5,
           "label": "善后处理五步流程",
-          "source_ids": ["official-huzhong-horizontal-oc-training-2025"],
+          "source_ids": [
+            "official-huzhong-horizontal-oc-training-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文明确包含使用后自身防护和受影响人员后续处理；未覆盖五步流程、病史询问、冲洗细节或恢复时间。"
         },
@@ -1289,7 +1301,10 @@
           "point_id": "zhuangbei-cuilei-pensheqi-06",
           "position": 6,
           "label": "法定禁止情形",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "条例和规程覆盖警械使用条件、限度、停止条件及对孕妇、儿童等的限制；页面所列五类一概禁限及眼口近喷细则未被公开条文完整覆盖。"
         }
@@ -1307,7 +1322,10 @@
           "point_id": "zhuangbei-fangge-shoutao-01",
           "position": 1,
           "label": "核心性能边界：防割不防刺",
-          "source_ids": ["official-longling-police-equipment-procurement-2016", "official-hand-protection-selection-maintenance-standard-2025"],
+          "source_ids": [
+            "official-longling-police-equipment-procurement-2016",
+            "official-hand-protection-selection-maintenance-standard-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "龙陵县公安局采购正文点名防割手套，说明其由金属丝和高性能聚乙烯纤维包覆纱织成、用于抵御刀具割划；国家标准另要求按危害类型和性能等级选择手部防护装备并了解性能局限。两者支持材料与性能边界概念，但未证明页面所称所有防割手套均绝对不防刺。"
         },
@@ -1315,7 +1333,10 @@
           "point_id": "zhuangbei-fangge-shoutao-02",
           "position": 2,
           "label": "使用场景",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "现场规程第三十九条要求民警在人身检查时谨防接触注射针筒、刀片等物品而感染疾病或者受伤，与页面所述搜身防护场景相似；规程未点名应使用防割手套，也未覆盖页面列举的全部场景。"
         },
@@ -1323,7 +1344,9 @@
           "point_id": "zhuangbei-fangge-shoutao-03",
           "position": 3,
           "label": "使用后维护",
-          "source_ids": ["official-hand-protection-selection-maintenance-standard-2025"],
+          "source_ids": [
+            "official-hand-protection-selection-maintenance-standard-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "国家标准要求手部防护装备使用前后检查，损坏后不得继续使用并按情形更换；可重复使用装备在使用后应清洁、检查，出现明显缺陷应报废，并应按制造商信息清洗保养。该标准适用于生产活动，并非警用防割手套专门规程。"
         }
@@ -1341,7 +1364,10 @@
           "point_id": "zhuangbei-jingxie-jinggao-01",
           "position": 1,
           "label": "标准警告用语",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "条例正文要求使用警械前命令无关人员躲避，规程覆盖口头制止和身份表明；未规定页面引号内的固定口令文本及四要素分析。"
         },
@@ -1349,7 +1375,10 @@
           "point_id": "zhuangbei-jingxie-jinggao-02",
           "position": 2,
           "label": "使用规则",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开法规正文覆盖经警告无效方可使用驱逐性、制服性警械及紧急情形下的例外；未明示“先使用再补充警告”这一表述。"
         },
@@ -1357,7 +1386,9 @@
           "point_id": "zhuangbei-jingxie-jinggao-03",
           "position": 3,
           "label": "警告与法律的关系",
-          "source_ids": ["official-police-equipment-weapons-regulation"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation"
+          ],
           "coverage_status": "verified",
           "coverage_note": "条例第七条明确“经警告无效”才可使用相关警械，且行为制止时立即停止，与页面的法律关系主题相似。"
         },
@@ -1365,7 +1396,10 @@
           "point_id": "zhuangbei-jingxie-jinggao-04",
           "position": 4,
           "label": "不同警械的警告变体",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "法规和规程覆盖警棍、催泪类警械共同的警告、无关人员躲避及紧急例外逻辑；未提供页面所列不同警械的固定口令变体。"
         }
@@ -1383,7 +1417,10 @@
           "point_id": "zhuangbei-jiuxiaojian-gailan-01",
           "position": 1,
           "label": "九小件清单",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
           "coverage_status": "verified",
           "coverage_note": "铜仁监狱正文确认单警装备包含伸缩警棍、催泪喷射器和手铐，条例亦列举多类警械；未覆盖页面九件完整清单或“九小件”命名。"
         },
@@ -1391,7 +1428,10 @@
           "point_id": "zhuangbei-jiuxiaojian-gailan-02",
           "position": 2,
           "label": "佩戴三大原则",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开资料关于现场强制手段要求优先采用较轻措施、以制止违法犯罪行为为限，与页面所述最小武力和按需升级概念相似；未覆盖贴身防脱、拿取排序等腰带佩戴原则，也未建立页面固定的武力升级顺序。"
         },
@@ -1399,7 +1439,9 @@
           "point_id": "zhuangbei-jiuxiaojian-gailan-03",
           "position": 3,
           "label": "佩戴顺序（以右强手、佩自动手枪为例）",
-          "source_ids": ["official-yumen-court-police-equipment-training-2025"],
+          "source_ids": [
+            "official-yumen-court-police-equipment-training-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "玉门法院公开训练正文将警械知识拆为“佩戴规范—快速取放—场景应用”，明确训练中绘制佩戴位置示意图并调整手铐佩戴角度以便精准拔取；未公布页面右强手、佩自动手枪条件下的完整腰带顺序。"
         },
@@ -1407,7 +1449,10 @@
           "point_id": "zhuangbei-jiuxiaojian-gailan-04",
           "position": 4,
           "label": "装备三大分类",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开资料区分驱逐性、制服性和约束性警械，并将多种器材纳入单警装备训练；未采用页面“作战/防护/控制通讯”三分法或其完整器材归类。"
         }
@@ -1425,7 +1470,10 @@
           "point_id": "zhuangbei-shensuo-jinggun-01",
           "position": 1,
           "label": "基本介绍",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开资料确认伸缩警棍是警械及单警装备训练项目，涉及使用方法和动作要领；未覆盖52/22厘米尺寸、结构或解锁回收操作。"
         },
@@ -1433,7 +1481,9 @@
           "point_id": "zhuangbei-shensuo-jinggun-02",
           "position": 2,
           "label": "法律支撑",
-          "source_ids": ["official-police-equipment-weapons-regulation"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation"
+          ],
           "coverage_status": "verified",
           "coverage_note": "条例第七条正文列明八类经警告无效可使用警棍等警械的情形，并要求以制止为限、行为制止即停止。"
         },
@@ -1441,7 +1491,10 @@
           "point_id": "zhuangbei-shensuo-jinggun-03",
           "position": 3,
           "label": "击打部位",
-          "source_ids": ["official-police-field-control-rules", "official-tongren-single-police-equipment-training-2024"],
+          "source_ids": [
+            "official-police-field-control-rules",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
           "coverage_status": "verified",
           "coverage_note": "现场制止规程对警械使用的伤害限度和安全要求与击打部位主题相似，训练文涉及警棍动作要领；未公布页面所列大肌群、神经点及全部禁打部位。"
         },
@@ -1449,7 +1502,9 @@
           "point_id": "zhuangbei-shensuo-jinggun-04",
           "position": 4,
           "label": "戒备姿势",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文确认伸缩警棍使用方法和动作要领的讲解示范；未覆盖隐藏、提棍、肩上三种戒备姿势及其细节。"
         },
@@ -1457,7 +1512,9 @@
           "point_id": "zhuangbei-shensuo-jinggun-05",
           "position": 5,
           "label": "开棍技术",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文确认对伸缩警棍的方法、动作要领和实操进行示范；未覆盖上开棍、下开棍、紧急开棍及后退动作。"
         },
@@ -1465,7 +1522,10 @@
           "point_id": "zhuangbei-shensuo-jinggun-06",
           "position": 6,
           "label": "劈击技术",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开资料覆盖警棍动作要领训练和使用中尽量减少伤害的原则；未覆盖蹬地、扭腰、送胯、挥肘发力链或上下劈击细节。"
         },
@@ -1473,7 +1533,9 @@
           "point_id": "zhuangbei-shensuo-jinggun-07",
           "position": 7,
           "label": "握棍方式",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文实质覆盖伸缩警棍动作要领和注意事项；未公布三指主握、棍柄留两指距离或手腕紧固细节。"
         },
@@ -1481,7 +1543,11 @@
           "point_id": "zhuangbei-shensuo-jinggun-08",
           "position": 8,
           "label": "安全注意事项",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules", "official-tongren-single-police-equipment-training-2024"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-police-field-control-rules",
+            "official-tongren-single-police-equipment-training-2024"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开法规覆盖使用前警告、以制止为限及停止条件，训练文覆盖注意事项；未覆盖观察儿童、棍头朝向、回收装置检查等操作细则。"
         }
@@ -1499,7 +1565,10 @@
           "point_id": "zhuangbei-shoukao-01",
           "position": 1,
           "label": "定位：武力链条中的约束环节",
-          "source_ids": ["official-police-equipment-weapons-regulation", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-police-equipment-weapons-regulation",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "条例将手铐定义为约束性警械，并列明可在可能脱逃、行凶、自伤等危险下使用的法定任务；未支持页面固定四环“武力链条”顺序。"
         },
@@ -1507,7 +1576,9 @@
           "point_id": "zhuangbei-shoukao-02",
           "position": 2,
           "label": "六种上铐方法",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024"
+          ],
           "coverage_status": "verified",
           "coverage_note": "训练正文确认对手铐使用方法、动作要领、使用时机和实操进行讲解示范；未列出开口、压腕、挑腕、背手、举手、倒地六种方法或其安全排序。"
         },
@@ -1515,7 +1586,10 @@
           "point_id": "zhuangbei-shoukao-03",
           "position": 3,
           "label": "使用注意事项",
-          "source_ids": ["official-tongren-single-police-equipment-training-2024", "official-police-equipment-weapons-regulation"],
+          "source_ids": [
+            "official-tongren-single-police-equipment-training-2024",
+            "official-police-equipment-weapons-regulation"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开训练覆盖手铐使用时机、方法和注意事项，条例覆盖法定条件；未覆盖一指松紧、先铐后搜、押解中手腕观察等具体要求。"
         }
@@ -1533,7 +1607,9 @@
           "point_id": "zhuangbei-zhifa-jiuyi-01",
           "position": 1,
           "label": "日常检查维护",
-          "source_ids": ["official-jincheng-body-camera-management-2020"],
+          "source_ids": [
+            "official-jincheng-body-camera-management-2020"
+          ],
           "coverage_status": "verified",
           "coverage_note": "晋城交警公开正文要求排查设备、收回不能使用的记录仪、测试功能指标并反馈问题；未明示电量、系统时间和存储空间三项检查。"
         },
@@ -1541,7 +1617,10 @@
           "point_id": "zhuangbei-zhifa-jiuyi-02",
           "position": 2,
           "label": "使用规范",
-          "source_ids": ["official-jincheng-body-camera-management-2020", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-jincheng-body-camera-management-2020",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "晋城交警正文要求上岗佩戴，禁止配而不戴、戴而不录、选择性摄录及不完整摄录；未覆盖国家秘密场景关闭、视频保存或删除外泄细则。"
         },
@@ -1549,7 +1628,10 @@
           "point_id": "zhuangbei-zhifa-jiuyi-03",
           "position": 3,
           "label": "核心价值",
-          "source_ids": ["official-jincheng-body-camera-management-2020", "official-police-field-control-rules"],
+          "source_ids": [
+            "official-jincheng-body-camera-management-2020",
+            "official-police-field-control-rules"
+          ],
           "coverage_status": "verified",
           "coverage_note": "公开正文说明执法记录仪用于规范执法、全面推进透明公开执法，现场规程亦要求证据固定；未覆盖“证据+武力”概念、投诉防护或复盘培训用途。"
         }
@@ -1651,7 +1733,10 @@
           "point_id": "zoufang-xiaoyuan-fankong-01",
           "position": 1,
           "label": "涉校类警情特征",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：教育机构反恐标准把校园重点部位、人员密集区域列为防范对象，校园演练设置爆炸物、持刀等突发场景。差异：未核验页面所列全部警情统计、内部分类和比例。"
         },
@@ -1659,7 +1744,10 @@
           "point_id": "zoufang-xiaoyuan-fankong-02",
           "position": 2,
           "label": "作战体系——人员准备四大步骤",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：教育机构标准要求建立应急队伍、落实门卫巡查并与公安机关联络，演练报道展示报警、警戒、撤离和搜索。差异：未覆盖页面内部“四大步骤”命名及其全部战术细节。"
         },
@@ -1667,7 +1755,10 @@
           "point_id": "zoufang-xiaoyuan-fankong-03",
           "position": 3,
           "label": "三级装备体系",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-security-plan-anyang"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-security-plan-anyang"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：两份公开文件均要求校园配备防护盾牌、防暴叉、头盔等安保器材，并强调规范使用与管理。差异：未核验页面所称三级体系的内部分级名称和配备数量。"
         },
@@ -1675,7 +1766,9 @@
           "point_id": "zoufang-xiaoyuan-fankong-04",
           "position": 4,
           "label": "涉校类新修法律要点",
-          "source_ids": ["src-zoufang-public-security-law-2025"],
+          "source_ids": [
+            "src-zoufang-public-security-law-2025"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：现行治安管理处罚法涉及学生欺凌、学校报告和处置责任，也规定未成年人执行拘留的例外情形。差异：仅核验公开法律中相关条文主题，未覆盖页面的全部执法解读。"
         },
@@ -1683,7 +1776,10 @@
           "point_id": "zoufang-xiaoyuan-fankong-05",
           "position": 5,
           "label": "校园特有处置策略",
-          "source_ids": ["src-zoufang-campus-security-plan-anyang", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-campus-security-plan-anyang",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：安全方案要求封闭管理、门卫查验、一键报警和警校联防，演练体现报警、疏散、警戒、搜索、劝阻与制止。差异：未核验页面中所有校园特有战术命名与操作参数。"
         },
@@ -1691,7 +1787,10 @@
           "point_id": "zoufang-xiaoyuan-fankong-06",
           "position": 6,
           "label": "实战技能三层次与校园安保培训",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：教育机构标准要求全员安全教育、专业队伍训练和定期演练，实战演练报道包含器材实操、场景处置和测评。差异：未覆盖页面自定义的三层次名称及培训细分结构。"
         },
@@ -1699,7 +1798,9 @@
           "point_id": "zoufang-xiaoyuan-fankong-07",
           "position": 7,
           "label": "实战要点口诀",
-          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：校园反恐演练展示发现情况、启动报警、警戒撤离、器材阻控、多向包抄、劝阻和制止等实战要点。差异：来源未使用页面内部口诀，也未完整覆盖其逐字步骤。"
         }
@@ -1717,7 +1818,10 @@
           "point_id": "zoufang-xiaoyuan-peixun-01",
           "position": 1,
           "label": "涉校警情形势",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：教育机构标准将校园重点部位、人员密集区域列为防范重点，演练报道设置爆炸物、持刀等校园突发场景。差异：未核验页面所列警情统计、内部形势分类与比例。"
         },
@@ -1725,7 +1829,10 @@
           "point_id": "zoufang-xiaoyuan-peixun-02",
           "position": 2,
           "label": "校园环境的四大特殊性与处置策略",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-security-plan-anyang"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-security-plan-anyang"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：公开标准与安防方案要求封闭管理、门卫查验、重点区域巡查、预警处置和警校联防。差异：未完整覆盖页面归纳的“四大特殊性”命名与全部内部策略。"
         },
@@ -1733,7 +1840,9 @@
           "point_id": "zoufang-xiaoyuan-peixun-03",
           "position": 3,
           "label": "校园快反\"看、找、分、退\"操作",
-          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：校园演练流程包含发现可疑情况、一键报警、警戒撤离、搜索、器材阻控、劝阻和制止。差异：来源未使用页面内部“看、找、分、退”口诀，仅为流程主题相似。"
         },
@@ -1741,7 +1850,10 @@
           "point_id": "zoufang-xiaoyuan-peixun-04",
           "position": 4,
           "label": "校园安保培训三模块",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：教育机构标准要求开展全员安全教育、应急队伍专业培训和定期演练，报道展示理论讲解、器材使用、场景演练和测评。差异：未核验页面内部三模块的名称与全部课时设计。"
         },
@@ -1749,7 +1861,10 @@
           "point_id": "zoufang-xiaoyuan-peixun-05",
           "position": 5,
           "label": "培训课程设计——四模块标准结构",
-          "source_ids": ["src-zoufang-education-antiterror-standard", "src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-education-antiterror-standard",
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：标准要求反恐知识教育、器材实操、专业队伍训练与应急演练，演练报道包含培训、实操、场景处置和测评。差异：未覆盖页面“四模块”标准结构的内部名称、排序和参数。"
         },
@@ -1757,7 +1872,9 @@
           "point_id": "zoufang-xiaoyuan-peixun-06",
           "position": 6,
           "label": "实战模拟训练三层次",
-          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：公开演练由反恐专业队伍组织培训，覆盖器材操作、多场景联合演练、实战处置和测评考核。差异：未核验页面自定义的三层次名称和分层训练参数。"
         },
@@ -1765,7 +1882,9 @@
           "point_id": "zoufang-xiaoyuan-peixun-07",
           "position": 7,
           "label": "蓝军建设专班运作",
-          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：演练报道显示市反恐支队与学校组建联合训练和测评体系，并围绕典型场景开展专业指导。差异：来源未使用“蓝军建设专班”内部名称，也未披露其编组运作细节。"
         },
@@ -1773,11 +1892,1060 @@
           "point_id": "zoufang-xiaoyuan-peixun-08",
           "position": 8,
           "label": "培训成效口诀",
-          "source_ids": ["src-zoufang-campus-drill-bbmu"],
+          "source_ids": [
+            "src-zoufang-campus-drill-bbmu"
+          ],
           "coverage_status": "verified",
           "coverage_note": "相似点：校园演练覆盖报警、撤离、警戒、搜索、器材阻控、多向包抄、劝阻和制止，并通过测评检验成效。差异：来源未使用页面内部培训成效口诀，仅支持其中相关流程主题。"
         }
       ]
+    },
+    {
+      "page_id": "zhuangbei-duijiang-diantai",
+      "path": "zhuangbei/duijiang-diantai.html",
+      "title": "对讲电台",
+      "page_level": true,
+      "source_ids": [
+        "official-tongren-single-police-equipment-training-2024",
+        "official-changzhou-longcheng-pingan-e-patrol-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-zuche-ding",
+      "path": "zhuangbei/zuche-ding.html",
+      "title": "阻车钉",
+      "page_level": true,
+      "source_ids": [
+        "official-zhenyuan-police-vehicle-impact-training-2022",
+        "official-xintian-vehicle-impact-response-drill-2024",
+        "official-fuxin-police-patrol-equipment-standards"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-shuishang-feiyi",
+      "path": "zhuangbei/shuishang-feiyi.html",
+      "title": "水上飞翼",
+      "page_level": true,
+      "source_ids": [
+        "official-jinzhou-police-water-rescue-drill-2026"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-miehuo-tan",
+      "path": "zhuangbei/miehuo-tan.html",
+      "title": "灭火毯",
+      "page_level": true,
+      "source_ids": [
+        "official-fire-protection-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-miehuo-qi",
+      "path": "zhuangbei/miehuo-qi.html",
+      "title": "灭火器",
+      "page_level": true,
+      "source_ids": [
+        "official-fire-protection-law-2025",
+        "official-fuxin-police-patrol-equipment-standards"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-fanguang-zhuitong",
+      "path": "zhuangbei/fanguang-zhuitong.html",
+      "title": "反光锥筒",
+      "page_level": true,
+      "source_ids": [
+        "official-fuxin-police-patrol-equipment-standards",
+        "official-road-traffic-safety-law-2021"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-jiusheng-quan",
+      "path": "zhuangbei/jiusheng-quan.html",
+      "title": "救生圈",
+      "page_level": true,
+      "source_ids": [
+        "official-jinzhou-police-water-rescue-drill-2026"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-jiusheng-yi",
+      "path": "zhuangbei/jiusheng-yi.html",
+      "title": "救生衣",
+      "page_level": true,
+      "source_ids": [
+        "official-anqing-police-water-rescue-training"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-jiusheng-sheng",
+      "path": "zhuangbei/jiusheng-sheng.html",
+      "title": "救生绳",
+      "page_level": true,
+      "source_ids": [
+        "official-anqing-police-water-rescue-training"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-pochai-gongju",
+      "path": "zhuangbei/pochai-gongju.html",
+      "title": "破拆工具",
+      "page_level": true,
+      "source_ids": [
+        "official-fire-protection-law-2025",
+        "official-fuxin-police-patrol-equipment-standards"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-5g-yuntai",
+      "path": "zhuangbei/5g-yuntai.html",
+      "title": "5G云台",
+      "page_level": true,
+      "source_ids": [
+        "official-changzhou-longcheng-pingan-e-patrol-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-fangbao-toukui",
+      "path": "zhuangbei/fangbao-toukui.html",
+      "title": "防暴头盔",
+      "page_level": true,
+      "source_ids": [
+        "official-zhongwei-minimum-combat-unit-training-2022",
+        "official-shenzhen-minimum-emergency-unit-training-2023"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-zhuabu-cha",
+      "path": "zhuangbei/zhuabu-cha.html",
+      "title": "抓捕叉",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-jingjiedai-jinggaopai",
+      "path": "zhuangbei/jingjiedai-jinggaopai.html",
+      "title": "警戒带与警告牌",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules",
+        "official-fuxin-police-patrol-equipment-standards"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-fashi-dunpai",
+      "path": "zhuangbei/fashi-dunpai.html",
+      "title": "法式盾牌",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-bidun",
+      "path": "zhuangbei/bidun.html",
+      "title": "臂盾",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023",
+        "official-zhongwei-minimum-combat-unit-training-2022"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-t-zi-gun",
+      "path": "zhuangbei/t-zi-gun.html",
+      "title": "T字棍",
+      "page_level": true,
+      "source_ids": [
+        "official-police-equipment-weapons-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-qiangguang-shoudian",
+      "path": "zhuangbei/qiangguang-shoudian.html",
+      "title": "强光手电",
+      "page_level": true,
+      "source_ids": [
+        "official-tongren-single-police-equipment-training-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-sanshi-weidang",
+      "path": "zhuangbei/sanshi-weidang.html",
+      "title": "伞式围挡",
+      "page_level": true,
+      "source_ids": [
+        "official-jinan-police-cordon-procurement-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-zhedieshi-weidang",
+      "path": "zhuangbei/zhedieshi-weidang.html",
+      "title": "折叠式围挡",
+      "page_level": true,
+      "source_ids": [
+        "official-jinan-police-cordon-procurement-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-changgun",
+      "path": "zhuangbei/changgun.html",
+      "title": "长棍",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-fangci-fu",
+      "path": "zhuangbei/fangci-fu.html",
+      "title": "防刺服",
+      "page_level": true,
+      "source_ids": [
+        "official-zhongwei-minimum-combat-unit-training-2022"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zhuangbei-yueshu-dai",
+      "path": "zhuangbei/yueshu-dai.html",
+      "title": "约束带",
+      "page_level": true,
+      "source_ids": [
+        "official-police-equipment-weapons-regulation",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-zuqiu-saishi-anbao",
+      "path": "qinwu/zuqiu-saishi-anbao.html",
+      "title": "足球赛事安保",
+      "page_level": true,
+      "source_ids": [
+        "official-large-event-security-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-daxing-shiwai-yanchanghui",
+      "path": "qinwu/daxing-shiwai-yanchanghui.html",
+      "title": "大型室外演唱会安保",
+      "page_level": true,
+      "source_ids": [
+        "official-large-event-security-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-xiaoxing-shinei-yanchu",
+      "path": "qinwu/xiaoxing-shinei-yanchu.html",
+      "title": "小型室内演出安保",
+      "page_level": true,
+      "source_ids": [
+        "official-large-event-security-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-gonggong-zhixu-chuzhi-yuanze",
+      "path": "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
+      "title": "处置基本原则",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-gonggong-zhixu-falv-quanli",
+      "path": "qinwu/gonggong-zhixu-falv-quanli.html",
+      "title": "法律适用与权利保障",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-law-2025",
+        "official-peoples-police-law-2012"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-gonggong-zhixu-goutong-jilu",
+      "path": "qinwu/gonggong-zhixu-goutong-jilu.html",
+      "title": "现场沟通、记录与舆情风险",
+      "page_level": true,
+      "source_ids": [
+        "official-jincheng-body-camera-management-2020"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-xiaoqu-zhidian-zoufang",
+      "path": "qinwu/xiaoqu-zhidian-zoufang.html",
+      "title": "小区支点走访",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-xuexiao-zhidian-zoufang",
+      "path": "qinwu/xuexiao-zhidian-zoufang.html",
+      "title": "学校支点走访",
+      "page_level": true,
+      "source_ids": [
+        "src-zoufang-education-antiterror-standard",
+        "src-zoufang-campus-security-plan-anyang",
+        "src-zoufang-campus-drill-bbmu"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-yinhang-zhidian-zoufang",
+      "path": "qinwu/yinhang-zhidian-zoufang.html",
+      "title": "银行支点走访",
+      "page_level": true,
+      "source_ids": [
+        "src-zoufang-finance-antiterror-standard"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-shangchang-zhidian-zoufang",
+      "path": "qinwu/shangchang-zhidian-zoufang.html",
+      "title": "商场支点走访",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-zhuanxiang-huodong-gailan",
+      "path": "qinwu/zhuanxiang-huodong-gailan.html",
+      "title": "专项活动保障概述",
+      "page_level": true,
+      "source_ids": [
+        "official-large-event-security-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-zhuanxiang-xianchang-zhixu",
+      "path": "qinwu/zhuanxiang-xianchang-zhixu.html",
+      "title": "现场秩序与安全服务",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "qinwu-zhuanxiang-xietong-baogao",
+      "path": "qinwu/zhuanxiang-xietong-baogao.html",
+      "title": "部门协同与突发情况报告",
+      "page_level": true,
+      "source_ids": [
+        "official-yantai-school-anti-terror-plan-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-geren-fanghu-anquan",
+      "path": "xunlian/geren-fanghu-anquan.html",
+      "title": "个人防护与训练安全",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-shensuo-jinggun-xunlian",
+      "path": "xunlian/shensuo-jinggun-xunlian.html",
+      "title": "伸缩警棍基础训练",
+      "page_level": true,
+      "source_ids": [
+        "official-tongren-single-police-equipment-training-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-cuilei-pensheqi-xunlian",
+      "path": "xunlian/cuilei-pensheqi-xunlian.html",
+      "title": "催泪喷射器基础训练",
+      "page_level": true,
+      "source_ids": [
+        "official-huzhong-horizontal-oc-training-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-shoukao-xunlian",
+      "path": "xunlian/shoukao-xunlian.html",
+      "title": "手铐基础训练",
+      "page_level": true,
+      "source_ids": [
+        "official-tongren-single-police-equipment-training-2024",
+        "official-yumen-court-police-equipment-training-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-jiluyi-diantai-xunlian",
+      "path": "xunlian/jiluyi-diantai-xunlian.html",
+      "title": "执法记录仪与电台训练",
+      "page_level": true,
+      "source_ids": [
+        "official-jincheng-body-camera-management-2020"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-qiangguang-shoudian-xunlian",
+      "path": "xunlian/qiangguang-shoudian-xunlian.html",
+      "title": "强光手电基础训练",
+      "page_level": true,
+      "source_ids": [
+        "official-tongren-single-police-equipment-training-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-jietuo-kongzhi-jichu",
+      "path": "xunlian/jietuo-kongzhi-jichu.html",
+      "title": "徒手解脱与控制基础",
+      "page_level": true,
+      "source_ids": [
+        "official-yangai-prison-police-skills-training-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-xiaozu-biancheng-fengong",
+      "path": "xunlian/xiaozu-biancheng-fengong.html",
+      "title": "小组编成与职责分工",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023",
+        "official-zhongwei-minimum-combat-unit-training-2022"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-xietong-zhanwei-duixing",
+      "path": "xunlian/xietong-zhanwei-duixing.html",
+      "title": "协同站位与基础队形",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023",
+        "official-zhongwei-minimum-combat-unit-training-2022"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-dunpai-zhuabucha-xietong",
+      "path": "xunlian/dunpai-zhuabucha-xietong.html",
+      "title": "盾牌与抓捕叉协同",
+      "page_level": true,
+      "source_ids": [
+        "official-shenzhen-minimum-emergency-unit-training-2023",
+        "official-taha-knife-axe-response-drill-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-yidong-yanhu-daili",
+      "path": "xunlian/yidong-yanhu-daili.html",
+      "title": "移动、掩护与人员带离",
+      "page_level": true,
+      "source_ids": [
+        "official-yangai-prison-police-skills-training-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-xianchang-goutong-yingxiang",
+      "path": "xunlian/xianchang-goutong-yingxiang.html",
+      "title": "现场沟通与影像记录",
+      "page_level": true,
+      "source_ids": [
+        "official-jincheng-body-camera-management-2020"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "xunlian-xunlian-fupan-kaoping",
+      "path": "xunlian/xunlian-fupan-kaoping.html",
+      "title": "训练组织、复盘与考评",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "jingqing-zuijiu-lei",
+      "path": "jingqing/zuijiu-lei.html",
+      "title": "醉酒类警情处置基础",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-law-2025",
+        "official-police-field-control-rules"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "jingqing-chidao-lei",
+      "path": "jingqing/chidao-lei.html",
+      "title": "持刀类警情处置基础",
+      "page_level": true,
+      "source_ids": [
+        "official-taha-knife-axe-response-drill-2025",
+        "official-police-equipment-weapons-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "jingqing-zishang-lei",
+      "path": "jingqing/zishang-lei.html",
+      "title": "自伤类警情处置基础",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules",
+        "official-mental-health-law-2012"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "jingqing-jingshen-zhangai-lei",
+      "path": "jingqing/jingshen-zhangai-lei.html",
+      "title": "精神障碍类警情处置基础",
+      "page_level": true,
+      "source_ids": [
+        "official-mental-health-law-2012",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "jingqing-shebao-lei",
+      "path": "jingqing/shebao-lei.html",
+      "title": "涉爆类警情处置基础",
+      "page_level": true,
+      "source_ids": [
+        "official-civil-explosives-safety-regulation",
+        "official-yantai-school-anti-terror-plan-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-shenfen-mudi-shuoming",
+      "path": "fagui/shenfen-mudi-shuoming.html",
+      "title": "表明身份与说明目的",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules",
+        "official-peoples-police-law-2012"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-pancha-guifan-goutong",
+      "path": "fagui/pancha-guifan-goutong.html",
+      "title": "盘查中的规范沟通",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-admin-case-procedure-2018"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-zhiyi-yifa-huiying",
+      "path": "fagui/zhiyi-yifa-huiying.html",
+      "title": "面对质疑时的依法回应",
+      "page_level": true,
+      "source_ids": [
+        "official-peoples-police-law-2012",
+        "official-police-field-control-rules"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-weiguan-paishe-zhixu",
+      "path": "fagui/weiguan-paishe-zhixu.html",
+      "title": "围观拍摄与现场秩序引导",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-quanli-yiwu-gaozhi",
+      "path": "fagui/quanli-yiwu-gaozhi.html",
+      "title": "权利义务和法律后果告知",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-admin-case-procedure-2018",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-panwen-shenfenzheng",
+      "path": "fagui/panwen-shenfenzheng.html",
+      "title": "盘问检查与身份证查验",
+      "page_level": true,
+      "source_ids": [
+        "official-peoples-police-law-2012",
+        "official-resident-identity-card-law-2011"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-chuanhuan-qiangzhi-chuanhuan",
+      "path": "fagui/chuanhuan-qiangzhi-chuanhuan.html",
+      "title": "传唤和强制传唤",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-admin-case-procedure-2018",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-jingxie-shiyong-chengxu",
+      "path": "fagui/jingxie-shiyong-chengxu.html",
+      "title": "警械使用的条件与程序",
+      "page_level": true,
+      "source_ids": [
+        "official-police-equipment-weapons-regulation",
+        "official-police-field-control-rules"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-xingzheng-anji-tiaocha",
+      "path": "fagui/xingzheng-anji-tiaocha.html",
+      "title": "行政案件调查取证",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-admin-case-procedure-2018",
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-zhifa-jilu-quanli",
+      "path": "fagui/zhifa-jilu-quanli.html",
+      "title": "执法记录与权利保障",
+      "page_level": true,
+      "source_ids": [
+        "official-jincheng-body-camera-management-2020",
+        "official-public-safety-video-system-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-zhian-guanli-chufa-fa",
+      "path": "fagui/zhian-guanli-chufa-fa.html",
+      "title": "治安管理处罚法",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-law-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-renmin-jingcha-fa",
+      "path": "fagui/renmin-jingcha-fa.html",
+      "title": "人民警察法",
+      "page_level": true,
+      "source_ids": [
+        "official-peoples-police-law-2012"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-jumin-shenfenzheng-fa",
+      "path": "fagui/jumin-shenfenzheng-fa.html",
+      "title": "居民身份证法",
+      "page_level": true,
+      "source_ids": [
+        "official-resident-identity-card-law-2011"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-xingzheng-anji-chengxu-guiding",
+      "path": "fagui/xingzheng-anji-chengxu-guiding.html",
+      "title": "公安机关办理行政案件程序规定",
+      "page_level": true,
+      "source_ids": [
+        "official-public-security-admin-case-procedure-2018"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-jingxie-wuqi-tiaoli",
+      "path": "fagui/jingxie-wuqi-tiaoli.html",
+      "title": "人民警察使用警械和武器条例",
+      "page_level": true,
+      "source_ids": [
+        "official-police-equipment-weapons-regulation"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-xianchang-zhizhi-guicheng",
+      "path": "fagui/xianchang-zhizhi-guicheng.html",
+      "title": "现场制止违法犯罪行为操作规程",
+      "page_level": true,
+      "source_ids": [
+        "official-police-field-control-rules"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "fagui-qita-xiangguan-guifan",
+      "path": "fagui/qita-xiangguan-guifan.html",
+      "title": "其他日常巡逻与安保规范",
+      "page_level": true,
+      "source_ids": [
+        "official-police-firearm-rules",
+        "official-fuxin-police-patrol-equipment-standards"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-neiwu-tiaoling",
+      "path": "zoufang/neiwu-tiaoling.html",
+      "title": "人民警察内务规范",
+      "page_level": true,
+      "source_ids": [
+        "official-police-internal-affairs-order-2022"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-jilv-yaoqiu",
+      "path": "zoufang/jilv-yaoqiu.html",
+      "title": "纪律要求",
+      "page_level": true,
+      "source_ids": [
+        "official-police-internal-affairs-order-2022",
+        "official-peoples-police-law-2012",
+        "official-police-discipline-regulation-2010"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-baomi-xinxi-anquan",
+      "path": "zoufang/baomi-xinxi-anquan.html",
+      "title": "保密与信息安全",
+      "page_level": true,
+      "source_ids": [
+        "official-public-safety-video-system-regulation-2025",
+        "official-jincheng-body-camera-management-2020",
+        "official-state-secrets-law-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-shejiu-yanqing-guanli",
+      "path": "zoufang/shejiu-yanqing-guanli.html",
+      "title": "涉酒及违规宴请管理要求",
+      "page_level": true,
+      "source_ids": [
+        "official-mps-prohibition-drinking-banquet",
+        "official-police-discipline-regulation-2010"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-zhifa-jilu-ziliao-guanli",
+      "path": "zoufang/zhifa-jilu-ziliao-guanli.html",
+      "title": "执法记录和工作资料管理",
+      "page_level": true,
+      "source_ids": [
+        "official-jincheng-body-camera-management-2020",
+        "official-public-safety-video-system-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-tineng-kaohe",
+      "path": "zoufang/tineng-kaohe.html",
+      "title": "体能考核要求",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-jichu-jingwu-kaohe",
+      "path": "zoufang/jichu-jingwu-kaohe.html",
+      "title": "基础警务技能考核",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-xiaozu-xietong-kaohe",
+      "path": "zoufang/xiaozu-xietong-kaohe.html",
+      "title": "小组协同技能考核",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-kaohe-anquan-buce",
+      "path": "zoufang/kaohe-anquan-buce.html",
+      "title": "考核安全、记录与补测",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-danwei-youxiu-kecheng",
+      "path": "zoufang/danwei-youxiu-kecheng.html",
+      "title": "单位优秀课程",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-shiju-youxiu-kecheng",
+      "path": "zoufang/shiju-youxiu-kecheng.html",
+      "title": "市局优秀课程",
+      "page_level": true,
+      "source_ids": [
+        "official-changzhou-longcheng-pingan-e-patrol-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-chuangxin-xunlian-fangfa",
+      "path": "zoufang/chuangxin-xunlian-fangfa.html",
+      "title": "创新训练方法",
+      "page_level": true,
+      "source_ids": [
+        "official-police-training-regulation-2025"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
+    },
+    {
+      "page_id": "zoufang-kecheng-ziliao-jiaoliu",
+      "path": "zoufang/kecheng-ziliao-jiaoliu.html",
+      "title": "课程资料使用与交流规范",
+      "page_level": true,
+      "source_ids": [
+        "official-state-secrets-law-2024"
+      ],
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null
     }
   ],
   "sources": [
@@ -2131,6 +3299,214 @@
       "similarity_note": "政府网站公开方案覆盖校园安全主体责任、封闭管理、门卫查验、一键报警、警校联防演练、保安队伍及盾叉等防护装备。",
       "source_level": 2,
       "last_checked_at": "2026-07-15"
+    },
+    {
+      "source_id": "official-jinzhou-police-water-rescue-drill-2026",
+      "title": "锦州市公安局巡特警硬核上演防汛救援“大练兵”",
+      "publisher": "锦州市公安局",
+      "platform": "锦州市人民政府门户网站",
+      "url": "https://www.jz.gov.cn/info/1024/127327.htm",
+      "published_at": "2026-07-03",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开演练正文涉及水域救援装备使用和防汛救援训练场景。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-fuxin-police-patrol-equipment-standards",
+      "title": "交通警察道路执勤执法工作规范",
+      "publisher": "阜新市公安局",
+      "platform": "阜新市公安局",
+      "url": "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668",
+      "published_at": null,
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开材料涉及巡逻执勤装备配备标准和现场处置规范。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-mps-prohibition-drinking-banquet",
+      "title": "公安部关于严禁违规宴请饮酒的规定（公开转载）",
+      "publisher": "公安部",
+      "platform": "石家庄市公安局",
+      "url": "https://gaj.sjz.gov.cn/columns/0a9c92b2-97b8-4284-9bd7-6240c789c0bf/202204/29/1c7b0edf-6eec-4110-a397-d1a4828b68d4.html",
+      "published_at": "2022-04-29",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开转载的公安部内部纪律规定，涉及违规宴请饮酒的禁止性要求。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-fire-protection-law-2025",
+      "title": "中华人民共和国消防法",
+      "publisher": "全国人民代表大会常务委员会",
+      "platform": "贵州省消防救援总队",
+      "url": "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html",
+      "published_at": "2025-03-03",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "国家法律正文规定消防安全责任、消防装备配备和火灾应急处置要求。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-road-traffic-safety-law-2021",
+      "title": "中华人民共和国道路交通安全法（2021年修订）",
+      "publisher": "全国人民代表大会常务委员会",
+      "platform": "北京市公安局公安交通管理局",
+      "url": "https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/205308/index.html",
+      "published_at": "2021-04-29",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "国家法律正文规定道路交通安全管理、执勤执法和事故处理程序。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-police-internal-affairs-order-2022",
+      "title": "公安机关人民警察内务条令（公安部令第161号）",
+      "publisher": "公安部",
+      "platform": "中国政府网国务院公报",
+      "url": "https://www.gov.cn/gongbao/content/2022/content_5671112.htm",
+      "published_at": "2022-01-20",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "部门规章正文规定公安机关人民警察内务管理、纪律要求和行为规范。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-police-discipline-regulation-2010",
+      "title": "公安机关人民警察纪律条令",
+      "publisher": "公安部",
+      "platform": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/201007/t20100728_144862.html",
+      "published_at": "2010-07-28",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "部门规章正文规定公安机关人民警察的纪律要求和违规处理程序。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-police-training-regulation-2025",
+      "title": "公安机关人民警察训练条令（2025年施行）",
+      "publisher": "公安部",
+      "platform": "中华人民共和国司法部",
+      "url": "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html",
+      "published_at": "2025-10-21",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "部门规章正文规定公安机关人民警察训练组织、内容、考核和管理要求。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-mental-health-law-2012",
+      "title": "中华人民共和国精神卫生法",
+      "publisher": "全国人民代表大会常务委员会",
+      "platform": "国家卫生健康委员会",
+      "url": "https://www.nhc.gov.cn/fzs/c100048/201808/5d03e37b37c944b08d701a0b5722160a.shtml",
+      "published_at": "2018-08-01",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "国家法律正文规定精神障碇的诊断、治疗、康复及与治安管理衔接的内容。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-state-secrets-law-2024",
+      "title": "中华人民共和国保守国家秘密法（2024年修订）",
+      "publisher": "全国人民代表大会常务委员会",
+      "platform": "中国人大网",
+      "url": "https://www.npc.gov.cn/npc/c2/c30834/202402/t20240227_434859.html",
+      "published_at": "2024-02-27",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "国家法律正文规定国家秘密范围、保密义务、保密审查和法律责任。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-public-security-law-2025",
+      "title": "中华人民共和国治安管理处罚法（2025年修订）",
+      "publisher": "全国人民代表大会常务委员会",
+      "platform": "中国人大网",
+      "url": "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html",
+      "published_at": "2025-06-27",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "现行法律全文规定治安违法行为、处罚种类、程序和执法监督要求。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-zhenyuan-police-vehicle-impact-training-2022",
+      "title": "镇原县公安局组织开展“防车辆冲撞”最小作战单元专项训练",
+      "publisher": "镇原县公安局",
+      "platform": "庆阳政法网",
+      "url": "https://www.qyswzfw.gov.cn/Show/286341",
+      "published_at": "2022-10-11",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开训练正文涉及防车辆冲撞、最小作战单元装备使用和战术配合。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-civil-explosives-safety-regulation",
+      "title": "民用爆炸物品安全管理条例",
+      "publisher": "国务院",
+      "platform": "国家行政法规库",
+      "url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=165&Query=",
+      "published_at": "2006-09-01",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "行政法规正文规定民用爆炸物品生产、销售、运输、储存和使用的安全管理要求。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-large-event-security-regulation",
+      "title": "大型群众性活动安全管理条例（国务院令第505号）",
+      "publisher": "国务院",
+      "platform": "国家法律法规数据库",
+      "url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B",
+      "published_at": "2007-10-01",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "行政法规正文规定大型群众性活动安全许可、主体责任、安保措施和应急处置要求。",
+      "source_level": 1,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-anqing-police-water-rescue-training",
+      "title": "以练为战！全市公安机关涉水警情专项培训圆满收官",
+      "publisher": "安庆市公安局",
+      "platform": "安庆市公安局",
+      "url": "https://gaj.anqing.gov.cn/jwzx/gayw/2004121927.html",
+      "published_at": "2024-04-01",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "公安机关公开培训材料涉及救生衣、救生绳等水域救援装备的配备要求和实战使用规范。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-jinan-police-cordon-procurement-2025",
+      "title": "济南铁路公安局济南公安处购买警用围挡（伞式及四面折叠）成交结果公告",
+      "publisher": "济南铁路公安局",
+      "platform": "山东省公共资源交易中心",
+      "url": "https://ggzyjyzx.shandong.gov.cn/art/2025/11/26/art_209488_11087607.html",
+      "published_at": "2025-11-26",
+      "verified_at": "2026-07-19",
+      "verification_status": "verified",
+      "similarity_note": "政府采购公告正文涉及伞式和折叠式警用围挡的技术规格和采购标准。",
+      "source_level": 2,
+      "last_checked_at": "2026-07-19"
     }
   ]
 }

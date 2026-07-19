@@ -159,9 +159,112 @@ def _set_point_attributes(opening_tag, point_id):
     )
 
 
-def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
-    """Render managed citations and a static source index into one HTML page."""
+def _render_source_index_block(sources: dict[str, dict], source_ids: list[str],
+                              first_refs: dict[str, str] | None = None) -> str:
+    """Render the public-source-index HTML block for a set of source IDs.
+
+    When *first_refs* is None the block does not include back-links to inline
+    citations (page-level mode).
+    """
+    entries = []
+    source_order = []
+    source_numbers = {}
+    for source_id in source_ids:
+        if source_id not in source_numbers:
+            source_numbers[source_id] = len(source_order) + 1
+            source_order.append(source_id)
+
+    for source_id in source_order:
+        source = sources[source_id]
+        published = (
+            f'<span class="public-source-published">发布日期：{escape(source["published_at"])}</span>'
+            if source.get('published_at') else ''
+        )
+        back_link = (
+            f'<a href="#{escape(first_refs[source_id], quote=True)}">返回引用位置</a>'
+            if first_refs and source_id in first_refs else ''
+        )
+        entries.append(
+            f'<li class="public-source-item" '
+            f'id="public-source-{escape(source_id, quote=True)}">'
+            f'<span class="public-source-number">[{source_numbers[source_id]}]</span> '
+            f'<cite>{escape(source["title"])}</cite>'
+            f'<span class="public-source-publisher">发布主体：{escape(source["publisher"])}</span>'
+            f'<span class="public-source-platform">平台：{escape(source["platform"])}</span>'
+            f'{published}'
+            f'<span class="public-source-verified">核验日期：{escape(source["verified_at"])}</span>'
+            f'<a href="{escape(source["url"], quote=True)}" target="_blank" '
+            f'rel="noopener noreferrer">原文链接</a>'
+            f'<p>相似内容说明：{escape(source["similarity_note"])}</p>'
+            f'{back_link}'
+            '</li>'
+        )
+    return (
+        '<!-- public-source-index:start -->\n'
+        '<section class="public-source-index" aria-labelledby="public-source-index-title">\n'
+        '<h2 id="public-source-index-title">公开资料对照</h2>\n'
+        f'<p class="public-source-note">{SOURCE_NOTICE}</p>\n'
+        '<ol class="public-source-list">\n' + '\n'.join(entries) + '\n</ol>\n'
+        '</section>\n'
+        '<!-- public-source-index:end -->\n'
+    )
+
+
+def _render_page_level(html: str, page: dict, sources: dict[str, dict]) -> str:
+    """Render a source index for a page that has no per-point breakdown."""
     path = page.get('path', '<unknown>')
+    clean = _MANAGED_INDEX.sub('\n', _MANAGED_CITATIONS.sub('', html))
+    source_ids = page.get('source_ids', [])
+    if not source_ids:
+        return html
+
+    # Find insertion point: before .page-nav, or before </article>, or end of </main>
+    navs = _div_elements(clean, 'page-nav')
+    if navs:
+        nav_start = navs[0][0]
+        line_start = clean.rfind('\n', 0, nav_start) + 1
+        insertion_start = (
+            line_start if clean[line_start:nav_start].strip() == '' else nav_start
+        )
+        insertion_end = nav_start
+    else:
+        # Fall back to inserting before </article> or </main>
+        for tag in ('</article>', '</main>'):
+            idx = clean.find(tag)
+            if idx != -1:
+                insertion_start = idx
+                insertion_end = idx
+                break
+        else:
+            return html
+
+    source_index = _render_source_index_block(sources, source_ids)
+    rendered = clean[:insertion_start] + source_index + clean[insertion_end:]
+    return rendered
+
+
+def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
+    """Render managed citations and a static source index into one HTML page.
+
+    Supports two modes:
+
+    * **Point-level** (legacy): the page has ``points[]`` and the HTML contains
+      ``.step-card`` elements.  Citations are injected inline and the index
+      includes back-links.
+
+    * **Page-level**: the page has ``page_level: true`` and ``source_ids[]``
+      (no ``points``).  Only the source-index block is injected without any
+      inline citations.
+    """
+    path = page.get('path', '<unknown>')
+
+    # --- Page-level path ---
+    if page.get('page_level') or (
+        not page.get('points') and page.get('source_ids')
+    ):
+        return _render_page_level(html, page, sources)
+
+    # --- Point-level path (legacy) ---
     clean = _MANAGED_INDEX.sub('\n', _MANAGED_CITATIONS.sub('', html))
     cards = _div_elements(clean, 'step-card')
     points = sorted(page.get('points', []), key=lambda point: point.get('position', 0))
@@ -224,37 +327,7 @@ def render_page(html: str, page: dict, sources: dict[str, dict]) -> str:
         lead_close = card_open_end + leads[0][2]
         edits.append((lead_close, lead_close, marker))
 
-    entries = []
-    for source_id in source_order:
-        source = sources[source_id]
-        published = (
-            f'<span class="public-source-published">发布日期：{escape(source["published_at"])}</span>'
-            if source.get('published_at') else ''
-        )
-        entries.append(
-            f'<li class="public-source-item" '
-            f'id="public-source-{escape(source_id, quote=True)}">'
-            f'<span class="public-source-number">[{source_numbers[source_id]}]</span> '
-            f'<cite>{escape(source["title"])}</cite>'
-            f'<span class="public-source-publisher">发布主体：{escape(source["publisher"])}</span>'
-            f'<span class="public-source-platform">平台：{escape(source["platform"])}</span>'
-            f'{published}'
-            f'<span class="public-source-verified">核验日期：{escape(source["verified_at"])}</span>'
-            f'<a href="{escape(source["url"], quote=True)}" target="_blank" '
-            f'rel="noopener noreferrer">原文链接</a>'
-            f'<p>相似内容说明：{escape(source["similarity_note"])}</p>'
-            f'<a href="#{escape(first_refs[source_id], quote=True)}">返回引用位置</a>'
-            '</li>'
-        )
-    source_index = (
-        '<!-- public-source-index:start -->\n'
-        '<section class="public-source-index" aria-labelledby="public-source-index-title">\n'
-        '<h2 id="public-source-index-title">公开资料对照</h2>\n'
-        f'<p class="public-source-note">{SOURCE_NOTICE}</p>\n'
-        '<ol class="public-source-list">\n' + '\n'.join(entries) + '\n</ol>\n'
-        '</section>\n'
-        '<!-- public-source-index:end -->\n'
-    )
+    source_index = _render_source_index_block(sources, source_order, first_refs)
     nav_start = navs[0][0]
     line_start = clean.rfind('\n', 0, nav_start) + 1
     insertion_start = (
@@ -350,6 +423,26 @@ def validate_schema(ledger: dict, allow_pending: bool = False) -> list[str]:
             errors.append(f'duplicate page path: {path}')
         else:
             page_paths.add(path)
+
+        # Page-level entries use ``source_ids`` at the page level.
+        if page.get('page_level') is True:
+            ids = page.get('source_ids')
+            if not isinstance(ids, list):
+                errors.append(f'{page_prefix}.source_ids must be a list')
+                ids = []
+            valid_ids = []
+            for source_index, source_id in enumerate(ids, 1):
+                if not _is_non_empty_string(source_id):
+                    errors.append(
+                        f'{page_prefix}.source_ids[{source_index}] must be a '
+                        'non-empty string'
+                    )
+                    continue
+                valid_ids.append(source_id)
+                referenced_ids.append(
+                    (f'{page_prefix}.source_ids[{source_index}]', source_id)
+                )
+            continue
 
         points = page.get('points')
         if not isinstance(points, list):
@@ -707,11 +800,11 @@ def main(argv=None):
             page for page in ledger['pages']
             if args.module is None or page['path'].startswith(f'{args.module}/')
         ]
-        point_count = sum(len(page['points']) for page in pages)
+        point_count = sum(len(page.get('points', [])) for page in pages)
         pending_count = sum(
             point.get('coverage_status') == 'pending'
             for page in pages
-            for point in page['points']
+            for point in page.get('points', [])
         )
         module_prefix = f'{args.module} ' if args.module else ''
         print(

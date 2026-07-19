@@ -35,7 +35,7 @@ def assert_article_contract(testcase, record):
     testcase.assertIn(f'data-category="{record["category"]}"', html)
     testcase.assertIn(record["title"], html)
     testcase.assertIn("article-summary", html)
-    testcase.assertIn("source-list", html)
+    testcase.assertIn("public-source-index", html)
     testcase.assertIn("related-links", html)
     testcase.assertIn("page-nav", html)
 
