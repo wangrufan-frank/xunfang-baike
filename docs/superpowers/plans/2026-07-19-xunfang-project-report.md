@@ -30,7 +30,7 @@
 
 **Interfaces:**
 - Consumes: 最终 DOCX 路径。
-- Produces: `python -m unittest .codex-doc-review/test_report.py` 可运行的结构验收测试。
+- Produces: `python .codex-doc-review/test_report.py -v` 可运行的结构验收测试。
 
 - [ ] **Step 1: 编写预期失败的测试**
 
@@ -97,7 +97,7 @@ if __name__ == "__main__":
 Run:
 
 ```powershell
-& 'C:\Users\97014\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m unittest '.codex-doc-review/test_report.py' -v
+& 'C:\Users\97014\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' '.codex-doc-review/test_report.py' -v
 ```
 
 Expected: FAIL，原因是最终 DOCX 尚不存在。
@@ -149,7 +149,7 @@ Expected: 输出 `deliverables/关于巡防百科网站建设及推广应用情�
 Run:
 
 ```powershell
-& 'C:\Users\97014\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' -m unittest '.codex-doc-review/test_report.py' -v
+& 'C:\Users\97014\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' '.codex-doc-review/test_report.py' -v
 ```
 
 Expected: 5 tests，全部 PASS。
