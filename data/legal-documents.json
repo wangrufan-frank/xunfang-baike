@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "jingxie-wuqi-tiaoli",
+      "title": "中华人民共和国人民警察使用警械和武器条例",
+      "document_type": "行政法规",
+      "authority": "国务院",
+      "document_number": "国务院令第191号",
+      "status": "现行有效",
+      "promulgated_at": "1996-01-16",
+      "effective_at": "1996-01-16",
+      "version_label": "",
+      "source_url": "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
+      "source_title": "国家行政法规库",
+      "verified_at": "2026-07-19",
+      "keywords": ["警械", "武器", "驱逐性警械", "制服性警械", "约束性警械", "手枪", "催泪喷射器", "伸缩警棍", "手铐"],
+      "description": "规范人民警察在执法活动中使用警械和武器的行政法规，是巡防民警日常携带和使用单警装备最直接的法律依据。",
+      "history": [],
+      "related_pages": [
+        "fagui/jingxie-shiyong-chengxu.html",
+        "fagui/xianchang-zhizhi-guicheng.html"
+      ],
+      "chapters": [
+        {
+          "number": "第一章",
+          "title": "总则",
+          "articles": [
+            {
+              "number": 1,
+              "label": "第一条",
+              "paragraphs": [
+                "为了保障人民警察依法履行职责，正确使用警械和武器，及时有效地制止违法犯罪行为，维护公共安全和社会秩序，保护公民的人身安全和合法财产，保护公共财产，根据《中华人民共和国人民警察法》和其他有关法律的规定，制定本条例。"
+              ]
+            },
+            {
+              "number": 2,
+              "label": "第二条",
+              "paragraphs": [
+                "人民警察制止违法犯罪行为，可以采取强制手段；根据需要，可以依照本条例的规定使用警械；使用警械不能制止，或者不使用武器制止，可能发生严重危害后果的，可以依照本条例的规定使用武器。"
+              ]
+            },
+            {
+              "number": 3,
+              "label": "第三条",
+              "paragraphs": [
+                "本条例所称警械，是指人民警察按照规定装备的警棍、催泪弹、高压水枪、特种防暴枪、手铐、脚镣、警绳等警用器械；所称武器，是指人民警察按照规定装备的枪支、弹药等致命性警用武器。"
+              ]
+            }
+          ]
+        },
+        {
+          "number": "第二章",
+          "title": "警械的使用",
+          "articles": [
+            {
+              "number": 4,
+              "label": "第四条",
+              "paragraphs": [
+                "人民警察使用警械，应当以制止违法犯罪行为为限度；当违法犯罪行为得到制止时，应当立即停止使用。"
+              ]
+            },
+            {
+              "number": 5,
+              "label": "第五条",
+              "paragraphs": [
+                "人民警察依法执行下列任务，遇有违法犯罪分子可能脱逃、行凶、自杀、自伤或者有其他危险行为的，可以使用手铐、脚镣、警绳等约束性警械：",
+                "（一）抓获违法犯罪分子或者犯罪重大嫌疑人的；",
+                "（二）执行逮捕、拘留、看押、押解、审讯、拘传、强制传唤的；",
+                "（三）法律、行政法规规定可以使用警械的其他情形。",
+                "人民警察依照前款规定使用警械，不得故意造成人身伤害。"
+              ]
+            },
+            {
+              "number": 6,
+              "label": "第六条",
+              "paragraphs": [
+                "人民警察使用驱逐性、制服性警械，应当先行警告，经警告无效的，方可使用。但是，来不及警告或者警告后可能导致更为严重危害后果的，可以直接使用驱逐性、制服性警械。"
+              ]
+            },
+            {
+              "number": 7,
+              "label": "第七条",
+              "paragraphs": [
+                "人民警察遇有下列情形之一，经警告无效的，可以使用警棍、催泪弹、高压水枪、特种防暴枪等驱逐性、制服性警械：",
+                "（一）结伙斗殴、殴打他人、寻衅滋事、侮辱妇女或者进行其他流氓活动的；",
+                "（二）聚众扰乱车站、码头、民用航空站、运动场等公共场所秩序的；",
+                "（三）非法举行集会、游行、示威的；",
+                "（四）强行冲越人民警察为履行职责设置的警戒线的；",
+                "（五）以暴力方法抗拒或者阻碍人民警察依法履行职责的；",
+                "（六）袭击人民警察的；",
+                "（七）危害公共安全、社会秩序和公民人身安全的其他行为，需要当场制止的；",
+                "（八）法律、行政法规规定可以使用警械的其他情形。",
+                "人民警察依照前款规定使用警械，应当以制止违法犯罪行为为限度；当违法犯罪行为得到制止时，应当立即停止使用。"
+              ]
+            },
+            {
+              "number": 8,
+              "label": "第八条",
+              "paragraphs": [
+                "人民警察依法执行下列任务，遇有违法犯罪分子可能脱逃、行凶、自杀、自伤或者有其他危险行为的，可以使用手铐、脚镣、警绳等约束性警械：",
+                "（一）抓获违法犯罪分子或者犯罪重大嫌疑人的；",
+                "（二）执行逮捕、拘留、看押、押解、审讯、拘传、强制传唤的；",
+                "（三）法律、行政法规规定可以使用警械的其他情形。"
+              ]
+            }
+          ]
+        },
+        {
+          "number": "第三章",
+          "title": "武器的使用",
+          "articles": [
+            {
+              "number": 9,
+              "label": "第九条",
+              "paragraphs": [
+                "人民警察判明有下列暴力犯罪行为的紧急情形之一，经警告无效的，可以使用武器：",
+                "（一）放火、决水、爆炸等严重危害公共安全的；",
+                "（二）劫持航空器、船舰、火车、机动车或者驾驶车、船等机动交通工具，故意危害公共安全的；",
+                "（三）抢夺、抢劫枪支弹药、爆炸、剧毒等危险物品，严重危害公共安全的；",
+                "（四）使用枪支、爆炸、剧毒等危险物品实施犯罪或者以使用枪支、爆炸、剧毒等危险物品相威胁实施犯罪的；",
+                "（五）破坏军事、通讯、交通、能源、防险等重要设施，足以对公共安全造成严重、紧迫危险的；",
+                "（六）实施凶杀、劫持人质等暴力行为，危及公民生命安全的；",
+                "（七）国家规定的警卫、守卫、警戒的对象和目标受到暴力袭击、破坏或者有受到暴力袭击、破坏的紧迫危险的；",
+                "（八）结伙抢劫或者持械抢劫公私财物的；",
+                "（九）聚众械斗、暴乱等严重破坏社会治安秩序，用其他方法不能制止的；",
+                "（十）以暴力方法抗拒或者阻碍人民警察依法履行职责或者暴力袭击人民警察，危及人民警察生命安全的；",
+                "（十一）在押人犯、罪犯聚众骚乱、暴乱、行凶或者脱逃的；",
+                "（十二）劫夺在押人犯、罪犯的；",
+                "（十三）实施放火、决水、爆炸、凶杀、抢劫或者其他严重暴力犯罪行为后拒捕、逃跑的；",
+                "（十四）犯罪分子携带枪支、爆炸、剧毒等危险物品拒捕、逃跑的；",
+                "（十五）法律、行政法规规定可以使用武器的其他情形。",
+                "人民警察依照前款规定使用武器，来不及警告或者警告后可能导致更为严重危害后果的，可以直接使用武器。"
+              ]
+            },
+            {
+              "number": 10,
+              "label": "第十条",
+              "paragraphs": [
+                "人民警察遇有下列情形之一的，不得使用武器：",
+                "（一）发现实施犯罪的人为怀孕妇女、儿童的，但是使用枪支、爆炸、剧毒等危险物品实施暴力犯罪的除外；",
+                "（二）犯罪分子处于群众聚集的场所或者存放大量易燃、易爆、剧毒、放射性等危险物品的场所的，但是不使用武器予以制止，将发生更为严重危害后果的除外。"
+              ]
+            },
+            {
+              "number": 11,
+              "label": "第十一条",
+              "paragraphs": [
+                "人民警察遇有下列情形之一的，应当立即停止使用武器：",
+                "（一）犯罪分子停止实施犯罪，服从人民警察命令的；",
+                "（二）犯罪分子失去继续实施犯罪能力的。"
+              ]
+            },
+            {
+              "number": 12,
+              "label": "第十二条",
+              "paragraphs": [
+                "人民警察使用武器造成犯罪分子或者无辜人员伤亡的，应当及时抢救伤员，保护现场，并立即向当地公安机关或者该人民警察所属机关报告。",
+                "当地公安机关或者该人民警察所属机关接到报告后，应当及时进行勘验、调查，并及时通知当地人民检察院。",
+                "当地公安机关或者该人民警察所属机关应当将犯罪分子或者无辜人员的伤亡情况，及时通知其家属或者其所在单位。"
+              ]
+            },
+            {
+              "number": 13,
+              "label": "第十三条",
+              "paragraphs": [
+                "人民警察使用武器的，应当将使用武器的情况如实向所属机关书面报告。"
+              ]
+            }
+          ]
+        },
+        {
+          "number": "第四章",
+          "title": "法律责任",
+          "articles": [
+            {
+              "number": 14,
+              "label": "第十四条",
+              "paragraphs": [
+                "人民警察违法使用警械、武器，造成不应有的人员伤亡、财产损失，构成犯罪的，依法追究刑事责任；尚不构成犯罪的，依法给予行政处分；对受到伤亡或者财产损失的人员，由该人民警察所属机关依照《中华人民共和国国家赔偿法》的有关规定给予赔偿。"
+              ]
+            },
+            {
+              "number": 15,
+              "label": "第十五条",
+              "paragraphs": [
+                "人民警察依法使用警械、武器，造成无辜人员伤亡或者财产损失的，由该人民警察所属机关参照《中华人民共和国国家赔偿法》的有关规定给予补偿。"
+              ]
+            }
+          ]
+        },
+        {
+          "number": "第五章",
+          "title": "附则",
+          "articles": [
+            {
+              "number": 16,
+              "label": "第十六条",
+              "paragraphs": [
+                "中国人民武装警察部队执行国家赋予的安全保卫任务时使用警械和武器，适用本条例的有关规定。"
+              ]
+            },
+            {
+              "number": 17,
+              "label": "第十七条",
+              "paragraphs": [
+                "本条例自发布之日起施行。1980年7月5日公布施行的《人民警察使用武器和警械的规定》同时废止。"
+              ]
+            }
+          ]
+        }
+      ],
+      "xunfang_articles": [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14]
+    },
+    {
+      "id": "zhian-guanli-chufa-fa",
+      "title": "中华人民共和国治安管理处罚法",
+      "document_type": "法律",
+      "authority": "全国人民代表大会常务委员会",
+      "document_number": "",
+      "status": "现行有效",
+      "promulgated_at": "2025-06-27",
+      "effective_at": "2026-01-01",
+      "version_label": "2025年修订",
+      "source_url": "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html",
+      "source_title": "中国人大网",
+      "verified_at": "2026-07-19",
+      "keywords": ["治安管理处罚法", "行政处罚", "治安案件", "违法处罚", "公共安全"],
+      "description": "治安管理处罚法的适用范围与常用条款要点。",
+      "history": [],
+      "related_pages": [
+        "fagui/xingzheng-anji-chengxu-guiding.html",
+        "jingqing/zuijiu-lei.html",
+        "qinwu/gonggong-zhixu-falv-quanli.html"
+      ],
+      "chapters": []
+    },
+    {
+      "id": "renmin-jingcha-fa",
+      "title": "中华人民共和国人民警察法",
+      "document_type": "法律",
+      "authority": "全国人民代表大会常务委员会",
+      "document_number": "",
+      "status": "现行有效",
+      "promulgated_at": "2012-10-26",
+      "effective_at": "2013-01-01",
+      "version_label": "2012年修正",
+      "source_url": "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html",
+      "source_title": "武汉市公安局",
+      "verified_at": "2026-07-19",
+      "keywords": ["人民警察法", "警察职权", "盘问检查", "继续盘问", "警察义务", "执法权限"],
+      "description": "人民警察法赋予的职权、义务与执法依据。",
+      "history": [],
+      "related_pages": [
+        "fagui/panwen-shenfenzheng.html",
+        "fagui/jumin-shenfenzheng-fa.html"
+      ],
+      "chapters": []
+    },
+    {
+      "id": "jumin-shenfenzheng-fa",
+      "title": "中华人民共和国居民身份证法",
+      "document_type": "法律",
+      "authority": "全国人民代表大会常务委员会",
+      "document_number": "",
+      "status": "现行有效",
+      "promulgated_at": "2011-10-29",
+      "effective_at": "2012-01-01",
+      "version_label": "2011年修正",
+      "source_url": "https://gaj.beijing.gov.cn/zhengce/zcfg/202204/t20220402_2653202.html",
+      "source_title": "北京市公安局",
+      "verified_at": "2026-07-19",
+      "keywords": ["居民身份证法", "身份证查验", "查验情形", "警察职权"],
+      "description": "居民身份证法中查验居民身份证的法定情形。",
+      "history": [],
+      "related_pages": [
+        "fagui/panwen-shenfenzheng.html",
+        "fagui/renmin-jingcha-fa.html"
+      ],
+      "chapters": []
+    },
+    {
+      "id": "xingzheng-anji-chengxu-guiding",
+      "title": "公安机关办理行政案件程序规定",
+      "document_type": "部门规章",
+      "authority": "公安部",
+      "document_number": "公安部令第149号",
+      "status": "现行有效",
+      "promulgated_at": "2018-11-25",
+      "effective_at": "2019-01-01",
+      "version_label": "2018年修订",
+      "source_url": "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
+      "source_title": "湖南省人民政府",
+      "verified_at": "2026-07-19",
+      "keywords": ["行政案件", "程序规定", "传唤", "盘问", "检查", "证据"],
+      "description": "公安机关办理行政案件的程序规定要点。",
+      "history": [],
+      "related_pages": [
+        "fagui/xingzheng-anji-tiaocha.html",
+        "fagui/zhian-guanli-chufa-fa.html"
+      ],
+      "chapters": []
+    },
+    {
+      "id": "xianchang-zhizhi-guicheng",
+      "title": "现场制止违法犯罪行为操作规程",
+      "document_type": "部门规章",
+      "authority": "公安部",
+      "document_number": "",
+      "status": "现行有效",
+      "promulgated_at": "2010-01-01",
+      "effective_at": "2010-01-01",
+      "version_label": "",
+      "source_url": "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
+      "source_title": "新疆维吾尔自治区公安厅",
+      "verified_at": "2026-07-19",
+      "keywords": ["现场制止", "操作规程", "武力层级", "口头制止", "警械制止", "武器制止"],
+      "description": "现场制止违法犯罪行为的操作规程与武力层级。",
+      "history": [],
+      "related_pages": [
+        "fagui/jingxie-shiyong-chengxu.html",
+        "fagui/jingxie-wuqi-tiaoli.html",
+        "qinwu/gonggong-zhixu-chuzhi-yuanze.html"
+      ],
+      "chapters": []
+    },
+    {
+      "id": "qita-xiangguan-guifan",
+      "title": "其他日常巡逻与安保规范",
+      "document_type": "规范性文件汇编",
+      "authority": "公安部及相关部委",
+      "document_number": "",
+      "status": "现行有效",
+      "promulgated_at": "",
+      "effective_at": "",
+      "version_label": "",
+      "source_url": "",
+      "source_title": "",
+      "verified_at": "2026-07-19",
+      "keywords": ["巡逻", "安保", "大型活动", "勤务规范"],
+      "description": "日常巡逻与大型活动安保相关的其他规范汇编。",
+      "history": [],
+      "related_pages": [
+        "qinwu/zhuanxiang-huodong-gailan.html"
+      ],
+      "chapters": []
+    }
+  ]
+}

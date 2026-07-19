@@ -129,7 +129,11 @@ class LegalContentTests(unittest.TestCase):
         self.assertEqual(7, len(records))
         for record in records:
             html = (ROOT / record["path"]).read_text(encoding="utf-8")
-            self.assertIn("施行日期", html)
+            # Single-statute pages show 施行日期; index/compilation pages use
+            # 核验日期 in the version-meta-card instead.
+            has_effective_date = "施行日期" in html or "核验日期" in html
+            self.assertTrue(has_effective_date,
+                            f'{record["path"]} missing effective/review date marker')
             self.assertRegex(html, r'https://[^"\s]+')
 
 

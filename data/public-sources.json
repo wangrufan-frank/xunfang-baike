@@ -2703,7 +2703,7 @@
     {
       "page_id": "fagui-zhian-guanli-chufa-fa",
       "path": "fagui/zhian-guanli-chufa-fa.html",
-      "title": "治安管理处罚法",
+      "title": "中华人民共和国治安管理处罚法",
       "page_level": true,
       "source_ids": [
         "official-public-security-law-2025"
@@ -2715,7 +2715,7 @@
     {
       "page_id": "fagui-renmin-jingcha-fa",
       "path": "fagui/renmin-jingcha-fa.html",
-      "title": "人民警察法",
+      "title": "中华人民共和国人民警察法",
       "page_level": true,
       "source_ids": [
         "official-peoples-police-law-2012"
@@ -2727,7 +2727,7 @@
     {
       "page_id": "fagui-jumin-shenfenzheng-fa",
       "path": "fagui/jumin-shenfenzheng-fa.html",
-      "title": "居民身份证法",
+      "title": "中华人民共和国居民身份证法",
       "page_level": true,
       "source_ids": [
         "official-resident-identity-card-law-2011"
@@ -2751,7 +2751,7 @@
     {
       "page_id": "fagui-jingxie-wuqi-tiaoli",
       "path": "fagui/jingxie-wuqi-tiaoli.html",
-      "title": "人民警察使用警械和武器条例",
+      "title": "中华人民共和国人民警察使用警械和武器条例",
       "page_level": true,
       "source_ids": [
         "official-police-equipment-weapons-regulation"

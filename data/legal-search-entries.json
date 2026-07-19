@@ -1,0 +1,126 @@
+[
+  {
+    "title": "中华人民共和国人民警察使用警械和武器条例",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "规范人民警察在执法活动中使用警械和武器的行政法规，是巡防民警日常携带和使用单警装备最直接的法律依据。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "警械",
+      "武器",
+      "驱逐性警械",
+      "制服性警械",
+      "约束性警械",
+      "手枪",
+      "催泪喷射器",
+      "伸缩警棍",
+      "手铐"
+    ],
+    "path": "fagui/jingxie-wuqi-tiaoli.html"
+  },
+  {
+    "title": "中华人民共和国治安管理处罚法",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "治安管理处罚法的适用范围与常用条款要点。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "治安管理处罚法",
+      "行政处罚",
+      "治安案件",
+      "违法处罚",
+      "公共安全"
+    ],
+    "path": "fagui/zhian-guanli-chufa-fa.html"
+  },
+  {
+    "title": "中华人民共和国人民警察法",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "人民警察法赋予的职权、义务与执法依据。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "人民警察法",
+      "警察职权",
+      "盘问检查",
+      "继续盘问",
+      "警察义务",
+      "执法权限"
+    ],
+    "path": "fagui/renmin-jingcha-fa.html"
+  },
+  {
+    "title": "中华人民共和国居民身份证法",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "居民身份证法中查验居民身份证的法定情形。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "居民身份证法",
+      "身份证查验",
+      "查验情形",
+      "警察职权"
+    ],
+    "path": "fagui/jumin-shenfenzheng-fa.html"
+  },
+  {
+    "title": "公安机关办理行政案件程序规定",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "公安机关办理行政案件的程序规定要点。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "行政案件",
+      "程序规定",
+      "传唤",
+      "盘问",
+      "检查",
+      "证据"
+    ],
+    "path": "fagui/xingzheng-anji-chengxu-guiding.html"
+  },
+  {
+    "title": "现场制止违法犯罪行为操作规程",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "现场制止违法犯罪行为的操作规程与武力层级。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "现场制止",
+      "操作规程",
+      "武力层级",
+      "口头制止",
+      "警械制止",
+      "武器制止"
+    ],
+    "path": "fagui/xianchang-zhizhi-guicheng.html"
+  },
+  {
+    "title": "其他日常巡逻与安保规范",
+    "module": "fagui",
+    "category": "法律法规库",
+    "desc": "日常巡逻与大型活动安保相关的其他规范汇编。",
+    "tags": [
+      "法律法规库"
+    ],
+    "keywords": [
+      "巡逻",
+      "安保",
+      "大型活动",
+      "勤务规范"
+    ],
+    "path": "fagui/qita-xiangguan-guifan.html"
+  }
+]
