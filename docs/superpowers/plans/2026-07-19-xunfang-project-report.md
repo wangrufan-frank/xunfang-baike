@@ -171,10 +171,10 @@ Expected: 5 tests，全部 PASS。
 Run:
 
 ```powershell
-& 'C:\Users\97014\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'C:\Users\97014\.codex\plugins\cache\openai-primary-runtime\documents\26.715.12143\skills\documents\scripts\table_geometry.py' 'deliverables/关于巡防百科网站建设及推广应用情况的报告.docx' --audit
+& 'C:\Users\97014\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe' 'C:\Users\97014\.codex\plugins\cache\openai-primary-runtime\documents\26.715.12143\skills\documents\scripts\table_geometry.py' 'deliverables/关于巡防百科网站建设及推广应用情况的报告.docx'
 ```
 
-Expected: 所有表格几何检查通过，无宽度不一致项。
+Expected: 程序返回码为 0，并报告所有表格的 `tblW`、`tblInd`、`tblGrid` 和 `tcW` 一致，无宽度不一致项。
 
 - [ ] **Step 2: 修正审计发现并重新生成**
 

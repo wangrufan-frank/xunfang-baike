@@ -288,7 +288,7 @@ def add_summary_table(document):
     if tbl_ind is None:
         tbl_ind = OxmlElement("w:tblInd")
         tbl_pr.append(tbl_ind)
-    tbl_ind.set(qn("w:w"), "0")
+    tbl_ind.set(qn("w:w"), "120")
     tbl_ind.set(qn("w:type"), "dxa")
 
     tbl_layout = tbl_pr.first_child_found_in("w:tblLayout")

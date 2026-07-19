@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 import re
 import unittest
 
@@ -9,7 +10,9 @@ from docx.shared import Mm, Pt
 
 
 REPORT = (
-    Path(__file__).resolve().parents[1]
+    Path(os.environ["REPORT_PATH"])
+    if "REPORT_PATH" in os.environ
+    else Path(__file__).resolve().parents[1]
     / "deliverables"
     / "关于巡防百科网站建设及推广应用情况的报告.docx"
 )
@@ -190,6 +193,43 @@ class ReportTests(unittest.TestCase):
             self.assertTrue(footer.text.startswith("— "))
             self.assertTrue(footer.text.endswith(" —"))
             self.assertIn("PAGE", footer._p.xml)
+
+    def test_summary_table_geometry_and_row_height_contract(self):
+        self.assertEqual(len(self.doc.tables), 1)
+        table = self.doc.tables[0]
+        expected_widths = [1814, 3288, 3742]
+        self.assertEqual(len(table.columns), len(expected_widths))
+
+        tbl_pr = table._tbl.tblPr
+        tbl_w = tbl_pr.first_child_found_in("w:tblW")
+        self.assertIsNotNone(tbl_w)
+        self.assertEqual(tbl_w.get(qn("w:type")), "dxa")
+        self.assertEqual(int(tbl_w.get(qn("w:w"))), sum(expected_widths))
+        tbl_ind = tbl_pr.first_child_found_in("w:tblInd")
+        self.assertIsNotNone(tbl_ind)
+        self.assertEqual(tbl_ind.get(qn("w:type")), "dxa")
+        self.assertEqual(tbl_ind.get(qn("w:w")), "120")
+
+        grid_widths = [int(col.get(qn("w:w"))) for col in table._tbl.tblGrid]
+        self.assertEqual(grid_widths, expected_widths)
+        self.assertEqual(sum(grid_widths), int(tbl_w.get(qn("w:w"))))
+
+        header_pr = table.rows[0]._tr.get_or_add_trPr()
+        header = header_pr.first_child_found_in("w:tblHeader")
+        self.assertIsNotNone(header)
+        self.assertEqual(header.get(qn("w:val")), "true")
+        for row in table.rows:
+            tr_pr = row._tr.trPr
+            self.assertTrue(
+                tr_pr is None or tr_pr.first_child_found_in("w:trHeight") is None,
+                "summary table must not use fixed row heights",
+            )
+            self.assertEqual(len(row.cells), len(expected_widths))
+            for cell, expected_width in zip(row.cells, expected_widths):
+                tc_w = cell._tc.tcPr.first_child_found_in("w:tcW")
+                self.assertIsNotNone(tc_w)
+                self.assertEqual(tc_w.get(qn("w:type")), "dxa")
+                self.assertEqual(int(tc_w.get(qn("w:w"))), expected_width)
 
     def test_signature_placeholders(self):
         self.assertIn("（汇报人：________）", self.text)
