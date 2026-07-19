@@ -562,10 +562,15 @@ def build_report(output_path: Path) -> None:
             run._element.getparent().remove(run._element)
         add_page_number(paragraph)
 
-    document.core_properties.title = "关于“巡防百科”网站建设及推广应用情况的报告"
-    document.core_properties.subject = "巡防百科网站项目建设及推广应用情况"
-    document.core_properties.author = ""
-    document.core_properties.last_modified_by = ""
+    properties = document.core_properties
+    properties.title = "关于“巡防百科”网站建设及推广应用情况的报告"
+    properties.subject = ""
+    properties.keywords = ""
+    properties.category = ""
+    # python-docx serializes `comments` as the dc:description core property.
+    properties.comments = ""
+    properties.author = ""
+    properties.last_modified_by = ""
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
