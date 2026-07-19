@@ -1,4 +1,6 @@
 from pathlib import Path
+from tempfile import NamedTemporaryFile
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 from docx import Document
 from docx.enum.style import WD_STYLE_TYPE
@@ -7,9 +9,93 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_LINE_SPACING
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Mm, Pt, RGBColor
+from lxml import etree
 
 
 REPORT_NAME = "关于巡防百科网站建设及推广应用情况的报告.docx"
+REPORT_TITLE = "关于“巡防百科”网站建设及推广应用情况的报告"
+FIXED_ZIP_TIMESTAMP = (2000, 1, 1, 0, 0, 0)
+FIXED_ZIP_EXTERNAL_ATTR = 0x20
+W14_NS = "http://schemas.microsoft.com/office/word/2010/wordml"
+
+
+def _scrub_xml_part(name: str, data: bytes) -> bytes:
+    """Remove deterministic-build and publishing metadata from an XML part."""
+    root = etree.fromstring(data)
+    changed = False
+
+    if name == "docProps/app.xml":
+        for element in list(root):
+            if etree.QName(element).localname in {"Application", "AppVersion", "Template"}:
+                root.remove(element)
+                changed = True
+
+    if name == "docProps/core.xml":
+        for element in list(root):
+            if etree.QName(element).localname == "title":
+                if element.text != REPORT_TITLE:
+                    element.text = REPORT_TITLE
+                    changed = True
+            else:
+                root.remove(element)
+                changed = True
+
+    for element in list(root.iter()):
+        element_name = etree.QName(element).localname
+        element_namespace = etree.QName(element).namespace
+        if element is not root and (
+            element_name.lower().startswith("rsid")
+            or (element_namespace == W14_NS and element_name == "docId")
+        ):
+            element.getparent().remove(element)
+            changed = True
+            continue
+        for attribute_name in list(element.attrib):
+            if etree.QName(attribute_name).localname.lower().startswith("rsid"):
+                del element.attrib[attribute_name]
+                changed = True
+
+    if not changed:
+        return data
+    return etree.tostring(
+        root,
+        encoding="UTF-8",
+        xml_declaration=True,
+        standalone=True,
+    )
+
+
+def _write_deterministic_docx(source_path: Path, output_path: Path) -> None:
+    """Scrub and repackage a DOCX with stable order and ZIP metadata."""
+    with ZipFile(source_path) as source:
+        entries = {
+            name: _scrub_xml_part(name, source.read(name))
+            if name.endswith(".xml") or name.endswith(".rels")
+            else source.read(name)
+            for name in source.namelist()
+        }
+
+    with ZipFile(
+        output_path,
+        mode="w",
+        compression=ZIP_DEFLATED,
+        compresslevel=9,
+    ) as destination:
+        destination.comment = b""
+        for name in sorted(entries):
+            info = ZipInfo(name, FIXED_ZIP_TIMESTAMP)
+            info.compress_type = ZIP_DEFLATED
+            info.create_system = 0
+            info.internal_attr = 0
+            info.external_attr = FIXED_ZIP_EXTERNAL_ATTR
+            info.extra = b""
+            info.comment = b""
+            destination.writestr(
+                info,
+                entries[name],
+                compress_type=ZIP_DEFLATED,
+                compresslevel=9,
+            )
 
 
 def set_run_font(
@@ -158,6 +244,10 @@ def add_heading(document, text: str, level: int = 1):
     paragraph = document.add_paragraph(style=f"Heading {level}")
     paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
     paragraph.paragraph_format.first_line_indent = Pt(0)
+    paragraph.paragraph_format.line_spacing_rule = WD_LINE_SPACING.EXACTLY
+    paragraph.paragraph_format.line_spacing = Pt(28)
+    paragraph.paragraph_format.space_before = Pt(14 if level == 1 else 8)
+    paragraph.paragraph_format.space_after = Pt(0)
     paragraph.paragraph_format.keep_with_next = True
     run = paragraph.add_run(text)
     if level == 1:
@@ -535,7 +625,7 @@ def build_report(output_path: Path) -> None:
         ],
     )
 
-    add_heading(document, "八、结语及有关建议")
+    add_heading(document, "八、结语及建议")
     add_heading(document, "（一）继续在审核把关前提下开展内部试用", 2)
     add_body(
         document,
@@ -563,7 +653,7 @@ def build_report(output_path: Path) -> None:
         add_page_number(paragraph)
 
     properties = document.core_properties
-    properties.title = "关于“巡防百科”网站建设及推广应用情况的报告"
+    properties.title = REPORT_TITLE
     properties.subject = ""
     properties.keywords = ""
     properties.category = ""
@@ -574,7 +664,27 @@ def build_report(output_path: Path) -> None:
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    document.save(output_path)
+    with NamedTemporaryFile(
+        dir=output_path.parent,
+        prefix=f".{output_path.stem}-",
+        suffix=".raw.docx",
+        delete=False,
+    ) as raw_file:
+        raw_path = Path(raw_file.name)
+    with NamedTemporaryFile(
+        dir=output_path.parent,
+        prefix=f".{output_path.stem}-",
+        suffix=".normalized.docx",
+        delete=False,
+    ) as normalized_file:
+        normalized_path = Path(normalized_file.name)
+    try:
+        document.save(raw_path)
+        _write_deterministic_docx(raw_path, normalized_path)
+        normalized_path.replace(output_path)
+    finally:
+        raw_path.unlink(missing_ok=True)
+        normalized_path.unlink(missing_ok=True)
 
 
 if __name__ == "__main__":
