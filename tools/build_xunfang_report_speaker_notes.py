@@ -189,7 +189,9 @@ def add_cover(doc, root):
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_after = Pt(18)
-        p.add_run().add_picture(str(cover_image), width=Cm(15.7))
+        picture = p.add_run().add_picture(str(cover_image), width=Cm(15.7))
+        picture._inline.docPr.set("descr", "夜间巡逻场景：警车与巡逻民警")
+        picture._inline.docPr.set("title", "巡防百科汇报讲解稿封面图")
 
     for label, value in (
         ("汇报对象", "大队领导、支队领导"),
