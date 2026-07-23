@@ -13,6 +13,15 @@ EXPECTED_COUNTS = {
     "zoufang": 13,
 }
 
+DISPLAY_MODULES = [
+    ("jingqing", "警情处置"),
+    ("qinwu", "勤务须知"),
+    ("fagui", "执法规范"),
+    ("zhuangbei", "装备操作"),
+    ("zoufang", "教育学习"),
+    ("xunlian", "实战训练"),
+]
+
 
 def load_inventory():
     return json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
@@ -164,15 +173,31 @@ class MediaAndCrossReferenceTests(unittest.TestCase):
 
 
 class NavigationStructureTests(unittest.TestCase):
-    def test_home_and_nav_use_exact_six_modules(self):
+    def test_home_and_nav_use_exact_six_modules_in_display_order(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
         nav = (ROOT / "js" / "nav.js").read_text(encoding="utf-8")
-        for title in ["装备介绍", "勤务保障", "警务训练", "警情处置", "执法规范", "教育培训"]:
-            self.assertIn(title, home)
-            self.assertIn(title, nav)
-        for old_title in ["巡防勤务", "法条规范", "走访送教", "入门指南"]:
+        expected_titles = [title for _, title in DISPLAY_MODULES]
+        expected_paths = [f"{slug}/index.html" for slug, _ in DISPLAY_MODULES]
+        for source in (home, nav):
+            self.assertEqual(
+                sorted(source.index(title) for title in expected_titles),
+                [source.index(title) for title in expected_titles],
+            )
+            self.assertEqual(
+                sorted(source.index(path) for path in expected_paths),
+                [source.index(path) for path in expected_paths],
+            )
+
+        for old_title in [
+            "装备介绍", "勤务保障", "警务训练", "教育培训",
+            "巡防勤务", "法条规范", "走访送教", "入门指南",
+        ]:
             self.assertNotIn(old_title, home)
             self.assertNotIn(old_title, nav)
+
+        monthly_position = nav.index("本月精选")
+        self.assertGreater(monthly_position, nav.index("实战训练"))
+        self.assertIn("special: true", nav)
 
     def test_module_indexes_expose_exact_category_anchors(self):
         for module in load_inventory()["modules"]:
