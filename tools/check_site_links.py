@@ -24,7 +24,7 @@ from urllib.parse import unquote, urlsplit
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {
     '.git', '.worktrees', '.superpowers', 'deliverables', 'docs',
-    'miniprogram', 'node_modules', '__pycache__', 'tests', 'tools', 'data',
+    'node_modules', '__pycache__', 'tests', 'tools', 'data',
 }
 TARGET_EXCLUDED_DIRS = {'.git', '.worktrees', 'node_modules', '__pycache__'}
 SKIPPED_SCHEMES = {'mailto', 'tel', 'javascript', 'data'}

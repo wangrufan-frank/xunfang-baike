@@ -75,6 +75,16 @@ class SensitiveContentRemovalTests(unittest.TestCase):
         self.assertFalse((ROOT / 'miniprogram').exists())
         self.assertFalse((ROOT / 'parse_html.py').exists())
 
+    def test_active_tooling_no_longer_targets_miniprogram(self):
+        link_checker = (ROOT / 'tools' / 'check_site_links.py').read_text(encoding='utf-8')
+        presentation_generator = (
+            ROOT / 'tools' / 'generate_demo_ppt.js'
+        ).read_text(encoding='utf-8')
+
+        self.assertNotIn("'miniprogram'", link_checker)
+        self.assertNotIn('微信小程序迁移', presentation_generator)
+        self.assertIn('移动端体验优化', presentation_generator)
+
     def test_restricted_detail_files_are_deleted(self):
         remaining = sorted(path for path in DELETED_PATHS if (ROOT / path).exists())
         self.assertEqual(remaining, [])
