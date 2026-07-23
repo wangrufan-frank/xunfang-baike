@@ -179,6 +179,13 @@ class MediaAndCrossReferenceTests(unittest.TestCase):
                 self.assertIn(related, valid_paths, (record["path"], related))
 
 
+class HostingConfigTests(unittest.TestCase):
+    def test_github_pages_bypasses_jekyll_for_static_site(self):
+        marker = ROOT / ".nojekyll"
+        self.assertTrue(marker.is_file(), ".nojekyll must exist at the site root")
+        self.assertEqual("", marker.read_text(encoding="utf-8").strip())
+
+
 class NavigationStructureTests(unittest.TestCase):
     def test_home_and_nav_use_exact_six_modules_in_display_order(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
