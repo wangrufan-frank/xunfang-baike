@@ -6,12 +6,12 @@
 
   // 模块目录 → 显示名称
   var MODULE_NAMES = {
-    'zhuangbei': '装备介绍',
-    'qinwu': '勤务保障',
-    'xunlian': '警务训练',
+    'zhuangbei': '装备操作',
+    'qinwu': '勤务须知',
+    'xunlian': '实战训练',
     'jingqing': '警情处置',
     'fagui': '执法规范',
-    'zoufang': '教育培训',
+    'zoufang': '教育学习',
     'meiyueyixue': '本月精选'
   };
 

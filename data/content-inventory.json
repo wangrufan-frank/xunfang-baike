@@ -4,7 +4,7 @@
   "modules": [
     {
       "slug": "zhuangbei",
-      "title": "装备介绍",
+      "title": "装备操作",
       "categories": [
         "人身装备",
         "车载装备",
@@ -13,7 +13,7 @@
       "articles": [
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "人身装备",
           "category_anchor": "personal-equipment",
           "title": "九小件概览",
@@ -58,7 +58,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "人身装备",
           "category_anchor": "personal-equipment",
           "title": "防割手套",
@@ -79,7 +79,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "人身装备",
           "category_anchor": "personal-equipment",
           "title": "执法记录仪",
@@ -101,7 +101,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "人身装备",
           "category_anchor": "personal-equipment",
           "title": "对讲电台",
@@ -123,7 +123,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "阻车钉",
@@ -146,7 +146,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "水上飞翼",
@@ -164,7 +164,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "灭火毯",
@@ -182,7 +182,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "灭火器",
@@ -204,7 +204,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "反光锥筒",
@@ -223,7 +223,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "救生圈",
@@ -244,7 +244,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "救生衣",
@@ -262,7 +262,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "救生绳",
@@ -280,7 +280,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "破拆工具",
@@ -299,7 +299,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "车载装备",
           "category_anchor": "vehicle-equipment",
           "title": "5G云台",
@@ -319,7 +319,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "防暴头盔",
@@ -341,7 +341,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "抓捕叉",
@@ -380,7 +380,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "警戒带与警告牌",
@@ -402,7 +402,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "法式盾牌",
@@ -440,7 +440,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "臂盾",
@@ -462,7 +462,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "T字棍",
@@ -482,7 +482,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "强光手电",
@@ -503,7 +503,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "伞式围挡",
@@ -523,7 +523,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "折叠式围挡",
@@ -542,7 +542,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "长棍",
@@ -563,7 +563,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "防刺服",
@@ -585,7 +585,7 @@
         },
         {
           "module": "zhuangbei",
-          "module_title": "装备介绍",
+          "module_title": "装备操作",
           "category": "战术装备",
           "category_anchor": "tactical-equipment",
           "title": "约束带",
@@ -609,7 +609,7 @@
     },
     {
       "slug": "qinwu",
-      "title": "勤务保障",
+      "title": "勤务须知",
       "categories": [
         "大型活动安保",
         "公共秩序事件",
@@ -619,7 +619,7 @@
       "articles": [
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "大型活动安保",
           "category_anchor": "major-event-security",
           "title": "足球赛事安保",
@@ -642,7 +642,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "大型活动安保",
           "category_anchor": "major-event-security",
           "title": "大型室外演唱会安保",
@@ -666,7 +666,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "大型活动安保",
           "category_anchor": "major-event-security",
           "title": "小型室内演出安保",
@@ -689,7 +689,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "公共秩序事件",
           "category_anchor": "public-order-incidents",
           "title": "处置基本原则",
@@ -711,7 +711,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "公共秩序事件",
           "category_anchor": "public-order-incidents",
           "title": "法律适用与权利保障",
@@ -733,7 +733,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "公共秩序事件",
           "category_anchor": "public-order-incidents",
           "title": "现场沟通、记录与舆情风险",
@@ -755,7 +755,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "支点联防",
           "category_anchor": "joint-defense-points",
           "title": "小区支点走访",
@@ -777,7 +777,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "支点联防",
           "category_anchor": "joint-defense-points",
           "title": "学校支点走访",
@@ -803,7 +803,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "支点联防",
           "category_anchor": "joint-defense-points",
           "title": "银行支点走访",
@@ -826,7 +826,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "支点联防",
           "category_anchor": "joint-defense-points",
           "title": "商场支点走访",
@@ -848,7 +848,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "专项活动保障",
           "category_anchor": "special-event-support",
           "title": "专项活动保障概述",
@@ -871,7 +871,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "专项活动保障",
           "category_anchor": "special-event-support",
           "title": "现场秩序与安全服务",
@@ -894,7 +894,7 @@
         },
         {
           "module": "qinwu",
-          "module_title": "勤务保障",
+          "module_title": "勤务须知",
           "category": "专项活动保障",
           "category_anchor": "special-event-support",
           "title": "部门协同与突发情况报告",
@@ -919,7 +919,7 @@
     },
     {
       "slug": "xunlian",
-      "title": "警务训练",
+      "title": "实战训练",
       "categories": [
         "单兵技能训练",
         "小组协同训练"
@@ -927,7 +927,7 @@
       "articles": [
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "个人防护与训练安全",
@@ -948,7 +948,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "伸缩警棍基础训练",
@@ -1009,7 +1009,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "催泪喷射器基础训练",
@@ -1032,7 +1032,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "手铐基础训练",
@@ -1054,7 +1054,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "执法记录仪与电台训练",
@@ -1075,7 +1075,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "强光手电基础训练",
@@ -1095,7 +1095,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "单兵技能训练",
           "category_anchor": "individual-skill-training",
           "title": "徒手解脱与控制基础",
@@ -1119,7 +1119,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "小组协同训练",
           "category_anchor": "team-coordination-training",
           "title": "小组编成与职责分工",
@@ -1142,7 +1142,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "小组协同训练",
           "category_anchor": "team-coordination-training",
           "title": "协同站位与基础队形",
@@ -1203,7 +1203,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "小组协同训练",
           "category_anchor": "team-coordination-training",
           "title": "盾牌与抓捕叉协同",
@@ -1258,7 +1258,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "小组协同训练",
           "category_anchor": "team-coordination-training",
           "title": "移动、掩护与人员带离",
@@ -1281,7 +1281,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "小组协同训练",
           "category_anchor": "team-coordination-training",
           "title": "现场沟通与影像记录",
@@ -1303,7 +1303,7 @@
         },
         {
           "module": "xunlian",
-          "module_title": "警务训练",
+          "module_title": "实战训练",
           "category": "小组协同训练",
           "category_anchor": "team-coordination-training",
           "title": "训练组织、复盘与考评",
@@ -1827,7 +1827,7 @@
     },
     {
       "slug": "zoufang",
-      "title": "教育培训",
+      "title": "教育学习",
       "categories": [
         "规章制度",
         "考核规范",
@@ -1836,7 +1836,7 @@
       "articles": [
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "规章制度",
           "category_anchor": "rules-regulations",
           "title": "人民警察内务规范",
@@ -1857,7 +1857,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "规章制度",
           "category_anchor": "rules-regulations",
           "title": "纪律要求",
@@ -1880,7 +1880,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "规章制度",
           "category_anchor": "rules-regulations",
           "title": "保密与信息安全",
@@ -1902,7 +1902,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "规章制度",
           "category_anchor": "rules-regulations",
           "title": "涉酒及违规宴请管理要求",
@@ -1921,7 +1921,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "规章制度",
           "category_anchor": "rules-regulations",
           "title": "执法记录和工作资料管理",
@@ -1944,7 +1944,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "考核规范",
           "category_anchor": "assessment-standards",
           "title": "体能考核要求",
@@ -1966,7 +1966,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "考核规范",
           "category_anchor": "assessment-standards",
           "title": "基础警务技能考核",
@@ -1989,7 +1989,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "考核规范",
           "category_anchor": "assessment-standards",
           "title": "小组协同技能考核",
@@ -2012,7 +2012,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "考核规范",
           "category_anchor": "assessment-standards",
           "title": "考核安全、记录与补测",
@@ -2035,7 +2035,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "学习课程",
           "category_anchor": "learning-courses",
           "title": "单位优秀课程",
@@ -2057,7 +2057,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "学习课程",
           "category_anchor": "learning-courses",
           "title": "市局优秀课程",
@@ -2078,7 +2078,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "学习课程",
           "category_anchor": "learning-courses",
           "title": "创新训练方法",
@@ -2102,7 +2102,7 @@
         },
         {
           "module": "zoufang",
-          "module_title": "教育培训",
+          "module_title": "教育学习",
           "category": "学习课程",
           "category_anchor": "learning-courses",
           "title": "课程资料使用与交流规范",

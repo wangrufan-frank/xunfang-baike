@@ -22,6 +22,13 @@ DISPLAY_MODULES = [
     ("xunlian", "实战训练"),
 ]
 
+RENAMED_MODULES = {
+    "qinwu": ("勤务保障", "勤务须知"),
+    "zhuangbei": ("装备介绍", "装备操作"),
+    "zoufang": ("教育培训", "教育学习"),
+    "xunlian": ("警务训练", "实战训练"),
+}
+
 
 def load_inventory():
     return json.loads(INVENTORY_PATH.read_text(encoding="utf-8"))
@@ -205,3 +212,52 @@ class NavigationStructureTests(unittest.TestCase):
             for article in module["articles"]:
                 self.assertIn(f'id="{article["category_anchor"]}"', html)
                 self.assertIn(article["path"].split("/")[-1], html)
+
+    def test_module_display_names_are_consistent_across_runtime_sources(self):
+        inventory = load_inventory()
+        inventory_by_slug = {module["slug"]: module for module in inventory["modules"]}
+        search_records = json.loads((ROOT / "search-index.json").read_text(encoding="utf-8"))
+        search_fallbacks = (ROOT / "js" / "search.js").read_text(encoding="utf-8")
+
+        for slug, title in DISPLAY_MODULES:
+            module = inventory_by_slug[slug]
+            self.assertEqual(title, module["title"])
+            self.assertTrue(all(article["module_title"] == title for article in module["articles"]))
+            self.assertTrue(all(
+                record["module"] == title
+                for record in search_records
+                if record["path"].startswith(f"{slug}/")
+            ))
+            self.assertIn(f"'{slug}': '{title}'", search_fallbacks)
+
+            index_html = (ROOT / slug / "index.html").read_text(encoding="utf-8")
+            self.assertIn(f"<title>{title} — 巡防百科</title>", index_html)
+            self.assertIn(f'<span class="current">{title}</span>', index_html)
+            self.assertIn(title, index_html)
+
+    def test_old_names_are_absent_from_module_label_contexts(self):
+        explicit_reference_patterns = [
+            "{old}模块",
+            "返回{old}",
+            "进入{old}",
+            ">{old}<",
+        ]
+        runtime_pages = [
+            path
+            for slug, _ in DISPLAY_MODULES
+            for path in (ROOT / slug).glob("*.html")
+        ]
+        runtime_pages.extend([ROOT / "index.html", ROOT / "search.html"])
+
+        for path in runtime_pages:
+            text = path.read_text(encoding="utf-8")
+            for old, _ in RENAMED_MODULES.values():
+                for pattern in explicit_reference_patterns:
+                    self.assertNotIn(pattern.format(old=old), text, str(path))
+
+    def test_verbatim_legal_education_training_quote_is_preserved(self):
+        legal_documents = (ROOT / "data" / "legal-documents.json").read_text(encoding="utf-8")
+        legal_cards = (ROOT / "data" / "legal-basis-cards.json").read_text(encoding="utf-8")
+        statutory_text = "警察业务等教育培训"
+        self.assertIn(statutory_text, legal_documents)
+        self.assertIn(statutory_text, legal_cards)
