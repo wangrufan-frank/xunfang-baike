@@ -22,6 +22,9 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Generated artifact inspection reports
+*.inspect.ndjson
+
 # Superpowers
 .superpowers/
 
