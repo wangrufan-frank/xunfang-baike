@@ -21,5 +21,32 @@ class RuntimeTreeContractTests(unittest.TestCase):
         )
 
 
+class DocumentationContractTests(unittest.TestCase):
+    def test_readme_describes_setup_and_public_static_site_boundaries(self):
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        for value in (
+            "python -m http.server 8000",
+            'python -m unittest discover -s tests -p "test_*.py" -v',
+            "node --test tests/auth_core.test.js",
+            "python tools/build_search_index.py --check",
+            "python tools/check_site_links.py",
+            "python tools/public_source_index.py check",
+            "GitHub Pages",
+            "CNAME",
+            ".nojekyll",
+            "E:\\xunfang-baike-deliverables",
+            "已退役的小程序",
+            "公开",
+            "不是服务端访问控制",
+        ):
+            with self.subTest(value=value):
+                self.assertIn(value, readme)
+
+    def test_requirements_declare_tracked_python_dependency_without_pytest(self):
+        requirements = (ROOT / "requirements.txt").read_text(encoding="utf-8")
+        self.assertIn("python-docx", requirements)
+        self.assertNotIn("pytest", requirements.lower())
+
+
 if __name__ == "__main__":
     unittest.main()
