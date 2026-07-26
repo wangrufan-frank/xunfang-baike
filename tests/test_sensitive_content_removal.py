@@ -71,10 +71,19 @@ def runtime_files():
 
 
 class SensitiveContentRemovalTests(unittest.TestCase):
-    def test_parse_html_targets_the_current_repository(self):
-        source = (ROOT / 'parse_html.py').read_text(encoding='utf-8')
-        self.assertIn("BASE = os.path.dirname(os.path.abspath(__file__))", source)
-        self.assertNotIn("BASE = r'F:\\frank第二大脑\\xunfang-baike'", source)
+    def test_miniprogram_implementation_is_retired(self):
+        self.assertFalse((ROOT / 'miniprogram').exists())
+        self.assertFalse((ROOT / 'parse_html.py').exists())
+
+    def test_active_tooling_no_longer_targets_miniprogram(self):
+        link_checker = (ROOT / 'tools' / 'check_site_links.py').read_text(encoding='utf-8')
+        presentation_generator = (
+            ROOT / 'tools' / 'generate_demo_ppt.js'
+        ).read_text(encoding='utf-8')
+
+        self.assertNotIn("'miniprogram'", link_checker)
+        self.assertNotIn('微信小程序迁移', presentation_generator)
+        self.assertIn('移动端体验优化', presentation_generator)
 
     def test_restricted_detail_files_are_deleted(self):
         remaining = sorted(path for path in DELETED_PATHS if (ROOT / path).exists())
@@ -105,40 +114,6 @@ class SensitiveContentRemovalTests(unittest.TestCase):
         records = json.loads((ROOT / 'search-index.json').read_text(encoding='utf-8'))
         indexed_paths = {record['path'] for record in records}
         self.assertEqual(sorted(indexed_paths.intersection(DELETED_PATHS)), [])
-
-    def test_jingqing_miniprogram_still_shows_remediation_state(self):
-        mini = (
-            ROOT / 'miniprogram' / 'pages' / 'jingqing' / 'index' / 'index.wxml'
-        ).read_text(encoding='utf-8')
-        self.assertIn('内容整改中', mini)
-
-    def test_jingqing_miniprogram_data_is_empty(self):
-        source = (
-            ROOT / 'miniprogram' / 'data' / 'jingqing.js'
-        ).read_text(encoding='utf-8').strip()
-        self.assertEqual(source, 'module.exports = [];')
-
-    def test_qinwu_miniprogram_still_shows_remediation_shell(self):
-        mini_home = (
-            ROOT / 'miniprogram' / 'pages' / 'index' / 'index.wxml'
-        ).read_text(encoding='utf-8')
-        mini_section = (
-            ROOT / 'miniprogram' / 'pages' / 'qinwu' / 'index' / 'index.wxml'
-        ).read_text(encoding='utf-8')
-        mini_data = (
-            ROOT / 'miniprogram' / 'data' / 'qinwu.js'
-        ).read_text(encoding='utf-8').strip()
-
-        self.assertIn('巡防勤务', mini_home)
-        self.assertIn('内容整改中', mini_section)
-        self.assertEqual(mini_data, 'module.exports = [];')
-
-    def test_miniprogram_home_does_not_repeat_removed_jingqing_cases(self):
-        source = (
-            ROOT / 'miniprogram' / 'pages' / 'index' / 'index.js'
-        ).read_text(encoding='utf-8')
-        self.assertNotIn('醉酒闹事处置', source)
-        self.assertNotIn('家暴警情', source)
 
     def test_html_links_do_not_target_deleted_pages(self):
         hits = []

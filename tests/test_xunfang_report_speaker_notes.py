@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONTENT_PATH = ROOT / "deliverables" / "xunfang-report-speaker-notes.json"
+CONTENT_PATH = ROOT / "data" / "xunfang-report-speaker-notes.json"
 
 
 class SpeakerNotesContentTests(unittest.TestCase):

@@ -32,8 +32,11 @@ const C = {
   green: '25936A',
   line: 'D6E2EA'
 };
-const assets = path.join(__dirname, '..', 'deliverables', 'assets');
-const out = path.join(__dirname, '..', 'deliverables', '巡防百科网站项目汇报.pptx');
+const repoRoot = path.join(__dirname, '..');
+const archiveRoot = process.env.XUNFANG_DELIVERABLES_DIR
+  || path.join(repoRoot, '..', 'xunfang-baike-deliverables');
+const assets = path.join(repoRoot, 'data', 'project-report-assets');
+const out = path.join(archiveRoot, 'deliverables', '巡防百科网站项目汇报.pptx');
 
 function rect(slide, x, y, w, h, fill, line = fill, radius = false) {
   slide.addShape(radius ? pptx.ShapeType.roundRect : pptx.ShapeType.rect, {
@@ -169,7 +172,7 @@ function card(slide, x, y, w, h, heading, body, accent) {
 // 9. Roadmap
 {
   const s = pptx.addSlide(); s.background = { color: C.paper }; title(s, '07', '下一步计划', '在现有网站基础上持续完善内容、优化体验，并逐步拓展应用场景');
-  const plans = [['内容完善', '持续补充常用流程、图文要点和案例资料。'], ['访问管理优化', '完善展示与访问方式，提升使用稳定性。'], ['微信小程序迁移', '将成熟内容逐步适配至移动端使用场景。'], ['推广应用', '结合实际需求试用、反馈与持续迭代。']];
+  const plans = [['内容完善', '持续补充常用流程、图文要点和案例资料。'], ['访问管理优化', '完善展示与访问方式，提升使用稳定性。'], ['移动端体验优化', '持续优化手机端浏览、搜索与内容阅读体验。'], ['推广应用', '结合实际需求试用、反馈与持续迭代。']];
   plans.forEach((p, i) => { const x = 0.72 + i * 3.12; s.addShape(pptx.ShapeType.line, { x: x + 0.36, y: 2.5, w: i < 3 ? 2.75 : 0, h: 0, line: { color: C.line, width: 1.4 } }); rect(s, x, 2.1, 0.75, 0.75, i === 3 ? C.gold : C.blue, i === 3 ? C.gold : C.blue, true); text(s, String(i + 1), x, 2.33, 0.75, 0.2, { fontSize: 13, bold: true, color: C.white, align: 'center' }); text(s, p[0], x, 3.2, 2.55, 0.3, { fontSize: 15, bold: true, color: C.navy }); text(s, p[1], x, 3.68, 2.55, 0.52, { fontSize: 10.3, color: C.muted, valign: 'top' }); });
   rect(s, 0.72, 5.55, 11.7, 0.72, C.navy, C.navy, true); text(s, '以巡防实战需求为导向，让网站成为基层知识服务的长期载体。', 1.03, 5.8, 11.08, 0.24, { fontSize: 14, bold: true, color: C.white, align: 'center' });
   text(s, '网址：www.xunfangbk.cn', 4.6, 6.55, 4.1, 0.24, { fontSize: 11, color: C.blue, bold: true, align: 'center' }); footer(s, 9);

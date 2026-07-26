@@ -1,10 +1,17 @@
+import os
 from pathlib import Path
 import sys
 import zipfile
 import xml.etree.ElementTree as ET
 
 
-PRESENTATION = Path("deliverables/巡防百科网站项目汇报.pptx")
+ARCHIVE_ROOT = Path(
+    os.environ.get(
+        "XUNFANG_DELIVERABLES_DIR",
+        Path(__file__).resolve().parents[2] / "xunfang-baike-deliverables",
+    )
+)
+PRESENTATION = ARCHIVE_ROOT / "deliverables" / "巡防百科网站项目汇报.pptx"
 PLACEHOLDERS = ("添加标题", "占位", "Lorem", "案件汇报", "扫黑除恶")
 
 

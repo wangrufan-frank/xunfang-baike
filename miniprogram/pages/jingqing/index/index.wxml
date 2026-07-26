@@ -1,8 +1,0 @@
-<nav-bar/>
-
-<view class="page-container list-page">
-  <view class="page-title">
-    <view class="h1">🚨 警情处置</view>
-  </view>
-  <view class="empty-state">内容整改中</view>
-</view>
