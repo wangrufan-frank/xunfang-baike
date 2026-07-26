@@ -48,5 +48,28 @@ class DocumentationContractTests(unittest.TestCase):
         self.assertNotIn("pytest", requirements.lower())
 
 
+class ContinuousIntegrationContractTests(unittest.TestCase):
+    def test_workflow_runs_required_validation_on_push_and_pull_request(self):
+        workflow = (ROOT / ".github" / "workflows" / "validate.yml").read_text(
+            encoding="utf-8"
+        )
+        for value in (
+            "push:",
+            "pull_request:",
+            "actions/checkout@v6",
+            "actions/setup-python@v6",
+            "python-version: '3.12'",
+            "actions/setup-node@v6",
+            "node-version: '20'",
+            'python -m unittest discover -s tests -p "test_*.py" -v',
+            "node --test tests/auth_core.test.js",
+            "python tools/build_search_index.py --check",
+            "python tools/check_site_links.py",
+            "python tools/public_source_index.py check",
+        ):
+            with self.subTest(value=value):
+                self.assertIn(value, workflow)
+
+
 if __name__ == "__main__":
     unittest.main()
