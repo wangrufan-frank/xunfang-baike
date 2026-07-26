@@ -25,6 +25,11 @@ Thumbs.db
 # Generated artifact inspection reports
 *.inspect.ndjson
 
+# Non-runtime deliverables and local validation output
+deliverables/
+video/
+.artifacts/
+
 # Superpowers
 .superpowers/
 

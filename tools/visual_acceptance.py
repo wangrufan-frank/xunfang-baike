@@ -1,13 +1,14 @@
 """视觉验收脚本 — 对 5 个代表性页面截取桌面端和移动端截图。"""
-from pathlib import Path
-import sys
-import time
 import http.server
+import os
+from pathlib import Path
 import socketserver
+import sys
 import threading
+import time
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = ROOT / 'deliverables' / 'visual-acceptance'
+OUTPUT_DIR = ROOT / '.artifacts' / 'visual-acceptance'
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 PAGES = [
@@ -185,6 +186,5 @@ def run_checks(page, width, label):
     return checks
 
 
-import os
 if __name__ == '__main__':
     sys.exit(main())

@@ -32,8 +32,11 @@ const C = {
   green: '25936A',
   line: 'D6E2EA'
 };
-const assets = path.join(__dirname, '..', 'deliverables', 'assets');
-const out = path.join(__dirname, '..', 'deliverables', '巡防百科网站项目汇报.pptx');
+const repoRoot = path.join(__dirname, '..');
+const archiveRoot = process.env.XUNFANG_DELIVERABLES_DIR
+  || path.join(repoRoot, '..', 'xunfang-baike-deliverables');
+const assets = path.join(repoRoot, 'data', 'project-report-assets');
+const out = path.join(archiveRoot, 'deliverables', '巡防百科网站项目汇报.pptx');
 
 function rect(slide, x, y, w, h, fill, line = fill, radius = false) {
   slide.addShape(radius ? pptx.ShapeType.roundRect : pptx.ShapeType.rect, {
