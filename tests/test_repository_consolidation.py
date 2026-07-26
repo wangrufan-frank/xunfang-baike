@@ -20,6 +20,10 @@ class RuntimeTreeContractTests(unittest.TestCase):
             (ROOT / "docs" / "deliverables-archive-manifest.tsv").is_file()
         )
 
+    def test_archive_manifest_uses_lf_line_endings(self):
+        manifest = (ROOT / "docs" / "deliverables-archive-manifest.tsv").read_bytes()
+        self.assertNotIn(b"\r\n", manifest)
+
 
 class DocumentationContractTests(unittest.TestCase):
     def test_readme_describes_setup_and_public_static_site_boundaries(self):
