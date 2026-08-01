@@ -4,14 +4,14 @@ This report records public-web similarity coverage. It does not approve content 
 
 ## Summary
 
-27 pages, 153 points, 27 sources.
+112 pages, 153 points, 44 sources.
 
 | Metric | Count |
 | --- | ---: |
 | Coverage verified | 153 |
 | Coverage pending | 0 |
-| Sources verified | 27 |
-| Review pending | 27 |
+| Sources verified | 44 |
+| Review pending | 112 |
 | Review approved | 0 |
 
 ## Pages
@@ -45,6 +45,91 @@ This report records public-web similarity coverage. It does not approve content 
 | `zoufang/jinrong-fankong.html` | 🏦 金融机构反恐防暴 | 7 | 7/7 verified | pending |
 | `zoufang/xiaoyuan-fankong.html` | 🏫 校园反恐防暴 | 7 | 7/7 verified | pending |
 | `zoufang/xiaoyuan-peixun.html` | 🏫 校园安保与培训组织 | 8 | 8/8 verified | pending |
+| `zhuangbei/duijiang-diantai.html` | 对讲电台 | 0 | 0/0 verified | pending |
+| `zhuangbei/zuche-ding.html` | 阻车钉 | 0 | 0/0 verified | pending |
+| `zhuangbei/shuishang-feiyi.html` | 水上飞翼 | 0 | 0/0 verified | pending |
+| `zhuangbei/miehuo-tan.html` | 灭火毯 | 0 | 0/0 verified | pending |
+| `zhuangbei/miehuo-qi.html` | 灭火器 | 0 | 0/0 verified | pending |
+| `zhuangbei/fanguang-zhuitong.html` | 反光锥筒 | 0 | 0/0 verified | pending |
+| `zhuangbei/jiusheng-quan.html` | 救生圈 | 0 | 0/0 verified | pending |
+| `zhuangbei/jiusheng-yi.html` | 救生衣 | 0 | 0/0 verified | pending |
+| `zhuangbei/jiusheng-sheng.html` | 救生绳 | 0 | 0/0 verified | pending |
+| `zhuangbei/pochai-gongju.html` | 破拆工具 | 0 | 0/0 verified | pending |
+| `zhuangbei/5g-yuntai.html` | 5G云台 | 0 | 0/0 verified | pending |
+| `zhuangbei/fangbao-toukui.html` | 防暴头盔 | 0 | 0/0 verified | pending |
+| `zhuangbei/zhuabu-cha.html` | 抓捕叉 | 0 | 0/0 verified | pending |
+| `zhuangbei/jingjiedai-jinggaopai.html` | 警戒带与警告牌 | 0 | 0/0 verified | pending |
+| `zhuangbei/fashi-dunpai.html` | 法式盾牌 | 0 | 0/0 verified | pending |
+| `zhuangbei/bidun.html` | 臂盾 | 0 | 0/0 verified | pending |
+| `zhuangbei/t-zi-gun.html` | T字棍 | 0 | 0/0 verified | pending |
+| `zhuangbei/qiangguang-shoudian.html` | 强光手电 | 0 | 0/0 verified | pending |
+| `zhuangbei/sanshi-weidang.html` | 伞式围挡 | 0 | 0/0 verified | pending |
+| `zhuangbei/zhedieshi-weidang.html` | 折叠式围挡 | 0 | 0/0 verified | pending |
+| `zhuangbei/changgun.html` | 长棍 | 0 | 0/0 verified | pending |
+| `zhuangbei/fangci-fu.html` | 防刺服 | 0 | 0/0 verified | pending |
+| `zhuangbei/yueshu-dai.html` | 约束带 | 0 | 0/0 verified | pending |
+| `qinwu/zuqiu-saishi-anbao.html` | 足球赛事安保 | 0 | 0/0 verified | pending |
+| `qinwu/daxing-shiwai-yanchanghui.html` | 大型室外演唱会安保 | 0 | 0/0 verified | pending |
+| `qinwu/xiaoxing-shinei-yanchu.html` | 小型室内演出安保 | 0 | 0/0 verified | pending |
+| `qinwu/gonggong-zhixu-chuzhi-yuanze.html` | 处置基本原则 | 0 | 0/0 verified | pending |
+| `qinwu/gonggong-zhixu-falv-quanli.html` | 法律适用与权利保障 | 0 | 0/0 verified | pending |
+| `qinwu/gonggong-zhixu-goutong-jilu.html` | 现场沟通、记录与舆情风险 | 0 | 0/0 verified | pending |
+| `qinwu/xiaoqu-zhidian-zoufang.html` | 小区支点走访 | 0 | 0/0 verified | pending |
+| `qinwu/xuexiao-zhidian-zoufang.html` | 学校支点走访 | 0 | 0/0 verified | pending |
+| `qinwu/yinhang-zhidian-zoufang.html` | 银行支点走访 | 0 | 0/0 verified | pending |
+| `qinwu/shangchang-zhidian-zoufang.html` | 商场支点走访 | 0 | 0/0 verified | pending |
+| `qinwu/zhuanxiang-huodong-gailan.html` | 专项活动保障概述 | 0 | 0/0 verified | pending |
+| `qinwu/zhuanxiang-xianchang-zhixu.html` | 现场秩序与安全服务 | 0 | 0/0 verified | pending |
+| `qinwu/zhuanxiang-xietong-baogao.html` | 部门协同与突发情况报告 | 0 | 0/0 verified | pending |
+| `xunlian/geren-fanghu-anquan.html` | 个人防护与训练安全 | 0 | 0/0 verified | pending |
+| `xunlian/shensuo-jinggun-xunlian.html` | 伸缩警棍基础训练 | 0 | 0/0 verified | pending |
+| `xunlian/cuilei-pensheqi-xunlian.html` | 催泪喷射器基础训练 | 0 | 0/0 verified | pending |
+| `xunlian/shoukao-xunlian.html` | 手铐基础训练 | 0 | 0/0 verified | pending |
+| `xunlian/jiluyi-diantai-xunlian.html` | 执法记录仪与电台训练 | 0 | 0/0 verified | pending |
+| `xunlian/qiangguang-shoudian-xunlian.html` | 强光手电基础训练 | 0 | 0/0 verified | pending |
+| `xunlian/jietuo-kongzhi-jichu.html` | 徒手解脱与控制基础 | 0 | 0/0 verified | pending |
+| `xunlian/xiaozu-biancheng-fengong.html` | 小组编成与职责分工 | 0 | 0/0 verified | pending |
+| `xunlian/xietong-zhanwei-duixing.html` | 协同站位与基础队形 | 0 | 0/0 verified | pending |
+| `xunlian/dunpai-zhuabucha-xietong.html` | 盾牌与抓捕叉协同 | 0 | 0/0 verified | pending |
+| `xunlian/yidong-yanhu-daili.html` | 移动、掩护与人员带离 | 0 | 0/0 verified | pending |
+| `xunlian/xianchang-goutong-yingxiang.html` | 现场沟通与影像记录 | 0 | 0/0 verified | pending |
+| `xunlian/xunlian-fupan-kaoping.html` | 训练组织、复盘与考评 | 0 | 0/0 verified | pending |
+| `jingqing/zuijiu-lei.html` | 醉酒类警情处置基础 | 0 | 0/0 verified | pending |
+| `jingqing/chidao-lei.html` | 持刀类警情处置基础 | 0 | 0/0 verified | pending |
+| `jingqing/zishang-lei.html` | 自伤类警情处置基础 | 0 | 0/0 verified | pending |
+| `jingqing/jingshen-zhangai-lei.html` | 精神障碍类警情处置基础 | 0 | 0/0 verified | pending |
+| `jingqing/shebao-lei.html` | 涉爆类警情处置基础 | 0 | 0/0 verified | pending |
+| `fagui/shenfen-mudi-shuoming.html` | 表明身份与说明目的 | 0 | 0/0 verified | pending |
+| `fagui/pancha-guifan-goutong.html` | 盘查中的规范沟通 | 0 | 0/0 verified | pending |
+| `fagui/zhiyi-yifa-huiying.html` | 面对质疑时的依法回应 | 0 | 0/0 verified | pending |
+| `fagui/weiguan-paishe-zhixu.html` | 围观拍摄与现场秩序引导 | 0 | 0/0 verified | pending |
+| `fagui/quanli-yiwu-gaozhi.html` | 权利义务和法律后果告知 | 0 | 0/0 verified | pending |
+| `fagui/panwen-shenfenzheng.html` | 盘问检查与身份证查验 | 0 | 0/0 verified | pending |
+| `fagui/chuanhuan-qiangzhi-chuanhuan.html` | 传唤和强制传唤 | 0 | 0/0 verified | pending |
+| `fagui/jingxie-shiyong-chengxu.html` | 警械使用的条件与程序 | 0 | 0/0 verified | pending |
+| `fagui/xingzheng-anji-tiaocha.html` | 行政案件调查取证 | 0 | 0/0 verified | pending |
+| `fagui/zhifa-jilu-quanli.html` | 执法记录与权利保障 | 0 | 0/0 verified | pending |
+| `fagui/zhian-guanli-chufa-fa.html` | 中华人民共和国治安管理处罚法 | 0 | 0/0 verified | pending |
+| `fagui/renmin-jingcha-fa.html` | 中华人民共和国人民警察法 | 0 | 0/0 verified | pending |
+| `fagui/jumin-shenfenzheng-fa.html` | 中华人民共和国居民身份证法 | 0 | 0/0 verified | pending |
+| `fagui/xingzheng-anji-chengxu-guiding.html` | 公安机关办理行政案件程序规定 | 0 | 0/0 verified | pending |
+| `fagui/jingxie-wuqi-tiaoli.html` | 中华人民共和国人民警察使用警械和武器条例 | 0 | 0/0 verified | pending |
+| `fagui/xianchang-zhizhi-guicheng.html` | 现场制止违法犯罪行为操作规程 | 0 | 0/0 verified | pending |
+| `fagui/qita-xiangguan-guifan.html` | 其他日常巡逻与安保规范 | 0 | 0/0 verified | pending |
+| `zoufang/neiwu-tiaoling.html` | 人民警察内务规范 | 0 | 0/0 verified | pending |
+| `zoufang/jilv-yaoqiu.html` | 纪律要求 | 0 | 0/0 verified | pending |
+| `zoufang/baomi-xinxi-anquan.html` | 保密与信息安全 | 0 | 0/0 verified | pending |
+| `zoufang/shejiu-yanqing-guanli.html` | 涉酒及违规宴请管理要求 | 0 | 0/0 verified | pending |
+| `zoufang/zhifa-jilu-ziliao-guanli.html` | 执法记录和工作资料管理 | 0 | 0/0 verified | pending |
+| `zoufang/tineng-kaohe.html` | 体能考核要求 | 0 | 0/0 verified | pending |
+| `zoufang/jichu-jingwu-kaohe.html` | 基础警务技能考核 | 0 | 0/0 verified | pending |
+| `zoufang/xiaozu-xietong-kaohe.html` | 小组协同技能考核 | 0 | 0/0 verified | pending |
+| `zoufang/kaohe-anquan-buce.html` | 考核安全、记录与补测 | 0 | 0/0 verified | pending |
+| `zoufang/danwei-youxiu-kecheng.html` | 单位优秀课程 | 0 | 0/0 verified | pending |
+| `zoufang/shiju-youxiu-kecheng.html` | 市局优秀课程 | 0 | 0/0 verified | pending |
+| `zoufang/chuangxin-xunlian-fangfa.html` | 创新训练方法 | 0 | 0/0 verified | pending |
+| `zoufang/kecheng-ziliao-jiaoliu.html` | 课程资料使用与交流规范 | 0 | 0/0 verified | pending |
+| `meiyueyixue/2026-07.html` | 执法现场风险评估 — 本月精选 — 巡防百科 | 0 | 0/0 verified | pending |
 
 ## Knowledge points
 
@@ -235,3 +320,20 @@ This report records public-web similarity coverage. It does not approve content 
 | `src-zoufang-campus-drill-bbmu` | 学校联合市反恐支队开展校园反恐防暴应急模拟演练与测评考核 | 蚌埠医科大学 | 蚌埠医科大学 | 2024-05-14 | verified | 2026-07-15 | 2026-07-15 | 高校公开报道覆盖一键报警、爆炸物和持刀场景、警戒撤离搜索、防暴器材、多向包抄、周旋、劝阻和制止、培训与测评。 | [original](https://www.bbmu.edu.cn/info/1040/37073.htm) |
 | `src-zoufang-public-security-law-2025` | 中华人民共和国治安管理处罚法 | 全国人民代表大会常务委员会 | 国家市场监督管理总局 | 2025-06-27 | verified | 2026-07-15 | 2026-07-15 | 国家机关公开的法律正文涉及学生欺凌、学校报告处置责任以及未成年人行政拘留执行例外。 | [original](https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/bgt/art/2025/art_8a1c722747214869b28c0ad7a0f8bb7a.html) |
 | `src-zoufang-campus-security-plan-anyang` | 关于2021年推动落实全市中小学幼儿园安全防范建设三年行动实施方案的通知 | 安阳县教育局 | 安阳县人民政府 | 2021-01-31 | verified | 2026-07-15 | 2026-07-15 | 政府网站公开方案覆盖校园安全主体责任、封闭管理、门卫查验、一键报警、警校联防演练、保安队伍及盾叉等防护装备。 | [original](https://www.ayx.gov.cn/2023/01-04/3338957.html) |
+| `official-jinzhou-police-water-rescue-drill-2026` | 锦州市公安局巡特警硬核上演防汛救援“大练兵” | 锦州市公安局 | 锦州市人民政府门户网站 | 2026-07-03 | verified | 2026-07-19 | 2026-07-19 | 公安机关公开演练正文涉及水域救援装备使用和防汛救援训练场景。 | [original](https://www.jz.gov.cn/info/1024/127327.htm) |
+| `official-fuxin-police-patrol-equipment-standards` | 交通警察道路执勤执法工作规范 | 阜新市公安局 | 阜新市公安局 | — | verified | 2026-07-19 | 2026-07-19 | 公安机关公开材料涉及巡逻执勤装备配备标准和现场处置规范。 | [original](https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668) |
+| `official-mps-prohibition-drinking-banquet` | 公安部关于严禁违规宴请饮酒的规定（公开转载） | 公安部 | 石家庄市公安局 | 2022-04-29 | verified | 2026-07-19 | 2026-07-19 | 公安机关公开转载的公安部内部纪律规定，涉及违规宴请饮酒的禁止性要求。 | [original](https://gaj.sjz.gov.cn/columns/0a9c92b2-97b8-4284-9bd7-6240c789c0bf/202204/29/1c7b0edf-6eec-4110-a397-d1a4828b68d4.html) |
+| `official-fire-protection-law-2025` | 中华人民共和国消防法 | 全国人民代表大会常务委员会 | 贵州省消防救援总队 | 2025-03-03 | verified | 2026-07-19 | 2026-07-19 | 国家法律正文规定消防安全责任、消防装备配备和火灾应急处置要求。 | [original](https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html) |
+| `official-road-traffic-safety-law-2021` | 中华人民共和国道路交通安全法（2021年修订） | 全国人民代表大会常务委员会 | 北京市公安局公安交通管理局 | 2021-04-29 | verified | 2026-07-19 | 2026-07-19 | 国家法律正文规定道路交通安全管理、执勤执法和事故处理程序。 | [original](https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/fl/205308/index.html) |
+| `official-police-internal-affairs-order-2022` | 公安机关人民警察内务条令（公安部令第161号） | 公安部 | 中国政府网国务院公报 | 2022-01-20 | verified | 2026-07-19 | 2026-07-19 | 部门规章正文规定公安机关人民警察内务管理、纪律要求和行为规范。 | [original](https://www.gov.cn/gongbao/content/2022/content_5671112.htm) |
+| `official-police-discipline-regulation-2010` | 公安机关人民警察纪律条令 | 公安部 | 中华人民共和国司法部 | 2010-07-28 | verified | 2026-07-19 | 2026-07-19 | 部门规章正文规定公安机关人民警察的纪律要求和违规处理程序。 | [original](https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/201007/t20100728_144862.html) |
+| `official-police-training-regulation-2025` | 公安机关人民警察训练条令（2025年施行） | 公安部 | 中华人民共和国司法部 | 2025-10-21 | verified | 2026-07-19 | 2026-07-19 | 部门规章正文规定公安机关人民警察训练组织、内容、考核和管理要求。 | [original](https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html) |
+| `official-mental-health-law-2012` | 中华人民共和国精神卫生法 | 全国人民代表大会常务委员会 | 国家卫生健康委员会 | 2018-08-01 | verified | 2026-07-19 | 2026-07-19 | 国家法律正文规定精神障碇的诊断、治疗、康复及与治安管理衔接的内容。 | [original](https://www.nhc.gov.cn/fzs/c100048/201808/5d03e37b37c944b08d701a0b5722160a.shtml) |
+| `official-state-secrets-law-2024` | 中华人民共和国保守国家秘密法（2024年修订） | 全国人民代表大会常务委员会 | 中国人大网 | 2024-02-27 | verified | 2026-07-19 | 2026-07-19 | 国家法律正文规定国家秘密范围、保密义务、保密审查和法律责任。 | [original](https://www.npc.gov.cn/npc/c2/c30834/202402/t20240227_434859.html) |
+| `official-public-security-law-2025` | 中华人民共和国治安管理处罚法（2025年修订） | 全国人民代表大会常务委员会 | 中国人大网 | 2025-06-27 | verified | 2026-07-19 | 2026-07-19 | 现行法律全文规定治安违法行为、处罚种类、程序和执法监督要求。 | [original](https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html) |
+| `official-zhenyuan-police-vehicle-impact-training-2022` | 镇原县公安局组织开展“防车辆冲撞”最小作战单元专项训练 | 镇原县公安局 | 庆阳政法网 | 2022-10-11 | verified | 2026-07-19 | 2026-07-19 | 公安机关公开训练正文涉及防车辆冲撞、最小作战单元装备使用和战术配合。 | [original](https://www.qyswzfw.gov.cn/Show/286341) |
+| `official-civil-explosives-safety-regulation` | 民用爆炸物品安全管理条例 | 国务院 | 国家行政法规库 | 2006-09-01 | verified | 2026-07-19 | 2026-07-19 | 行政法规正文规定民用爆炸物品生产、销售、运输、储存和使用的安全管理要求。 | [original](https://xzfg.moj.gov.cn/front/law/detail?LawID=165&Query=) |
+| `official-large-event-security-regulation` | 大型群众性活动安全管理条例（国务院令第505号） | 国务院 | 国家法律法规数据库 | 2007-10-01 | verified | 2026-07-19 | 2026-07-19 | 行政法规正文规定大型群众性活动安全许可、主体责任、安保措施和应急处置要求。 | [original](https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B) |
+| `official-anqing-police-water-rescue-training` | 以练为战！全市公安机关涉水警情专项培训圆满收官 | 安庆市公安局 | 安庆市公安局 | 2024-04-01 | verified | 2026-07-19 | 2026-07-19 | 公安机关公开培训材料涉及救生衣、救生绳等水域救援装备的配备要求和实战使用规范。 | [original](https://gaj.anqing.gov.cn/jwzx/gayw/2004121927.html) |
+| `official-jinan-police-cordon-procurement-2025` | 济南铁路公安局济南公安处购买警用围挡（伞式及四面折叠）成交结果公告 | 济南铁路公安局 | 山东省公共资源交易中心 | 2025-11-26 | verified | 2026-07-19 | 2026-07-19 | 政府采购公告正文涉及伞式和折叠式警用围挡的技术规格和采购标准。 | [original](https://ggzyjyzx.shandong.gov.cn/art/2025/11/26/art_209488_11087607.html) |
+| `official-mem-rainy-heat-2026` | 汛期高温叠加，这些安全常识必知 | 应急管理部 | 中华人民共和国应急管理部 | 2026-07-20 | verified | 2026-08-02 | 2026-08-02 | 公开资料用于核验汛期与高温叠加时的安全风险提示；本站文章仅作巡防先期处置与协同边界的原创归纳。 | [original](https://www.mem.gov.cn/kp/zrzh/) |
