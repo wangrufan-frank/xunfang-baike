@@ -187,6 +187,20 @@ class HostingConfigTests(unittest.TestCase):
 
 
 class NavigationStructureTests(unittest.TestCase):
+    def test_monthly_issue_keeps_july_archive_and_selects_august(self):
+        data = (ROOT / "meiyueyixue" / "data.js").read_text(encoding="utf-8")
+        current = (ROOT / "meiyueyixue" / "index.html").read_text(encoding="utf-8")
+        archive = ROOT / "meiyueyixue" / "2026-07.html"
+
+        self.assertIn('current: "2026-08"', data)
+        self.assertIn('"2026-07"', data)
+        self.assertIn('"2026-08"', data)
+        self.assertIn('2026-07.html', data)
+        self.assertTrue(archive.is_file())
+        self.assertIn('data-monthly-issue="2026-08"', current)
+        self.assertIn('汛期高温叠加：巡防现场风险识别', current)
+        self.assertIn('data-monthly-issue="2026-07"', archive.read_text(encoding="utf-8"))
+
     def test_home_and_nav_use_exact_six_modules_in_display_order(self):
         home = (ROOT / "index.html").read_text(encoding="utf-8")
         nav = (ROOT / "js" / "nav.js").read_text(encoding="utf-8")

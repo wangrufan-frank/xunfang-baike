@@ -2946,6 +2946,15 @@
       "review_status": "pending",
       "reviewed_by": null,
       "reviewed_at": null
+    },
+    {
+      "page_id": "meiyueyixue-2026-07",
+      "path": "meiyueyixue/2026-07.html",
+      "title": "执法现场风险评估 — 本月精选 — 巡防百科",
+      "review_status": "pending",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "points": []
     }
   ],
   "sources": [
@@ -3507,6 +3516,19 @@
       "similarity_note": "政府采购公告正文涉及伞式和折叠式警用围挡的技术规格和采购标准。",
       "source_level": 2,
       "last_checked_at": "2026-07-19"
+    },
+    {
+      "source_id": "official-mem-rainy-heat-2026",
+      "title": "汛期高温叠加，这些安全常识必知",
+      "publisher": "应急管理部",
+      "platform": "中华人民共和国应急管理部",
+      "url": "https://www.mem.gov.cn/kp/zrzh/",
+      "published_at": "2026-07-20",
+      "verified_at": "2026-08-02",
+      "verification_status": "verified",
+      "similarity_note": "公开资料用于核验汛期与高温叠加时的安全风险提示；本站文章仅作巡防先期处置与协同边界的原创归纳。",
+      "source_level": 1,
+      "last_checked_at": "2026-08-02"
     }
   ]
 }

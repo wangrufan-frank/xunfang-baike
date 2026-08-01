@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-label="雨云、高温太阳与巡防标识">
+  <rect width="800" height="480" fill="#e8eef2"/>
+  <circle cx="650" cy="125" r="62" fill="#f28c28"/>
+  <g stroke="#f28c28" stroke-width="10" stroke-linecap="round"><path d="M650 38v-25M650 237v-25M563 125h-25M737 125h25M588 63l-18-18M712 187l18 18M712 63l18-18M588 187l-18 18"/></g>
+  <path d="M105 235c0-47 39-85 87-85 20 0 38 7 53 19 18-40 58-67 104-67 62 0 113 48 117 109 44 1 79 37 79 82H105z" fill="#637886"/>
+  <g stroke="#51758c" stroke-width="9" stroke-linecap="round"><path d="M195 270l-20 56M285 270l-20 56M375 270l-20 56M465 270l-20 56"/></g>
+  <g transform="translate(570 290)"><path d="M80 0l65 25v62c0 45-30 78-65 96C45 165 15 132 15 87V25L80 0z" fill="#294b61"/><circle cx="80" cy="72" r="25" fill="#e8eef2"/><path d="M80 100v40M53 120h54" stroke="#e8eef2" stroke-width="12" stroke-linecap="round"/></g>
+</svg>
