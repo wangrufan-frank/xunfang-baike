@@ -118,6 +118,7 @@ class TrainingContentTests(unittest.TestCase):
         self.assertEqual(15, len(records))
         self.assertEqual(7, sum(record["category"] == "单兵技能训练" for record in records))
         self.assertEqual(6, sum(record["category"] == "小组协同训练" for record in records))
+        self.assertEqual(2, sum(record["category"] == "伤员救助" for record in records))
         for record in records:
             assert_article_contract(self, record)
 
