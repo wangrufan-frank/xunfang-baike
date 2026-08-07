@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-17",
+  "updated_at": "2026-08-07",
   "modules": [
     {
       "slug": "zhuangbei",
@@ -645,8 +645,8 @@
           "public_sources": [
             "https://www.nhc.gov.cn/wjw/c100175/202112/335e760effd9434880c8eb950fddd7cd.shtml",
             "https://www.redcross.org.cn/html/2025-07/108778.html",
-            "http://myredcross.cn/go-a69544.htm",
-            "http://www.gfx.gov.cn/gfx/c116689/202401/c0290bcd5c234d1db0c390d3affade21.shtml"
+            "https://myredcross.cn/go-a69544.htm",
+            "https://www.gfx.gov.cn/gfx/c116689/202401/c0290bcd5c234d1db0c390d3affade21.shtml"
           ],
           "images": [],
           "related_pages": [
@@ -1392,8 +1392,8 @@
             "E:\\frank知识库\\03_Knowledge\\警务技能\\伤员救助与急救\\AED使用步骤.md"
           ],
           "public_sources": [
-            "http://www.gfx.gov.cn/gfx/c116689/202401/19e106ce6f48408da5eb728a825b7833.shtml",
-            "http://society.people.com.cn/n1/2025/0807/c1008-40538214.html",
+            "https://www.gfx.gov.cn/gfx/c116689/202401/19e106ce6f48408da5eb728a825b7833.shtml",
+            "https://society.people.com.cn/n1/2025/0807/c1008-40538214.html",
             "https://www.bjredcross.org.cn/contents/2023122718643.html",
             "https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=669273"
           ],
@@ -1423,8 +1423,8 @@
           "public_sources": [
             "https://www.ynredcross.cn/cnx/article.jsp?id=64559&itemId=185",
             "https://www.ynredcross.cn/cxs/article.jsp?id=61841&itemId=185",
-            "http://www.bdredcross.org.cn/smartcore/web/bdhsz/hszydcs/2c9f7bd08cb813000191daea3aef4cff.htm",
-            "http://www.zaozhuangredcross.org.cn/yingji/news/shown-2774"
+            "https://www.bdredcross.org.cn/smartcore/web/bdhsz/hszydcs/2c9f7bd08cb813000191daea3aef4cff.htm",
+            "https://www.zaozhuangredcross.org.cn/yingji/news/shown-2774"
           ],
           "images": [],
           "related_pages": [
@@ -1572,8 +1572,8 @@
           "public_sources": [
             "https://app.mps.gov.cn/gdnps/pc/content.jsp?id=8374334",
             "https://www.cdqingyang.gov.cn/qygafj/bmwj/2017-03/20/content_302d6c912d6e488a86797306e869c613.shtml",
-            "http://gat.hebei.gov.cn/default.php?mod=article&do=detail&tid=20430",
-            "http://politics.people.com.cn/BIG5/n1/2016/0727/c1001-28587279.html"
+            "https://gat.hebei.gov.cn/default.php?mod=article&do=detail&tid=20430",
+            "https://politics.people.com.cn/BIG5/n1/2016/0727/c1001-28587279.html"
           ],
           "images": [],
           "related_pages": [
@@ -2273,7 +2273,7 @@
           "public_sources": [
             "https://www.nhc.gov.cn/wjw/c100175/202112/335e760effd9434880c8eb950fddd7cd.shtml",
             "https://www.yueqing.gov.cn/art/2024/10/29/art_1229145291_2035691.html",
-            "http://wsjkj.guiyang.gov.cn/zfxxgk_500627/fdzdgknr/lzyj/bmwj/202604/t20260413_89993587.html",
+            "https://wsjkj.guiyang.gov.cn/zfxxgk_500627/fdzdgknr/lzyj/bmwj/202604/t20260413_89993587.html",
             "https://cdwjw.chengdu.gov.cn/cdwjw/zcjd/2026-01/20/content_21eb66e0a8404977ab7982eac3c586ce.shtml"
           ],
           "images": [],
