@@ -1,6 +1,7 @@
 // js/nav.js
 (function() {
   var MODULES = [
+    { name: '更新记录', path: 'changelog.html', emoji: '📝', featured: true },
     { name: '警情处置', path: 'jingqing/index.html', emoji: '🚨' },
     { name: '勤务须知', path: 'qinwu/index.html', emoji: '📋' },
     { name: '执法规范', path: 'fagui/index.html', emoji: '📕' },
@@ -55,7 +56,9 @@
         isActive = path.indexOf('/' + moduleDir + '/') !== -1
                || path.endsWith('/' + moduleDir);
       }
-      var cls = (m.special ? 'monthly-link' : '') + (isActive ? ' active' : '');
+      var cls = (m.featured ? 'changelog-link' : '')
+             + (m.special ? 'monthly-link' : '')
+             + (isActive ? ' active' : '');
       var clsStr = cls.trim();
       return '<a href="' + href + '"' + (clsStr ? ' class="' + clsStr + '"' : '') + '>'
            + m.emoji + ' ' + m.name + '</a>';
