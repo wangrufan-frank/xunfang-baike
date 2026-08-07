@@ -12,8 +12,8 @@ SPEC.loader.exec_module(MODULE)
 class SearchIndexTests(unittest.TestCase):
     def test_index_matches_all_inventory_articles(self):
         records = MODULE.build_index(ROOT)
-        self.assertEqual(87, len(records))
-        self.assertEqual(87, len({record["path"] for record in records}))
+        self.assertEqual(93, len(records))
+        self.assertEqual(93, len({record["path"] for record in records}))
         self.assertFalse(any(record["path"].startswith("rumen/") for record in records))
         self.assertEqual([], MODULE.check_index(ROOT, records))
 

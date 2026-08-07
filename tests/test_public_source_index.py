@@ -59,7 +59,7 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
         # rebuild, and the rebuilt articles carry no step-title markup, so
         # discovery still sees all pages but zero extractable points.
         pages = MODULE.discover_pages(ROOT)
-        self.assertEqual(len(pages), 112)
+        self.assertEqual(len(pages), 118)
         counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0, 'jingqing': 0, 'qinwu': 0, 'meiyueyixue': 0}
         point_counts = {'fagui': 0, 'xunlian': 0, 'zhuangbei': 0, 'zoufang': 0, 'jingqing': 0, 'qinwu': 0, 'meiyueyixue': 0}
         point_count = 0
@@ -72,7 +72,7 @@ class PublicSourceIndexUnitTests(unittest.TestCase):
             point_count += page_point_count
         self.assertEqual(
             counts,
-            {'fagui': 23, 'xunlian': 24, 'zhuangbei': 30, 'zoufang': 16, 'jingqing': 5, 'qinwu': 13, 'meiyueyixue': 1},
+            {'fagui': 23, 'xunlian': 26, 'zhuangbei': 32, 'zoufang': 17, 'jingqing': 6, 'qinwu': 13, 'meiyueyixue': 1},
         )
         self.assertEqual(
             point_counts,
@@ -325,7 +325,7 @@ class PublicSourceLedgerInventoryTests(unittest.TestCase):
     def test_ledger_covers_every_current_page_and_point(self):
         errors = MODULE.validate_ledger(ROOT, self.ledger, allow_pending=True)
         self.assertEqual(errors, [])
-        self.assertEqual(len(self.ledger['pages']), 112)
+        self.assertEqual(len(self.ledger['pages']), 118)
         self.assertEqual(
             sum(len(page.get('points', [])) for page in self.ledger['pages']), 153
         )
@@ -432,12 +432,12 @@ class PublicSourceIndexCliTests(unittest.TestCase):
     def test_inventory_command_reports_current_counts(self):
         result = self.run_cli('inventory')
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('112 pages, 0 points', result.stdout)
+        self.assertIn('118 pages, 0 points', result.stdout)
         self.assertIn('fagui: 23 pages, 0 points', result.stdout)
-        self.assertIn('xunlian: 24 pages, 0 points', result.stdout)
-        self.assertIn('zhuangbei: 30 pages, 0 points', result.stdout)
-        self.assertIn('zoufang: 16 pages, 0 points', result.stdout)
-        self.assertIn('jingqing: 5 pages, 0 points', result.stdout)
+        self.assertIn('xunlian: 26 pages, 0 points', result.stdout)
+        self.assertIn('zhuangbei: 32 pages, 0 points', result.stdout)
+        self.assertIn('zoufang: 17 pages, 0 points', result.stdout)
+        self.assertIn('jingqing: 6 pages, 0 points', result.stdout)
         self.assertIn('qinwu: 13 pages, 0 points', result.stdout)
         self.assertIn('meiyueyixue: 1 pages, 0 points', result.stdout)
 
@@ -449,7 +449,7 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             ledger = MODULE.load_ledger(output)
 
         self.assertIn(
-            'Wrote 112 pages and 0 points; all coverage statuses are pending.',
+            'Wrote 118 pages and 0 points; all coverage statuses are pending.',
             result.stdout,
         )
         self.assertEqual(MODULE.validate_ledger(ROOT, ledger, allow_pending=True), [])
@@ -482,7 +482,7 @@ class PublicSourceIndexCliTests(unittest.TestCase):
         result = self.run_cli('check', '--allow-pending')
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn(
-            'PASS: 112 pages, 153 points; '
+            'PASS: 118 pages, 153 points; '
             f'{pending_count} points pending source verification.',
             result.stdout,
         )
@@ -577,7 +577,7 @@ class PublicSourceIndexCliTests(unittest.TestCase):
         result = self.run_cli('write', '--check')
 
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn('CHECK: 0 of 112 pages would change.', result.stdout)
+        self.assertIn('CHECK: 0 of 118 pages would change.', result.stdout)
 
     def test_report_writes_audit_markdown(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -588,9 +588,9 @@ class PublicSourceIndexCliTests(unittest.TestCase):
             report = output.read_text(encoding='utf-8')
 
         self.assertIn('# Public Source Index Audit', report)
-        self.assertIn('112 pages, 153 points', report)
+        self.assertIn('118 pages, 153 points', report)
         self.assertIn('Coverage verified | 153', report)
-        self.assertIn('Review pending | 112', report)
+        self.assertIn('Review pending | 118', report)
         self.assertIn('fagui/dubo-zhifa.html', report)
         self.assertIn('Similarity note', report)
         self.assertIn('Last checked', report)

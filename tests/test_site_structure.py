@@ -5,12 +5,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 INVENTORY_PATH = ROOT / "data" / "content-inventory.json"
 EXPECTED_COUNTS = {
-    "zhuangbei": 26,
+    "zhuangbei": 28,
     "qinwu": 13,
-    "xunlian": 13,
-    "jingqing": 5,
+    "xunlian": 15,
+    "jingqing": 6,
     "fagui": 17,
-    "zoufang": 13,
+    "zoufang": 14,
 }
 
 DISPLAY_MODULES = [
@@ -65,8 +65,8 @@ class ContentInventoryTests(unittest.TestCase):
         }
         self.assertEqual(EXPECTED_COUNTS, counts)
         paths = [record["path"] for record in article_records()]
-        self.assertEqual(87, len(paths))
-        self.assertEqual(87, len(set(paths)))
+        self.assertEqual(93, len(paths))
+        self.assertEqual(93, len(set(paths)))
 
     def test_inventory_records_have_required_fields(self):
         required = {
@@ -86,7 +86,7 @@ class ContentInventoryTests(unittest.TestCase):
 class EquipmentContentTests(unittest.TestCase):
     def test_all_equipment_pages_follow_article_contract(self):
         records = article_records("zhuangbei")
-        self.assertEqual(26, len(records))
+        self.assertEqual(28, len(records))
         for record in records:
             assert_article_contract(self, record)
 
@@ -115,7 +115,7 @@ class DutyContentTests(unittest.TestCase):
 class TrainingContentTests(unittest.TestCase):
     def test_all_training_pages_follow_article_contract(self):
         records = article_records("xunlian")
-        self.assertEqual(13, len(records))
+        self.assertEqual(15, len(records))
         self.assertEqual(7, sum(record["category"] == "单兵技能训练" for record in records))
         self.assertEqual(6, sum(record["category"] == "小组协同训练" for record in records))
         for record in records:
@@ -125,10 +125,15 @@ class TrainingContentTests(unittest.TestCase):
 class IncidentContentTests(unittest.TestCase):
     def test_all_incident_pages_follow_article_contract(self):
         records = article_records("jingqing")
-        self.assertEqual(5, len(records))
+        self.assertEqual(6, len(records))
         for record in records:
             assert_article_contract(self, record)
             html = (ROOT / record["path"]).read_text(encoding="utf-8")
+            if record["slug"] == "jiuzhu-lei-jingqing-chuzhi":
+                # 处置流程文章采用环节式结构，不套用基础处置模板
+                for heading in ["处置原则", "舆情管控", "现场评估", "呼救", "先期救助", "现场保护", "交接记录"]:
+                    self.assertIn(heading, html, record["path"])
+                continue
             for heading in ["任务确认", "风险分析", "到场", "人员保护", "法律边界", "记录报告", "禁止性事项"]:
                 self.assertIn(heading, html, record["path"])
 
@@ -156,7 +161,7 @@ class LegalContentTests(unittest.TestCase):
 class EducationContentTests(unittest.TestCase):
     def test_all_education_pages_follow_article_contract(self):
         records = article_records("zoufang")
-        self.assertEqual(13, len(records))
+        self.assertEqual(14, len(records))
         for record in records:
             assert_article_contract(self, record)
 
