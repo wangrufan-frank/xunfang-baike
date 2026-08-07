@@ -2,7 +2,7 @@
 (function() {
   function escapeHtml(str) {
     return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;')
-      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
   }
   function render(updates) {
     var listEl = document.getElementById('changelog-list');

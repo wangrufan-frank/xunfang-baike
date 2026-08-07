@@ -838,7 +838,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   gap: 14px;
 }
 .changelog-entry {
-  border: 1px solid var(--text-muted);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 16px 18px;
   background: var(--card-bg);
