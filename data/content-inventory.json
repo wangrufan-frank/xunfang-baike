@@ -1557,7 +1557,16 @@
             "https://www.bjredcross.org.cn/contents/2023122718643.html",
             "https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=669273"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/心肺复苏操作示意图.jpg",
+              "alt": "心肺复苏（CPR）操作示意",
+              "caption": "心肺复苏（CPR）操作示意（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://www.shendoow.com/uploads/allimg/19/xin-fu-fu-su-cpr-3.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/aed-shiyong.html",
             "xunlian/zhixue-baozha-banyun.html",
