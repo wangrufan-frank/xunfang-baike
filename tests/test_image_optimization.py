@@ -52,3 +52,25 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             asset.update({"source_status": "external", "source_url": "", "publisher": "", "accessed_at": "bad", "license": ""})
             plan_path.write_text(json.dumps(plan, ensure_ascii=False), encoding="utf-8")
             self.assertTrue(any("external asset" in error for error in validate_plan(root)))
+
+    def test_plan_rejects_external_url_without_hostname(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(ROOT / "data", root / "data")
+            plan_path = root / "data/image-optimization-plan.json"
+            plan = json.loads(plan_path.read_text(encoding="utf-8"))
+            asset = next(page["assets"][0] for page in plan["pages"] if page["assets"])
+            asset.update({"source_status": "external", "source_url": "https://", "publisher": "source", "accessed_at": "2026-08-10", "license": "CC-BY"})
+            plan_path.write_text(json.dumps(plan, ensure_ascii=False), encoding="utf-8")
+            self.assertTrue(any("external asset" in error for error in validate_plan(root)))
+
+    def test_validators_report_malformed_path_without_crashing(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(ROOT / "data", root / "data")
+            plan_path = root / "data/image-optimization-plan.json"
+            plan = json.loads(plan_path.read_text(encoding="utf-8"))
+            plan["pages"][0]["path"] = None
+            plan_path.write_text(json.dumps(plan, ensure_ascii=False), encoding="utf-8")
+            self.assertTrue(validate_plan(root))
+            self.assertTrue(validate_runtime(root))

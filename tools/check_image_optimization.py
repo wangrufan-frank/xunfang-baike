@@ -5,6 +5,7 @@ import sys
 import xml.etree.ElementTree as ET
 from datetime import date
 from pathlib import Path
+from urllib.parse import urlparse
 
 DECISIONS = {"keep", "add", "replace", "no-image"}
 VISUAL_TYPES = {"structure-label", "step-flow", "scene-zone", "comparison", "checklist", "legal-relationship"}
@@ -44,13 +45,17 @@ def validate_plan(root, require_complete=False):
         if not isinstance(page, dict):
             errors.append(f"{label}: page must be an object")
             continue
+        path = page.get("path")
+        if not isinstance(path, str) or not path.strip():
+            errors.append(f"{label}: path must be a non-empty string")
+            continue
         if page.get("module") != expected.get(page.get("path")):
             errors.append(f"{label}: module does not match inventory")
         current_images = page.get("current_images")
         if not isinstance(current_images, int) or isinstance(current_images, bool) or current_images < 0:
             errors.append(f"{label}: current_images must be a non-negative integer")
         else:
-            html_path = root / page.get("path", "")
+            html_path = root / path
             if not html_path.exists() or html_path.read_text(encoding="utf-8").count("<img") != current_images:
                 errors.append(f"{label}: current_images does not match HTML")
         if page.get("decision") not in DECISIONS:
@@ -88,7 +93,8 @@ def validate_plan(root, require_complete=False):
                 errors.append(f"{label}: asset accessed_at must be ISO date")
             provenance = (asset["publisher"].strip(), asset["accessed_at"].strip(), asset["license"].strip())
             if source_status == "external":
-                if not asset["source_url"].startswith(("https://", "http://")) or not all(provenance):
+                parsed = urlparse(asset["source_url"])
+                if parsed.scheme not in {"https", "http"} or not parsed.hostname or not all(provenance):
                     errors.append(f"{label}: external asset requires valid provenance")
             elif source_status in {"original", "internal"}:
                 if asset["source_url"].strip() or not all(provenance):
@@ -114,9 +120,16 @@ def validate_runtime(root):
         return [str(exc)]
     errors = []
     for page in pages:
+        if not isinstance(page, dict):
+            errors.append("runtime page must be an object")
+            continue
         if page.get("implementation_status") != "complete":
             continue
-        html_path = root / page["path"]
+        path = page.get("path")
+        if not isinstance(path, str) or not path.strip():
+            errors.append("runtime page path must be a non-empty string")
+            continue
+        html_path = root / path
         html = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
         for asset in page.get("assets", []):
             if asset.get("status") != "complete":
