@@ -15,33 +15,33 @@
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">1</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 92V34l46-22 46 22v58"/><path d="M28 50h14v14H28zM70 50h14v14H70zM48 70h16v22H48z"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">联络更新</text>
-      <text x="18" y="210" class="dark" font-size="15">对接物业安保</text>
-      <text x="18" y="234" class="dark" font-size="15">确认夜间在岗力量</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">联络更新</text>
+      <text x="18" y="208" class="dark" font-size="15">对接物业安保</text>
+      <text x="18" y="232" class="dark" font-size="15">确认夜间在岗力量</text>
     </g><path d="M224 247h20" stroke="#1f6584" stroke-width="4"/><path d="M238 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(244 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">2</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="28" width="92" height="58" rx="10" fill="#fff"/><circle cx="56" cy="57" r="18" fill="#dceeed"/><path d="M24 28l10-14h28l10 14"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">现场核验</text>
-      <text x="18" y="210" class="dark" font-size="15">门岗登记</text>
-      <text x="18" y="234" class="dark" font-size="15">监控值守｜周界车库</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">现场核验</text>
+      <text x="18" y="208" class="dark" font-size="15">门岗登记｜监控值守</text>
+      <text x="18" y="232" class="dark" font-size="15">周界车库</text>
     </g><path d="M440 247h20" stroke="#1f6584" stroke-width="4"/><path d="M454 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(460 124)">
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">3</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="24" y="20" width="64" height="76" rx="8" fill="#fff"/><path d="M72 20L94 4M38 12h30"/><circle cx="56" cy="50" r="12" fill="#dceeed"/><path d="M40 78h32"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">报警联巡</text>
-      <text x="18" y="210" class="dark" font-size="15">测试联络</text>
-      <text x="18" y="234" class="dark" font-size="15">按警情确定路线时段</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">报警联巡</text>
+      <text x="18" y="208" class="dark" font-size="15">测试联络｜按警情确定</text>
+      <text x="18" y="232" class="dark" font-size="15">路线时段</text>
     </g><path d="M656 247h20" stroke="#1f6584" stroke-width="4"/><path d="M670 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(676 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">4</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="12" width="84" height="84" rx="10" fill="#fff"/><path d="M34 54l16 16 34-38"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">整改回访</text>
-      <text x="18" y="210" class="dark" font-size="15">问题、责任、时限入台账</text>
-      <text x="18" y="234" class="dark" font-size="15">下次核验</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">整改回访</text>
+      <text x="18" y="208" class="dark" font-size="15">问题责任时限入台账</text>
+      <text x="18" y="232" class="dark" font-size="15">下次走访逐项核验</text>
     </g>
     <rect x="28" y="394" width="844" height="82" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
     <path d="M50 452l18-34 18 34z" fill="#c85b52"/><text x="62" y="445" class="light" font-size="18" font-weight="700">!</text>

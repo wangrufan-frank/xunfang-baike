@@ -248,6 +248,8 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             self.assertNotIn("http://", svg, relative_path)
             self.assertNotIn("https://", svg, relative_path)
             self.assertNotIn("href=", svg, relative_path)
+            self.assertNotIn("?", svg, f"{relative_path}: replacement character leaked into SVG text")
+            self.assertNotIn("\\n", svg, f"{relative_path}: literal newline escape leaked into SVG markup")
 
     def test_qinwu_svgs_use_explicit_contrast_classes(self):
         for relative_path in NEW_QINWU_SVGS:
@@ -283,6 +285,51 @@ class ImageOptimizationPlanTests(unittest.TestCase):
                     self.assertLessEqual(len(text), 15, f"{relative_path}: mobile card line is too long")
                 if node.get("x") == "50" and node.get("font-size") == "25":
                     self.assertLessEqual(len(text), 30, f"{relative_path}: mobile alert line is too long")
+
+    def test_qinwu_desktop_card_body_lines_fit_their_cards(self):
+        for relative_path in NEW_QINWU_SVGS:
+            root = ET.parse(ROOT / relative_path).getroot()
+            desktop_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "desktop" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(desktop_groups), relative_path)
+            body_lines = [
+                node
+                for node in desktop_groups[0].iter()
+                if node.tag.endswith("text")
+                and node.get("x") == "18"
+                and node.get("font-size") == "15"
+            ]
+            self.assertTrue(body_lines, relative_path)
+            for node in body_lines:
+                self.assertLessEqual(
+                    len((node.text or "").strip()),
+                    11,
+                    f"{relative_path}: desktop card body line is too long",
+                )
+
+    def test_special_event_order_figure_consistently_describes_four_zones(self):
+        page_path = "qinwu/zhuanxiang-xianchang-zhixu.html"
+        asset_path = "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg"
+        svg = (ROOT / asset_path).read_text(encoding="utf-8")
+        html = (ROOT / page_path).read_text(encoding="utf-8")
+        inventory = json.loads((ROOT / "data/content-inventory.json").read_text(encoding="utf-8"))
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        article = next(
+            article
+            for module in inventory["modules"]
+            for article in module["articles"]
+            if article["path"] == page_path
+        )
+        record = next(page for page in plan["pages"] if page["path"] == page_path)
+        self.assertNotIn("三区", svg)
+        self.assertGreaterEqual(svg.count("四区保畅"), 4)
+        self.assertIn("四区保畅", html)
+        self.assertTrue(all("四区" in image[field] for image in article["images"] for field in ("alt", "caption")))
+        self.assertNotIn("三区", record["reason"])
+        self.assertIn("四区", record["assets"][0]["purpose"])
 
     def test_learning_figure_styles_cover_media_caption_mobile_and_print(self):
         css = (ROOT / "css/style.css").read_text(encoding="utf-8")

@@ -15,33 +15,35 @@
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">1</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34L58 8l50 26M16 42h84M22 42v42M44 42v42M70 42v42M94 42v42M10 86h100"/><circle cx="58" cy="26" r="7" fill="#dc8d32"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">联络与技防</text>
-      <text x="18" y="210" class="dark" font-size="15">更新负责人</text>
-      <text x="18" y="234" class="dark" font-size="15">测试一键报警｜查监控死角</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">联络与技防</text>
+      <text x="18" y="196" class="dark" font-size="15">更新负责人</text>
+      <text x="18" y="219" class="dark" font-size="15">测试一键报警</text>
+      <text x="18" y="242" class="dark" font-size="15">查监控死角</text>
     </g><path d="M224 247h20" stroke="#1f6584" stroke-width="4"/><path d="M238 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(244 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">2</text>
       <g transform="translate(43 50)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/><path d="M66 20h36v36H66z" fill="#dceeed" stroke="#17324d" stroke-width="3"/><path d="M72 48l10-10 8 7 12-17" fill="none" stroke="#1f6584" stroke-width="4"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">重点时段联巡</text>
-      <text x="18" y="210" class="dark" font-size="15">营业高峰与押运交接加强观察戒备</text>
-      <text x="18" y="234" class="dark" font-size="15"></text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">重点时段联巡</text>
+      <text x="18" y="208" class="dark" font-size="15">营业高峰与押运交接</text>
+      <text x="18" y="232" class="dark" font-size="15">加强观察戒备</text>
     </g><path d="M440 247h20" stroke="#1f6584" stroke-width="4"/><path d="M454 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(460 124)">
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">3</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M56 6l42 42-42 42L14 48z" fill="#f9d9d3"/><path d="M34 48h44"/><circle cx="56" cy="48" r="18"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">反诈劝阻</text>
-      <text x="18" y="210" class="dark" font-size="15">稳住客户</text>
-      <text x="18" y="234" class="dark" font-size="15">联系民警｜核实后再转账</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">反诈劝阻</text>
+      <text x="18" y="208" class="dark" font-size="15">稳住客户｜联系民警</text>
+      <text x="18" y="232" class="dark" font-size="15">核实后再转账</text>
     </g><path d="M656 247h20" stroke="#1f6584" stroke-width="4"/><path d="M670 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(676 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">4</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M54 10l38 14v28q0 28-38 44Q16 80 16 52V24z" fill="#dceeed"/><path d="M54 30v42M36 51h36"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">暴力警情</text>
-      <text x="18" y="210" class="dark" font-size="15">客户避险</text>
-      <text x="18" y="234" class="dark" font-size="15">不与持械人员纠缠｜保护现场</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">暴力警情</text>
+      <text x="18" y="196" class="dark" font-size="15">客户避险</text>
+      <text x="18" y="219" class="dark" font-size="15">不与持械人员纠缠</text>
+      <text x="18" y="242" class="dark" font-size="15">保护现场</text>
     </g>
     <rect x="28" y="394" width="844" height="82" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
     <path d="M50 452l18-34 18 34z" fill="#c85b52"/><text x="62" y="445" class="light" font-size="18" font-weight="700">!</text>
@@ -58,7 +60,8 @@
       <rect width="410" height="122" rx="16" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="36" cy="38" r="22" fill="#1f6584"/><text x="28" y="47" class="light" font-size="28" font-weight="700">1</text>
       <text x="72" y="44" class="dark" font-size="30" font-weight="700">联络与技防</text>
-      <text x="24" y="82" class="dark" font-size="25">更新负责人 · 测试一</text>\n      <text x="24" y="111" class="dark" font-size="25">键报警 · 查监控死角</text>
+      <text x="24" y="82" class="dark" font-size="25">更新负责人 · 测试一</text>
+      <text x="24" y="111" class="dark" font-size="25">键报警 · 查监控死角</text>
     </g>
 <g transform="translate(460 104)">
       <rect width="410" height="122" rx="16" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
@@ -70,17 +73,20 @@
       <rect width="410" height="122" rx="16" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="36" cy="38" r="22" fill="#1f6584"/><text x="28" y="47" class="light" font-size="28" font-weight="700">3</text>
       <text x="72" y="44" class="dark" font-size="30" font-weight="700">反诈劝阻</text>
-      <text x="24" y="82" class="dark" font-size="25">稳住客户 · 联系民</text>\n      <text x="24" y="111" class="dark" font-size="25">警 · 核实后再转账</text>
+      <text x="24" y="82" class="dark" font-size="25">稳住客户 · 联系民</text>
+      <text x="24" y="111" class="dark" font-size="25">警 · 核实后再转账</text>
     </g>
 <g transform="translate(460 246)">
       <rect width="410" height="122" rx="16" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="36" cy="38" r="22" fill="#d7933d"/><text x="28" y="47" class="light" font-size="28" font-weight="700">4</text>
       <text x="72" y="44" class="dark" font-size="30" font-weight="700">暴力警情</text>
-      <text x="24" y="82" class="dark" font-size="25">客户避险 · 不与持械</text>\n      <text x="24" y="111" class="dark" font-size="25">人员纠缠 · 保护现场</text>
+      <text x="24" y="82" class="dark" font-size="25">客户避险 · 不与持械</text>
+      <text x="24" y="111" class="dark" font-size="25">人员纠缠 · 保护现场</text>
     </g>
     <rect x="28" y="398" width="844" height="112" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
     <text x="50" y="434" class="dark" font-size="27" font-weight="700">紧急分支</text>
-    <text x="50" y="468" class="dark" font-size="25">报警讲清：网点位置、人数体貌、人员伤</text>\n    <text x="50" y="500" class="dark" font-size="25">情、逃离方向；保存监控并同步请求增援</text>
+    <text x="50" y="468" class="dark" font-size="25">报警讲清：网点位置、人数体貌、人员伤</text>
+    <text x="50" y="500" class="dark" font-size="25">情、逃离方向；保存监控并同步请求增援</text>
     <text x="40" y="548" class="dark" font-size="25" font-weight="700">整改闭环：技防故障、器械缺损、制度漏洞明确责任和时限</text>
   </g>
 </svg>

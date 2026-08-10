@@ -15,33 +15,33 @@
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">1</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 30h92v50H10q10-12 0-25 10-13 0-25z" fill="#f8e5c8"/><path d="M62 30v50" stroke-dasharray="6 7"/><circle cx="38" cy="55" r="10"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">票务与安检</text>
-      <text x="18" y="210" class="dark" font-size="15">固定假票证据</text>
-      <text x="18" y="234" class="dark" font-size="15">制止冲闯｜防止积压</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">票务与安检</text>
+      <text x="18" y="208" class="dark" font-size="15">固定假票证据</text>
+      <text x="18" y="232" class="dark" font-size="15">制止冲闯｜防止积压</text>
     </g><path d="M224 247h20" stroke="#1f6584" stroke-width="4"/><path d="M238 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(244 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">2</text>
       <g transform="translate(43 50)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/><g transform="translate(48 6) scale(.75)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/></g><path d="M10 96h96" stroke="#dc8d32" stroke-width="5"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">外场巡控</text>
-      <text x="18" y="210" class="dark" font-size="15">聚集苗头早发现</text>
-      <text x="18" y="234" class="dark" font-size="15">打架双方快分离</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">外场巡控</text>
+      <text x="18" y="208" class="dark" font-size="15">聚集苗头早发现</text>
+      <text x="18" y="232" class="dark" font-size="15">打架双方快分离</text>
     </g><path d="M440 247h20" stroke="#1f6584" stroke-width="4"/><path d="M454 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(460 124)">
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">3</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 90h96M18 90V32h80v58"/><path d="M18 32q40 26 80 0"/><circle cx="58" cy="56" r="12" fill="#dc8d32"/><path d="M36 80l22-12 22 12"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">内场秩序</text>
-      <text x="18" y="210" class="dark" font-size="15">闹场、投物、黑飞依法查控</text>
-      <text x="18" y="234" class="dark" font-size="15"></text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">内场秩序</text>
+      <text x="18" y="208" class="dark" font-size="15">闹场、投物、</text>
+      <text x="18" y="232" class="dark" font-size="15">黑飞依法查控</text>
     </g><path d="M656 247h20" stroke="#1f6584" stroke-width="4"/><path d="M670 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(676 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">4</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="12" width="58" height="82" rx="4"/><path d="M44 54h54M82 38l16 16-16 16"/><circle cx="34" cy="30" r="8" fill="#dc8d32"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">散场分流</text>
-      <text x="18" y="210" class="dark" font-size="15">通道全开</text>
-      <text x="18" y="234" class="dark" font-size="15">交汇处分段单向放行</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">散场分流</text>
+      <text x="18" y="208" class="dark" font-size="15">通道全开｜交汇处分段</text>
+      <text x="18" y="232" class="dark" font-size="15">单向放行</text>
     </g>
     <rect x="28" y="394" width="844" height="82" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
     <path d="M50 452l18-34 18 34z" fill="#c85b52"/><text x="62" y="445" class="light" font-size="18" font-weight="700">!</text>

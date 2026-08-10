@@ -15,33 +15,33 @@
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">1</text>
       <g transform="translate(43 50)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/><path d="M68 10h38v34H82L70 56V44h-2z" fill="#f8e5c8" stroke="#17324d" stroke-width="3"/><circle cx="80" cy="27" r="3" fill="#1f6584"/><circle cx="90" cy="27" r="3" fill="#1f6584"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">接触倾听</text>
-      <text x="18" y="210" class="dark" font-size="15">表明身份</text>
-      <text x="18" y="234" class="dark" font-size="15">了解起因｜不急于定性</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">接触倾听</text>
+      <text x="18" y="208" class="dark" font-size="15">表明身份｜了解起因</text>
+      <text x="18" y="232" class="dark" font-size="15">不急于定性</text>
     </g><path d="M224 247h20" stroke="#1f6584" stroke-width="4"/><path d="M238 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(244 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">2</text>
       <g transform="translate(43 50)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/><g transform="translate(56 0)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/></g><path d="M56 12v82" stroke="#dc8d32" stroke-width="5" stroke-dasharray="8 7"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">分隔保护</text>
-      <text x="18" y="210" class="dark" font-size="15">当事人与围观分开</text>
-      <text x="18" y="234" class="dark" font-size="15">老人儿童先离开</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">分隔保护</text>
+      <text x="18" y="208" class="dark" font-size="15">当事人与围观分开</text>
+      <text x="18" y="232" class="dark" font-size="15">老人儿童先离开</text>
     </g><path d="M440 247h20" stroke="#1f6584" stroke-width="4"/><path d="M454 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(460 124)">
       <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">3</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 88h28V62h28V38h36V14"/><circle cx="24" cy="74" r="8" fill="#5ca295"/><circle cx="52" cy="50" r="8" fill="#dc8d32"/><circle cx="86" cy="26" r="8" fill="#c85b52"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">分级处置</text>
-      <text x="18" y="210" class="dark" font-size="15">先劝告警告</text>
-      <text x="18" y="234" class="dark" font-size="15">无效再依法制止</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">分级处置</text>
+      <text x="18" y="208" class="dark" font-size="15">先劝告警告</text>
+      <text x="18" y="232" class="dark" font-size="15">无效再依法制止</text>
     </g><path d="M656 247h20" stroke="#1f6584" stroke-width="4"/><path d="M670 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
 <g transform="translate(676 124)">
       <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
       <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">4</text>
       <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="24" width="42" height="58" rx="5" fill="#fff"/><rect x="66" y="24" width="42" height="58" rx="5" fill="#fff"/><path d="M48 53h26M64 43l10 10-10 10"/></g>
-      <text x="18" y="178" class="dark" font-size="22" font-weight="700">移交闭环</text>
-      <text x="18" y="210" class="dark" font-size="15">诉求交有权部门</text>
-      <text x="18" y="234" class="dark" font-size="15">证据与人员同步移交</text>
+      <text x="18" y="170" class="dark" font-size="22" font-weight="700">移交闭环</text>
+      <text x="18" y="208" class="dark" font-size="15">诉求交有权部门</text>
+      <text x="18" y="232" class="dark" font-size="15">证据与人员同步移交</text>
     </g>
     <rect x="28" y="394" width="844" height="82" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
     <path d="M50 452l18-34 18 34z" fill="#c85b52"/><text x="62" y="445" class="light" font-size="18" font-weight="700">!</text>
