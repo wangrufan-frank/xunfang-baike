@@ -1,6 +1,6 @@
 <svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
   <title id="title">徒手制止的武力层级判断流程</title>
-  <desc id="desc">流程从态势评估开始，依次经过表明身份与安抚、警告与观察、必要且适度的徒手控制，并强调服从即停止升级。</desc>
+  <desc id="desc">常规流程从态势评估开始，依次经过表明身份与安抚、警告与观察、必要且适度的徒手控制；情况紧急来不及警告或警告可能加剧危害时可直接徒手制止。</desc>
   <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif}.light{fill:#fff}.dark{fill:#18354c}.panel{fill:#fff;stroke:#b9cedc;stroke-width:2}.line{fill:none;stroke:#2c6e9e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
   <rect width="760" height="520" rx="24" fill="#f6fafc"/>
   <g class="desktop">
@@ -22,9 +22,10 @@
     <g transform="translate(545 164)">
       <rect width="180" height="166" rx="18" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="90" cy="45" r="27" fill="#b94c45"/><text x="81" y="55" class="t light" font-size="27" font-weight="700">4</text><text x="35" y="101" class="t dark" font-size="21" font-weight="700">必要时控制</text><text x="31" y="132" class="t dark" font-size="16">适度、依法、可停止</text>
     </g>
-    <rect x="52" y="372" width="656" height="94" rx="16" fill="#eaf4ef" stroke="#8bb9a7" stroke-width="2"/>
-    <text x="78" y="411" class="t dark" font-size="22" font-weight="700">控制目的：安全控制局面，而非击倒对手</text>
-    <text x="78" y="445" class="t dark" font-size="18">对象服从 → 停止升级　｜　控制完成 → 保持戒备与安全距离</text>
+    <rect x="52" y="360" width="656" height="120" rx="16" fill="#eaf4ef" stroke="#8bb9a7" stroke-width="2"/>
+    <text x="78" y="393" class="t dark" font-size="20" font-weight="700">常规：逐级判断；对象服从即停止升级</text>
+    <text x="78" y="426" class="t dark" font-size="19" font-weight="700">紧急例外：来不及警告，或警告可能导致更严重危害</text>
+    <text x="78" y="456" class="t dark" font-size="18">可直接徒手制止；仍须以控制为目的且不超过必要限度</text>
   </g>
   <g class="mobile">
     <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
@@ -35,7 +36,7 @@
       <rect y="164" width="676" height="68" rx="16" class="panel"/><circle cx="43" cy="198" r="24" fill="#d98b2b"/><text x="35" y="207" class="t light" font-size="25" font-weight="700">3</text><text x="84" y="207" class="t dark" font-size="27" font-weight="700">警告并观察｜服从即停止升级</text>
       <rect y="246" width="676" height="68" rx="16" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="43" cy="280" r="24" fill="#b94c45"/><text x="35" y="289" class="t light" font-size="25" font-weight="700">4</text><text x="84" y="289" class="t dark" font-size="27" font-weight="700">必要时控制｜适度、依法、可停止</text>
     </g>
-    <rect x="42" y="446" width="676" height="48" rx="12" fill="#eaf4ef"/>
-    <text x="68" y="479" class="t dark" font-size="25" font-weight="700">目的：安全控制局面，而非击倒对手</text>
+    <rect x="42" y="438" width="676" height="64" rx="12" fill="#eaf4ef"/>
+    <text x="60" y="478" class="t dark" font-size="25" font-weight="700">紧急例外：来不及警告或警告会加剧危害，可直接制止</text>
   </g>
 </svg>

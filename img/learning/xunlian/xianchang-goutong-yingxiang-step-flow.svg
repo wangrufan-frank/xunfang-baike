@@ -1,6 +1,6 @@
 <svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
   <title id="title">现场沟通六层递进体系</title>
-  <desc id="desc">六层语言依次为表明身份、证明身份、口头警告、口头传唤、强制传唤和武力使用警告，强调逐级递进与全程记录。</desc>
+  <desc id="desc">六层语言依次为表明身份、证明身份、口头警告、口头传唤、强制传唤和武力使用警告；紧急时表明身份与口头警告可以合并，但不得完全省略。</desc>
   <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif}.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b9cedc;stroke-width:2}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
   <rect width="760" height="520" rx="24" fill="#f6fafc"/>
   <g class="desktop">
@@ -16,8 +16,8 @@
       <rect x="460" y="112" width="204" height="90" rx="16" fill="#f8e8d3" stroke="#d98b2b" stroke-width="2"/><circle cx="496" cy="157" r="24" fill="#b94c45"/><text x="489" y="166" class="t light" font-size="25" font-weight="700">6</text><text x="536" y="154" class="t dark" font-size="20" font-weight="700">武力使用警告</text><text x="536" y="182" class="t dark" font-size="14">包含无关人员躲避</text>
     </g>
     <rect x="48" y="388" width="664" height="80" rx="16" fill="#eaf4ef"/>
-    <text x="76" y="422" class="t dark" font-size="21" font-weight="700">同步动作：语言层级递进　｜　影像记录不断档</text>
-    <text x="76" y="452" class="t dark" font-size="17">每次升级前完成对应警告；对象服从后停止升级</text>
+    <text x="76" y="418" class="t dark" font-size="20" font-weight="700">常规：逐级递进；每次升级前完成对应警告</text>
+    <text x="76" y="451" class="t dark" font-size="17">紧急例外：表明身份与口头警告可以合并，但不得完全省略</text>
   </g>
   <g class="mobile">
     <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
@@ -30,6 +30,6 @@
       <rect y="248" width="676" height="52" rx="13" class="card"/><circle cx="34" cy="274" r="20" fill="#d98b2b"/><text x="28" y="283" class="t light" font-size="25" font-weight="700">5</text><text x="76" y="283" class="t dark" font-size="26" font-weight="700">强制传唤｜拒绝后的依法告知</text>
       <rect y="310" width="676" height="52" rx="13" fill="#f8e8d3" stroke="#d98b2b" stroke-width="2"/><circle cx="34" cy="336" r="20" fill="#b94c45"/><text x="28" y="345" class="t light" font-size="25" font-weight="700">6</text><text x="76" y="345" class="t dark" font-size="26" font-weight="700">武力警告｜无关人员躲避</text>
     </g>
-    <text x="52" y="493" class="t dark" font-size="25" font-weight="700">逐级递进 · 服从即停 · 全程记录</text>
+    <text x="52" y="493" class="t dark" font-size="25" font-weight="700">紧急：身份说明与口头警告可合并，但不得完全省略</text>
   </g>
 </svg>

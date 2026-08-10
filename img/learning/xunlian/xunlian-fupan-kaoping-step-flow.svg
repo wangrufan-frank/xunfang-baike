@@ -6,7 +6,9 @@
   <g class="desktop">
     <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
     <text x="48" y="64" class="t light" font-size="28" font-weight="700">训练闭环｜复盘不是终点</text>
-    <path d="M197 196h70l-12-12m12 12-12 12M493 196h70l-12-12m12 12-12 12M641 252v97M641 349H119V252" class="line"/>
+    <path d="M197 196h70l-12-12m12 12-12 12M493 196h70l-12-12m12 12-12 12" class="line"/>
+    <path d="M641 252v145H520l12-10m-12 10 12 10" class="line"/>
+    <path d="M240 397H119V252l-10 12m10-12 10 12" class="line"/>
     <rect x="46" y="142" width="151" height="110" rx="18" class="card"/><circle cx="121" cy="179" r="25" fill="#2c6e9e"/><text x="113" y="188" class="t light" font-size="25" font-weight="700">1</text><text x="79" y="226" class="t dark" font-size="21" font-weight="700">训练实施</text>
     <rect x="267" y="116" width="226" height="162" rx="18" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="380" cy="153" r="25" fill="#2f7d73"/><text x="372" y="162" class="t light" font-size="25" font-weight="700">2</text><text x="326" y="197" class="t dark" font-size="22" font-weight="700">五维复盘</text><text x="296" y="229" class="t dark" font-size="16">动作 · 战术 · 沟通</text><text x="326" y="255" class="t dark" font-size="16">时机 · 安全</text>
     <rect x="563" y="142" width="151" height="110" rx="18" class="card"/><circle cx="638" cy="179" r="25" fill="#d98b2b"/><text x="630" y="188" class="t light" font-size="25" font-weight="700">3</text><text x="596" y="226" class="t dark" font-size="21" font-weight="700">训练考评</text>

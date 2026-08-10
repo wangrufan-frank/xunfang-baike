@@ -232,10 +232,21 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             html = (ROOT / page["path"]).read_text(encoding="utf-8")
             image_positions = [match.start() for match in re.finditer(r"<img\b", html)]
             self.assertTrue(image_positions, page["path"])
+            planned_positions = []
+            for asset in page["assets"]:
+                asset_position = html.find(asset["path"])
+                self.assertNotEqual(-1, asset_position, f"{page['path']}: {asset['path']}")
+                planned_positions.append(html.rfind("<img", 0, asset_position))
+            target_positions = planned_positions or image_positions
             for insertion_point in page["insertion_points"]:
+                preceding_distances = [
+                    position - html.rfind(insertion_point, 0, position)
+                    for position in target_positions
+                    if html.rfind(insertion_point, 0, position) >= 0
+                ]
                 self.assertTrue(
-                    any(insertion_point in html[max(0, position - 2500):position] for position in image_positions),
-                    f"{page['path']}: insertion point is not near an image: {insertion_point}",
+                    preceding_distances and min(preceding_distances) <= 2500,
+                    f"{page['path']}: insertion point is not bound to its figure: {insertion_point}",
                 )
 
     def test_plan_rejects_wrong_current_image_count(self):
