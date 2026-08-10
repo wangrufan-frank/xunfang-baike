@@ -66,6 +66,26 @@ NEW_QINWU_SVGS = (
     "img/learning/qinwu/zhuanxiang-xietong-baogao-scene-zone.svg",
 )
 
+FAGUI_SVGS = (
+    "img/learning/fagui/shenfen-mudi-shuoming-learning-map.svg",
+    "img/learning/fagui/pancha-guifan-goutong-learning-map.svg",
+    "img/learning/fagui/zhiyi-yifa-huiying-learning-map.svg",
+    "img/learning/fagui/weiguan-paishe-zhixu-learning-map.svg",
+    "img/learning/fagui/quanli-yiwu-gaozhi-learning-map.svg",
+    "img/learning/fagui/panwen-shenfenzheng-learning-map.svg",
+    "img/learning/fagui/chuanhuan-qiangzhi-chuanhuan-learning-map.svg",
+    "img/learning/fagui/jingxie-shiyong-chengxu-learning-map.svg",
+    "img/learning/fagui/xingzheng-anji-tiaocha-learning-map.svg",
+    "img/learning/fagui/zhifa-jilu-quanli-learning-map.svg",
+    "img/learning/fagui/zhian-guanli-chufa-fa-learning-map.svg",
+    "img/learning/fagui/renmin-jingcha-fa-learning-map.svg",
+    "img/learning/fagui/jumin-shenfenzheng-fa-learning-map.svg",
+    "img/learning/fagui/xingzheng-anji-chengxu-guiding-learning-map.svg",
+    "img/learning/fagui/jingxie-wuqi-tiaoli-learning-map.svg",
+    "img/learning/fagui/xianchang-zhizhi-guicheng-learning-map.svg",
+    "img/learning/fagui/qita-xiangguan-guifan-learning-map.svg",
+)
+
 RETAINED_EQUIPMENT_IMAGE_PAGES = (
     "zhuangbei/jiuxiaojian-gailan.html",
     "zhuangbei/fangge-shoutao.html",
@@ -310,6 +330,67 @@ class ImageOptimizationPlanTests(unittest.TestCase):
                     f"{relative_path}: desktop card body line is too long",
                 )
 
+    def test_fagui_svgs_are_self_contained_accessible_documents(self):
+        for relative_path in FAGUI_SVGS:
+            path = ROOT / relative_path
+            self.assertTrue(path.exists(), relative_path)
+            svg = path.read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertTrue(root.get("viewBox"), relative_path)
+            self.assertTrue(any(node.tag.endswith("title") for node in root), relative_path)
+            self.assertTrue(any(node.tag.endswith("desc") for node in root), relative_path)
+            self.assertNotIn("http://", svg, relative_path)
+            self.assertNotIn("https://", svg, relative_path)
+            self.assertNotIn("href=", svg, relative_path)
+            self.assertNotIn("?", svg, f"{relative_path}: replacement character leaked into SVG text")
+            self.assertNotIn("\\n", svg, f"{relative_path}: literal newline escape leaked into SVG markup")
+
+    def test_fagui_svgs_use_explicit_contrast_classes(self):
+        for relative_path in FAGUI_SVGS:
+            svg = (ROOT / relative_path).read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertIn(".light", svg, relative_path)
+            self.assertIn(".dark", svg, relative_path)
+            for node in (item for item in root.iter() if item.tag.endswith("text")):
+                classes = (node.get("class") or "").split()
+                self.assertTrue({"light", "dark"}.intersection(classes), relative_path)
+
+    def test_fagui_svgs_have_readable_mobile_reflow(self):
+        for relative_path in FAGUI_SVGS:
+            svg = (ROOT / relative_path).read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertIn("@media (max-width:500px)", svg, relative_path)
+            mobile_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "mobile" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(mobile_groups), relative_path)
+            mobile_text = [node for node in mobile_groups[0].iter() if node.tag.endswith("text")]
+            self.assertTrue(mobile_text, relative_path)
+            for node in mobile_text:
+                self.assertGreaterEqual(float(node.get("font-size", "0")), 25, relative_path)
+                if node.get("x") == "24":
+                    self.assertLessEqual(len((node.text or "").strip()), 12, relative_path)
+
+    def test_fagui_desktop_card_body_lines_fit_their_cards(self):
+        for relative_path in FAGUI_SVGS:
+            root = ET.parse(ROOT / relative_path).getroot()
+            desktop_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "desktop" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(desktop_groups), relative_path)
+            body_lines = [
+                node
+                for node in desktop_groups[0].iter()
+                if node.tag.endswith("text") and node.get("data-role") == "body"
+            ]
+            self.assertEqual(8, len(body_lines), relative_path)
+            for node in body_lines:
+                self.assertLessEqual(len((node.text or "").strip()), 8, relative_path)
+
     def test_special_event_order_figure_consistently_describes_four_zones(self):
         page_path = "qinwu/zhuanxiang-xianchang-zhixu.html"
         asset_path = "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg"
@@ -383,6 +464,12 @@ class ImageOptimizationPlanTests(unittest.TestCase):
         self.assertEqual(
             [],
             validate_runtime(ROOT, module="qinwu", require_complete=True),
+        )
+
+    def test_law_and_procedure_image_optimization_is_complete(self):
+        self.assertEqual(
+            [],
+            validate_runtime(ROOT, module="fagui", require_complete=True),
         )
 
     def test_retained_equipment_image_insertion_points_match_nearby_body_text(self):
@@ -460,6 +547,25 @@ class ImageOptimizationPlanTests(unittest.TestCase):
                         2500,
                         f"{page['path']}: insertion point is not bound to its figure: {insertion_point}",
                     )
+
+    def test_every_fagui_image_insertion_point_matches_nearby_body_text(self):
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        law_pages = [page for page in plan["pages"] if page["path"].startswith("fagui/")]
+        self.assertEqual(17, len(law_pages))
+        for page in law_pages:
+            html = (ROOT / page["path"]).read_text(encoding="utf-8")
+            self.assertEqual(1, len(page["assets"]), page["path"])
+            asset_position = html.find(page["assets"][0]["path"])
+            self.assertNotEqual(-1, asset_position, f"{page['path']}: {page['assets'][0]['path']}")
+            image_position = html.rfind("<img", 0, asset_position)
+            for insertion_point in page["insertion_points"]:
+                body_position = html.rfind(insertion_point, 0, image_position)
+                self.assertGreaterEqual(body_position, 0, f"{page['path']}: {insertion_point}")
+                self.assertLessEqual(
+                    image_position - body_position,
+                    2500,
+                    f"{page['path']}: insertion point is not bound to its figure: {insertion_point}",
+                )
 
     def test_plan_rejects_wrong_current_image_count(self):
         with tempfile.TemporaryDirectory() as directory:

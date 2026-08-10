@@ -1792,166 +1792,176 @@
     {
       "path": "fagui/shenfen-mudi-shuoming.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u8868\u660e\u8eab\u4efd\u4e0e\u8bf4\u660e\u76ee\u7684 - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba",
+      "reason": "现场执法开场动作需要清楚衔接，图解帮助学习身份、目的与配合要求的关系",
       "learning_targets": [
-        "\u8868\u660e\u8eab\u4efd\u4e0e\u8bf4\u660e\u76ee\u7684\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba"
+        "出示证件",
+        "表明身份",
+        "说明目的",
+        "提出配合要求"
       ],
       "visual_types": [
-        "legal-relationship"
+        "step-flow"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：表明身份与说明目的"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/shenfen-mudi-shuoming-legal-relationship.svg",
+          "path": "img/learning/fagui/shenfen-mudi-shuoming-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u8868\u660e\u8eab\u4efd\u4e0e\u8bf4\u660e\u76ee\u7684\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "表明身份与说明目的中出示证件、表明身份、说明目的、提出配合要求的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/pancha-guifan-goutong.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u76d8\u67e5\u4e2d\u7684\u89c4\u8303\u6c9f\u901a - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba",
+      "reason": "页面强调以清楚克制的表达推进盘查沟通，图解梳理四个沟通要点",
       "learning_targets": [
-        "\u76d8\u67e5\u4e2d\u7684\u89c4\u8303\u6c9f\u901a\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba"
+        "礼貌称呼",
+        "说明依据",
+        "清晰提问",
+        "回应疑问"
       ],
       "visual_types": [
-        "legal-relationship"
+        "step-flow"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：盘查中的规范沟通"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/pancha-guifan-goutong-legal-relationship.svg",
+          "path": "img/learning/fagui/pancha-guifan-goutong-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u76d8\u67e5\u4e2d\u7684\u89c4\u8303\u6c9f\u901a\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "盘查中的规范沟通中礼貌称呼、说明依据、清晰提问、回应疑问的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/zhiyi-yifa-huiying.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u9762\u5bf9\u8d28\u7591\u65f6\u7684\u4f9d\u6cd5\u56de\u5e94 - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u6267\u6cd5\u73b0\u573a\u5f53\u4e8b\u4eba\u5bf9\u6c11\u8b66\u8eab\u4efd\u3001\u6267\u6cd5\u6743\u9650\u548c\u7a0b\u5e8f\u5408\u6cd5\u6027\u63d0\u51fa\u8d28\u7591\u662f\u5e38\u89c1\u7684\u73b0\u573a\u60c5\u51b5\u3002\u4f9d\u6cd5\u3001\u4e13\u4e1a\u3001\u51b7\u9759\u5730\u56de\u5e94\u8d28\u7591\uff0c\u65e2\u80fd\u7ef4\u62a4\u6267\u6cd5\u6743\u5a01\u548c\u7a0b\u5e8f\u5408\u6cd5\u6027\uff0c\u53c8\u80fd\u6709\u6548\u964d\u4f4e\u73b0",
+      "reason": "页面讨论面对质疑时的规范回应，图解呈现从倾听到记录的连续关系",
       "learning_targets": [
-        "\u9762\u5bf9\u8d28\u7591\u65f6\u7684\u4f9d\u6cd5\u56de\u5e94\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u6267\u6cd5\u73b0\u573a\u5f53\u4e8b\u4eba\u5bf9\u6c11\u8b66\u8eab\u4efd\u3001\u6267\u6cd5\u6743\u9650\u548c\u7a0b\u5e8f\u5408\u6cd5\u6027\u63d0\u51fa\u8d28\u7591\u662f\u5e38\u89c1\u7684\u73b0\u573a\u60c5\u51b5\u3002\u4f9d\u6cd5\u3001\u4e13\u4e1a\u3001\u51b7\u9759\u5730\u56de\u5e94\u8d28\u7591\uff0c\u65e2\u80fd\u7ef4\u62a4\u6267\u6cd5\u6743\u5a01\u548c\u7a0b\u5e8f\u5408\u6cd5\u6027\uff0c\u53c8\u80fd\u6709\u6548\u964d\u4f4e\u73b0"
+        "倾听质疑",
+        "核实焦点",
+        "说明依据",
+        "记录回应"
       ],
       "visual_types": [
-        "legal-relationship"
+        "step-flow"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：被质疑时依法回应"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/zhiyi-yifa-huiying-legal-relationship.svg",
+          "path": "img/learning/fagui/zhiyi-yifa-huiying-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u9762\u5bf9\u8d28\u7591\u65f6\u7684\u4f9d\u6cd5\u56de\u5e94\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "被质疑时依法回应中倾听质疑、核实焦点、说明依据、记录回应的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/weiguan-paishe-zhixu.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u56f4\u89c2\u62cd\u6444\u4e0e\u73b0\u573a\u79e9\u5e8f\u5f15\u5bfc - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u7fa4\u4f17\u5728\u6267\u6cd5\u73b0\u573a\u56f4\u89c2\u62cd\u6444\u662f\u4fe1\u606f\u5316\u65f6\u4ee3\u6267\u6cd5\u7684\u5e38\u6001\u3002\u516c\u6c11\u5728\u516c\u5171\u573a\u6240\u5bf9\u6267\u6cd5\u6d3b\u52a8\u8fdb\u884c\u62cd\u6444\u5c5e\u4e8e\u884c\u4f7f\u76d1\u7763\u6743\u7684\u884c\u4e3a\uff0c\u6c11\u8b66\u5e94\u4f9d\u6cd5\u7ef4\u62a4\u73b0\u573a\u79e9\u5e8f\u3001\u5f15\u5bfc\u7fa4\u4f17\u4fdd\u6301\u5b89\u5168\u8ddd\u79bb",
+      "reason": "页面需要区分正常拍摄与秩序安全风险，图解突出风险和现场边界",
       "learning_targets": [
-        "\u56f4\u89c2\u62cd\u6444\u4e0e\u73b0\u573a\u79e9\u5e8f\u5f15\u5bfc\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u7fa4\u4f17\u5728\u6267\u6cd5\u73b0\u573a\u56f4\u89c2\u62cd\u6444\u662f\u4fe1\u606f\u5316\u65f6\u4ee3\u6267\u6cd5\u7684\u5e38\u6001\u3002\u516c\u6c11\u5728\u516c\u5171\u573a\u6240\u5bf9\u6267\u6cd5\u6d3b\u52a8\u8fdb\u884c\u62cd\u6444\u5c5e\u4e8e\u884c\u4f7f\u76d1\u7763\u6743\u7684\u884c\u4e3a\uff0c\u6c11\u8b66\u5e94\u4f9d\u6cd5\u7ef4\u62a4\u73b0\u573a\u79e9\u5e8f\u3001\u5f15\u5bfc\u7fa4\u4f17\u4fdd\u6301\u5b89\u5168\u8ddd\u79bb"
+        "识别风险",
+        "设置边界",
+        "说明要求",
+        "持续记录"
       ],
       "visual_types": [
-        "legal-relationship"
+        "step-flow"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：围观拍摄与现场秩序"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/weiguan-paishe-zhixu-legal-relationship.svg",
+          "path": "img/learning/fagui/weiguan-paishe-zhixu-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u56f4\u89c2\u62cd\u6444\u4e0e\u73b0\u573a\u79e9\u5e8f\u5f15\u5bfc\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "围观拍摄与现场秩序中识别风险、设置边界、说明要求、持续记录的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/quanli-yiwu-gaozhi.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u6743\u5229\u4e49\u52a1\u548c\u6cd5\u5f8b\u540e\u679c\u544a\u77e5 - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u4e0a\u8ff0\u63aa\u65bd\u4e4b\u95f4\u7684\u5173\u952e\u5173\u7cfb\uff1a\u53e3\u5934\u8b66\u544a\u662f\u72ec\u7acb\u7684\u5236\u6b62\u63aa\u65bd\uff1b\u53e3\u5934\u4f20\u5524\u662f\u72ec\u7acb\u7684\u8c03\u67e5\u63aa\u65bd\uff08\u975e\u60e9\u7f5a\u63aa\u65bd\uff09\uff1b\u5f3a\u5236\u4f20\u5524\u662f\u53e3\u5934\u4f20\u5524\u7684\u4fdd\u969c\u63aa\u65bd\uff1b\u8b66\u68b0\u4f7f\u7528\u8b66\u544a\u662f\u4f7f\u7528\u8b66\u68b0\u524d",
+      "reason": "权利义务告知包含多项并列内容，图解帮助建立完整告知结构",
       "learning_targets": [
-        "\u6743\u5229\u4e49\u52a1\u548c\u6cd5\u5f8b\u540e\u679c\u544a\u77e5\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u4e0a\u8ff0\u63aa\u65bd\u4e4b\u95f4\u7684\u5173\u952e\u5173\u7cfb\uff1a\u53e3\u5934\u8b66\u544a\u662f\u72ec\u7acb\u7684\u5236\u6b62\u63aa\u65bd\uff1b\u53e3\u5934\u4f20\u5524\u662f\u72ec\u7acb\u7684\u8c03\u67e5\u63aa\u65bd\uff08\u975e\u60e9\u7f5a\u63aa\u65bd\uff09\uff1b\u5f3a\u5236\u4f20\u5524\u662f\u53e3\u5934\u4f20\u5524\u7684\u4fdd\u969c\u63aa\u65bd\uff1b\u8b66\u68b0\u4f7f\u7528\u8b66\u544a\u662f\u4f7f\u7528\u8b66\u68b0\u524d"
+        "说明事项",
+        "告知权利",
+        "告知义务",
+        "确认理解"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：权利义务告知"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/quanli-yiwu-gaozhi-legal-relationship.svg",
+          "path": "img/learning/fagui/quanli-yiwu-gaozhi-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u6743\u5229\u4e49\u52a1\u548c\u6cd5\u5f8b\u540e\u679c\u544a\u77e5\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "权利义务告知中说明事项、告知权利、告知义务、确认理解的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -1959,395 +1969,419 @@
       "module": "fagui",
       "current_images": 1,
       "decision": "add",
-      "reason": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c - \u9002\u7528\u60c5\u5f62\u4e0e\u8303\u56f4\u8fb9\u754c\u5f53\u573a\u76d8\u95ee\u68c0\u67e5\u4e0e\u5c45\u6c11\u8eab\u4efd\u8bc1\u67e5\u9a8c\u662f\u5de1\u903b\u6c11\u8b66\u6700\u5e38\u7528\u7684\u6267\u6cd5\u624b\u6bb5\u3002\u4f9d\u636e\u300a\u4eba\u6c11\u8b66\u5bdf\u6cd5\u300b\u7b2c\u4e5d\u6761\u548c\u300a\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5\u300b\u7b2c\u5341\u4e94\u6761\uff0c\u6c11\u8b66\u7ecf\u51fa\u793a\u6267\u6cd5\u8bc1\u4ef6\uff0c\u5bf9\u6709\u8fdd\u6cd5\u72af\u7f6a\u5acc\u7591",
+      "reason": "页面涉及适用情形、查验程序与权利保障，关系图帮助区分并衔接各环节",
       "learning_targets": [
-        "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c\u9002\u7528\u60c5\u5f62\u4e0e\u8303\u56f4\u8fb9\u754c",
-        "\u5f53\u573a\u76d8\u95ee\u68c0\u67e5\u4e0e\u5c45\u6c11\u8eab\u4efd\u8bc1\u67e5\u9a8c\u662f\u5de1\u903b\u6c11\u8b66\u6700\u5e38\u7528\u7684\u6267\u6cd5\u624b\u6bb5\u3002\u4f9d\u636e\u300a\u4eba\u6c11\u8b66\u5bdf\u6cd5\u300b\u7b2c\u4e5d\u6761\u548c\u300a\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5\u300b\u7b2c\u5341\u4e94\u6761\uff0c\u6c11\u8b66\u7ecf\u51fa\u793a\u6267\u6cd5\u8bc1\u4ef6\uff0c\u5bf9\u6709\u8fdd\u6cd5\u72af\u7f6a\u5acc\u7591"
+        "确认情形",
+        "出示证件",
+        "盘问查验",
+        "记录分类"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u9002\u7528\u60c5\u5f62\u4e0e\u8303\u56f4\u8fb9\u754c"
+        "适用情形与范围边界"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/panwen-shenfenzheng-procedure.svg",
+          "path": "img/learning/fagui/panwen-shenfenzheng-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c\u7684\u6cd5\u5b9a\u60c5\u5f62\u3001\u7a0b\u5e8f\u548c\u6743\u5229\u4fdd\u969c\u5173\u7cfb",
+          "purpose": "盘问与身份证查验中确认情形、出示证件、盘问查验、记录分类的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
           "status": "complete"
         }
       ],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/chuanhuan-qiangzhi-chuanhuan.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u4f20\u5524\u548c\u5f3a\u5236\u4f20\u5524 - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u4f20\u5524\u662f\u516c\u5b89\u673a\u5173\u901a\u77e5\u8fdd\u6cd5\u5acc\u7591\u4eba\u5728\u6307\u5b9a\u65f6\u95f4\u5230\u6307\u5b9a\u5730\u70b9\u63a5\u53d7\u8be2\u95ee\u7684\u6cd5\u5b9a\u63aa\u65bd\uff0c\u5206\u4e3a\u53e3\u5934\u4f20\u5524\u548c\u4e66\u9762\u4f20\u5524\u3002\u5f3a\u5236\u4f20\u5524\u662f\u5728\u88ab\u4f20\u5524\u4eba\u65e0\u6b63\u5f53\u7406\u7531\u62d2\u7edd\u6216\u9003\u907f\u4f20\u5524\u65f6\u4f9d\u6cd5\u91c7",
+      "reason": "页面需要区分措施类型和适用依据，图解以中性步骤呈现程序连续性",
       "learning_targets": [
-        "\u4f20\u5524\u548c\u5f3a\u5236\u4f20\u5524\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u4f20\u5524\u662f\u516c\u5b89\u673a\u5173\u901a\u77e5\u8fdd\u6cd5\u5acc\u7591\u4eba\u5728\u6307\u5b9a\u65f6\u95f4\u5230\u6307\u5b9a\u5730\u70b9\u63a5\u53d7\u8be2\u95ee\u7684\u6cd5\u5b9a\u63aa\u65bd\uff0c\u5206\u4e3a\u53e3\u5934\u4f20\u5524\u548c\u4e66\u9762\u4f20\u5524\u3002\u5f3a\u5236\u4f20\u5524\u662f\u5728\u88ab\u4f20\u5524\u4eba\u65e0\u6b63\u5f53\u7406\u7531\u62d2\u7edd\u6216\u9003\u907f\u4f20\u5524\u65f6\u4f9d\u6cd5\u91c7"
+        "确认依据",
+        "身份告知",
+        "执行记录",
+        "后续衔接"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：传唤与强制传唤"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/chuanhuan-qiangzhi-chuanhuan-legal-relationship.svg",
+          "path": "img/learning/fagui/chuanhuan-qiangzhi-chuanhuan-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u4f20\u5524\u548c\u5f3a\u5236\u4f20\u5524\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "传唤与强制传唤中确认依据、身份告知、执行记录、后续衔接的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/jingxie-shiyong-chengxu.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u8b66\u68b0\u4f7f\u7528\u7684\u6761\u4ef6\u4e0e\u7a0b\u5e8f - \u7a0b\u5e8f\u6b65\u9aa4\uff1a\u8b66\u544a\u2014\u4f7f\u7528\u2014\u505c\u6b62\u2014\u62a5\u544a\u8b66\u68b0\u4f7f\u7528\u662f\u6c11\u8b66\u6267\u6cd5\u4e2d\u6700\u5e38\u89c1\u7684\u5f3a\u5236\u624b\u6bb5\u4e4b\u4e00\uff0c\u5176\u6838\u5fc3\u6cd5\u5f8b\u4f9d\u636e\u4e3a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u300b\u3002\u672c\u6587\u8bf4\u660e\u9a71\u9010\u6027\u3001\u5236\u670d\u6027\u548c\u7ea6\u675f\u6027\u8b66\u68b0\u7684\u6cd5\u5b9a",
+      "reason": "警械使用取决于现场和法定条件，图解强调持续评估、必要限度与停止衔接",
       "learning_targets": [
-        "\u8b66\u68b0\u4f7f\u7528\u7684\u6761\u4ef6\u4e0e\u7a0b\u5e8f\u7a0b\u5e8f\u6b65\u9aa4\uff1a\u8b66\u544a\u2014\u4f7f\u7528\u2014\u505c\u6b62\u2014\u62a5\u544a",
-        "\u8b66\u68b0\u4f7f\u7528\u662f\u6c11\u8b66\u6267\u6cd5\u4e2d\u6700\u5e38\u89c1\u7684\u5f3a\u5236\u624b\u6bb5\u4e4b\u4e00\uff0c\u5176\u6838\u5fc3\u6cd5\u5f8b\u4f9d\u636e\u4e3a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u300b\u3002\u672c\u6587\u8bf4\u660e\u9a71\u9010\u6027\u3001\u5236\u670d\u6027\u548c\u7ea6\u675f\u6027\u8b66\u68b0\u7684\u6cd5\u5b9a"
+        "评估条件",
+        "警告沟通",
+        "适度使用",
+        "停止处置"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7a0b\u5e8f\u6b65\u9aa4\uff1a\u8b66\u544a\u2014\u4f7f\u7528\u2014\u505c\u6b62\u2014\u62a5\u544a"
+        "学习图解：警械使用程序"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/jingxie-shiyong-chengxu-legal-relationship.svg",
+          "path": "img/learning/fagui/jingxie-shiyong-chengxu-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u8b66\u68b0\u4f7f\u7528\u7684\u6761\u4ef6\u4e0e\u7a0b\u5e8f\u7a0b\u5e8f\u6b65\u9aa4\uff1a\u8b66\u544a\u2014\u4f7f\u7528\u2014\u505c\u6b62\u2014\u62a5\u544alegal-relationship",
+          "purpose": "警械使用程序中评估条件、警告沟通、适度使用、停止处置的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/xingzheng-anji-tiaocha.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1 - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1\u7684\u6cd5\u5f8b\u6846\u67b6\u7531\u4ee5\u4e0b\u6cd5\u89c4\u6784\u6210\uff1a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5\u300b\u5bf9\u8c03\u67e5\u53d6\u8bc1\u7684\u57fa\u672c\u6743\u9650\u548c\u7a0b\u5e8f\u4f5c\u51fa\u89c4\u5b9a\uff1b\u300a\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a\u300b\u5bf9",
+      "reason": "调查取证贯穿事实、证据和程序，图解呈现材料与办理环节的闭环",
       "learning_targets": [
-        "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1\u7684\u6cd5\u5f8b\u6846\u67b6\u7531\u4ee5\u4e0b\u6cd5\u89c4\u6784\u6210\uff1a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5\u300b\u5bf9\u8c03\u67e5\u53d6\u8bc1\u7684\u57fa\u672c\u6743\u9650\u548c\u7a0b\u5e8f\u4f5c\u51fa\u89c4\u5b9a\uff1b\u300a\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a\u300b\u5bf9"
+        "受理研判",
+        "调查取证",
+        "审核衔接",
+        "归档留痕"
       ],
       "visual_types": [
-        "legal-relationship"
+        "step-flow"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：行政案件调查取证"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/xingzheng-anji-tiaocha-legal-relationship.svg",
+          "path": "img/learning/fagui/xingzheng-anji-tiaocha-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "行政案件调查取证中受理研判、调查取证、审核衔接、归档留痕的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/zhifa-jilu-quanli.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c - \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c\u7684\u6cd5\u5f8b\u4f9d\u636e\u6db5\u76d6\u591a\u4e2a\u5c42\u9762\uff1a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5\u300b\u548c\u300a\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a\u300b\u5bf9\u6267\u6cd5\u8fc7\u7a0b\u4e2d\u7684\u5f53\u4e8b\u4eba\u6743\u5229\u4f5c\u51fa\u4e86\u7cfb\u7edf\u6027",
+      "reason": "页面说明执法记录与权利保障的关系，图解连接记录、保存和依法使用",
       "learning_targets": [
-        "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
-        "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c\u7684\u6cd5\u5f8b\u4f9d\u636e\u6db5\u76d6\u591a\u4e2a\u5c42\u9762\uff1a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5\u300b\u548c\u300a\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a\u300b\u5bf9\u6267\u6cd5\u8fc7\u7a0b\u4e2d\u7684\u5f53\u4e8b\u4eba\u6743\u5229\u4f5c\u51fa\u4e86\u7cfb\u7edf\u6027"
+        "启动记录",
+        "客观完整",
+        "妥善保存",
+        "依法使用"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
+        "学习图解：执法记录与权利保障"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/zhifa-jilu-quanli-legal-relationship.svg",
+          "path": "img/learning/fagui/zhifa-jilu-quanli-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c\u6709\u6548\u6cd5\u5f8b\u4f9d\u636elegal-relationship",
+          "purpose": "执法记录与权利保障中启动记录、客观完整、妥善保存、依法使用的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/zhian-guanli-chufa-fa.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5 - \u7b2c\u4e09\u7ae0 \u8fdd\u53cd\u6cbb\u5b89\u7ba1\u7406\u7684\u884c\u4e3a\u548c\u5904\u7f5a\u4e3e\u529e\u4f53\u80b2\u3001\u6587\u5316\u7b49\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\uff0c\u8fdd\u53cd\u6709\u5173\u89c4\u5b9a\uff0c\u6709\u53d1\u751f\u5b89\u5168\u4e8b\u6545\u5371\u9669\uff0c\u7ecf\u516c\u5b89\u673a\u5173\u8d23\u4ee4\u6539\u6b63\u800c\u62d2\u4e0d\u6539\u6b63\u6216\u8005\u65e0\u6cd5\u6539\u6b63\u7684\uff0c\u8d23\u4ee4\u505c\u6b62\u6d3b\u52a8\uff0c\u7acb\u5373\u758f\u6563\uff1b\u5bf9\u5176\u76f4\u63a5\u8d1f",
+      "reason": "法规正文篇幅较长，结构图提供按主题返回具体条文的阅读路径",
       "learning_targets": [
-        "\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5\u7b2c\u4e09\u7ae0 \u8fdd\u53cd\u6cbb\u5b89\u7ba1\u7406\u7684\u884c\u4e3a\u548c\u5904\u7f5a",
-        "\u4e3e\u529e\u4f53\u80b2\u3001\u6587\u5316\u7b49\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\uff0c\u8fdd\u53cd\u6709\u5173\u89c4\u5b9a\uff0c\u6709\u53d1\u751f\u5b89\u5168\u4e8b\u6545\u5371\u9669\uff0c\u7ecf\u516c\u5b89\u673a\u5173\u8d23\u4ee4\u6539\u6b63\u800c\u62d2\u4e0d\u6539\u6b63\u6216\u8005\u65e0\u6cd5\u6539\u6b63\u7684\uff0c\u8d23\u4ee4\u505c\u6b62\u6d3b\u52a8\uff0c\u7acb\u5373\u758f\u6563\uff1b\u5bf9\u5176\u76f4\u63a5\u8d1f"
+        "总则原则",
+        "行为规范",
+        "处罚程序",
+        "执法监督"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7b2c\u4e09\u7ae0 \u8fdd\u53cd\u6cbb\u5b89\u7ba1\u7406\u7684\u884c\u4e3a\u548c\u5904\u7f5a"
+        "学习图解：治安管理处罚法导读"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/zhian-guanli-chufa-fa-legal-relationship.svg",
+          "path": "img/learning/fagui/zhian-guanli-chufa-fa-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5\u7b2c\u4e09\u7ae0 \u8fdd\u53cd\u6cbb\u5b89\u7ba1\u7406\u7684\u884c\u4e3a\u548c\u5904\u7f5alegal-relationship",
+          "purpose": "治安管理处罚法导读中总则原则、行为规范、处罚程序、执法监督的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/renmin-jingcha-fa.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u4eba\u6c11\u8b66\u5bdf\u6cd5 - \u7b2c\u4e09\u7ae0 \u4e49\u52a1\u548c\u7eaa\u5f8b\u5bf9\u88ab\u76d8\u95ee\u4eba\u7684\u7559\u7f6e\u65f6\u95f4\u81ea\u5e26\u81f3\u516c\u5b89\u673a\u5173\u4e4b\u65f6\u8d77\u4e0d\u8d85\u8fc7\u4e8c\u5341\u56db\u5c0f\u65f6\uff0c\u5728\u7279\u6b8a\u60c5\u51b5\u4e0b\uff0c\u7ecf\u53bf\u7ea7\u4ee5\u4e0a\u516c\u5b89\u673a\u5173\u6279\u51c6\uff0c\u53ef\u4ee5\u5ef6\u957f\u81f3\u56db\u5341\u516b\u5c0f\u65f6\uff0c\u5e76\u5e94\u5f53\u7559\u6709\u76d8\u95ee\u8bb0\u5f55\u3002\u5bf9\u4e8e\u6279",
+      "reason": "法规正文篇幅较长，结构图帮助同时理解职权、保障和监督约束",
       "learning_targets": [
-        "\u4eba\u6c11\u8b66\u5bdf\u6cd5\u7b2c\u4e09\u7ae0 \u4e49\u52a1\u548c\u7eaa\u5f8b",
-        "\u5bf9\u88ab\u76d8\u95ee\u4eba\u7684\u7559\u7f6e\u65f6\u95f4\u81ea\u5e26\u81f3\u516c\u5b89\u673a\u5173\u4e4b\u65f6\u8d77\u4e0d\u8d85\u8fc7\u4e8c\u5341\u56db\u5c0f\u65f6\uff0c\u5728\u7279\u6b8a\u60c5\u51b5\u4e0b\uff0c\u7ecf\u53bf\u7ea7\u4ee5\u4e0a\u516c\u5b89\u673a\u5173\u6279\u51c6\uff0c\u53ef\u4ee5\u5ef6\u957f\u81f3\u56db\u5341\u516b\u5c0f\u65f6\uff0c\u5e76\u5e94\u5f53\u7559\u6709\u76d8\u95ee\u8bb0\u5f55\u3002\u5bf9\u4e8e\u6279"
+        "职责职权",
+        "组织管理",
+        "警务保障",
+        "执法监督"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7b2c\u4e09\u7ae0 \u4e49\u52a1\u548c\u7eaa\u5f8b"
+        "学习图解：人民警察法导读"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/renmin-jingcha-fa-legal-relationship.svg",
+          "path": "img/learning/fagui/renmin-jingcha-fa-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u4eba\u6c11\u8b66\u5bdf\u6cd5\u7b2c\u4e09\u7ae0 \u4e49\u52a1\u548c\u7eaa\u5f8blegal-relationship",
+          "purpose": "人民警察法导读中职责职权、组织管理、警务保障、执法监督的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/jumin-shenfenzheng-fa.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5 - \u7b2c\u4e8c\u7ae0 \u7533\u9886\u548c\u53d1\u653e\u5bf9\u57ce\u5e02\u4e2d\u9886\u53d6\u6700\u4f4e\u751f\u6d3b\u4fdd\u969c\u91d1\u7684\u5c45\u6c11\u3001\u519c\u6751\u4e2d\u6709\u7279\u6b8a\u751f\u6d3b\u56f0\u96be\u7684\u5c45\u6c11\uff0c\u5728\u5176\u521d\u6b21\u7533\u8bf7\u9886\u53d6\u548c\u6362\u9886\u5c45\u6c11\u8eab\u4efd\u8bc1\u65f6\uff0c\u514d\u6536\u5de5\u672c\u8d39\u3002\u5bf9\u5176\u4ed6\u751f\u6d3b\u786e\u6709\u56f0\u96be\u7684\u5c45\u6c11\uff0c\u5728\u5176\u521d\u6b21",
+      "reason": "法规正文围绕证件全流程展开，结构图帮助定位对应章节和条文",
       "learning_targets": [
-        "\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5\u7b2c\u4e8c\u7ae0 \u7533\u9886\u548c\u53d1\u653e",
-        "\u5bf9\u57ce\u5e02\u4e2d\u9886\u53d6\u6700\u4f4e\u751f\u6d3b\u4fdd\u969c\u91d1\u7684\u5c45\u6c11\u3001\u519c\u6751\u4e2d\u6709\u7279\u6b8a\u751f\u6d3b\u56f0\u96be\u7684\u5c45\u6c11\uff0c\u5728\u5176\u521d\u6b21\u7533\u8bf7\u9886\u53d6\u548c\u6362\u9886\u5c45\u6c11\u8eab\u4efd\u8bc1\u65f6\uff0c\u514d\u6536\u5de5\u672c\u8d39\u3002\u5bf9\u5176\u4ed6\u751f\u6d3b\u786e\u6709\u56f0\u96be\u7684\u5c45\u6c11\uff0c\u5728\u5176\u521d\u6b21"
+        "申领换领",
+        "使用查验",
+        "安全保护",
+        "法律责任"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7b2c\u4e8c\u7ae0 \u7533\u9886\u548c\u53d1\u653e"
+        "学习图解：居民身份证法导读"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/jumin-shenfenzheng-fa-legal-relationship.svg",
+          "path": "img/learning/fagui/jumin-shenfenzheng-fa-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5\u7b2c\u4e8c\u7ae0 \u7533\u9886\u548c\u53d1\u653elegal-relationship",
+          "purpose": "居民身份证法导读中申领换领、使用查验、安全保护、法律责任的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/xingzheng-anji-chengxu-guiding.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a - \u7b2c\u4e94\u7ae0 \u8c03\u67e5\u53d6\u8bc1\u5bf9\u65e0\u6b63\u5f53\u7406\u7531\u4e0d\u63a5\u53d7\u4f20\u5524\u6216\u8005\u9003\u907f\u4f20\u5524\u7684\u8fdd\u53cd\u6cbb\u5b89\u7ba1\u7406\u3001\u51fa\u5883\u5165\u5883\u7ba1\u7406\u7684\u5acc\u7591\u4eba\u4ee5\u53ca\u6cd5\u5f8b\u89c4\u5b9a\u53ef\u4ee5\u5f3a\u5236\u4f20\u5524\u7684\u5176\u4ed6\u8fdd\u6cd5\u5acc\u7591\u4eba\uff0c\u7ecf\u516c\u5b89\u6d3e\u51fa\u6240\u3001\u53bf\u7ea7\u4ee5\u4e0a\u516c\u5b89\u673a\u5173\u529e",
+      "reason": "程序规定涉及连续办理环节，图解提供从受案到监督救济的阅读路径",
       "learning_targets": [
-        "\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a\u7b2c\u4e94\u7ae0 \u8c03\u67e5\u53d6\u8bc1",
-        "\u5bf9\u65e0\u6b63\u5f53\u7406\u7531\u4e0d\u63a5\u53d7\u4f20\u5524\u6216\u8005\u9003\u907f\u4f20\u5524\u7684\u8fdd\u53cd\u6cbb\u5b89\u7ba1\u7406\u3001\u51fa\u5883\u5165\u5883\u7ba1\u7406\u7684\u5acc\u7591\u4eba\u4ee5\u53ca\u6cd5\u5f8b\u89c4\u5b9a\u53ef\u4ee5\u5f3a\u5236\u4f20\u5524\u7684\u5176\u4ed6\u8fdd\u6cd5\u5acc\u7591\u4eba\uff0c\u7ecf\u516c\u5b89\u6d3e\u51fa\u6240\u3001\u53bf\u7ea7\u4ee5\u4e0a\u516c\u5b89\u673a\u5173\u529e"
+        "受案管辖",
+        "调查证据",
+        "决定执行",
+        "监督救济"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7b2c\u4e94\u7ae0 \u8c03\u67e5\u53d6\u8bc1"
+        "学习图解：行政案件程序规定导读"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/xingzheng-anji-chengxu-guiding-legal-relationship.svg",
+          "path": "img/learning/fagui/xingzheng-anji-chengxu-guiding-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a\u7b2c\u4e94\u7ae0 \u8c03\u67e5\u53d6\u8bc1legal-relationship",
+          "purpose": "行政案件程序规定导读中受案管辖、调查证据、决定执行、监督救济的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/jingxie-wuqi-tiaoli.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b - \u7b2c\u4e8c\u7ae0 \u8b66\u68b0\u7684\u4f7f\u7528\u4eba\u6c11\u8b66\u5bdf\u8fdd\u6cd5\u4f7f\u7528\u8b66\u68b0\u3001\u6b66\u5668\uff0c\u9020\u6210\u4e0d\u5e94\u6709\u7684\u4eba\u5458\u4f24\u4ea1\u3001\u8d22\u4ea7\u635f\u5931\uff0c\u6784\u6210\u72af\u7f6a\u7684\uff0c\u4f9d\u6cd5\u8ffd\u7a76\u5211\u4e8b\u8d23\u4efb\uff1b\u5c1a\u4e0d\u6784\u6210\u72af\u7f6a\u7684\uff0c\u4f9d\u6cd5\u7ed9\u4e88\u884c\u653f\u5904\u5206\uff1b\u5bf9\u53d7\u5230\u4f24\u4ea1\u6216\u8005\u8d22\u4ea7\u635f",
+      "reason": "条例需分别核对警械和武器的条件程序，结构图提示同步关注责任监督",
       "learning_targets": [
-        "\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u7b2c\u4e8c\u7ae0 \u8b66\u68b0\u7684\u4f7f\u7528",
-        "\u4eba\u6c11\u8b66\u5bdf\u8fdd\u6cd5\u4f7f\u7528\u8b66\u68b0\u3001\u6b66\u5668\uff0c\u9020\u6210\u4e0d\u5e94\u6709\u7684\u4eba\u5458\u4f24\u4ea1\u3001\u8d22\u4ea7\u635f\u5931\uff0c\u6784\u6210\u72af\u7f6a\u7684\uff0c\u4f9d\u6cd5\u8ffd\u7a76\u5211\u4e8b\u8d23\u4efb\uff1b\u5c1a\u4e0d\u6784\u6210\u72af\u7f6a\u7684\uff0c\u4f9d\u6cd5\u7ed9\u4e88\u884c\u653f\u5904\u5206\uff1b\u5bf9\u53d7\u5230\u4f24\u4ea1\u6216\u8005\u8d22\u4ea7\u635f"
+        "配备保管",
+        "使用条件",
+        "使用程序",
+        "监督责任"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7b2c\u4e8c\u7ae0 \u8b66\u68b0\u7684\u4f7f\u7528"
+        "学习图解：警械和武器条例导读"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/jingxie-wuqi-tiaoli-legal-relationship.svg",
+          "path": "img/learning/fagui/jingxie-wuqi-tiaoli-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u7b2c\u4e8c\u7ae0 \u8b66\u68b0\u7684\u4f7f\u7528legal-relationship",
+          "purpose": "警械和武器条例导读中配备保管、使用条件、使用程序、监督责任的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/xianchang-zhizhi-guicheng.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u73b0\u573a\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u64cd\u4f5c\u89c4\u7a0b - \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba",
+      "reason": "现场措施随风险变化而调整，图解强调评估、升级、停止与救助衔接",
       "learning_targets": [
-        "\u73b0\u573a\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u64cd\u4f5c\u89c4\u7a0b\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
-        "\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba"
+        "现场评估",
+        "口头制止",
+        "警告升级",
+        "停止救助"
       ],
       "visual_types": [
-        "legal-relationship"
+        "step-flow"
       ],
       "insertion_points": [
-        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
+        "学习图解：现场制止违法行为"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/xianchang-zhizhi-guicheng-legal-relationship.svg",
+          "path": "img/learning/fagui/xianchang-zhizhi-guicheng-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u73b0\u573a\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u64cd\u4f5c\u89c4\u7a0b\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606flegal-relationship",
+          "purpose": "现场制止违法行为中现场评估、口头制止、警告升级、停止救助的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "fagui/qita-xiangguan-guifan.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u5176\u4ed6\u65e5\u5e38\u5de1\u903b\u4e0e\u5b89\u4fdd\u89c4\u8303 - \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba",
+      "reason": "页面汇集巡逻盘查与安保规范，图解建立任务前中后的学习框架",
       "learning_targets": [
-        "\u5176\u4ed6\u65e5\u5e38\u5de1\u903b\u4e0e\u5b89\u4fdd\u89c4\u8303\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
-        "\u672c\u7d22\u5f15\u7528\u4e8e\u8bf4\u660e\u6838\u9a8c\u65e5\u671f\u65f6\u4e92\u8054\u7f51\u4e0a\u5b58\u5728\u4e0e\u672c\u9875\u77e5\u8bc6\u70b9\u76f8\u4f3c\u7684\u516c\u5f00\u8d44\u6599\uff0c\u4e0d\u8868\u793a\u672c\u7ad9\u5185\u5bb9\u5747\u8f6c\u8f7d\u81ea\u6240\u5217\u7f51\u9875\uff0c\u4e5f\u4e0d\u6784\u6210\u4fdd\u5bc6\u5ba1\u67e5\u3001\u6cd5\u5f8b\u5ba1\u67e5\u6216\u4e1a\u52a1\u4e3b\u7ba1\u90e8\u95e8\u5ba1\u6838\u7ed3\u8bba"
+        "任务准备",
+        "巡逻防控",
+        "安保处置",
+        "复盘归档"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
+        "学习图解：巡逻盘查与安保规范"
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/qita-xiangguan-guifan-legal-relationship.svg",
+          "path": "img/learning/fagui/qita-xiangguan-guifan-learning-map.svg",
           "kind": "svg",
-          "purpose": "\u5176\u4ed6\u65e5\u5e38\u5de1\u903b\u4e0e\u5b89\u4fdd\u89c4\u8303\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606flegal-relationship",
+          "purpose": "巡逻盘查与安保规范中任务准备、巡逻防控、安保处置、复盘归档的中性学习关系图",
           "source_status": "original",
           "source_url": "",
-          "publisher": "\u6267\u6cd5\u89c4\u8303",
+          "publisher": "巡防百科",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {

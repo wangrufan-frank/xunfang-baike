@@ -2067,7 +2067,15 @@
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/shenfen-mudi-shuoming-learning-map.svg",
+              "alt": "出示证件、表明身份、说明目的、提出配合要求关系学习图",
+              "caption": "表明身份与说明目的：出示证件、表明身份、说明目的、提出配合要求（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/pancha-guifan-goutong.html",
             "fagui/panwen-shenfenzheng.html",
@@ -2089,7 +2097,15 @@
           "public_sources": [
             "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/pancha-guifan-goutong-learning-map.svg",
+              "alt": "礼貌称呼、说明依据、清晰提问、回应疑问关系学习图",
+              "caption": "盘查中的规范沟通：礼貌称呼、说明依据、清晰提问、回应疑问（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/shenfen-mudi-shuoming.html",
             "fagui/zhiyi-yifa-huiying.html",
@@ -2111,7 +2127,15 @@
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html",
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/zhiyi-yifa-huiying-learning-map.svg",
+              "alt": "倾听质疑、核实焦点、说明依据、记录回应关系学习图",
+              "caption": "被质疑时依法回应：倾听质疑、核实焦点、说明依据、记录回应（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/shenfen-mudi-shuoming.html",
             "fagui/quanli-yiwu-gaozhi.html"
@@ -2133,7 +2157,15 @@
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/weiguan-paishe-zhixu-learning-map.svg",
+              "alt": "识别风险、设置边界、说明要求、持续记录关系学习图",
+              "caption": "围观拍摄与现场秩序：识别风险、设置边界、说明要求、持续记录（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/gonggong-zhixu-goutong-jilu.html",
             "fagui/zhifa-jilu-quanli.html"
@@ -2154,7 +2186,15 @@
             "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/quanli-yiwu-gaozhi-learning-map.svg",
+              "alt": "说明事项、告知权利、告知义务、确认理解关系学习图",
+              "caption": "权利义务告知：说明事项、告知权利、告知义务、确认理解（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/zhiyi-yifa-huiying.html",
             "fagui/chuanhuan-qiangzhi-chuanhuan.html",
@@ -2179,9 +2219,9 @@
           ],
           "images": [
             {
-              "path": "img/learning/fagui/panwen-shenfenzheng-procedure.svg",
-              "alt": "民警出示执法证件查验身份证及法定情形、盘问查验、记录保障、分类处置程序关系图",
-              "caption": "盘问检查与身份证查验程序：确认法定情形、出示证件、依法查验、同步记录与保障权利、分类处置（本站绘制）",
+              "path": "img/learning/fagui/panwen-shenfenzheng-learning-map.svg",
+              "alt": "确认情形、出示证件、盘问查验、记录分类关系学习图",
+              "caption": "盘问与身份证查验：确认情形、出示证件、盘问查验、记录分类（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
               "source": "巡防百科本站原创绘制",
               "license": "site-original"
             }
@@ -2206,7 +2246,15 @@
             "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/chuanhuan-qiangzhi-chuanhuan-learning-map.svg",
+              "alt": "确认依据、身份告知、执行记录、后续衔接关系学习图",
+              "caption": "传唤与强制传唤：确认依据、身份告知、执行记录、后续衔接（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/panwen-shenfenzheng.html",
             "fagui/xingzheng-anji-tiaocha.html"
@@ -2230,7 +2278,15 @@
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/jingxie-shiyong-chengxu-learning-map.svg",
+              "alt": "评估条件、警告沟通、适度使用、停止处置关系学习图",
+              "caption": "警械使用程序：评估条件、警告沟通、适度使用、停止处置（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/jingxie-wuqi-tiaoli.html",
             "fagui/xianchang-zhizhi-guicheng.html",
@@ -2253,7 +2309,15 @@
             "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/xingzheng-anji-tiaocha-learning-map.svg",
+              "alt": "受理研判、调查取证、审核衔接、归档留痕关系学习图",
+              "caption": "行政案件调查取证：受理研判、调查取证、审核衔接、归档留痕（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/xingzheng-anji-chengxu-guiding.html",
             "fagui/zhifa-jilu-quanli.html"
@@ -2275,7 +2339,15 @@
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
             "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/zhifa-jilu-quanli-learning-map.svg",
+              "alt": "启动记录、客观完整、妥善保存、依法使用关系学习图",
+              "caption": "执法记录与权利保障：启动记录、客观完整、妥善保存、依法使用（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/zhifa-jiuyi.html",
             "zoufang/zhifa-jilu-ziliao-guanli.html",
@@ -2296,7 +2368,15 @@
           "public_sources": [
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/zhian-guanli-chufa-fa-learning-map.svg",
+              "alt": "总则原则、行为规范、处罚程序、执法监督关系学习图",
+              "caption": "治安管理处罚法导读：总则原则、行为规范、处罚程序、执法监督（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/xingzheng-anji-chengxu-guiding.html",
             "jingqing/zuijiu-lei.html",
@@ -2317,7 +2397,15 @@
           "public_sources": [
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/renmin-jingcha-fa-learning-map.svg",
+              "alt": "职责职权、组织管理、警务保障、执法监督关系学习图",
+              "caption": "人民警察法导读：职责职权、组织管理、警务保障、执法监督（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/panwen-shenfenzheng.html",
             "fagui/jumin-shenfenzheng-fa.html"
@@ -2335,7 +2423,15 @@
           "public_sources": [
             "https://gaj.beijing.gov.cn/zhengce/zcfg/202204/t20220402_2653202.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/jumin-shenfenzheng-fa-learning-map.svg",
+              "alt": "申领换领、使用查验、安全保护、法律责任关系学习图",
+              "caption": "居民身份证法导读：申领换领、使用查验、安全保护、法律责任（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/panwen-shenfenzheng.html",
             "fagui/renmin-jingcha-fa.html"
@@ -2353,7 +2449,15 @@
           "public_sources": [
             "https://www.hunan.gov.cn/zqt/zcsd/201812/t20181212_13592148.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/xingzheng-anji-chengxu-guiding-learning-map.svg",
+              "alt": "受案管辖、调查证据、决定执行、监督救济关系学习图",
+              "caption": "行政案件程序规定导读：受案管辖、调查证据、决定执行、监督救济（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/xingzheng-anji-tiaocha.html",
             "fagui/zhian-guanli-chufa-fa.html"
@@ -2373,7 +2477,15 @@
           "public_sources": [
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/jingxie-wuqi-tiaoli-learning-map.svg",
+              "alt": "配备保管、使用条件、使用程序、监督责任关系学习图",
+              "caption": "警械和武器条例导读：配备保管、使用条件、使用程序、监督责任（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/jingxie-shiyong-chengxu.html",
             "fagui/xianchang-zhizhi-guicheng.html"
@@ -2393,7 +2505,15 @@
           "public_sources": [
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/xianchang-zhizhi-guicheng-learning-map.svg",
+              "alt": "现场评估、口头制止、警告升级、停止救助关系学习图",
+              "caption": "现场制止违法行为：现场评估、口头制止、警告升级、停止救助（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/jingxie-shiyong-chengxu.html",
             "fagui/jingxie-wuqi-tiaoli.html",
@@ -2416,7 +2536,15 @@
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B",
             "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/qita-xiangguan-guifan-learning-map.svg",
+              "alt": "任务准备、巡逻防控、安保处置、复盘归档关系学习图",
+              "caption": "巡逻盘查与安保规范：任务准备、巡逻防控、安保处置、复盘归档（本站原创学习图解，具体条件与程序以页面正文及所引条文为准）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/zhuanxiang-huodong-gailan.html",
             "zoufang/neiwu-tiaoling.html",
