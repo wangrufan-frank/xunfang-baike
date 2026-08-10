@@ -50,10 +50,11 @@ def validate_plan(root, module=None, require_complete=False):
         if not isinstance(path, str) or not path.strip():
             errors.append(f"{label}: path must be a non-empty string")
             continue
-        if module is not None and page.get("module") != module:
-            continue
-        if page.get("module") != expected.get(page.get("path")):
+        expected_module = expected.get(path)
+        if page.get("module") != expected_module:
             errors.append(f"{label}: module does not match inventory")
+        if module is not None and expected_module != module:
+            continue
         current_images = page.get("current_images")
         if not isinstance(current_images, int) or isinstance(current_images, bool) or current_images < 0:
             errors.append(f"{label}: current_images must be a non-negative integer")
@@ -123,6 +124,7 @@ def validate_runtime(root, module=None, require_complete=False):
     root = Path(root)
     try:
         pages = _load(root, "data/image-optimization-plan.json").get("pages", [])
+        expected = _expected(_load(root, "data/content-inventory.json"))
     except (OSError, json.JSONDecodeError) as exc:
         return [str(exc)]
     errors = []
@@ -130,7 +132,14 @@ def validate_runtime(root, module=None, require_complete=False):
         if not isinstance(page, dict):
             errors.append("runtime page must be an object")
             continue
-        if module is not None and page.get("module") != module:
+        path = page.get("path")
+        if not isinstance(path, str) or not path.strip():
+            errors.append("runtime page path must be a non-empty string")
+            continue
+        expected_module = expected.get(path)
+        if page.get("module") != expected_module:
+            errors.append(f"{path}: module does not match inventory")
+        if module is not None and expected_module != module:
             continue
         if require_complete:
             terminal = (
@@ -144,10 +153,6 @@ def validate_runtime(root, module=None, require_complete=False):
             if not terminal:
                 errors.append(f"{page.get('path', 'runtime page')}: page is not in a terminal state")
         if page.get("implementation_status") != "complete":
-            continue
-        path = page.get("path")
-        if not isinstance(path, str) or not path.strip():
-            errors.append("runtime page path must be a non-empty string")
             continue
         html_path = root / path
         html = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
@@ -179,13 +184,17 @@ def main(argv=None):
     parser.add_argument("--require-complete", action="store_true")
     args = parser.parse_args(argv)
     root = Path(__file__).resolve().parents[1]
-    errors = validate_plan(root, module=args.module) + validate_runtime(
-        root,
-        module=args.module,
-        require_complete=args.require_complete,
-    )
+    errors = list(dict.fromkeys(
+        validate_plan(root, module=args.module, require_complete=args.require_complete)
+        + validate_runtime(root, module=args.module, require_complete=args.require_complete)
+    ))
     all_pages = _load(root, "data/image-optimization-plan.json").get("pages", [])
-    pages = sum(1 for page in all_pages if args.module is None or page.get("module") == args.module)
+    expected = _expected(_load(root, "data/content-inventory.json"))
+    pages = sum(
+        1
+        for page in all_pages
+        if args.module is None or expected.get(page.get("path")) == args.module
+    )
     print(f"{pages} pages checked")
     print(f"{len(errors)} validation errors")
     for error in errors:

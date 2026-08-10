@@ -2,12 +2,12 @@
   <title id="title">阻车钉展开结构与安全控制位置</title>
   <desc id="desc">展开的钉排横置路面，标出钉刺、连接节、拖拽绳、收纳护套和人员应撤至的路侧安全位置。</desc>
   <defs>
-    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#17364d}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.line{stroke:#236b96;stroke-width:2.5;fill:none}.label{fill:#fff;stroke:#b8cedd;stroke-width:1.5}</style>
+    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#17364d}.light{fill:#fff}.dark{fill:#17364d}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.line{stroke:#236b96;stroke-width:2.5;fill:none}.label{fill:#fff;stroke:#b8cedd;stroke-width:1.5}.mobile{display:none}@media (max-width:500px){.mobile{display:block}}</style>
     <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#236b96"/></marker>
   </defs>
   <rect width="760" height="460" rx="22" fill="#f5f9fc"/>
   <rect x="24" y="22" width="712" height="58" rx="14" fill="#173f5f"/>
-  <text x="48" y="59" class="t h" fill="#fff">阻车钉｜展开结构与安全控制</text>
+  <text x="48" y="59" class="t h light">阻车钉｜展开结构与安全控制</text>
   <path d="M42 160H718M42 344H718" stroke="#cedbe3" stroke-width="5" stroke-dasharray="26 18"/>
   <g aria-label="展开的阻车钉钉排">
     <path d="M110 272L545 272" stroke="#273b49" stroke-width="25" stroke-linecap="round"/>
@@ -26,4 +26,9 @@
   </g>
   <rect x="42" y="368" width="382" height="58" rx="12" fill="#e8f2f7"/>
   <text x="60" y="393" class="t s">布设后撤至路侧安全位置</text><text x="60" y="416" class="t b">不得站在目标车辆行进正面实施拦截</text>
+  <g class="mobile" aria-label="移动端阻车钉结构与安全位置">
+    <rect width="760" height="460" rx="22" fill="#f5f9fc"/><rect x="24" y="22" width="712" height="64" rx="14" fill="#173f5f"/><text x="48" y="64" class="t light" font-size="30" font-weight="700">阻车钉｜结构与安全控制</text>
+    <path d="M70 190H690" stroke="#273b49" stroke-width="28" stroke-linecap="round"/><g fill="#d7e0e5" stroke="#17364d" stroke-width="2"><path d="M120 176l14-78 14 78z"/><path d="M220 176l14-78 14 78z"/><path d="M320 176l14-78 14 78z"/><path d="M420 176l14-78 14 78z"/><path d="M520 176l14-78 14 78z"/><path d="M620 176l14-78 14 78z"/></g>
+    <text x="70" y="267" class="t dark" font-size="27" font-weight="700">钉刺＋连接节：横向展开钉排</text><text x="70" y="323" class="t dark" font-size="27" font-weight="700">拖拽绳／手柄：控制收放</text><text x="70" y="379" class="t dark" font-size="27" font-weight="700">布设后撤至路侧安全位置</text><text x="70" y="429" class="t dark" font-size="25" font-weight="700">不得站在目标车辆行进正面</text>
+  </g>
 </svg>

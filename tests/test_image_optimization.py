@@ -1,4 +1,5 @@
 import json
+import re
 import shutil
 import tempfile
 import unittest
@@ -16,6 +17,40 @@ REPRESENTATIVE_SVGS = (
     "img/learning/qinwu/gonggong-zhixu-goutong-record.svg",
     "img/learning/fagui/panwen-shenfenzheng-procedure.svg",
     "img/learning/zoufang/changsuo-aed-jiancha.svg",
+)
+
+NEW_EQUIPMENT_SVGS = (
+    "img/learning/zhuangbei/5g-yuntai-structure-label.svg",
+    "img/learning/zhuangbei/bidun-structure-label.svg",
+    "img/learning/zhuangbei/changgun-structure-label.svg",
+    "img/learning/zhuangbei/fangci-fu-structure-label.svg",
+    "img/learning/zhuangbei/pochai-gongju-structure-label.svg",
+    "img/learning/zhuangbei/sanshi-weidang-structure-label.svg",
+    "img/learning/zhuangbei/shuishang-feiyi-structure-label.svg",
+    "img/learning/zhuangbei/t-zi-gun-structure-label.svg",
+    "img/learning/zhuangbei/yueshu-dai-structure-label.svg",
+    "img/learning/zhuangbei/zhedieshi-weidang-structure-label.svg",
+    "img/learning/zhuangbei/zuche-ding-structure-label.svg",
+)
+
+RETAINED_EQUIPMENT_IMAGE_PAGES = (
+    "zhuangbei/jiuxiaojian-gailan.html",
+    "zhuangbei/fangge-shoutao.html",
+    "zhuangbei/zhifa-jiuyi.html",
+    "zhuangbei/duijiang-diantai.html",
+    "zhuangbei/miehuo-tan.html",
+    "zhuangbei/miehuo-qi.html",
+    "zhuangbei/fanguang-zhuitong.html",
+    "zhuangbei/jiusheng-quan.html",
+    "zhuangbei/jiusheng-yi.html",
+    "zhuangbei/jiusheng-sheng.html",
+    "zhuangbei/fangbao-toukui.html",
+    "zhuangbei/zhuabu-cha.html",
+    "zhuangbei/jingjiedai-jinggaopai.html",
+    "zhuangbei/fashi-dunpai.html",
+    "zhuangbei/qiangguang-shoudian.html",
+    "zhuangbei/jijiu-bao.html",
+    "zhuangbei/aed-shiyong.html",
 )
 
 
@@ -46,6 +81,42 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             self.assertTrue(mobile_text, relative_path)
             for node in mobile_text:
                 self.assertGreaterEqual(float(node.get("font-size", "0")), 25, relative_path)
+
+    def test_new_equipment_svgs_use_explicit_contrast_classes(self):
+        for relative_path in NEW_EQUIPMENT_SVGS:
+            svg = (ROOT / relative_path).read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            text_nodes = [node for node in root.iter() if node.tag.endswith("text")]
+            self.assertIn(".light", svg, relative_path)
+            self.assertIn(".dark", svg, relative_path)
+            self.assertIn("light", (text_nodes[0].get("class") or "").split(), relative_path)
+            for node in text_nodes:
+                self.assertNotEqual("#fff", node.get("fill"), relative_path)
+
+    def test_new_equipment_svgs_have_readable_mobile_layer(self):
+        for relative_path in NEW_EQUIPMENT_SVGS:
+            root = ET.parse(ROOT / relative_path).getroot()
+            mobile_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "mobile" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(mobile_groups), relative_path)
+            mobile_text = [node for node in mobile_groups[0].iter() if node.tag.endswith("text")]
+            self.assertTrue(mobile_text, relative_path)
+            for node in mobile_text:
+                self.assertGreaterEqual(float(node.get("font-size", "0")), 25, relative_path)
+
+    def test_new_equipment_svgs_are_self_contained_accessible_documents(self):
+        for relative_path in NEW_EQUIPMENT_SVGS:
+            svg = (ROOT / relative_path).read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertTrue(root.get("viewBox"), relative_path)
+            self.assertTrue(any(node.tag.endswith("title") for node in root), relative_path)
+            self.assertTrue(any(node.tag.endswith("desc") for node in root), relative_path)
+            self.assertNotIn("http://", svg, relative_path)
+            self.assertNotIn("https://", svg, relative_path)
+            self.assertNotIn("href=", svg, relative_path)
 
     def test_learning_figure_styles_cover_media_caption_mobile_and_print(self):
         css = (ROOT / "css/style.css").read_text(encoding="utf-8")
@@ -83,6 +154,19 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             validate_runtime(ROOT, module="zhuangbei", require_complete=True),
         )
 
+    def test_retained_equipment_image_insertion_points_match_nearby_body_text(self):
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        by_path = {page["path"]: page for page in plan["pages"]}
+        for path in RETAINED_EQUIPMENT_IMAGE_PAGES:
+            html = (ROOT / path).read_text(encoding="utf-8")
+            image_positions = [match.start() for match in re.finditer(r"<img\b", html)]
+            self.assertTrue(image_positions, path)
+            for insertion_point in by_path[path]["insertion_points"]:
+                self.assertTrue(
+                    any(insertion_point in html[max(0, position - 2500):position] for position in image_positions),
+                    f"{path}: insertion point is not near a retained image: {insertion_point}",
+                )
+
     def test_plan_rejects_wrong_current_image_count(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -95,6 +179,21 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             (root / page["path"]).parent.mkdir(parents=True)
             shutil.copy(ROOT / page["path"], root / page["path"])
             self.assertTrue(any("current_images" in error for error in validate_plan(root)))
+
+    def test_module_filter_cannot_hide_inventory_module_mismatch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            shutil.copytree(ROOT / "data", root / "data")
+            shutil.copytree(ROOT / "zhuangbei", root / "zhuangbei")
+            shutil.copytree(ROOT / "img/learning/zhuangbei", root / "img/learning/zhuangbei")
+            plan_path = root / "data/image-optimization-plan.json"
+            plan = json.loads(plan_path.read_text(encoding="utf-8"))
+            page = next(item for item in plan["pages"] if item["path"] == "zhuangbei/zuche-ding.html")
+            page["module"] = "qinwu"
+            plan_path.write_text(json.dumps(plan, ensure_ascii=False), encoding="utf-8")
+            expected_error = "zhuangbei/zuche-ding.html: module does not match inventory"
+            self.assertIn(expected_error, validate_plan(root, module="zhuangbei", require_complete=True))
+            self.assertIn(expected_error, validate_runtime(root, module="zhuangbei", require_complete=True))
 
     def test_plan_rejects_external_asset_without_provenance(self):
         with tempfile.TemporaryDirectory() as directory:

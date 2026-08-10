@@ -1,7 +1,7 @@
 <svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="title desc">
   <title id="title">车载5G云台组成结构</title><desc id="desc">警车顶部安装云台摄像机，标出镜头、水平旋转座、俯仰转轴、5G传输模块、供电线和安装支架。</desc>
-  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18374e}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.line{stroke:#28739e;stroke-width:2.5;fill:none}.label{fill:#fff;stroke:#bad0de;stroke-width:1.5}</style><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#28739e"/></marker></defs>
-  <rect width="760" height="440" rx="22" fill="#f5f9fc"/><rect x="24" y="22" width="712" height="58" rx="14" fill="#173f5f"/><text x="48" y="59" class="t h" fill="#fff">车载5G云台｜前端感知节点</text>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18374e}.light{fill:#fff}.dark{fill:#18374e}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.line{stroke:#28739e;stroke-width:2.5;fill:none}.label{fill:#fff;stroke:#bad0de;stroke-width:1.5}.mobile{display:none}@media (max-width:500px){.mobile{display:block}}</style><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#28739e"/></marker></defs>
+  <rect width="760" height="440" rx="22" fill="#f5f9fc"/><rect x="24" y="22" width="712" height="58" rx="14" fill="#173f5f"/><text x="48" y="59" class="t h light">车载5G云台｜前端感知节点</text>
   <g aria-label="车顶云台摄像机">
     <path d="M214 342h332l-38-84H252z" fill="#dce6eb" stroke="#18374e" stroke-width="4"/><rect x="323" y="225" width="114" height="34" rx="7" fill="#47677a" stroke="#18374e" stroke-width="3"/>
     <ellipse cx="380" cy="211" rx="72" ry="26" fill="#6f8796" stroke="#18374e" stroke-width="3"/><path d="M331 203v-64q0-36 36-36h26q36 0 36 36v64" fill="#eef4f7" stroke="#18374e" stroke-width="4"/>
@@ -14,4 +14,11 @@
     <rect x="566" y="190" width="152" height="42" rx="10" class="label"/><text x="584" y="217" class="t s">5G传输模块</text><path d="M566 211l-65 63" class="line" marker-end="url(#a)"/>
     <rect x="566" y="275" width="152" height="42" rx="10" class="label"/><text x="584" y="302" class="t s">供电与支架</text><path d="M566 296h-38" class="line" marker-end="url(#a)"/></g>
   <rect x="42" y="370" width="676" height="44" rx="11" fill="#e7f2f7"/><text x="62" y="398" class="t s">现场画面实时回传 → 后方可远程调看并控制镜头指向</text>
+  <g class="mobile" aria-label="移动端车载5G云台组成">
+    <rect width="760" height="440" rx="22" fill="#f5f9fc"/><rect x="24" y="22" width="712" height="64" rx="14" fill="#173f5f"/><text x="48" y="64" class="t light" font-size="30" font-weight="700">车载5G云台｜组成</text>
+    <rect x="42" y="116" width="676" height="62" rx="12" class="label"/><text x="66" y="157" class="t dark" font-size="27" font-weight="700">云台摄像机：水平旋转＋俯仰</text>
+    <rect x="42" y="196" width="676" height="62" rx="12" class="label"/><text x="66" y="237" class="t dark" font-size="27" font-weight="700">5G传输模块：现场画面实时回传</text>
+    <rect x="42" y="276" width="676" height="62" rx="12" class="label"/><text x="66" y="317" class="t dark" font-size="27" font-weight="700">供电系统＋安装支架：随车机动</text>
+    <text x="48" y="392" class="t dark" font-size="25" font-weight="700">后方可远程调看并控制镜头指向</text>
+  </g>
 </svg>
