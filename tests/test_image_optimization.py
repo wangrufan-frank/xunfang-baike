@@ -10,6 +10,17 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ImageOptimizationPlanTests(unittest.TestCase):
+    def test_learning_figure_styles_cover_media_caption_mobile_and_print(self):
+        css = (ROOT / "css/style.css").read_text(encoding="utf-8")
+        for selector in (
+            ".learning-figure",
+            ".learning-figure__media",
+            ".learning-figure figcaption",
+            "@media (max-width: 640px)",
+            "@media print",
+        ):
+            self.assertIn(selector, css)
+
     def test_plan_covers_inventory_exactly_once(self):
         plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
         inventory = json.loads((ROOT / "data/content-inventory.json").read_text(encoding="utf-8"))

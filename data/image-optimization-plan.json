@@ -47,7 +47,7 @@
     {
       "path": "zhuangbei/zhifa-jiuyi.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
       "reason": "\u6267\u6cd5\u8bb0\u5f55\u4eea - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u6267\u6cd5\u8bb0\u5f55\u4eea\u4e00\u822c\u7531\u6444\u5f55\u4e3b\u4f53\u3001\u663e\u793a\u5c4f\u3001\u64cd\u4f5c\u6309\u952e\u3001\u7535\u6c60\u548c\u5b58\u50a8\u90e8\u4ef6\u7ec4\u6210\uff0c\u4f69\u6234\u4e8e\u80f8\u524d\u6216\u80a9\u90e8\u7b49\u80fd\u591f\u53cd\u6620\u6267\u6cd5\u89c6\u89d2\u7684\u4f4d\u7f6e\uff0c\u540c\u6b65\u8bb0\u5f55\u5f71\u50cf\u548c\u58f0\u97f3\u3002\u516c\u5b89\u4ea4\u7ba1\u7b49\u6267\u6cd5\u90e8\u95e8",
       "learning_targets": [
@@ -62,18 +62,18 @@
       ],
       "assets": [
         {
-          "path": "img/learning/zhuangbei/zhifa-jiuyi-structure-label.svg",
+          "path": "img/learning/zhuangbei/zhifa-jiuyi-structure.svg",
           "kind": "svg",
-          "purpose": "\u6267\u6cd5\u8bb0\u5f55\u4eea\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "执法记录仪结构部件与胸前规范佩戴位置标注",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
+      "implementation_status": "complete",
       "acceptance_status": "not-reviewed",
       "blocked_reason": ""
     },
@@ -902,7 +902,7 @@
     {
       "path": "qinwu/gonggong-zhixu-goutong-jilu.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
       "reason": "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669 - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u53d1\u73b0\u4e0b\u5217\u60c5\u5f62\u7acb\u5373\u62a5\u544a\uff1a\u73b0\u573a\u51fa\u73b0\u76f4\u64ad\u3001\u5927\u91cf\u62cd\u6444\u805a\u96c6\uff0c\u4e8b\u6001\u753b\u9762\u53ef\u80fd\u5feb\u901f\u6269\u6563\uff1b\u5904\u7f6e\u8fc7\u7a0b\u53d1\u751f\u80a2\u4f53\u51b2\u7a81\u6216\u4f24\u60c5\uff1b\u51fa\u73b0\u5a92\u4f53\u8bb0\u8005\u5230\u573a\u3002\u62a5\u544a\u65f6\u8bf4\u660e\u73b0\u573a\u8bb0\u5f55\u60c5\u51b5\uff08\u662f",
       "learning_targets": [
@@ -917,18 +917,18 @@
       ],
       "assets": [
         {
-          "path": "img/learning/qinwu/gonggong-zhixu-goutong-jilu-scene-zone.svg",
+          "path": "img/learning/qinwu/gonggong-zhixu-goutong-record.svg",
           "kind": "svg",
-          "purpose": "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "公共秩序现场分区、沟通关系与记录要素示意",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
+      "implementation_status": "complete",
       "acceptance_status": "not-reviewed",
       "blocked_reason": ""
     },
@@ -1166,7 +1166,7 @@
     {
       "path": "xunlian/geren-fanghu-anquan.html",
       "module": "xunlian",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
       "reason": "\u4e2a\u4eba\u9632\u62a4\u4e0e\u8bad\u7ec3\u5b89\u5168 - \u88c5\u5907\u4f69\u6234\u4e0e\u6212\u5907\u59ff\u52bf\u8bad\u7ec3\u573a\u5730\u5e94\u5e73\u6574\u3001\u65e0\u5c16\u9510\u7a81\u51fa\u7269\u548c\u7eca\u811a\u9690\u60a3\uff0c\u5ba4\u5185\u8bad\u7ec3\u9986\u6216\u5ba4\u5916\u5851\u80f6\u8bad\u7ec3\u573a\u5747\u9002\u7528\u3002\u6240\u9700\u88c5\u5907\u4e3a\u53c2\u8bad\u4eba\u5458\u5404\u81ea\u7684\u6807\u51c6\u5355\u8b66\u88c5\u5907\u4e5d\u5c0f\u4ef6\u5168\u5957\uff08\u591a\u529f\u80fd\u8170\u5e26\u3001\u4f38\u7f29\u8b66\u68cd\u3001",
       "learning_targets": [
@@ -1181,18 +1181,18 @@
       ],
       "assets": [
         {
-          "path": "img/learning/xunlian/geren-fanghu-anquan-step-flow.svg",
+          "path": "img/learning/xunlian/geren-fanghu-anquan-checklist.svg",
           "kind": "svg",
-          "purpose": "\u4e2a\u4eba\u9632\u62a4\u4e0e\u8bad\u7ec3\u5b89\u5168\u88c5\u5907\u4f69\u6234\u4e0e\u6212\u5907\u59ff\u52bfstep-flow",
+          "purpose": "半侧身戒备姿势与装备、人员、场地三项安全清单",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
+      "implementation_status": "complete",
       "acceptance_status": "not-reviewed",
       "blocked_reason": ""
     },
@@ -1565,7 +1565,7 @@
     {
       "path": "jingqing/zuijiu-lei.html",
       "module": "jingqing",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
       "reason": "\u9189\u9152\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840 - \u8b66\u60c5\u8303\u56f4\u4e0e\u9002\u7528\u8fb9\u754c\u9189\u9152\u7c7b\u8b66\u60c5\u6307\u56e0\u996e\u9152\u8fc7\u91cf\u5bfc\u81f4\u884c\u4e3a\u4eba\u610f\u8bc6\u4e0d\u6e05\u3001\u884c\u4e3a\u5931\u63a7\uff0c\u8fdb\u800c\u5f15\u53d1\u6ecb\u4e8b\u6270\u5e8f\u3001\u4eba\u8eab\u4f24\u5bb3\u3001\u8d22\u4ea7\u635f\u5bb3\u6216\u81ea\u8eab\u5b89\u5168\u53d7\u5230\u5a01\u80c1\u7684\u8b66\u60c5\u3002\u5e38\u89c1\u60c5\u5f62\u5305\u62ec\uff1a\u9189\u9152\u4eba\u5458\u5728\u516c\u5171\u573a",
       "learning_targets": [
@@ -1580,18 +1580,18 @@
       ],
       "assets": [
         {
-          "path": "img/learning/jingqing/zuijiu-lei-step-flow.svg",
+          "path": "img/learning/jingqing/zuijiu-lei-chuzhi-flow.svg",
           "kind": "svg",
-          "purpose": "\u9189\u9152\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840\u8b66\u60c5\u8303\u56f4\u4e0e\u9002\u7528\u8fb9\u754cstep-flow",
+          "purpose": "醉酒类警情风险识别、沟通控制、协同处置与记录交接流程",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
+      "implementation_status": "complete",
       "acceptance_status": "not-reviewed",
       "blocked_reason": ""
     },
@@ -1928,7 +1928,7 @@
     {
       "path": "fagui/panwen-shenfenzheng.html",
       "module": "fagui",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
       "reason": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c - \u9002\u7528\u60c5\u5f62\u4e0e\u8303\u56f4\u8fb9\u754c\u5f53\u573a\u76d8\u95ee\u68c0\u67e5\u4e0e\u5c45\u6c11\u8eab\u4efd\u8bc1\u67e5\u9a8c\u662f\u5de1\u903b\u6c11\u8b66\u6700\u5e38\u7528\u7684\u6267\u6cd5\u624b\u6bb5\u3002\u4f9d\u636e\u300a\u4eba\u6c11\u8b66\u5bdf\u6cd5\u300b\u7b2c\u4e5d\u6761\u548c\u300a\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5\u300b\u7b2c\u5341\u4e94\u6761\uff0c\u6c11\u8b66\u7ecf\u51fa\u793a\u6267\u6cd5\u8bc1\u4ef6\uff0c\u5bf9\u6709\u8fdd\u6cd5\u72af\u7f6a\u5acc\u7591",
       "learning_targets": [
@@ -1943,18 +1943,18 @@
       ],
       "assets": [
         {
-          "path": "img/learning/fagui/panwen-shenfenzheng-legal-relationship.svg",
+          "path": "img/learning/fagui/panwen-shenfenzheng-procedure.svg",
           "kind": "svg",
-          "purpose": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c\u9002\u7528\u60c5\u5f62\u4e0e\u8303\u56f4\u8fb9\u754clegal-relationship",
+          "purpose": "盘问检查与身份证查验的法定情形、程序和权利保障关系",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
+      "implementation_status": "complete",
       "acceptance_status": "not-reviewed",
       "blocked_reason": ""
     },
@@ -2753,7 +2753,7 @@
     {
       "path": "zoufang/changsuo-aed-jiancha.html",
       "module": "zoufang",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
       "reason": "\u573a\u6240\u6025\u6551\u8bbe\u65bd\u4e0eAED\u90e8\u7f72\u68c0\u67e5 - \u4ee5\u4e0b\u60c5\u5f62\u63d0\u793a\u91cd\u70b9\u5173\u6ce8\u8d70\u8bbf\u68c0\u67e5\u662f\u638c\u63e1\u8f96\u533a\u516c\u5171\u5b89\u5168\u4e0e\u6025\u6551\u8d44\u6e90\u5e95\u6570\u3001\u843d\u5b9e\u5de1\u9632\u8054\u9632\u8981\u6c42\u7684\u57fa\u7840\u73af\u8282\u3002\u672c\u6587\u57fa\u4e8e\u56fd\u5bb6\u536b\u751f\u5065\u5eb7\u59d4\u300a\u516c\u5171\u573a\u6240\u81ea\u52a8\u4f53\u5916\u9664\u98a4\u5668\u914d\u7f6e\u6307\u5357\uff08\u8bd5\u884c\uff09\u300b\uff08\u56fd\u536b\u529e\u533b",
       "learning_targets": [
@@ -2768,18 +2768,18 @@
       ],
       "assets": [
         {
-          "path": "img/learning/zoufang/changsuo-aed-jiancha-checklist.svg",
+          "path": "img/learning/zoufang/changsuo-aed-jiancha.svg",
           "kind": "svg",
-          "purpose": "\u573a\u6240\u6025\u6551\u8bbe\u65bd\u4e0eAED\u90e8\u7f72\u68c0\u67e5\u4ee5\u4e0b\u60c5\u5f62\u63d0\u793a\u91cd\u70b9\u5173\u6ce8checklist",
+          "purpose": "公共场所AED点位、路径与设备维护检查清单",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
+      "implementation_status": "complete",
       "acceptance_status": "not-reviewed",
       "blocked_reason": ""
     }

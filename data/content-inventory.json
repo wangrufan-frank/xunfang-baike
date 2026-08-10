@@ -102,7 +102,15 @@
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
             "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zhuangbei/zhifa-jiuyi-structure.svg",
+              "alt": "执法记录仪镜头、显示屏、操作按键、电池、存储卡槽和胸前佩戴位置结构标注图",
+              "caption": "执法记录仪结构与佩戴：认清摄录、操作、供电、存储和背夹部件，并保持胸前镜头无遮挡（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/jiluyi-diantai-xunlian.html",
             "fagui/zhifa-jilu-quanli.html",
@@ -920,7 +928,15 @@
           "public_sources": [
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/gonggong-zhixu-goutong-record.svg",
+              "alt": "公共秩序现场沟通区、处置记录区、围观引导区与四类记录要素示意图",
+              "caption": "公共秩序现场分区与记录：划清沟通、处置和围观边界，同步记录时间地点、人员行为、告知措施和异常上报（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
             "fagui/weiguan-paishe-zhixu.html",
@@ -1115,7 +1131,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/geren-fanghu-anquan-checklist.svg",
+              "alt": "民警半侧身戒备姿势与训练前装备、人员、场地三项安全检查清单图",
+              "caption": "个人防护训练前检查：装备贴身牢固、人员状态适训、场地边界清晰，异常先叫停处理（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/fangci-fu.html",
             "zhuangbei/fangge-shoutao.html"
@@ -1632,7 +1656,15 @@
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html",
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/jingqing/zuijiu-lei-chuzhi-flow.svg",
+              "alt": "醉酒类警情从风险识别、沟通控制、协同处置到记录交接的四步流程信息图",
+              "caption": "醉酒类警情处置流程：风险识别、沟通控制、协同处置与记录交接，医疗风险优先处置（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/yueshu-dai.html",
             "fagui/zhian-guanli-chufa-fa.html"
@@ -1889,7 +1921,15 @@
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html",
             "https://gaj.beijing.gov.cn/zhengce/zcfg/202204/t20220402_2653202.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/fagui/panwen-shenfenzheng-procedure.svg",
+              "alt": "民警出示执法证件查验身份证及法定情形、盘问查验、记录保障、分类处置程序关系图",
+              "caption": "盘问检查与身份证查验程序：确认法定情形、出示证件、依法查验、同步记录与保障权利、分类处置（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/jumin-shenfenzheng-fa.html",
             "fagui/renmin-jingcha-fa.html"
@@ -2446,7 +2486,15 @@
             "https://wsjkj.guiyang.gov.cn/zfxxgk_500627/fdzdgknr/lzyj/bmwj/202604/t20260413_89993587.html",
             "https://cdwjw.chengdu.gov.cn/cdwjw/zcjd/2026-01/20/content_21eb66e0a8404977ab7982eac3c586ce.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/changsuo-aed-jiancha.svg",
+              "alt": "公共场所入口、人流路径、AED机柜点位与位置标识、设备耗材、巡检台账、人员培训检查清单图",
+              "caption": "公共场所 AED 检查：点位醒目可达、设备耗材有效、巡检台账可追溯、责任人员会取用（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/aed-shiyong.html",
             "zhuangbei/jijiu-bao.html"

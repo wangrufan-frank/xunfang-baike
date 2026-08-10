@@ -1,0 +1,40 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">个人防护与训练安全清单</title>
+  <desc id="desc">左侧人物以半侧身戒备姿势站立并佩戴腰带装备，右侧依次列出装备、人员和场地三项训练前检查。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.card{fill:#fff;stroke:#b9cedc;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style></defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <rect x="24" y="22" width="712" height="58" rx="14" fill="#163f60"/>
+  <text x="48" y="59" class="t h" fill="#fff">训练前安全清单｜人 · 装备 · 场地</text>
+  <text x="48" y="104" class="t b">动作开始前完成三查；任何一项不合格，先停训再处理</text>
+
+  <g aria-label="半侧身戒备人物">
+    <circle cx="188" cy="168" r="35" fill="#efc5a4" class="ol"/>
+    <path d="M154 217q42-33 84 0l-6 130-86 2z" fill="#2c6e9e" class="ol"/>
+    <path d="M155 238l-53 69M228 235l56 48" fill="none" class="ol"/>
+    <path d="M102 307l18 12M284 283l18-3" class="ol"/>
+    <path d="M165 348l-45 104M216 348l35 104" fill="none" class="ol"/>
+    <path d="M103 452h42M235 452h42" class="ol"/>
+    <rect x="142" y="292" width="94" height="18" rx="8" fill="#263746"/>
+    <rect x="145" y="307" width="24" height="48" rx="5" fill="#d98b2b" class="ol"/>
+    <path d="M191 310v58" stroke="#263746" stroke-width="10" stroke-linecap="round"/>
+    <path d="M217 309q25 16 0 39q-25-23 0-39z" fill="none" class="ol"/>
+    <path d="M256 252l76-72" stroke="#263746" stroke-width="12" stroke-linecap="round"/>
+    <path d="M330 181l15-16" class="ol"/>
+    <rect x="76" y="126" width="86" height="32" rx="16" fill="#e9f2f7"/><text x="90" y="147" class="t b">半侧身站位</text>
+    <text x="76" y="486" class="t s">装备贴身 · 双手戒备 · 重心稳定</text>
+  </g>
+
+  <g aria-label="三项检查清单">
+    <rect x="386" y="130" width="326" height="94" rx="14" class="card"/>
+    <circle cx="426" cy="177" r="22" fill="#2f7d73"/><path d="M415 177l8 8 15-19" fill="none" stroke="#fff" stroke-width="5"/>
+    <text x="460" y="164" class="t s">一查装备</text><text x="460" y="191" class="t b">腰带固定、护具牢固、器材无破损</text>
+    <rect x="386" y="240" width="326" height="94" rx="14" class="card"/>
+    <circle cx="426" cy="287" r="22" fill="#2c6e9e"/><path d="M415 287l8 8 15-19" fill="none" stroke="#fff" stroke-width="5"/>
+    <text x="460" y="274" class="t s">二查人员</text><text x="460" y="301" class="t b">身体状态、首饰清空、安全员到位</text>
+    <rect x="386" y="350" width="326" height="94" rx="14" class="card"/>
+    <circle cx="426" cy="397" r="22" fill="#d98b2b"/><path d="M415 397l8 8 15-19" fill="none" stroke="#fff" stroke-width="5"/>
+    <text x="460" y="384" class="t s">三查场地</text><text x="460" y="411" class="t b">地面平整、边界清晰、杂物清除</text>
+  </g>
+  <rect x="386" y="460" width="326" height="36" rx="10" fill="#f8e8d3"/>
+  <text x="405" y="484" class="t s" fill="#a65d13">发现异常：立即叫停 → 标记 → 处理</text>
+</svg>

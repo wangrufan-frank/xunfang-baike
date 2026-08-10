@@ -1335,8 +1335,46 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 .source-list, .related-links { margin-top: 2rem; padding: 1.25rem; border-radius: 14px; background: var(--card-bg); }
 .article-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 .article-gallery img { width: 100%; height: auto; border-radius: 12px; }
+
+.learning-figure {
+  width: min(100%, 54rem);
+  margin: 1.5rem auto;
+  break-inside: avoid;
+}
+
+.learning-figure__media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card-bg);
+}
+
+.learning-figure__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 0;
+  border-radius: 10px;
+}
+
+.learning-figure figcaption {
+  margin-top: 0.65rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 @media (max-width: 640px) {
     .source-list, .related-links { padding: 1rem; }
+
+    .learning-figure__media {
+      grid-template-columns: minmax(0, 1fr);
+      padding: 0.7rem;
+    }
 }
 
 /* ===================================================================
@@ -1912,5 +1950,11 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 
   .quick-read {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .learning-figure,
+  .learning-figure__media {
+    break-inside: avoid;
+    box-shadow: none;
   }
 }

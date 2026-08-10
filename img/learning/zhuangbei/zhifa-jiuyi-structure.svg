@@ -1,0 +1,54 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">执法记录仪结构与规范佩戴位置</title>
+  <desc id="desc">中央为执法记录仪正反面结构，标注镜头、显示屏、操作键、电池、存储卡和背夹，右侧人物示意胸前规范佩戴位置。</desc>
+  <defs>
+    <style>
+      .t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:16px;font-weight:700}.b{font-size:14px}.line{stroke:#2c6e9e;stroke-width:2;fill:none}.obj{stroke:#18354c;stroke-width:3;stroke-linejoin:round}.label{fill:#fff;stroke:#b8cedd;stroke-width:1.5}
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#2c6e9e"/></marker>
+  </defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <rect x="24" y="22" width="712" height="58" rx="14" fill="#163f60"/>
+  <text x="48" y="59" class="t h" fill="#fff">执法记录仪｜结构标注与佩戴</text>
+  <text x="48" y="104" class="t b">先认部件，再确认位置：镜头无遮挡、操作可触达、画面反映执法视角</text>
+
+  <g aria-label="执法记录仪正面">
+    <rect x="258" y="136" width="180" height="286" rx="24" fill="#263746" class="obj"/>
+    <rect x="276" y="158" width="144" height="108" rx="12" fill="#101b24" stroke="#708697" stroke-width="3"/>
+    <circle cx="348" cy="212" r="39" fill="#1c2b38" stroke="#d7e6ef" stroke-width="5"/>
+    <circle cx="348" cy="212" r="23" fill="#2c6e9e" stroke="#8fd1e8" stroke-width="4"/>
+    <circle cx="341" cy="204" r="7" fill="#dff8ff"/>
+    <rect x="278" y="286" width="140" height="76" rx="8" fill="#dce8ef" stroke="#8197a6" stroke-width="2"/>
+    <path d="M296 302h104M296 318h84M296 334h62" stroke="#7d93a2" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="309" cy="389" r="12" fill="#d98b2b"/>
+    <circle cx="348" cy="389" r="12" fill="#5f7483"/>
+    <circle cx="387" cy="389" r="12" fill="#5f7483"/>
+  </g>
+
+  <g aria-label="结构标注">
+    <rect x="32" y="146" width="158" height="42" rx="10" class="label"/><text x="48" y="173" class="t s">摄录镜头</text>
+    <path d="M190 167H250l62 34" class="line" marker-end="url(#arrow)"/>
+    <rect x="32" y="246" width="158" height="42" rx="10" class="label"/><text x="48" y="273" class="t s">显示屏</text>
+    <path d="M190 267h72l24 42" class="line" marker-end="url(#arrow)"/>
+    <rect x="32" y="346" width="158" height="42" rx="10" class="label"/><text x="48" y="373" class="t s">操作按键</text>
+    <path d="M190 367h84l22 18" class="line" marker-end="url(#arrow)"/>
+    <rect x="470" y="140" width="126" height="42" rx="10" class="label"/><text x="486" y="167" class="t s">背夹</text>
+    <path d="M470 161h-20l-15 32" class="line" marker-end="url(#arrow)"/>
+    <rect x="470" y="236" width="126" height="42" rx="10" class="label"/><text x="486" y="263" class="t s">电池舱</text>
+    <path d="M470 257h-22l-13 88" class="line" marker-end="url(#arrow)"/>
+    <rect x="470" y="332" width="126" height="42" rx="10" class="label"/><text x="486" y="359" class="t s">存储卡槽</text>
+    <path d="M470 353h-24l-10 44" class="line" marker-end="url(#arrow)"/>
+  </g>
+
+  <g aria-label="胸前佩戴示意" transform="translate(620 118)">
+    <circle cx="52" cy="42" r="28" fill="#f0c9a7" stroke="#18354c" stroke-width="3"/>
+    <path d="M18 94Q52 66 86 94l16 116H2z" fill="#2c6e9e" class="obj"/>
+    <path d="M52 72v138M18 112h68" stroke="#d8edf5" stroke-width="3"/>
+    <rect x="56" y="105" width="22" height="36" rx="4" fill="#263746" stroke="#fff" stroke-width="2"/>
+    <path d="M93 116h23" class="line" marker-end="url(#arrow)"/>
+    <text x="0" y="242" class="t s">胸前／肩部</text>
+    <text x="-2" y="264" class="t b">保持镜头无遮挡</text>
+  </g>
+  <rect x="32" y="452" width="696" height="44" rx="12" fill="#e9f2f7"/>
+  <text x="52" y="480" class="t s">佩戴检查：卡扣牢固　镜头清洁　电量充足　存储可用</text>
+</svg>

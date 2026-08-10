@@ -1,0 +1,38 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">盘问检查与身份证查验程序关系</title>
+  <desc id="desc">上方民警出示证件并查验群众身份证，下方流程依次表示法定情形、出示证件、盘问查验、记录和权利保障以及后续分类处置。</desc>
+  <defs>
+    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.card{fill:#fff;stroke:#b8cedd;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#2c6e9e"/></marker>
+  </defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <rect x="24" y="22" width="712" height="58" rx="14" fill="#163f60"/>
+  <text x="48" y="59" class="t h" fill="#fff">盘问与身份证查验｜程序关系</text>
+  <text x="48" y="104" class="t b">权力启动须有法定情形，程序动作与权利保障同步完成</text>
+
+  <g aria-label="查验场景">
+    <circle cx="120" cy="172" r="30" fill="#efc5a4" class="ol"/><path d="M84 214q36-28 72 0v78H84z" fill="#2c6e9e" class="ol"/>
+    <rect x="142" y="220" width="56" height="38" rx="5" fill="#fff" class="ol"/><circle cx="158" cy="238" r="7" fill="#d98b2b"/><path d="M171 231h18M171 241h14" stroke="#708697" stroke-width="3"/>
+    <text x="68" y="320" class="t s">民警出示执法证件</text>
+    <circle cx="332" cy="172" r="30" fill="#efc5a4" class="ol"/><path d="M296 214q36-28 72 0v78h-72z" fill="#708697" class="ol"/>
+    <rect x="264" y="228" width="58" height="40" rx="5" fill="#dce8ef" class="ol"/><circle cx="280" cy="247" r="8" fill="#2c6e9e"/><path d="M293 239h20M293 249h16" stroke="#708697" stroke-width="3"/>
+    <text x="273" y="320" class="t s">当事人提供身份证</text>
+    <path d="M204 239h45" stroke="#2c6e9e" stroke-width="4" marker-end="url(#a)"/>
+    <rect x="470" y="137" width="242" height="151" rx="16" class="card"/>
+    <text x="492" y="169" class="t s">范围边界</text>
+    <text x="492" y="201" class="t b">• 违法犯罪嫌疑需查明身份</text>
+    <text x="492" y="229" class="t b">• 现场管制或严重治安事件</text>
+    <text x="492" y="257" class="t b">• 法定重点场所／重大活动</text>
+  </g>
+
+  <path d="M68 376h624" stroke="#b8cedd" stroke-width="5"/>
+  <g aria-label="程序步骤">
+    <circle cx="84" cy="376" r="24" fill="#bf4a45"/><text x="78" y="383" class="t s" fill="#fff">1</text><text x="47" y="420" class="t s">法定情形</text><text x="49" y="445" class="t b">确认依据</text>
+    <circle cx="231" cy="376" r="24" fill="#2c6e9e"/><text x="225" y="383" class="t s" fill="#fff">2</text><text x="194" y="420" class="t s">出示证件</text><text x="196" y="445" class="t b">表明身份</text>
+    <circle cx="378" cy="376" r="24" fill="#2f7d73"/><text x="372" y="383" class="t s" fill="#fff">3</text><text x="341" y="420" class="t s">盘问查验</text><text x="337" y="445" class="t b">说明与核实</text>
+    <circle cx="525" cy="376" r="24" fill="#d98b2b"/><text x="519" y="383" class="t s" fill="#fff">4</text><text x="480" y="420" class="t s">记录与保障</text><text x="486" y="445" class="t b">同性检查</text>
+    <circle cx="672" cy="376" r="24" fill="#163f60"/><text x="666" y="383" class="t s" fill="#fff">5</text><text x="631" y="420" class="t s">分类处置</text><text x="630" y="445" class="t b">放行或移交</text>
+  </g>
+  <rect x="45" y="470" width="670" height="30" rx="8" fill="#f8e8d3"/>
+  <text x="68" y="491" class="t b">禁止：无依据扩大查验　侮辱性盘问　异性直接人身检查　无故延长控制</text>
+</svg>
