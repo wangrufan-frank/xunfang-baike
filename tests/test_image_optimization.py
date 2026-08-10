@@ -86,6 +86,22 @@ FAGUI_SVGS = (
     "img/learning/fagui/qita-xiangguan-guifan-learning-map.svg",
 )
 
+NEW_ZOUFANG_SVGS = (
+    "img/learning/zoufang/neiwu-tiaoling-learning-map.svg",
+    "img/learning/zoufang/jilv-yaoqiu-learning-map.svg",
+    "img/learning/zoufang/baomi-xinxi-anquan-learning-map.svg",
+    "img/learning/zoufang/shejiu-yanqing-guanli-learning-map.svg",
+    "img/learning/zoufang/zhifa-jilu-ziliao-guanli-learning-map.svg",
+    "img/learning/zoufang/tineng-kaohe-learning-map.svg",
+    "img/learning/zoufang/jichu-jingwu-kaohe-learning-map.svg",
+    "img/learning/zoufang/xiaozu-xietong-kaohe-learning-map.svg",
+    "img/learning/zoufang/kaohe-anquan-buce-learning-map.svg",
+    "img/learning/zoufang/danwei-youxiu-kecheng-learning-map.svg",
+    "img/learning/zoufang/shiju-youxiu-kecheng-learning-map.svg",
+    "img/learning/zoufang/chuangxin-xunlian-fangfa-learning-map.svg",
+    "img/learning/zoufang/kecheng-ziliao-jiaoliu-learning-map.svg",
+)
+
 RETAINED_EQUIPMENT_IMAGE_PAGES = (
     "zhuangbei/jiuxiaojian-gailan.html",
     "zhuangbei/fangge-shoutao.html",
@@ -432,6 +448,90 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             for term in terms["forbidden"]:
                 self.assertNotIn(term, combined, f"{page_path}: stale unsupported term {term}")
 
+    def test_zoufang_svgs_are_self_contained_accessible_documents(self):
+        for relative_path in NEW_ZOUFANG_SVGS:
+            path = ROOT / relative_path
+            self.assertTrue(path.exists(), relative_path)
+            svg = path.read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertTrue(root.get("viewBox"), relative_path)
+            self.assertTrue(any(node.tag.endswith("title") for node in root), relative_path)
+            self.assertTrue(any(node.tag.endswith("desc") for node in root), relative_path)
+            self.assertNotIn("http://", svg, relative_path)
+            self.assertNotIn("https://", svg, relative_path)
+            self.assertNotIn("href=", svg, relative_path)
+            self.assertNotIn("?", svg, f"{relative_path}: replacement character leaked into SVG text")
+            self.assertNotIn("\\n", svg, f"{relative_path}: literal newline escape leaked into SVG markup")
+
+    def test_zoufang_svgs_use_explicit_contrast_classes(self):
+        for relative_path in NEW_ZOUFANG_SVGS:
+            svg = (ROOT / relative_path).read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertIn(".light", svg, relative_path)
+            self.assertIn(".dark", svg, relative_path)
+            for node in (item for item in root.iter() if item.tag.endswith("text")):
+                classes = (node.get("class") or "").split()
+                self.assertTrue({"light", "dark"}.intersection(classes), relative_path)
+
+    def test_zoufang_svgs_have_readable_mobile_reflow(self):
+        for relative_path in NEW_ZOUFANG_SVGS:
+            svg = (ROOT / relative_path).read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertIn("@media (max-width:500px)", svg, relative_path)
+            mobile_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "mobile" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(mobile_groups), relative_path)
+            mobile_text = [node for node in mobile_groups[0].iter() if node.tag.endswith("text")]
+            self.assertTrue(mobile_text, relative_path)
+            for node in mobile_text:
+                self.assertGreaterEqual(float(node.get("font-size", "0")), 25, relative_path)
+
+    def test_zoufang_desktop_card_body_lines_fit_their_cards(self):
+        for relative_path in NEW_ZOUFANG_SVGS:
+            root = ET.parse(ROOT / relative_path).getroot()
+            desktop_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "desktop" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(desktop_groups), relative_path)
+            body_lines = [
+                node
+                for node in desktop_groups[0].iter()
+                if node.tag.endswith("text") and node.get("data-role") == "body"
+            ]
+            self.assertEqual(8, len(body_lines), relative_path)
+            for node in body_lines:
+                self.assertLessEqual(len((node.text or "").strip()), 10, relative_path)
+
+    def test_zoufang_reviewed_semantics_preserve_boundaries_and_feedback_paths(self):
+        inventory = json.loads((ROOT / "data/content-inventory.json").read_text(encoding="utf-8"))
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        articles = {
+            article["path"]: article
+            for module in inventory["modules"]
+            for article in module["articles"]
+        }
+        planned = {page["path"]: page for page in plan["pages"]}
+        cases = {
+            "zoufang/jilv-yaoqiu.html": ("紧急情形", "依法处置", "及时报告"),
+            "zoufang/baomi-xinxi-anquan.html": ("公开碎片", "保留原状", "请示"),
+            "zoufang/kaohe-anquan-buce.html": ("异常立即叫停", "成绩当场确认", "异议按程序反映", "按当期方案补测"),
+            "zoufang/kecheng-ziliao-jiaoliu.html": ("内部资料", "审核对外版本", "正式渠道", "把握不准先请示"),
+            "zoufang/changsuo-aed-jiancha.html": ("故障或过期", "停用", "通报", "整改", "复查", "专业急救到达前"),
+        }
+        for page_path, required in cases.items():
+            page = planned[page_path]
+            asset_text = "\n".join((ROOT / asset["path"]).read_text(encoding="utf-8") for asset in page["assets"])
+            html = (ROOT / page_path).read_text(encoding="utf-8")
+            metadata = json.dumps({"article": articles[page_path]["images"], "plan": page}, ensure_ascii=False)
+            combined = "\n".join((asset_text, html, metadata))
+            for term in required:
+                self.assertIn(term, combined, f"{page_path}: missing reviewed term {term}")
+
     def test_special_event_order_figure_consistently_describes_four_zones(self):
         page_path = "qinwu/zhuanxiang-xianchang-zhixu.html"
         asset_path = "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg"
@@ -511,6 +611,12 @@ class ImageOptimizationPlanTests(unittest.TestCase):
         self.assertEqual(
             [],
             validate_runtime(ROOT, module="fagui", require_complete=True),
+        )
+
+    def test_visit_and_assessment_image_optimization_is_complete(self):
+        self.assertEqual(
+            [],
+            validate_runtime(ROOT, module="zoufang", require_complete=True),
         )
 
     def test_retained_equipment_image_insertion_points_match_nearby_body_text(self):
@@ -606,7 +712,26 @@ class ImageOptimizationPlanTests(unittest.TestCase):
                     image_position - body_position,
                     2500,
                     f"{page['path']}: insertion point is not bound to its figure: {insertion_point}",
-                )
+                    )
+
+    def test_every_zoufang_image_insertion_point_matches_nearby_body_text(self):
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        visit_pages = [page for page in plan["pages"] if page["path"].startswith("zoufang/")]
+        self.assertEqual(14, len(visit_pages))
+        for page in visit_pages:
+            html = (ROOT / page["path"]).read_text(encoding="utf-8")
+            for asset in page["assets"]:
+                asset_position = html.find(asset["path"])
+                self.assertNotEqual(-1, asset_position, f"{page['path']}: {asset['path']}")
+                image_position = html.rfind("<img", 0, asset_position)
+                for insertion_point in page["insertion_points"]:
+                    body_position = html.rfind(insertion_point, 0, image_position)
+                    self.assertGreaterEqual(body_position, 0, f"{page['path']}: {insertion_point}")
+                    self.assertLessEqual(
+                        image_position - body_position,
+                        2500,
+                        f"{page['path']}: insertion point is not bound to its figure: {insertion_point}",
+                    )
 
     def test_plan_rejects_wrong_current_image_count(self):
         with tempfile.TemporaryDirectory() as directory:

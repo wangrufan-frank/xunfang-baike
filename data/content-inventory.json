@@ -2577,7 +2577,15 @@
           "public_sources": [
             "https://www.gov.cn/gongbao/content/2022/content_5671112.htm"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/neiwu-tiaoling-learning-map.svg",
+              "alt": "人民警察内务规范：着装警容、礼节用语、日常管理、协作请示学习图",
+              "caption": "人民警察内务规范：着装警容、礼节用语、日常管理、协作请示（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/jilv-yaoqiu.html",
             "zoufang/shejiu-yanqing-guanli.html",
@@ -2600,7 +2608,15 @@
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html",
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/201007/t20100728_144862.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/jilv-yaoqiu-learning-map.svg",
+              "alt": "纪律要求履职边界：权限有来源、执法执勤、群众纪律、请示报告学习图",
+              "caption": "纪律要求履职边界：权限有来源、执法执勤、群众纪律、请示报告（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/neiwu-tiaoling.html",
             "zoufang/shejiu-yanqing-guanli.html",
@@ -2623,7 +2639,15 @@
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
             "https://www.npc.gov.cn/npc/c2/c30834/202402/t20240227_434859.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/baomi-xinxi-anquan-learning-map.svg",
+              "alt": "保密与信息安全判断链：聚合风险、范围判断、音视频资料、无法判断学习图",
+              "caption": "保密与信息安全判断链：聚合风险、范围判断、音视频资料、无法判断（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/zhifa-jilu-ziliao-guanli.html",
             "fagui/zhifa-jilu-quanli.html"
@@ -2642,7 +2666,15 @@
             "https://gaj.sjz.gov.cn/columns/0a9c92b2-97b8-4284-9bd7-6240c789c0bf/202204/29/1c7b0edf-6eec-4110-a397-d1a4828b68d4.html",
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/201007/t20100728_144862.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/shejiu-yanqing-guanli-learning-map.svg",
+              "alt": "涉酒与宴请四道防线：执勤执法、宴请边界、饮酒底线、报告报备学习图",
+              "caption": "涉酒与宴请四道防线：执勤执法、宴请边界、饮酒底线、报告报备（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/jilv-yaoqiu.html",
             "zoufang/neiwu-tiaoling.html"
@@ -2664,7 +2696,15 @@
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml",
             "https://www.mee.gov.cn/zcwj/gwywj/202502/t20250211_1102044.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/zhifa-jilu-ziliao-guanli-learning-map.svg",
+              "alt": "执法记录与资料闭环：接班三查、全程记录、移交调取、文书记录学习图",
+              "caption": "执法记录与资料闭环：接班三查、全程记录、移交调取、文书记录（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/zhifa-jilu-quanli.html",
             "zhuangbei/zhifa-jiuyi.html",
@@ -2686,7 +2726,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/tineng-kaohe-learning-map.svg",
+              "alt": "体能考核备考框架：考核导向、训练参考、体能分配、方案边界学习图",
+              "caption": "体能考核备考框架：考核导向、训练参考、体能分配、方案边界（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/jichu-jingwu-kaohe.html",
             "zoufang/kaohe-anquan-buce.html",
@@ -2708,7 +2756,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/jichu-jingwu-kaohe-learning-map.svg",
+              "alt": "基础警务技能考核主线：指挥与剥离、用语与降级、警械与舆情、评分导向学习图",
+              "caption": "基础警务技能考核主线：指挥与剥离、用语与降级、警械与舆情、评分导向（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/tineng-kaohe.html",
             "zoufang/xiaozu-xietong-kaohe.html",
@@ -2732,7 +2788,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/xiaozu-xietong-kaohe-learning-map.svg",
+              "alt": "小组协同考核闭环：三级递进、角色协同、群众保护、五维点评学习图",
+              "caption": "小组协同考核闭环：三级递进、角色协同、群众保护、五维点评（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/xunlian-fupan-kaoping.html",
             "zoufang/jichu-jingwu-kaohe.html",
@@ -2755,7 +2819,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/kaohe-anquan-buce-learning-map.svg",
+              "alt": "考核安全、记录与补测：考前准备、过程控制、记录确认、补测复核学习图",
+              "caption": "考核安全、记录与补测：考前准备、过程控制、记录确认、补测复核（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/tineng-kaohe.html",
             "zoufang/jichu-jingwu-kaohe.html",
@@ -2777,7 +2849,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/danwei-youxiu-kecheng-learning-map.svg",
+              "alt": "单位优秀课程体系：校园送教、企业安防、队内实战、课程建设学习图",
+              "caption": "单位优秀课程体系：校园送教、企业安防、队内实战、课程建设（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/shiju-youxiu-kecheng.html",
             "zoufang/chuangxin-xunlian-fangfa.html",
@@ -2799,7 +2879,15 @@
           "public_sources": [
             "https://gaj.changzhou.gov.cn/html/czgaj/2025/BOHBPMBI_1016/88415.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/shiju-youxiu-kecheng-learning-map.svg",
+              "alt": "市局优秀课程导览：快反单元、现场执法、狭小空间臂盾、盘查措施学习图",
+              "caption": "市局优秀课程导览：快反单元、现场执法、狭小空间臂盾、盘查措施（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/danwei-youxiu-kecheng.html",
             "zoufang/chuangxin-xunlian-fangfa.html"
@@ -2822,7 +2910,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/chuangxin-xunlian-fangfa-learning-map.svg",
+              "alt": "创新训练方法闭环：情景植入、红蓝对抗、六环控制、闭环改进学习图",
+              "caption": "创新训练方法闭环：情景植入、红蓝对抗、六环控制、闭环改进（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/danwei-youxiu-kecheng.html",
             "xunlian/xunlian-fupan-kaoping.html",
@@ -2844,7 +2940,15 @@
           "public_sources": [
             "https://www.npc.gov.cn/npc/c2/c30834/202402/t20240227_434859.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zoufang/kecheng-ziliao-jiaoliu-learning-map.svg",
+              "alt": "课程资料使用与交流：资料分类、交流渠道、汇编风险、判断边界学习图",
+              "caption": "课程资料使用与交流：资料分类、交流渠道、汇编风险、判断边界（本站原创学习图解，依据本页正文梳理）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/danwei-youxiu-kecheng.html",
             "zoufang/zhifa-jilu-ziliao-guanli.html",
