@@ -93,8 +93,12 @@ def validate_plan(root, require_complete=False):
                 errors.append(f"{label}: asset accessed_at must be ISO date")
             provenance = (asset["publisher"].strip(), asset["accessed_at"].strip(), asset["license"].strip())
             if source_status == "external":
-                parsed = urlparse(asset["source_url"])
-                if parsed.scheme not in {"https", "http"} or not parsed.hostname or not all(provenance):
+                try:
+                    parsed = urlparse(asset["source_url"])
+                    valid_url = parsed.scheme in {"https", "http"} and bool(parsed.hostname)
+                except ValueError:
+                    valid_url = False
+                if not valid_url or not all(provenance):
                     errors.append(f"{label}: external asset requires valid provenance")
             elif source_status in {"original", "internal"}:
                 if asset["source_url"].strip() or not all(provenance):
