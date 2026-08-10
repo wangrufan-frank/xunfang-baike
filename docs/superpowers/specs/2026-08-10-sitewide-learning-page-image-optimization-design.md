@@ -241,4 +241,3 @@ python tools/public_source_index.py check
 - 搜索索引、站内链接、来源台账及完整自动化测试全部通过。
 - 代表页面完成桌面端和手机端视觉验收。
 - `data/updates.json` 记录本轮全站图文学习优化。
-
