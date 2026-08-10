@@ -47,3 +47,46 @@
 
 - 最终复核发现 `qinwu/gonggong-zhixu-goutong-jilu.html` 桌面截图与 `zoufang/changsuo-aed-jiancha.html` 移动截图带有非零横向截图偏移警告；两张正式 PNG 已在 `scrollX = 0` 后重新生成并覆盖。
 - 重采后两张截图均完整显示站点标识、页头与配图左右边界，像素尺寸仍分别为 1440×900 与 390×900。其余十张正式截图不受影响，当前不再有截图偏移警告。
+
+## Task 10 全站抽样验收（2026-08-10）
+
+### 抽样与证据
+
+最终验收从 `data/image-optimization-plan.json` 动态选择 18 个独立页面：每个模块保留一张已确认的视觉基线代表页，再选择模块内学习图/图片数量最高页，以及排除前两页后的补充长图文页。这样每模块有 3 页，超过“每模块至少 2 页并保留 6 个代表页”的要求。`python tools/visual_acceptance.py --list-samples` 已通过 18 页源文件结构检查，确认每页均有 `.learning-figure`、存在的本地图片、非空 `alt` 和 `figcaption`。
+
+| 模块 | 页面 | 选择原因 | 1440×900 | 390×900 |
+| --- | --- | --- | --- | --- |
+| 装备操作 | `zhuangbei/zhifa-jiuyi.html` | 基线代表页 | `.artifacts/visual-acceptance-sitewide/zhuangbei-zhifa-jiuyi-1440x900.png` | `.artifacts/visual-acceptance-sitewide/zhuangbei-zhifa-jiuyi-390x900.png` |
+| 装备操作 | `zhuangbei/yueshu-dai.html` | 高图量/长图文 | `.artifacts/visual-acceptance-sitewide/zhuangbei-yueshu-dai-1440x900.png` | `.artifacts/visual-acceptance-sitewide/zhuangbei-yueshu-dai-390x900.png` |
+| 装备操作 | `zhuangbei/pochai-gongju.html` | 补充长图文 | `.artifacts/visual-acceptance-sitewide/zhuangbei-pochai-gongju-1440x900.png` | `.artifacts/visual-acceptance-sitewide/zhuangbei-pochai-gongju-390x900.png` |
+| 实战训练 | `xunlian/geren-fanghu-anquan.html` | 基线代表页 | `.artifacts/visual-acceptance-sitewide/xunlian-geren-fanghu-anquan-1440x900.png` | `.artifacts/visual-acceptance-sitewide/xunlian-geren-fanghu-anquan-390x900.png` |
+| 实战训练 | `xunlian/xianchang-goutong-yingxiang.html` | 高图量/长图文 | `.artifacts/visual-acceptance-sitewide/xunlian-xianchang-goutong-yingxiang-1440x900.png` | `.artifacts/visual-acceptance-sitewide/xunlian-xianchang-goutong-yingxiang-390x900.png` |
+| 实战训练 | `xunlian/zhixue-baozha-banyun.html` | 补充长图文 | `.artifacts/visual-acceptance-sitewide/xunlian-zhixue-baozha-banyun-1440x900.png` | `.artifacts/visual-acceptance-sitewide/xunlian-zhixue-baozha-banyun-390x900.png` |
+| 警情处置 | `jingqing/zuijiu-lei.html` | 基线代表页 | `.artifacts/visual-acceptance-sitewide/jingqing-zuijiu-lei-1440x900.png` | `.artifacts/visual-acceptance-sitewide/jingqing-zuijiu-lei-390x900.png` |
+| 警情处置 | `jingqing/jingshen-zhangai-lei.html` | 高图量/长图文 | `.artifacts/visual-acceptance-sitewide/jingqing-jingshen-zhangai-lei-1440x900.png` | `.artifacts/visual-acceptance-sitewide/jingqing-jingshen-zhangai-lei-390x900.png` |
+| 警情处置 | `jingqing/jiuzhu-lei-jingqing-chuzhi.html` | 补充长图文 | `.artifacts/visual-acceptance-sitewide/jingqing-jiuzhu-lei-jingqing-chuzhi-1440x900.png` | `.artifacts/visual-acceptance-sitewide/jingqing-jiuzhu-lei-jingqing-chuzhi-390x900.png` |
+| 勤务须知 | `qinwu/gonggong-zhixu-goutong-jilu.html` | 基线代表页 | `.artifacts/visual-acceptance-sitewide/qinwu-gonggong-zhixu-goutong-jilu-1440x900.png` | `.artifacts/visual-acceptance-sitewide/qinwu-gonggong-zhixu-goutong-jilu-390x900.png` |
+| 勤务须知 | `qinwu/yinhang-zhidian-zoufang.html` | 高图量/长图文 | `.artifacts/visual-acceptance-sitewide/qinwu-yinhang-zhidian-zoufang-1440x900.png` | `.artifacts/visual-acceptance-sitewide/qinwu-yinhang-zhidian-zoufang-390x900.png` |
+| 勤务须知 | `qinwu/zhuanxiang-xianchang-zhixu.html` | 补充长图文 | `.artifacts/visual-acceptance-sitewide/qinwu-zhuanxiang-xianchang-zhixu-1440x900.png` | `.artifacts/visual-acceptance-sitewide/qinwu-zhuanxiang-xianchang-zhixu-390x900.png` |
+| 执法规范 | `fagui/panwen-shenfenzheng.html` | 基线代表页 | `.artifacts/visual-acceptance-sitewide/fagui-panwen-shenfenzheng-1440x900.png` | `.artifacts/visual-acceptance-sitewide/fagui-panwen-shenfenzheng-390x900.png` |
+| 执法规范 | `fagui/xingzheng-anji-chengxu-guiding.html` | 高图量/长图文 | `.artifacts/visual-acceptance-sitewide/fagui-xingzheng-anji-chengxu-guiding-1440x900.png` | `.artifacts/visual-acceptance-sitewide/fagui-xingzheng-anji-chengxu-guiding-390x900.png` |
+| 执法规范 | `fagui/xianchang-zhizhi-guicheng.html` | 补充长图文 | `.artifacts/visual-acceptance-sitewide/fagui-xianchang-zhizhi-guicheng-1440x900.png` | `.artifacts/visual-acceptance-sitewide/fagui-xianchang-zhizhi-guicheng-390x900.png` |
+| 教育学习 | `zoufang/changsuo-aed-jiancha.html` | 基线代表页 | `.artifacts/visual-acceptance-sitewide/zoufang-changsuo-aed-jiancha-1440x900.png` | `.artifacts/visual-acceptance-sitewide/zoufang-changsuo-aed-jiancha-390x900.png` |
+| 教育学习 | `zoufang/jichu-jingwu-kaohe.html` | 高图量/长图文 | `.artifacts/visual-acceptance-sitewide/zoufang-jichu-jingwu-kaohe-1440x900.png` | `.artifacts/visual-acceptance-sitewide/zoufang-jichu-jingwu-kaohe-390x900.png` |
+| 教育学习 | `zoufang/kecheng-ziliao-jiaoliu.html` | 补充长图文 | `.artifacts/visual-acceptance-sitewide/zoufang-kecheng-ziliao-jiaoliu-1440x900.png` | `.artifacts/visual-acceptance-sitewide/zoufang-kecheng-ziliao-jiaoliu-390x900.png` |
+
+浏览器原始结构与布局结果保存在 `.artifacts/visual-acceptance-sitewide/browser-report.json`，状态为 `passed`，含 36 个视口结果、6 个代表页的四主题结果和零错误清单。Task 2 的 12 张正式基线截图仍保留在 `.artifacts/visual-acceptance-learning-figures/`，没有被本轮文件替代或冒充。
+
+### 浏览器布局与人工复核
+
+复用 `127.0.0.1:8765` auth-aware 本地静态夹具，经 Codex 应用内浏览器进入真实正文；未读取浏览器 Cookie/存储，也未改动生产认证文件。应用内浏览器会扣除滚动条和工具栏像素，因此控制视口使用 1455×909 / 405×935，最终 42 个 PNG（36 张暖警蓝双视口截图和 6 张夜间代表页截图）经 Pillow 逐文件核验，分别严格为 1440×900 / 390×900。六张夜间证据采用 `*-night-1440x900.png` 文件名。
+
+36 个双视口结果全部满足：最终路径仍为目标正文、`auth-pending` 已解除、正文连续且长度正常；`documentElement.scrollWidth <= window.innerWidth + 5`；`.learning-figure`、media、图片和图注 bounding box 均非零，左右边界不超过 `documentElement.clientWidth + 1`；图片已完成加载；图注无自身横向裁剪；横向截图偏移为 0；首张学习图滚入后与 900px 截图视口相交。
+
+六个代表页通过站点主题控件逐一切换暖警蓝、经典暖棕、日间浅色和夜间深色。图注文字与沿 DOM 祖先找到的首个不透明背景的实测对比度依次为 6.72:1、6.04:1、7.03:1、11.40:1，均高于 4.5:1；四主题下页面均无横向溢出，配图边界保持完整。首次计算曾把透明图注/figure 背景错误当成纯黑，已改为沿祖先查找有效背景后复测；不保留该次假阴性结论。
+
+人工查看了六个模块代表页的 390×900 暖警蓝截图、各模块的长图文/高图量样本以及 1440×900 夜间代表页。移动层文字、人物/器材/步骤/空间关系和相邻图注可辨；图注换行正常；正文在图片前后连续；未发现抽象装饰图、重复占位图或与正文流程矛盾的内容。本轮未发现需要继续修改 HTML、CSS 或 SVG 的视觉缺陷。
+
+### 运行限制
+
+当前 bundled Python 解释器未安装 `playwright` 模块。因此直接运行 `python tools/visual_acceptance.py` 会在完成 18 页 source audit 后以退出码 2 明确报告 `BLOCKED`，并在 `.artifacts/visual-acceptance-sitewide/report.json` 写入 `status: blocked`；它不会把未执行的 Python Playwright 截图写成通过。真实浏览器验收由上述 Codex 应用内浏览器完成，独立证据在 `browser-report.json` 中为 `status: passed`。脚本本身已具备 Playwright 可用时的 36 视口截图、页面横向溢出、学习图/图片/图注零尺寸与裁剪失败判定。
