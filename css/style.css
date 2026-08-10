@@ -1459,7 +1459,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 
 @media (max-width: 900px) {
   .article-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .article-toc {
