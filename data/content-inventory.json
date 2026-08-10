@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-08-07",
+  "updated_at": "2026-08-10",
   "modules": [
     {
       "slug": "zhuangbei",
@@ -175,7 +175,16 @@
           "public_sources": [
             "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/灭火毯实物图.jpg",
+              "alt": "灭火毯实物外观",
+              "caption": "灭火毯实物外观（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://cbu01.alicdn.com/img/ibank/2019/407/296/12412692704_1519918050.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/miehuo-qi.html",
             "zhuangbei/pochai-gongju.html"
@@ -197,7 +206,23 @@
             "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html",
             "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/干粉灭火器实物图.jpg",
+              "alt": "手提式干粉灭火器实物外观",
+              "caption": "手提式干粉灭火器实物外观（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://www.djxf119.cn/static/upload/image/20220628/1656397155195561.png",
+              "license": "fair-use 学习参考"
+            },
+            {
+              "path": "img/干粉灭火器结构标注示意图.svg",
+              "alt": "手提贮压式干粉灭火器结构标注示意图",
+              "caption": "手提贮压式干粉灭火器结构：筒体、压力表、保险销、提把压把、喷管",
+              "source": "巡防百科自绘示意图",
+              "license": "internal"
+            }
+          ],
           "related_pages": [
             "zhuangbei/miehuo-tan.html",
             "jingqing/shebao-lei.html"
@@ -236,7 +261,16 @@
           "public_sources": [
             "http://www.jz.gov.cn/info/1024/127327.htm"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/救生圈实物图.jpg",
+              "alt": "救生圈实物外观",
+              "caption": "救生圈实物外观（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://img.alicdn.com/bao/uploaded/i1/2212889122512/O1CN01VknxTz1UQXqRxTa11_!!2212889122512.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiusheng-yi.html",
             "zhuangbei/jiusheng-sheng.html",
@@ -255,7 +289,16 @@
             "E:\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
           ],
           "public_sources": [],
-          "images": [],
+          "images": [
+            {
+              "path": "img/救生衣实物图.jpg",
+              "alt": "救生衣实物",
+              "caption": "救生衣实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://img95.699pic.com/photo/60086/7827.jpg_wh860.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiusheng-quan.html",
             "zhuangbei/jiusheng-sheng.html"
@@ -273,7 +316,16 @@
             "E:\\frank知识库\\03_Knowledge\\警务技能\\反恐防暴\\现场处置的执法规范与应对策略.md"
           ],
           "public_sources": [],
-          "images": [],
+          "images": [
+            {
+              "path": "img/救生绳实物图.jpg",
+              "alt": "救生绳（抛绳包）实物",
+              "caption": "救生绳（抛绳包）实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://cbu01.alicdn.com/img/ibank/O1CN01JHIEcT1sgcN9TQTJM_!!2206344065796-0-cib.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiusheng-quan.html",
             "zhuangbei/jiusheng-yi.html"
@@ -395,7 +447,16 @@
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
             "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/警戒带警告牌实物图.jpg",
+              "alt": "警戒带与警告牌实物",
+              "caption": "警戒带与警告牌实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "http://mall-sourcing-prod-rongchuang.oss-cn-beijing.aliyuncs.com/V1.0.0/ueditor/EC71E0284C9347F1B3C5",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/fanguang-zhuitong.html",
             "qinwu/gonggong-zhixu-goutong-jilu.html"
@@ -623,7 +684,16 @@
             "https://gd.119.gov.cn/xfkp/zjts/content/post_4895115.html",
             "https://www.mem.gov.cn:10443/gk/jytabljggk/zxwytadfzy/2022zx/202301/t20230117_440677.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/急救包实物图.jpg",
+              "alt": "急救包实物",
+              "caption": "急救包实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://img.alicdn.com/i2/2208603484645/O1CN01nIjUW81kBSXVJsy6L_!!2208603484645.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/aed-shiyong.html",
             "xunlian/xinfeifusu-cpr.html",
@@ -648,7 +718,16 @@
             "https://myredcross.cn/go-a69544.htm",
             "https://www.gfx.gov.cn/gfx/c116689/202401/c0290bcd5c234d1db0c390d3affade21.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/AED自动体外除颤器实物图.jpg",
+              "alt": "自动体外除颤器实物外观",
+              "caption": "自动体外除颤器（AED）实物外观（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "http://www.zhongan995.cn/resources/upload/a1e62ae8dca9287/1678090354890.png",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jijiu-bao.html",
             "xunlian/xinfeifusu-cpr.html",
