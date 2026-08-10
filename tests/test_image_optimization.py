@@ -33,6 +33,15 @@ NEW_EQUIPMENT_SVGS = (
     "img/learning/zhuangbei/zuche-ding-structure-label.svg",
 )
 
+NEW_TRAINING_SVGS = (
+    "img/learning/xunlian/jietuo-kongzhi-jichu-step-flow.svg",
+    "img/learning/xunlian/xiaozu-biancheng-fengong-step-flow.svg",
+    "img/learning/xunlian/yidong-yanhu-daili-step-flow.svg",
+    "img/learning/xunlian/xianchang-goutong-yingxiang-step-flow.svg",
+    "img/learning/xunlian/xunlian-fupan-kaoping-step-flow.svg",
+    "img/learning/xunlian/zhixue-baozha-banyun-step-flow.svg",
+)
+
 RETAINED_EQUIPMENT_IMAGE_PAGES = (
     "zhuangbei/jiuxiaojian-gailan.html",
     "zhuangbei/fangge-shoutao.html",
@@ -52,7 +61,6 @@ RETAINED_EQUIPMENT_IMAGE_PAGES = (
     "zhuangbei/jijiu-bao.html",
     "zhuangbei/aed-shiyong.html",
 )
-
 
 class ImageOptimizationPlanTests(unittest.TestCase):
     def test_representative_svgs_use_explicit_light_text_class(self):
@@ -118,6 +126,49 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             self.assertNotIn("https://", svg, relative_path)
             self.assertNotIn("href=", svg, relative_path)
 
+    def test_new_training_svgs_are_self_contained_accessible_documents(self):
+        for relative_path in NEW_TRAINING_SVGS:
+            path = ROOT / relative_path
+            self.assertTrue(path.exists(), relative_path)
+            svg = path.read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertTrue(root.get("viewBox"), relative_path)
+            self.assertTrue(any(node.tag.endswith("title") for node in root), relative_path)
+            self.assertTrue(any(node.tag.endswith("desc") for node in root), relative_path)
+            self.assertNotIn("http://", svg, relative_path)
+            self.assertNotIn("https://", svg, relative_path)
+            self.assertNotIn("href=", svg, relative_path)
+
+    def test_new_training_svgs_use_explicit_contrast_classes(self):
+        for relative_path in NEW_TRAINING_SVGS:
+            path = ROOT / relative_path
+            self.assertTrue(path.exists(), relative_path)
+            svg = path.read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertIn(".light", svg, relative_path)
+            self.assertIn(".dark", svg, relative_path)
+            for node in (item for item in root.iter() if item.tag.endswith("text")):
+                classes = (node.get("class") or "").split()
+                self.assertTrue({"light", "dark"}.intersection(classes), relative_path)
+
+    def test_new_training_svgs_have_readable_mobile_reflow(self):
+        for relative_path in NEW_TRAINING_SVGS:
+            path = ROOT / relative_path
+            self.assertTrue(path.exists(), relative_path)
+            svg = path.read_text(encoding="utf-8")
+            root = ET.fromstring(svg)
+            self.assertIn("@media (max-width:500px)", svg, relative_path)
+            mobile_groups = [
+                node
+                for node in root.iter()
+                if node.tag.endswith("g") and "mobile" in (node.get("class") or "").split()
+            ]
+            self.assertEqual(1, len(mobile_groups), relative_path)
+            mobile_text = [node for node in mobile_groups[0].iter() if node.tag.endswith("text")]
+            self.assertTrue(mobile_text, relative_path)
+            for node in mobile_text:
+                self.assertGreaterEqual(float(node.get("font-size", "0")), 25, relative_path)
+
     def test_learning_figure_styles_cover_media_caption_mobile_and_print(self):
         css = (ROOT / "css/style.css").read_text(encoding="utf-8")
         for selector in (
@@ -154,6 +205,12 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             validate_runtime(ROOT, module="zhuangbei", require_complete=True),
         )
 
+    def test_training_image_optimization_is_complete(self):
+        self.assertEqual(
+            [],
+            validate_runtime(ROOT, module="xunlian", require_complete=True),
+        )
+
     def test_retained_equipment_image_insertion_points_match_nearby_body_text(self):
         plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
         by_path = {page["path"]: page for page in plan["pages"]}
@@ -165,6 +222,20 @@ class ImageOptimizationPlanTests(unittest.TestCase):
                 self.assertTrue(
                     any(insertion_point in html[max(0, position - 2500):position] for position in image_positions),
                     f"{path}: insertion point is not near a retained image: {insertion_point}",
+                )
+
+    def test_every_training_image_insertion_point_matches_nearby_body_text(self):
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        training_pages = [page for page in plan["pages"] if page["path"].startswith("xunlian/")]
+        self.assertEqual(15, len(training_pages))
+        for page in training_pages:
+            html = (ROOT / page["path"]).read_text(encoding="utf-8")
+            image_positions = [match.start() for match in re.finditer(r"<img\b", html)]
+            self.assertTrue(image_positions, page["path"])
+            for insertion_point in page["insertion_points"]:
+                self.assertTrue(
+                    any(insertion_point in html[max(0, position - 2500):position] for position in image_positions),
+                    f"{page['path']}: insertion point is not near an image: {insertion_point}",
                 )
 
     def test_plan_rejects_wrong_current_image_count(self):

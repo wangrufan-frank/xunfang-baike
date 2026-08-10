@@ -1,0 +1,27 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">训练复盘考评改进闭环</title>
+  <desc id="desc">训练实施后从动作、战术、沟通、时机和安全五个维度复盘，再进行考评、反馈改进并进入下一轮训练。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif}.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b9cedc;stroke-width:2}.line{fill:none;stroke:#2c6e9e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <g class="desktop">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="64" class="t light" font-size="28" font-weight="700">训练闭环｜复盘不是终点</text>
+    <path d="M197 196h70l-12-12m12 12-12 12M493 196h70l-12-12m12 12-12 12M641 252v97M641 349H119V252" class="line"/>
+    <rect x="46" y="142" width="151" height="110" rx="18" class="card"/><circle cx="121" cy="179" r="25" fill="#2c6e9e"/><text x="113" y="188" class="t light" font-size="25" font-weight="700">1</text><text x="79" y="226" class="t dark" font-size="21" font-weight="700">训练实施</text>
+    <rect x="267" y="116" width="226" height="162" rx="18" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="380" cy="153" r="25" fill="#2f7d73"/><text x="372" y="162" class="t light" font-size="25" font-weight="700">2</text><text x="326" y="197" class="t dark" font-size="22" font-weight="700">五维复盘</text><text x="296" y="229" class="t dark" font-size="16">动作 · 战术 · 沟通</text><text x="326" y="255" class="t dark" font-size="16">时机 · 安全</text>
+    <rect x="563" y="142" width="151" height="110" rx="18" class="card"/><circle cx="638" cy="179" r="25" fill="#d98b2b"/><text x="630" y="188" class="t light" font-size="25" font-weight="700">3</text><text x="596" y="226" class="t dark" font-size="21" font-weight="700">训练考评</text>
+    <rect x="240" y="349" width="280" height="96" rx="18" fill="#eaf4ef" stroke="#8bb9a7" stroke-width="2"/><circle cx="293" cy="397" r="25" fill="#b94c45"/><text x="285" y="406" class="t light" font-size="25" font-weight="700">4</text><text x="337" y="390" class="t dark" font-size="22" font-weight="700">反馈改进</text><text x="337" y="420" class="t dark" font-size="16">问题回到下一轮训练设计</text>
+    <text x="48" y="487" class="t dark" font-size="18" font-weight="700">立即复盘 · 逐项点评 · 给出改进 · 持续验证</text>
+  </g>
+  <g class="mobile">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">训练—复盘—考评—改进</text>
+    <g transform="translate(42 110)">
+      <rect width="676" height="66" rx="15" class="card"/><circle cx="42" cy="33" r="23" fill="#2c6e9e"/><text x="35" y="42" class="t light" font-size="25" font-weight="700">1</text><text x="86" y="43" class="t dark" font-size="27" font-weight="700">训练实施｜完成可观察的演练</text>
+      <rect y="78" width="676" height="96" rx="15" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="42" cy="126" r="23" fill="#2f7d73"/><text x="35" y="135" class="t light" font-size="25" font-weight="700">2</text><text x="86" y="115" class="t dark" font-size="27" font-weight="700">五维复盘</text><text x="86" y="151" class="t dark" font-size="25">动作 · 战术 · 沟通 · 时机 · 安全</text>
+      <rect y="186" width="676" height="66" rx="15" class="card"/><circle cx="42" cy="219" r="23" fill="#d98b2b"/><text x="35" y="228" class="t light" font-size="25" font-weight="700">3</text><text x="86" y="229" class="t dark" font-size="27" font-weight="700">训练考评｜形成明确结果</text>
+      <rect y="264" width="676" height="66" rx="15" fill="#eaf4ef" stroke="#8bb9a7" stroke-width="2"/><circle cx="42" cy="297" r="23" fill="#b94c45"/><text x="35" y="306" class="t light" font-size="25" font-weight="700">4</text><text x="86" y="307" class="t dark" font-size="27" font-weight="700">反馈改进｜进入下一轮训练</text>
+    </g>
+    <text x="52" y="484" class="t dark" font-size="25" font-weight="700">立即复盘 · 逐项点评 · 持续验证</text>
+  </g>
+</svg>

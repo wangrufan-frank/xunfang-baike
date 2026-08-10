@@ -1,0 +1,29 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">最小作战单元三人编成与职责</title>
+  <desc id="desc">一名指挥员负责评估、决策、协调和沟通，两名盾牌手负责前方防护与移动掩护，按警情需要增设其他岗位。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif}.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b9cedc;stroke-width:2}.link{fill:none;stroke:#2c6e9e;stroke-width:4;stroke-linecap:round}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <g class="desktop">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="64" class="t light" font-size="28" font-weight="700">最小作战单元｜三人标准编成</text>
+    <path d="M380 212V263M380 263H200V291M380 263H560V291" class="link"/>
+    <rect x="232" y="116" width="296" height="96" rx="18" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/>
+    <circle cx="285" cy="164" r="29" fill="#2c6e9e"/><path d="M273 166l9 9 18-23" fill="none" stroke="#fff" stroke-width="6"/>
+    <text x="330" y="155" class="t dark" font-size="23" font-weight="700">指挥员 1 名</text><text x="330" y="185" class="t dark" font-size="16">评估 · 决策 · 协调 · 沟通</text>
+    <g transform="translate(75 291)"><rect width="250" height="116" rx="18" class="card"/><path d="M44 30h56v58q-28 24-56 0z" fill="#2f7d73"/><text x="125" y="44" class="t dark" font-size="22" font-weight="700">盾牌手 A</text><text x="125" y="76" class="t dark" font-size="17">前方防护</text><text x="125" y="102" class="t dark" font-size="17">提供移动掩体</text></g>
+    <g transform="translate(435 291)"><rect width="250" height="116" rx="18" class="card"/><path d="M44 30h56v58q-28 24-56 0z" fill="#2f7d73"/><text x="125" y="44" class="t dark" font-size="22" font-weight="700">盾牌手 B</text><text x="125" y="76" class="t dark" font-size="17">协同防护</text><text x="125" y="102" class="t dark" font-size="17">保持队形衔接</text></g>
+    <rect x="75" y="438" width="610" height="48" rx="12" fill="#f8e8d3"/>
+    <text x="106" y="469" class="t dark" font-size="18" font-weight="700">按警情需要增设抓捕叉手、长警棍手或武器手</text>
+  </g>
+  <g class="mobile">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">三人标准编成｜职责清晰</text>
+    <g transform="translate(42 116)">
+      <rect width="676" height="92" rx="16" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="50" cy="46" r="28" fill="#2c6e9e"/><text x="42" y="55" class="t light" font-size="25" font-weight="700">1</text><text x="98" y="40" class="t dark" font-size="28" font-weight="700">指挥员</text><text x="98" y="72" class="t dark" font-size="25">评估 · 决策 · 协调 · 沟通</text>
+      <rect y="108" width="676" height="92" rx="16" class="card"/><path d="M30 130h54v48q-27 22-54 0z" fill="#2f7d73"/><text x="110" y="148" class="t dark" font-size="28" font-weight="700">盾牌手 A</text><text x="110" y="180" class="t dark" font-size="25">前方防护 · 提供移动掩体</text>
+      <rect y="216" width="676" height="92" rx="16" class="card"/><path d="M30 238h54v48q-27 22-54 0z" fill="#2f7d73"/><text x="110" y="256" class="t dark" font-size="28" font-weight="700">盾牌手 B</text><text x="110" y="288" class="t dark" font-size="25">协同防护 · 保持队形衔接</text>
+    </g>
+    <rect x="42" y="446" width="676" height="48" rx="12" fill="#f8e8d3"/>
+    <text x="67" y="479" class="t dark" font-size="25" font-weight="700">按警情需要增设其他岗位</text>
+  </g>
+</svg>

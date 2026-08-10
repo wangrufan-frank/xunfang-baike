@@ -1418,7 +1418,15 @@
           "public_sources": [
             "https://jyglj.guizhou.gov.cn/ya/dwjs/202405/t20240528_84696804.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/jietuo-kongzhi-jichu-step-flow.svg",
+              "alt": "徒手制止从态势评估、身份安抚、警告观察到必要控制的武力层级判断流程图",
+              "caption": "徒手制止层级判断：先评估、先语言、再警告；对象服从即停止升级，必要控制也须适度并可停止（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/yidong-yanhu-daili.html",
             "fagui/jingxie-shiyong-chengxu.html"
@@ -1441,7 +1449,15 @@
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
             "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/xiaozu-biancheng-fengong-step-flow.svg",
+              "alt": "一名指挥员和两名盾牌手组成最小作战单元的职责分工图",
+              "caption": "三人标准编成：指挥员负责评估、决策、协调和沟通，两名盾牌手负责前方防护与移动掩护（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/xietong-zhanwei-duixing.html",
             "xunlian/xunlian-fupan-kaoping.html"
@@ -1579,7 +1595,15 @@
           "public_sources": [
             "https://jyglj.guizhou.gov.cn/ya/dwjs/202405/t20240528_84696804.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/yidong-yanhu-daili-step-flow.svg",
+              "alt": "横移压缩、俯卧控制、上铐约束、搜身排查和别臂带离五环操作链图",
+              "caption": "移动掩护与带离操作链：五个环节前后相扣，移动中始终保持组员掩护（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/jietuo-kongzhi-jichu.html",
             "xunlian/xietong-zhanwei-duixing.html",
@@ -1601,7 +1625,15 @@
           "public_sources": [
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/xianchang-goutong-yingxiang-step-flow.svg",
+              "alt": "从表明身份到武力使用警告的六层递进法言法语体系图",
+              "caption": "六层递进法言法语：语言层级与程序动作同步，逐级升级、服从即停，并保持影像记录连续（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "fagui/shenfen-mudi-shuoming.html",
             "zhuangbei/zhifa-jiuyi.html",
@@ -1625,7 +1657,15 @@
           "public_sources": [
             "https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202510/t20251021_526539.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/xunlian-fupan-kaoping-step-flow.svg",
+              "alt": "训练实施、五维复盘、训练考评和反馈改进组成的闭环图",
+              "caption": "训练闭环：演练后立即从动作、战术、沟通、时机、安全五个维度复盘，再将考评结果反馈到下一轮训练设计（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zoufang/jichu-jingwu-kaohe.html",
             "zoufang/xiaozu-xietong-kaohe.html",
@@ -1691,7 +1731,15 @@
             "https://www.bdredcross.org.cn/smartcore/web/bdhsz/hszydcs/2c9f7bd08cb813000191daea3aef4cff.htm",
             "https://www.zaozhuangredcross.org.cn/yingji/news/shown-2774"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/xunlian/zhixue-baozha-banyun-step-flow.svg",
+              "alt": "直接压迫与加压包扎、指压临时止血、止血带最终止血的逐级选择流程图",
+              "caption": "现场止血逐级选择：先直接压迫并加压包扎，按伤情升级；使用止血带须记录时间、持续观察并尽快转运（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jijiu-bao.html",
             "jingqing/jiuzhu-lei-jingqing-chuzhi.html",

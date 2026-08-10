@@ -1,0 +1,42 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">移动掩护到人员带离的五环操作链</title>
+  <desc id="desc">五个环节依次为横移压缩、俯卧控制、上铐约束、搜身排查和别臂带离，并强调每环相扣与全程掩护。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif}.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b9cedc;stroke-width:2}.arrow{fill:none;stroke:#2c6e9e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <g class="desktop">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="64" class="t light" font-size="28" font-weight="700">移动、掩护与带离｜五环操作链</text>
+    <text x="48" y="119" class="t dark" font-size="18">每个环节以前一环节为基础，移动时始终保持组员掩护</text>
+    <g transform="translate(34 168)">
+      <rect width="126" height="154" rx="18" class="card"/><circle cx="63" cy="43" r="27" fill="#2c6e9e"/><text x="55" y="52" class="t light" font-size="25" font-weight="700">1</text><text x="20" y="96" class="t dark" font-size="20" font-weight="700">横移压缩</text><text x="22" y="126" class="t dark" font-size="15">切断路线</text><path d="M130 77h18l-8-8m8 8-8 8" class="arrow"/>
+    </g>
+    <g transform="translate(176 168)">
+      <rect width="126" height="154" rx="18" class="card"/><circle cx="63" cy="43" r="27" fill="#2f7d73"/><text x="55" y="52" class="t light" font-size="25" font-weight="700">2</text><text x="20" y="96" class="t dark" font-size="20" font-weight="700">俯卧控制</text><text x="22" y="126" class="t dark" font-size="15">先控制</text><path d="M130 77h18l-8-8m8 8-8 8" class="arrow"/>
+    </g>
+    <g transform="translate(318 168)">
+      <rect width="126" height="154" rx="18" class="card"/><circle cx="63" cy="43" r="27" fill="#d98b2b"/><text x="55" y="52" class="t light" font-size="25" font-weight="700">3</text><text x="20" y="96" class="t dark" font-size="20" font-weight="700">上铐约束</text><text x="22" y="126" class="t dark" font-size="15">确认锁闭</text><path d="M130 77h18l-8-8m8 8-8 8" class="arrow"/>
+    </g>
+    <g transform="translate(460 168)">
+      <rect width="126" height="154" rx="18" class="card"/><circle cx="63" cy="43" r="27" fill="#7a6794"/><text x="55" y="52" class="t light" font-size="25" font-weight="700">4</text><text x="20" y="96" class="t dark" font-size="20" font-weight="700">搜身排查</text><text x="22" y="126" class="t dark" font-size="15">保持控制</text><path d="M130 77h18l-8-8m8 8-8 8" class="arrow"/>
+    </g>
+    <g transform="translate(602 168)">
+      <rect width="126" height="154" rx="18" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="63" cy="43" r="27" fill="#b94c45"/><text x="55" y="52" class="t light" font-size="25" font-weight="700">5</text><text x="20" y="96" class="t dark" font-size="20" font-weight="700">别臂带离</text><text x="22" y="126" class="t dark" font-size="15">观察状态</text>
+    </g>
+    <rect x="70" y="370" width="620" height="92" rx="16" fill="#eaf4ef"/>
+    <text x="100" y="408" class="t dark" font-size="22" font-weight="700">全程原则｜移动有序 · 掩护到位 · 控制牢固 · 带离安全</text>
+    <text x="100" y="441" class="t dark" font-size="17">任一环节发现失控风险，先恢复控制与掩护再继续</text>
+  </g>
+  <g class="mobile">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">移动、掩护与带离｜五环</text>
+    <g transform="translate(42 108)">
+      <rect width="676" height="58" rx="14" class="card"/><circle cx="38" cy="29" r="22" fill="#2c6e9e"/><text x="31" y="38" class="t light" font-size="25" font-weight="700">1</text><text x="82" y="39" class="t dark" font-size="27" font-weight="700">横移压缩｜切断路线</text>
+      <rect y="70" width="676" height="58" rx="14" class="card"/><circle cx="38" cy="99" r="22" fill="#2f7d73"/><text x="31" y="108" class="t light" font-size="25" font-weight="700">2</text><text x="82" y="109" class="t dark" font-size="27" font-weight="700">俯卧控制｜先控制</text>
+      <rect y="140" width="676" height="58" rx="14" class="card"/><circle cx="38" cy="169" r="22" fill="#d98b2b"/><text x="31" y="178" class="t light" font-size="25" font-weight="700">3</text><text x="82" y="179" class="t dark" font-size="27" font-weight="700">上铐约束｜确认锁闭</text>
+      <rect y="210" width="676" height="58" rx="14" class="card"/><circle cx="38" cy="239" r="22" fill="#7a6794"/><text x="31" y="248" class="t light" font-size="25" font-weight="700">4</text><text x="82" y="249" class="t dark" font-size="27" font-weight="700">搜身排查｜保持控制</text>
+      <rect y="280" width="676" height="58" rx="14" fill="#e8f1f6" stroke="#2c6e9e" stroke-width="2"/><circle cx="38" cy="309" r="22" fill="#b94c45"/><text x="31" y="318" class="t light" font-size="25" font-weight="700">5</text><text x="82" y="319" class="t dark" font-size="27" font-weight="700">别臂带离｜观察状态</text>
+    </g>
+    <rect x="42" y="464" width="676" height="38" rx="10" fill="#eaf4ef"/>
+    <text x="64" y="491" class="t dark" font-size="25" font-weight="700">每环相扣 · 全程保持组员掩护</text>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">现场沟通六层递进体系</title>
+  <desc id="desc">六层语言依次为表明身份、证明身份、口头警告、口头传唤、强制传唤和武力使用警告，强调逐级递进与全程记录。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif}.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b9cedc;stroke-width:2}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
+  <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+  <g class="desktop">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="64" class="t light" font-size="28" font-weight="700">现场沟通｜六层递进、全程记录</text>
+    <text x="48" y="119" class="t dark" font-size="18">每一层语言对应执法动作的程序前提，不得无故跳级</text>
+    <g transform="translate(48 150)">
+      <rect width="204" height="90" rx="16" class="card"/><circle cx="36" cy="45" r="24" fill="#2c6e9e"/><text x="29" y="54" class="t light" font-size="25" font-weight="700">1</text><text x="76" y="42" class="t dark" font-size="21" font-weight="700">表明身份</text><text x="76" y="70" class="t dark" font-size="15">说明正在执行公务</text>
+      <rect x="230" width="204" height="90" rx="16" class="card"/><circle cx="266" cy="45" r="24" fill="#2c6e9e"/><text x="259" y="54" class="t light" font-size="25" font-weight="700">2</text><text x="306" y="42" class="t dark" font-size="21" font-weight="700">证明身份</text><text x="306" y="70" class="t dark" font-size="15">回应身份质疑</text>
+      <rect x="460" width="204" height="90" rx="16" class="card"/><circle cx="496" cy="45" r="24" fill="#2f7d73"/><text x="489" y="54" class="t light" font-size="25" font-weight="700">3</text><text x="536" y="42" class="t dark" font-size="21" font-weight="700">口头警告</text><text x="536" y="70" class="t dark" font-size="15">命令停止违法行为</text>
+      <rect y="112" width="204" height="90" rx="16" class="card"/><circle cx="36" cy="157" r="24" fill="#2f7d73"/><text x="29" y="166" class="t light" font-size="25" font-weight="700">4</text><text x="76" y="154" class="t dark" font-size="21" font-weight="700">口头传唤</text><text x="76" y="182" class="t dark" font-size="15">说明事由与去向</text>
+      <rect x="230" y="112" width="204" height="90" rx="16" class="card"/><circle cx="266" cy="157" r="24" fill="#d98b2b"/><text x="259" y="166" class="t light" font-size="25" font-weight="700">5</text><text x="306" y="154" class="t dark" font-size="21" font-weight="700">强制传唤</text><text x="306" y="182" class="t dark" font-size="15">拒绝传唤后的告知</text>
+      <rect x="460" y="112" width="204" height="90" rx="16" fill="#f8e8d3" stroke="#d98b2b" stroke-width="2"/><circle cx="496" cy="157" r="24" fill="#b94c45"/><text x="489" y="166" class="t light" font-size="25" font-weight="700">6</text><text x="536" y="154" class="t dark" font-size="20" font-weight="700">武力使用警告</text><text x="536" y="182" class="t dark" font-size="14">包含无关人员躲避</text>
+    </g>
+    <rect x="48" y="388" width="664" height="80" rx="16" fill="#eaf4ef"/>
+    <text x="76" y="422" class="t dark" font-size="21" font-weight="700">同步动作：语言层级递进　｜　影像记录不断档</text>
+    <text x="76" y="452" class="t dark" font-size="17">每次升级前完成对应警告；对象服从后停止升级</text>
+  </g>
+  <g class="mobile">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">六层递进｜语言与程序同步</text>
+    <g transform="translate(42 105)">
+      <rect width="676" height="52" rx="13" class="card"/><circle cx="34" cy="26" r="20" fill="#2c6e9e"/><text x="28" y="35" class="t light" font-size="25" font-weight="700">1</text><text x="76" y="35" class="t dark" font-size="26" font-weight="700">表明身份｜说明执行公务</text>
+      <rect y="62" width="676" height="52" rx="13" class="card"/><circle cx="34" cy="88" r="20" fill="#2c6e9e"/><text x="28" y="97" class="t light" font-size="25" font-weight="700">2</text><text x="76" y="97" class="t dark" font-size="26" font-weight="700">证明身份｜回应身份质疑</text>
+      <rect y="124" width="676" height="52" rx="13" class="card"/><circle cx="34" cy="150" r="20" fill="#2f7d73"/><text x="28" y="159" class="t light" font-size="25" font-weight="700">3</text><text x="76" y="159" class="t dark" font-size="26" font-weight="700">口头警告｜命令停止违法行为</text>
+      <rect y="186" width="676" height="52" rx="13" class="card"/><circle cx="34" cy="212" r="20" fill="#2f7d73"/><text x="28" y="221" class="t light" font-size="25" font-weight="700">4</text><text x="76" y="221" class="t dark" font-size="26" font-weight="700">口头传唤｜说明事由与去向</text>
+      <rect y="248" width="676" height="52" rx="13" class="card"/><circle cx="34" cy="274" r="20" fill="#d98b2b"/><text x="28" y="283" class="t light" font-size="25" font-weight="700">5</text><text x="76" y="283" class="t dark" font-size="26" font-weight="700">强制传唤｜拒绝后的依法告知</text>
+      <rect y="310" width="676" height="52" rx="13" fill="#f8e8d3" stroke="#d98b2b" stroke-width="2"/><circle cx="34" cy="336" r="20" fill="#b94c45"/><text x="28" y="345" class="t light" font-size="25" font-weight="700">6</text><text x="76" y="345" class="t dark" font-size="26" font-weight="700">武力警告｜无关人员躲避</text>
+    </g>
+    <text x="52" y="493" class="t dark" font-size="25" font-weight="700">逐级递进 · 服从即停 · 全程记录</text>
+  </g>
+</svg>
