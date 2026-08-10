@@ -1,0 +1,128 @@
+"""Validate the image-optimization ledger without changing site files."""
+
+import json
+import sys
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+DECISIONS = {"keep", "add", "replace", "no-image"}
+VISUAL_TYPES = {"structure-label", "step-flow", "scene-zone", "comparison", "checklist", "legal-relationship"}
+IMPLEMENTATION_STATUSES = {"not-started", "in-progress", "complete", "blocked"}
+ACCEPTANCE_STATUSES = {"not-reviewed", "accepted", "blocked"}
+ASSET_STATUSES = {"planned", "complete", "blocked"}
+
+
+def _load(root, relative):
+    return json.loads((Path(root) / relative).read_text(encoding="utf-8"))
+
+
+def _expected(inventory):
+    return {article["path"]: article["module"] for module in inventory["modules"] for article in module["articles"]}
+
+
+def validate_plan(root, require_complete=False):
+    """Return ledger contract violations; an empty list is valid."""
+    root = Path(root)
+    errors = []
+    try:
+        plan = _load(root, "data/image-optimization-plan.json")
+        expected = _expected(_load(root, "data/content-inventory.json"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return [str(exc)]
+    if plan.get("version") != 1 or plan.get("updated_at") != "2026-08-10":
+        errors.append("invalid top-level version or updated_at")
+    pages = plan.get("pages")
+    if not isinstance(pages, list):
+        return errors + ["pages must be a list"]
+    paths = [page.get("path") for page in pages if isinstance(page, dict)]
+    if len(paths) != len(expected) or set(paths) != set(expected) or len(set(paths)) != len(paths):
+        errors.append("pages must cover inventory paths exactly once")
+    for index, page in enumerate(pages):
+        label = page.get("path", f"pages[{index}]") if isinstance(page, dict) else f"pages[{index}]"
+        if not isinstance(page, dict):
+            errors.append(f"{label}: page must be an object")
+            continue
+        if page.get("module") != expected.get(page.get("path")):
+            errors.append(f"{label}: module does not match inventory")
+        if page.get("decision") not in DECISIONS:
+            errors.append(f"{label}: invalid decision")
+        if page.get("implementation_status") not in IMPLEMENTATION_STATUSES:
+            errors.append(f"{label}: invalid implementation_status")
+        if page.get("acceptance_status") not in ACCEPTANCE_STATUSES:
+            errors.append(f"{label}: invalid acceptance_status")
+        if not isinstance(page.get("reason"), str) or not page["reason"].strip():
+            errors.append(f"{label}: reason is required")
+        for field in ("learning_targets", "visual_types", "insertion_points", "assets"):
+            if not isinstance(page.get(field), list):
+                errors.append(f"{label}: {field} must be a list")
+        if any(kind not in VISUAL_TYPES for kind in page.get("visual_types", [])):
+            errors.append(f"{label}: invalid visual type")
+        assets = page.get("assets", [])
+        if page.get("decision") in {"add", "replace"} and not assets:
+            errors.append(f"{label}: {page.get('decision')} requires an asset")
+        if page.get("decision") == "no-image" and assets:
+            errors.append(f"{label}: no-image cannot have assets")
+        for asset in assets:
+            required = ("path", "kind", "purpose", "source_status", "source_url", "publisher", "accessed_at", "license", "status")
+            if not isinstance(asset, dict) or any(not isinstance(asset.get(key), str) for key in required):
+                errors.append(f"{label}: incomplete asset source fields")
+            elif asset["status"] not in ASSET_STATUSES:
+                errors.append(f"{label}: invalid asset status")
+        if require_complete:
+            terminal = ((page.get("implementation_status") == "complete" and page.get("acceptance_status") == "accepted") or
+                        (page.get("implementation_status") == "blocked" and page.get("acceptance_status") == "blocked" and page.get("blocked_reason", "").strip()))
+            if not terminal:
+                errors.append(f"{label}: page is not in a terminal state")
+            if page.get("implementation_status") == "blocked" and any(asset.get("status") == "complete" for asset in assets if isinstance(asset, dict)):
+                errors.append(f"{label}: blocked page cannot contain complete new assets")
+    return errors
+
+
+def validate_runtime(root):
+    """Check assets only for pages whose implementation is complete."""
+    root = Path(root)
+    try:
+        pages = _load(root, "data/image-optimization-plan.json").get("pages", [])
+    except (OSError, json.JSONDecodeError) as exc:
+        return [str(exc)]
+    errors = []
+    for page in pages:
+        if page.get("implementation_status") != "complete":
+            continue
+        html_path = root / page["path"]
+        html = html_path.read_text(encoding="utf-8") if html_path.exists() else ""
+        for asset in page.get("assets", []):
+            if asset.get("status") != "complete":
+                continue
+            asset_path = root / asset["path"]
+            if not asset_path.exists():
+                errors.append(f"{page['path']}: missing asset {asset['path']}")
+                continue
+            if asset["path"] not in html:
+                errors.append(f"{page['path']}: asset is not referenced in HTML")
+            if asset.get("kind") == "svg":
+                try:
+                    svg = asset_path.read_text(encoding="utf-8")
+                    node = ET.fromstring(svg)
+                    if not node.get("viewBox") or not any(child.tag.endswith("title") for child in node) or not any(child.tag.endswith("desc") for child in node):
+                        errors.append(f"{page['path']}: SVG needs viewBox, title and desc")
+                    if "http://" in svg or "https://" in svg or "href=" in svg:
+                        errors.append(f"{page['path']}: SVG contains an external reference")
+                except (OSError, ET.ParseError) as exc:
+                    errors.append(f"{page['path']}: invalid SVG ({exc})")
+    return errors
+
+
+def main():
+    root = Path(__file__).resolve().parents[1]
+    errors = validate_plan(root) + validate_runtime(root)
+    pages = len(_load(root, "data/image-optimization-plan.json").get("pages", []))
+    print(f"{pages} pages checked")
+    print(f"{len(errors)} validation errors")
+    for error in errors:
+        print(error)
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
