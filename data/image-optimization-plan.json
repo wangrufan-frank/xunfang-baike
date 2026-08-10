@@ -739,15 +739,16 @@
     {
       "path": "qinwu/zuqiu-saishi-anbao.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u8db3\u7403\u8d5b\u4e8b\u5b89\u4fdd - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u672c\u6587\u9002\u7528\u4e8e\u53c2\u4e0e\u8db3\u7403\u8d5b\u4e8b\u5916\u56f4\u5b89\u4fdd\u548c\u79e9\u5e8f\u7ef4\u62a4\u4efb\u52a1\u7684\u5de1\u9632\u961f\u5458\u3002\u6309\u7167\u300a\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\u5b89\u5168\u7ba1\u7406\u6761\u4f8b\u300b\u7b2c\u4e8c\u6761\uff0c\u6cd5\u4eba\u6216\u8005\u5176\u4ed6\u7ec4\u7ec7\u9762\u5411\u793e\u4f1a\u516c\u4f17\u4e3e\u529e\u7684\u6bcf\u573a\u6b21\u9884\u8ba1\u53c2",
+      "reason": "\u6b63\u6587\u6309\u5165\u573a\u68c0\u7968\u3001\u8d5b\u4e2d\u770b\u53f0\u89c2\u5bdf\u548c\u6563\u573a\u5206\u6d41\u5c55\u5f00\uff0c\u5e76\u8981\u6c42\u5bf9\u51b2\u7a81\u3001\u4f24\u60c5\u548c\u9152\u540e\u6ecb\u4e8b\u4fdd\u7559\u5347\u7ea7\u62a5\u544a\u5206\u652f\uff0c\u9002\u5408\u7528\u4e09\u9636\u6bb5\u573a\u666f\u6d41\u7a0b\u56fe\u5efa\u7acb\u5c97\u4f4d\u8054\u52a8\u8ba4\u77e5\u3002",
       "learning_targets": [
-        "\u8db3\u7403\u8d5b\u4e8b\u5b89\u4fdd\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u672c\u6587\u9002\u7528\u4e8e\u53c2\u4e0e\u8db3\u7403\u8d5b\u4e8b\u5916\u56f4\u5b89\u4fdd\u548c\u79e9\u5e8f\u7ef4\u62a4\u4efb\u52a1\u7684\u5de1\u9632\u961f\u5458\u3002\u6309\u7167\u300a\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\u5b89\u5168\u7ba1\u7406\u6761\u4f8b\u300b\u7b2c\u4e8c\u6761\uff0c\u6cd5\u4eba\u6216\u8005\u5176\u4ed6\u7ec4\u7ec7\u9762\u5411\u793e\u4f1a\u516c\u4f17\u4e3e\u529e\u7684\u6bcf\u573a\u6b21\u9884\u8ba1\u53c2"
+        "\u533a\u5206\u8db3\u7403\u8d5b\u4e8b\u5165\u573a\u3001\u8d5b\u4e2d\u3001\u6563\u573a\u4e09\u9636\u6bb5\u5c97\u4f4d\u52a8\u4f5c",
+        "\u638c\u63e1\u51b2\u7a81\u9694\u79bb\u3001\u4f24\u5458\u6551\u52a9\u548c\u6301\u7eed\u62a5\u544a\u7684\u7d27\u6025\u5206\u652f"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -756,172 +757,7 @@
         {
           "path": "img/learning/qinwu/zuqiu-saishi-anbao-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u8db3\u7403\u8d5b\u4e8b\u5b89\u4fdd\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
-          "source_status": "original",
-          "source_url": "",
-          "publisher": "\u52e4\u52a1\u987b\u77e5",
-          "accessed_at": "2026-08-10",
-          "license": "site-original",
-          "status": "planned"
-        }
-      ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
-      "blocked_reason": ""
-    },
-    {
-      "path": "qinwu/daxing-shiwai-yanchanghui.html",
-      "module": "qinwu",
-      "current_images": 0,
-      "decision": "add",
-      "reason": "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5b89\u4fdd - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u300a\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\u5b89\u5168\u7ba1\u7406\u6761\u4f8b\u300b\u786e\u7acb\"\u627f\u529e\u8005\u8d1f\u8d23\u3001\u653f\u5e9c\u76d1\u7ba1\"\u539f\u5219\uff1a\u627f\u529e\u8005\u8d1f\u8d23\u5236\u8ba2\u5b89\u5168\u5de5\u4f5c\u65b9\u6848\u3001\u914d\u5907\u4e13\u4e1a\u4fdd\u5b89\u3001\u5b9e\u65bd\u7968\u8bc1\u67e5\u9a8c\u548c\u5b89\u5168\u68c0\u67e5\uff08\u7b2c\u516d\u6761\u3001\u7b2c\u4e03\u6761",
-      "learning_targets": [
-        "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5b89\u4fdd\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u300a\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\u5b89\u5168\u7ba1\u7406\u6761\u4f8b\u300b\u786e\u7acb\"\u627f\u529e\u8005\u8d1f\u8d23\u3001\u653f\u5e9c\u76d1\u7ba1\"\u539f\u5219\uff1a\u627f\u529e\u8005\u8d1f\u8d23\u5236\u8ba2\u5b89\u5168\u5de5\u4f5c\u65b9\u6848\u3001\u914d\u5907\u4e13\u4e1a\u4fdd\u5b89\u3001\u5b9e\u65bd\u7968\u8bc1\u67e5\u9a8c\u548c\u5b89\u5168\u68c0\u67e5\uff08\u7b2c\u516d\u6761\u3001\u7b2c\u4e03\u6761"
-      ],
-      "visual_types": [
-        "scene-zone"
-      ],
-      "insertion_points": [
-        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
-      ],
-      "assets": [
-        {
-          "path": "img/learning/qinwu/daxing-shiwai-yanchanghui-scene-zone.svg",
-          "kind": "svg",
-          "purpose": "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5b89\u4fdd\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
-          "source_status": "original",
-          "source_url": "",
-          "publisher": "\u52e4\u52a1\u987b\u77e5",
-          "accessed_at": "2026-08-10",
-          "license": "site-original",
-          "status": "planned"
-        }
-      ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
-      "blocked_reason": ""
-    },
-    {
-      "path": "qinwu/xiaoxing-shinei-yanchu.html",
-      "module": "qinwu",
-      "current_images": 0,
-      "decision": "add",
-      "reason": "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u5b89\u4fdd - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u672c\u6587\u9002\u7528\u4e8e\u5bf9\u5267\u573a\u3001\u97f3\u4e50\u5385\u3001livehouse\u3001\u5c0f\u578b\u6f14\u827a\u7a7a\u95f4\u7b49\u5ba4\u5185\u6f14\u51fa\u573a\u6240\u5f00\u5c55\u6cbb\u5b89\u5de1\u67e5\u3001\u9a7b\u70b9\u503c\u5b88\u6216\u8b66\u60c5\u5904\u7f6e\u7684\u5de1\u9632\u961f\u5458\u3002\u300a\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\u5b89\u5168\u7ba1\u7406\u6761\u4f8b",
-      "learning_targets": [
-        "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u5b89\u4fdd\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u672c\u6587\u9002\u7528\u4e8e\u5bf9\u5267\u573a\u3001\u97f3\u4e50\u5385\u3001livehouse\u3001\u5c0f\u578b\u6f14\u827a\u7a7a\u95f4\u7b49\u5ba4\u5185\u6f14\u51fa\u573a\u6240\u5f00\u5c55\u6cbb\u5b89\u5de1\u67e5\u3001\u9a7b\u70b9\u503c\u5b88\u6216\u8b66\u60c5\u5904\u7f6e\u7684\u5de1\u9632\u961f\u5458\u3002\u300a\u5927\u578b\u7fa4\u4f17\u6027\u6d3b\u52a8\u5b89\u5168\u7ba1\u7406\u6761\u4f8b"
-      ],
-      "visual_types": [
-        "scene-zone"
-      ],
-      "insertion_points": [
-        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
-      ],
-      "assets": [
-        {
-          "path": "img/learning/qinwu/xiaoxing-shinei-yanchu-scene-zone.svg",
-          "kind": "svg",
-          "purpose": "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u5b89\u4fdd\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
-          "source_status": "original",
-          "source_url": "",
-          "publisher": "\u52e4\u52a1\u987b\u77e5",
-          "accessed_at": "2026-08-10",
-          "license": "site-original",
-          "status": "planned"
-        }
-      ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
-      "blocked_reason": ""
-    },
-    {
-      "path": "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
-      "module": "qinwu",
-      "current_images": 0,
-      "decision": "add",
-      "reason": "\u5904\u7f6e\u57fa\u672c\u539f\u5219 - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u516c\u5171\u79e9\u5e8f\u4e8b\u4ef6\u591a\u7531\u5177\u4f53\u7ea0\u7eb7\u6216\u8bc9\u6c42\u5f15\u53d1\uff0c\u5904\u7f6e\u79bb\u4e0d\u5f00\u5c5e\u5730\u548c\u804c\u80fd\u90e8\u95e8\uff1a\u6d89\u53ca\u52b3\u8d44\u3001\u62c6\u8fc1\u3001\u6d88\u8d39\u7b49\u5177\u4f53\u8bc9\u6c42\u7684\uff0c\u53ca\u65f6\u901a\u62a5\u5c5e\u5730\u8857\u9053\u548c\u76f8\u5173\u4e3b\u7ba1\u90e8\u95e8\u5230\u573a\u89e3\u91ca\u5904\u7406\uff1b\u6d89\u53ca",
-      "learning_targets": [
-        "\u5904\u7f6e\u57fa\u672c\u539f\u5219\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u516c\u5171\u79e9\u5e8f\u4e8b\u4ef6\u591a\u7531\u5177\u4f53\u7ea0\u7eb7\u6216\u8bc9\u6c42\u5f15\u53d1\uff0c\u5904\u7f6e\u79bb\u4e0d\u5f00\u5c5e\u5730\u548c\u804c\u80fd\u90e8\u95e8\uff1a\u6d89\u53ca\u52b3\u8d44\u3001\u62c6\u8fc1\u3001\u6d88\u8d39\u7b49\u5177\u4f53\u8bc9\u6c42\u7684\uff0c\u53ca\u65f6\u901a\u62a5\u5c5e\u5730\u8857\u9053\u548c\u76f8\u5173\u4e3b\u7ba1\u90e8\u95e8\u5230\u573a\u89e3\u91ca\u5904\u7406\uff1b\u6d89\u53ca"
-      ],
-      "visual_types": [
-        "scene-zone"
-      ],
-      "insertion_points": [
-        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
-      ],
-      "assets": [
-        {
-          "path": "img/learning/qinwu/gonggong-zhixu-chuzhi-yuanze-scene-zone.svg",
-          "kind": "svg",
-          "purpose": "\u5904\u7f6e\u57fa\u672c\u539f\u5219\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
-          "source_status": "original",
-          "source_url": "",
-          "publisher": "\u52e4\u52a1\u987b\u77e5",
-          "accessed_at": "2026-08-10",
-          "license": "site-original",
-          "status": "planned"
-        }
-      ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
-      "blocked_reason": ""
-    },
-    {
-      "path": "qinwu/gonggong-zhixu-falv-quanli.html",
-      "module": "qinwu",
-      "current_images": 0,
-      "decision": "add",
-      "reason": "\u6cd5\u5f8b\u9002\u7528\u4e0e\u6743\u5229\u4fdd\u969c - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u6838\u5fc3\u4f9d\u636e\u6709\u4e24\u90e8\uff1a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u4eba\u6c11\u8b66\u5bdf\u6cd5\u300b\u89c4\u5b9a\u4e86\u4eba\u6c11\u8b66\u5bdf\u7ef4\u62a4\u793e\u4f1a\u6cbb\u5b89\u79e9\u5e8f\u7684\u804c\u8d23\u548c\u5f53\u573a\u76d8\u95ee\u3001\u68c0\u67e5\u7b49\u804c\u6743\u7684\u884c\u4f7f\u6761\u4ef6\uff1b\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5",
-      "learning_targets": [
-        "\u6cd5\u5f8b\u9002\u7528\u4e0e\u6743\u5229\u4fdd\u969c\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u6838\u5fc3\u4f9d\u636e\u6709\u4e24\u90e8\uff1a\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u4eba\u6c11\u8b66\u5bdf\u6cd5\u300b\u89c4\u5b9a\u4e86\u4eba\u6c11\u8b66\u5bdf\u7ef4\u62a4\u793e\u4f1a\u6cbb\u5b89\u79e9\u5e8f\u7684\u804c\u8d23\u548c\u5f53\u573a\u76d8\u95ee\u3001\u68c0\u67e5\u7b49\u804c\u6743\u7684\u884c\u4f7f\u6761\u4ef6\uff1b\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5"
-      ],
-      "visual_types": [
-        "scene-zone"
-      ],
-      "insertion_points": [
-        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
-      ],
-      "assets": [
-        {
-          "path": "img/learning/qinwu/gonggong-zhixu-falv-quanli-scene-zone.svg",
-          "kind": "svg",
-          "purpose": "\u6cd5\u5f8b\u9002\u7528\u4e0e\u6743\u5229\u4fdd\u969c\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
-          "source_status": "original",
-          "source_url": "",
-          "publisher": "\u52e4\u52a1\u987b\u77e5",
-          "accessed_at": "2026-08-10",
-          "license": "site-original",
-          "status": "planned"
-        }
-      ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
-      "blocked_reason": ""
-    },
-    {
-      "path": "qinwu/gonggong-zhixu-goutong-jilu.html",
-      "module": "qinwu",
-      "current_images": 1,
-      "decision": "add",
-      "reason": "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669 - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u53d1\u73b0\u4e0b\u5217\u60c5\u5f62\u7acb\u5373\u62a5\u544a\uff1a\u73b0\u573a\u51fa\u73b0\u76f4\u64ad\u3001\u5927\u91cf\u62cd\u6444\u805a\u96c6\uff0c\u4e8b\u6001\u753b\u9762\u53ef\u80fd\u5feb\u901f\u6269\u6563\uff1b\u5904\u7f6e\u8fc7\u7a0b\u53d1\u751f\u80a2\u4f53\u51b2\u7a81\u6216\u4f24\u60c5\uff1b\u51fa\u73b0\u5a92\u4f53\u8bb0\u8005\u5230\u573a\u3002\u62a5\u544a\u65f6\u8bf4\u660e\u73b0\u573a\u8bb0\u5f55\u60c5\u51b5\uff08\u662f",
-      "learning_targets": [
-        "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u53d1\u73b0\u4e0b\u5217\u60c5\u5f62\u7acb\u5373\u62a5\u544a\uff1a\u73b0\u573a\u51fa\u73b0\u76f4\u64ad\u3001\u5927\u91cf\u62cd\u6444\u805a\u96c6\uff0c\u4e8b\u6001\u753b\u9762\u53ef\u80fd\u5feb\u901f\u6269\u6563\uff1b\u5904\u7f6e\u8fc7\u7a0b\u53d1\u751f\u80a2\u4f53\u51b2\u7a81\u6216\u4f24\u60c5\uff1b\u51fa\u73b0\u5a92\u4f53\u8bb0\u8005\u5230\u573a\u3002\u62a5\u544a\u65f6\u8bf4\u660e\u73b0\u573a\u8bb0\u5f55\u60c5\u51b5\uff08\u662f"
-      ],
-      "visual_types": [
-        "scene-zone"
-      ],
-      "insertion_points": [
-        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
-      ],
-      "assets": [
-        {
-          "path": "img/learning/qinwu/gonggong-zhixu-goutong-record.svg",
-          "kind": "svg",
-          "purpose": "\u516c\u5171\u79e9\u5e8f\u73b0\u573a\u5206\u533a\u3001\u6c9f\u901a\u5173\u7cfb\u4e0e\u8bb0\u5f55\u8981\u7d20\u793a\u610f",
+          "purpose": "\u8db3\u7403\u8d5b\u4e8b\u4e09\u9636\u6bb5\u79e9\u5e8f\u7ef4\u62a4",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
@@ -931,21 +767,192 @@
         }
       ],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
+      "blocked_reason": ""
+    },
+    {
+      "path": "qinwu/daxing-shiwai-yanchanghui.html",
+      "module": "qinwu",
+      "current_images": 1,
+      "decision": "add",
+      "reason": "\u6b63\u6587\u5c06\u98ce\u9669\u5206\u5e03\u5728\u7968\u52a1\u5b89\u68c0\u3001\u5916\u573a\u3001\u5185\u573a\u548c\u6563\u573a\u73af\u8282\uff0c\u5e76\u5f3a\u8c03\u5bc6\u5ea6\u5f02\u5e38\u3001\u5929\u6c14\u3001\u706b\u60c5\u4e0e\u4f24\u60c5\u65f6\u5148\u758f\u6563\u6551\u52a9\uff0c\u9002\u5408\u7528\u4e94\u533a\u8054\u52a8\u56fe\u5448\u73b0\u3002",
+      "learning_targets": [
+        "\u8bc6\u522b\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5404\u533a\u57df\u7684\u4e3b\u8981\u98ce\u9669\u4e0e\u5904\u7f6e\u63a5\u53e3",
+        "\u638c\u63e1\u62e5\u6324\u3001\u5929\u6c14\u3001\u706b\u60c5\u548c\u4f24\u60c5\u7684\u9884\u6848\u542f\u52a8\u987a\u5e8f"
+      ],
+      "visual_types": [
+        "scene-zone",
+        "step-flow"
+      ],
+      "insertion_points": [
+        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
+      ],
+      "assets": [
+        {
+          "path": "img/learning/qinwu/daxing-shiwai-yanchanghui-scene-zone.svg",
+          "kind": "svg",
+          "purpose": "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u4e94\u533a\u8054\u52a8",
+          "source_status": "original",
+          "source_url": "",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
+          "accessed_at": "2026-08-10",
+          "license": "site-original",
+          "status": "complete"
+        }
+      ],
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
+      "blocked_reason": ""
+    },
+    {
+      "path": "qinwu/xiaoxing-shinei-yanchu.html",
+      "module": "qinwu",
+      "current_images": 1,
+      "decision": "add",
+      "reason": "\u6b63\u6587\u7a81\u51fa\u5bc6\u95ed\u7a7a\u95f4\u7684\u51fa\u53e3\u3001\u5bb9\u91cf\u548c\u6d88\u9632\u98ce\u9669\uff0c\u8981\u6c42\u706b\u60c5\u62e5\u6324\u65f6\u5148\u5f00\u51fa\u53e3\u758f\u6563\u3001\u4f24\u5458\u6551\u52a9\u4f18\u5148\uff0c\u9002\u5408\u7528\u51fa\u53e3\u4f18\u5148\u6d41\u7a0b\u56fe\u5f3a\u5316\u52a8\u4f5c\u987a\u5e8f\u3002",
+      "learning_targets": [
+        "\u68c0\u67e5\u5b89\u5168\u51fa\u53e3\u3001\u901a\u9053\u3001\u5bb9\u91cf\u4e0e\u5e94\u6025\u7167\u660e",
+        "\u638c\u63e1\u573a\u5185\u51b2\u7a81\u79fb\u51fa\u548c\u706b\u60c5\u62e5\u6324\u758f\u6563\u7684\u4f18\u5148\u6b21\u5e8f"
+      ],
+      "visual_types": [
+        "scene-zone",
+        "step-flow"
+      ],
+      "insertion_points": [
+        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
+      ],
+      "assets": [
+        {
+          "path": "img/learning/qinwu/xiaoxing-shinei-yanchu-scene-zone.svg",
+          "kind": "svg",
+          "purpose": "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u51fa\u53e3\u4f18\u5148",
+          "source_status": "original",
+          "source_url": "",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
+          "accessed_at": "2026-08-10",
+          "license": "site-original",
+          "status": "complete"
+        }
+      ],
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
+      "blocked_reason": ""
+    },
+    {
+      "path": "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
+      "module": "qinwu",
+      "current_images": 1,
+      "decision": "add",
+      "reason": "\u6b63\u6587\u8981\u6c42\u5148\u503e\u542c\u4e86\u89e3\u3001\u5206\u9694\u5f53\u4e8b\u4eba\u4e0e\u56f4\u89c2\u8005\u3001\u4fdd\u62a4\u5f31\u8005\uff0c\u518d\u6309\u884c\u4e3a\u5c42\u7ea7\u529d\u5bfc\u6216\u4f9d\u6cd5\u5904\u7f6e\uff0c\u5e76\u5c06\u8bc9\u6c42\u79fb\u4ea4\u6709\u6743\u90e8\u95e8\u5f62\u6210\u95ed\u73af\u3002",
+      "learning_targets": [
+        "\u638c\u63e1\u516c\u5171\u79e9\u5e8f\u4e8b\u4ef6\u5148\u671f\u63a5\u89e6\u4e0e\u5206\u9694\u4fdd\u62a4\u6b65\u9aa4",
+        "\u533a\u5206\u4e00\u822c\u53c2\u4e0e\u4eba\u5458\u529d\u5bfc\u548c\u8fdd\u6cd5\u884c\u4e3a\u4f9d\u6cd5\u5904\u7f6e\u7684\u5c42\u7ea7"
+      ],
+      "visual_types": [
+        "step-flow",
+        "scene-zone"
+      ],
+      "insertion_points": [
+        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
+      ],
+      "assets": [
+        {
+          "path": "img/learning/qinwu/gonggong-zhixu-chuzhi-yuanze-scene-zone.svg",
+          "kind": "svg",
+          "purpose": "\u516c\u5171\u79e9\u5e8f\u4e8b\u4ef6\u5206\u7ea7\u964d\u6e29\u95ed\u73af",
+          "source_status": "original",
+          "source_url": "",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
+          "accessed_at": "2026-08-10",
+          "license": "site-original",
+          "status": "complete"
+        }
+      ],
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
+      "blocked_reason": ""
+    },
+    {
+      "path": "qinwu/gonggong-zhixu-falv-quanli.html",
+      "module": "qinwu",
+      "current_images": 1,
+      "decision": "add",
+      "reason": "\u6b63\u6587\u9010\u9879\u8bf4\u660e\u8868\u660e\u8eab\u4efd\u3001\u8bf4\u660e\u4e8b\u7531\u3001\u6743\u5229\u544a\u77e5\u3001\u542c\u53d6\u7533\u8fa9\u3001\u5fc5\u8981\u63aa\u65bd\u548c\u6551\u6d4e\u6e20\u9053\uff0c\u9002\u5408\u7528\u7a0b\u5e8f\u7ebf\u907f\u514d\u6743\u5229\u4fdd\u969c\u73af\u8282\u9057\u6f0f\u3002",
+      "learning_targets": [
+        "\u6309\u987a\u5e8f\u5b8c\u6210\u8eab\u4efd\u3001\u4e8b\u7531\u3001\u6743\u5229\u548c\u6551\u6d4e\u544a\u77e5",
+        "\u843d\u5b9e\u672a\u6210\u5e74\u4eba\u3001\u4f24\u75c5\u4eba\u5458\u4e0e\u4e2a\u4eba\u9690\u79c1\u7684\u7279\u6b8a\u4fdd\u62a4"
+      ],
+      "visual_types": [
+        "step-flow",
+        "legal-relationship"
+      ],
+      "insertion_points": [
+        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
+      ],
+      "assets": [
+        {
+          "path": "img/learning/qinwu/gonggong-zhixu-falv-quanli-scene-zone.svg",
+          "kind": "svg",
+          "purpose": "\u73b0\u573a\u6267\u6cd5\u6743\u5229\u4fdd\u969c\u7a0b\u5e8f\u7ebf",
+          "source_status": "original",
+          "source_url": "",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
+          "accessed_at": "2026-08-10",
+          "license": "site-original",
+          "status": "complete"
+        }
+      ],
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
+      "blocked_reason": ""
+    },
+    {
+      "path": "qinwu/gonggong-zhixu-goutong-jilu.html",
+      "module": "qinwu",
+      "current_images": 1,
+      "decision": "keep",
+      "reason": "\u73b0\u6709\u56fe\u5df2\u5177\u4f53\u5448\u73b0\u6c9f\u901a\u533a\u3001\u5904\u7f6e\u8bb0\u5f55\u533a\u3001\u56f4\u89c2\u5f15\u5bfc\u533a\u548c\u56db\u7c7b\u8bb0\u5f55\u8981\u7d20\uff0c\u4e0e\u6b63\u6587\u7684\u5168\u666f\u5230\u91cd\u70b9\u6444\u5f55\u3001\u503e\u542c\u6838\u5b9e\u53ca\u5f02\u5e38\u4e0a\u62a5\u76ee\u6807\u4e00\u81f4\uff0c\u53ef\u76f4\u63a5\u4fdd\u7559\u3002",
+      "learning_targets": [
+        "\u5212\u5206\u6c9f\u901a\u3001\u5904\u7f6e\u548c\u56f4\u89c2\u5f15\u5bfc\u8fb9\u754c",
+        "\u5b8c\u6574\u8bb0\u5f55\u65f6\u95f4\u5730\u70b9\u3001\u4eba\u5458\u884c\u4e3a\u3001\u544a\u77e5\u63aa\u65bd\u548c\u5f02\u5e38\u4e0a\u62a5"
+      ],
+      "visual_types": [
+        "scene-zone",
+        "checklist"
+      ],
+      "insertion_points": [
+        "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
+      ],
+      "assets": [
+        {
+          "path": "img/learning/qinwu/gonggong-zhixu-goutong-record.svg",
+          "kind": "svg",
+          "purpose": "\u516c\u5171\u79e9\u5e8f\u73b0\u573a\u5206\u533a\u4e0e\u8bb0\u5f55",
+          "source_status": "original",
+          "source_url": "",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
+          "accessed_at": "2026-08-10",
+          "license": "site-original",
+          "status": "complete"
+        }
+      ],
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/xiaoqu-zhidian-zoufang.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u672c\u6587\u9002\u7528\u4e8e\u5de1\u9632\u8b66\u529b\u5bf9\u8f96\u533a\u5c45\u6c11\u5c0f\u533a\u5de1\u9632\u652f\u70b9\u5f00\u5c55\u7684\u65e5\u5e38\u8d70\u8bbf\u8054\u7cfb\u3002\u652f\u70b9\u662f\u793e\u4f1a\u9762\u5de1\u9632\u4f53\u7cfb\u7684\u4f9d\u6258\u70b9\uff1a\u4ee5\u5c0f\u533a\u7269\u4e1a\u5b89\u4fdd\u529b\u91cf\u4e3a\u57fa\u7840\uff0c\u901a\u8fc7\u6c11\u8b66\u5b9a\u671f\u8d70\u8bbf\u3001\u6307\u5bfc\u548c\u8054\u5408",
+      "reason": "\u6b63\u6587\u56f4\u7ed5\u7269\u4e1a\u5b89\u4fdd\u8054\u7edc\u3001\u95e8\u5c97\u76d1\u63a7\u6838\u9a8c\u3001\u62a5\u8b66\u8054\u5de1\u548c\u6574\u6539\u56de\u8bbf\u5c55\u5f00\uff0c\u5e76\u8981\u6c42\u62a5\u8b66\u8bb2\u6e05\u697c\u680b\u95e8\u724c\u3001\u4eba\u6570\u884c\u4e3a\u4e0e\u9003\u79bb\u65b9\u5411\uff0c\u9002\u5408\u7528\u8d70\u8bbf\u95ed\u73af\u56fe\u5448\u73b0\u3002",
       "learning_targets": [
-        "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u672c\u6587\u9002\u7528\u4e8e\u5de1\u9632\u8b66\u529b\u5bf9\u8f96\u533a\u5c45\u6c11\u5c0f\u533a\u5de1\u9632\u652f\u70b9\u5f00\u5c55\u7684\u65e5\u5e38\u8d70\u8bbf\u8054\u7cfb\u3002\u652f\u70b9\u662f\u793e\u4f1a\u9762\u5de1\u9632\u4f53\u7cfb\u7684\u4f9d\u6258\u70b9\uff1a\u4ee5\u5c0f\u533a\u7269\u4e1a\u5b89\u4fdd\u529b\u91cf\u4e3a\u57fa\u7840\uff0c\u901a\u8fc7\u6c11\u8b66\u5b9a\u671f\u8d70\u8bbf\u3001\u6307\u5bfc\u548c\u8054\u5408"
+        "\u5b8c\u6210\u5c0f\u533a\u652f\u70b9\u8054\u7edc\u3001\u6838\u9a8c\u3001\u8054\u5de1\u548c\u56de\u8bbf\u56db\u6b65\u95ed\u73af",
+        "\u6307\u5bfc\u4fdd\u5b89\u51c6\u786e\u62a5\u8b66\u5e76\u4fdd\u62a4\u6848\u4ef6\u73b0\u573a"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -954,31 +961,32 @@
         {
           "path": "img/learning/qinwu/xiaoqu-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf\u95ed\u73af",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/xuexiao-zhidian-zoufang.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u5b66\u6821\u652f\u70b9\u8d70\u8bbf - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u8d70\u8bbf\u4e2d\u8981\u628a\u6821\u65b9\u7684\u5148\u671f\u5904\u7f6e\u6d41\u7a0b\u6559\u624e\u5b9e\uff1a\u9047\u7a81\u53d1\u60c5\u51b5\u7acb\u5373\u5173\u95ed\u6821\u95e8\u9694\u79bb\u3001\u7ec4\u7ec7\u5e08\u751f\u5411\u6559\u5b66\u697c\u5185\u758f\u6563\u9690\u853d\u3001\u540c\u6b65\u6309\u4e00\u952e\u62a5\u8b66\u548c110\u62a5\u8b66\uff0c\u62a5\u544a\u8bb2\u6e05\u5b66\u6821\u540d\u79f0\u3001\u4f4d\u7f6e\u3001",
+      "reason": "\u6b63\u6587\u8981\u6c42\u65e5\u5e38\u6838\u9a8c\u4eba\u9632\u7269\u9632\u6280\u9632\uff0c\u7a81\u53d1\u65f6\u7acb\u5373\u5173\u95ed\u6821\u95e8\u3001\u7ec4\u7ec7\u5e08\u751f\u758f\u6563\u9690\u853d\u5e76\u540c\u6b65\u4e00\u952e\u62a5\u8b66\u548c110\uff0c\u9002\u5408\u7528\u6821\u95e8\u9694\u79bb\u6d41\u7a0b\u56fe\u5f3a\u5316\u5b66\u751f\u4f18\u5148\u3002",
       "learning_targets": [
-        "\u5b66\u6821\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u8d70\u8bbf\u4e2d\u8981\u628a\u6821\u65b9\u7684\u5148\u671f\u5904\u7f6e\u6d41\u7a0b\u6559\u624e\u5b9e\uff1a\u9047\u7a81\u53d1\u60c5\u51b5\u7acb\u5373\u5173\u95ed\u6821\u95e8\u9694\u79bb\u3001\u7ec4\u7ec7\u5e08\u751f\u5411\u6559\u5b66\u697c\u5185\u758f\u6563\u9690\u853d\u3001\u540c\u6b65\u6309\u4e00\u952e\u62a5\u8b66\u548c110\u62a5\u8b66\uff0c\u62a5\u544a\u8bb2\u6e05\u5b66\u6821\u540d\u79f0\u3001\u4f4d\u7f6e\u3001"
+        "\u6838\u9a8c\u6821\u56ed\u95e8\u536b\u3001\u6280\u9632\u3001\u5668\u68b0\u548c\u62a4\u5b66\u8054\u5de1",
+        "\u638c\u63e1\u5173\u95e8\u9694\u79bb\u3001\u758f\u6563\u9690\u853d\u548c\u540c\u6b65\u62a5\u8b66\u6d41\u7a0b"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -987,31 +995,32 @@
         {
           "path": "img/learning/qinwu/xuexiao-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u5b66\u6821\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u5b66\u6821\u652f\u70b9\u6821\u95e8\u9694\u79bb\u4e0e\u62a5\u8b66\u758f\u6563",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/yinhang-zhidian-zoufang.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u94f6\u884c\u652f\u70b9\u8d70\u8bbf - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u8054\u5408\u5de1\u903b\u5b89\u6392\u5728\u8425\u4e1a\u65f6\u6bb5\u548c\u62bc\u8fd0\u4ea4\u63a5\u7b49\u91cd\u70b9\u65f6\u6bb5\uff0c\u7531\u5e26\u961f\u6c11\u8b66\u7ec4\u7ec7\uff0c\u4e0e\u7f51\u70b9\u4fdd\u5b89\u5728\u8425\u4e1a\u5385\u5468\u8fb9\u548c\u81ea\u52a9\u533a\u5f00\u5c55\u6b65\u5de1\uff0c\u63d0\u5347\u89c1\u8b66\u7387\u3002\u4e0e\u94f6\u884c\u4fdd\u536b\u90e8\u95e8\u5efa\u7acb\u70b9\u5bf9\u70b9\u8054\u7cfb\uff0c\u91cd",
+      "reason": "\u6b63\u6587\u805a\u7126\u8425\u4e1a\u5385\u3001\u81ea\u52a9\u533a\u548c\u62bc\u8fd0\u4ea4\u63a5\u91cd\u70b9\u65f6\u6bb5\uff0c\u5e76\u660e\u786e\u53cd\u8bc8\u529d\u963b\u4e0e\u66b4\u529b\u8b66\u60c5\u907f\u9669\u62a5\u8b66\u4e24\u7c7b\u5206\u652f\uff0c\u9002\u5408\u7528\u91cd\u70b9\u65f6\u6bb5\u8054\u9632\u56fe\u5448\u73b0\u3002",
       "learning_targets": [
-        "\u94f6\u884c\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u8054\u5408\u5de1\u903b\u5b89\u6392\u5728\u8425\u4e1a\u65f6\u6bb5\u548c\u62bc\u8fd0\u4ea4\u63a5\u7b49\u91cd\u70b9\u65f6\u6bb5\uff0c\u7531\u5e26\u961f\u6c11\u8b66\u7ec4\u7ec7\uff0c\u4e0e\u7f51\u70b9\u4fdd\u5b89\u5728\u8425\u4e1a\u5385\u5468\u8fb9\u548c\u81ea\u52a9\u533a\u5f00\u5c55\u6b65\u5de1\uff0c\u63d0\u5347\u89c1\u8b66\u7387\u3002\u4e0e\u94f6\u884c\u4fdd\u536b\u90e8\u95e8\u5efa\u7acb\u70b9\u5bf9\u70b9\u8054\u7cfb\uff0c\u91cd"
+        "\u6838\u9a8c\u94f6\u884c\u4e00\u952e\u62a5\u8b66\u3001\u76d1\u63a7\u3001\u5668\u68b0\u4e0e\u62bc\u8fd0\u8854\u63a5",
+        "\u533a\u5206\u53cd\u8bc8\u529d\u963b\u548c\u66b4\u529b\u8b66\u60c5\u907f\u9669\u62a5\u8b66\u52a8\u4f5c"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -1020,31 +1029,32 @@
         {
           "path": "img/learning/qinwu/yinhang-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u94f6\u884c\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u94f6\u884c\u652f\u70b9\u91cd\u70b9\u65f6\u6bb5\u8054\u9632",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/shangchang-zhidian-zoufang.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u5546\u573a\u652f\u70b9\u8d70\u8bbf - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u5546\u573a\u91cc\u7684\u8b66\u52a1\u6c9f\u901a\u4ee5\u670d\u52a1\u4e3a\u4e3b\uff1a\u4e3a\u987e\u5ba2\u6307\u8def\u3001\u534f\u52a9\u5bfb\u4eba\u5bfb\u7269\u662f\u9ad8\u9891\u4e8b\u9879\uff0c\u6001\u5ea6\u8010\u5fc3\u5c31\u662f\u5f62\u8c61\u3002\u5904\u7f6e\u6d88\u8d39\u7ea0\u7eb7\u65f6\u8bb2\u6e05\u8fb9\u754c\u2014\u2014\u6c11\u8b66\u7ba1\u6cbb\u5b89\u4e0d\u88c1\u51b3\u6d88\u8d39\u4e89\u8bae\uff0c\u5f15\u5bfc\u627e\u5e02\u573a",
+      "reason": "\u6b63\u6587\u8986\u76d6\u8bbe\u65bd\u6838\u9a8c\u3001\u6700\u5c0f\u5e94\u6025\u5355\u5143\u3001\u5ba2\u6d41\u9ad8\u5cf0\u8054\u5de1\u3001\u513f\u7ae5\u8d70\u5931\u548c\u805a\u96c6\u9884\u8b66\uff0c\u9002\u5408\u7528\u5206\u533a\u8054\u9632\u56fe\u5c06\u68c0\u67e5\u3001\u670d\u52a1\u4e0e\u7d27\u6025\u5206\u652f\u653e\u5728\u540c\u4e00\u573a\u666f\u3002",
       "learning_targets": [
-        "\u5546\u573a\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u5546\u573a\u91cc\u7684\u8b66\u52a1\u6c9f\u901a\u4ee5\u670d\u52a1\u4e3a\u4e3b\uff1a\u4e3a\u987e\u5ba2\u6307\u8def\u3001\u534f\u52a9\u5bfb\u4eba\u5bfb\u7269\u662f\u9ad8\u9891\u4e8b\u9879\uff0c\u6001\u5ea6\u8010\u5fc3\u5c31\u662f\u5f62\u8c61\u3002\u5904\u7f6e\u6d88\u8d39\u7ea0\u7eb7\u65f6\u8bb2\u6e05\u8fb9\u754c\u2014\u2014\u6c11\u8b66\u7ba1\u6cbb\u5b89\u4e0d\u88c1\u51b3\u6d88\u8d39\u4e89\u8bae\uff0c\u5f15\u5bfc\u627e\u5e02\u573a"
+        "\u68c0\u67e5\u5546\u573a\u62a5\u8b66\u3001\u76d1\u63a7\u3001\u5e7f\u64ad\u3001\u901a\u9053\u548c\u5e94\u6025\u5355\u5143",
+        "\u638c\u63e1\u513f\u7ae5\u8d70\u5931\u3001\u62e5\u6324\u9884\u8b66\u548c\u66b4\u529b\u8b66\u60c5\u7684\u5206\u652f\u5904\u7f6e"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -1053,31 +1063,32 @@
         {
           "path": "img/learning/qinwu/shangchang-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u5546\u573a\u652f\u70b9\u8d70\u8bbf\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u5546\u573a\u652f\u70b9\u9ad8\u5cf0\u8054\u5de1",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/zhuanxiang-huodong-gailan.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u6982\u8ff0 - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u662f\u591a\u90e8\u95e8\u5171\u540c\u4efb\u52a1\uff1a\u4e3b\u529e\u65b9\u548c\u627f\u529e\u5355\u4f4d\u8d1f\u8d23\u6d3b\u52a8\u7ec4\u7ec7\u548c\u5185\u573a\u7ba1\u7406\uff1b\u516c\u5b89\u673a\u5173\u8d1f\u8d23\u6cbb\u5b89\u3001\u4ea4\u901a\u79e9\u5e8f\u548c\u7a81\u53d1\u4e8b\u4ef6\u5904\u7f6e\uff1b\u6d88\u9632\u3001\u533b\u7597\u3001\u5e94\u6025\u90e8\u95e8\u9a7b\u70b9\u4fdd\u969c\uff1b\u8857",
+      "reason": "\u6b63\u6587\u5c06\u4e13\u9879\u4fdd\u969c\u6982\u62ec\u4e3a\u5b9a\u70b9\u503c\u5b88\u3001\u533a\u57df\u5de1\u67e5\u3001\u89c2\u5bdf\u62a5\u544a\u3001\u670d\u52a1\u5904\u7f6e\u56db\u4ef6\u4e8b\uff0c\u5e76\u5f3a\u8c03\u5f02\u5e38\u805a\u96c6\u3001\u53ef\u7591\u7269\u54c1\u548c\u8f66\u8f86\u5f02\u52a8\u53d1\u73b0\u5373\u62a5\u3002",
       "learning_targets": [
-        "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u6982\u8ff0\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u662f\u591a\u90e8\u95e8\u5171\u540c\u4efb\u52a1\uff1a\u4e3b\u529e\u65b9\u548c\u627f\u529e\u5355\u4f4d\u8d1f\u8d23\u6d3b\u52a8\u7ec4\u7ec7\u548c\u5185\u573a\u7ba1\u7406\uff1b\u516c\u5b89\u673a\u5173\u8d1f\u8d23\u6cbb\u5b89\u3001\u4ea4\u901a\u79e9\u5e8f\u548c\u7a81\u53d1\u4e8b\u4ef6\u5904\u7f6e\uff1b\u6d88\u9632\u3001\u533b\u7597\u3001\u5e94\u6025\u90e8\u95e8\u9a7b\u70b9\u4fdd\u969c\uff1b\u8857"
+        "\u7406\u89e3\u4e13\u9879\u6d3b\u52a8\u5c97\u4f4d\u56db\u9879\u5faa\u73af\u4efb\u52a1",
+        "\u8bc6\u522b\u5f02\u5e38\u805a\u96c6\u3001\u53ef\u7591\u7269\u54c1\u548c\u8f66\u8f86\u5f02\u52a8\u7684\u62a5\u544a\u5206\u652f"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -1086,31 +1097,32 @@
         {
           "path": "img/learning/qinwu/zhuanxiang-huodong-gailan-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u6982\u8ff0\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u56db\u9879\u5de5\u4f5c",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/zhuanxiang-xianchang-zhixu.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u73b0\u573a\u79e9\u5e8f\u4e0e\u5b89\u5168\u670d\u52a1 - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u79e9\u5e8f\u5c97\u7684\u534f\u540c\u4ee5\"\u77e5\u9053\u627e\u8c01\"\u4e3a\u6807\u51c6\uff1a\u4e0e\u76f8\u90bb\u5c97\u4f4d\u4fdd\u6301\u89c6\u7ebf\u548c\u901a\u8054\u8854\u63a5\uff0c\u4ea4\u754c\u5730\u5e26\u660e\u786e\u8d23\u4efb\uff1b\u4e0e\u4e3b\u529e\u65b9\u5f15\u5bfc\u5458\u3001\u5fd7\u613f\u8005\u914d\u5408\u5206\u5de5\u2014\u2014\u5f15\u5bfc\u758f\u5bfc\u4ed6\u4eec\u80fd\u505a\uff0c\u6d89\u53ca\u6267\u6cd5\u5904",
+      "reason": "\u6b63\u6587\u6309\u8b66\u6212\u533a\u7ba1\u7406\u3001\u901a\u9053\u4fdd\u7545\u3001\u56f4\u89c2\u758f\u5bfc\u548c\u5b89\u5168\u670d\u52a1\u7ec4\u7ec7\u52a8\u4f5c\uff0c\u5e76\u4fdd\u7559\u53ef\u7591\u7269\u54c1\u4e0e\u6781\u7aef\u5929\u6c14\u7684\u7d27\u6025\u5206\u652f\uff0c\u9002\u5408\u7528\u4e09\u533a\u4fdd\u7545\u56fe\u5448\u73b0\u3002",
       "learning_targets": [
-        "\u73b0\u573a\u79e9\u5e8f\u4e0e\u5b89\u5168\u670d\u52a1\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u79e9\u5e8f\u5c97\u7684\u534f\u540c\u4ee5\"\u77e5\u9053\u627e\u8c01\"\u4e3a\u6807\u51c6\uff1a\u4e0e\u76f8\u90bb\u5c97\u4f4d\u4fdd\u6301\u89c6\u7ebf\u548c\u901a\u8054\u8854\u63a5\uff0c\u4ea4\u754c\u5730\u5e26\u660e\u786e\u8d23\u4efb\uff1b\u4e0e\u4e3b\u529e\u65b9\u5f15\u5bfc\u5458\u3001\u5fd7\u613f\u8005\u914d\u5408\u5206\u5de5\u2014\u2014\u5f15\u5bfc\u758f\u5bfc\u4ed6\u4eec\u80fd\u505a\uff0c\u6d89\u53ca\u6267\u6cd5\u5904"
+        "\u5212\u6e05\u8b66\u6212\u3001\u901a\u884c\u3001\u5904\u7f6e\u548c\u670d\u52a1\u533a\u57df\u804c\u8d23",
+        "\u638c\u63e1\u53ef\u7591\u7269\u54c1\u3001\u4f24\u75c5\u548c\u6781\u7aef\u5929\u6c14\u4e0b\u7684\u5b89\u5168\u52a8\u4f5c"
       ],
       "visual_types": [
-        "scene-zone"
+        "scene-zone",
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -1119,31 +1131,31 @@
         {
           "path": "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u73b0\u573a\u79e9\u5e8f\u4e0e\u5b89\u5168\u670d\u52a1\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u4e13\u9879\u73b0\u573a\u4e09\u533a\u4fdd\u7545",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "qinwu/zhuanxiang-xietong-baogao.html",
       "module": "qinwu",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u90e8\u95e8\u534f\u540c\u4e0e\u7a81\u53d1\u60c5\u51b5\u62a5\u544a - \u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4\u7a81\u53d1\u60c5\u51b5\u4e0b\u62a5\u544a\u4e0e\u5904\u7f6e\u5fc5\u987b\u5e76\u884c\uff0c\u6b21\u5e8f\u662f\"\u5148\u6551\u4eba\u3001\u518d\u63a7\u5c40\u3001\u540c\u6b65\u62a5\"\uff1a\u6709\u4eba\u53d7\u4f24\u5148\u7ec4\u7ec7\u6551\u52a9\u5e76\u547c\u53eb\u533b\u7597\u529b\u91cf\uff1b\u5371\u9669\u6e90\uff08\u53ef\u7591\u7269\u54c1\u3001\u706b\u60c5\u82d7\u5934\uff09\u5148\u9694\u79bb\u758f\u6563\u5468\u8fb9\u7fa4\u4f17",
+      "reason": "\u6b63\u6587\u660e\u786e\u5148\u6551\u4eba\u3001\u518d\u63a7\u5c40\u3001\u540c\u6b65\u62a5\uff0c\u5e76\u4ee5\u9996\u62a5\u5feb\u3001\u7eed\u62a5\u51c6\u3001\u7ec8\u62a5\u5168\u5f62\u6210\u62a5\u544a\u95ed\u73af\uff0c\u8fd8\u89c4\u5b9a\u901a\u8054\u4e2d\u65ad\u65f6\u7684\u5907\u7528\u65b9\u5f0f\u3002",
       "learning_targets": [
-        "\u90e8\u95e8\u534f\u540c\u4e0e\u7a81\u53d1\u60c5\u51b5\u62a5\u544a\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4",
-        "\u7a81\u53d1\u60c5\u51b5\u4e0b\u62a5\u544a\u4e0e\u5904\u7f6e\u5fc5\u987b\u5e76\u884c\uff0c\u6b21\u5e8f\u662f\"\u5148\u6551\u4eba\u3001\u518d\u63a7\u5c40\u3001\u540c\u6b65\u62a5\"\uff1a\u6709\u4eba\u53d7\u4f24\u5148\u7ec4\u7ec7\u6551\u52a9\u5e76\u547c\u53eb\u533b\u7597\u529b\u91cf\uff1b\u5371\u9669\u6e90\uff08\u53ef\u7591\u7269\u54c1\u3001\u706b\u60c5\u82d7\u5934\uff09\u5148\u9694\u79bb\u758f\u6563\u5468\u8fb9\u7fa4\u4f17"
+        "\u638c\u63e1\u9996\u62a5\u3001\u7eed\u62a5\u3001\u534f\u540c\u79fb\u4ea4\u548c\u7ec8\u62a5\u7684\u5b8c\u6574\u94fe\u8def",
+        "\u5728\u4f24\u60c5\u3001\u5371\u9669\u6e90\u548c\u901a\u8054\u4e2d\u65ad\u65f6\u4fdd\u6301\u5904\u7f6e\u62a5\u544a\u5e76\u884c"
       ],
       "visual_types": [
-        "scene-zone"
+        "step-flow"
       ],
       "insertion_points": [
         "\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4"
@@ -1152,17 +1164,17 @@
         {
           "path": "img/learning/qinwu/zhuanxiang-xietong-baogao-scene-zone.svg",
           "kind": "svg",
-          "purpose": "\u90e8\u95e8\u534f\u540c\u4e0e\u7a81\u53d1\u60c5\u51b5\u62a5\u544a\u73b0\u573a\u670d\u52a1\u4e0e\u79e9\u5e8f\u7ef4\u62a4scene-zone",
+          "purpose": "\u7a81\u53d1\u60c5\u51b5\u62a5\u544a\u95ed\u73af",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {

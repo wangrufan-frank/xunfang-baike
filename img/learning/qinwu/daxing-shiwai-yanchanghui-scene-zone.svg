@@ -1,0 +1,90 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">大型室外演唱会｜五区联动</title>
+  <desc id="desc">票务、安检、外场、内场到散场，各区发现风险就近降级处置。紧急分支：密度异常、极端天气、火情或伤情——先疏散救助，隔离危险区，同步启动预案</desc>
+  <defs><style>
+    .light{fill:#fff}.dark{fill:#17324d}.desktop{display:block}.mobile{display:none}
+    text{font-family:"Microsoft YaHei","PingFang SC",sans-serif}
+    @media (max-width:500px){.desktop{display:none}.mobile{display:block}}
+  </style></defs>
+  <rect width="900" height="560" rx="26" fill="#f5f9fb"/>
+  <g class="desktop">
+    <rect x="20" y="20" width="860" height="78" rx="18" fill="#164968"/>
+    <text x="48" y="57" class="light" font-size="29" font-weight="700">大型室外演唱会｜五区联动</text>
+    <text x="48" y="84" class="light" font-size="16">票务、安检、外场、内场到散场，各区发现风险就近降级处置</text>
+    <g transform="translate(28 124)">
+      <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">1</text>
+      <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 30h92v50H10q10-12 0-25 10-13 0-25z" fill="#f8e5c8"/><path d="M62 30v50" stroke-dasharray="6 7"/><circle cx="38" cy="55" r="10"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">票务与安检</text>
+      <text x="18" y="210" class="dark" font-size="15">固定假票证据</text>
+      <text x="18" y="234" class="dark" font-size="15">制止冲闯｜防止积压</text>
+    </g><path d="M224 247h20" stroke="#1f6584" stroke-width="4"/><path d="M238 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
+<g transform="translate(244 124)">
+      <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">2</text>
+      <g transform="translate(43 50)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/><g transform="translate(48 6) scale(.75)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/></g><path d="M10 96h96" stroke="#dc8d32" stroke-width="5"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">外场巡控</text>
+      <text x="18" y="210" class="dark" font-size="15">聚集苗头早发现</text>
+      <text x="18" y="234" class="dark" font-size="15">打架双方快分离</text>
+    </g><path d="M440 247h20" stroke="#1f6584" stroke-width="4"/><path d="M454 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
+<g transform="translate(460 124)">
+      <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">3</text>
+      <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 90h96M18 90V32h80v58"/><path d="M18 32q40 26 80 0"/><circle cx="58" cy="56" r="12" fill="#dc8d32"/><path d="M36 80l22-12 22 12"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">内场秩序</text>
+      <text x="18" y="210" class="dark" font-size="15">闹场、投物、黑飞依法查控</text>
+      <text x="18" y="234" class="dark" font-size="15"></text>
+    </g><path d="M656 247h20" stroke="#1f6584" stroke-width="4"/><path d="M670 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
+<g transform="translate(676 124)">
+      <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">4</text>
+      <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="12" y="12" width="58" height="82" rx="4"/><path d="M44 54h54M82 38l16 16-16 16"/><circle cx="34" cy="30" r="8" fill="#dc8d32"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">散场分流</text>
+      <text x="18" y="210" class="dark" font-size="15">通道全开</text>
+      <text x="18" y="234" class="dark" font-size="15">交汇处分段单向放行</text>
+    </g>
+    <rect x="28" y="394" width="844" height="82" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
+    <path d="M50 452l18-34 18 34z" fill="#c85b52"/><text x="62" y="445" class="light" font-size="18" font-weight="700">!</text>
+    <text x="102" y="426" class="dark" font-size="18" font-weight="700">异常／紧急分支</text>
+    <text x="102" y="455" class="dark" font-size="17">紧急分支：密度异常、极端天气、火情或伤情——先疏散救助，隔离危险区，同步启动预案</text>
+    <rect x="28" y="494" width="844" height="42" rx="12" fill="#dceeed"/>
+    <text x="48" y="522" class="dark" font-size="17" font-weight="700">镜头环绕场景：动作规范、全程记录、只客观描述不自行定性</text>
+  </g>
+  <g class="mobile" aria-label="移动端流程重排">
+    <rect width="900" height="560" rx="26" fill="#f5f9fb"/>
+    <rect x="20" y="18" width="860" height="68" rx="18" fill="#164968"/>
+    <text x="46" y="61" class="light" font-size="32" font-weight="700">大型室外演唱会｜五区联动</text>
+    <g transform="translate(28 104)">
+      <rect width="410" height="122" rx="16" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#1f6584"/><text x="28" y="47" class="light" font-size="28" font-weight="700">1</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">票务与安检</text>
+      <text x="24" y="82" class="dark" font-size="25">固定假票证据 · 制</text>
+      <text x="24" y="111" class="dark" font-size="25">止冲闯 · 防止积压</text>
+    </g>
+<g transform="translate(460 104)">
+      <rect width="410" height="122" rx="16" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#d7933d"/><text x="28" y="47" class="light" font-size="28" font-weight="700">2</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">外场巡控</text>
+      <text x="24" y="82" class="dark" font-size="25">聚集苗头早发现 ·</text>
+      <text x="24" y="111" class="dark" font-size="25"> 打架双方快分离</text>
+    </g>
+<g transform="translate(28 246)">
+      <rect width="410" height="122" rx="16" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#1f6584"/><text x="28" y="47" class="light" font-size="28" font-weight="700">3</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">内场秩序</text>
+      <text x="24" y="92" class="dark" font-size="25">闹场、投物、黑飞依法查控</text>
+    </g>
+<g transform="translate(460 246)">
+      <rect width="410" height="122" rx="16" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#d7933d"/><text x="28" y="47" class="light" font-size="28" font-weight="700">4</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">散场分流</text>
+      <text x="24" y="82" class="dark" font-size="25">通道全开 · 交</text>
+      <text x="24" y="111" class="dark" font-size="25">汇处分段单向放行</text>
+    </g>
+    <rect x="28" y="398" width="844" height="112" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
+    <text x="50" y="434" class="dark" font-size="27" font-weight="700">紧急分支</text>
+    <text x="50" y="468" class="dark" font-size="25">紧急分支：密度异常、极端天气、火情或伤情</text>
+    <text x="50" y="500" class="dark" font-size="25">——先疏散救助，隔离危险区，同步启动预案</text>
+    <text x="40" y="548" class="dark" font-size="25" font-weight="700">镜头环绕场景：动作规范、全程记录、只客观描述不自行定性</text>
+  </g>
+</svg>

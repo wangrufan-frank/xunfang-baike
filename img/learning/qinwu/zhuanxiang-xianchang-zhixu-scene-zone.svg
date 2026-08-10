@@ -1,0 +1,86 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">专项现场秩序｜三区保畅</title>
+  <desc id="desc">警戒区、通行区和服务区边界清晰，应急通道始终畅通。可疑物品：不触碰、疏散周边、报告并守护；极端天气按指令转移，避免遮蔽点拥堵</desc>
+  <defs><style>
+    .light{fill:#fff}.dark{fill:#17324d}.desktop{display:block}.mobile{display:none}
+    text{font-family:"Microsoft YaHei","PingFang SC",sans-serif}
+    @media (max-width:500px){.desktop{display:none}.mobile{display:block}}
+  </style></defs>
+  <rect width="900" height="560" rx="26" fill="#f5f9fb"/>
+  <g class="desktop">
+    <rect x="20" y="20" width="860" height="78" rx="18" fill="#164968"/>
+    <text x="48" y="57" class="light" font-size="29" font-weight="700">专项现场秩序｜三区保畅</text>
+    <text x="48" y="84" class="light" font-size="16">警戒区、通行区和服务区边界清晰，应急通道始终畅通</text>
+    <g transform="translate(28 124)">
+      <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">1</text>
+      <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 34h96v38H10z" fill="#f8e5c8"/><path d="M24 34l18 38M58 34l18 38M92 34l14 28M26 72l-8 24M88 72l8 24"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">警戒区</text>
+      <text x="18" y="210" class="dark" font-size="15">留足缓冲</text>
+      <text x="18" y="234" class="dark" font-size="15">证件查验｜薄弱段重点盯守</text>
+    </g><path d="M224 247h20" stroke="#1f6584" stroke-width="4"/><path d="M238 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
+<g transform="translate(244 124)">
+      <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">2</text>
+      <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34h86M78 18l16 16-16 16M108 74H22M38 58L22 74l16 16"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">通行区</text>
+      <text x="18" y="210" class="dark" font-size="15">分段放行</text>
+      <text x="18" y="234" class="dark" font-size="15">单向流动｜不停留不对冲</text>
+    </g><path d="M440 247h20" stroke="#1f6584" stroke-width="4"/><path d="M454 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
+<g transform="translate(460 124)">
+      <rect width="196" height="246" rx="18" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#1f6584"/><text x="21" y="36" class="light" font-size="24" font-weight="700">3</text>
+      <g transform="translate(43 50)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/><g transform="translate(56 0)"><circle cx="38" cy="24" r="14" fill="#f1c8a7" stroke="#17324d" stroke-width="3"/><path d="M18 68q20-30 40 0v22H18z" fill="#2f8097" stroke="#17324d" stroke-width="3"/></g><path d="M56 12v82" stroke="#dc8d32" stroke-width="5" stroke-dasharray="8 7"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">处置区</text>
+      <text x="18" y="210" class="dark" font-size="15">隔开围观</text>
+      <text x="18" y="234" class="dark" font-size="15">留出处置空间｜分层劝离</text>
+    </g><path d="M656 247h20" stroke="#1f6584" stroke-width="4"/><path d="M670 239l9 8-9 8" fill="none" stroke="#1f6584" stroke-width="4"/>
+<g transform="translate(676 124)">
+      <rect width="196" height="246" rx="18" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="28" cy="28" r="18" fill="#d7933d"/><text x="21" y="36" class="light" font-size="24" font-weight="700">4</text>
+      <g transform="translate(43 50)" fill="none" stroke="#1f6584" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="18" width="92" height="72" rx="10" fill="#fff"/><path d="M48 32h24v16h16v24H72v16H48V72H32V48h16z" fill="#c85b52" stroke="none"/></g>
+      <text x="18" y="178" class="dark" font-size="22" font-weight="700">服务区</text>
+      <text x="18" y="210" class="dark" font-size="15">走失登记</text>
+      <text x="18" y="234" class="dark" font-size="15">伤病先救｜主动帮扶弱者</text>
+    </g>
+    <rect x="28" y="394" width="844" height="82" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
+    <path d="M50 452l18-34 18 34z" fill="#c85b52"/><text x="62" y="445" class="light" font-size="18" font-weight="700">!</text>
+    <text x="102" y="426" class="dark" font-size="18" font-weight="700">异常／紧急分支</text>
+    <text x="102" y="455" class="dark" font-size="17">可疑物品：不触碰、疏散周边、报告并守护；极端天气按指令转移，避免遮蔽点拥堵</text>
+    <rect x="28" y="494" width="844" height="42" rx="12" fill="#dceeed"/>
+    <text x="48" y="522" class="dark" font-size="17" font-weight="700">岗位协同：相邻岗可视可联｜引导由志愿者配合｜执法处置由民警实施</text>
+  </g>
+  <g class="mobile" aria-label="移动端流程重排">
+    <rect width="900" height="560" rx="26" fill="#f5f9fb"/>
+    <rect x="20" y="18" width="860" height="68" rx="18" fill="#164968"/>
+    <text x="46" y="61" class="light" font-size="32" font-weight="700">专项现场秩序｜三区保畅</text>
+    <g transform="translate(28 104)">
+      <rect width="410" height="122" rx="16" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#1f6584"/><text x="28" y="47" class="light" font-size="28" font-weight="700">1</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">警戒区</text>
+      <text x="24" y="82" class="dark" font-size="25">留足缓冲 · 证件查验</text>\n      <text x="24" y="111" class="dark" font-size="25"> · 薄弱段重点盯守</text>
+    </g>
+<g transform="translate(460 104)">
+      <rect width="410" height="122" rx="16" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#d7933d"/><text x="28" y="47" class="light" font-size="28" font-weight="700">2</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">通行区</text>
+      <text x="24" y="82" class="dark" font-size="25">分段放行 · 单向流</text>\n      <text x="24" y="111" class="dark" font-size="25">动 · 不停留不对冲</text>
+    </g>
+<g transform="translate(28 246)">
+      <rect width="410" height="122" rx="16" fill="#e5f1f3" stroke="#4a879b" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#1f6584"/><text x="28" y="47" class="light" font-size="28" font-weight="700">3</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">处置区</text>
+      <text x="24" y="82" class="dark" font-size="25">隔开围观 · 留出处</text>\n      <text x="24" y="111" class="dark" font-size="25">置空间 · 分层劝离</text>
+    </g>
+<g transform="translate(460 246)">
+      <rect width="410" height="122" rx="16" fill="#f7ead8" stroke="#d7933d" stroke-width="2"/>
+      <circle cx="36" cy="38" r="22" fill="#d7933d"/><text x="28" y="47" class="light" font-size="28" font-weight="700">4</text>
+      <text x="72" y="44" class="dark" font-size="30" font-weight="700">服务区</text>
+      <text x="24" y="82" class="dark" font-size="25">走失登记 · 伤病先</text>\n      <text x="24" y="111" class="dark" font-size="25">救 · 主动帮扶弱者</text>
+    </g>
+    <rect x="28" y="398" width="844" height="112" rx="16" fill="#fff1ed" stroke="#c85b52" stroke-width="2"/>
+    <text x="50" y="434" class="dark" font-size="27" font-weight="700">紧急分支</text>
+    <text x="50" y="468" class="dark" font-size="25">可疑物品：不触碰、疏散周边、报告并守护</text>\n    <text x="50" y="500" class="dark" font-size="25">；极端天气按指令转移，避免遮蔽点拥堵</text>
+    <text x="40" y="548" class="dark" font-size="25" font-weight="700">岗位协同：相邻岗可视可联｜引导由志愿者配合｜执法处置由民警实施</text>
+  </g>
+</svg>

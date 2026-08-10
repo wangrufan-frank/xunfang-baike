@@ -885,7 +885,15 @@
           "public_sources": [
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/zuqiu-saishi-anbao-scene-zone.svg",
+              "alt": "足球赛事入场、赛中、冲突处置与散场疏导流程示意图",
+              "caption": "足球赛事三阶段秩序维护：检票口、看台与散场路径联动，紧急情况下先救助、同步报告（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/daxing-shiwai-yanchanghui.html",
             "qinwu/zhuanxiang-huodong-gailan.html",
@@ -909,7 +917,15 @@
           "public_sources": [
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/daxing-shiwai-yanchanghui-scene-zone.svg",
+              "alt": "大型室外演唱会票务安检、外场内场与散场五区联动示意图",
+              "caption": "大型室外演唱会五区联动：分区发现风险、就近降级处置，密度异常和伤情立即启动疏散救助（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/zuqiu-saishi-anbao.html",
             "qinwu/xiaoxing-shinei-yanchu.html",
@@ -932,7 +948,15 @@
           "public_sources": [
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/xiaoxing-shinei-yanchu-scene-zone.svg",
+              "alt": "小型室内演出演前巡查、容量控制、冲突隔离和散场分流示意图",
+              "caption": "小型室内演出出口优先：演前查出口、入场控容量，火情或拥挤时立即打开出口分向疏散（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/daxing-shiwai-yanchanghui.html",
             "qinwu/zuqiu-saishi-anbao.html",
@@ -956,7 +980,15 @@
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/gonggong-zhixu-chuzhi-yuanze-scene-zone.svg",
+              "alt": "公共秩序事件接触倾听、分隔保护、分级处置和移交闭环示意图",
+              "caption": "公共秩序事件分级降温：先听诉求、分隔保护，再按行为层级劝导或依法处置（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/gonggong-zhixu-falv-quanli.html",
             "qinwu/gonggong-zhixu-goutong-jilu.html",
@@ -978,7 +1010,15 @@
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html",
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/gonggong-zhixu-falv-quanli-scene-zone.svg",
+              "alt": "现场执法身份说明、权利告知、陈述核实、措施救济程序示意图",
+              "caption": "现场执法权利保障程序线：身份、事由、权利、措施与救济逐项衔接（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
             "fagui/quanli-yiwu-gaozhi.html",
@@ -1029,7 +1069,15 @@
           "public_sources": [
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/xiaoqu-zhidian-zoufang-scene-zone.svg",
+              "alt": "小区支点安保联络、现场核验、报警联巡和整改回访示意图",
+              "caption": "小区支点走访闭环：更新联络、核验门岗监控、测试报警联巡、登记整改并回访（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/xuexiao-zhidian-zoufang.html",
             "qinwu/shangchang-zhidian-zoufang.html",
@@ -1055,7 +1103,15 @@
             "https://www.ayx.gov.cn/2023/01-04/3338957.html",
             "https://www.bbmu.edu.cn/info/1040/37073.htm"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/xuexiao-zhidian-zoufang-scene-zone.svg",
+              "alt": "学校支点三防核验、护学联巡、关门隔离和报警疏散示意图",
+              "caption": "学校支点突发流程：关闭校门隔离，师生疏散隐蔽，一键报警与110同步启动（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/xiaoqu-zhidian-zoufang.html",
             "qinwu/yinhang-zhidian-zoufang.html",
@@ -1078,7 +1134,15 @@
           "public_sources": [
             "https://scjgj.gz.gov.cn/attachment/6/6734/6734446/6991549.pdf"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/yinhang-zhidian-zoufang-scene-zone.svg",
+              "alt": "银行支点技防核验、重点时段联巡、反诈劝阻和暴力警情避险示意图",
+              "caption": "银行支点重点时段联防：测试技防、联巡押运时段、及时反诈劝阻，暴力警情先避险报警（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/xuexiao-zhidian-zoufang.html",
             "qinwu/shangchang-zhidian-zoufang.html",
@@ -1100,7 +1164,15 @@
           "public_sources": [
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/shangchang-zhidian-zoufang-scene-zone.svg",
+              "alt": "商场设施核验、最小应急单元联巡、群众服务和聚集预警示意图",
+              "caption": "商场支点高峰联巡：核验设施和应急单元，兼顾群众服务，聚集苗头即报即控（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/xiaoqu-zhidian-zoufang.html",
             "qinwu/yinhang-zhidian-zoufang.html",
@@ -1123,7 +1195,15 @@
           "public_sources": [
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=204&Query=%E5%A4%A7%E5%9E%8B%E7%BE%A4%E4%BC%97%E6%80%A7%E6%B4%BB%E5%8A%A8%E5%AE%89%E5%85%A8%E7%AE%A1%E7%90%86%E6%9D%A1%E4%BE%8B"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/zhuanxiang-huodong-gailan-scene-zone.svg",
+              "alt": "专项活动定点值守、区域巡查、观察报告和服务处置示意图",
+              "caption": "专项活动保障四件事：定点值守、区域巡查、观察报告、服务处置在统一指挥下循环（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/zhuanxiang-xianchang-zhixu.html",
             "qinwu/zhuanxiang-xietong-baogao.html",
@@ -1146,7 +1226,15 @@
           "public_sources": [
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg",
+              "alt": "专项活动警戒区、通行区、处置区和服务区秩序维护示意图",
+              "caption": "专项现场三区保畅：守住警戒边界、保持通道畅通、隔开围观并做好伤病走失服务（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/zhuanxiang-huodong-gailan.html",
             "qinwu/zhuanxiang-xietong-baogao.html",
@@ -1169,7 +1257,15 @@
           "public_sources": [
             "https://www.yantai.gov.cn/cms_files/jcms1/web1/site/attach/0/3463208b7d7846ffa1b293b3c6076239.pdf"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/qinwu/zhuanxiang-xietong-baogao-scene-zone.svg",
+              "alt": "突发情况首报、续报、协同移交和终报闭环示意图",
+              "caption": "突发情况报告闭环：首报快、续报准、终报全，处置与报告始终并行（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/zhuanxiang-huodong-gailan.html",
             "jingqing/shebao-lei.html",
