@@ -3,6 +3,7 @@
 import json
 import sys
 import xml.etree.ElementTree as ET
+from datetime import date
 from pathlib import Path
 
 DECISIONS = {"keep", "add", "replace", "no-image"}
@@ -10,6 +11,7 @@ VISUAL_TYPES = {"structure-label", "step-flow", "scene-zone", "comparison", "che
 IMPLEMENTATION_STATUSES = {"not-started", "in-progress", "complete", "blocked"}
 ACCEPTANCE_STATUSES = {"not-reviewed", "accepted", "blocked"}
 ASSET_STATUSES = {"planned", "complete", "blocked"}
+SOURCE_STATUSES = {"original", "external", "internal", "not-needed"}
 
 
 def _load(root, relative):
@@ -44,6 +46,13 @@ def validate_plan(root, require_complete=False):
             continue
         if page.get("module") != expected.get(page.get("path")):
             errors.append(f"{label}: module does not match inventory")
+        current_images = page.get("current_images")
+        if not isinstance(current_images, int) or isinstance(current_images, bool) or current_images < 0:
+            errors.append(f"{label}: current_images must be a non-negative integer")
+        else:
+            html_path = root / page.get("path", "")
+            if not html_path.exists() or html_path.read_text(encoding="utf-8").count("<img") != current_images:
+                errors.append(f"{label}: current_images does not match HTML")
         if page.get("decision") not in DECISIONS:
             errors.append(f"{label}: invalid decision")
         if page.get("implementation_status") not in IMPLEMENTATION_STATUSES:
@@ -66,8 +75,26 @@ def validate_plan(root, require_complete=False):
             required = ("path", "kind", "purpose", "source_status", "source_url", "publisher", "accessed_at", "license", "status")
             if not isinstance(asset, dict) or any(not isinstance(asset.get(key), str) for key in required):
                 errors.append(f"{label}: incomplete asset source fields")
-            elif asset["status"] not in ASSET_STATUSES:
+                continue
+            if asset["status"] not in ASSET_STATUSES:
                 errors.append(f"{label}: invalid asset status")
+            source_status = asset["source_status"]
+            if source_status not in SOURCE_STATUSES:
+                errors.append(f"{label}: invalid source_status")
+                continue
+            try:
+                date.fromisoformat(asset["accessed_at"])
+            except ValueError:
+                errors.append(f"{label}: asset accessed_at must be ISO date")
+            provenance = (asset["publisher"].strip(), asset["accessed_at"].strip(), asset["license"].strip())
+            if source_status == "external":
+                if not asset["source_url"].startswith(("https://", "http://")) or not all(provenance):
+                    errors.append(f"{label}: external asset requires valid provenance")
+            elif source_status in {"original", "internal"}:
+                if asset["source_url"].strip() or not all(provenance):
+                    errors.append(f"{label}: {source_status} asset requires local provenance without source_url")
+            elif source_status == "not-needed" and any((asset["source_url"].strip(), *provenance)):
+                errors.append(f"{label}: not-needed asset cannot claim provenance")
         if require_complete:
             terminal = ((page.get("implementation_status") == "complete" and page.get("acceptance_status") == "accepted") or
                         (page.get("implementation_status") == "blocked" and page.get("acceptance_status") == "blocked" and page.get("blocked_reason", "").strip()))

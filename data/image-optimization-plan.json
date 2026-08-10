@@ -7,17 +7,17 @@
       "module": "zhuangbei",
       "current_images": 2,
       "decision": "keep",
-      "reason": "?九小件概览???????????????????????????????????",
+      "reason": "\u4e5d\u5c0f\u4ef6\u6982\u89c8; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "九小件概览????"
+        "\u4e5d\u5c0f\u4ef6\u6982\u89c8",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -29,17 +29,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?防割手套???????????????????????????????????",
+      "reason": "\u9632\u5272\u624b\u5957; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "防割手套????"
+        "\u9632\u5272\u624b\u5957",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -51,28 +51,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u6267\u6cd5\u8bb0\u5f55\u4eea; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "执法记录仪????"
+        "\u6267\u6cd5\u8bb0\u5f55\u4eea",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/zhifa-jiuyi-structure-label.svg",
           "kind": "svg",
-          "purpose": "??执法记录仪???????????????structure-label??",
+          "purpose": "\u6267\u6cd5\u8bb0\u5f55\u4eea; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -85,17 +85,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?对讲电台???????????????????????????????????",
+      "reason": "\u5bf9\u8bb2\u7535\u53f0; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "对讲电台????"
+        "\u5bf9\u8bb2\u7535\u53f0",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -107,28 +107,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u963b\u8f66\u9489; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "阻车钉????"
+        "\u963b\u8f66\u9489",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/zuche-ding-structure-label.svg",
           "kind": "svg",
-          "purpose": "??阻车钉???????????????structure-label??",
+          "purpose": "\u963b\u8f66\u9489; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -141,28 +141,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u6c34\u4e0a\u98de\u7ffc; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "水上飞翼????"
+        "\u6c34\u4e0a\u98de\u7ffc",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/shuishang-feiyi-structure-label.svg",
           "kind": "svg",
-          "purpose": "??水上飞翼???????????????structure-label??",
+          "purpose": "\u6c34\u4e0a\u98de\u7ffc; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -175,17 +175,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?灭火毯???????????????????????????????????",
+      "reason": "\u706d\u706b\u6bef; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "灭火毯????"
+        "\u706d\u706b\u6bef",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -197,17 +197,17 @@
       "module": "zhuangbei",
       "current_images": 2,
       "decision": "keep",
-      "reason": "?灭火器???????????????????????????????????",
+      "reason": "\u706d\u706b\u5668; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "灭火器????"
+        "\u706d\u706b\u5668",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -219,17 +219,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?反光锥筒???????????????????????????????????",
+      "reason": "\u53cd\u5149\u9525\u7b52; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "反光锥筒????"
+        "\u53cd\u5149\u9525\u7b52",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -241,17 +241,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?救生圈???????????????????????????????????",
+      "reason": "\u6551\u751f\u5708; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "救生圈????"
+        "\u6551\u751f\u5708",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -263,17 +263,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?救生衣???????????????????????????????????",
+      "reason": "\u6551\u751f\u8863; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "救生衣????"
+        "\u6551\u751f\u8863",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -285,17 +285,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?救生绳???????????????????????????????????",
+      "reason": "\u6551\u751f\u7ef3; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "救生绳????"
+        "\u6551\u751f\u7ef3",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -307,28 +307,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u7834\u62c6\u5de5\u5177; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "破拆工具????"
+        "\u7834\u62c6\u5de5\u5177",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/pochai-gongju-structure-label.svg",
           "kind": "svg",
-          "purpose": "??破拆工具???????????????structure-label??",
+          "purpose": "\u7834\u62c6\u5de5\u5177; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -341,28 +341,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "5G\u4e91\u53f0; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "5G云台????"
+        "5G\u4e91\u53f0",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/5g-yuntai-structure-label.svg",
           "kind": "svg",
-          "purpose": "??5G云台???????????????structure-label??",
+          "purpose": "5G\u4e91\u53f0; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -375,17 +375,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?防暴头盔???????????????????????????????????",
+      "reason": "\u9632\u66b4\u5934\u76d4; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "防暴头盔????"
+        "\u9632\u66b4\u5934\u76d4",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -397,17 +397,17 @@
       "module": "zhuangbei",
       "current_images": 2,
       "decision": "keep",
-      "reason": "?抓捕叉???????????????????????????????????",
+      "reason": "\u6293\u6355\u53c9; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "抓捕叉????"
+        "\u6293\u6355\u53c9",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -419,17 +419,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?警戒带与警告牌???????????????????????????????????",
+      "reason": "\u8b66\u6212\u5e26\u4e0e\u8b66\u544a\u724c; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "警戒带与警告牌????"
+        "\u8b66\u6212\u5e26\u4e0e\u8b66\u544a\u724c",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -441,17 +441,17 @@
       "module": "zhuangbei",
       "current_images": 2,
       "decision": "keep",
-      "reason": "?法式盾牌???????????????????????????????????",
+      "reason": "\u6cd5\u5f0f\u76fe\u724c; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "法式盾牌????"
+        "\u6cd5\u5f0f\u76fe\u724c",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -463,28 +463,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u81c2\u76fe; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "臂盾????"
+        "\u81c2\u76fe",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/bidun-structure-label.svg",
           "kind": "svg",
-          "purpose": "??臂盾???????????????structure-label??",
+          "purpose": "\u81c2\u76fe; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -497,28 +497,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "T\u5b57\u68cd; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "T字棍????"
+        "T\u5b57\u68cd",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/t-zi-gun-structure-label.svg",
           "kind": "svg",
-          "purpose": "??T字棍???????????????structure-label??",
+          "purpose": "T\u5b57\u68cd; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -531,17 +531,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?强光手电???????????????????????????????????",
+      "reason": "\u5f3a\u5149\u624b\u7535; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "强光手电????"
+        "\u5f3a\u5149\u624b\u7535",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -553,28 +553,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u4f1e\u5f0f\u56f4\u6321; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "伞式围挡????"
+        "\u4f1e\u5f0f\u56f4\u6321",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/sanshi-weidang-structure-label.svg",
           "kind": "svg",
-          "purpose": "??伞式围挡???????????????structure-label??",
+          "purpose": "\u4f1e\u5f0f\u56f4\u6321; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -587,28 +587,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u6298\u53e0\u5f0f\u56f4\u6321; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "折叠式围挡????"
+        "\u6298\u53e0\u5f0f\u56f4\u6321",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/zhedieshi-weidang-structure-label.svg",
           "kind": "svg",
-          "purpose": "??折叠式围挡???????????????structure-label??",
+          "purpose": "\u6298\u53e0\u5f0f\u56f4\u6321; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -621,28 +621,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u957f\u68cd; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "长棍????"
+        "\u957f\u68cd",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/changgun-structure-label.svg",
           "kind": "svg",
-          "purpose": "??长棍???????????????structure-label??",
+          "purpose": "\u957f\u68cd; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -655,28 +655,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u9632\u523a\u670d; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "防刺服????"
+        "\u9632\u523a\u670d",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/fangci-fu-structure-label.svg",
           "kind": "svg",
-          "purpose": "??防刺服???????????????structure-label??",
+          "purpose": "\u9632\u523a\u670d; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -689,28 +689,28 @@
       "module": "zhuangbei",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u7ea6\u675f\u5e26; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
       "learning_targets": [
-        "??????",
-        "?????",
-        "约束带????"
+        "\u7ea6\u675f\u5e26",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5173\u952e\u7528\u9014"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/yueshu-dai-structure-label.svg",
           "kind": "svg",
-          "purpose": "??约束带???????????????structure-label??",
+          "purpose": "\u7ea6\u675f\u5e26; \u6838\u5fc3\u7ed3\u8bba; \u5173\u952e\u7528\u9014",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -723,17 +723,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?急救包组成与使用???????????????????????????????????",
+      "reason": "\u6025\u6551\u5305\u7ec4\u6210\u4e0e\u4f7f\u7528; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "急救包组成与使用????"
+        "\u6025\u6551\u5305\u7ec4\u6210\u4e0e\u4f7f\u7528",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -745,17 +745,17 @@
       "module": "zhuangbei",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?AED 使用方法???????????????????????????????????",
+      "reason": "AED \u4f7f\u7528\u65b9\u6cd5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "AED 使用方法????"
+        "AED \u4f7f\u7528\u65b9\u6cd5",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -767,28 +767,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u8db3\u7403\u8d5b\u4e8b\u5b89\u4fdd; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "足球赛事安保????"
+        "\u8db3\u7403\u8d5b\u4e8b\u5b89\u4fdd",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/zuqiu-saishi-anbao-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??足球赛事安保???????????????scene-zone??",
+          "purpose": "\u8db3\u7403\u8d5b\u4e8b\u5b89\u4fdd; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -801,28 +801,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5b89\u4fdd; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "大型室外演唱会安保????"
+        "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5b89\u4fdd",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/daxing-shiwai-yanchanghui-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??大型室外演唱会安保???????????????scene-zone??",
+          "purpose": "\u5927\u578b\u5ba4\u5916\u6f14\u5531\u4f1a\u5b89\u4fdd; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -835,28 +835,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u5b89\u4fdd; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "小型室内演出安保????"
+        "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u5b89\u4fdd",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/xiaoxing-shinei-yanchu-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??小型室内演出安保???????????????scene-zone??",
+          "purpose": "\u5c0f\u578b\u5ba4\u5185\u6f14\u51fa\u5b89\u4fdd; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -869,28 +869,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u5904\u7f6e\u57fa\u672c\u539f\u5219; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "处置基本原则????"
+        "\u5904\u7f6e\u57fa\u672c\u539f\u5219",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/gonggong-zhixu-chuzhi-yuanze-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??处置基本原则???????????????scene-zone??",
+          "purpose": "\u5904\u7f6e\u57fa\u672c\u539f\u5219; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -903,28 +903,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u6cd5\u5f8b\u9002\u7528\u4e0e\u6743\u5229\u4fdd\u969c; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "法律适用与权利保障????"
+        "\u6cd5\u5f8b\u9002\u7528\u4e0e\u6743\u5229\u4fdd\u969c",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/gonggong-zhixu-falv-quanli-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??法律适用与权利保障???????????????scene-zone??",
+          "purpose": "\u6cd5\u5f8b\u9002\u7528\u4e0e\u6743\u5229\u4fdd\u969c; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -937,28 +937,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "现场沟通、记录与舆情风险????"
+        "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/gonggong-zhixu-goutong-jilu-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??现场沟通、记录与舆情风险???????????????scene-zone??",
+          "purpose": "\u73b0\u573a\u6c9f\u901a\u3001\u8bb0\u5f55\u4e0e\u8206\u60c5\u98ce\u9669; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -971,28 +971,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "小区支点走访????"
+        "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/xiaoqu-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??小区支点走访???????????????scene-zone??",
+          "purpose": "\u5c0f\u533a\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1005,28 +1005,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u5b66\u6821\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "学校支点走访????"
+        "\u5b66\u6821\u652f\u70b9\u8d70\u8bbf",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/xuexiao-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??学校支点走访???????????????scene-zone??",
+          "purpose": "\u5b66\u6821\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1039,28 +1039,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u94f6\u884c\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "银行支点走访????"
+        "\u94f6\u884c\u652f\u70b9\u8d70\u8bbf",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/yinhang-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??银行支点走访???????????????scene-zone??",
+          "purpose": "\u94f6\u884c\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1073,28 +1073,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u5546\u573a\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "商场支点走访????"
+        "\u5546\u573a\u652f\u70b9\u8d70\u8bbf",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/shangchang-zhidian-zoufang-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??商场支点走访???????????????scene-zone??",
+          "purpose": "\u5546\u573a\u652f\u70b9\u8d70\u8bbf; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1107,28 +1107,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u6982\u8ff0; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "专项活动保障概述????"
+        "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u6982\u8ff0",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/zhuanxiang-huodong-gailan-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??专项活动保障概述???????????????scene-zone??",
+          "purpose": "\u4e13\u9879\u6d3b\u52a8\u4fdd\u969c\u6982\u8ff0; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1141,28 +1141,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u73b0\u573a\u79e9\u5e8f\u4e0e\u5b89\u5168\u670d\u52a1; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "现场秩序与安全服务????"
+        "\u73b0\u573a\u79e9\u5e8f\u4e0e\u5b89\u5168\u670d\u52a1",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??现场秩序与安全服务???????????????scene-zone??",
+          "purpose": "\u73b0\u573a\u79e9\u5e8f\u4e0e\u5b89\u5168\u670d\u52a1; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1175,28 +1175,28 @@
       "module": "qinwu",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????????",
+      "reason": "\u90e8\u95e8\u534f\u540c\u4e0e\u7a81\u53d1\u60c5\u51b5\u62a5\u544a; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "部门协同与突发情况报告????"
+        "\u90e8\u95e8\u534f\u540c\u4e0e\u7a81\u53d1\u60c5\u51b5\u62a5\u544a",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "scene-zone"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/qinwu/zhuanxiang-xietong-baogao-scene-zone.svg",
           "kind": "svg",
-          "purpose": "??部门协同与突发情况报告???????????????scene-zone??",
+          "purpose": "\u90e8\u95e8\u534f\u540c\u4e0e\u7a81\u53d1\u60c5\u51b5\u62a5\u544a; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u52e4\u52a1\u987b\u77e5",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1209,28 +1209,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u4e2a\u4eba\u9632\u62a4\u4e0e\u8bad\u7ec3\u5b89\u5168; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "个人防护与训练安全????"
+        "\u4e2a\u4eba\u9632\u62a4\u4e0e\u8bad\u7ec3\u5b89\u5168",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/geren-fanghu-anquan-step-flow.svg",
           "kind": "svg",
-          "purpose": "??个人防护与训练安全???????????????step-flow??",
+          "purpose": "\u4e2a\u4eba\u9632\u62a4\u4e0e\u8bad\u7ec3\u5b89\u5168; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1243,17 +1243,17 @@
       "module": "xunlian",
       "current_images": 5,
       "decision": "keep",
-      "reason": "?伸缩警棍基础训练???????????????????????????????????",
+      "reason": "\u4f38\u7f29\u8b66\u68cd\u57fa\u7840\u8bad\u7ec3; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "伸缩警棍基础训练????"
+        "\u4f38\u7f29\u8b66\u68cd\u57fa\u7840\u8bad\u7ec3",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1265,17 +1265,17 @@
       "module": "xunlian",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?催泪喷射器基础训练???????????????????????????????????",
+      "reason": "\u50ac\u6cea\u55b7\u5c04\u5668\u57fa\u7840\u8bad\u7ec3; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "催泪喷射器基础训练????"
+        "\u50ac\u6cea\u55b7\u5c04\u5668\u57fa\u7840\u8bad\u7ec3",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1287,17 +1287,17 @@
       "module": "xunlian",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?手铐基础训练???????????????????????????????????",
+      "reason": "\u624b\u94d0\u57fa\u7840\u8bad\u7ec3; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "手铐基础训练????"
+        "\u624b\u94d0\u57fa\u7840\u8bad\u7ec3",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1309,17 +1309,17 @@
       "module": "xunlian",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?执法记录仪与电台训练???????????????????????????????????",
+      "reason": "\u6267\u6cd5\u8bb0\u5f55\u4eea\u4e0e\u7535\u53f0\u8bad\u7ec3; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "执法记录仪与电台训练????"
+        "\u6267\u6cd5\u8bb0\u5f55\u4eea\u4e0e\u7535\u53f0\u8bad\u7ec3",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1331,17 +1331,17 @@
       "module": "xunlian",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?强光手电基础训练???????????????????????????????????",
+      "reason": "\u5f3a\u5149\u624b\u7535\u57fa\u7840\u8bad\u7ec3; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "强光手电基础训练????"
+        "\u5f3a\u5149\u624b\u7535\u57fa\u7840\u8bad\u7ec3",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1353,28 +1353,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u5f92\u624b\u89e3\u8131\u4e0e\u63a7\u5236\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "徒手解脱与控制基础????"
+        "\u5f92\u624b\u89e3\u8131\u4e0e\u63a7\u5236\u57fa\u7840",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/jietuo-kongzhi-jichu-step-flow.svg",
           "kind": "svg",
-          "purpose": "??徒手解脱与控制基础???????????????step-flow??",
+          "purpose": "\u5f92\u624b\u89e3\u8131\u4e0e\u63a7\u5236\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1387,28 +1387,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u5c0f\u7ec4\u7f16\u6210\u4e0e\u804c\u8d23\u5206\u5de5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "小组编成与职责分工????"
+        "\u5c0f\u7ec4\u7f16\u6210\u4e0e\u804c\u8d23\u5206\u5de5",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/xiaozu-biancheng-fengong-step-flow.svg",
           "kind": "svg",
-          "purpose": "??小组编成与职责分工???????????????step-flow??",
+          "purpose": "\u5c0f\u7ec4\u7f16\u6210\u4e0e\u804c\u8d23\u5206\u5de5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1421,17 +1421,17 @@
       "module": "xunlian",
       "current_images": 5,
       "decision": "keep",
-      "reason": "?协同站位与基础队形???????????????????????????????????",
+      "reason": "\u534f\u540c\u7ad9\u4f4d\u4e0e\u57fa\u7840\u961f\u5f62; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "协同站位与基础队形????"
+        "\u534f\u540c\u7ad9\u4f4d\u4e0e\u57fa\u7840\u961f\u5f62",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1443,17 +1443,17 @@
       "module": "xunlian",
       "current_images": 4,
       "decision": "keep",
-      "reason": "?盾牌与抓捕叉协同???????????????????????????????????",
+      "reason": "\u76fe\u724c\u4e0e\u6293\u6355\u53c9\u534f\u540c; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "盾牌与抓捕叉协同????"
+        "\u76fe\u724c\u4e0e\u6293\u6355\u53c9\u534f\u540c",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1465,28 +1465,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u79fb\u52a8\u3001\u63a9\u62a4\u4e0e\u4eba\u5458\u5e26\u79bb; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "移动、掩护与人员带离????"
+        "\u79fb\u52a8\u3001\u63a9\u62a4\u4e0e\u4eba\u5458\u5e26\u79bb",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/yidong-yanhu-daili-step-flow.svg",
           "kind": "svg",
-          "purpose": "??移动、掩护与人员带离???????????????step-flow??",
+          "purpose": "\u79fb\u52a8\u3001\u63a9\u62a4\u4e0e\u4eba\u5458\u5e26\u79bb; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1499,28 +1499,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u73b0\u573a\u6c9f\u901a\u4e0e\u5f71\u50cf\u8bb0\u5f55; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "现场沟通与影像记录????"
+        "\u73b0\u573a\u6c9f\u901a\u4e0e\u5f71\u50cf\u8bb0\u5f55",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/xianchang-goutong-yingxiang-step-flow.svg",
           "kind": "svg",
-          "purpose": "??现场沟通与影像记录???????????????step-flow??",
+          "purpose": "\u73b0\u573a\u6c9f\u901a\u4e0e\u5f71\u50cf\u8bb0\u5f55; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1533,28 +1533,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u8bad\u7ec3\u7ec4\u7ec7\u3001\u590d\u76d8\u4e0e\u8003\u8bc4; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "训练组织、复盘与考评????"
+        "\u8bad\u7ec3\u7ec4\u7ec7\u3001\u590d\u76d8\u4e0e\u8003\u8bc4",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/xunlian-fupan-kaoping-step-flow.svg",
           "kind": "svg",
-          "purpose": "??训练组织、复盘与考评???????????????step-flow??",
+          "purpose": "\u8bad\u7ec3\u7ec4\u7ec7\u3001\u590d\u76d8\u4e0e\u8003\u8bc4; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1567,17 +1567,17 @@
       "module": "xunlian",
       "current_images": 1,
       "decision": "keep",
-      "reason": "?心肺复苏操作要点???????????????????????????????????",
+      "reason": "\u5fc3\u80ba\u590d\u82cf\u64cd\u4f5c\u8981\u70b9; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "心肺复苏操作要点????"
+        "\u5fc3\u80ba\u590d\u82cf\u64cd\u4f5c\u8981\u70b9",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "??????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [],
       "implementation_status": "complete",
@@ -1589,28 +1589,28 @@
       "module": "xunlian",
       "current_images": 0,
       "decision": "add",
-      "reason": "?????????????????????????????????????",
+      "reason": "\u6b62\u8840\u3001\u5305\u624e\u4e0e\u4f24\u5458\u642c\u8fd0; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "????",
-        "止血、包扎与伤员搬运????"
+        "\u6b62\u8840\u3001\u5305\u624e\u4e0e\u4f24\u5458\u642c\u8fd0",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/xunlian/zhixue-baozha-banyun-step-flow.svg",
           "kind": "svg",
-          "purpose": "??止血、包扎与伤员搬运???????????????step-flow??",
+          "purpose": "\u6b62\u8840\u3001\u5305\u624e\u4e0e\u4f24\u5458\u642c\u8fd0; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u5b9e\u6218\u8bad\u7ec3",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1623,28 +1623,28 @@
       "module": "jingqing",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????",
+      "reason": "\u9189\u9152\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "????",
-        "???????",
-        "醉酒类警情处置基础????"
+        "\u9189\u9152\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/jingqing/zuijiu-lei-step-flow.svg",
           "kind": "svg",
-          "purpose": "??醉酒类警情处置基础???????????????step-flow??",
+          "purpose": "\u9189\u9152\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1657,28 +1657,28 @@
       "module": "jingqing",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????",
+      "reason": "\u6301\u5200\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "????",
-        "???????",
-        "持刀类警情处置基础????"
+        "\u6301\u5200\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/jingqing/chidao-lei-step-flow.svg",
           "kind": "svg",
-          "purpose": "??持刀类警情处置基础???????????????step-flow??",
+          "purpose": "\u6301\u5200\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1691,28 +1691,28 @@
       "module": "jingqing",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????",
+      "reason": "\u81ea\u4f24\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "????",
-        "???????",
-        "自伤类警情处置基础????"
+        "\u81ea\u4f24\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/jingqing/zishang-lei-step-flow.svg",
           "kind": "svg",
-          "purpose": "??自伤类警情处置基础???????????????step-flow??",
+          "purpose": "\u81ea\u4f24\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1725,28 +1725,28 @@
       "module": "jingqing",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????",
+      "reason": "\u7cbe\u795e\u969c\u788d\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "????",
-        "???????",
-        "精神障碍类警情处置基础????"
+        "\u7cbe\u795e\u969c\u788d\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/jingqing/jingshen-zhangai-lei-step-flow.svg",
           "kind": "svg",
-          "purpose": "??精神障碍类警情处置基础???????????????step-flow??",
+          "purpose": "\u7cbe\u795e\u969c\u788d\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1759,28 +1759,28 @@
       "module": "jingqing",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????",
+      "reason": "\u6d89\u7206\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "????",
-        "???????",
-        "涉爆类警情处置基础????"
+        "\u6d89\u7206\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/jingqing/shebao-lei-step-flow.svg",
           "kind": "svg",
-          "purpose": "??涉爆类警情处置基础???????????????step-flow??",
+          "purpose": "\u6d89\u7206\u7c7b\u8b66\u60c5\u5904\u7f6e\u57fa\u7840; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1793,28 +1793,28 @@
       "module": "jingqing",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????",
+      "reason": "\u6551\u52a9\u7c7b\u8b66\u60c5\u5904\u7f6e\u6d41\u7a0b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "????",
-        "???????",
-        "救助类警情处置流程????"
+        "\u6551\u52a9\u7c7b\u8b66\u60c5\u5904\u7f6e\u6d41\u7a0b",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "step-flow"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/jingqing/jiuzhu-lei-jingqing-chuzhi-step-flow.svg",
           "kind": "svg",
-          "purpose": "??救助类警情处置流程???????????????step-flow??",
+          "purpose": "\u6551\u52a9\u7c7b\u8b66\u60c5\u5904\u7f6e\u6d41\u7a0b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u8b66\u60c5\u5904\u7f6e",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1827,28 +1827,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u8868\u660e\u8eab\u4efd\u4e0e\u8bf4\u660e\u76ee\u7684; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "表明身份与说明目的????"
+        "\u8868\u660e\u8eab\u4efd\u4e0e\u8bf4\u660e\u76ee\u7684",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/shenfen-mudi-shuoming-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??表明身份与说明目的???????????????legal-relationship??",
+          "purpose": "\u8868\u660e\u8eab\u4efd\u4e0e\u8bf4\u660e\u76ee\u7684; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1861,28 +1861,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u76d8\u67e5\u4e2d\u7684\u89c4\u8303\u6c9f\u901a; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "盘查中的规范沟通????"
+        "\u76d8\u67e5\u4e2d\u7684\u89c4\u8303\u6c9f\u901a",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/pancha-guifan-goutong-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??盘查中的规范沟通???????????????legal-relationship??",
+          "purpose": "\u76d8\u67e5\u4e2d\u7684\u89c4\u8303\u6c9f\u901a; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1895,28 +1895,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u9762\u5bf9\u8d28\u7591\u65f6\u7684\u4f9d\u6cd5\u56de\u5e94; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "面对质疑时的依法回应????"
+        "\u9762\u5bf9\u8d28\u7591\u65f6\u7684\u4f9d\u6cd5\u56de\u5e94",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/zhiyi-yifa-huiying-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??面对质疑时的依法回应???????????????legal-relationship??",
+          "purpose": "\u9762\u5bf9\u8d28\u7591\u65f6\u7684\u4f9d\u6cd5\u56de\u5e94; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1929,28 +1929,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u56f4\u89c2\u62cd\u6444\u4e0e\u73b0\u573a\u79e9\u5e8f\u5f15\u5bfc; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "围观拍摄与现场秩序引导????"
+        "\u56f4\u89c2\u62cd\u6444\u4e0e\u73b0\u573a\u79e9\u5e8f\u5f15\u5bfc",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/weiguan-paishe-zhixu-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??围观拍摄与现场秩序引导???????????????legal-relationship??",
+          "purpose": "\u56f4\u89c2\u62cd\u6444\u4e0e\u73b0\u573a\u79e9\u5e8f\u5f15\u5bfc; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1963,28 +1963,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u6743\u5229\u4e49\u52a1\u548c\u6cd5\u5f8b\u540e\u679c\u544a\u77e5; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "权利义务和法律后果告知????"
+        "\u6743\u5229\u4e49\u52a1\u548c\u6cd5\u5f8b\u540e\u679c\u544a\u77e5",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/quanli-yiwu-gaozhi-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??权利义务和法律后果告知???????????????legal-relationship??",
+          "purpose": "\u6743\u5229\u4e49\u52a1\u548c\u6cd5\u5f8b\u540e\u679c\u544a\u77e5; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -1997,28 +1997,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "??????",
-        "盘问检查与身份证查验????"
+        "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/panwen-shenfenzheng-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??盘问检查与身份证查验???????????????legal-relationship??",
+          "purpose": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2031,28 +2031,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u4f20\u5524\u548c\u5f3a\u5236\u4f20\u5524; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "传唤和强制传唤????"
+        "\u4f20\u5524\u548c\u5f3a\u5236\u4f20\u5524",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/chuanhuan-qiangzhi-chuanhuan-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??传唤和强制传唤???????????????legal-relationship??",
+          "purpose": "\u4f20\u5524\u548c\u5f3a\u5236\u4f20\u5524; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2065,28 +2065,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u8b66\u68b0\u4f7f\u7528\u7684\u6761\u4ef6\u4e0e\u7a0b\u5e8f; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "??????",
-        "警械使用的条件与程序????"
+        "\u8b66\u68b0\u4f7f\u7528\u7684\u6761\u4ef6\u4e0e\u7a0b\u5e8f",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/jingxie-shiyong-chengxu-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??警械使用的条件与程序???????????????legal-relationship??",
+          "purpose": "\u8b66\u68b0\u4f7f\u7528\u7684\u6761\u4ef6\u4e0e\u7a0b\u5e8f; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2099,28 +2099,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "行政案件调查取证????"
+        "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/xingzheng-anji-tiaocha-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??行政案件调查取证???????????????legal-relationship??",
+          "purpose": "\u884c\u653f\u6848\u4ef6\u8c03\u67e5\u53d6\u8bc1; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2133,28 +2133,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
       "learning_targets": [
-        "??????",
-        "??????",
-        "执法记录与权利保障????"
+        "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c",
+        "\u9002\u7528\u60c5\u5f62",
+        "\u6709\u6548\u6cd5\u5f8b\u4f9d\u636e"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u9002\u7528\u60c5\u5f62"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/zhifa-jilu-quanli-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??执法记录与权利保障???????????????legal-relationship??",
+          "purpose": "\u6267\u6cd5\u8bb0\u5f55\u4e0e\u6743\u5229\u4fdd\u969c; \u9002\u7528\u60c5\u5f62; \u6709\u6548\u6cd5\u5f8b\u4f9d\u636e",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2167,28 +2167,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
       "learning_targets": [
-        "??????",
-        "??????",
-        "治安管理处罚法????"
+        "\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
+        "\u76ee\u5f55"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/zhian-guanli-chufa-fa-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??治安管理处罚法???????????????legal-relationship??",
+          "purpose": "\u6cbb\u5b89\u7ba1\u7406\u5904\u7f5a\u6cd5; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2201,28 +2201,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u4eba\u6c11\u8b66\u5bdf\u6cd5; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
       "learning_targets": [
-        "??????",
-        "??????",
-        "人民警察法????"
+        "\u4eba\u6c11\u8b66\u5bdf\u6cd5",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
+        "\u76ee\u5f55"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/renmin-jingcha-fa-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??人民警察法???????????????legal-relationship??",
+          "purpose": "\u4eba\u6c11\u8b66\u5bdf\u6cd5; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2235,28 +2235,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
       "learning_targets": [
-        "??????",
-        "??????",
-        "居民身份证法????"
+        "\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
+        "\u76ee\u5f55"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/jumin-shenfenzheng-fa-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??居民身份证法???????????????legal-relationship??",
+          "purpose": "\u5c45\u6c11\u8eab\u4efd\u8bc1\u6cd5; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2269,28 +2269,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
       "learning_targets": [
-        "??????",
-        "??????",
-        "公安机关办理行政案件程序规定????"
+        "\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
+        "\u76ee\u5f55"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/xingzheng-anji-chengxu-guiding-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??公安机关办理行政案件程序规定???????????????legal-relationship??",
+          "purpose": "\u516c\u5b89\u673a\u5173\u529e\u7406\u884c\u653f\u6848\u4ef6\u7a0b\u5e8f\u89c4\u5b9a; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u76ee\u5f55",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2303,28 +2303,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b; \u5de1\u9632\u5e38\u7528\u6761\u6b3e; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
       "learning_targets": [
-        "??????",
-        "??????",
-        "人民警察使用警械和武器条例????"
+        "\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b",
+        "\u5de1\u9632\u5e38\u7528\u6761\u6b3e",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u5de1\u9632\u5e38\u7528\u6761\u6b3e"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/jingxie-wuqi-tiaoli-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??人民警察使用警械和武器条例???????????????legal-relationship??",
+          "purpose": "\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b; \u5de1\u9632\u5e38\u7528\u6761\u6b3e; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2337,28 +2337,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u73b0\u573a\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u64cd\u4f5c\u89c4\u7a0b; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u6cd5\u89c4\u5168\u6587",
       "learning_targets": [
-        "??????",
-        "??????",
-        "现场制止违法犯罪行为操作规程????"
+        "\u73b0\u573a\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u64cd\u4f5c\u89c4\u7a0b",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
+        "\u6cd5\u89c4\u5168\u6587"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/xianchang-zhizhi-guicheng-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??现场制止违法犯罪行为操作规程???????????????legal-relationship??",
+          "purpose": "\u73b0\u573a\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u64cd\u4f5c\u89c4\u7a0b; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u6cd5\u89c4\u5168\u6587",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2371,28 +2371,28 @@
       "module": "fagui",
       "current_images": 0,
       "decision": "add",
-      "reason": "???????????????????????????????????????",
+      "reason": "\u5176\u4ed6\u65e5\u5e38\u5de1\u903b\u4e0e\u5b89\u4fdd\u89c4\u8303; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u6cd5\u89c4\u5168\u6587",
       "learning_targets": [
-        "??????",
-        "??????",
-        "其他日常巡逻与安保规范????"
+        "\u5176\u4ed6\u65e5\u5e38\u5de1\u903b\u4e0e\u5b89\u4fdd\u89c4\u8303",
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f",
+        "\u6cd5\u89c4\u5168\u6587"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "????????"
+        "\u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/qita-xiangguan-guifan-legal-relationship.svg",
           "kind": "svg",
-          "purpose": "??其他日常巡逻与安保规范???????????????legal-relationship??",
+          "purpose": "\u5176\u4ed6\u65e5\u5e38\u5de1\u903b\u4e0e\u5b89\u4fdd\u89c4\u8303; \u7248\u672c\u4e0e\u6548\u529b\u4fe1\u606f; \u6cd5\u89c4\u5168\u6587",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6267\u6cd5\u89c4\u8303",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2405,28 +2405,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u4eba\u6c11\u8b66\u5bdf\u5185\u52a1\u89c4\u8303; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "人民警察内务规范????"
+        "\u4eba\u6c11\u8b66\u5bdf\u5185\u52a1\u89c4\u8303",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/neiwu-tiaoling-checklist.svg",
           "kind": "svg",
-          "purpose": "??人民警察内务规范???????????????checklist??",
+          "purpose": "\u4eba\u6c11\u8b66\u5bdf\u5185\u52a1\u89c4\u8303; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2439,28 +2439,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u7eaa\u5f8b\u8981\u6c42; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "纪律要求????"
+        "\u7eaa\u5f8b\u8981\u6c42",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/jilv-yaoqiu-checklist.svg",
           "kind": "svg",
-          "purpose": "??纪律要求???????????????checklist??",
+          "purpose": "\u7eaa\u5f8b\u8981\u6c42; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2473,28 +2473,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u4fdd\u5bc6\u4e0e\u4fe1\u606f\u5b89\u5168; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "保密与信息安全????"
+        "\u4fdd\u5bc6\u4e0e\u4fe1\u606f\u5b89\u5168",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/baomi-xinxi-anquan-checklist.svg",
           "kind": "svg",
-          "purpose": "??保密与信息安全???????????????checklist??",
+          "purpose": "\u4fdd\u5bc6\u4e0e\u4fe1\u606f\u5b89\u5168; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2507,28 +2507,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u6d89\u9152\u53ca\u8fdd\u89c4\u5bb4\u8bf7\u7ba1\u7406\u8981\u6c42; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "涉酒及违规宴请管理要求????"
+        "\u6d89\u9152\u53ca\u8fdd\u89c4\u5bb4\u8bf7\u7ba1\u7406\u8981\u6c42",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/shejiu-yanqing-guanli-checklist.svg",
           "kind": "svg",
-          "purpose": "??涉酒及违规宴请管理要求???????????????checklist??",
+          "purpose": "\u6d89\u9152\u53ca\u8fdd\u89c4\u5bb4\u8bf7\u7ba1\u7406\u8981\u6c42; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2541,28 +2541,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u6267\u6cd5\u8bb0\u5f55\u548c\u5de5\u4f5c\u8d44\u6599\u7ba1\u7406; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "执法记录和工作资料管理????"
+        "\u6267\u6cd5\u8bb0\u5f55\u548c\u5de5\u4f5c\u8d44\u6599\u7ba1\u7406",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/zhifa-jilu-ziliao-guanli-checklist.svg",
           "kind": "svg",
-          "purpose": "??执法记录和工作资料管理???????????????checklist??",
+          "purpose": "\u6267\u6cd5\u8bb0\u5f55\u548c\u5de5\u4f5c\u8d44\u6599\u7ba1\u7406; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2575,28 +2575,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u4f53\u80fd\u8003\u6838\u8981\u6c42; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "体能考核要求????"
+        "\u4f53\u80fd\u8003\u6838\u8981\u6c42",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/tineng-kaohe-checklist.svg",
           "kind": "svg",
-          "purpose": "??体能考核要求???????????????checklist??",
+          "purpose": "\u4f53\u80fd\u8003\u6838\u8981\u6c42; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2609,28 +2609,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u57fa\u7840\u8b66\u52a1\u6280\u80fd\u8003\u6838; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "基础警务技能考核????"
+        "\u57fa\u7840\u8b66\u52a1\u6280\u80fd\u8003\u6838",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/jichu-jingwu-kaohe-checklist.svg",
           "kind": "svg",
-          "purpose": "??基础警务技能考核???????????????checklist??",
+          "purpose": "\u57fa\u7840\u8b66\u52a1\u6280\u80fd\u8003\u6838; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2643,28 +2643,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u5c0f\u7ec4\u534f\u540c\u6280\u80fd\u8003\u6838; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "小组协同技能考核????"
+        "\u5c0f\u7ec4\u534f\u540c\u6280\u80fd\u8003\u6838",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/xiaozu-xietong-kaohe-checklist.svg",
           "kind": "svg",
-          "purpose": "??小组协同技能考核???????????????checklist??",
+          "purpose": "\u5c0f\u7ec4\u534f\u540c\u6280\u80fd\u8003\u6838; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2677,28 +2677,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u8003\u6838\u5b89\u5168\u3001\u8bb0\u5f55\u4e0e\u8865\u6d4b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "考核安全、记录与补测????"
+        "\u8003\u6838\u5b89\u5168\u3001\u8bb0\u5f55\u4e0e\u8865\u6d4b",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/kaohe-anquan-buce-checklist.svg",
           "kind": "svg",
-          "purpose": "??考核安全、记录与补测???????????????checklist??",
+          "purpose": "\u8003\u6838\u5b89\u5168\u3001\u8bb0\u5f55\u4e0e\u8865\u6d4b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2711,28 +2711,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u5355\u4f4d\u4f18\u79c0\u8bfe\u7a0b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "单位优秀课程????"
+        "\u5355\u4f4d\u4f18\u79c0\u8bfe\u7a0b",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/danwei-youxiu-kecheng-checklist.svg",
           "kind": "svg",
-          "purpose": "??单位优秀课程???????????????checklist??",
+          "purpose": "\u5355\u4f4d\u4f18\u79c0\u8bfe\u7a0b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2745,28 +2745,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u5e02\u5c40\u4f18\u79c0\u8bfe\u7a0b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "市局优秀课程????"
+        "\u5e02\u5c40\u4f18\u79c0\u8bfe\u7a0b",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/shiju-youxiu-kecheng-checklist.svg",
           "kind": "svg",
-          "purpose": "??市局优秀课程???????????????checklist??",
+          "purpose": "\u5e02\u5c40\u4f18\u79c0\u8bfe\u7a0b; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2779,28 +2779,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u521b\u65b0\u8bad\u7ec3\u65b9\u6cd5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "创新训练方法????"
+        "\u521b\u65b0\u8bad\u7ec3\u65b9\u6cd5",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/chuangxin-xunlian-fangfa-checklist.svg",
           "kind": "svg",
-          "purpose": "??创新训练方法???????????????checklist??",
+          "purpose": "\u521b\u65b0\u8bad\u7ec3\u65b9\u6cd5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2813,28 +2813,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u8bfe\u7a0b\u8d44\u6599\u4f7f\u7528\u4e0e\u4ea4\u6d41\u89c4\u8303; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "课程资料使用与交流规范????"
+        "\u8bfe\u7a0b\u8d44\u6599\u4f7f\u7528\u4e0e\u4ea4\u6d41\u89c4\u8303",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/kecheng-ziliao-jiaoliu-checklist.svg",
           "kind": "svg",
-          "purpose": "??课程资料使用与交流规范???????????????checklist??",
+          "purpose": "\u8bfe\u7a0b\u8d44\u6599\u4f7f\u7528\u4e0e\u4ea4\u6d41\u89c4\u8303; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
@@ -2847,28 +2847,28 @@
       "module": "zoufang",
       "current_images": 0,
       "decision": "add",
-      "reason": "????????????????????????????????????????",
+      "reason": "\u573a\u6240\u6025\u6551\u8bbe\u65bd\u4e0eAED\u90e8\u7f72\u68c0\u67e5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
       "learning_targets": [
-        "??????",
-        "?????",
-        "场所急救设施与AED部署检查????"
+        "\u573a\u6240\u6025\u6551\u8bbe\u65bd\u4e0eAED\u90e8\u7f72\u68c0\u67e5",
+        "\u6838\u5fc3\u7ed3\u8bba",
+        "\u5148\u505a\u4ec0\u4e48"
       ],
       "visual_types": [
         "checklist"
       ],
       "insertion_points": [
-        "??????"
+        "\u6838\u5fc3\u7ed3\u8bba"
       ],
       "assets": [
         {
           "path": "img/learning/zoufang/changsuo-aed-jiancha-checklist.svg",
           "kind": "svg",
-          "purpose": "??场所急救设施与AED部署检查???????????????checklist??",
+          "purpose": "\u573a\u6240\u6025\u6551\u8bbe\u65bd\u4e0eAED\u90e8\u7f72\u68c0\u67e5; \u6838\u5fc3\u7ed3\u8bba; \u5148\u505a\u4ec0\u4e48",
           "source_status": "original",
           "source_url": "",
-          "publisher": "????",
+          "publisher": "\u6559\u80b2\u5b66\u4e60",
           "accessed_at": "2026-08-10",
-          "license": "????",
+          "license": "site-original",
           "status": "planned"
         }
       ],
