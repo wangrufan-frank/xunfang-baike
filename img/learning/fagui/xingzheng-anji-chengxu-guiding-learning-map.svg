@@ -1,6 +1,6 @@
 <svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
-  <title id="title">行政案件程序规定导读</title>
-  <desc id="desc">受案、调查、决定与监督的办理链条：受案管辖、调查证据、决定执行、监督救济。学习时应结合页面正文和所引条文核对具体条件。</desc>
+  <title id="title">行政案件程序规定节选</title>
+  <desc id="desc">本页第五十二至第五十五条的四项学习节点：传唤、个别询问、证据收集核实、全过程记录归档。</desc>
   <defs>
     <style>.dark{fill:#18354c}.light{fill:#fff}.title{font:700 27px "Microsoft YaHei","PingFang SC",sans-serif}.sub{font:16px "Microsoft YaHei","PingFang SC",sans-serif}.head{font:700 18px "Microsoft YaHei","PingFang SC",sans-serif}.body{font:15px "Microsoft YaHei","PingFang SC",sans-serif}.card{fill:#fff;stroke:#bdd0dc;stroke-width:1.5}.line{stroke:#2c6e9e;stroke-width:3;fill:none}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#2c6e9e"/></marker>
@@ -8,43 +8,43 @@
   <rect width="760" height="520" rx="24" fill="#f4f8fb"/>
   <g class="desktop">
     <rect x="24" y="22" width="712" height="72" rx="16" fill="#163f60"/>
-    <text x="48" y="63" class="title light">行政案件程序规定导读</text>
-    <text x="48" y="84" class="sub light">受案、调查、决定与监督的办理链条</text>
+    <text x="48" y="63" class="title light">行政案件程序规定节选</text>
+    <text x="48" y="84" class="sub light">本页第五十二至第五十五条学习节点</text>
     <path d="M186 244h36M366 244h36M546 244h36" class="line" marker-end="url(#arrow)"/>
     <g transform="translate(36 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#2c6e9e"/>
       <text x="65" y="55" class="light" font-size="26" font-weight="700">1</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">受案管辖</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">传唤</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">确认案件入口</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">阅读第五十二条</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <g transform="translate(216 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#2f7d73"/>
       <text x="65" y="55" class="light" font-size="26" font-weight="700">2</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">调查证据</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">个别询问</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">围绕事实核实</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">阅读第五十三条</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <g transform="translate(396 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#d98b2b"/>
       <text x="65" y="55" class="dark" font-size="26" font-weight="700">3</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">决定执行</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">证据收集核实</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">依程序作出衔接</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">阅读第五十四条</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <g transform="translate(576 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#6a5b8c"/>
       <text x="65" y="55" class="light" font-size="26" font-weight="700">4</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">监督救济</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">全过程记录归档</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">保留复核路径</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">阅读第五十五条</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <rect x="36" y="382" width="688" height="74" rx="16" fill="#e8f1f6" stroke="#bdd0dc"/>
@@ -56,37 +56,37 @@
   <g class="mobile">
     <rect width="760" height="520" rx="24" fill="#f4f8fb"/>
     <rect x="24" y="22" width="712" height="68" rx="16" fill="#163f60"/>
-    <text x="48" y="65" class="light" font-size="30" font-weight="700">行政案件程序规定导读</text>
+    <text x="48" y="65" class="light" font-size="30" font-weight="700">行政案件程序规定节选</text>
     <g transform="translate(28 112)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#2c6e9e"/>
       <text x="38" y="54" class="light" font-size="27" font-weight="700">1</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">受案管辖</text>
-      <text x="24" y="104" class="dark" font-size="25">确认案件入口</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">传唤</text>
+      <text x="24" y="104" class="dark" font-size="25">阅读第五十二条</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <g transform="translate(390 112)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#2f7d73"/>
       <text x="38" y="54" class="light" font-size="27" font-weight="700">2</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">调查证据</text>
-      <text x="24" y="104" class="dark" font-size="25">围绕事实核实</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">个别询问</text>
+      <text x="24" y="104" class="dark" font-size="25">阅读第五十三条</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <g transform="translate(28 276)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#d98b2b"/>
       <text x="38" y="54" class="dark" font-size="27" font-weight="700">3</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">决定执行</text>
-      <text x="24" y="104" class="dark" font-size="25">依程序作出衔接</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">证据收集核实</text>
+      <text x="24" y="104" class="dark" font-size="25">阅读第五十四条</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <g transform="translate(390 276)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#6a5b8c"/>
       <text x="38" y="54" class="light" font-size="27" font-weight="700">4</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">监督救济</text>
-      <text x="24" y="104" class="dark" font-size="25">保留复核路径</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">全过程记录归档</text>
+      <text x="24" y="104" class="dark" font-size="25">阅读第五十五条</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <rect x="28" y="440" width="704" height="52" rx="14" fill="#e8f1f6"/>

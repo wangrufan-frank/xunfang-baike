@@ -1,6 +1,6 @@
 <svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
   <title id="title">警械和武器条例导读</title>
-  <desc id="desc">配备管理、使用条件与监督责任：配备保管、使用条件、使用程序、监督责任。学习时应结合页面正文和所引条文核对具体条件。</desc>
+  <desc id="desc">条例结构导读：总则原则、警械使用、武器使用、法律责任。学习时应分别回到对应章节和条文核对具体条件。</desc>
   <defs>
     <style>.dark{fill:#18354c}.light{fill:#fff}.title{font:700 27px "Microsoft YaHei","PingFang SC",sans-serif}.sub{font:16px "Microsoft YaHei","PingFang SC",sans-serif}.head{font:700 18px "Microsoft YaHei","PingFang SC",sans-serif}.body{font:15px "Microsoft YaHei","PingFang SC",sans-serif}.card{fill:#fff;stroke:#bdd0dc;stroke-width:1.5}.line{stroke:#2c6e9e;stroke-width:3;fill:none}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#2c6e9e"/></marker>
@@ -9,42 +9,42 @@
   <g class="desktop">
     <rect x="24" y="22" width="712" height="72" rx="16" fill="#163f60"/>
     <text x="48" y="63" class="title light">警械和武器条例导读</text>
-    <text x="48" y="84" class="sub light">配备管理、使用条件与监督责任</text>
+    <text x="48" y="84" class="sub light">按条例结构理解四类规范</text>
     <path d="M186 244h36M366 244h36M546 244h36" class="line" marker-end="url(#arrow)"/>
     <g transform="translate(36 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#2c6e9e"/>
       <text x="65" y="55" class="light" font-size="26" font-weight="700">1</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">配备保管</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">总则原则</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">明确管理责任</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">明确适用框架</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <g transform="translate(216 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#2f7d73"/>
       <text x="65" y="55" class="light" font-size="26" font-weight="700">2</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">使用条件</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">警械使用</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">区分措施边界</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">核对条件程序</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <g transform="translate(396 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#d98b2b"/>
       <text x="65" y="55" class="dark" font-size="26" font-weight="700">3</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">使用程序</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">武器使用</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">联系警告停止</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">核对条件程序</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <g transform="translate(576 142)">
       <rect width="146" height="204" rx="18" class="card"/>
       <circle cx="73" cy="46" r="28" fill="#6a5b8c"/>
       <text x="65" y="55" class="light" font-size="26" font-weight="700">4</text>
-      <text x="73" y="104" class="head dark" text-anchor="middle">监督责任</text>
+      <text x="73" y="104" class="head dark" text-anchor="middle">法律责任</text>
       <path d="M28 124h90" stroke="#d8e4eb" stroke-width="2"/>
-      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">复盘记录经过</text>
+      <text x="73" y="157" class="body dark" text-anchor="middle" data-role="body">关注责任条款</text>
       <text x="73" y="183" class="body dark" text-anchor="middle" data-role="body">依正文核对</text>
     </g>
     <rect x="36" y="382" width="688" height="74" rx="16" fill="#e8f1f6" stroke="#bdd0dc"/>
@@ -61,32 +61,32 @@
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#2c6e9e"/>
       <text x="38" y="54" class="light" font-size="27" font-weight="700">1</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">配备保管</text>
-      <text x="24" y="104" class="dark" font-size="25">明确管理责任</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">总则原则</text>
+      <text x="24" y="104" class="dark" font-size="25">明确适用框架</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <g transform="translate(390 112)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#2f7d73"/>
       <text x="38" y="54" class="light" font-size="27" font-weight="700">2</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">使用条件</text>
-      <text x="24" y="104" class="dark" font-size="25">区分措施边界</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">警械使用</text>
+      <text x="24" y="104" class="dark" font-size="25">核对条件程序</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <g transform="translate(28 276)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#d98b2b"/>
       <text x="38" y="54" class="dark" font-size="27" font-weight="700">3</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">使用程序</text>
-      <text x="24" y="104" class="dark" font-size="25">联系警告停止</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">武器使用</text>
+      <text x="24" y="104" class="dark" font-size="25">核对条件程序</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <g transform="translate(390 276)">
       <rect width="342" height="142" rx="18" class="card"/>
       <circle cx="46" cy="45" r="27" fill="#6a5b8c"/>
       <text x="38" y="54" class="light" font-size="27" font-weight="700">4</text>
-      <text x="88" y="52" class="dark" font-size="28" font-weight="700">监督责任</text>
-      <text x="24" y="104" class="dark" font-size="25">复盘记录经过</text>
+      <text x="88" y="52" class="dark" font-size="28" font-weight="700">法律责任</text>
+      <text x="24" y="104" class="dark" font-size="25">关注责任条款</text>
       <text x="24" y="133" class="dark" font-size="25">依正文核对</text>
     </g>
     <rect x="28" y="440" width="704" height="52" rx="14" fill="#e8f1f6"/>

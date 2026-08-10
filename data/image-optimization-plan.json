@@ -2249,24 +2249,24 @@
       "module": "fagui",
       "current_images": 1,
       "decision": "add",
-      "reason": "程序规定涉及连续办理环节，图解提供从受案到监督救济的阅读路径",
+      "reason": "本页正文仅节选第五十二至第五十五条，图解严格对应传唤、个别询问、证据收集核实和全过程记录归档",
       "learning_targets": [
-        "受案管辖",
-        "调查证据",
-        "决定执行",
-        "监督救济"
+        "传唤",
+        "个别询问",
+        "证据收集核实",
+        "全过程记录归档"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "学习图解：行政案件程序规定导读"
+        "学习图解：行政案件程序规定节选"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/xingzheng-anji-chengxu-guiding-learning-map.svg",
           "kind": "svg",
-          "purpose": "行政案件程序规定导读中受案管辖、调查证据、决定执行、监督救济的中性学习关系图",
+          "purpose": "行政案件程序规定第五十二至第五十五条中传唤、个别询问、证据收集核实与全过程记录归档学习图",
           "source_status": "original",
           "source_url": "",
           "publisher": "巡防百科",
@@ -2284,12 +2284,12 @@
       "module": "fagui",
       "current_images": 1,
       "decision": "add",
-      "reason": "条例需分别核对警械和武器的条件程序，结构图提示同步关注责任监督",
+      "reason": "页面按条例总则、警械使用、武器使用和法律责任展开，结构图提供与正文一致的四类阅读入口",
       "learning_targets": [
-        "配备保管",
-        "使用条件",
-        "使用程序",
-        "监督责任"
+        "总则原则",
+        "警械使用",
+        "武器使用",
+        "法律责任"
       ],
       "visual_types": [
         "legal-relationship"
@@ -2301,7 +2301,7 @@
         {
           "path": "img/learning/fagui/jingxie-wuqi-tiaoli-learning-map.svg",
           "kind": "svg",
-          "purpose": "警械和武器条例导读中配备保管、使用条件、使用程序、监督责任的中性学习关系图",
+          "purpose": "警械和武器条例总则原则、警械使用、武器使用与法律责任的中性学习结构图",
           "source_status": "original",
           "source_url": "",
           "publisher": "巡防百科",
@@ -2319,15 +2319,15 @@
       "module": "fagui",
       "current_images": 1,
       "decision": "add",
-      "reason": "现场措施随风险变化而调整，图解强调评估、升级、停止与救助衔接",
+      "reason": "页面正文以持续风险评估决定措施选择，并明确紧急例外、停止使用和及时救助，图解呈现条件分支而非固定线性流程",
       "learning_targets": [
-        "现场评估",
+        "持续风险评估",
         "口头制止",
-        "警告升级",
-        "停止救助"
+        "警告或紧急例外",
+        "停止使用并及时救助"
       ],
       "visual_types": [
-        "step-flow"
+        "legal-relationship"
       ],
       "insertion_points": [
         "学习图解：现场制止违法行为"
@@ -2336,7 +2336,7 @@
         {
           "path": "img/learning/fagui/xianchang-zhizhi-guicheng-learning-map.svg",
           "kind": "svg",
-          "purpose": "现场制止违法行为中现场评估、口头制止、警告升级、停止救助的中性学习关系图",
+          "purpose": "现场制止违法行为中持续风险评估、措施选择、紧急例外与停止使用并及时救助的中性关系图",
           "source_status": "original",
           "source_url": "",
           "publisher": "巡防百科",
@@ -2354,24 +2354,24 @@
       "module": "fagui",
       "current_images": 1,
       "decision": "add",
-      "reason": "页面汇集巡逻盘查与安保规范，图解建立任务前中后的学习框架",
+      "reason": "页面正文标明法规正文待补充，当前图解只导航页面状态、主题范围和来源核验，不推断具体执法程序",
       "learning_targets": [
-        "任务准备",
-        "巡逻防控",
-        "安保处置",
-        "复盘归档"
+        "法规正文待补充",
+        "页面主题范围",
+        "所列来源核验",
+        "不作程序推断"
       ],
       "visual_types": [
         "legal-relationship"
       ],
       "insertion_points": [
-        "学习图解：巡逻盘查与安保规范"
+        "学习图解：相关规范页面学习导航"
       ],
       "assets": [
         {
           "path": "img/learning/fagui/qita-xiangguan-guifan-learning-map.svg",
           "kind": "svg",
-          "purpose": "巡逻盘查与安保规范中任务准备、巡逻防控、安保处置、复盘归档的中性学习关系图",
+          "purpose": "法规正文待补充页面的状态、主题范围、来源核验和不作程序推断学习导航图",
           "source_status": "original",
           "source_url": "",
           "publisher": "巡防百科",

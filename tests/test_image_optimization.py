@@ -391,6 +391,47 @@ class ImageOptimizationPlanTests(unittest.TestCase):
             for node in body_lines:
                 self.assertLessEqual(len((node.text or "").strip()), 8, relative_path)
 
+    def test_fagui_reviewed_semantics_match_the_page_scope(self):
+        inventory = json.loads((ROOT / "data/content-inventory.json").read_text(encoding="utf-8"))
+        plan = json.loads((ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8"))
+        articles = {
+            article["path"]: article
+            for module in inventory["modules"]
+            for article in module["articles"]
+        }
+        planned = {page["path"]: page for page in plan["pages"]}
+        cases = {
+            "fagui/xianchang-zhizhi-guicheng.html": {
+                "required": ("持续风险评估", "紧急例外", "停止使用并及时救助"),
+                "forbidden": ("停止救助", "措施逐级衔接"),
+            },
+            "fagui/jingxie-wuqi-tiaoli.html": {
+                "required": ("总则原则", "警械使用", "武器使用", "法律责任"),
+                "forbidden": ("配备保管",),
+            },
+            "fagui/xingzheng-anji-chengxu-guiding.html": {
+                "required": ("传唤", "个别询问", "证据收集核实", "全过程记录归档"),
+                "forbidden": ("受案管辖", "决定执行", "监督救济"),
+            },
+            "fagui/qita-xiangguan-guifan.html": {
+                "required": ("法规正文待补充", "主题范围", "来源核验", "不作程序推断"),
+                "forbidden": ("任务准备", "巡逻防控", "安保处置", "复盘归档"),
+            },
+        }
+        for page_path, terms in cases.items():
+            page = planned[page_path]
+            asset_text = (ROOT / page["assets"][0]["path"]).read_text(encoding="utf-8")
+            html = (ROOT / page_path).read_text(encoding="utf-8")
+            metadata = json.dumps(
+                {"article": articles[page_path]["images"], "plan": page},
+                ensure_ascii=False,
+            )
+            combined = "\n".join((asset_text, html, metadata))
+            for term in terms["required"]:
+                self.assertIn(term, combined, f"{page_path}: missing reviewed term {term}")
+            for term in terms["forbidden"]:
+                self.assertNotIn(term, combined, f"{page_path}: stale unsupported term {term}")
+
     def test_special_event_order_figure_consistently_describes_four_zones(self):
         page_path = "qinwu/zhuanxiang-xianchang-zhixu.html"
         asset_path = "img/learning/qinwu/zhuanxiang-xianchang-zhixu-scene-zone.svg"
