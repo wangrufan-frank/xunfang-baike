@@ -1,0 +1,29 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="title desc">
+  <title id="title">涉爆类警情远距观察、警戒疏散与专业移交图</title>
+  <desc id="desc">图中以可疑包裹、警戒区、掩体和疏散通道呈现一线警力的先期职责；未爆可疑物坚持不接近不触碰并等待排爆力量，已发生爆炸时先防范二次风险并按指挥协同救助。</desc>
+  <defs><style>.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b8cedd;stroke-width:2}.line{fill:none;stroke:#bf4a45;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
+  <rect width="760" height="600" rx="24" fill="#f4f8fb"/>
+  <g class="desktop">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#613c46"/><text x="48" y="64" class="light" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">涉爆警情｜不接近、不触碰、不自行处置</text>
+    <g transform="translate(34 112)"><rect width="692" height="244" rx="18" class="card"/>
+      <rect x="40" y="58" width="110" height="84" rx="10" fill="#d99b62" stroke="#18354c" stroke-width="3"/><path d="M65 58v-18h60v18M95 58v84" fill="none" stroke="#18354c" stroke-width="3"/><path d="M150 82q36-22 56 7" class="line"/><circle cx="210" cy="92" r="5" fill="#bf4a45"/>
+      <circle cx="96" cy="100" r="92" fill="none" stroke="#bf4a45" stroke-width="5" stroke-dasharray="14 10"/>
+      <text x="34" y="190" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700">疑似物品与警戒区</text><text x="34" y="218" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="16">任何不确定性按疑似物处置</text>
+      <path d="M280 30v184" stroke="#b8cedd" stroke-width="2"/>
+      <path d="M324 54h118v104H324z" fill="#8498a6" stroke="#18354c" stroke-width="3"/><path d="M324 54l59-38 59 38" fill="#aeb9c1" stroke="#18354c" stroke-width="3"/><circle cx="500" cy="82" r="20" fill="#efc5a4" stroke="#18354c" stroke-width="3"/><path d="M474 110q26-20 52 0v72h-52z" fill="#315d79" stroke="#18354c" stroke-width="3"/><path d="M538 125h106" stroke="#2f7d73" stroke-width="5"/><path d="M642 125l-20-13v26z" fill="#2f7d73"/>
+      <text x="316" y="206" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700">掩体后报告 · 路口警戒 · 有序疏散</text><text x="316" y="232" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="16">为排爆与应急车辆预留通道</text>
+    </g>
+    <rect x="34" y="380" width="214" height="124" rx="14" fill="#e8f1f6"/><text x="54" y="417" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700">远距观察</text><text x="54" y="451" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">记录位置和外观</text><text x="54" y="479" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">不做近距检查</text>
+    <rect x="273" y="380" width="214" height="124" rx="14" fill="#fff0d9"/><text x="293" y="417" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700">未爆 / 仍不确定</text><text x="293" y="451" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">扩大警戒、持续疏散</text><text x="293" y="479" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">等待专业排爆力量</text>
+    <rect x="512" y="380" width="214" height="124" rx="14" fill="#f8e3df"/><text x="532" y="417" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700">已爆炸 / 有伤员</text><text x="532" y="451" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">警惕二次风险</text><text x="532" y="479" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">按指挥协同救助</text>
+    <rect x="34" y="528" width="692" height="46" rx="12" fill="#613c46"/><text x="58" y="558" class="light" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700">权限边界：排查、检测、拆除、转移和销毁由专业排爆部门负责</text>
+  </g>
+  <g class="mobile">
+    <rect width="760" height="600" rx="24" fill="#f4f8fb"/><rect x="24" y="20" width="712" height="64" rx="14" fill="#613c46"/><text x="48" y="62" class="light" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700">涉爆警情｜先期职责</text>
+    <rect x="30" y="106" width="700" height="92" rx="16" class="card"/><text x="54" y="145" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">1 安全距离外观察并报告</text><text x="54" y="179" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">记录位置外观，不近距检查，不使用刺激词疏散</text>
+    <rect x="30" y="214" width="700" height="92" rx="16" fill="#e8f1f6"/><text x="54" y="253" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">2 警戒、疏散、预留通道</text><text x="54" y="287" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">人员位于掩体后，阻止任何人进入警戒区</text>
+    <rect x="30" y="322" width="700" height="92" rx="16" fill="#fff0d9"/><text x="54" y="361" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">3 未爆或不确定 → 等待排爆</text><text x="54" y="395" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">不接近、不触碰、不移动、不自行检查</text>
+    <rect x="30" y="430" width="700" height="92" rx="16" fill="#f8e3df"/><text x="54" y="469" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">4 已爆炸 → 防二次风险</text><text x="54" y="503" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">按指挥协同救助，保护现场并等待专业力量</text>
+    <text x="54" y="560" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700">一线警力任何情况下都不自行排爆</text>
+  </g>
+</svg>

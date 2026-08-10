@@ -1779,8 +1779,8 @@
           "images": [
             {
               "path": "img/learning/jingqing/zuijiu-lei-chuzhi-flow.svg",
-              "alt": "醉酒类警情从风险识别、沟通控制、协同处置到记录交接的四步流程信息图",
-              "caption": "醉酒类警情处置流程：风险识别、沟通控制、协同处置与记录交接，医疗风险优先处置（本站绘制）",
+              "alt": "醉酒类警情先稳定现场，再按医疗异常、攻击持械和可以沟通三种状态分流，最后持续观察并记录交接的信息图",
+              "caption": "醉酒类警情风险分流：先稳定现场，再按医疗异常、攻击持械和可以沟通三种状态分别衔接急救、增援防护或稳定处置，最后持续观察并记录交接（本站绘制）",
               "source": "巡防百科本站原创绘制",
               "license": "site-original"
             }
@@ -1807,7 +1807,15 @@
             "https://www.dxalth.gov.cn/dxalth/c100885/202507/c13_316265.shtml",
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/jingqing/chidao-lei-step-flow.svg",
+              "alt": "持刀警情中群众疏散区、盾牌防护线和危险区域的空间关系，以及放下刀具、持续对峙和即时攻击三种分支处置",
+              "caption": "持刀类警情隔离防护与分支处置：先疏散群众、建立防护线并统一沟通，再依据威胁变化转入控制救助、持续增援或依法必要处置（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/dunpai-zhuabucha-xietong.html",
             "zhuangbei/zhuabu-cha.html"
@@ -1829,7 +1837,15 @@
             "https://gat.xinjiang.gov.cn/gat/flfg/201807/583825970b414b9b99dd9871ab79237d.shtml",
             "https://www.nhc.gov.cn/fzs/c100048/201808/5d03e37b37c944b08d701a0b5722160a.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/jingqing/zishang-lei-step-flow.svg",
+              "alt": "自伤类警情中外围组、主谈人员与当事人的安全空间关系，以及倾听理解引导、紧急救助和专业衔接流程",
+              "caption": "自伤类警情沟通保护图：外围疏散和急救联络先行，主谈人员以倾听、理解、引导稳定现场；即时生命危险转入团队救助（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "jingqing/jingshen-zhangai-lei.html",
             "zhuangbei/sanshi-weidang.html"
@@ -1850,7 +1866,15 @@
             "https://www.nhc.gov.cn/fzs/c100048/201808/5d03e37b37c944b08d701a0b5722160a.shtml",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/jingqing/jingshen-zhangai-lei-step-flow.svg",
+              "alt": "疑似精神障碍警情从观察行为、降低刺激到按即时危险分流保护性控制或医疗协同的流程",
+              "caption": "疑似精神障碍警情保护分流：只依据可观察行为和环境风险开展安全评估，不作医学诊断；即时危险与稳定状态分别衔接保护性控制或医疗协同（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "jingqing/zishang-lei.html",
             "fagui/jingxie-shiyong-chengxu.html"
@@ -1872,7 +1896,15 @@
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=165&Query=",
             "https://www.yantai.gov.cn/cms_files/jcms1/web1/site/attach/0/3463208b7d7846ffa1b293b3c6076239.pdf"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/jingqing/shebao-lei-step-flow.svg",
+              "alt": "涉爆警情中可疑包裹、警戒区、掩体和疏散通道的空间关系，以及未爆可疑物和已爆炸现场的分支处置",
+              "caption": "涉爆类警情先期职责：远距观察、警戒疏散、立即报告并等待专业排爆力量；已爆炸现场须先防范二次风险再按指挥协同救助（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "qinwu/zhuanxiang-xietong-baogao.html",
             "zhuangbei/jingjiedai-jinggaopai.html"
@@ -1897,7 +1929,15 @@
             "https://politics.people.com.cn/BIG5/n1/2016/0727/c1001-28587279.html",
             "https://gaj.wuhan.gov.cn/zwgk_12/zcfg/flfg/202001/t20200108_659553.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/jingqing/jiuzhu-lei-jingqing-chuzhi-step-flow.svg",
+              "alt": "救助类警情从现场评估、专业呼救、先期救助到现场保护和交接记录的流程，并区分现场仍危险和安全可进入两种分支",
+              "caption": "救助类警情先期处置：先评估二次风险并呼救；现场仍危险时建立防护，安全可进入且存在生命危险时立即救助，随后保护现场并交接记录（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "xunlian/xinfeifusu-cpr.html",
             "zhuangbei/aed-shiyong.html",

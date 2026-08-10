@@ -1,0 +1,26 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 600" role="img" aria-labelledby="title desc">
+  <title id="title">救助类警情现场评估、呼救、救助与交接流程图</title>
+  <desc id="desc">从现场评估开始，现场仍有危险时先建立防护并呼叫专业力量，安全可进入且存在生命危险时立即开展掌握的先期救助；随后同步保护现场、维护隐私并向专业力量交接记录。</desc>
+  <defs><style>.light{fill:#fff}.dark{fill:#18354c}.card{fill:#fff;stroke:#b8cedd;stroke-width:2}.line{fill:none;stroke:#2c6e9e;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.desktop{display:block}.mobile{display:none}@media (max-width:500px){.desktop{display:none}.mobile{display:block}}</style></defs>
+  <rect width="760" height="600" rx="24" fill="#f4f8fb"/>
+  <g class="desktop">
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#2f6f63"/><text x="48" y="64" class="light" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">救助警情｜救人为先，程序不丢</text>
+    <g transform="translate(34 112)"><rect width="692" height="222" rx="18" class="card"/>
+      <circle cx="106" cy="80" r="23" fill="#efc5a4" stroke="#18354c" stroke-width="3"/><path d="M74 112q32-24 64 0v62H74z" fill="#d99b62" stroke="#18354c" stroke-width="3"/><path d="M142 136h64" class="line"/><rect x="202" y="102" width="70" height="72" rx="10" fill="#fff" stroke="#18354c" stroke-width="3"/><path d="M237 115v46M214 138h46" stroke="#bf4a45" stroke-width="9"/>
+      <circle cx="398" cy="80" r="22" fill="#efc5a4" stroke="#18354c" stroke-width="3"/><path d="M368 110q30-22 60 0v66h-60z" fill="#315d79" stroke="#18354c" stroke-width="3"/><path d="M430 126h72" class="line"/><rect x="506" y="94" width="120" height="82" rx="12" fill="#e2f1ec" stroke="#18354c" stroke-width="3"/><path d="M526 116h80M526 140h60M526 164h72" stroke="#2f7d73" stroke-width="4"/>
+      <text x="58" y="208" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="700">伤病员 → 先期救助 → 专业力量 → 交接记录</text>
+    </g>
+    <rect x="34" y="358" width="214" height="124" rx="14" fill="#e8f1f6"/><text x="54" y="395" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700">① 现场评估</text><text x="54" y="429" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">人、车、水、火、电</text><text x="54" y="457" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">伤情与二次风险</text>
+    <rect x="273" y="358" width="214" height="124" rx="14" fill="#f8e3df"/><text x="293" y="395" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700">现场仍危险</text><text x="293" y="429" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">先防护、警戒、呼救</text><text x="293" y="457" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">不盲目进入危险区</text>
+    <rect x="512" y="358" width="214" height="124" rx="14" fill="#e2f1ec"/><text x="532" y="395" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="700">安全可进入</text><text x="532" y="429" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">生命危险立即救助</text><text x="532" y="457" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="17">同步通知 120 / 消防</text>
+    <rect x="34" y="506" width="692" height="68" rx="14" fill="#2f6f63"/><text x="58" y="536" class="light" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="700">收尾并行：保护现场与隐私｜不妨碍正常拍摄｜记录时间、措施和交接</text><text x="58" y="562" class="light" font-family="Microsoft YaHei, sans-serif" font-size="17">专业力量到场后准确说明评估结果和已实施救助，按职责移交</text>
+  </g>
+  <g class="mobile">
+    <rect width="760" height="600" rx="24" fill="#f4f8fb"/><rect x="24" y="20" width="712" height="64" rx="14" fill="#2f6f63"/><text x="48" y="62" class="light" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700">救助警情｜六环节</text>
+    <rect x="30" y="106" width="700" height="92" rx="16" class="card"/><text x="54" y="145" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">1 评估现场和伤情</text><text x="54" y="179" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">确认二次风险，立即通知 120 或专业力量</text>
+    <rect x="30" y="214" width="700" height="92" rx="16" fill="#f8e3df"/><text x="54" y="253" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">2 现场仍危险 → 先防护呼救</text><text x="54" y="287" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">建立警戒，不因盲目施救造成二次伤亡</text>
+    <rect x="30" y="322" width="700" height="92" rx="16" fill="#e2f1ec"/><text x="54" y="361" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">3 安全可进入 → 立即先期救助</text><text x="54" y="395" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">实施已掌握的止血、心肺复苏等基本救护</text>
+    <rect x="30" y="430" width="700" height="92" rx="16" fill="#e8f1f6"/><text x="54" y="469" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700">4 保护现场 → 交接记录</text><text x="54" y="503" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25">维护隐私，说明评估、措施、时间和伤情变化</text>
+    <text x="54" y="560" class="dark" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700">生命优先与现场保护、全程记录同步进行</text>
+  </g>
+</svg>
