@@ -1,0 +1,34 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-labelledby="title desc">
+  <title id="title">水上飞翼组成与抓扶位置</title>
+  <desc id="desc">水上飞翼浮体俯视结构，标出浮体、抓扶把手、电池舱、推进装置和岸上手持遥控器。</desc>
+  <defs>
+    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#17364d}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.line{stroke:#236b96;stroke-width:2.5;fill:none}.label{fill:#fff;stroke:#b8cedd;stroke-width:1.5}</style>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#236b96"/></marker>
+  </defs>
+  <rect width="760" height="460" rx="22" fill="#f3f9fc"/>
+  <rect x="24" y="22" width="712" height="58" rx="14" fill="#173f5f"/>
+  <text x="48" y="59" class="t h" fill="#fff">水上飞翼｜组成与抓扶位置</text>
+  <path d="M24 340Q110 315 196 340T368 340T540 340T736 340V438H24z" fill="#d8eef7"/>
+  <g aria-label="水上飞翼俯视结构">
+    <path d="M225 157Q285 112 380 112t155 45l37 126q-34 49-104 54l-32-84H324l-32 84q-70-5-104-54z" fill="#ef8d2f" stroke="#17364d" stroke-width="4"/>
+    <path d="M282 170q42-27 98-27t98 27l-25 58H307z" fill="#f5f9fc" stroke="#17364d" stroke-width="3"/>
+    <rect x="342" y="260" width="76" height="47" rx="9" fill="#435f72" stroke="#17364d" stroke-width="3"/>
+    <rect x="244" y="222" width="22" height="64" rx="11" fill="#17364d"/><rect x="494" y="222" width="22" height="64" rx="11" fill="#17364d"/>
+    <circle cx="280" cy="313" r="28" fill="#405d70" stroke="#17364d" stroke-width="3"/><path d="M264 313h32M280 297v32" stroke="#d9e7ee" stroke-width="5"/>
+    <circle cx="480" cy="313" r="28" fill="#405d70" stroke="#17364d" stroke-width="3"/><path d="M464 313h32M480 297v32" stroke="#d9e7ee" stroke-width="5"/>
+  </g>
+  <g aria-label="手持遥控器" transform="translate(608 221)">
+    <rect width="96" height="128" rx="16" fill="#425e71" stroke="#17364d" stroke-width="3"/>
+    <rect x="18" y="16" width="60" height="36" rx="5" fill="#b9e5ef"/>
+    <circle cx="28" cy="81" r="13" fill="#253b49"/><circle cx="68" cy="81" r="13" fill="#253b49"/>
+    <text x="12" y="116" class="t b" fill="#fff">前进·转向·停止</text>
+  </g>
+  <g aria-label="结构标注">
+    <rect x="40" y="110" width="136" height="42" rx="10" class="label"/><text x="58" y="137" class="t s">浮体</text><path d="M176 131h46l29 39" class="line" marker-end="url(#a)"/>
+    <rect x="40" y="202" width="136" height="42" rx="10" class="label"/><text x="58" y="229" class="t s">抓扶把手</text><path d="M176 223h68" class="line" marker-end="url(#a)"/>
+    <rect x="40" y="292" width="136" height="42" rx="10" class="label"/><text x="58" y="319" class="t s">推进装置</text><path d="M176 313h72" class="line" marker-end="url(#a)"/>
+    <rect x="321" y="374" width="138" height="42" rx="10" class="label"/><text x="339" y="401" class="t s">电池舱</text><path d="M390 374v-62" class="line" marker-end="url(#a)"/>
+    <rect x="594" y="110" width="128" height="42" rx="10" class="label"/><text x="612" y="137" class="t s">手持遥控器</text><path d="M658 152v65" class="line" marker-end="url(#a)"/>
+  </g>
+  <text x="40" y="438" class="t b">抵近时提前减速；确认抓稳后低速、匀速拖带回岸</text>
+</svg>

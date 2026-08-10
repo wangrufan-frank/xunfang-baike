@@ -77,6 +77,12 @@ class ImageOptimizationPlanTests(unittest.TestCase):
     def test_completed_assets_match_runtime(self):
         self.assertEqual([], validate_runtime(ROOT))
 
+    def test_equipment_image_optimization_is_complete(self):
+        self.assertEqual(
+            [],
+            validate_runtime(ROOT, module="zhuangbei", require_complete=True),
+        )
+
     def test_plan_rejects_wrong_current_image_count(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

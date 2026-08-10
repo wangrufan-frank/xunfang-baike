@@ -1,5 +1,6 @@
 """Validate the image-optimization ledger without changing site files."""
 
+import argparse
 import json
 import sys
 import xml.etree.ElementTree as ET
@@ -23,7 +24,7 @@ def _expected(inventory):
     return {article["path"]: article["module"] for module in inventory["modules"] for article in module["articles"]}
 
 
-def validate_plan(root, require_complete=False):
+def validate_plan(root, module=None, require_complete=False):
     """Return ledger contract violations; an empty list is valid."""
     root = Path(root)
     errors = []
@@ -48,6 +49,8 @@ def validate_plan(root, require_complete=False):
         path = page.get("path")
         if not isinstance(path, str) or not path.strip():
             errors.append(f"{label}: path must be a non-empty string")
+            continue
+        if module is not None and page.get("module") != module:
             continue
         if page.get("module") != expected.get(page.get("path")):
             errors.append(f"{label}: module does not match inventory")
@@ -115,7 +118,7 @@ def validate_plan(root, require_complete=False):
     return errors
 
 
-def validate_runtime(root):
+def validate_runtime(root, module=None, require_complete=False):
     """Check assets only for pages whose implementation is complete."""
     root = Path(root)
     try:
@@ -127,6 +130,19 @@ def validate_runtime(root):
         if not isinstance(page, dict):
             errors.append("runtime page must be an object")
             continue
+        if module is not None and page.get("module") != module:
+            continue
+        if require_complete:
+            terminal = (
+                page.get("implementation_status") == "complete"
+                and page.get("acceptance_status") == "accepted"
+            ) or (
+                page.get("implementation_status") == "blocked"
+                and page.get("acceptance_status") == "blocked"
+                and bool(page.get("blocked_reason", "").strip())
+            )
+            if not terminal:
+                errors.append(f"{page.get('path', 'runtime page')}: page is not in a terminal state")
         if page.get("implementation_status") != "complete":
             continue
         path = page.get("path")
@@ -157,10 +173,19 @@ def validate_runtime(root):
     return errors
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--module", choices=("zhuangbei", "qinwu", "xunlian", "jingqing", "fagui", "zoufang"))
+    parser.add_argument("--require-complete", action="store_true")
+    args = parser.parse_args(argv)
     root = Path(__file__).resolve().parents[1]
-    errors = validate_plan(root) + validate_runtime(root)
-    pages = len(_load(root, "data/image-optimization-plan.json").get("pages", []))
+    errors = validate_plan(root, module=args.module) + validate_runtime(
+        root,
+        module=args.module,
+        require_complete=args.require_complete,
+    )
+    all_pages = _load(root, "data/image-optimization-plan.json").get("pages", [])
+    pages = sum(1 for page in all_pages if args.module is None or page.get("module") == args.module)
     print(f"{pages} pages checked")
     print(f"{len(errors)} validation errors")
     for error in errors:

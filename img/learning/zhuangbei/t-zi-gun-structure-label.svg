@@ -1,0 +1,11 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 440" role="img" aria-labelledby="title desc">
+  <title id="title">T字棍结构与握持部位</title><desc id="desc">横向展示T字棍棍身、T型握柄、护手和棍端，并与长棍轮廓对比长度和双手握持位置。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18374e}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.line{stroke:#28739e;stroke-width:2.5;fill:none}.label{fill:#fff;stroke:#bad0de;stroke-width:1.5}</style><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#28739e"/></marker></defs>
+  <rect width="760" height="440" rx="22" fill="#f5f9fc"/><rect x="24" y="22" width="712" height="58" rx="14" fill="#173f5f"/><text x="48" y="59" class="t h" fill="#fff">T字棍｜棍身与横向握柄</text>
+  <g aria-label="T字棍结构"><rect x="128" y="189" width="480" height="34" rx="17" fill="#344d5c" stroke="#18374e" stroke-width="4"/><rect x="266" y="201" width="34" height="142" rx="17" fill="#344d5c" stroke="#18374e" stroke-width="4"/><ellipse cx="283" cy="205" rx="34" ry="18" fill="#e68d32" stroke="#18374e" stroke-width="3"/><path d="M326 192v28M354 192v28M382 192v28" stroke="#8097a4" stroke-width="5"/></g>
+  <g><rect x="42" y="108" width="130" height="42" rx="10" class="label"/><text x="60" y="135" class="t s">棍端</text><path d="M172 129l-38 59" class="line" marker-end="url(#a)"/>
+    <rect x="232" y="108" width="130" height="42" rx="10" class="label"/><text x="250" y="135" class="t s">护手</text><path d="M297 150l-12 34" class="line" marker-end="url(#a)"/>
+    <rect x="406" y="108" width="130" height="42" rx="10" class="label"/><text x="424" y="135" class="t s">防滑棍身</text><path d="M471 150l-53 38" class="line" marker-end="url(#a)"/>
+    <rect x="232" y="367" width="150" height="42" rx="10" class="label"/><text x="250" y="394" class="t s">T型握柄</text><path d="M307 367l-21-19" class="line" marker-end="url(#a)"/></g>
+  <rect x="430" y="284" width="278" height="74" rx="12" fill="#e7f2f7"/><text x="450" y="312" class="t s">结构特点</text><text x="450" y="338" class="t b">长度适中，可单手或双手操作；</text><text x="450" y="356" class="t b">横向握柄便于稳定持棍和格挡。</text>
+</svg>

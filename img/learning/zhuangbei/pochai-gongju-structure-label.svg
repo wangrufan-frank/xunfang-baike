@@ -1,0 +1,30 @@
+<svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 460" role="img" aria-labelledby="title desc">
+  <title id="title">车载简易破拆工具结构与用途</title>
+  <desc id="desc">并列绘制破窗器、破拆斧、撬棍和断线钳，标注尖锥头、割刀、斧刃、撬头和剪切钳口。</desc>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#17364d}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.tool{stroke:#17364d;stroke-width:4;stroke-linejoin:round;stroke-linecap:round}.card{fill:#fff;stroke:#bfd2df;stroke-width:1.5}</style></defs>
+  <rect width="760" height="460" rx="22" fill="#f5f9fc"/>
+  <rect x="24" y="22" width="712" height="58" rx="14" fill="#173f5f"/><text x="48" y="59" class="t h" fill="#fff">车载简易破拆工具｜认清工作端</text>
+  <g transform="translate(34 108)" aria-label="破窗器">
+    <rect width="160" height="276" rx="16" class="card"/><text x="18" y="34" class="t s">破窗器</text>
+    <path d="M53 68h54l-12 76H65z" fill="#e8a13d" class="tool"/><path d="M69 144h22v82H69z" fill="#425e71" class="tool"/><path d="M80 226l-12 28h24z" fill="#dbe5ea" class="tool"/>
+    <path d="M67 167l26 24M93 167l-26 24" stroke="#f5f9fc" stroke-width="5"/>
+    <text x="18" y="246" class="t b">尖锥头：集中冲击</text><text x="18" y="268" class="t b">割刀：切割安全带</text>
+  </g>
+  <g transform="translate(208 108)" aria-label="破拆斧">
+    <rect width="160" height="276" rx="16" class="card"/><text x="18" y="34" class="t s">破拆斧</text>
+    <path d="M72 75h22v158H72z" fill="#9a673c" class="tool"/><path d="M38 69h92l-18 57H54z" fill="#dbe5ea" class="tool"/><path d="M38 69l-14 28 30 29" fill="#879ba7" class="tool"/>
+    <text x="18" y="246" class="t b">斧刃：劈砍</text><text x="18" y="268" class="t b">斧背／端部：撬动</text>
+  </g>
+  <g transform="translate(382 108)" aria-label="撬棍">
+    <rect width="160" height="276" rx="16" class="card"/><text x="18" y="34" class="t s">撬棍</text>
+    <path d="M52 226L98 78q8-22 29-16l-10 28q-8-2-11 7L66 234z" fill="#567588" class="tool"/><path d="M44 225l30 9-24 24-25-8z" fill="#dbe5ea" class="tool"/>
+    <text x="18" y="246" class="t b">弯头进入缝隙</text><text x="18" y="268" class="t b">用于撬动障碍物</text>
+  </g>
+  <g transform="translate(556 108)" aria-label="断线钳">
+    <rect width="170" height="276" rx="16" class="card"/><text x="18" y="34" class="t s">断线钳</text>
+    <path d="M83 157L44 239M88 157l39 82" stroke="#d17136" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="86" cy="145" r="14" fill="#425e71" class="tool"/><path d="M86 139L55 70M87 139l31-69" stroke="#667f8f" stroke-width="16" stroke-linecap="round"/><path d="M49 63l20-10 16 54M123 63l-20-10-16 54" fill="#dbe5ea" class="tool"/>
+    <text x="18" y="246" class="t b">剪切钳口</text><text x="18" y="268" class="t b">手柄连接牢固</text>
+  </g>
+  <rect x="34" y="401" width="692" height="38" rx="10" fill="#e7f1f6"/><text x="54" y="426" class="t s">检查重点：锥头、刃口、连接部位、弯曲变形与定位收纳</text>
+</svg>

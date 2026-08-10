@@ -20,7 +20,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -41,7 +41,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -64,7 +64,7 @@
         {
           "path": "img/learning/zhuangbei/zhifa-jiuyi-structure.svg",
           "kind": "svg",
-          "purpose": "执法记录仪结构部件与胸前规范佩戴位置标注",
+          "purpose": "\u6267\u6cd5\u8bb0\u5f55\u4eea\u7ed3\u6784\u90e8\u4ef6\u4e0e\u80f8\u524d\u89c4\u8303\u4f69\u6234\u4f4d\u7f6e\u6807\u6ce8",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
@@ -74,7 +74,7 @@
         }
       ],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -95,73 +95,73 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/zuche-ding.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u963b\u8f66\u9489 - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u5e03\u8bbe\u65b9\u5f0f\u5206\u4e3a\u9884\u5148\u5e03\u8bbe\u548c\u4e34\u673a\u629b\u653e\u4e24\u79cd\uff1a\u9884\u5148\u5e03\u8bbe\u9002\u7528\u4e8e\u5361\u53e3\u5835\u63a7\uff0c\u9489\u6392\u5c55\u5f00\u540e\u5e03\u8bbe\u4eba\u5458\u64a4\u81f3\u8def\u4fa7\u5b89\u5168\u4f4d\u7f6e\uff0c\u901a\u8fc7\u62d6\u62fd\u7ef3\u63a7\u5236\u6536\u653e\uff0c\u653e\u884c\u6b63\u5e38\u8f66\u8f86\u3001\u62e6\u622a\u76ee\u6807\u8f66\u8f86\uff1b",
+      "reason": "\u5c55\u5f00\u9489\u6392\u7684\u90e8\u4ef6\u4e0e\u4eba\u5458\u5b89\u5168\u63a7\u5236\u4f4d\u7f6e\u4ec5\u9760\u6587\u5b57\u4e0d\u6613\u5efa\u7acb\u5668\u6750\u8ba4\u77e5\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u963b\u8f66\u9489\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u5e03\u8bbe\u65b9\u5f0f\u5206\u4e3a\u9884\u5148\u5e03\u8bbe\u548c\u4e34\u673a\u629b\u653e\u4e24\u79cd\uff1a\u9884\u5148\u5e03\u8bbe\u9002\u7528\u4e8e\u5361\u53e3\u5835\u63a7\uff0c\u9489\u6392\u5c55\u5f00\u540e\u5e03\u8bbe\u4eba\u5458\u64a4\u81f3\u8def\u4fa7\u5b89\u5168\u4f4d\u7f6e\uff0c\u901a\u8fc7\u62d6\u62fd\u7ef3\u63a7\u5236\u6536\u653e\uff0c\u653e\u884c\u6b63\u5e38\u8f66\u8f86\u3001\u62e6\u622a\u76ee\u6807\u8f66\u8f86\uff1b"
+        "\u8bc6\u522b\u9489\u523a\u3001\u8fde\u63a5\u8282\u3001\u62d6\u62fd\u7ef3\u548c\u6536\u7eb3\u62a4\u5957",
+        "\u7406\u89e3\u5e03\u8bbe\u540e\u64a4\u81f3\u8def\u4fa7\u5b89\u5168\u4f4d\u7f6e"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/zuche-ding-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u963b\u8f66\u9489\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u963b\u8f66\u9489\u5c55\u5f00\u7ed3\u6784\u4e0e\u5b89\u5168\u63a7\u5236\u4f4d\u7f6e",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/shuishang-feiyi.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u6c34\u4e0a\u98de\u7ffc - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u53d1\u73b0\u843d\u6c34\u8b66\u60c5\u540e\uff0c\u7b2c\u4e00\u65f6\u95f4\u62a5\u544a\u6307\u6325\u4e2d\u5fc3\u5e76\u8bf7\u6c42\u6d88\u9632\u6551\u63f4\u7b49\u4e13\u4e1a\u529b\u91cf\u652f\u63f4\uff0c\u540c\u65f6\u5c55\u5f00\u5148\u671f\u6551\u52a9\u3002\u64cd\u4f5c\u8981\u9886\uff1a\u5f00\u673a\u786e\u8ba4\u7535\u91cf\u548c\u9065\u63a7\u4fe1\u53f7\u6b63\u5e38\u540e\u5c06\u88c5\u5907\u653e\u5165\u6c34\u9762\uff1b\u64cd\u63a7\u88c5",
+      "reason": "\u6d6e\u4f53\u3001\u6293\u6276\u4f4d\u7f6e\u3001\u63a8\u8fdb\u88c5\u7f6e\u4e0e\u9065\u63a7\u5668\u5b58\u5728\u660e\u786e\u7a7a\u95f4\u5173\u7cfb\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u5e2e\u52a9\u8bc6\u522b\u3002",
       "learning_targets": [
-        "\u6c34\u4e0a\u98de\u7ffc\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u53d1\u73b0\u843d\u6c34\u8b66\u60c5\u540e\uff0c\u7b2c\u4e00\u65f6\u95f4\u62a5\u544a\u6307\u6325\u4e2d\u5fc3\u5e76\u8bf7\u6c42\u6d88\u9632\u6551\u63f4\u7b49\u4e13\u4e1a\u529b\u91cf\u652f\u63f4\uff0c\u540c\u65f6\u5c55\u5f00\u5148\u671f\u6551\u52a9\u3002\u64cd\u4f5c\u8981\u9886\uff1a\u5f00\u673a\u786e\u8ba4\u7535\u91cf\u548c\u9065\u63a7\u4fe1\u53f7\u6b63\u5e38\u540e\u5c06\u88c5\u5907\u653e\u5165\u6c34\u9762\uff1b\u64cd\u63a7\u88c5"
+        "\u8bc6\u522b\u6d6e\u4f53\u3001\u6293\u6276\u628a\u624b\u3001\u7535\u6c60\u8231\u3001\u63a8\u8fdb\u88c5\u7f6e\u548c\u624b\u6301\u9065\u63a7\u5668",
+        "\u7406\u89e3\u786e\u8ba4\u6293\u7a33\u540e\u4f4e\u901f\u5300\u901f\u62d6\u5e26"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/shuishang-feiyi-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u6c34\u4e0a\u98de\u7ffc\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u6c34\u4e0a\u98de\u7ffc\u7ec4\u6210\u4e0e\u6293\u6276\u4f4d\u7f6e",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -182,7 +182,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -203,7 +203,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -224,7 +224,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -245,7 +245,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -266,7 +266,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -287,73 +287,73 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/pochai-gongju.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u7834\u62c6\u5de5\u5177 - \u4f7f\u7528\u7834\u62c6\u5de5\u5177\u7684\u5173\u952e\u5b89\u5168\u63d0\u9192\u300a\u4ea4\u901a\u8b66\u5bdf\u9053\u8def\u6267\u52e4\u6267\u6cd5\u5de5\u4f5c\u89c4\u8303\u300b\u5c06\u7b80\u6613\u7834\u62c6\u5de5\u5177\u5217\u4e3a\u6267\u52e4\u8b66\u7528\u6c7d\u8f66\u6309\u9700\u914d\u5907\u7684\u88c5\u5907\uff1b\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6d88\u9632\u6cd5\u300b\u660e\u786e\u6d88\u9632\u6551\u63f4\u673a\u6784\u7edf\u4e00\u7ec4\u7ec7\u548c\u6307\u6325\u706b\u707e\u73b0\u573a\u6251\u6551",
+      "reason": "\u591a\u79cd\u8f66\u8f7d\u7b80\u6613\u7834\u62c6\u5de5\u5177\u7684\u5de5\u4f5c\u7aef\u4e0e\u7528\u9014\u5bb9\u6613\u6df7\u6dc6\uff0c\u65b0\u589e\u5668\u6750\u5bf9\u7167\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u7834\u62c6\u5de5\u5177\u4f7f\u7528\u7834\u62c6\u5de5\u5177\u7684\u5173\u952e\u5b89\u5168\u63d0\u9192",
-        "\u300a\u4ea4\u901a\u8b66\u5bdf\u9053\u8def\u6267\u52e4\u6267\u6cd5\u5de5\u4f5c\u89c4\u8303\u300b\u5c06\u7b80\u6613\u7834\u62c6\u5de5\u5177\u5217\u4e3a\u6267\u52e4\u8b66\u7528\u6c7d\u8f66\u6309\u9700\u914d\u5907\u7684\u88c5\u5907\uff1b\u300a\u4e2d\u534e\u4eba\u6c11\u5171\u548c\u56fd\u6d88\u9632\u6cd5\u300b\u660e\u786e\u6d88\u9632\u6551\u63f4\u673a\u6784\u7edf\u4e00\u7ec4\u7ec7\u548c\u6307\u6325\u706b\u707e\u73b0\u573a\u6251\u6551"
+        "\u533a\u5206\u7834\u7a97\u5668\u3001\u7834\u62c6\u65a7\u3001\u64ac\u68cd\u548c\u65ad\u7ebf\u94b3",
+        "\u8bc6\u522b\u5c16\u9525\u3001\u5272\u5200\u3001\u65a7\u5203\u3001\u64ac\u5934\u548c\u526a\u5207\u94b3\u53e3"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4f7f\u7528\u7834\u62c6\u5de5\u5177\u7684\u5173\u952e\u5b89\u5168\u63d0\u9192"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/pochai-gongju-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u7834\u62c6\u5de5\u5177\u4f7f\u7528\u7834\u62c6\u5de5\u5177\u7684\u5173\u952e\u5b89\u5168\u63d0\u9192structure-label",
+          "purpose": "\u8f66\u8f7d\u7b80\u6613\u7834\u62c6\u5de5\u5177\u5de5\u4f5c\u7aef\u5bf9\u7167",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/5g-yuntai.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "5G\u4e91\u53f0 - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b625G\u4e91\u53f0\u7684\u8fd0\u7528\u4f9d\u6258\u4e8e\u667a\u6167\u5de1\u9632\u4f53\u7cfb\uff1a\u5e38\u5dde\u5de1\u7279\u8b66\u642d\u5efa\"\u9f99\u57ce\u00b7\u5e73\u5b89e\u5de1\"\u5e73\u53f0\uff0c\u6574\u5408\u5168\u5e02\u5feb\u53cd\u533a\u3001\u5feb\u53cd\u5708\u7b49\u591a\u652f\u5feb\u53cd\u529b\u91cf\uff0c\u5b9e\u73b0\"\u4e00\u56fe\u53ef\u89c6\u3001\u4e00\u4f53\u8c03\u5ea6\"\uff1b\u5efa\u7acb\"",
+      "reason": "\u4e91\u53f0\u6444\u50cf\u673a\u3001\u4f20\u8f93\u3001\u4f9b\u7535\u548c\u652f\u67b6\u5171\u540c\u6784\u6210\u8f66\u8f7d\u524d\u7aef\u8282\u70b9\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "5G\u4e91\u53f0\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "5G\u4e91\u53f0\u7684\u8fd0\u7528\u4f9d\u6258\u4e8e\u667a\u6167\u5de1\u9632\u4f53\u7cfb\uff1a\u5e38\u5dde\u5de1\u7279\u8b66\u642d\u5efa\"\u9f99\u57ce\u00b7\u5e73\u5b89e\u5de1\"\u5e73\u53f0\uff0c\u6574\u5408\u5168\u5e02\u5feb\u53cd\u533a\u3001\u5feb\u53cd\u5708\u7b49\u591a\u652f\u5feb\u53cd\u529b\u91cf\uff0c\u5b9e\u73b0\"\u4e00\u56fe\u53ef\u89c6\u3001\u4e00\u4f53\u8c03\u5ea6\"\uff1b\u5efa\u7acb\""
+        "\u8bc6\u522b\u955c\u5934\u3001\u65cb\u8f6c\u5ea7\u3001\u4fef\u4ef0\u8f6c\u8f74\u30015G\u4f20\u8f93\u6a21\u5757\u548c\u5b89\u88c5\u652f\u67b6",
+        "\u7406\u89e3\u73b0\u573a\u753b\u9762\u5b9e\u65f6\u56de\u4f20\u5173\u7cfb"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/5g-yuntai-structure-label.svg",
           "kind": "svg",
-          "purpose": "5G\u4e91\u53f0\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u8f66\u8f7d5G\u4e91\u53f0\u7ec4\u6210\u7ed3\u6784",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -374,7 +374,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -395,7 +395,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -416,7 +416,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -437,73 +437,73 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/bidun.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u81c2\u76fe - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u81c2\u76fe\u4f5c\u4e3a\u9632\u62a4\u6027\u8b66\u68b0\uff0c\u5728\u6267\u6cd5\u8fc7\u7a0b\u4e2d\u7684\u4f7f\u7528\u5e94\u7b26\u5408\u300a\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u300b\u4e2d\u6709\u5173\u4f7f\u7528\u8b66\u68b0\u7684\u539f\u5219\u6027\u89c4\u5b9a\u2014\u2014\u4ee5\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u4e3a\u9650\u5ea6\uff0c\u5c3d\u53ef\u80fd\u51cf\u5c11\u4eba\u5458",
+      "reason": "\u81c2\u76fe\u6b63\u53cd\u9762\u548c\u524d\u81c2\u4f69\u6234\u5173\u7cfb\u5177\u6709\u660e\u786e\u7ed3\u6784\u5b66\u4e60\u4ef7\u503c\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u81c2\u76fe\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u81c2\u76fe\u4f5c\u4e3a\u9632\u62a4\u6027\u8b66\u68b0\uff0c\u5728\u6267\u6cd5\u8fc7\u7a0b\u4e2d\u7684\u4f7f\u7528\u5e94\u7b26\u5408\u300a\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u300b\u4e2d\u6709\u5173\u4f7f\u7528\u8b66\u68b0\u7684\u539f\u5219\u6027\u89c4\u5b9a\u2014\u2014\u4ee5\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u4e3a\u9650\u5ea6\uff0c\u5c3d\u53ef\u80fd\u51cf\u5c11\u4eba\u5458"
+        "\u8bc6\u522b\u76fe\u4f53\u3001\u524d\u81c2\u7ed1\u5e26\u548c\u63e1\u628a",
+        "\u7406\u89e3\u975e\u5f3a\u624b\u524d\u81c2\u7a7f\u5e26\u6293\u63e1\u7684\u4f69\u6234\u5173\u7cfb"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/bidun-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u81c2\u76fe\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u81c2\u76fe\u6b63\u53cd\u9762\u4e0e\u4f69\u6234\u7ed3\u6784",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/t-zi-gun.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "T\u5b57\u68cd - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u6838\u5fc3\u7528\u9014\uff1a\u51fb\u6253\u63a7\u5236\u2014\u2014\u5bf9\u884c\u4e3a\u4eba\u56db\u80a2\u5927\u808c\u8089\u7fa4\u5b9e\u65bd\u51fb\u6253\u4ee5\u5236\u6b62\u66b4\u529b\u884c\u4e3a\uff0c\u4e0d\u5f97\u51fb\u6253\u5934\u90e8\u3001\u9888\u90e8\u3001\u810a\u690e\u7b49\u8981\u5bb3\u90e8\u4f4d\uff1b\u683c\u6321\u9632\u62a4\u2014\u2014\u5229\u7528\u68cd\u8eab\u6a2a\u5411\u683c\u6321\u5bf9\u65b9\u7684\u5668\u68b0\u653b\u51fb",
+      "reason": "T\u578b\u63e1\u67c4\u3001\u62a4\u624b\u4e0e\u68cd\u8eab\u7684\u7ec4\u5408\u662f\u533a\u522b\u4e8e\u76f4\u67c4\u8b66\u68cd\u7684\u5173\u952e\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "T\u5b57\u68cd\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u6838\u5fc3\u7528\u9014\uff1a\u51fb\u6253\u63a7\u5236\u2014\u2014\u5bf9\u884c\u4e3a\u4eba\u56db\u80a2\u5927\u808c\u8089\u7fa4\u5b9e\u65bd\u51fb\u6253\u4ee5\u5236\u6b62\u66b4\u529b\u884c\u4e3a\uff0c\u4e0d\u5f97\u51fb\u6253\u5934\u90e8\u3001\u9888\u90e8\u3001\u810a\u690e\u7b49\u8981\u5bb3\u90e8\u4f4d\uff1b\u683c\u6321\u9632\u62a4\u2014\u2014\u5229\u7528\u68cd\u8eab\u6a2a\u5411\u683c\u6321\u5bf9\u65b9\u7684\u5668\u68b0\u653b\u51fb"
+        "\u8bc6\u522b\u68cd\u8eab\u3001\u68cd\u7aef\u3001T\u578b\u63e1\u67c4\u3001\u62a4\u624b\u548c\u9632\u6ed1\u533a",
+        "\u7406\u89e3\u6a2a\u5411\u63e1\u67c4\u4fbf\u4e8e\u7a33\u5b9a\u6301\u68cd\u548c\u683c\u6321"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/t-zi-gun-structure-label.svg",
           "kind": "svg",
-          "purpose": "T\u5b57\u68cd\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "T\u5b57\u68cd\u7ed3\u6784\u4e0e\u63e1\u6301\u90e8\u4f4d",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -524,172 +524,172 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/sanshi-weidang.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u4f1e\u5f0f\u56f4\u6321 - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u4f1e\u5f0f\u56f4\u6321\u7531\u906e\u6321\u9762\u6599\uff08\u901a\u5e38\u4e3a\u6df1\u8272\u9632\u6c34\u5e03\u6599\u6216\u6d82\u5c42\u7ec7\u7269\uff0c\u5370\u6709\"\u8b66\u5bdf\"\"\u73b0\u573a\u5904\u7f6e\"\u7b49\u6807\u8bc6\uff09\u3001\u4f1e\u5f0f\u9aa8\u67b6\uff08\u91d1\u5c5e\u6216\u73bb\u7483\u7ea4\u7ef4\u6491\u6746\uff09\u3001\u4e2d\u5fc3\u4f38\u7f29\u6746\u548c\u5e95\u5ea7\uff08\u4e09\u811a\u67b6\u6216\u914d",
+      "reason": "\u4f1e\u5f0f\u9aa8\u67b6\u4ece\u5c55\u5f00\u5230\u67f1\u72b6\u6536\u62e2\u7684\u7ed3\u6784\u4e0d\u6613\u7531\u6587\u5b57\u76f4\u63a5\u60f3\u8c61\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u4f1e\u5f0f\u56f4\u6321\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u4f1e\u5f0f\u56f4\u6321\u7531\u906e\u6321\u9762\u6599\uff08\u901a\u5e38\u4e3a\u6df1\u8272\u9632\u6c34\u5e03\u6599\u6216\u6d82\u5c42\u7ec7\u7269\uff0c\u5370\u6709\"\u8b66\u5bdf\"\"\u73b0\u573a\u5904\u7f6e\"\u7b49\u6807\u8bc6\uff09\u3001\u4f1e\u5f0f\u9aa8\u67b6\uff08\u91d1\u5c5e\u6216\u73bb\u7483\u7ea4\u7ef4\u6491\u6746\uff09\u3001\u4e2d\u5fc3\u4f38\u7f29\u6746\u548c\u5e95\u5ea7\uff08\u4e09\u811a\u67b6\u6216\u914d"
+        "\u8bc6\u522b\u906e\u6321\u9762\u6599\u3001\u4f1e\u5f0f\u9aa8\u67b6\u3001\u4e2d\u5fc3\u4f38\u7f29\u6746\u548c\u5e95\u5ea7",
+        "\u7406\u89e3\u5feb\u5c55\u5feb\u6536\u4e0e\u67f1\u72b6\u8f66\u8f7d\u6536\u7eb3"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/sanshi-weidang-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u4f1e\u5f0f\u56f4\u6321\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u4f1e\u5f0f\u56f4\u6321\u5c55\u5f00\u4e0e\u6536\u62e2\u7ed3\u6784",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/zhedieshi-weidang.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u6298\u53e0\u5f0f\u56f4\u6321 - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u6838\u5fc3\u7528\u9014\uff1a\u5927\u9762\u79ef\u654f\u611f\u73b0\u573a\u906e\u6321\u2014\u2014\u6bd4\u4f1e\u5f0f\u56f4\u6321\u8986\u76d6\u8303\u56f4\u5927\u5f97\u591a\uff0c\u9002\u5408\u5f00\u9614\u573a\u6240\u548c\u9700\u8981\u906e\u6321\u591a\u4e2a\u89d2\u5ea6\u7684\u60c5\u51b5\uff1b\u8fde\u7eed\u62fc\u63a5\u5f62\u6210\u906e\u6321\u5899\u2014\u2014\u591a\u9876\u6298\u53e0\u56f4\u6321\u53ef\u62fc\u63a5\u8fde\u6210\u5927\u9762",
+      "reason": "\u786c\u8d28\u9762\u677f\u3001\u94f0\u94fe\u3001\u652f\u67b6\u548c\u8fde\u7eed\u62fc\u63a5\u5173\u7cfb\u662f\u8be5\u5668\u6750\u7684\u6838\u5fc3\u5dee\u5f02\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u6298\u53e0\u5f0f\u56f4\u6321\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u6838\u5fc3\u7528\u9014\uff1a\u5927\u9762\u79ef\u654f\u611f\u73b0\u573a\u906e\u6321\u2014\u2014\u6bd4\u4f1e\u5f0f\u56f4\u6321\u8986\u76d6\u8303\u56f4\u5927\u5f97\u591a\uff0c\u9002\u5408\u5f00\u9614\u573a\u6240\u548c\u9700\u8981\u906e\u6321\u591a\u4e2a\u89d2\u5ea6\u7684\u60c5\u51b5\uff1b\u8fde\u7eed\u62fc\u63a5\u5f62\u6210\u906e\u6321\u5899\u2014\u2014\u591a\u9876\u6298\u53e0\u56f4\u6321\u53ef\u62fc\u63a5\u8fde\u6210\u5927\u9762"
+        "\u8bc6\u522b\u786c\u8d28\u9762\u677f\u3001\u4e32\u8054\u94f0\u94fe\u548c\u7a33\u5b9a\u652f\u67b6",
+        "\u7406\u89e3\u591a\u7ec4\u56f4\u6321\u8fde\u7eed\u62fc\u63a5\u5f62\u6210\u906e\u6321\u5899"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/zhedieshi-weidang-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u6298\u53e0\u5f0f\u56f4\u6321\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u6298\u53e0\u5f0f\u56f4\u6321\u9762\u677f\u4e0e\u652f\u6491\u7ed3\u6784",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/changgun.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u957f\u68cd - \u6cd5\u5f8b\u8fb9\u754c\u4e0e\u5b89\u5168\u7981\u6b62\u4e8b\u9879\u6838\u5fc3\u7528\u9014\uff1a\u6233\u51fb\u63a7\u5236\u2014\u2014\u4ee5\u68cd\u7aef\u5411\u524d\u6233\u51fb\u884c\u4e3a\u4eba\u8eaf\u5e72\uff0c\u4fdd\u63012\u7c73\u8ddd\u79bb\u7684\u540c\u65f6\u5bf9\u5176\u65bd\u52a0\u5e72\u6270\u548c\u75bc\u75db\u63a7\u5236\uff1b\u9a71\u79bb\u2014\u2014\u4ee5\u68cd\u7aef\u6307\u5411\u548c\u6a2a\u5411\u6446\u52a8\u9a71\u6563\u884c\u4e3a\u4eba\u7684\u63a5\u8fd1\u4f01\u56fe\uff1b\u5e72\u6270",
+      "reason": "\u6574\u4f53\u68cd\u8eab\u3001\u9632\u6ed1\u533a\u548c\u53cc\u624b\u63e1\u6301\u4f4d\u7f6e\u51b3\u5b9a\u957f\u68cd\u7684\u5668\u6750\u7279\u5f81\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u957f\u68cd\u6cd5\u5f8b\u8fb9\u754c\u4e0e\u5b89\u5168\u7981\u6b62\u4e8b\u9879",
-        "\u6838\u5fc3\u7528\u9014\uff1a\u6233\u51fb\u63a7\u5236\u2014\u2014\u4ee5\u68cd\u7aef\u5411\u524d\u6233\u51fb\u884c\u4e3a\u4eba\u8eaf\u5e72\uff0c\u4fdd\u63012\u7c73\u8ddd\u79bb\u7684\u540c\u65f6\u5bf9\u5176\u65bd\u52a0\u5e72\u6270\u548c\u75bc\u75db\u63a7\u5236\uff1b\u9a71\u79bb\u2014\u2014\u4ee5\u68cd\u7aef\u6307\u5411\u548c\u6a2a\u5411\u6446\u52a8\u9a71\u6563\u884c\u4e3a\u4eba\u7684\u63a5\u8fd1\u4f01\u56fe\uff1b\u5e72\u6270"
+        "\u8bc6\u522b\u68cd\u7aef\u3001\u6574\u4f53\u68cd\u8eab\u548c\u9632\u6ed1\u63e1\u6301\u533a",
+        "\u7406\u89e3\u53cc\u624b\u7a33\u56fa\u63e1\u6301\u4e0e\u957f\u8ddd\u79bb\u7ed3\u6784\u7279\u70b9"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u6cd5\u5f8b\u8fb9\u754c\u4e0e\u5b89\u5168\u7981\u6b62\u4e8b\u9879"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/changgun-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u957f\u68cd\u6cd5\u5f8b\u8fb9\u754c\u4e0e\u5b89\u5168\u7981\u6b62\u4e8b\u9879structure-label",
+          "purpose": "\u957f\u8b66\u68cd\u7ed3\u6784\u4e0e\u53cc\u624b\u63e1\u6301\u533a\u57df",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/fangci-fu.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u9632\u523a\u670d - \u6027\u80fd\u8fb9\u754c\u4e0e\u7981\u6b62\u4e8b\u9879\u7a7f\u6234\u65f6\u5148\u786e\u8ba4\u9632\u523a\u670d\u6b63\u53cd\u9762\u548c\u4e0a\u4e0b\u65b9\u5411\u6b63\u786e\uff0c\u5957\u5165\u540e\u5c06\u4e24\u4fa7\u6216\u80a9\u90e8\u7684\u8c03\u8282\u5e26\u6536\u7d27\u81f3\u670d\u4f53\u8d34\u8eab\u4f46\u4e0d\u538b\u8feb\u547c\u5438\u2014\u2014\u8fc7\u677e\u4f1a\u7559\u4e0b\u9632\u62a4\u95f4\u9699\u3001\u8fc7\u7d27\u5f71\u54cd\u884c\u52a8\u548c\u547c\u5438\u3002\u786e\u8ba4\u524d\u80f8",
+      "reason": "\u8986\u76d6\u533a\u57df\u3001\u6750\u6599\u5c42\u6b21\u4e0e\u9632\u62a4\u8fb9\u754c\u9700\u8981\u540c\u65f6\u5448\u73b0\uff0c\u65b0\u589e\u7ed3\u6784\u6807\u6ce8\u56fe\u3002",
       "learning_targets": [
-        "\u9632\u523a\u670d\u6027\u80fd\u8fb9\u754c\u4e0e\u7981\u6b62\u4e8b\u9879",
-        "\u7a7f\u6234\u65f6\u5148\u786e\u8ba4\u9632\u523a\u670d\u6b63\u53cd\u9762\u548c\u4e0a\u4e0b\u65b9\u5411\u6b63\u786e\uff0c\u5957\u5165\u540e\u5c06\u4e24\u4fa7\u6216\u80a9\u90e8\u7684\u8c03\u8282\u5e26\u6536\u7d27\u81f3\u670d\u4f53\u8d34\u8eab\u4f46\u4e0d\u538b\u8feb\u547c\u5438\u2014\u2014\u8fc7\u677e\u4f1a\u7559\u4e0b\u9632\u62a4\u95f4\u9699\u3001\u8fc7\u7d27\u5f71\u54cd\u884c\u52a8\u548c\u547c\u5438\u3002\u786e\u8ba4\u524d\u80f8"
+        "\u8bc6\u522b\u524d\u80f8\u3001\u540e\u80cc\u548c\u4fa7\u808b\u8986\u76d6\u533a\u53ca\u9632\u523a\u5c42",
+        "\u660e\u786e\u9632\u523a\u4e0d\u9632\u5f39\u7684\u6027\u80fd\u8fb9\u754c"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u6027\u80fd\u8fb9\u754c\u4e0e\u7981\u6b62\u4e8b\u9879"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/fangci-fu-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u9632\u523a\u670d\u6027\u80fd\u8fb9\u754c\u4e0e\u7981\u6b62\u4e8b\u9879structure-label",
+          "purpose": "\u9632\u523a\u670d\u8986\u76d6\u533a\u57df\u4e0e\u5185\u90e8\u5c42\u6b21",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
       "path": "zhuangbei/yueshu-dai.html",
       "module": "zhuangbei",
-      "current_images": 0,
+      "current_images": 1,
       "decision": "add",
-      "reason": "\u7ea6\u675f\u5e26 - \u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62\u7ea6\u675f\u5e26\u4f5c\u4e3a\u7ea6\u675f\u6027\u8b66\u68b0\uff0c\u4f7f\u7528\u987b\u7b26\u5408\u300a\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u300b\u4e2d\u5173\u4e8e\u4f7f\u7528\u7ea6\u675f\u6027\u8b66\u68b0\u7684\u89c4\u5b9a\uff0c\u7279\u522b\u662f\u6bd4\u4f8b\u539f\u5219\u2014\u2014\u4ee5\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u4e3a\u9650\u5ea6\uff0c\u5f53\u8fdd\u6cd5\u72af\u7f6a",
+      "reason": "\u8155\u5e26\u3001\u8e1d\u5e26\u548c\u7ea6\u675f\u6bef\u5f62\u6001\u53ca\u95ed\u5408\u7ed3\u6784\u4e0d\u540c\uff0c\u65b0\u589e\u4e09\u7c7b\u5668\u6750\u5bf9\u7167\u56fe\u3002",
       "learning_targets": [
-        "\u7ea6\u675f\u5e26\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62",
-        "\u7ea6\u675f\u5e26\u4f5c\u4e3a\u7ea6\u675f\u6027\u8b66\u68b0\uff0c\u4f7f\u7528\u987b\u7b26\u5408\u300a\u4eba\u6c11\u8b66\u5bdf\u4f7f\u7528\u8b66\u68b0\u548c\u6b66\u5668\u6761\u4f8b\u300b\u4e2d\u5173\u4e8e\u4f7f\u7528\u7ea6\u675f\u6027\u8b66\u68b0\u7684\u89c4\u5b9a\uff0c\u7279\u522b\u662f\u6bd4\u4f8b\u539f\u5219\u2014\u2014\u4ee5\u5236\u6b62\u8fdd\u6cd5\u72af\u7f6a\u884c\u4e3a\u4e3a\u9650\u5ea6\uff0c\u5f53\u8fdd\u6cd5\u72af\u7f6a"
+        "\u533a\u5206\u8155\u90e8\u7ea6\u675f\u5e26\u3001\u8e1d\u90e8\u7ea6\u675f\u5e26\u548c\u7ea6\u675f\u6bef",
+        "\u8bc6\u522b\u5c3c\u9f99\u7ec7\u5e26\u3001\u9b54\u672f\u8d34\u6216\u5feb\u62c6\u6263\u4e0e\u5305\u88f9\u8303\u56f4"
       ],
       "visual_types": [
         "structure-label"
       ],
       "insertion_points": [
-        "\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62"
+        "\u7ec4\u6210\u4e0e\u7528\u9014"
       ],
       "assets": [
         {
           "path": "img/learning/zhuangbei/yueshu-dai-structure-label.svg",
           "kind": "svg",
-          "purpose": "\u7ea6\u675f\u5e26\u4ee5\u4e0b\u884c\u4e3a\u4e25\u683c\u7981\u6b62structure-label",
+          "purpose": "\u8b66\u7528\u7ea6\u675f\u5e26\u7c7b\u578b\u4e0e\u95ed\u5408\u7ed3\u6784",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u88c5\u5907\u64cd\u4f5c",
           "accessed_at": "2026-08-10",
           "license": "site-original",
-          "status": "planned"
+          "status": "complete"
         }
       ],
-      "implementation_status": "not-started",
-      "acceptance_status": "not-reviewed",
+      "implementation_status": "complete",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -710,7 +710,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -731,7 +731,7 @@
       ],
       "assets": [],
       "implementation_status": "complete",
-      "acceptance_status": "not-reviewed",
+      "acceptance_status": "accepted",
       "blocked_reason": ""
     },
     {
@@ -919,7 +919,7 @@
         {
           "path": "img/learning/qinwu/gonggong-zhixu-goutong-record.svg",
           "kind": "svg",
-          "purpose": "公共秩序现场分区、沟通关系与记录要素示意",
+          "purpose": "\u516c\u5171\u79e9\u5e8f\u73b0\u573a\u5206\u533a\u3001\u6c9f\u901a\u5173\u7cfb\u4e0e\u8bb0\u5f55\u8981\u7d20\u793a\u610f",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u52e4\u52a1\u987b\u77e5",
@@ -1183,7 +1183,7 @@
         {
           "path": "img/learning/xunlian/geren-fanghu-anquan-checklist.svg",
           "kind": "svg",
-          "purpose": "半侧身戒备姿势与装备、人员、场地三项安全清单",
+          "purpose": "\u534a\u4fa7\u8eab\u6212\u5907\u59ff\u52bf\u4e0e\u88c5\u5907\u3001\u4eba\u5458\u3001\u573a\u5730\u4e09\u9879\u5b89\u5168\u6e05\u5355",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u5b9e\u6218\u8bad\u7ec3",
@@ -1582,7 +1582,7 @@
         {
           "path": "img/learning/jingqing/zuijiu-lei-chuzhi-flow.svg",
           "kind": "svg",
-          "purpose": "醉酒类警情风险识别、沟通控制、协同处置与记录交接流程",
+          "purpose": "\u9189\u9152\u7c7b\u8b66\u60c5\u98ce\u9669\u8bc6\u522b\u3001\u6c9f\u901a\u63a7\u5236\u3001\u534f\u540c\u5904\u7f6e\u4e0e\u8bb0\u5f55\u4ea4\u63a5\u6d41\u7a0b",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u8b66\u60c5\u5904\u7f6e",
@@ -1945,7 +1945,7 @@
         {
           "path": "img/learning/fagui/panwen-shenfenzheng-procedure.svg",
           "kind": "svg",
-          "purpose": "盘问检查与身份证查验的法定情形、程序和权利保障关系",
+          "purpose": "\u76d8\u95ee\u68c0\u67e5\u4e0e\u8eab\u4efd\u8bc1\u67e5\u9a8c\u7684\u6cd5\u5b9a\u60c5\u5f62\u3001\u7a0b\u5e8f\u548c\u6743\u5229\u4fdd\u969c\u5173\u7cfb",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u6267\u6cd5\u89c4\u8303",
@@ -2770,7 +2770,7 @@
         {
           "path": "img/learning/zoufang/changsuo-aed-jiancha.svg",
           "kind": "svg",
-          "purpose": "公共场所AED点位、路径与设备维护检查清单",
+          "purpose": "\u516c\u5171\u573a\u6240AED\u70b9\u4f4d\u3001\u8def\u5f84\u4e0e\u8bbe\u5907\u7ef4\u62a4\u68c0\u67e5\u6e05\u5355",
           "source_status": "original",
           "source_url": "",
           "publisher": "\u6559\u80b2\u5b66\u4e60",

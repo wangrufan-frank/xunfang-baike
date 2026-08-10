@@ -165,7 +165,15 @@
             "https://www.xt.gov.cn/xtgaj/0101/202411/f37dab4d6e5c4051977bafd8e5e3138b.shtml",
             "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zhuangbei/zuche-ding-structure-label.svg",
+              "alt": "阻车钉钉刺、连接节、拖拽绳、收纳护套和路侧安全位置结构标注图",
+              "caption": "阻车钉展开结构：钉排横置路面，通过拖拽绳控制收放；布设后人员撤至路侧安全位置（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/fanguang-zhuitong.html",
             "qinwu/zhuanxiang-xianchang-zhixu.html"
@@ -183,7 +191,15 @@
           "public_sources": [
             "http://www.jz.gov.cn/info/1024/127327.htm"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zhuangbei/shuishang-feiyi-structure-label.svg",
+              "alt": "水上飞翼浮体、抓扶把手、电池舱、推进装置和手持遥控器结构标注图",
+              "caption": "水上飞翼组成：浮体提供浮力，落水者抓扶把手，岸上人员用遥控器控制推进与转向（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiusheng-quan.html",
             "zhuangbei/jiusheng-yi.html"
@@ -379,7 +395,15 @@
             "https://gz.119.gov.cn/xxgk/zfxxgk/fdzdgknr/lzyj/flfg/202503/t20250303_86974482.html",
             "https://gaj.fuxin.gov.cn/mob/newsdetail.thtml?id=321668"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/learning/zhuangbei/pochai-gongju-structure-label.svg",
+              "alt": "破窗器、破拆斧、撬棍和断线钳工作端结构标注图",
+              "caption": "车载简易破拆工具：认清破窗器尖锥与割刀、破拆斧斧刃、撬棍弯头和断线钳钳口（本站绘制）",
+              "source": "巡防百科本站原创绘制",
+              "license": "site-original"
+            }
+          ],
           "related_pages": [
             "zhuangbei/t-zi-gun.html",
             "zhuangbei/miehuo-qi.html"
@@ -399,7 +423,13 @@
           "public_sources": [
             "https://gaj.changzhou.gov.cn/html/czgaj/2025/BOHBPMBI_1016/88415.html"
           ],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/5g-yuntai-structure-label.svg",
+            "alt": "车载5G云台摄像机、旋转座、俯仰转轴、传输模块、供电和支架结构标注图",
+            "caption": "车载5G云台组成：镜头随云台水平旋转和俯仰，画面经5G传输模块实时回传（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/zhifa-jiuyi.html",
             "qinwu/zhuanxiang-xietong-baogao.html"
@@ -560,7 +590,13 @@
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html",
             "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
           ],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/bidun-structure-label.svg",
+            "alt": "臂盾盾体、前臂绑带、握把和非强手前臂佩戴位置结构标注图",
+            "caption": "臂盾正反面与佩戴：前臂穿入绑带、手掌抓握把，盾面覆盖前臂外侧（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/fashi-dunpai.html",
             "xunlian/xietong-zhanwei-duixing.html"
@@ -580,7 +616,13 @@
           "public_sources": [
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query="
           ],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/t-zi-gun-structure-label.svg",
+            "alt": "T字棍棍身、棍端、T型握柄、护手和防滑区域结构标注图",
+            "caption": "T字棍结构：横向握柄便于稳定持棍和格挡，护手保护持棍手指（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/changgun.html",
             "zhuangbei/pochai-gongju.html"
@@ -630,7 +672,13 @@
             "E:\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置的响应流程.md"
           ],
           "public_sources": [],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/sanshi-weidang-structure-label.svg",
+            "alt": "伞式围挡遮挡面料、伞式骨架、中心伸缩杆、三脚架底座和收拢形态结构标注图",
+            "caption": "伞式围挡结构：伞骨撑开遮挡面料，中心伸缩杆连接底座，收拢后呈柱状便于车载（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/zhedieshi-weidang.html",
             "jingqing/zishang-lei.html"
@@ -649,7 +697,13 @@
             "E:\\frank知识库\\03_Knowledge\\警务技能\\快反处置\\快反处置四能力与安全三要素.md"
           ],
           "public_sources": [],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/zhedieshi-weidang-structure-label.svg",
+            "alt": "折叠式围挡硬质面板、串联铰链、稳定支架和连续拼接结构标注图",
+            "caption": "折叠式围挡结构：多块硬质面板经铰链串联，底部支架稳定，可拼接形成连续遮挡墙（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/sanshi-weidang.html",
             "qinwu/gonggong-zhixu-goutong-jilu.html"
@@ -670,7 +724,13 @@
           "public_sources": [
             "https://www.sz.gov.cn/cn/xxgk/zfxxgj/gqdt/content/post_10691408.html"
           ],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/changgun-structure-label.svg",
+            "alt": "长警棍棍端、整体棍身、防滑握持区和双手握持位置结构标注图",
+            "caption": "长警棍结构：整体无伸缩机构，双手握持防滑区；长棍侧重保持距离，不具备锁控结构（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/t-zi-gun.html",
             "xunlian/dunpai-zhuabucha-xietong.html"
@@ -691,7 +751,13 @@
           "public_sources": [
             "https://www.nxzw.gov.cn/zwgk/bmxxgkml/sgaj/fdzdgknr_49353/bmxx_49384/202204/t20220414_3452840.html"
           ],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/fangci-fu-structure-label.svg",
+            "alt": "防刺服前胸、后背、侧肋覆盖区和外层面料、内部防刺层结构标注图",
+            "caption": "防刺服覆盖与层次：外层面料包覆内部防刺层，重点覆盖前胸、后背和侧肋；防刺不防弹（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "zhuangbei/fangge-shoutao.html",
             "zhuangbei/fangbao-toukui.html",
@@ -714,7 +780,13 @@
             "https://xzfg.moj.gov.cn/front/law/detail?LawID=456&Query=",
             "https://www.npc.gov.cn/npc/c2/c30834/202506/t20250627_446235.html"
           ],
-          "images": [],
+          "images": [{
+            "path": "img/learning/zhuangbei/yueshu-dai-structure-label.svg",
+            "alt": "腕部约束带、踝部约束带、约束毯及尼龙织带和闭合件结构对照图",
+            "caption": "警用约束带类型：腕带、踝带以尼龙织带和闭合件限制局部活动，约束毯包裹躯干与四肢（本站绘制）",
+            "source": "巡防百科本站原创绘制",
+            "license": "site-original"
+          }],
           "related_pages": [
             "jingqing/zuijiu-lei.html",
             "xunlian/shoukao-xunlian.html"
