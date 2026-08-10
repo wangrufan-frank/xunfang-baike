@@ -2,12 +2,12 @@
   <title id="title">公共场所AED部署检查清单与分区</title>
   <desc id="desc">左侧公共场所平面图标出入口、人流路径和醒目的AED机柜，右侧列出位置标识、设备耗材、巡检记录和人员培训四项检查。</desc>
   <defs>
-    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.card{fill:#fff;stroke:#b8cedd;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.light{fill:#fff}.dark{fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.card{fill:#fff;stroke:#b8cedd;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.mobile{display:none}@media (max-width:500px){.mobile{display:block}}</style>
     <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#2f7d73"/></marker>
   </defs>
   <rect width="760" height="520" rx="24" fill="#f6fafc"/>
   <rect x="24" y="22" width="712" height="58" rx="14" fill="#163f60"/>
-  <text x="48" y="59" class="t h" fill="#fff">公共场所 AED｜点位与状态检查</text>
+  <text x="48" y="59" class="t h light">公共场所 AED｜点位与状态检查</text>
   <text x="48" y="104" class="t b">看得到、取得快、能使用、有人管——四项同时合格才算闭环</text>
 
   <g aria-label="场所平面与AED点位" transform="translate(28 130)">
@@ -37,4 +37,24 @@
     <g transform="translate(20 250)"><circle cx="18" cy="18" r="18" fill="#bf4a45"/><path d="M9 18l7 7 13-17" fill="none" stroke="#fff" stroke-width="4"/><text x="50" y="15" class="t s">培训与联络</text><text x="50" y="39" class="t b">责任人明确、人员会取用</text></g>
   </g>
   <rect x="28" y="476" width="704" height="28" rx="8" fill="#f8e8d3"/><text x="48" y="496" class="t b">发现故障或过期：立即标记停用 → 通报责任单位 → 限期整改 → 安排复查</text>
+  <g class="mobile" aria-label="移动端公共场所AED检查">
+    <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">公共场所 AED｜四项检查</text>
+    <rect x="28" y="116" width="370" height="316" rx="16" fill="#fff" stroke="#b8cedd" stroke-width="2"/>
+    <path d="M28 148h74v54H28" fill="#dcefeb" stroke="#2f7d73" stroke-width="3"/>
+    <text x="45" y="183" class="t" font-size="25" font-weight="700">入口</text>
+    <path d="M102 175h80v92h62" fill="none" stroke="#2f7d73" stroke-width="6" stroke-dasharray="12 9" marker-end="url(#a)"/>
+    <rect x="214" y="226" width="150" height="142" rx="14" fill="#fff" stroke="#bf4a45" stroke-width="5"/>
+    <rect x="236" y="250" width="106" height="72" rx="8" fill="#bf4a45"/>
+    <path d="M289 267c-24-20-49 12 0 46c49-34 24-66 0-46z" fill="#fff"/>
+    <text x="258" y="354" class="t" font-size="27" font-weight="700">AED</text>
+    <text x="48" y="248" class="t" font-size="25">路径无阻挡</text><text x="48" y="286" class="t" font-size="25">机柜不上锁</text><text x="48" y="324" class="t" font-size="25">标识要醒目</text>
+    <g transform="translate(424 116)">
+      <rect width="308" height="316" rx="16" class="card"/><text x="24" y="42" class="t" font-size="28" font-weight="700">核验清单</text>
+      <text x="24" y="92" class="t" font-size="25">✓ 位置与标识</text><text x="24" y="142" class="t" font-size="25">✓ 设备与耗材</text><text x="24" y="192" class="t" font-size="25">✓ 巡检与台账</text><text x="24" y="242" class="t" font-size="25">✓ 培训与联络</text><text x="24" y="288" class="t" font-size="25" font-weight="700">看得见 · 取得快</text>
+    </g>
+    <rect x="28" y="458" width="704" height="44" rx="10" fill="#f8e8d3"/>
+    <text x="48" y="488" class="t" font-size="25" font-weight="700">故障或过期：停用 → 通报 → 整改 → 复查</text>
+  </g>
 </svg>

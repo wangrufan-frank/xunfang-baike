@@ -1,10 +1,10 @@
 <svg xmlns="http&#58;//www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
   <title id="title">个人防护与训练安全清单</title>
   <desc id="desc">左侧人物以半侧身戒备姿势站立并佩戴腰带装备，右侧依次列出装备、人员和场地三项训练前检查。</desc>
-  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.card{fill:#fff;stroke:#b9cedc;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style></defs>
+  <defs><style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.light{fill:#fff}.dark{fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.card{fill:#fff;stroke:#b9cedc;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.mobile{display:none}@media (max-width:500px){.mobile{display:block}}</style></defs>
   <rect width="760" height="520" rx="24" fill="#f6fafc"/>
   <rect x="24" y="22" width="712" height="58" rx="14" fill="#163f60"/>
-  <text x="48" y="59" class="t h" fill="#fff">训练前安全清单｜人 · 装备 · 场地</text>
+  <text x="48" y="59" class="t h light">训练前安全清单｜人 · 装备 · 场地</text>
   <text x="48" y="104" class="t b">动作开始前完成三查；任何一项不合格，先停训再处理</text>
 
   <g aria-label="半侧身戒备人物">
@@ -37,4 +37,24 @@
   </g>
   <rect x="386" y="460" width="326" height="36" rx="10" fill="#f8e8d3"/>
   <text x="405" y="484" class="t s" fill="#a65d13">发现异常：立即叫停 → 标记 → 处理</text>
+  <g class="mobile" aria-label="移动端训练前安全清单">
+    <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">训练前安全清单｜三查</text>
+    <g transform="translate(62 126)">
+      <circle cx="112" cy="54" r="36" fill="#efc5a4" class="ol"/>
+      <path d="M72 105q40-34 80 0l-6 126H66z" fill="#2c6e9e" class="ol"/>
+      <path d="M75 126l-48 76M148 124l58 64M82 230l-36 96M134 230l38 96" fill="none" class="ol"/>
+      <rect x="65" y="191" width="84" height="20" rx="8" fill="#263746"/>
+      <path d="M190 173l76-80" stroke="#263746" stroke-width="13" stroke-linecap="round"/>
+      <text x="6" y="365" class="t" font-size="25" font-weight="700">半侧身 · 重心稳</text>
+    </g>
+    <g transform="translate(344 122)">
+      <rect width="372" height="92" rx="14" class="card"/><circle cx="42" cy="46" r="25" fill="#2f7d73"/><path d="M30 46l9 9 17-22" fill="none" stroke="#fff" stroke-width="6"/><text x="82" y="39" class="t" font-size="27" font-weight="700">一查装备</text><text x="82" y="70" class="t" font-size="25">牢固、完整、可用</text>
+      <rect y="108" width="372" height="92" rx="14" class="card"/><circle cx="42" cy="154" r="25" fill="#2c6e9e"/><path d="M30 154l9 9 17-22" fill="none" stroke="#fff" stroke-width="6"/><text x="82" y="147" class="t" font-size="27" font-weight="700">二查人员</text><text x="82" y="178" class="t" font-size="25">状态适训、安全员到位</text>
+      <rect y="216" width="372" height="92" rx="14" class="card"/><circle cx="42" cy="262" r="25" fill="#d98b2b"/><path d="M30 262l9 9 17-22" fill="none" stroke="#fff" stroke-width="6"/><text x="82" y="255" class="t" font-size="27" font-weight="700">三查场地</text><text x="82" y="286" class="t" font-size="25">地面平整、边界清晰</text>
+    </g>
+    <rect x="344" y="454" width="372" height="42" rx="10" fill="#f8e8d3"/>
+    <text x="363" y="483" class="t" font-size="25" font-weight="700">异常：先停训再处理</text>
+  </g>
 </svg>

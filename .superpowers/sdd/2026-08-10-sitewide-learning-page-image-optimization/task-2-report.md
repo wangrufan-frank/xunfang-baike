@@ -81,3 +81,29 @@ python tools/check_site_links.py
 - 尚未在真实页面正文中完成六页桌面端/移动端截图。
 - 尚未浏览器确认图片文字实际可读性、移动端无横向滚动、图注换行和深色主题容器对比度。
 - 六张图的 `acceptance_status` 保持 `not-reviewed`；用户明确接受六张代表图之前不应开始 Task 3。
+
+## Fix round 1
+
+### 修复内容
+
+- 修复六张 SVG 的文字颜色级联冲突：正文使用 `.t`，深色底标题与编号使用显式 `.light`，琥珀色圆内编号使用显式 `.dark`。不再使用会被 `.t` 类覆盖的 `fill="#fff"` 文字展示属性。
+- 为六张 SVG 各增加一个移动专用简化层，在 SVG 自身 `@media (max-width:500px)` 下覆盖桌面图层。移动层重新组织信息层级，所有文字源字号不低于 25px，按 390px 页面中约 344px 图片宽度估算为约 11.3px。
+- 新增 focused tests：`test_representative_svgs_use_explicit_light_text_class` 与 `test_representative_svgs_have_readable_mobile_layer`。
+
+### 验证结果
+
+```powershell
+python -m unittest tests.test_image_optimization tests.test_site_structure -v
+python tools/check_image_optimization.py
+python tools/check_site_links.py
+```
+
+- 单元测试：31/31 通过。
+- 图片台账校验：93 pages checked，0 validation errors。
+- 站内链接校验：129 pages checked，无 broken links 或 anchors。
+
+### 页面截图状态
+
+临时 auth-aware server 使用 `auth-config.js` 既有 digest Cookie，已确认浏览器能进入真实正文，且未修改生产认证边界。批量截图仍未产出：第一次因浏览器执行环境中的 `parseFloat` 问题中断；第二次在 `.learning-figure` 定位的环境超时上限处中断。已按控制要求停止浏览器尝试。
+
+因此六页 `acceptance_status` 保持 `not-reviewed`，1440×900 与 390×900 页面级截图、横向滚动、图注换行和夜间主题对比仍未验收，不能标记为通过。

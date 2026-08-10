@@ -2,16 +2,16 @@
   <title id="title">醉酒类警情处置流程</title>
   <desc id="desc">从醉酒人员风险识别开始，经双警沟通控制、医疗或协同处置，最终完成记录交接的四步流程。</desc>
   <defs>
-    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.p{fill:#fff;stroke:#b8cedd;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+    <style>.t{font-family:"Microsoft YaHei","PingFang SC",sans-serif;fill:#18354c}.light{fill:#fff}.dark{fill:#18354c}.h{font-size:26px;font-weight:700}.s{font-size:17px;font-weight:700}.b{font-size:14px}.p{fill:#fff;stroke:#b8cedd;stroke-width:1.5}.ol{stroke:#18354c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.mobile{display:none}@media (max-width:500px){.mobile{display:block}}</style>
     <marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0l8 4-8 4z" fill="#2c6e9e"/></marker>
   </defs>
   <rect width="760" height="520" rx="24" fill="#f6fafc"/>
   <rect x="24" y="22" width="712" height="58" rx="14" fill="#163f60"/>
-  <text x="48" y="59" class="t h" fill="#fff">醉酒类警情｜四步处置流程</text>
+  <text x="48" y="59" class="t h light">醉酒类警情｜四步处置流程</text>
   <text x="48" y="104" class="t b">先辨风险、再稳现场；医疗优先与完整记录贯穿全过程</text>
 
   <g transform="translate(28 132)" aria-label="第一步风险识别">
-    <rect width="160" height="300" rx="16" class="p"/><circle cx="28" cy="28" r="18" fill="#bf4a45"/><text x="23" y="34" class="t s" fill="#fff">1</text>
+    <rect width="160" height="300" rx="16" class="p"/><circle cx="28" cy="28" r="18" fill="#bf4a45"/><text x="23" y="34" class="t s light">1</text>
     <text x="54" y="34" class="t s">风险识别</text>
     <circle cx="82" cy="89" r="24" fill="#efc5a4" class="ol"/><path d="M68 116l35 9-18 80-40-10z" fill="#d98b2b" class="ol"/>
     <path d="M55 141l-33 39M96 146l29 33M61 200l-27 50M82 205l28 48" fill="none" class="ol"/>
@@ -21,7 +21,7 @@
   <path d="M194 282h26" stroke="#2c6e9e" stroke-width="4" marker-end="url(#a)"/>
 
   <g transform="translate(224 132)" aria-label="第二步沟通控制">
-    <rect width="160" height="300" rx="16" class="p"/><circle cx="28" cy="28" r="18" fill="#2c6e9e"/><text x="23" y="34" class="t s" fill="#fff">2</text>
+    <rect width="160" height="300" rx="16" class="p"/><circle cx="28" cy="28" r="18" fill="#2c6e9e"/><text x="23" y="34" class="t s light">2</text>
     <text x="54" y="34" class="t s">沟通控制</text>
     <circle cx="48" cy="97" r="20" fill="#efc5a4" class="ol"/><path d="M25 127q23-20 46 0l2 71H23z" fill="#2c6e9e" class="ol"/>
     <circle cx="116" cy="103" r="20" fill="#efc5a4" class="ol"/><path d="M95 132q21-19 42 0l4 68H91z" fill="#d98b2b" class="ol"/>
@@ -32,7 +32,7 @@
   <path d="M390 282h26" stroke="#2c6e9e" stroke-width="4" marker-end="url(#a)"/>
 
   <g transform="translate(420 132)" aria-label="第三步协同处置">
-    <rect width="160" height="300" rx="16" class="p"/><circle cx="28" cy="28" r="18" fill="#2f7d73"/><text x="23" y="34" class="t s" fill="#fff">3</text>
+    <rect width="160" height="300" rx="16" class="p"/><circle cx="28" cy="28" r="18" fill="#2f7d73"/><text x="23" y="34" class="t s light">3</text>
     <text x="54" y="34" class="t s">协同处置</text>
     <rect x="28" y="83" width="104" height="74" rx="12" fill="#e9f2f7" class="ol"/>
     <path d="M47 83V66h39v17M80 96v48M56 120h48" stroke="#bf4a45" stroke-width="8"/>
@@ -43,7 +43,7 @@
   <path d="M586 282h26" stroke="#2c6e9e" stroke-width="4" marker-end="url(#a)"/>
 
   <g transform="translate(616 132)" aria-label="第四步记录交接">
-    <rect width="116" height="300" rx="16" class="p"/><circle cx="27" cy="28" r="18" fill="#d98b2b"/><text x="22" y="34" class="t s" fill="#fff">4</text>
+    <rect width="116" height="300" rx="16" class="p"/><circle cx="27" cy="28" r="18" fill="#d98b2b"/><text x="22" y="34" class="t s dark">4</text>
     <text x="18" y="66" class="t s">记录交接</text>
     <rect x="24" y="89" width="72" height="112" rx="8" fill="#fff" class="ol"/><path d="M42 82h36v20H42z" fill="#d98b2b" class="ol"/>
     <path d="M38 122l8 8 14-18M38 153l8 8 14-18M38 181h40" fill="none" stroke="#2f7d73" stroke-width="4"/>
@@ -51,4 +51,17 @@
   </g>
   <rect x="28" y="452" width="704" height="44" rx="12" fill="#f8e8d3"/>
   <text x="48" y="480" class="t s">红线：不将醉酒等同免责　不拖延明显医疗风险　不遗漏约束观察记录</text>
+  <g class="mobile" aria-label="移动端醉酒警情四步流程">
+    <rect width="760" height="520" rx="24" fill="#f6fafc"/>
+    <rect x="24" y="22" width="712" height="66" rx="14" fill="#163f60"/>
+    <text x="48" y="65" class="t light" font-size="30" font-weight="700">醉酒类警情｜四步处置</text>
+    <g transform="translate(28 112)">
+      <rect width="336" height="154" rx="16" class="p"/><circle cx="42" cy="42" r="27" fill="#bf4a45"/><text x="34" y="51" class="t light" font-size="27" font-weight="700">1</text><text x="84" y="47" class="t" font-size="28" font-weight="700">辨风险</text><text x="28" y="94" class="t" font-size="25">意识 · 暴力 · 自伤</text><text x="28" y="128" class="t" font-size="25">呕吐 · 环境危险</text>
+      <rect x="368" width="336" height="154" rx="16" class="p"/><circle cx="410" cy="42" r="27" fill="#2c6e9e"/><text x="402" y="51" class="t light" font-size="27" font-weight="700">2</text><text x="452" y="47" class="t" font-size="28" font-weight="700">稳现场</text><text x="396" y="94" class="t" font-size="25">双警协同 · 保持距离</text><text x="396" y="128" class="t" font-size="25">降刺激 · 控危险物</text>
+      <rect y="178" width="336" height="154" rx="16" class="p"/><circle cx="42" cy="220" r="27" fill="#2f7d73"/><text x="34" y="229" class="t light" font-size="27" font-weight="700">3</text><text x="84" y="225" class="t" font-size="28" font-weight="700">做协同</text><text x="28" y="272" class="t" font-size="25">异常先救治 · 120联动</text><text x="28" y="306" class="t" font-size="25">必要约束 · 持续观察</text>
+      <rect x="368" y="178" width="336" height="154" rx="16" class="p"/><circle cx="410" cy="220" r="27" fill="#d98b2b"/><text x="402" y="229" class="t dark" font-size="27" font-weight="700">4</text><text x="452" y="225" class="t" font-size="28" font-weight="700">记交接</text><text x="396" y="272" class="t" font-size="25">时间 · 行为 · 措施</text><text x="396" y="306" class="t" font-size="25">去向 · 人员 · 结果</text>
+    </g>
+    <rect x="28" y="464" width="704" height="38" rx="10" fill="#f8e8d3"/>
+    <text x="48" y="491" class="t" font-size="25" font-weight="700">医疗风险优先　全程持续记录</text>
+  </g>
 </svg>
