@@ -35,3 +35,5 @@ jobs:
         run: python tools/check_site_links.py
       - name: Check public source index
         run: python tools/public_source_index.py check
+      - name: Check learning-page image optimization
+        run: python tools/check_image_optimization.py --require-complete

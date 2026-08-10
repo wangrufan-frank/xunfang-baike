@@ -1,3 +1,4 @@
+from collections import Counter
 import json
 import re
 import shutil
@@ -582,6 +583,50 @@ class ImageOptimizationPlanTests(unittest.TestCase):
 
     def test_completed_assets_match_runtime(self):
         self.assertEqual([], validate_runtime(ROOT))
+
+    def test_sitewide_image_optimization_is_complete(self):
+        self.assertEqual([], validate_runtime(ROOT, require_complete=True))
+
+    def test_ci_runs_image_optimization_check(self):
+        workflow = (ROOT / ".github/workflows/validate.yml").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn(
+            "python tools/check_image_optimization.py --require-complete",
+            workflow,
+        )
+
+    def test_august_sitewide_update_matches_image_optimization_ledger(self):
+        plan = json.loads(
+            (ROOT / "data/image-optimization-plan.json").read_text(encoding="utf-8")
+        )
+        updates = json.loads(
+            (ROOT / "data/updates.json").read_text(encoding="utf-8")
+        )["updates"]
+        entries = [
+            update
+            for update in updates
+            if update.get("kind") == "sitewide-learning-page-image-optimization"
+        ]
+        self.assertEqual(1, len(entries))
+
+        pages = plan["pages"]
+        decisions = Counter(page["decision"] for page in pages)
+        modules = Counter(page["module"] for page in pages)
+        expected = {
+            "learning_pages": 93,
+            "modules": dict(sorted(modules.items())),
+            "decisions": {
+                decision: decisions[decision]
+                for decision in ("add", "replace", "keep", "no-image")
+            },
+            "completed_assets": sum(
+                asset["status"] == "complete"
+                for page in pages
+                for asset in page["assets"]
+            ),
+        }
+        self.assertEqual(expected, entries[0].get("metrics"))
 
     def test_equipment_image_optimization_is_complete(self):
         self.assertEqual(
