@@ -1199,7 +1199,16 @@
           "public_sources": [
             "https://www.huzhong.gov.cn/huzhong/c100382/202512/c13_326462.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/催泪喷射器实物图.jpg",
+              "alt": "催泪喷射器实物",
+              "caption": "催泪喷射器实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://www.jskelin.cn/Mobile/UploadFiles/FCK/2020-07/6373034509860937506881838.jpg_280.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiuxiaojian-gailan.html",
             "fagui/jingxie-shiyong-chengxu.html"
@@ -1220,7 +1229,16 @@
             "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html",
             "https://jiuquan.chinagscourt.gov.cn/Show/99694"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/手铐实物图.jpg",
+              "alt": "手铐实物",
+              "caption": "手铐实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "http://news.sznews.com/pic/2020-12/01/4feeacf3-13dd-4e8e-9b16-20e75242abb4.png",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/jiuxiaojian-gailan.html",
             "xunlian/yidong-yanhu-daili.html",
@@ -1242,7 +1260,16 @@
           "public_sources": [
             "https://www.jcgov.gov.cn/dtxx/bmdt/202006/t20200619_934388.shtml"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/对讲电台实物图.jpg",
+              "alt": "对讲电台（对讲机）实物",
+              "caption": "对讲电台（对讲机）实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "http://nwzimg.wezhan.cn/contents/sitefiles2028/10140535/images/6681833.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/zhifa-jiuyi.html",
             "zhuangbei/duijiang-diantai.html"
@@ -1262,7 +1289,16 @@
           "public_sources": [
             "https://jyglj.guizhou.gov.cn/tr/dwjs/202404/t20240410_84188300.html"
           ],
-          "images": [],
+          "images": [
+            {
+              "path": "img/强光手电实物图.jpg",
+              "alt": "强光手电实物",
+              "caption": "强光手电实物（图源：公开网络素材，仅供学习参考）",
+              "source": "公开网络素材（Bing 图片搜索）",
+              "source_url": "https://www.superfire.cn/upfiles/ad18342e792a6776b.jpg",
+              "license": "fair-use 学习参考"
+            }
+          ],
           "related_pages": [
             "zhuangbei/qiangguang-shoudian.html",
             "xunlian/geren-fanghu-anquan.html"
