@@ -40,9 +40,23 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIn('class="monthly-hero-grid"', script)
         self.assertIn('class="monthly-current"', script)
         self.assertIn('class="monthly-archive"', script)
-        self.assertIn("getArchiveEntries(monthlyData, 3)", script)
+        self.assertIn("renderMonthlyHero(monthlyData, document)", script)
         self.assertIn("var(--police-blue-deep)", CSS)
         self.assertIn(".monthly-archive", CSS)
+        archive_text = re.search(
+            r'\.monthly-archive-heading,\s*\.monthly-archive-item,\s*'
+            r'\.monthly-archive-all\s*\{([^}]+)\}',
+            CSS,
+        )
+        archive_muted = re.search(
+            r'\.monthly-archive-heading span,\s*\.monthly-archive-item span,\s*'
+            r'\.monthly-archive-empty\s*\{([^}]+)\}',
+            CSS,
+        )
+        self.assertIsNotNone(archive_text)
+        self.assertIsNotNone(archive_muted)
+        self.assertIn("color: var(--nav-text);", archive_text.group(1))
+        self.assertIn("color: var(--text-secondary);", archive_muted.group(1))
 
     def test_module_card_accents_use_one_brand_border(self):
         accent_rules = re.findall(r'\.module-card\.accent-[^{]+\{([^}]+)\}', CSS)

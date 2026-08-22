@@ -760,7 +760,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 .monthly-archive-heading,
 .monthly-archive-item,
 .monthly-archive-all {
-  color: #fff;
+  color: var(--nav-text);
 }
 
 .monthly-archive-heading {
@@ -773,7 +773,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 .monthly-archive-heading span,
 .monthly-archive-item span,
 .monthly-archive-empty {
-  color: #bbb;
+  color: var(--text-secondary);
   font-size: 12px;
 }
 
