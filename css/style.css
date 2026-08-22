@@ -814,7 +814,8 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 .monthly-archive-heading span,
 .monthly-archive-item span,
 .monthly-archive-empty {
-  color: var(--text-secondary);
+  color: var(--nav-text);
+  opacity: .72;
   font-size: 12px;
 }
 
@@ -1434,7 +1435,8 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 
 /* === 三级文章公共结构 === */
 .article-summary { max-width: 48rem; color: var(--text-secondary); line-height: 1.75; }
-.article-group { scroll-margin-top: 6rem; }
+.article-group,
+.legal-article { scroll-margin-top: 6rem; }
 .content-section + .content-section { margin-top: 2rem; }
 .source-list, .related-links { margin-top: 2rem; padding: 1.25rem; border-radius: 14px; background: var(--card-bg); }
 .article-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }

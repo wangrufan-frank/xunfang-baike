@@ -56,7 +56,8 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIsNotNone(archive_text)
         self.assertIsNotNone(archive_muted)
         self.assertIn("color: var(--nav-text);", archive_text.group(1))
-        self.assertIn("color: var(--text-secondary);", archive_muted.group(1))
+        self.assertIn("color: var(--nav-text);", archive_muted.group(1))
+        self.assertIn("opacity: .72;", archive_muted.group(1))
 
     def test_home_priority_cards_are_theme_driven_and_responsive(self):
         for selector in (
@@ -77,6 +78,7 @@ class BrandStyleTests(unittest.TestCase):
             self.assertIn(selector, CSS)
         self.assertIn('var(--amber)', CSS)
         self.assertIn('var(--police-blue)', CSS)
+        self.assertRegex(CSS, r'\.article-group,\s*\.legal-article\s*\{\s*scroll-margin-top: 6rem;')
 
     def test_main_script_enhances_article_and_legal_toc_links(self):
         script = (ROOT / "js" / "main.js").read_text(encoding="utf-8")
