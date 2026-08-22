@@ -1,6 +1,7 @@
 // js/nav.js
 (function() {
   var MODULES = [
+    { name: '首页', path: 'index.html', emoji: '🏠' },
     { name: '更新记录', path: 'changelog.html', emoji: '📝', featured: true },
     { name: '警情处置', path: 'jingqing/index.html', emoji: '🚨' },
     { name: '勤务须知', path: 'qinwu/index.html', emoji: '📋' },

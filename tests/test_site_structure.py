@@ -193,6 +193,13 @@ class HostingConfigTests(unittest.TestCase):
 
 
 class NavigationStructureTests(unittest.TestCase):
+    def test_navigation_starts_with_direct_home_link(self):
+        nav = (ROOT / "js" / "nav.js").read_text(encoding="utf-8")
+        home = "{ name: '首页', path: 'index.html', emoji: '🏠' }"
+        self.assertIn(home, nav)
+        self.assertLess(nav.index(home), nav.index("{ name: '更新记录'"))
+        self.assertIn("if (moduleDir === 'index.html')", nav)
+
     def test_monthly_issue_keeps_july_archive_and_selects_august(self):
         data = (ROOT / "meiyueyixue" / "data.js").read_text(encoding="utf-8")
         current = (ROOT / "meiyueyixue" / "index.html").read_text(encoding="utf-8")
