@@ -67,6 +67,7 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIn('@media (min-width: 1520px)', CSS)
         self.assertIn('var(--police-blue)', CSS)
         self.assertIn('var(--amber)', CSS)
+        self.assertIn('.home-priority-card strong { color: var(--text); }', CSS)
 
     def test_module_card_accents_use_one_brand_border(self):
         accent_rules = re.findall(r'\.module-card\.accent-[^{]+\{([^}]+)\}', CSS)

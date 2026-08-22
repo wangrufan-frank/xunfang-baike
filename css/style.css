@@ -267,7 +267,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 
 .home-priority-card--internal { border-top-color: var(--amber); }
 .home-priority-card--fitness { border-top-color: var(--accent-blue); }
-.home-priority-card strong { color: var(--police-blue-deep); }
+.home-priority-card strong { color: var(--text); }
 .home-priority-card > span:not(.priority-kicker) { color: var(--text-muted); }
 .home-priority-card em { color: var(--police-blue); font-style: normal; font-weight: 700; }
 .home-priority-card:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
