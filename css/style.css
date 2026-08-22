@@ -723,25 +723,78 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   padding: 0 16px;
 }
 
-.monthly-hero-inner {
+.monthly-hero-grid {
   background: linear-gradient(135deg, var(--police-blue-deep) 0%, var(--police-blue) 100%);
   border-radius: var(--radius);
-  padding: 32px 36px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
   position: relative;
   overflow: hidden;
 }
 
-.monthly-hero-inner::before {
+.monthly-hero-grid::before {
   content: '';
   position: absolute;
   top: 0; right: 0;
   width: 120px; height: 120px;
   background: radial-gradient(circle, rgba(212,168,67,0.15) 0%, transparent 70%);
   pointer-events: none;
+}
+
+.monthly-current {
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.monthly-archive {
+  position: relative;
+  z-index: 1;
+  padding: 28px 24px;
+  background: rgba(255,255,255,.06);
+  border-left: 1px solid rgba(255,255,255,.18);
+}
+
+.monthly-archive-heading,
+.monthly-archive-item,
+.monthly-archive-all {
+  color: #fff;
+}
+
+.monthly-archive-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.monthly-archive-heading span,
+.monthly-archive-item span,
+.monthly-archive-empty {
+  color: #bbb;
+  font-size: 12px;
+}
+
+.monthly-archive-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255,255,255,.12);
+  text-decoration: none;
+}
+
+.monthly-archive-item:hover,
+.monthly-archive-all:hover {
+  color: var(--amber);
+  text-decoration: none;
+}
+
+.monthly-archive-all {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13px;
 }
 
 .monthly-hero .hero-label {
@@ -784,8 +837,18 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   text-decoration: none;
 }
 
+@media (max-width: 700px) {
+  .monthly-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .monthly-archive {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.18);
+  }
+}
+
 @media (max-width: 600px) {
-  .monthly-hero-inner {
+  .monthly-current {
     padding: 24px 20px;
   }
   .monthly-hero .hero-theme {

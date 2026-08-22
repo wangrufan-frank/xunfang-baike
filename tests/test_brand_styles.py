@@ -35,6 +35,15 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIn('border-left: 4px solid var(--police-blue);', CSS)
         self.assertIn('box-shadow: var(--shadow);', CSS)
 
+    def test_monthly_home_panel_uses_shared_theme_tokens(self):
+        script = (ROOT / "js" / "monthly-hero.js").read_text(encoding="utf-8")
+        self.assertIn('class="monthly-hero-grid"', script)
+        self.assertIn('class="monthly-current"', script)
+        self.assertIn('class="monthly-archive"', script)
+        self.assertIn("getArchiveEntries(monthlyData, 3)", script)
+        self.assertIn("var(--police-blue-deep)", CSS)
+        self.assertIn(".monthly-archive", CSS)
+
     def test_module_card_accents_use_one_brand_border(self):
         accent_rules = re.findall(r'\.module-card\.accent-[^{]+\{([^}]+)\}', CSS)
         self.assertGreaterEqual(len(accent_rules), 7)
