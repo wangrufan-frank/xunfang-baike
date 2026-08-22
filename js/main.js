@@ -110,7 +110,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // 3. TOC click handler: expand collapsed parent <details> then scroll
-  var tocLinks = document.querySelectorAll('.article-toc a[href^="#"]');
+  var tocLinks = document.querySelectorAll(
+    '.article-toc a[href^="#"], .legal-toc a[href^="#"]'
+  );
 
   tocLinks.forEach(function(link) {
     link.addEventListener('click', function(e) {

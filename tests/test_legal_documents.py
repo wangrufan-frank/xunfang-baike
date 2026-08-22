@@ -284,7 +284,31 @@ class GeneratedPageTests(unittest.TestCase):
                 self.assertIn('class="article-summary"', html)
                 self.assertIn('class="breadcrumb"', html)
                 self.assertIn('class="page-nav"', html)
+                self.assertIn('js/main.js', html)
                 self.assertIn('js/search.js', html)
+
+    def test_generated_page_uses_collapsible_chapter_toc_and_body(self):
+        doc = next(d for d in self.documents if d["id"] == "renmin-jingcha-fa")
+        html = MODULE._build_page(doc, [d["id"] for d in self.documents])
+        self.assertIn('<details class="legal-toc-chapter">', html)
+        self.assertIn('<summary class="legal-toc-chapter-heading">', html)
+        self.assertIn('<details class="content-section chapter-block">', html)
+        self.assertIn('<summary class="chapter-heading">', html)
+        self.assertNotIn('<li class="toc-chapter"><strong>', html)
+
+    def test_street_note_renders_badge_phrase_and_derived_quick_link(self):
+        doc = next(d for d in self.documents if d["id"] == "renmin-jingcha-fa")
+        html = MODULE._build_page(doc, [d["id"] for d in self.documents])
+        self.assertIn('<span class="street-common-badge">街面常用</span>', html)
+        self.assertIn('<span class="street-note">盘问检查条件</span>', html)
+        self.assertIn('<a href="#article-9">第九条 · 盘问检查条件</a>', html)
+
+    def test_document_without_chapters_has_no_empty_accordion_or_quick_nav(self):
+        doc = next(d for d in self.documents if d["id"] == "xianchang-zhizhi-guicheng")
+        html = MODULE._build_page(doc, [d["id"] for d in self.documents])
+        self.assertNotIn('class="legal-toc-chapter"', html)
+        self.assertNotIn('class="xunfang-quick-nav"', html)
+        self.assertIn("法规正文待补充", html)
 
     def test_no_empty_documents_without_chapters_produce_empty_text(self):
         """Skeleton documents produce proper skeleton pages with placeholder."""

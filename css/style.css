@@ -1973,8 +1973,71 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   margin-top: 0;
 }
 
+/* --- 法律章节折叠与街面常用标记 --- */
+.legal-toc-chapter,
+.chapter-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+}
+
+.legal-toc-chapter + .legal-toc-chapter,
+.chapter-block + .chapter-block {
+  margin-top: 12px;
+}
+
+.legal-toc-chapter-heading,
+.chapter-heading {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.legal-toc-chapter-heading {
+  padding: 12px 14px;
+}
+
+.chapter-heading {
+  padding: 18px 20px;
+}
+
+.legal-toc-chapter-heading:focus-visible,
+.chapter-heading:focus-visible {
+  outline: 3px solid var(--amber);
+  outline-offset: 3px;
+}
+
+.legal-toc-articles {
+  padding: 0 18px 14px 34px;
+}
+
+.chapter-articles {
+  padding: 0 20px 20px;
+}
+
+.street-common-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  color: var(--nav-text);
+  background: var(--police-blue);
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.street-note {
+  margin-left: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* === 打印样式 === */
 @media print {
+  details:not([open]) > *:not(summary) {
+    display: block !important;
+  }
+
   details,
   details[open],
   .learning-section,

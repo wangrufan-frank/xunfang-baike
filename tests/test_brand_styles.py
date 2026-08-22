@@ -69,6 +69,20 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIn('var(--amber)', CSS)
         self.assertIn('.home-priority-card strong { color: var(--text); }', CSS)
 
+    def test_legal_accordion_and_street_badge_use_shared_tokens(self):
+        for selector in (
+            '.legal-toc-chapter', '.legal-toc-chapter-heading',
+            '.chapter-block', '.street-common-badge', '.street-note'
+        ):
+            self.assertIn(selector, CSS)
+        self.assertIn('var(--amber)', CSS)
+        self.assertIn('var(--police-blue)', CSS)
+
+    def test_main_script_enhances_article_and_legal_toc_links(self):
+        script = (ROOT / "js" / "main.js").read_text(encoding="utf-8")
+        self.assertIn('.article-toc a[href^="#"], .legal-toc a[href^="#"]', script)
+        self.assertIn("expandAndScrollTo(target)", script)
+
     def test_module_card_accents_use_one_brand_border(self):
         accent_rules = re.findall(r'\.module-card\.accent-[^{]+\{([^}]+)\}', CSS)
         self.assertGreaterEqual(len(accent_rules), 7)

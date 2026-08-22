@@ -114,17 +114,28 @@ def _version_card(doc):
   </section>'''
 
 
+def _street_articles(doc):
+    return [
+        art
+        for chapter in doc.get('chapters', [])
+        for art in chapter.get('articles', [])
+        if art.get('street_note')
+    ]
+
+
 def _xunfang_nav(doc):
     """Render quick-nav to articles relevant to xunfang (patrol duty)."""
-    article_nums = doc.get('xunfang_articles', [])
-    if not article_nums:
+    articles = _street_articles(doc)
+    if not articles:
         return ''
     items = []
-    for num in article_nums:
-        # Find the article label
-        label = f'第{num}条'
+    for art in articles:
+        num = art.get('number')
+        label = _safe_str(art.get('label'))
+        note = _safe_str(art.get('street_note'))
         items.append(
-            f'      <li><a href="#article-{num}">{label}</a></li>'
+            f'      <li><a href="#article-{num}">'
+            f'{escape(label)} · {escape(note)}</a></li>'
         )
     return f'''  <section class="xunfang-quick-nav">
     <h2>巡防常用条款</h2>
@@ -138,26 +149,31 @@ def _toc(doc):
     chapters = doc.get('chapters', [])
     if not chapters:
         return ''
-    items = []
+    chapters_html = []
     for ch in chapters:
         ch_num = _safe_str(ch.get('number'))
         ch_title = _safe_str(ch.get('title'))
-        items.append(
-            f'<li class="toc-chapter"><strong>{escape(ch_num)} {escape(ch_title)}</strong>'
-        )
+        article_items = []
         for art in ch.get('articles', []):
             art_num = art.get('number')
             art_label = _safe_str(art.get('label'))
-            items.append(
-                f'<ul><li class="toc-article">'
+            article_items.append(
+                f'      <li class="toc-article">'
                 f'<a href="#article-{art_num}">{escape(art_label)}</a>'
-                f'</li></ul>'
+                f'</li>'
             )
-        items.append('</li>')
+        chapters_html.append(
+            f'    <details class="legal-toc-chapter">\n'
+            f'      <summary class="legal-toc-chapter-heading">'
+            f'{escape(ch_num)} {escape(ch_title)}</summary>\n'
+            f'      <ul class="legal-toc-articles">\n'
+            f'{chr(10).join(article_items)}\n'
+            f'      </ul>\n'
+            f'    </details>'
+        )
     return f'''  <section class="legal-toc">
     <h2>目录</h2>
-    <ol class="legal-toc-list">
-      {''.join(f'      {item}\n' for item in items)}    </ol>
+{chr(10).join(chapters_html)}
   </section>'''
 
 
@@ -165,13 +181,20 @@ def _article_html(art):
     """Render a single article as an HTML block with a stable anchor."""
     num = art.get('number')
     label = _safe_str(art.get('label'))
+    note = _safe_str(art.get('street_note'))
+    note_html = ''
+    if note:
+        note_html = (
+            ' <span class="street-common-badge">街面常用</span>'
+            f' <span class="street-note">{escape(note)}</span>'
+        )
     paragraphs = art.get('paragraphs', [])
     paras_html = '\n'.join(
         f'      <p>{escape(p)}</p>' for p in paragraphs
     )
     return (
         f'    <div class="legal-article" id="article-{num}">\n'
-        f'      <h3 class="article-heading">{escape(label)}</h3>\n'
+        f'      <h3 class="article-heading">{escape(label)}{note_html}</h3>\n'
         f'{paras_html}\n'
         f'    </div>'
     )
@@ -192,10 +215,13 @@ def _full_text(doc):
         articles = ch.get('articles', [])
         arts_html = '\n'.join(_article_html(a) for a in articles)
         sections.append(
-            f'  <section class="content-section chapter-block">\n'
-            f'    <h2 class="chapter-heading">{escape(ch_num)} {escape(ch_title)}</h2>\n'
+            f'  <details class="content-section chapter-block">\n'
+            f'    <summary class="chapter-heading">'
+            f'{escape(ch_num)} {escape(ch_title)}</summary>\n'
+            f'    <div class="chapter-articles">\n'
             f'{arts_html}\n'
-            f'  </section>'
+            f'    </div>\n'
+            f'  </details>'
         )
     return '\n'.join(sections)
 
