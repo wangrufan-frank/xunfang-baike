@@ -14,6 +14,7 @@ from argparse import ArgumentParser
 from html import escape
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -466,6 +467,13 @@ def _validate_document(doc, index):
                 errors.append(
                     f'{prefix}: article {num} ({label}) has no paragraphs'
                 )
+            street_note = art.get('street_note')
+            if street_note is not None:
+                if (not isinstance(street_note, str)
+                        or not re.fullmatch(r'[\u4e00-\u9fff]{4,6}', street_note)):
+                    errors.append(
+                        f'{prefix}: article {num} street_note must be 4-6 Chinese characters'
+                    )
 
     # Check duplicates
     seen = set()

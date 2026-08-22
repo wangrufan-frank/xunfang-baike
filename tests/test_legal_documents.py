@@ -12,6 +12,46 @@ from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[1]
 
+EXPECTED_STREET_NOTES = {
+    "jingxie-wuqi-tiaoli": {
+        2: "强制手段层级", 3: "警械武器定义", 4: "使用基本原则",
+        5: "依法使用边界", 6: "无关人员避让", 7: "驱逐警械条件",
+        8: "约束警械条件", 9: "武器使用条件", 10: "武器禁用情形",
+        11: "停止使用武器", 12: "伤亡现场处置", 13: "武器使用报告",
+        14: "违法使用责任", 15: "无辜损害补偿",
+    },
+    "renmin-jingcha-fa": {
+        5: "执行职务保护", 6: "公安法定职责", 7: "行政强制处罚",
+        8: "强行带离措施", 9: "盘问检查条件", 10: "紧急使用武器",
+        11: "警械使用授权", 12: "侦查强制措施", 13: "紧急优先通行",
+        14: "保护约束措施", 17: "突发现场管制", 19: "非工作时履职",
+        20: "文明执勤要求", 21: "危难立即救助", 22: "执法禁止行为",
+        23: "着装证件要求", 33: "违法指令拒绝", 35: "阻碍执行职务",
+        45: "治安案件回避", 50: "侵权损害赔偿",
+    },
+    "jumin-shenfenzheng-fa": {
+        6: "身份信息保密", 13: "身份证明权利", 15: "证件查验条件",
+        16: "禁止非法扣证", 20: "查验违法责任",
+    },
+    "xingzheng-anji-chengxu-guiding": {
+        52: "口头传唤程序", 53: "询问查证要求",
+        54: "证据收集要求", 55: "全程记录要求",
+    },
+    "zhian-guanli-chufa-fa": {
+        9: "治安调解条件", 26: "公共秩序扰乱", 44: "活动安全疏散",
+        45: "场所安全责任", 50: "人身侵害行为", 51: "殴打伤害处罚",
+        61: "阻碍执行职务", 90: "报案立案处理", 91: "非法证据排除",
+        94: "涉案信息保密", 96: "现场传唤程序", 97: "询问查证时限",
+        98: "询问笔录要求", 99: "现场询问证人", 101: "特殊询问协助",
+        102: "人身检查采样", 103: "当场检查程序", 104: "检查笔录要求",
+        105: "涉案物品扣押", 108: "调查取证人数", 111: "处罚证据标准",
+        112: "处罚告知申辩", 119: "当场处罚条件", 120: "当场处罚程序",
+        121: "处罚救济途径", 123: "当场收缴条件", 125: "罚款票据要求",
+        131: "文明执法要求", 132: "禁止打骂侮辱", 138: "个人信息保护",
+        140: "违法执法赔偿",
+    },
+}
+
 # Load the build_legal_pages module dynamically
 SPEC = importlib.util.spec_from_file_location(
     'build_legal_pages', ROOT / 'tools' / 'build_legal_pages.py'
@@ -114,6 +154,23 @@ class LegalDocumentsSchemaTests(unittest.TestCase):
             article_count = sum(len(c.get('articles', [])) for c in ch)
             self.assertGreater(article_count, 0,
                                f'{doc["id"]}: should have articles in chapters')
+
+    def test_street_notes_match_reviewed_mapping_and_format(self):
+        actual = {}
+        for doc in self.documents:
+            notes = {
+                art["number"]: art["street_note"]
+                for ch in doc.get("chapters", [])
+                for art in ch.get("articles", [])
+                if art.get("street_note")
+            }
+            if notes:
+                actual[doc["id"]] = notes
+            self.assertNotIn("xunfang_articles", doc)
+        self.assertEqual(EXPECTED_STREET_NOTES, actual)
+        for notes in actual.values():
+            for note in notes.values():
+                self.assertRegex(note, r"^[\u4e00-\u9fff]{4,6}$")
 
 
 class ArticleNumberingTests(unittest.TestCase):
@@ -443,6 +500,21 @@ class BuildScriptExecutionTests(unittest.TestCase):
         }
         errors, total = MODULE.validate_all(bad['documents'])
         self.assertGreater(len(errors), 0, 'should catch empty paragraphs')
+
+    def test_validation_rejects_invalid_street_note(self):
+        bad = {
+            "id": "test", "title": "测试法", "document_type": "法律",
+            "authority": "测试机关", "status": "现行有效", "partial": True,
+            "chapters": [{
+                "number": "第一章", "title": "测试",
+                "articles": [{
+                    "number": 1, "label": "第一条",
+                    "street_note": "不合格。", "paragraphs": ["测试正文"]
+                }]
+            }]
+        }
+        errors, _ = MODULE.validate_all([bad])
+        self.assertTrue(any("street_note" in error for error in errors), errors)
 
 
 if __name__ == '__main__':
