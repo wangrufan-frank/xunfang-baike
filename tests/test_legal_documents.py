@@ -303,6 +303,15 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn('<span class="street-note">盘问检查条件</span>', html)
         self.assertIn('<a href="#article-9">第九条 · 盘问检查条件</a>', html)
 
+    def test_related_links_render_chinese_titles_instead_of_filename_slugs(self):
+        doc = next(d for d in self.documents if d["id"] == "renmin-jingcha-fa")
+        html = MODULE._build_page(doc, [d["id"] for d in self.documents])
+        self.assertIn(
+            '<a href="../fagui/panwen-shenfenzheng.html">盘问检查与身份证查验</a>',
+            html,
+        )
+        self.assertNotIn('>panwen-shenfenzheng</a>', html)
+
     def test_all_legal_pages_render_data_driven_learning_visuals(self):
         visual_docs = [doc for doc in self.documents if doc.get("learning_visual")]
         self.assertEqual(7, len(visual_docs))
@@ -575,6 +584,19 @@ class BuildScriptExecutionTests(unittest.TestCase):
         }
         errors, _ = MODULE.validate_all([bad])
         self.assertTrue(any("street_note" in error for error in errors), errors)
+
+    def test_validation_rejects_filename_slug_as_related_title(self):
+        bad = {
+            "id": "test", "title": "测试法", "document_type": "法律",
+            "authority": "测试机关", "status": "现行有效", "partial": True,
+            "related_pages": [{
+                "path": "fagui/panwen-shenfenzheng.html",
+                "title": "panwen-shenfenzheng",
+            }],
+            "chapters": [],
+        }
+        errors, _ = MODULE.validate_all([bad])
+        self.assertTrue(any("related_pages" in error for error in errors), errors)
 
 
 if __name__ == '__main__':

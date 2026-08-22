@@ -289,11 +289,12 @@ def _related_links(doc):
     if not related:
         return ''
     links = []
-    for path in related:
-        # Extract filename for display, use as link text if simple
-        fname = path.split('/')[-1].replace('.html', '')
-        # We need a display name — use the filename for now
-        links.append(f'      <li><a href="../{path}">{escape(fname)}</a></li>')
+    for item in related:
+        path = _safe_str(item.get('path'))
+        title = _safe_str(item.get('title'))
+        links.append(
+            f'      <li><a href="../{escape(path, quote=True)}">{escape(title)}</a></li>'
+        )
     return f'''
   <nav class="related-links" aria-label="相关内容">
     <h2>相关内容</h2>
@@ -501,6 +502,18 @@ def _validate_document(doc, index):
     if 'chapters' not in doc:
         errors.append(f'{prefix}: missing "chapters"')
         return errors
+
+    for related_index, related in enumerate(doc.get('related_pages', [])):
+        related_title = (
+            _safe_str(related.get('title')) if isinstance(related, dict) else ''
+        )
+        if (not isinstance(related, dict)
+                or not _safe_str(related.get('path'))
+                or not related_title
+                or not re.search(r'[\u4e00-\u9fff]', related_title)):
+            errors.append(
+                f'{prefix}: related_pages[{related_index}] requires path and Chinese title'
+            )
 
     chapters = doc['chapters']
     if not chapters:

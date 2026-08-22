@@ -34,8 +34,14 @@
       },
       "history": [],
       "related_pages": [
-        "fagui/jingxie-shiyong-chengxu.html",
-        "fagui/xianchang-zhizhi-guicheng.html"
+        {
+          "path": "fagui/jingxie-shiyong-chengxu.html",
+          "title": "警械使用的条件与程序"
+        },
+        {
+          "path": "fagui/xianchang-zhizhi-guicheng.html",
+          "title": "现场制止违法犯罪行为操作规程"
+        }
       ],
       "chapters": [
         {
@@ -269,9 +275,18 @@
       },
       "history": [],
       "related_pages": [
-        "fagui/xingzheng-anji-chengxu-guiding.html",
-        "jingqing/zuijiu-lei.html",
-        "qinwu/gonggong-zhixu-falv-quanli.html"
+        {
+          "path": "fagui/xingzheng-anji-chengxu-guiding.html",
+          "title": "公安机关办理行政案件程序规定"
+        },
+        {
+          "path": "jingqing/zuijiu-lei.html",
+          "title": "醉酒类警情处置基础"
+        },
+        {
+          "path": "qinwu/gonggong-zhixu-falv-quanli.html",
+          "title": "法律适用与权利保障"
+        }
       ],
       "partial": false,
       "chapters": [
@@ -1638,8 +1653,14 @@
       },
       "history": [],
       "related_pages": [
-        "fagui/panwen-shenfenzheng.html",
-        "fagui/jumin-shenfenzheng-fa.html"
+        {
+          "path": "fagui/panwen-shenfenzheng.html",
+          "title": "盘问检查与身份证查验"
+        },
+        {
+          "path": "fagui/jumin-shenfenzheng-fa.html",
+          "title": "居民身份证法"
+        }
       ],
       "partial": false,
       "chapters": [
@@ -2179,8 +2200,14 @@
       },
       "history": [],
       "related_pages": [
-        "fagui/panwen-shenfenzheng.html",
-        "fagui/renmin-jingcha-fa.html"
+        {
+          "path": "fagui/panwen-shenfenzheng.html",
+          "title": "盘问检查与身份证查验"
+        },
+        {
+          "path": "fagui/renmin-jingcha-fa.html",
+          "title": "人民警察法"
+        }
       ],
       "partial": false,
       "chapters": [
@@ -2455,8 +2482,14 @@
       },
       "history": [],
       "related_pages": [
-        "fagui/xingzheng-anji-tiaocha.html",
-        "fagui/zhian-guanli-chufa-fa.html"
+        {
+          "path": "fagui/xingzheng-anji-tiaocha.html",
+          "title": "行政案件调查取证"
+        },
+        {
+          "path": "fagui/zhian-guanli-chufa-fa.html",
+          "title": "治安管理处罚法"
+        }
       ],
       "partial": true,
       "chapters": [
@@ -2550,9 +2583,18 @@
       },
       "history": [],
       "related_pages": [
-        "fagui/jingxie-shiyong-chengxu.html",
-        "fagui/jingxie-wuqi-tiaoli.html",
-        "qinwu/gonggong-zhixu-chuzhi-yuanze.html"
+        {
+          "path": "fagui/jingxie-shiyong-chengxu.html",
+          "title": "警械使用的条件与程序"
+        },
+        {
+          "path": "fagui/jingxie-wuqi-tiaoli.html",
+          "title": "人民警察使用警械和武器条例"
+        },
+        {
+          "path": "qinwu/gonggong-zhixu-chuzhi-yuanze.html",
+          "title": "处置基本原则"
+        }
       ],
       "chapters": [],
       "partial": true
@@ -2585,7 +2627,10 @@
       },
       "history": [],
       "related_pages": [
-        "qinwu/zhuanxiang-huodong-gailan.html"
+        {
+          "path": "qinwu/zhuanxiang-huodong-gailan.html",
+          "title": "专项活动保障概述"
+        }
       ],
       "chapters": []
     }
