@@ -18,6 +18,11 @@ import re
 import sys
 from pathlib import Path
 
+try:
+    from tools import public_source_index
+except ModuleNotFoundError:
+    import public_source_index
+
 
 DEFAULT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = 'fagui'
@@ -177,6 +182,22 @@ def _toc(doc):
   </section>'''
 
 
+def _learning_visual(doc):
+    """Render the document's data-driven learning figure."""
+    visual = doc.get('learning_visual')
+    if not visual:
+        return ''
+    return f'''    <section class="content-section learning-visual-section">
+      <h2>{escape(visual['title'])}</h2>
+      <figure class="learning-figure">
+        <div class="learning-figure__media">
+          <img loading="lazy" src="{escape(visual['src'], quote=True)}" alt="{escape(visual['alt'], quote=True)}">
+        </div>
+        <figcaption>{escape(visual['caption'])}</figcaption>
+      </figure>
+    </section>'''
+
+
 def _article_html(art):
     """Render a single article as an HTML block with a stable anchor."""
     num = art.get('number')
@@ -334,7 +355,8 @@ def _page_foot():
 <script src="../js/main.js"></script>
 <script src="../js/search.js"></script>
 </body>
-</html>'''
+</html>
+'''
 
 
 def _build_page(doc, doc_order):
@@ -354,6 +376,11 @@ def _build_page(doc, doc_order):
         '',
         '<article class="article-content">',
     ]
+
+    visual = _learning_visual(doc)
+    if visual:
+        parts.append(visual)
+        parts.append('')
 
     # Quick nav for xunfang-relevant articles
     xnav = _xunfang_nav(doc)
@@ -642,9 +669,37 @@ def main(argv=None):
     output_dir = root / args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    source_pages = {}
+    source_records = {}
+    ledger_file = root / 'data' / 'public-sources.json'
+    if ledger_file.is_file():
+        try:
+            ledger = public_source_index.load_ledger(ledger_file)
+            source_pages = {
+                page['path']: page for page in ledger.get('pages', [])
+                if page.get('path')
+            }
+            source_records = {
+                source['source_id']: source for source in ledger.get('sources', [])
+                if source.get('source_id')
+            }
+        except (OSError, UnicodeError, json.JSONDecodeError) as error:
+            print(f'ERROR: cannot load {ledger_file}: {error}', file=sys.stderr)
+            return 1
+
     generated = 0
     for doc in documents:
         html = _build_page(doc, doc_order)
+        source_page = source_pages.get(f'fagui/{doc["id"]}.html')
+        if source_page:
+            try:
+                html = public_source_index.render_page(
+                    html, source_page, source_records
+                )
+            except (KeyError, ValueError) as error:
+                print(f'ERROR: cannot render public sources for {doc["id"]}: {error}',
+                      file=sys.stderr)
+                return 1
         path = output_dir / f'{doc["id"]}.html'
         _write_atomic(path, html)
         generated += 1

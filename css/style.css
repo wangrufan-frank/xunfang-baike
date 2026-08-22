@@ -765,7 +765,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 }
 
 .monthly-hero-grid {
-  background: linear-gradient(135deg, var(--police-blue-deep) 0%, var(--police-blue) 100%);
+  background: linear-gradient(135deg, var(--police-blue-deep) 0%, color-mix(in srgb, var(--police-blue) 55%, var(--police-blue-deep)) 100%);
   border-radius: var(--radius);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   display: grid;
@@ -815,7 +815,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 .monthly-archive-item span,
 .monthly-archive-empty {
   color: var(--nav-text);
-  opacity: .72;
+  opacity: 1;
   font-size: 12px;
 }
 

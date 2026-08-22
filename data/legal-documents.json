@@ -26,6 +26,12 @@
         "手铐"
       ],
       "description": "规范人民警察在执法活动中使用警械和武器的行政法规，是巡防民警日常携带和使用单警装备最直接的法律依据。",
+      "learning_visual": {
+        "title": "学习图解：警械和武器条例导读",
+        "src": "../img/learning/fagui/jingxie-wuqi-tiaoli-learning-map.svg",
+        "alt": "条例总则原则、警械使用、武器使用与法律责任结构图",
+        "caption": "警械和武器条例导读：总则原则、警械使用、武器使用、法律责任（本站原创学习图解，具体条件与程序以本页正文及所引条文为准）"
+      },
       "history": [],
       "related_pages": [
         "fagui/jingxie-shiyong-chengxu.html",
@@ -255,6 +261,12 @@
         "公共安全"
       ],
       "description": "治安管理处罚法的适用范围与常用条款要点。",
+      "learning_visual": {
+        "title": "学习图解：治安管理处罚法导读",
+        "src": "../img/learning/fagui/zhian-guanli-chufa-fa-learning-map.svg",
+        "alt": "总则原则、行为规范、处罚程序与执法监督阅读路径图",
+        "caption": "总则原则、行为规范、处罚程序与执法监督阅读路径图（本站原创学习图解，具体条件与程序以本页正文及所引条文为准）"
+      },
       "history": [],
       "related_pages": [
         "fagui/xingzheng-anji-chengxu-guiding.html",
@@ -1618,6 +1630,12 @@
         "执法权限"
       ],
       "description": "人民警察法赋予的职权、义务与执法依据。",
+      "learning_visual": {
+        "title": "学习图解：人民警察法导读",
+        "src": "../img/learning/fagui/renmin-jingcha-fa-learning-map.svg",
+        "alt": "职责职权、组织管理、警务保障与执法监督结构图",
+        "caption": "职责职权、组织管理、警务保障与执法监督结构图（本站原创学习图解，具体条件与程序以本页正文及所引条文为准）"
+      },
       "history": [],
       "related_pages": [
         "fagui/panwen-shenfenzheng.html",
@@ -2153,6 +2171,12 @@
         "警察职权"
       ],
       "description": "居民身份证法中查验居民身份证的法定情形。",
+      "learning_visual": {
+        "title": "学习图解：居民身份证法导读",
+        "src": "../img/learning/fagui/jumin-shenfenzheng-fa-learning-map.svg",
+        "alt": "申领换领、使用查验、安全保护与法律责任结构图",
+        "caption": "申领换领、使用查验、安全保护与法律责任结构图（本站原创学习图解，具体条件与程序以本页正文及所引条文为准）"
+      },
       "history": [],
       "related_pages": [
         "fagui/panwen-shenfenzheng.html",
@@ -2423,6 +2447,12 @@
         "证据"
       ],
       "description": "公安机关办理行政案件的程序规定要点。",
+      "learning_visual": {
+        "title": "学习图解：行政案件程序规定节选",
+        "src": "../img/learning/fagui/xingzheng-anji-chengxu-guiding-learning-map.svg",
+        "alt": "第五十二至第五十五条传唤、个别询问、证据收集核实与全过程记录归档学习图",
+        "caption": "本页第五十二至第五十五条：传唤、个别询问、证据收集核实、全过程记录归档（本站原创学习图解，具体条件与程序以本页正文及所引条文为准）"
+      },
       "history": [],
       "related_pages": [
         "fagui/xingzheng-anji-tiaocha.html",
@@ -2512,6 +2542,12 @@
         "武器制止"
       ],
       "description": "现场制止违法犯罪行为的操作规程与武力层级。",
+      "learning_visual": {
+        "title": "学习图解：现场制止违法行为",
+        "src": "../img/learning/fagui/xianchang-zhizhi-guicheng-learning-map.svg",
+        "alt": "持续风险评估下选择口头制止、警告或升级、紧急例外以及停止并救助关系图",
+        "caption": "现场制止措施选择：依据风险动态选择措施、保留紧急例外，风险消除后停止使用并及时救助（本站原创学习图解，具体条件与程序以本页正文及所引条文为准）"
+      },
       "history": [],
       "related_pages": [
         "fagui/jingxie-shiyong-chengxu.html",
@@ -2541,6 +2577,12 @@
         "勤务规范"
       ],
       "description": "日常巡逻与大型活动安保相关的其他规范汇编。",
+      "learning_visual": {
+        "title": "学习图解：相关规范页面学习导航",
+        "src": "../img/learning/fagui/qita-xiangguan-guifan-learning-map.svg",
+        "alt": "法规正文待补充页面的状态、主题范围、来源核验与不作程序推断学习导航图",
+        "caption": "本页法规正文待补充：图解仅标示页面状态、主题范围、来源核验与待补充提示，不推断具体执法流程（本站原创学习图解）"
+      },
       "history": [],
       "related_pages": [
         "qinwu/zhuanxiang-huodong-gailan.html"

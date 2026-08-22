@@ -303,6 +303,19 @@ class GeneratedPageTests(unittest.TestCase):
         self.assertIn('<span class="street-note">盘问检查条件</span>', html)
         self.assertIn('<a href="#article-9">第九条 · 盘问检查条件</a>', html)
 
+    def test_all_legal_pages_render_data_driven_learning_visuals(self):
+        visual_docs = [doc for doc in self.documents if doc.get("learning_visual")]
+        self.assertEqual(7, len(visual_docs))
+        for doc in visual_docs:
+            visual = doc["learning_visual"]
+            html = MODULE._build_page(doc, [d["id"] for d in self.documents])
+            with self.subTest(doc_id=doc["id"]):
+                self.assertEqual({"title", "src", "alt", "caption"}, set(visual))
+                self.assertIn('class="content-section learning-visual-section"', html)
+                self.assertIn(f'src="{visual["src"]}"', html)
+                self.assertIn(f'alt="{visual["alt"]}"', html)
+                self.assertIn(f'<figcaption>{visual["caption"]}</figcaption>', html)
+
     def test_document_without_chapters_has_no_empty_accordion_or_quick_nav(self):
         doc = next(d for d in self.documents if d["id"] == "xianchang-zhizhi-guicheng")
         html = MODULE._build_page(doc, [d["id"] for d in self.documents])
@@ -434,6 +447,29 @@ class BuildScriptExecutionTests(unittest.TestCase):
             html_path = self.tmp / f'{doc["id"]}.html'
             self.assertTrue(html_path.is_file(),
                             f'{html_path} was not created')
+
+    def test_real_root_build_renders_formal_public_source_ledger(self):
+        rc = MODULE.main(['--root', str(ROOT), '--output-dir', str(self.tmp)])
+        self.assertEqual(0, rc)
+        html = (self.tmp / 'qita-xiangguan-guifan.html').read_text(encoding='utf-8')
+        self.assertIn('id="public-source-official-police-firearm-rules"', html)
+        self.assertIn(
+            'id="public-source-official-fuxin-police-patrol-equipment-standards"',
+            html,
+        )
+        self.assertNotIn('id="public-source-qita-xiangguan-guifan"', html)
+
+    def test_temporary_root_without_public_source_ledger_uses_fallback(self):
+        root = self.tmp / 'root'
+        (root / 'data').mkdir(parents=True)
+        (root / 'data' / 'legal-documents.json').write_text(
+            json.dumps(_load_data(), ensure_ascii=False),
+            encoding='utf-8',
+        )
+        rc = MODULE.main(['--root', str(root)])
+        self.assertEqual(0, rc)
+        html = (root / 'fagui' / 'renmin-jingcha-fa.html').read_text(encoding='utf-8')
+        self.assertIn('id="public-source-renmin-jingcha-fa"', html)
 
     def test_validation_catches_bad_data(self):
         """Validation should catch document with duplicate article numbers."""
