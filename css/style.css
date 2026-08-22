@@ -242,6 +242,47 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 @media (max-width: 900px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
 
+.home-priority-links {
+  max-width: var(--max-width);
+  margin: 0 auto 24px;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home-priority-card {
+  display: grid;
+  gap: 8px;
+  padding: 18px 16px;
+  overflow: hidden;
+  color: var(--text);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--police-blue);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+.home-priority-card--internal { border-top-color: var(--amber); }
+.home-priority-card--fitness { border-top-color: var(--accent-blue); }
+.home-priority-card strong { color: var(--police-blue-deep); }
+.home-priority-card > span:not(.priority-kicker) { color: var(--text-muted); }
+.home-priority-card em { color: var(--police-blue); font-style: normal; font-weight: 700; }
+.home-priority-card:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+
+@media (min-width: 1520px) {
+  .home-priority-links { display: contents; }
+  .home-priority-card { position: fixed; top: 190px; width: 144px; z-index: 20; }
+  .home-priority-card--internal { left: max(16px, calc(50% - 744px)); }
+  .home-priority-card--fitness { right: max(16px, calc(50% - 744px)); }
+}
+
+@media (max-width: 600px) {
+  .home-priority-links { grid-template-columns: 1fr; }
+}
+
 .module-card {
   background: var(--warm-white);
   border: 1px solid var(--border);

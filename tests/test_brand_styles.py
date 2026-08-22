@@ -58,6 +58,16 @@ class BrandStyleTests(unittest.TestCase):
         self.assertIn("color: var(--nav-text);", archive_text.group(1))
         self.assertIn("color: var(--text-secondary);", archive_muted.group(1))
 
+    def test_home_priority_cards_are_theme_driven_and_responsive(self):
+        for selector in (
+            '.home-priority-links', '.home-priority-card',
+            '.home-priority-card--internal', '.home-priority-card--fitness'
+        ):
+            self.assertIn(selector, CSS)
+        self.assertIn('@media (min-width: 1520px)', CSS)
+        self.assertIn('var(--police-blue)', CSS)
+        self.assertIn('var(--amber)', CSS)
+
     def test_module_card_accents_use_one_brand_border(self):
         accent_rules = re.findall(r'\.module-card\.accent-[^{]+\{([^}]+)\}', CSS)
         self.assertGreaterEqual(len(accent_rules), 7)

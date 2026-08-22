@@ -193,6 +193,13 @@ class HostingConfigTests(unittest.TestCase):
 
 
 class NavigationStructureTests(unittest.TestCase):
+    def test_home_exposes_two_priority_learning_links(self):
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('class="home-priority-links"', home)
+        self.assertIn('href="zoufang/neiwu-tiaoling.html"', home)
+        self.assertIn('href="zoufang/tineng-kaohe.html"', home)
+        self.assertEqual(2, home.count('class="home-priority-card '))
+
     def test_navigation_starts_with_direct_home_link(self):
         nav = (ROOT / "js" / "nav.js").read_text(encoding="utf-8")
         home = "{ name: '首页', path: 'index.html', emoji: '🏠' }"
