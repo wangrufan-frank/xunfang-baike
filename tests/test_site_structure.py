@@ -207,18 +207,22 @@ class NavigationStructureTests(unittest.TestCase):
         self.assertLess(nav.index(home), nav.index("{ name: '更新记录'"))
         self.assertIn("if (moduleDir === 'index.html')", nav)
 
-    def test_monthly_issue_keeps_july_archive_and_selects_august(self):
+    def test_monthly_issue_keeps_archives_and_selects_september(self):
         data = (ROOT / "meiyueyixue" / "data.js").read_text(encoding="utf-8")
         current = (ROOT / "meiyueyixue" / "index.html").read_text(encoding="utf-8")
         archive = ROOT / "meiyueyixue" / "2026-07.html"
 
-        self.assertIn('current: "2026-08"', data)
+        self.assertIn('current: "2026-09"', data)
         self.assertIn('"2026-07"', data)
         self.assertIn('"2026-08"', data)
         self.assertIn('2026-07.html', data)
         self.assertTrue(archive.is_file())
-        self.assertIn('data-monthly-issue="2026-08"', current)
-        self.assertIn('汛期高温叠加：巡防现场风险识别', current)
+        self.assertIn('data-monthly-issue="2026-09"', current)
+        self.assertIn('开学季护校安园：校园周边巡防重点与风险识别', current)
+        self.assertIn('2026-08.html', data)
+        august = (ROOT / 'meiyueyixue' / '2026-08.html').read_text(encoding='utf-8')
+        self.assertIn('data-monthly-issue="2026-08"', august)
+        self.assertIn('汛期高温叠加：巡防现场风险识别', august)
         self.assertIn('data-monthly-issue="2026-07"', archive.read_text(encoding="utf-8"))
 
     def test_home_and_nav_use_exact_six_modules_in_display_order(self):

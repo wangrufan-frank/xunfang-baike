@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-monthly-issue="2026-08">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>汛期高温叠加：巡防现场风险识别 — 本月精选 — 巡防百科</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/auth-config.js"></script>
+<script src="../js/auth-core.js"></script>
+<script src="../js/auth-guard.js" data-root="../"></script>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<div class="breadcrumb"><a href="../index.html">首页</a> &gt; <span class="current">本月精选</span></div>
+<div class="magazine-page">
+  <div class="magazine-header" id="magazineHeader"><h1 class="magazine-title">汛期高温叠加：巡防现场风险识别</h1></div>
+  <div class="magazine-cover" id="magazineCover"></div>
+  <div class="magazine-body">
+    <h2>一、八月巡防的叠加风险</h2>
+    <p>暴雨、强对流和高温可能同时影响勤务。能见度下降、道路通行受阻、人员状态变化和现场秩序波动相互叠加，应将这些变化作为巡防现场风险识别的共同背景。</p>
+    <h2>二、出勤前先核四类信息</h2>
+    <p>核对天气预警、警情地点、人员与装备、支援联络。对信息不明或变化较快的情况，及时补充确认并向指挥链路报告。</p>
+    <h2>三、到场先看五处风险</h2>
+    <p>关注积水和井盖、临水边界、雷电与裸露电气、能见度与交通、热暴露与围观聚集。发现风险变化时，保持必要距离并提示周边人员注意安全。</p>
+    <h2>四、先期处置的安全边界</h2>
+    <p>开展警戒和绕行提示，劝离非必要人员，动态上报现场情况。超出能力范围时，等待消防、应急、医疗等专业力量协同处置；不开展涉水救援、排险或其他专业救援操作。</p>
+    <h2>五、把天气变化纳入动态评估</h2>
+    <p>降雨增强、雷电出现、积水加深、人员不适或人流聚集时，应重新评估，调整站位和警力，并同步更新信息上报。</p>
+    <h2>六、勤务结束后的复盘清单</h2>
+    <p>记录预警、现场变化、风险提示、上报时间、协同与移交情况，为后续勤务提供可追溯的风险信息。</p>
+    <p>公开资料参考：<a href="https://www.mem.gov.cn/kp/zrzh/" target="_blank" rel="noopener noreferrer">应急管理部：汛期高温叠加，这些安全常识必知</a></p>
+  </div>
+<!-- public-source-index:start -->
+<section class="public-source-index" aria-labelledby="public-source-index-title">
+<h2 id="public-source-index-title">公开资料对照</h2>
+<p class="public-source-note">本索引用于说明核验日期时互联网上存在与本页知识点相似的公开资料，不表示本站内容均转载自所列网页，也不构成保密审查、法律审查或业务主管部门审核结论。公开发布仍须执行本单位规定的先审查、后公开程序。</p>
+<ol class="public-source-list">
+
+</ol>
+</section>
+<!-- public-source-index:end -->
+<div class="page-nav"></div>
+  <div class="magazine-archive"><h3>往期精选</h3><div class="archive-grid" id="archiveGrid"></div></div>
+</div>
+<script src="data.js"></script>
+<script src="../js/theme.js"></script>
+<script src="../js/nav.js"></script>
+<script>
+(function() {
+  if (typeof monthlyData === 'undefined') return;
+  var currentKey = document.documentElement.getAttribute('data-monthly-issue') || monthlyData.current;
+  var article = monthlyData.articles[currentKey];
+  if (!article) return;
+  var parts = currentKey.split('-');
+  var monthLabel = parts[0] + '年' + parseInt(parts[1]) + '月';
+  document.getElementById('magazineHeader').innerHTML = '<div class="magazine-month">' + monthLabel + '</div><h1 class="magazine-title">' + article.theme + '</h1><div class="magazine-subtitle">' + article.summary + '</div>';
+  var cover = document.getElementById('magazineCover');
+  cover.innerHTML = article.image ? '<img src="../' + article.image + '" alt="' + article.theme + '" loading="lazy">' : '<div class="cover-placeholder">⭐</div>';
+  var archiveKeys = Object.keys(monthlyData.articles).filter(function(k) { return k !== currentKey; }).sort().reverse();
+  document.getElementById('archiveGrid').innerHTML = archiveKeys.map(function(key) { var a = monthlyData.articles[key]; var displayDate = key.split('-').join('年') + '月'; return '<a href="' + (a.file || (key + '.html')) + '" class="archive-card"><div class="archive-date">' + displayDate + '</div><div class="archive-title">' + a.theme + '</div></a>'; }).join('') || '<p style="color:var(--text-muted);font-size:13px;">暂无往期内容，敬请期待。</p>';
+})();
+</script>
+<script src="../js/search.js"></script>
+</body>
+</html>

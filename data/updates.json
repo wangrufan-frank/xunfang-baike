@@ -2,6 +2,15 @@
   "version": 1,
   "updates": [
     {
+      "date": "2026-09-09",
+      "kind": "monthly-campus-safety",
+      "title": "更新九月每月一学：开学季护校安园",
+      "items": [
+        "新增校园周边巡防学习文章，聚焦到岗观察、高峰人车秩序、警校协同与勤务复盘",
+        "更新九月校园主题封面与首页入口，保留七月、八月往期阅读"
+      ]
+    },
+    {
       "date": "2026-08-22",
       "kind": "homepage-and-legal-library-redesign",
       "title": "完成首页重点学习与法律法规库体验优化",

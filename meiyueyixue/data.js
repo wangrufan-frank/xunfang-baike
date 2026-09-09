@@ -1,6 +1,6 @@
 // meiyueyixue/data.js
 var monthlyData = {
-  current: "2026-08",
+  current: "2026-09",
   articles: {
     "2026-07": {
       theme: "执法现场风险评估等级划分",
@@ -16,6 +16,14 @@ var monthlyData = {
       author: "巡防百科编辑部",
       tags: ["汛期", "高温", "风险识别", "现场安全", "专业协同"],
       image: "img/monthly/2026-08-cover.svg",
+      file: "2026-08.html"
+    },
+    "2026-09": {
+      theme: "开学季护校安园：校园周边巡防重点与风险识别",
+      summary: "围绕到岗观察、高峰人车秩序、警校协同与勤务复盘，学习开学季校园周边巡防要点",
+      author: "巡防百科编辑部",
+      tags: ["开学季", "护校安园", "校园周边", "风险识别", "警校协同"],
+      image: "img/monthly/2026-09-cover.svg",
       file: "index.html"
     }
   }

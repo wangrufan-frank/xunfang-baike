@@ -4,14 +4,14 @@ This report records public-web similarity coverage. It does not approve content 
 
 ## Summary
 
-112 pages, 153 points, 44 sources.
+119 pages, 153 points, 66 sources.
 
 | Metric | Count |
 | --- | ---: |
 | Coverage verified | 153 |
 | Coverage pending | 0 |
-| Sources verified | 44 |
-| Review pending | 112 |
+| Sources verified | 66 |
+| Review pending | 119 |
 | Review approved | 0 |
 
 ## Pages
@@ -129,7 +129,14 @@ This report records public-web similarity coverage. It does not approve content 
 | `zoufang/shiju-youxiu-kecheng.html` | 市局优秀课程 | 0 | 0/0 verified | pending |
 | `zoufang/chuangxin-xunlian-fangfa.html` | 创新训练方法 | 0 | 0/0 verified | pending |
 | `zoufang/kecheng-ziliao-jiaoliu.html` | 课程资料使用与交流规范 | 0 | 0/0 verified | pending |
+| `meiyueyixue/2026-08.html` | 汛期高温叠加：巡防现场风险识别 | 0 | 0/0 verified | pending |
 | `meiyueyixue/2026-07.html` | 执法现场风险评估 — 本月精选 — 巡防百科 | 0 | 0/0 verified | pending |
+| `jingqing/jiuzhu-lei-jingqing-chuzhi.html` | 救助类警情处置流程 | 0 | 0/0 verified | pending |
+| `xunlian/xinfeifusu-cpr.html` | 心肺复苏操作要点 | 0 | 0/0 verified | pending |
+| `xunlian/zhixue-baozha-banyun.html` | 止血、包扎与伤员搬运 | 0 | 0/0 verified | pending |
+| `zhuangbei/jijiu-bao.html` | 急救包组成与使用 | 0 | 0/0 verified | pending |
+| `zhuangbei/aed-shiyong.html` | AED 使用方法 | 0 | 0/0 verified | pending |
+| `zoufang/changsuo-aed-jiancha.html` | 场所急救设施与AED部署检查 | 0 | 0/0 verified | pending |
 
 ## Knowledge points
 
@@ -337,3 +344,25 @@ This report records public-web similarity coverage. It does not approve content 
 | `official-anqing-police-water-rescue-training` | 以练为战！全市公安机关涉水警情专项培训圆满收官 | 安庆市公安局 | 安庆市公安局 | 2024-04-01 | verified | 2026-07-19 | 2026-07-19 | 公安机关公开培训材料涉及救生衣、救生绳等水域救援装备的配备要求和实战使用规范。 | [original](https://gaj.anqing.gov.cn/jwzx/gayw/2004121927.html) |
 | `official-jinan-police-cordon-procurement-2025` | 济南铁路公安局济南公安处购买警用围挡（伞式及四面折叠）成交结果公告 | 济南铁路公安局 | 山东省公共资源交易中心 | 2025-11-26 | verified | 2026-07-19 | 2026-07-19 | 政府采购公告正文涉及伞式和折叠式警用围挡的技术规格和采购标准。 | [original](https://ggzyjyzx.shandong.gov.cn/art/2025/11/26/art_209488_11087607.html) |
 | `official-mem-rainy-heat-2026` | 汛期高温叠加，这些安全常识必知 | 应急管理部 | 中华人民共和国应急管理部 | 2026-07-20 | verified | 2026-08-02 | 2026-08-02 | 公开资料用于核验汛期与高温叠加时的安全风险提示；本站文章仅作巡防先期处置与协同边界的原创归纳。 | [original](https://www.mem.gov.cn/kp/zrzh/) |
+| `official-110-dispatch-rules` | 《110接处警工作规则》全文 | 成都市公安局青羊区分局 | 成都市公安局青羊区分局 | 2017-03-20 | verified | 2026-08-07 | 2026-08-07 | 公安部《110接处警工作规则》全文，第二十九条界定救助类警情情形，第三十一条规定对职责范围以外紧急求助先期处置并通报相关部门；基于公开检索结果，未在线复验。 | [original](https://www.cdqingyang.gov.cn/qygafj/bmwj/2017-03/20/content_302d6c912d6e488a86797306e869c613.shtml) |
+| `hebei-110-jijiu-chuzhi` | 110警情和救助处理 | 河北省公安厅 | 河北省公安厅 | — | verified | 2026-08-07 | 2026-08-07 | 河北省公安厅公开业务资料，介绍110受理救助类警情及先期处理的衔接要求；基于公开检索结果，未在线复验。 | [original](https://gat.hebei.gov.cn/default.php?mod=article&do=detail&tid=20430) |
+| `renmin-kuangxia-zhifa-photo` | 围观者未阻碍执法可现场拍摄 | 人民网 | 人民网 | 2016-07-27 | verified | 2026-08-07 | 2026-08-07 | 人民网报道公安部执法规范化要求：围观拍摄不影响执法时民警不得强行干涉，应习惯在镜头下执法；基于公开检索结果，未在线复验。 | [original](https://politics.people.com.cn/BIG5/n1/2016/0727/c1001-28587279.html) |
+| `gfx-hongshizi-cpr` | 【红十字会救在身边】红十字会教你如何进行成人心肺复苏 | 广丰区政府网（转载中国红十字会） | 广丰区政府网 | — | verified | 2026-08-07 | 2026-08-07 | 广丰区政府网转载中国红十字会心肺复苏科普，介绍成人CPR的按压、人工呼吸及操作注意事项；基于公开检索结果，未在线复验。 | [original](https://www.gfx.gov.cn/gfx/c116689/202401/19e106ce6f48408da5eb728a825b7833.shtml) |
+| `renmin-cpr-zhengquefangfa` | 危急时刻 切记心肺复苏的正确方法 | 人民网 | 人民网 | 2025-08-07 | verified | 2026-08-07 | 2026-08-07 | 人民网科普报道，介绍心肺复苏适用判断、按压与人工呼吸比例及现场操作要点；基于公开检索结果，未在线复验。 | [original](https://society.people.com.cn/n1/2025/0807/c1008-40538214.html) |
+| `beijing-redcross-cpr-aed-training` | 培训课程介绍（CPR+AED） | 北京市红十字会 | 北京市红十字会 | 2023-12-27 | verified | 2026-08-07 | 2026-08-07 | 北京市红十字会应急救护培训课程说明，涵盖成人心肺复苏与AED使用的课程内容与报名方式；基于公开检索结果，未在线复验。 | [original](https://www.bjredcross.org.cn/contents/2023122718643.html) |
+| `kepuchina-hushenfu` | 人人能掌握的“护身符” | 科普中国 | 科普中国 | — | verified | 2026-08-07 | 2026-08-07 | 科普中国面向大众的急救科普，介绍心肺复苏、AED等日常可掌握的急救技能；基于公开检索结果，未在线复验。 | [original](https://www.kepuchina.cn/article/articleinfo?business_type=100&classify=0&ar_id=669273) |
+| `changning-redcross-cpr` | 昌宁县红十字会应急救护 | 云南省红十字会 | 云南省红十字会 | — | verified | 2026-08-07 | 2026-08-07 | 云南省红十字会昌宁县站点应急救护科普，介绍心肺复苏、止血包扎等基础救护操作；基于公开检索结果，未在线复验。 | [original](https://www.ynredcross.cn/cnx/article.jsp?id=64559&itemId=185) |
+| `chuxiong-redcross-cpr` | 楚雄市红十字会应急救护科普 | 云南省红十字会 | 云南省红十字会 | — | verified | 2026-08-07 | 2026-08-07 | 云南省红十字会楚雄市站点应急救护科普，介绍心肺复苏、止血包扎与伤员搬运要点；基于公开检索结果，未在线复验。 | [original](https://www.ynredcross.cn/cxs/article.jsp?id=61841&itemId=185) |
+| `baoding-redcross-jiuxinmeng` | 【冀小红科普】关键时刻能救命（2） | 保定市红十字会 | 保定市红十字会 | — | verified | 2026-08-07 | 2026-08-07 | 保定市红十字会应急救护科普，介绍止血、包扎等关键急救操作；基于公开检索结果，未在线复验。 | [original](https://www.bdredcross.org.cn/smartcore/web/bdhsz/hszydcs/2c9f7bd08cb813000191daea3aef4cff.htm) |
+| `zaozhuang-redcross-zhiti-liduan` | 肢体离断伤的现场处理 | 枣庄市红十字会 | 枣庄市红十字会 | — | verified | 2026-08-07 | 2026-08-07 | 枣庄市红十字会科普，介绍肢体离断伤的现场止血、离断肢体保存与转运要点；基于公开检索结果，未在线复验。 | [original](https://www.zaozhuangredcross.org.cn/yingji/news/shown-2774) |
+| `thepaper-jijiu-bao` | 急救包里有什么 | 澎湃新闻 | 澎湃新闻 | — | verified | 2026-08-07 | 2026-08-07 | 澎湃新闻科普，介绍家庭及日常急救包的常见物品配置与用途；基于公开检索结果，未在线复验。 | [original](https://www.thepaper.cn/newsDetail_forward_26722633) |
+| `tonghai-redcross-jijiu-bao` | 通海县红十字会急救包配置 | 云南省红十字会 | 云南省红十字会 | — | verified | 2026-08-07 | 2026-08-07 | 云南省红十字会通海县站点介绍急救包（急救箱）的配置清单与检查维护要求；基于公开检索结果，未在线复验。 | [original](https://www.ynredcross.cn/thx/article.jsp?id=34370&itemId=184) |
+| `gd119-jiating-yingji-wuzi` | 家庭应急物资该备什么 | 广东省消防救援总队 | 广东省消防救援总队 | — | verified | 2026-08-07 | 2026-08-07 | 广东省消防救援总队科普，介绍家庭应急物资储备清单，可作为急救包配置参考；基于公开检索结果，未在线复验。 | [original](https://gd.119.gov.cn/xfkp/zjts/content/post_4895115.html) |
+| `mem-yingji-wuzi-dafuhan` | 应急管理部对家庭应急物资储备提案的答复函 | 应急管理部 | 中华人民共和国应急管理部 | 2023-01-17 | verified | 2026-08-07 | 2026-08-07 | 应急管理部对家庭应急物资储备相关建议的公开答复，为家庭应急物资（含急救用品）配置提供官方依据；基于公开检索结果，未在线复验。 | [original](https://www.mem.gov.cn:10443/gk/jytabljggk/zxwytadfzy/2022zx/202301/t20230117_440677.shtml) |
+| `nhc-aed-peizhi-guide` | 公共场所自动体外除颤器配置指南（试行） | 国家卫生健康委员会 | 国家卫生健康委员会 | — | verified | 2026-08-07 | 2026-08-07 | 国卫办医函〔2021〕602号《公共场所自动体外除颤器配置指南（试行）》，规定AED优先配置场所、外箱标识与日常维护要求；基于公开检索结果，未在线复验。 | [original](https://www.nhc.gov.cn/wjw/c100175/202112/335e760effd9434880c8eb950fddd7cd.shtml) |
+| `redcross-aed-shiyong` | “救命神器”AED该如何使用呢 | 中国红十字会总会 | 中国红十字会总会 | — | verified | 2026-08-07 | 2026-08-07 | 中国红十字会总会科普，介绍AED的开机、贴片、电击等使用步骤与安全注意事项；基于公开检索结果，未在线复验。 | [original](https://www.redcross.org.cn/html/2025-07/108778.html) |
+| `mianyang-redcross-aed` | 绵阳市红十字会应急救护（AED） | 绵阳市红十字会 | 绵阳市红十字会 | — | verified | 2026-08-07 | 2026-08-07 | 绵阳市红十字会应急救护科普，介绍AED的使用方法与操作要点；基于公开检索结果，未在线复验。 | [original](https://myredcross.cn/go-a69544.htm) |
+| `gfx-aed-shiyong` | 【红十字救在身边】AED 的使用方法 | 广丰区政府网（转载中国红十字会） | 广丰区政府网 | — | verified | 2026-08-07 | 2026-08-07 | 广丰区政府网转载中国红十字会AED科普，介绍AED的使用步骤与注意事项；基于公开检索结果，未在线复验。 | [original](https://www.gfx.gov.cn/gfx/c116689/202401/c0290bcd5c234d1db0c390d3affade21.shtml) |
+| `yueqing-aed-management` | 乐清市公共场所自动体外除颤器管理维护制度 | 乐清市人民政府 | 乐清市人民政府 | 2024-10-29 | verified | 2026-08-07 | 2026-08-07 | 乐清市地方管理制度，规定公共场所AED的日常检查、维护与记录上报要求；基于公开检索结果，未在线复验。 | [original](https://www.yueqing.gov.cn/art/2024/10/29/art_1229145291_2035691.html) |
+| `guiyang-aed-management` | 贵阳贵安公共场所自动体外除颤仪管理规范（试行） | 贵阳市卫生健康局 | 贵阳市卫生健康局 | 2026-04-13 | verified | 2026-08-07 | 2026-08-07 | 贵阳市地方管理规范，规定公共场所AED配置、检查维护与运行管理的具体要求；基于公开检索结果，未在线复验。 | [original](https://wsjkj.guiyang.gov.cn/zfxxgk_500627/fdzdgknr/lzyj/bmwj/202604/t20260413_89993587.html) |
+| `chengdu-aed-config-explainer` | 《成都市公共场所自动体外除颤器配置管理办法》政策解读 | 成都市卫生健康委员会 | 成都市卫生健康委员会 | 2026-01-20 | verified | 2026-08-07 | 2026-08-07 | 成都市卫健委对AED配置管理办法的政策解读，说明配置范围、运维责任与监督检查要求；基于公开检索结果，未在线复验。 | [original](https://cdwjw.chengdu.gov.cn/cdwjw/zcjd/2026-01/20/content_21eb66e0a8404977ab7982eac3c586ce.shtml) |

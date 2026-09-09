@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" role="img" aria-label="校园、斑马线与守护盾牌">
+  <rect width="800" height="480" fill="#e8eef2"/>
+  <circle cx="665" cy="98" r="46" fill="#f28c28"/>
+  <path d="M85 195L310 70l225 125" fill="#294b61"/>
+  <path d="M115 195h390v155H115z" fill="#b8cbd7"/>
+  <path d="M270 250h80v100h-80z" fill="#294b61"/>
+  <g fill="#fff"><path d="M155 225h65v45h-65zM400 225h65v45h-65z"/><circle cx="310" cy="158" r="28"/></g>
+  <path d="M310 138v22h17" fill="none" stroke="#294b61" stroke-width="6" stroke-linecap="round"/>
+  <path d="M0 370h800v110H0z" fill="#637886"/>
+  <g fill="#fff"><path d="M135 388h50l-20 70h-50zM215 388h50l-20 70h-50zM295 388h50l-20 70h-50zM375 388h50l-20 70h-50z"/></g>
+  <path d="M650 220l90 34v72c0 56-40 94-90 116-50-22-90-60-90-116v-72z" fill="#294b61"/>
+  <path d="M610 327l28 28 53-61" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
