@@ -133,6 +133,34 @@
     });
   }
 
+  function setupBackToTop() {
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'back-to-top';
+    button.innerHTML = '<span aria-hidden="true">↑</span><span>返回顶部</span>';
+    button.hidden = true;
+    document.body.classList.add('has-back-to-top');
+    document.body.appendChild(button);
+
+    function updateVisibility() {
+      button.hidden = window.scrollY <= window.innerHeight;
+    }
+
+    button.addEventListener('click', function() {
+      var nav = document.querySelector('.topnav');
+      if (nav) {
+        nav.setAttribute('tabindex', '-1');
+        nav.focus({ preventScroll: true });
+      }
+      var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'instant' : 'smooth' });
+    });
+    window.addEventListener('scroll', updateVisibility, { passive: true });
+    window.addEventListener('resize', updateVisibility);
+    window.addEventListener('pageshow', updateVisibility);
+    updateVisibility();
+  }
+
   window.XunfangLogout = function() {
     document.cookie = window.XunfangAuth.buildExpiredCookie(
         window.XunfangAuthConfig,
@@ -146,5 +174,6 @@
   if (placeholder) {
     placeholder.outerHTML = renderNav();
     setupNav();
+    setupBackToTop();
   }
 })();

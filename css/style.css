@@ -87,6 +87,34 @@ body {
 a { color: var(--accent-blue); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+/* === 返回顶部 === */
+body.has-back-to-top { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+.back-to-top {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  min-height: 64px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  box-shadow: var(--shadow);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+.back-to-top[hidden] { display: none; }
+.back-to-top span:first-child { font-size: 24px; line-height: 1; }
+.back-to-top:hover { background: var(--police-blue-deep); }
+.back-to-top:focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+
 /* === 顶部导航栏 === */
 .topnav {
   background: var(--police-blue);

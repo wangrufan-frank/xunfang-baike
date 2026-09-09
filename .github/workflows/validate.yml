@@ -28,7 +28,7 @@ jobs:
       - name: Run Python tests
         run: python -m unittest discover -s tests -p "test_*.py" -v
       - name: Run Node tests
-        run: node --test tests/auth_core.test.js
+        run: node --test tests/auth_core.test.js tests/monthly_hero.test.js tests/back_to_top.test.js
       - name: Check generated search index
         run: python tools/build_search_index.py --check
       - name: Check local links
