@@ -161,6 +161,16 @@
     updateVisibility();
   }
 
+  function setupAnalytics() {
+    if (['www.xunfangbk.cn', 'xunfangbk.cn'].indexOf(window.location.hostname) === -1) return;
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://cloud.umami.is/script.js';
+    script.setAttribute('data-website-id', '29fd0aaa-5fe3-4677-9fbd-9245966cff14');
+    script.setAttribute('data-domains', 'www.xunfangbk.cn,xunfangbk.cn');
+    document.head.appendChild(script);
+  }
+
   window.XunfangLogout = function() {
     document.cookie = window.XunfangAuth.buildExpiredCookie(
         window.XunfangAuthConfig,
@@ -176,4 +186,5 @@
     setupNav();
     setupBackToTop();
   }
+  setupAnalytics();
 })();

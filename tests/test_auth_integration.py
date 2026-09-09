@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EXCLUDED_DIRS = {'.git', '.worktrees', '.superpowers', 'deliverables', 'docs'}
+EXCLUDED_DIRS = {'.git', '.worktrees', '.superpowers', '.artifacts', 'deliverables', 'docs'}
 INJECTOR_PATH = ROOT / 'tools' / 'inject_auth_guard.py'
 AUTH_SCRIPT_RE = re.compile(
     r'<script\b[^>]*\bsrc=["\'][^"\']*js/auth-(?:config|core|guard)\.js["\'][^>]*>'
