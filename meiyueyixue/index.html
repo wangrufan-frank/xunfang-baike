@@ -14,7 +14,7 @@
 <div class="breadcrumb"><a href="../index.html">首页</a> &gt; <span class="current">本月精选</span></div>
 <div class="magazine-page">
   <div class="magazine-header" id="magazineHeader"><h1 class="magazine-title">人多更要心细：景区商圈巡防与现场秩序维护</h1></div>
-  <p class="monthly-photo-credit">景区巡逻资料照片 · 平安浙江网；正文照片由缙云公安供图，经平安浙江网发布。</p>
+  <p class="monthly-photo-credit">标题照片由用户提供；正文为缙云公安供图、平安浙江网发布的景区巡逻资料照片。</p>
   <div class="magazine-body">
     <p>十月的景区、商圈与步行街，既有结伴出游的家庭，也有停留拍照、排队购物和等候散场的人群。巡防的重点，是在热闹中看清变化：哪里开始走不动，谁正需要帮助，什么问题需要尽早报告。节日里的观察方法，同样适用于周末夜市与日常大型活动。</p>
     <h2>一、到岗先看：把现场走明白</h2>
@@ -62,7 +62,7 @@
   var header = document.getElementById('magazineHeader');
   if (article.image) {
     header.classList.add('magazine-header-photo');
-    header.style.backgroundImage = 'linear-gradient(0deg, rgba(8, 24, 40, .94), rgba(8, 24, 40, .08)), url("../' + article.image + '")';
+    header.style.backgroundImage = 'linear-gradient(0deg, rgba(8, 24, 40, .96), rgba(8, 24, 40, .45) 35%, rgba(8, 24, 40, .04) 70%), url("../' + article.image + '")';
   }
   var archiveKeys = Object.keys(monthlyData.articles).filter(function(k) { return k !== currentKey; }).sort().reverse();
   document.getElementById('archiveGrid').innerHTML = archiveKeys.map(function(key) { var a = monthlyData.articles[key]; var displayDate = key.split('-').join('年') + '月'; return '<a href="' + (a.file || (key + '.html')) + '" class="archive-card"><div class="archive-date">' + displayDate + '</div><div class="archive-title">' + a.theme + '</div></a>'; }).join('') || '<p style="color:var(--text-muted);font-size:13px;">暂无往期内容，敬请期待。</p>';

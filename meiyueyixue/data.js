@@ -31,7 +31,7 @@ var monthlyData = {
       summary: "看清通道变化，回应群众求助，及时报告异常，交接未完事项",
       author: "巡防百科编辑部",
       tags: ["景区商圈", "现场秩序", "群众求助", "协同处置"],
-      image: "img/monthly/2026-10-cover.jpg",
+      image: "img/monthly/2026-10-night-patrol.jpg",
       file: "index.html"
     }
   }

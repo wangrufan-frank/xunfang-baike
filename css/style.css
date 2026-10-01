@@ -820,7 +820,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 
 .monthly-current-photo {
   position: relative;
-  min-height: 390px;
+  min-height: 440px;
   justify-content: flex-end;
   isolation: isolate;
 }
@@ -831,7 +831,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 60% top;
+  object-position: 50% 40%;
   z-index: -2;
 }
 
@@ -839,7 +839,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, rgba(8,24,40,.97), rgba(8,24,40,.6) 45%, rgba(8,24,40,.06));
+  background: linear-gradient(0deg, rgba(8,24,40,.97), rgba(8,24,40,.65) 35%, rgba(8,24,40,.04) 70%);
   z-index: -1;
 }
 
@@ -876,12 +876,17 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
 }
 
 .monthly-archive-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 0;
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  padding: 14px 0;
   border-top: 1px solid rgba(255,255,255,.12);
   text-decoration: none;
 }
+
+.monthly-archive-item span { white-space: nowrap; }
+.monthly-archive-item strong { line-height: 1.6; }
 
 .monthly-archive-item:hover,
 .monthly-archive-all:hover {
@@ -907,7 +912,9 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  line-height: 1.3;
+  line-height: 1.5;
+  text-wrap: balance;
+  max-width: 24em;
 }
 
 .monthly-hero .hero-summary {
@@ -1071,7 +1078,7 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   text-align: left;
   background-color: #081828;
   background-size: cover;
-  background-position: 60% center;
+  background-position: 50% 40%;
   border-radius: var(--radius);
 }
 
