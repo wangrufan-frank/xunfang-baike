@@ -26,6 +26,7 @@
 
     var archiveEntries = getArchiveEntries(data, 3);
     var currentHtml =
+      (article.image ? '<img class="monthly-current-image" src="' + article.image + '" alt="">' : '') +
       '<div class="hero-label">' + label + '</div>' +
       '<div class="hero-theme">' + article.theme + '</div>' +
       '<div class="hero-summary">' + article.summary + '</div>' +
@@ -40,7 +41,7 @@
 
     placeholder.outerHTML = '<section class="monthly-hero" aria-label="每月一学">' +
       '<div class="monthly-hero-grid">' +
-        '<div class="monthly-current">' + currentHtml + '</div>' +
+        '<div class="monthly-current' + (article.image ? ' monthly-current-photo' : '') + '">' + currentHtml + '</div>' +
         '<aside class="monthly-archive"><div class="monthly-archive-heading">' +
           '<strong>往期回顾</strong><span>按月归档</span></div>' + archiveHtml +
           '<a class="monthly-archive-all" href="meiyueyixue/index.html#archiveGrid">查看全部往期 →</a>' +

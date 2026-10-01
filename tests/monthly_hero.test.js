@@ -2,6 +2,16 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const { getArchiveEntries, renderMonthlyHero } = require('../js/monthly-hero.js');
 
+test('homepage uses the current issue photo behind its title', () => {
+  const placeholder = {};
+  renderMonthlyHero({
+    current: '2026-10',
+    articles: { '2026-10': { theme: '景区商圈巡防', summary: '本期内容', image: 'img/monthly/2026-10-cover.jpg' } }
+  }, { getElementById: () => placeholder });
+  assert.match(placeholder.outerHTML, /class="monthly-current monthly-current-photo"/);
+  assert.match(placeholder.outerHTML, /<img class="monthly-current-image" src="img\/monthly\/2026-10-cover.jpg" alt="">/);
+});
+
 test('archive excludes current issue, sorts newest first, and limits results', () => {
   const data = {
     current: '2026-08',
