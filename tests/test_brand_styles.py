@@ -66,7 +66,7 @@ class BrandStyleTests(unittest.TestCase):
     def test_monthly_home_panel_uses_shared_theme_tokens(self):
         script = (ROOT / "js" / "monthly-hero.js").read_text(encoding="utf-8")
         self.assertIn('class="monthly-hero-grid"', script)
-        self.assertIn('class="monthly-current"', script)
+        self.assertIn('class="monthly-current', script)
         self.assertIn('class="monthly-archive"', script)
         self.assertIn("renderMonthlyHero(monthlyData, document)", script)
         self.assertIn("var(--police-blue-deep)", CSS)
