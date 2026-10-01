@@ -1,6 +1,6 @@
 // meiyueyixue/data.js
 var monthlyData = {
-  current: "2026-09",
+  current: "2026-10",
   articles: {
     "2026-07": {
       theme: "执法现场风险评估等级划分",
@@ -24,6 +24,14 @@ var monthlyData = {
       author: "巡防百科编辑部",
       tags: ["开学季", "护校安园", "校园周边", "风险识别", "警校协同"],
       image: "img/monthly/2026-09-cover.svg",
+      file: "2026-09.html"
+    },
+    "2026-10": {
+      theme: "人多更要心细：景区商圈巡防与现场秩序维护",
+      summary: "看清通道变化，回应群众求助，及时报告异常，交接未完事项",
+      author: "巡防百科编辑部",
+      tags: ["景区商圈", "现场秩序", "群众求助", "协同处置"],
+      image: "img/monthly/2026-10-cover.jpg",
       file: "index.html"
     }
   }

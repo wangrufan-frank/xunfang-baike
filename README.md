@@ -63,6 +63,10 @@ python tools/check_site_links.py
 
 更详细的来源和索引操作说明见 [docs/public-source-maintenance.md](docs/public-source-maintenance.md)。来源台账用于内容可追溯性；本公开网站不将业务或保密审查状态作为仓库发布门槛。
 
+### 每月一学维护约定
+
+从 2026 年 10 月起，每期文章标题均以匹配主题的真实照片作背景，正文配实景图片。沿用 `meiyueyixue/index.html` 的标题背景模板，更新 `data.js` 中当期的 `image`，同时归档上一期。照片保持真实，不用生成图替代；核对发布方、场景与使用说明，在维护记录中保存原始链接，历史照片不得冒充当期现场。检查电脑和手机端的裁切与文字对比度。
+
 ## 部署
 
 将经验证的 `master` 推送到 GitHub 后，GitHub Pages 会发布静态文件。部署配置的关键文件是根目录 `CNAME` 和 `.nojekyll`。GitHub Actions 会在推送和拉取请求时运行相同的核心验证，不会上传交付物。

@@ -1031,6 +1031,34 @@ html[data-theme="night"] .theme-menu { background: var(--warm-white); border-col
   max-width: 700px;
 }
 
+/* 每月一学：自 2026 年 10 月起使用主题照片标题背景。 */
+.magazine-header.magazine-header-photo {
+  min-height: 440px;
+  padding: 180px 28px 28px;
+  margin: 12px 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  background-color: #081828;
+  background-size: cover;
+  background-position: 60% center;
+  border-radius: var(--radius);
+}
+
+.magazine-header-photo .magazine-month { color: #ffe0a0; }
+.magazine-header-photo .magazine-title { color: #fff; }
+.magazine-header-photo .magazine-subtitle { color: #eef3f7; margin: 0; }
+.monthly-photo-credit { font-size: 12px; color: var(--text-muted); margin: 0 0 28px; }
+.monthly-photo { margin: 26px 0; }
+.monthly-photo img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
+.monthly-photo figcaption { font-size: 13px; line-height: 1.7; color: var(--text-muted); margin-top: 8px; }
+
+@media (max-width: 600px) {
+  .magazine-header.magazine-header-photo { padding: 180px 20px 24px; }
+}
+
 .magazine-cover img {
   width: 100%;
   border-radius: var(--radius);

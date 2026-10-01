@@ -4,14 +4,14 @@ This report records public-web similarity coverage. It does not approve content 
 
 ## Summary
 
-119 pages, 153 points, 66 sources.
+120 pages, 153 points, 66 sources.
 
 | Metric | Count |
 | --- | ---: |
 | Coverage verified | 153 |
 | Coverage pending | 0 |
 | Sources verified | 66 |
-| Review pending | 119 |
+| Review pending | 120 |
 | Review approved | 0 |
 
 ## Pages
@@ -137,6 +137,7 @@ This report records public-web similarity coverage. It does not approve content 
 | `zhuangbei/jijiu-bao.html` | 急救包组成与使用 | 0 | 0/0 verified | pending |
 | `zhuangbei/aed-shiyong.html` | AED 使用方法 | 0 | 0/0 verified | pending |
 | `zoufang/changsuo-aed-jiancha.html` | 场所急救设施与AED部署检查 | 0 | 0/0 verified | pending |
+| `meiyueyixue/2026-09.html` | 开学季护校安园：校园周边巡防重点与风险识别 | 0 | 0/0 verified | pending |
 
 ## Knowledge points
 
